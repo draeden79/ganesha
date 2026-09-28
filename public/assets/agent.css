@@ -1,7 +1,37 @@
-/* Keep the approved brand styling; these rules accommodate course-specific English copy. */
+/* Keep the approved brand styling across translated course copy. */
 .hero-copy,.journey-intro,.module-label{min-width:0}
 h1,h2,h3,.module-label strong{overflow-wrap:anywhere}
 .hero-eyebrow,.benefit-tag,.module-label>span{text-transform:uppercase}
 .hero-description,.section-heading>p,.benefit p,.audience-grid p,.faq-list p{overflow-wrap:break-word}
 @media(max-width:1100px) and (min-width:801px){.header-inner{gap:17px}.desktop-nav{gap:18px}.desktop-nav a{font-size:14px}.header-cta{padding-inline:12px;gap:12px}.journey-intro h2{font-size:37px}}
 .prototype-notice { padding: 12px 24px; text-align: center; font-size: 13px; line-height: 1.5; color: #6C3BEE; background: #F5F3FB; border-bottom: 1px solid #e8e3f4; }
+.site-header{position:relative;z-index:30}
+.header-inner{gap:18px}.desktop-nav{margin-left:0;gap:22px}
+.language-switcher{position:relative;flex-shrink:0;max-width:180px;font-size:13px}
+.language-switcher>summary{display:flex;align-items:center;gap:8px;min-height:44px;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:var(--white);color:var(--ink)}
+.language-switcher>summary>span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.language-switcher>summary>span:first-child{color:var(--purple);font-size:20px;line-height:1}
+.language-switcher[open]>summary{border-color:var(--purple);background:var(--lavender)}
+.language-switcher nav{position:absolute;inset-inline-end:0;top:calc(100% + 8px);display:grid;width:230px;max-height:min(65vh,500px);overflow:auto;padding:8px;border:1px solid var(--border);border-radius:14px;background:var(--white);box-shadow:0 12px 32px #17151f14}
+.language-switcher nav a{padding:10px 12px;border-radius:8px;line-height:1.5;min-height:44px;text-align:start;font-family:Figtree,'Noto Sans Arabic','Noto Sans Devanagari',system-ui,sans-serif}
+.language-switcher nav a:hover,.language-switcher nav a[aria-current=page]{background:var(--lavender);color:var(--purple)}
+.brand{direction:ltr}.caption-number{direction:ltr}
+:lang(ar){--font:'Noto Sans Arabic',Figtree,system-ui,sans-serif}
+:lang(hi){--font:'Noto Sans Devanagari',Figtree,system-ui,sans-serif}
+:lang(ja){--font:Figtree,'Hiragino Kaku Gothic ProN','Yu Gothic',Meiryo,sans-serif}
+:lang(ko){--font:Figtree,'Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+:lang(zh-CN){--font:Figtree,'PingFang SC','Microsoft YaHei',sans-serif}
+:lang(ar) h1,:lang(hi) h1,:lang(ja) h1,:lang(ko) h1,:lang(zh-CN) h1{letter-spacing:0;line-height:1.25}
+:lang(ar) h2,:lang(hi) h2,:lang(ja) h2,:lang(ko) h2,:lang(zh-CN) h2{letter-spacing:0;line-height:1.4}
+:lang(ar) .eyebrow,:lang(hi) .eyebrow,:lang(ar) .benefit-tag,:lang(ar) .module-label>span,:lang(ar) .practice span{letter-spacing:0}
+:lang(ja) h1,:lang(ko) h1,:lang(zh-CN) h1{font-size:clamp(2.6rem,4.2vw,4.1rem)}
+[dir=rtl] .caption-number,[dir=rtl] .plus,[dir=rtl] .back-top{margin-left:0;margin-inline-start:auto}
+[dir=rtl] .tools-inner p{padding-right:0;padding-inline-end:30px;border-right:0;border-inline-end:1px solid var(--border)}
+[dir=rtl] .card-index{right:auto;inset-inline-end:28px}
+[dir=rtl] .module-content{padding-inline:61px 26px}
+[dir=rtl] .module-content li{padding-left:0;padding-inline-start:17px}
+[dir=rtl] .module-content li:before{left:auto;inset-inline-start:0}
+@media(max-width:1150px){.header-cta{display:none}.desktop-nav{gap:16px}}
+@media(max-width:1100px){[dir=rtl] .module-content{padding-inline-start:53px}}
+@media(max-width:800px){.header-inner{gap:8px}.language-switcher{margin-inline-start:auto;max-width:145px}.language-switcher>summary{padding-inline:9px}.language-switcher nav{inset-inline-end:-50px}.mobile-nav:not([hidden]){top:100%}[dir=rtl] .tools-inner p{padding:0;border:0}[dir=rtl] .module-content{padding-inline:47px 19px}.hero-notes{flex-wrap:wrap;row-gap:5px}}
+@media(max-width:380px){.brand{font-size:22px;gap:6px}.brand svg{width:20px}.language-switcher{max-width:100px}.menu-toggle{flex-shrink:0}h1{font-size:42px;letter-spacing:-1.8px}[dir=rtl] .module-content{padding-inline:19px}}

@@ -39,7 +39,7 @@ if j.status ~= 'running' or j.token ~= ARGV[3] or t.token ~= ARGV[3] or j.leaseU
 if r.mode == 'complete' then
   if r.prepared.requestKey ~= j.requestKey then return redis.error_reply('request_mismatch') end
   if r.prepared.status == 'ready' then
-    local revision = cjson.encode({html=r.prepared.html,revision=j.id})
+    local revision = cjson.encode({html=r.prepared.html,localizedHtml=r.prepared.localizedHtml,revision=j.id})
     if redis.call('EXISTS',KEYS[5]) == 1 then return redis.error_reply('revision_exists') end
     redis.call('SET',KEYS[5],revision); redis.call('SET',KEYS[6],KEYS[5])
     t.course = r.prepared.course

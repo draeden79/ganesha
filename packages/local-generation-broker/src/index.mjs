@@ -193,7 +193,7 @@ export function createRedisGenerationBroker(client, options) {
       let valid;
       try {
         valid = validator(job.outputSchemaJson)(JSON.parse(resultJson));
-        if (valid && validateResult) await validateResult({ agent: job.agent, result: JSON.parse(resultJson) });
+        if (valid && validateResult) await validateResult({ agent: job.agent, input: job.input, result: JSON.parse(resultJson) });
       } catch { reject('invalid_result'); }
       if (!valid) reject('invalid_result');
       if (!Number(await exec(completeScript, [input.jobId, input.workerId, input.leaseToken, timestamp(),
