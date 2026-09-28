@@ -26,3 +26,11 @@ O percurso final de QA foi interrompido antes das práticas para atender à nova
 - A mudança de apresentação não apaga respostas, tentativas nem progresso existente da mesma versão de curso.
 
 Propriedade permanece: Artista em `design/`, Construtor no aplicativo, Diretor em `coordination/` e contratos.
+
+## Referência real confirmada
+
+Artista identificou via Computer Use a janela `Ganesha`, aplicativo `Ganesha`, 1228×768. O Diretor inspecionou a captura em `/Users/lucasmarques/.codex/worktrees/e20b/Ganesha/design/reference/ganesha-native-journey.jpg`.
+
+Elementos observados e aceitos como direção: fundo lavanda muito claro, lateral branca de cerca de 250px, marca com elefante, painel principal branco, trilha horizontal de cartões estreitos/altos, cartão selecionado ligado visualmente ao painel lavanda inferior, ilustração à direita e uma ação principal no canto inferior direito. A referência apresenta muito menos avisos e superfícies concorrentes que o primeiro web.
+
+Adaptação acordada: controles discretos de idioma/ferramenta e um aviso de demonstração; retirar hero e anel de progresso redundantes da composição anterior. A quantidade de aulas e o nome do perfil da captura não são dados de produto a copiar. O web mantém o currículo canônico disponível e os IDs existentes. Artista ainda inspeciona a etapa nativa antes de fechar formulários e avaliações; Construtor aguarda essa entrega concreta.
