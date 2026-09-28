@@ -9,6 +9,7 @@ Data: 28/09/2026. Responsável: Artista. O trabalho preservou a beta 0.2 e usou 
 - Indonésio: mesmo app e conteúdo base, catálogo integral `0f73151`, em `http://localhost:3105/classroom/id`.
 - Espanhol e hindi: catálogos `a74b73a`, no mesmo app e prévia, rotas `/es` e `/hi`.
 - Japonês: catálogo `7db8adb`, no mesmo app e prévia, rota `/ja`.
+- Árabe, francês e ajuste de negação do hindi: catálogos `4e316ee`, no mesmo app e prévia.
 - Os registros de prática inseridos declaram explicitamente QA da interface, sem execução externa dos projetos ou das ferramentas de IA.
 
 ## Resultado funcional
@@ -56,4 +57,16 @@ As mesmas três amostras longas foram conferidas em japonês no celular: CSV, re
 
 Evidências: `qa/v03-ja-ui.json` e `qa/v03-ja-schedule-mobile.jpg`. Sem P0/P1 encontrado nas amostras. A aprovação continua sendo visual/funcional, sem alegar revisão linguística humana integral.
 
-Pendente para fechar a versão multilíngue: integrar francês, alemão, árabe, coreano e chinês e conferir suas amostras, especialmente árabe/RTL. Este relatório não certifica tradução humana, execução dos projetos externos ou publicação da 0.3 no domínio público.
+### Francês, hindi e primeira rodada árabe — 21:44 UTC
+
+Francês passou pelas três amostras de CSV, recuperação de Apps e ensaio de agendamento a 390 × 844, sem estouro horizontal ou corte. O ajuste em hindi para proibir claramente instalação de dependências e mudanças em entrada/programa também foi confirmado no pedido renderizado.
+
+Árabe foi inspecionado nas primeiras etapas das 12 aulas, com `dir=rtl` e largura 390 sem estouro. Comandos delimitados e bloco CSV literal estão LTR. Foi encontrado um P1 de apresentação nos trechos técnicos ainda sem delimitadores: o JSON inline da avaliação `app-delivery.check-contract` desloca chaves/pontuação; o CSV dentro do pedido `automation-input.create-csv` desloca o identificador para o fim da linha. O bloco CSV separado permanece correto.
+
+Correção solicitada ao Educador: delimitar o JSON completo com backticks e cada linha CSV com seu próprio par, incluindo os literais do ensaio de agendamento. O parser atual aceita somente código inline de uma linha; não foi solicitada alteração de UI. Reteste árabe pendente do pacote corrigido.
+
+Evidências desta rodada: `qa/v03-ar-fr-initial-ui.json`, `qa/v03-fr-apps-mobile.jpg`, `qa/v03-ar-json-before.jpg`, `qa/v03-ar-csv-before.jpg` e `qa/v03-ar-schedule-before.jpg`. As capturas com sufixo `before` registram a condição anterior à correção e não representam aprovação RTL. A jornada desktop também foi inspecionada a 1280 × 720: quatro grupos e 12 aulas, sem estouro (`qa/v03-ar-overview-desktop.jpg`).
+
+Observação P2 de acabamento: os conectores decorativos `››` entre cartões da jornada ainda apontam para a direita em RTL. Os controles de navegação permanecem operáveis; isso não bloqueia a rodada de publicação, mas pode ser espelhado posteriormente.
+
+Pendente para fechar a versão multilíngue: retestar os trechos técnicos em árabe e conferir alemão, coreano e chinês após integração. Este relatório não certifica tradução humana, execução dos projetos externos ou publicação da 0.3 no domínio público.
