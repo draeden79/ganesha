@@ -7,7 +7,7 @@ Atualizado em 2026-09-28. Estado: contrato v1 harmonizado; especialistas impleme
 | Frente | Task ID | Worktree | Branch | Commit integrado | Próxima ação |
 | --- | --- | --- | --- | --- | --- |
 | Diretor | `01a0e952-1611-7c60-9b42-115d061cd07a` | `/Users/lucasmarques/.codex/worktrees/2ae2/Ganesha` | `codex/diretor-integracao` | `6f6e1e3`, `eb13ea5`, `f51b56c` | Integrar L01 e aplicativo; revisar fluxo real |
-| Devorador | `01a0e952-8940-75d0-b32e-52078719adc0` | `/Users/lucasmarques/.codex/worktrees/81be/Ganesha` | `codex/devorador-research` | `5415072`, `0da1615`, `52032bf` (origens `c531c9e`, `52262547`, `11881fb`) | Ciclo aceito; fila e automação semanal continuam pesquisa |
+| Devorador | `01a0e952-8940-75d0-b32e-52078719adc0` | `/Users/lucasmarques/.codex/worktrees/81be/Ganesha` | `codex/devorador-research` | `5415072`, `0da1615`, `52032bf` (origens `c531c9e`, `52262547`, `11881fb`) | Retomar transcrições integrais de todos os vídeos prioritários; ampliar fontes quando útil |
 | Educador | `01a0e952-e209-7551-a613-65cca61cee14` | `/Users/lucasmarques/.codex/worktrees/30b2/Ganesha` | `codex/educador-curriculo` | `6764c41`, `d3c52af` (origens `0183dee`, `153c4d8`) | Entregar 10 traduções restantes e auditoria real |
 | Artista | `01a0e953-3680-72c0-ba23-20b892fc7a76` | `/Users/lucasmarques/.codex/worktrees/e20b/Ganesha` | `codex/artista-experiencia` | `aeaf86e` (origem `e915746`) | Revisar app real e entregar QA visual |
 | Construtor | `01a0e953-a4c9-7e91-a92a-bf6d3f379944` | `/Users/lucasmarques/.codex/worktrees/dbf4/Ganesha` | `codex/construtor-app` | — | Entregar commit/build estável 3101, testes e recuperação |
@@ -23,6 +23,7 @@ Atualizado em 2026-09-28. Estado: contrato v1 harmonizado; especialistas impleme
 - D007: `contracts/course.ts` é canônico; Construtor pode manter view model interno e adaptar. Educador aceitou o formato e suas adições em Step foram incorporadas.
 - D008: `/course/[locale]` demonstração; `/learn/[locale]` protegida e fail-closed. Acesso real depende do colega.
 - D009: 5 aulas/35 telas é proposta inicial da trilha de sites; aplicativos e automações aparecem como extensões planejadas. Apenas L01 será implementada primeiro.
+- D010: por orientação explícita do usuário, obter transcrições de todos os vídeos das fontes prioritárias, com inventário completo e cobertura por item; fontes adicionais na internet estão autorizadas. Ver `RESEARCH_DIRECTIVE.md`. Devorador recebeu a instrução de retomar a prioridade de transcrições; instrução persistida na automação semanal existente.
 
 ## Dependências externas
 
@@ -55,5 +56,5 @@ pt-BR da L01 integrado e auditado: 112/112 chaves presentes, sem mensagens pende
 - Construtor envia hash do aplicativo, evidências de testes e URL 3101 estável ao Diretor. O Diretor integra e repete o percurso completo.
 - Educador envia os 10 catálogos restantes, atualização ready/preview e relatório; o Diretor executa auditoria real das 11 línguas.
 - Artista envia `design/QA.md` com evidências visuais e achados do aplicativo; alterações funcionais seguem com Construtor.
-- Devorador concluiu o lote inicial; sua fila prioriza publicação pública e primeira automação manual. A automação existente continua na sexta-feira.
+- Devorador concluiu o lote inicial; o usuário agora priorizou transcrições de todos os vídeos das fontes indicadas, com pesquisa complementar autorizada. Foi instruído a retomar imediatamente e reordenar sua fila; a automação existente foi atualizada e continua na sexta-feira.
 - Nenhuma implantação pública ou integração de autenticação/pagamento foi declarada concluída.
