@@ -1,5 +1,5 @@
 .git
-.next
+.next*
 node_modules
 .pnpm-store
 .env*
@@ -8,6 +8,7 @@ node_modules
 .codex
 coordination
 content/research
+content/curriculum/v0.3.0
 design/reference
 test-results
 artifacts
