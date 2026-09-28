@@ -1,5 +1,19 @@
 # Status das entregas
 
+## Checkpoint atual — 28/09/2026, 21:07 UTC
+
+Beta 0.2.0 validada e enviada ao GitHub em `2ac2fe8`: quatro aulas, 24 etapas, 12 práticas, oito verificações e 11 idiomas. 20 testes, build/TypeScript e paridade de conteúdo aprovados. Artista aprovou o fluxo completo, celular e ajuste RTL final.
+
+Serviço público encontrado e verificado: https://ganesha-classroom.vercel.app/classroom . Encaminhamento verificado em https://ganesha-devops.vercel.app/classroom . Vercel informa domínios válidos; teste direto de iganesha.online limitado por confiança TLS no proxy corporativo. Operador da frente de Manuel publicou o serviço; Lucas autorizou reutilizar. Detalhes, evidências e pendências: `PRODUCTION_RELEASE.md`.
+
+Slack: bot Diretor — Produto instalado e ativo, publicações somente por marcos. **Proibido enviar qualquer mensagem usando a conta pessoal de Lucas.** Último alinhamento de release publicado pelo bot em `1790629488.257999`.
+
+Próximo incremento 0.3.0: Educador escreve 12 aulas/120 etapas, Artista revisa e Construtor prepara compatibilidade sem substituir 0.2; meta 22:00 UTC. Fontes pt/en e primeiras revisões em andamento, localização em paralelo. Devorador continua todo o corpus prioritário por instrução direta mais recente recebida na sua tarefa; relevância ordena a aquisição/estudo, sem declarar cobertura integral. Lote `976042f` ainda não integrado pelo Diretor.
+
+## Histórico anterior ao sprint público
+
+Os registros abaixo preservam decisões e evidências anteriores. Contagens e bloqueios antigos são históricos; o checkpoint acima e `PRODUCTION_RELEASE.md` definem o estado atual.
+
 Atualizado em 2026-09-28. Estado: novo aplicativo baseado no Ganesha Desktop integrado, revisado visualmente e link de teste entregue ao usuário. L01 permanece rascunho; demonstração explicitamente habilitada nos 11 idiomas. Pesquisa focal e primeiros estudos textuais aceitos com escopo delimitado. Bot Slack preparado; instalação aguarda confirmação exigida pela revisão automática.
 
 ## Registro de frentes

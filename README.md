@@ -13,7 +13,7 @@ pnpm install --store-dir .pnpm-store
 pnpm dev --port 3100
 ```
 
-Abra `http://127.0.0.1:3100/course/pt-BR`. A raiz retoma o idioma preferido. Para produção local:
+Abra `http://127.0.0.1:3100/classroom/pt-BR`. `/classroom` retoma o idioma preferido. Para produção local:
 
 ```sh
 pnpm build
@@ -24,10 +24,10 @@ No ambiente Codex deste hackathon, Node está em `/Users/lucasmarques/.cache/cod
 
 ## O que está implementado
 
-- `/course/[locale]`: demonstração pública identificada; uma aula com sete telas, quatro práticas e duas verificações independentes. Nenhuma aula planejada aparece como disponível.
+- `/classroom/[locale]`: beta pública 0.2.0 com quatro aulas, 24 etapas, 12 práticas e oito verificações independentes: fundamentos, site, aplicativo e automação. `/course/[locale]` mantém uma demonstração reduzida. Nenhuma aula planejada aparece como disponível.
 - `src/lib/demo-config.ts` contém a lista explícita de aulas da prévia. Ela permite testar L01 enquanto o conteúdo está em revisão e sem liberação pedagógica. O adaptador canônico, sem essa opção, respeita `releasedLessonIds`; a rota protegida não usa essa configuração. Navegabilidade da prévia não equivale a curso liberado.
 - Conteúdo do Educador em `content/curriculum/course.json` e `content/locales/*.json`, adaptado sem renomear IDs. Objetivos, ações, resultados, dicas, rubricas, feedback e variantes Claude/Codex preservados.
-- 11 idiomas: pt-BR, en, es, fr, de, ja, hi, id, ar, ko, zh-CN. 112 mensagens pedagógicas por idioma, 59 mensagens de interface/estado; tradução produzida, revisão humana pendente. Sem fallback silencioso. `lang`/`dir`, árabe RTL, fontes locais Figtree/Noto Arabic/Devanagari e stacks CJK, números localizados e código LTR.
+- 11 idiomas: pt-BR, en, es, fr, de, ja, hi, id, ar, ko, zh-CN. 83 chaves pedagógicas por idioma na beta 0.2.0; revisão humana das traduções pendente. Sem fallback silencioso. `lang`/`dir`, árabe RTL, fontes locais Figtree/Noto Arabic/Devanagari e stacks CJK, números localizados e código LTR.
 - Progresso e tentativas por versão de curso e ferramenta, somente no navegador. Troca de idioma preserva respostas escritas pelo aluno. Etapas práticas exigem texto e autorrelato da rubrica; quizzes usam IDs, sem busca de palavras em um idioma.
 - Restauração valida IDs/opções/rubricas/tentativas, deriva conclusão e informa recuperação. Dados inválidos são copiados para uma chave `:recovery:<timestamp>` antes de sobrescrita. Falha de backup bloqueia a sobrescrita; falha de armazenamento aparece na interface.
 - Abas sincronizam via evento `storage`; rascunho mais recente por etapa vence e tentativas são unidas, ordenadas e deduplicadas (máximo 50 por etapa/ferramenta). Cursor da aba ativa é preservado. Não é edição colaborativa.
@@ -45,6 +45,7 @@ O colega de cadastro/pagamentos precisa implementar a identidade e o entitlement
 pnpm typecheck
 pnpm test
 pnpm check:content
+pnpm check:content -- --classroom
 pnpm build
 ```
 
@@ -53,3 +54,9 @@ Os testes cobrem o acesso fechado, erros de tradução, requisitos pedagógicos,
 Build e validação desta prévia não certificam estudo integral das fontes nem liberação pedagógica. A revisão de conteúdo é responsabilidade da frente editorial; o aviso de conteúdo e traduções em revisão permanece visível na experiência.
 
 Veja `docs/APP_QA.md` para resultados e limitações reais da entrega. O acesso externo da aula é registrado pelo aluno; o aplicativo não atesta a execução. `localStorage` não é garantia de preservação permanente: limpeza do navegador remove esses dados.
+
+## Publicação
+
+A beta está disponível em `https://ganesha-classroom.vercel.app/classroom`. O projeto existente do domínio encaminha `/classroom` para esse serviço, preservando a landing e os serviços Slack. O destino solicitado é `https://iganesha.online/classroom`; a validação direta desse hostname no ambiente Codex está limitada por um erro de confiança no certificado do proxy corporativo. Configuração dos domínios consta como válida na Vercel, e o encaminhamento foi verificado em `https://ganesha-devops.vercel.app/classroom`.
+
+Contrato operacional: `docs/CLASSROOM_DEPLOY.md`. Evidências e limites da publicação: `coordination/PRODUCTION_RELEASE.md`. O pacote 0.3.0, com 12 aulas e 120 etapas, está em autoria e revisão separadas; ainda não substitui esta beta.
