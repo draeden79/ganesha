@@ -1,0 +1,78 @@
+{
+  "batch_id": "20260928T215646094141Z",
+  "collector_code_changed": false,
+  "cookies_proxies_or_identity_bypass_used": false,
+  "cooldown_basis": "24 hours from local review detection/recording; all network acquisition is stopped.",
+  "cooldown_until": "2026-09-29T22:06:47.635677+00:00",
+  "corrected_access_classification": "access_challenge",
+  "detection_action": "SIGINT delivered to the single collector process; process exited 130 in enforce_attempt_pause, between IDs.",
+  "evidence_path": "acquisition/attempts.jsonl",
+  "evidence_selector": {
+    "batch_id": "20260928T215646094141Z",
+    "finished_at": "2026-09-28T22:02:20.933462+00:00",
+    "video_id": "QjOhG1tadI4"
+  },
+  "files_retained_for_audit": true,
+  "handling_gap": "yt-dlp warning did not raise; collector classified empty captions as no_accessible_original_track and continued. No attempt row was rewritten.",
+  "network_process_stopped": true,
+  "next_action": "Do not resume acquisition before cooldown expires. Fix warning-level access-challenge/rate-limit handling before any next network batch. Original incorrect 7-day no-track retry remains in append-only attempts and must be superseded explicitly by this access review when retry selection is corrected.",
+  "original_attempt_result": "no_accessible_original_track",
+  "post_challenge_attempts": [
+    {
+      "finished_at": "2026-09-28T22:02:42.533872+00:00",
+      "result": "exported_track",
+      "started_at": "2026-09-28T22:02:40.945387+00:00",
+      "video_id": "QnABGJ8cy_U"
+    },
+    {
+      "finished_at": "2026-09-28T22:03:03.899062+00:00",
+      "result": "exported_track",
+      "started_at": "2026-09-28T22:03:02.541071+00:00",
+      "video_id": "RPoquiZydYc"
+    },
+    {
+      "finished_at": "2026-09-28T22:03:25.038792+00:00",
+      "result": "exported_track",
+      "started_at": "2026-09-28T22:03:23.908614+00:00",
+      "video_id": "SD5E3xdEXuQ"
+    },
+    {
+      "finished_at": "2026-09-28T22:03:46.223655+00:00",
+      "result": "exported_track",
+      "started_at": "2026-09-28T22:03:45.045737+00:00",
+      "video_id": "T0_Y4oCjLxw"
+    },
+    {
+      "finished_at": "2026-09-28T22:04:07.430940+00:00",
+      "result": "exported_track",
+      "started_at": "2026-09-28T22:04:06.228522+00:00",
+      "video_id": "TL527yTpxlk"
+    },
+    {
+      "finished_at": "2026-09-28T22:04:28.466766+00:00",
+      "result": "exported_track",
+      "started_at": "2026-09-28T22:04:27.435349+00:00",
+      "video_id": "Te2IZCVjtF4"
+    },
+    {
+      "finished_at": "2026-09-28T22:04:49.622000+00:00",
+      "result": "exported_track",
+      "started_at": "2026-09-28T22:04:48.471166+00:00",
+      "video_id": "To9lZhP7084"
+    },
+    {
+      "finished_at": "2026-09-28T22:05:10.913867+00:00",
+      "result": "exported_track",
+      "started_at": "2026-09-28T22:05:09.628578+00:00",
+      "video_id": "TzdEpgONurw"
+    }
+  ],
+  "post_challenge_successes": 8,
+  "reviewed_at": "2026-09-28T22:06:47.635677+00:00",
+  "schema_version": 1,
+  "scope": "exhaustive_user_directive_2026_09_28",
+  "source_attempt_finished_at": "2026-09-28T22:02:20.933462+00:00",
+  "source_attempt_started_at": "2026-09-28T21:57:59.688582+00:00",
+  "video_id": "QjOhG1tadI4",
+  "warning_excerpt": "Sign in to confirm you’re not a bot."
+}

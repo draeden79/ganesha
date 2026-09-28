@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "artifact_path_base": "content/research",
-  "updated_at": "2026-09-28T21:36:40.588952+00:00",
+  "updated_at": "2026-09-28T21:44:56.214162+00:00",
   "studies": [
     {
       "id": "backfill-v04-uUEa6K-FLB8",
@@ -247,7 +247,132 @@
         "Current client/MCP/skill/API setup and access",
         "Mobile, keyboard, visitor without session and republishing"
       ]
+    },
+    {
+      "id": "backfill-v04-jWlAvdR8HG0",
+      "video_id": "jWlAvdR8HG0",
+      "title": "Full Tutorial: 20 Tips to Master Claude Code in 35 Minutes (Build a Real App)",
+      "url": "https://www.youtube.com/watch?v=jWlAvdR8HG0",
+      "published_at": "2025-09-24",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-04/jWlAvdR8HG0.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-04/jWlAvdR8HG0.md",
+        "bytes": 15502,
+        "sha256": "5b4b06be7528f67802887009e1f726a024bbf0e41fb8226b6f89be4d751ae367"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.jWlAvdR8HG0.en.73ecdb66eeb1.txt",
+        "bytes": 61148,
+        "sha256": "73ecdb66eeb116351c897dc603c18fc05ec0fc4869b88663edc5cbe1d27708cf",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 885,
+        "first_cue_start_seconds": 0.56,
+        "last_cue_start_seconds": 2100.32,
+        "last_cue_end_seconds": 2104.24,
+        "track_export_complete": true,
+        "logical_line_count": 885,
+        "sequential_read_ranges": [
+          [
+            1,
+            230
+          ],
+          [
+            231,
+            460
+          ],
+          [
+            461,
+            690
+          ],
+          [
+            691,
+            885
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.jWlAvdR8HG0.en.14c65333adea.json3",
+        "bytes": 653449,
+        "sha256": "14c65333adeae3ede5251bbc90fa518841f1c6709dfe0a96b1c9c6ee03de0215"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v04-jWlAvdR8HG0-blank-error.png",
+          "bytes": 94321,
+          "sha256": "029e0dd2c091d1ac88df7a1e42d24e3c51d4f081d0e971ad0fb2c8fd2dd00f2a",
+          "player_seconds": 990,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Blank localhost page and console export error for SearchFormData; correction diff not reviewed."
+        },
+        {
+          "path": "studies/local/backfill-v04-jWlAvdR8HG0-dummy-results.png",
+          "bytes": 108902,
+          "sha256": "cddd8a8b2e80439539a5128143af108559d9c8fd54b21fb32d34686372aca7c5",
+          "player_seconds": 1045,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Recovered interface with populated search and dummy recommendations from milestone one."
+        },
+        {
+          "path": "studies/local/backfill-v04-jWlAvdR8HG0-generic-results.png",
+          "bytes": 117311,
+          "sha256": "d851086ebccd6eeae0b5678a07c353fef3f8507ea9a069bbe60c069e322eca57",
+          "player_seconds": 1560,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "After API integration, results remain generic attractions instead of requested current events."
+        },
+        {
+          "path": "studies/local/backfill-v04-jWlAvdR8HG0-missing-web-search.png",
+          "bytes": 144355,
+          "sha256": "d5d465940524de9f2e172de73c6f1bcd80d75aa3b04a9478291768716e936c82",
+          "player_seconds": 1620,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Checked task list coexists with agent diagnosis that web search tool is not enabled."
+        },
+        {
+          "path": "studies/local/backfill-v04-jWlAvdR8HG0-la-results.png",
+          "bytes": 103106,
+          "sha256": "7af960094cd9ac40c45c1298192fad2930d7cc7f52fc96118d707970b3503b6b",
+          "player_seconds": 1745,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Los Angeles inputs and populated recommendation list after off-camera rate-limit debugging."
+        },
+        {
+          "path": "studies/local/backfill-v04-jWlAvdR8HG0-sf-retest.png",
+          "bytes": 107223,
+          "sha256": "63636f1df83670f37c398735772562a17b45080aade483bfa6a45c7733800b25",
+          "player_seconds": 1780,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "San Francisco inputs and different populated results; dates, distances and suitability not independently verified."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 2103,
+      "duration_seconds_observed_player": 2103,
+      "timing_note": "Automatic captions span 0.560–2104.240s, 1.240s beyond duration; complete speech and caption accuracy unverified.",
+      "source_or_practice_executed": false,
+      "current_interfaces_verified": false,
+      "desktop_cli_parity_assumed": false,
+      "sufficiency": "Functional local form/API app with visible recovery, unmet web-search requirement and city retest; off-camera rate-limit correction, no hosting or persistence and final five tips not demonstrated.",
+      "pending": [
+        "Continuous audiovisual review and correction diff inspection",
+        "Complete API rate-limit reproduction and error/validation/regression tests",
+        "Current client/model/API setup; independent verification of events, dates, distances and ages",
+        "Public deployment and persistence are not implemented parts of this demonstration"
+      ]
     }
   ],
-  "round_complete": false
+  "round_complete": true
 }

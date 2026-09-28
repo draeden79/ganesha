@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "studies": [
+    {
+      "id": "academy-platform-choosing-the-right-model",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-platform-101/choosing-the-right-model",
+      "video_id": "UAeTSBsK71A",
+      "title": "Choosing the right model",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-14/choosing-the-right-model.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac14-models.txt",
+          "bytes": 4864,
+          "sha256": "5c2883ee2fcabddd45134499283c4bcd4bbf31cc3018848575d4d96a6af8d00f",
+          "kind": "text",
+          "line_count": 78,
+          "read_lines": [
+            [
+              1,
+              78
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-14/choosing-the-right-model.md",
+        "bytes": 5053,
+        "sha256": "f08736db7c874750a8671d76b13926bf35a31aa27c02a1bf7fbd268318fc3ae2",
+        "kind": "original_study",
+        "line_count": 43,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac14-models-1.png",
+          "bytes": 39345,
+          "sha256": "5c785a49b9ef2360f6ef7fe28606ea935c368b47b3c9b8ebb412cc2aab409c2b",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac14-models-2.png",
+          "bytes": 107195,
+          "sha256": "324a512d080eb7b2da458502944b5d8795b6e120ad3336b63f8c9eb3d5670ca3",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "complements": [],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida."
+    },
+    {
+      "id": "academy-platform-the-agent-loop-explained",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-platform-101/the-agent-loop-explained",
+      "video_id": "tBIdyIoCQVU",
+      "title": "The agent loop explained",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-14/the-agent-loop-explained.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac14-loop.txt",
+          "bytes": 5667,
+          "sha256": "f6296c4aba58a7887a339cee821091358386e936061786ede0b209ca93e8e511",
+          "kind": "text",
+          "line_count": 139,
+          "read_lines": [
+            [
+              1,
+              139
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-14/the-agent-loop-explained.md",
+        "bytes": 5447,
+        "sha256": "b9ba9a5087905e4f9a92fb3ebc3f00a70ee39b0af35cb022bc2054522ecee5bb",
+        "kind": "original_study",
+        "line_count": 37,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac14-loop-1.png",
+          "bytes": 93771,
+          "sha256": "9a95132576c92df1509c168d153ca3834c9b09aa627aab1338cda2b7a68be959",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac14-loop-2.png",
+          "bytes": 49402,
+          "sha256": "b8f40ae9270d5803b2c2e15f87c164fde01c820a559871c64b17c45eee25203b",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac14-loop-3.png",
+          "bytes": 76242,
+          "sha256": "2dc9cf074458e37755a8e672cb081089d93b90627d2636baa9c5b61a17e673f5",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "complements": [
+        {
+          "url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons",
+          "read_scope": "Stop reason quick reference, truncation and empty end_turn",
+          "entire_source_read": false,
+          "method": "web search result from official documentation",
+          "observed_at": "2026-09-28"
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida."
+    }
+  ]
+}

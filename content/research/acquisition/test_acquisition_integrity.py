@@ -1,8 +1,12 @@
 """Focused offline tests: no yt-dlp import, network or real acquisitions."""
 import hashlib
+import io
 import json
+import sys
 import tempfile
+import types
 import unittest
+from contextlib import ExitStack, redirect_stdout
 from datetime import datetime, timezone
 from pathlib import Path
 from unittest.mock import patch
@@ -105,6 +109,138 @@ class IntegrityTests(unittest.TestCase):
             snapshot.write_text('{"video_ids":["c"]}')
             with self.assertRaises(ValueError):
                 collector.archive_historical_checkpoint(bound)
+
+    def logger_scenario(self, message, level, outcome, generic_after_stop=False):
+        """Run the real queue/acquire code against a fully local fake extractor."""
+        root = self.root / ("scenario-" + str(len(list(self.root.iterdir()))))
+        here = root / "acquisition"
+        here.mkdir(parents=True)
+        (root / "transcripts").mkdir()
+        (root / "transcripts/manifest.json").write_text('{"videos": []}')
+        events, states_inside_extractor, options = [], [], []
+        state_path = here / "state.json"
+        rows = [{"id": name, "url": "fixture:" + name, "title": "Tutorial", "duration_seconds": 180, "source_ids": ["fixture"]}
+                for name in ("first", "second")]
+
+        class FakeYoutubeDL:
+            def __init__(self, opts):
+                self.logger = opts["logger"]
+                options.append(opts)
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+            def extract_info(self, url, download=False):
+                events.append(("extract", url))
+                try:
+                    if generic_after_stop:
+                        # Even an outer layer replacing the control signal with
+                        # an unrelated error must not erase the original block.
+                        try:
+                            getattr(self.logger, level)(message)
+                        except collector.AccessStopped:
+                            raise RuntimeError("generic metadata extraction failure")
+                    else:
+                        try:
+                            getattr(self.logger, level)(message)
+                        except Exception:
+                            events.append(("fallback_client", url))
+                    events.append(("continued_after_log", url))
+                    return {"id": url.split(":")[1], "title": "Local fixture", "duration": 1,
+                            "subtitles": {"en": [{"ext": "json3", "url": "fixture:caption"}]} if outcome == "success" else {}}
+                finally:
+                    states_inside_extractor.append(json.loads(state_path.read_text()))
+
+            def urlopen(self, url):
+                events.append(("urlopen", url))
+                return io.BytesIO(b'{"events":[{"tStartMs":0,"dDurationMs":1000,"segs":[{"utf8":"fixture"}]}]}')
+
+        fake = types.ModuleType("yt_dlp")
+        fake.YoutubeDL = FakeYoutubeDL
+        version = types.ModuleType("yt_dlp.version")
+        version.__version__ = "offline-fixture"
+        locations = {"ROOT": root, "HERE": here, "ARTIFACTS": root / "transcripts/local",
+                     "MANIFEST": here / "manifest.jsonl", "ATTEMPTS": here / "attempts.jsonl", "STATE": state_path}
+        with ExitStack() as stack:
+            for name, value in locations.items():
+                stack.enter_context(patch.object(collector, name, value))
+            stack.enter_context(patch.dict(sys.modules, {"yt_dlp": fake, "yt_dlp.version": version}))
+            stack.enter_context(patch.object(sys, "argv", ["collect_tracks.py", "--historical", "--max-videos", "2"]))
+            stack.enter_context(patch.object(collector, "build_queue", return_value=rows))
+            stack.enter_context(patch.object(collector, "enforce_attempt_pause"))
+            exports = stack.enter_context(patch.object(collector, "artifact", wraps=collector.artifact))
+            stack.enter_context(redirect_stdout(io.StringIO()))
+            collector.main()
+            export_count = exports.call_count
+        return {"events": events, "states_inside_extractor": states_inside_extractor,
+                "state": json.loads(state_path.read_text()), "options": options,
+                "attempts": collector.read_lines(here / "attempts.jsonl"),
+                "manifest": collector.read_lines(here / "manifest.jsonl"),
+                "export_count": export_count,
+                "checkpoint": json.loads((here / "historical-checkpoint.json").read_text())}
+
+    def assert_logger_stops(self, result, classification, delay):
+        self.assertEqual(result["events"], [("extract", "fixture:first")])
+        self.assertEqual(result["export_count"], 0)
+        self.assertEqual(result["manifest"], [])
+        self.assertEqual(len(result["attempts"]), 1)
+        attempt = result["attempts"][0]
+        self.assertEqual(attempt["result"], classification)
+        self.assertEqual(result["checkpoint"]["attempted_video_ids"], ["first"])
+        self.assertEqual(result["checkpoint"]["new_exported_video_ids"], [])
+        self.assertEqual(result["state"]["status"], "blocked_by_" + classification)
+        # This state is read inside extract_info before it unwinds to acquire/main.
+        early = result["states_inside_extractor"][0]
+        self.assertEqual(early["status"], "blocked_by_" + classification)
+        self.assertEqual(early["cooldown_until"], result["state"]["cooldown_until"])
+        duration = (datetime.fromisoformat(early["cooldown_until"]) - datetime.fromisoformat(early["stopped_at"])).total_seconds()
+        self.assertAlmostEqual(duration, delay, delta=1)
+        self.assertEqual(attempt["next_retry_at"], early["cooldown_until"])
+        self.assertEqual(result["options"][0]["retries"], 0)
+        self.assertEqual(result["options"][0]["extractor_retries"], 0)
+
+    def test_warning_challenge_stops_before_success_or_no_track(self):
+        for outcome in ("success", "no_track"):
+            with self.subTest(outcome=outcome):
+                result = self.logger_scenario("Sign in to confirm you’re not a bot.", "warning", outcome)
+                self.assert_logger_stops(result, "access_challenge", 86400)
+
+    def test_error_challenge_stops_before_success_or_no_track(self):
+        for outcome in ("success", "no_track"):
+            with self.subTest(outcome=outcome):
+                result = self.logger_scenario("Sign in to confirm you’re not a bot.", "error", outcome)
+                self.assert_logger_stops(result, "access_challenge", 86400)
+
+    def test_warning_429_stops_before_success_or_no_track(self):
+        for outcome in ("success", "no_track"):
+            with self.subTest(outcome=outcome):
+                result = self.logger_scenario("HTTP Error 429: Too Many Requests", "warning", outcome)
+                self.assert_logger_stops(result, "rate_limited", 3600)
+
+    def test_error_429_stops_before_success_or_no_track(self):
+        for outcome in ("success", "no_track"):
+            with self.subTest(outcome=outcome):
+                result = self.logger_scenario("HTTP Error 429: Too Many Requests", "error", outcome)
+                self.assert_logger_stops(result, "rate_limited", 3600)
+
+    def test_challenge_precedes_later_generic_failure(self):
+        for level in ("warning", "error"):
+            with self.subTest(level=level):
+                result = self.logger_scenario("Sign in to confirm you’re not a bot.", level, "success", generic_after_stop=True)
+                self.assert_logger_stops(result, "access_challenge", 86400)
+                self.assertIn("not a bot", result["attempts"][0]["error"])
+                self.assertNotIn("generic", result["attempts"][0]["error"])
+
+    def test_nonblocking_warning_keeps_normal_flow(self):
+        result = self.logger_scenario("Caption timing may overlap.", "warning", "success")
+        self.assertEqual([event for event in result["events"] if event[0] == "extract"],
+                         [("extract", "fixture:first"), ("extract", "fixture:second")])
+        self.assertEqual(result["export_count"], 4)
+        self.assertEqual(len(result["manifest"]), 2)
+        self.assertEqual(result["state"]["status"], "bounded_batch_finished")
 
 
 if __name__ == "__main__":

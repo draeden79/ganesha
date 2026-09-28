@@ -1,0 +1,413 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "scope": "articles-07: três artigos com texto integral estudado, dois integralmente analisados e um com vídeo pendente; um bloqueio pago preservado separadamente.",
+  "studies": [
+    {
+      "id": "article-peter-community-led-product-2021",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/community-led-product",
+      "title": "Why Community-Led Product Development Wins",
+      "author": "Peter Yang",
+      "published_at": "2021-06-10",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/peter-yang-newsletter.json",
+      "study_path": "studies/backfill/articles-07/peter-community-led-product.md",
+      "status": "full_source_analyzed",
+      "text_read_complete": true,
+      "full_source_analyzed": true,
+      "scope": "Corpo público completo e três imagens; posts sociais incorporados lidos no corpo, sem destinos externos ou comentários.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a07-community.txt",
+          "bytes": 9073,
+          "sha256": "b34fc9353febb7dfff5064f2e472a247647dddecc466f138252f254a5af3e540",
+          "line_count": 185,
+          "read_lines": [
+            [
+              1,
+              185
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a07-community.html",
+          "bytes": 229256,
+          "sha256": "38c818fa3e7ec7c7f1c70c24ecc08cdee744c09c9bb177b5f0e4cad5418121ac",
+          "line_count": 417,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a07-community-media.json",
+          "bytes": 4202,
+          "sha256": "ef1d4340099ec3d5521fc00a5b61db4f79a186cddb9599ed13a099f4fabce7fa",
+          "line_count": 79,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a07-community-acquisition.json",
+          "bytes": 391,
+          "sha256": "866ba5abd951a5445a17f8f498b9be77d542e6d2671a3201132fe5b55c54203f",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a07-community-figure-1.png",
+          "bytes": 50723,
+          "sha256": "5a37354fa1c540fa90cb1b998add62ceb0bf7a0c7ec6a782069e4f8eb82b8d10",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Capa editorial",
+          "method": "screenshot no navegador de imagem da fonte"
+        },
+        {
+          "path": "studies/local/backfill-a07-community-figure-2.png",
+          "bytes": 16519,
+          "sha256": "0788b3603c840fec721ec35250cf0f634beb1e4c91b5a6c2b2a6d9dfd98486fa",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Gráfico conceitual de ciclos ascendentes de melhoria ao longo do tempo; não contém dados medidos",
+          "method": "screenshot no navegador de imagem da fonte"
+        },
+        {
+          "path": "studies/local/backfill-a07-community-figure-3.png",
+          "bytes": 54621,
+          "sha256": "75108d14e78df82ea1e06593f205d01af432f012c4050ff0363a0c1f89de1527",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Fotografia de Alex Zhu no contexto do caso Musical.ly",
+          "method": "screenshot no navegador de imagem da fonte"
+        }
+      ],
+      "embedded_media_pending": [],
+      "not_reviewed": [
+        "comentários completos",
+        "links externos e livro citado",
+        "verificação independente dos relatos de adoção",
+        "estado atual dos canais e empresas mencionados em 2021"
+      ],
+      "practice_checks": [
+        "rastrear cada mudança a uma necessidade sem generalização indevida",
+        "revisar plano e retorno após feedback contraditório, incluindo cliente novo"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-07/peter-community-led-product.md",
+        "bytes": 8357,
+        "sha256": "7d24e7eb024110286faa4afe7d73a141ee3bc8969f1de2cec726fbfc76262ea4",
+        "line_count": 56,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida."
+    },
+    {
+      "id": "article-peter-product-skills-2023",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/replace-product-sense-with-skills",
+      "title": "Let's Replace \"Product Sense\" With the Skills That Actually Matter",
+      "author": "Peter Yang",
+      "published_at": "2023-08-30",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/peter-yang-newsletter.json",
+      "study_path": "studies/backfill/articles-07/peter-product-skills.md",
+      "status": "full_source_analyzed",
+      "text_read_complete": true,
+      "full_source_analyzed": true,
+      "scope": "Corpo público completo e quatro imagens, incluindo trecho de livro presente na figura; links e livros completos excluídos.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a07-skills.txt",
+          "bytes": 6566,
+          "sha256": "fbca9130ea197d43c4518fabec08f514464c081c5bcdca74adff5645fb5a283c",
+          "line_count": 148,
+          "read_lines": [
+            [
+              1,
+              148
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a07-skills-media.json",
+          "bytes": 3815,
+          "sha256": "e624425330552ad1bc7b086004112882f9fbf48d72e3a0a78b3596a6e6ce2658",
+          "line_count": 72,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a07-skills-acquisition.json",
+          "bytes": 350,
+          "sha256": "55560dc0a3023017f218529d22f6c1cc6967b4ea30ece8d917e07cacf3531d73",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a07-skills-figure-1.png",
+          "bytes": 56581,
+          "sha256": "45affb45077391f189cf370b439236b0e1bd2f0ae2cbf00c58858452a087fca9",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Capa editorial",
+          "method": "screenshot no navegador de imagem da fonte"
+        },
+        {
+          "path": "studies/local/backfill-a07-skills-figure-2.png",
+          "bytes": 91489,
+          "sha256": "cb3c738dc8018ee7f18069dde0d38ed84d2a831c796d0bf2b65a6f8634ea6f2a",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Trecho de livro atribuído a Tony Fadell sobre empatia e uso como iniciante; livro completo não estudado",
+          "method": "screenshot no navegador de imagem da fonte"
+        },
+        {
+          "path": "studies/local/backfill-a07-skills-figure-3.png",
+          "bytes": 21604,
+          "sha256": "ecd532004599ab62af0acaf6b686915885053201e9d763d6330c092b9485454a",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Diagrama de divergência e convergência de alternativas",
+          "method": "screenshot no navegador de imagem da fonte"
+        },
+        {
+          "path": "studies/local/backfill-a07-skills-figure-4.png",
+          "bytes": 41515,
+          "sha256": "b0540f06ed8064b990b459d992de8182098b72adb876796c0195fa80d2a96194",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Diagrama com três competências sobrepostas",
+          "method": "screenshot no navegador de imagem da fonte"
+        }
+      ],
+      "embedded_media_pending": [],
+      "not_reviewed": [
+        "destinos externos e livros completos",
+        "comentários completos",
+        "apuração do cancelamento relatado",
+        "validação quantitativa dos percentuais retóricos",
+        "execução de produto"
+      ],
+      "practice_checks": [
+        "conferir necessidade do usuário e viabilidade sem prometer operação não executada",
+        "revisar critérios de aceitação diante de nova restrição e repetir ambos os checks"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-07/peter-product-skills.md",
+        "bytes": 9444,
+        "sha256": "8baa117dd84442be6e6f5e60d8c16ef7089a4e968ff15f632fb75e2f1622f97b",
+        "line_count": 65,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida."
+    },
+    {
+      "id": "article-builder-flaky-integration-tests-2023",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/flaky-integration-tests",
+      "title": "Eliminating and Debugging Flaky Integration Tests",
+      "author": "Sami Jaber",
+      "published_at": "2023-03-01",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/builder-blog.json",
+      "study_path": "studies/backfill/articles-07/builder-flaky-integration-tests.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "scope": "Corpo completo, blocos de código e quatro imagens materiais; vídeo de Trace não acompanhado.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a07-flaky-tests.txt",
+          "bytes": 5126,
+          "sha256": "940e54cd155b1989c1ff3f2a747c45598fafa6cf1ea563833f9f13ed23289e7b",
+          "line_count": 129,
+          "read_lines": [
+            [
+              1,
+              129
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a07-flaky-tests.html",
+          "bytes": 247902,
+          "sha256": "4aee64d3aa248a33cc169f93434339c7d14022955e68f954c97f4d9ac9e5d232",
+          "line_count": 1382,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a07-flaky-tests-media.json",
+          "bytes": 2795,
+          "sha256": "d8139d1e066cd26658338cb80794917974b9516d82e85889d961fa06c862daef",
+          "line_count": 100,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a07-flaky-tests-acquisition.json",
+          "bytes": 336,
+          "sha256": "05098775a5d1414f4cb1ed3720d3aa56379ef1951dfaf6acd963407eaf56e27d",
+          "line_count": 9,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a07-flaky-tests-figure-1.png",
+          "bytes": 31017,
+          "sha256": "dc4a7129f4d6cd82dbacbc63bf19623cfe11183685ac6c399f45d64e6192ce32",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Capa com trace on e repeatEach 10; corpo usa 100 como outro exemplo",
+          "method": "screenshot no navegador de imagem da fonte"
+        },
+        {
+          "path": "studies/local/backfill-a07-flaky-tests-figure-2.png",
+          "bytes": 93019,
+          "sha256": "6f82368a8ed792be49ea2e49cc774638f61992476e016e827fb2d20fe856b432",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Console compara estilos de elemento desconectado, anexado e removido",
+          "method": "screenshot no navegador de imagem da fonte"
+        },
+        {
+          "path": "studies/local/backfill-a07-flaky-tests-figure-3.png",
+          "bytes": 40616,
+          "sha256": "4ffd4849c884fa9bb0fa72ab6a384c6593cd9ede12a1c5909d4dd0fd6f830524",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Alerta de no-floating-promises para chamada assíncrona sem await",
+          "method": "screenshot no navegador de imagem da fonte"
+        },
+        {
+          "path": "studies/local/backfill-a07-flaky-tests-figure-4.png",
+          "bytes": 37497,
+          "sha256": "5f4f12b3ca992bd12f22a5ea42d698292f1e714c5c94d7f85fe606891e46d4b3",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Relatório com cor esperada/recebida divergentes e acesso ao trace; não mostra correção ou reteste",
+          "method": "screenshot no navegador de imagem da fonte"
+        }
+      ],
+      "embedded_media_pending": [
+        "1 elemento video sem src/source observado, anunciado como demonstração do Trace report; não reproduzido ou baixado"
+      ],
+      "not_reviewed": [
+        "vídeo de Trace",
+        "documentação técnica externa atual",
+        "configuração de lint e projeto real",
+        "execução dos exemplos e reteste de correção",
+        "generalização para outros frameworks ou ambientes"
+      ],
+      "practice_checks": [
+        "distinguir ordem observada dos eventos e hipótese de causa",
+        "repetir sucesso com atrasos e erro sem falsa confirmação, registrando ambiente e contagem"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-07/builder-flaky-integration-tests.md",
+        "bytes": 10303,
+        "sha256": "37df79e8c31e93fc7ed8ce377f798375caf0c0ee806dec638a9ae621745b955d",
+        "line_count": 69,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida."
+    }
+  ],
+  "blocked_sources": [
+    {
+      "id": "blocked-peter-product-rituals-2023",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/rituals-of-great-product-teams",
+      "title": "Lane Shackleton (CPO Coda): 5 Proven Rituals to Level Up Your Product Team",
+      "published_at": "2023-08-23",
+      "accessed_at": "2026-09-28",
+      "status": "blocked_paywall",
+      "text_read_complete": false,
+      "full_source_analyzed": false,
+      "reason": "Corpo público termina durante a seção de decisões assíncronas; restante dos rituais e voz narrada exigem assinatura paga.",
+      "evidence": "Região Paywall visível e mensagem This post is for paid subscribers; voiceover desabilitado com exigência de upgrade.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a07-rituals-preview.txt",
+          "bytes": 7610,
+          "sha256": "d1184afa9d704ac9a3ff379ba0b2211a991e18a64940d6cb995ba2fe91f7a573",
+          "line_count": 171,
+          "read_lines": [
+            [
+              1,
+              171
+            ]
+          ],
+          "kind": "partial_text"
+        },
+        {
+          "path": "studies/local/backfill-a07-rituals.html",
+          "bytes": 205063,
+          "sha256": "686f45ed0d9d7cf82b13c4d1e697f3e2b11c45c658d60eca7e0bdfc5c2dc913a",
+          "line_count": 411,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a07-rituals-acquisition.json",
+          "bytes": 401,
+          "sha256": "aa310a35043e7ab3a4f6cbb9d1e617094b2e729871cc58c7707e0646410903dc",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a07-rituals-paywall.png",
+          "bytes": 56348,
+          "sha256": "93279793bbac5856b4cfbb128bf60c747b1697a63dd51c5dca5003b41f8e8c16",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Paywall renderizado após início da seção de two-way writeup",
+          "method": "screenshot no navegador de imagem da fonte"
+        }
+      ],
+      "next_action": "Manter bloqueio até acesso legítimo. A prévia, os templates externos e o outro artigo público não substituem a fonte integral."
+    }
+  ],
+  "round_deliverables_complete": true
+}

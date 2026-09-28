@@ -271,10 +271,43 @@ def classify_error(error):
     return "temporary_failure", None, 3600
 
 
+class AccessStopped(BaseException):
+    """Cancel extractor control flow without being caught as a retryable error."""
+
+
 def acquire(row, scope="explicit_curated_selection_only", batch_id=None):
     import yt_dlp
     from yt_dlp.version import __version__
     logs = []
+    access_stop = {}
+
+    def raise_if_access_stopped():
+        if access_stop:
+            raise AccessStopped(access_stop["error"])
+
+    def record_log(level, message):
+        message = str(message)
+        logs.append({"level": level, "message": message})
+        if not access_stop:
+            result, http, delay = classify_error(message)
+            if result in ("rate_limited", "access_challenge"):
+                detected_at = now()
+                retry_at = (datetime.now(timezone.utc) + timedelta(seconds=delay)).isoformat()
+                previous = json.loads(STATE.read_text()) if STATE.exists() else {}
+                if previous.get("cooldown_until") and datetime.fromisoformat(previous["cooldown_until"]) > datetime.fromisoformat(retry_at):
+                    retry_at = previous["cooldown_until"]
+                access_stop.update(result=result, error=str(message), http_status=http,
+                                   next_retry_at=retry_at, block_trigger="logger_" + level,
+                                   next_action="Resume only after recorded cooldown; retain the same anonymous method. No cookies/proxies/identity workarounds.")
+                # Persist the stop before control returns to any extractor code.
+                write_json(STATE, {"scope": scope, "status": "blocked_by_" + result,
+                                  "batch_id": batch_id, "stopped_at": detected_at,
+                                  "reason": result, "video_id": row["id"],
+                                  "cooldown_until": retry_at, "block_trigger": "logger_" + level,
+                                  "policy": "Stop batch immediately. Resume after cooldown; no cookies/proxies/identity switching."})
+        # BaseException deliberately bypasses normal extractor Exception/retry
+        # handlers, so a warning cannot fall through to another client/request.
+        raise_if_access_stopped()
 
     class Logger:
         def debug(self, msg):
@@ -282,9 +315,9 @@ def acquire(row, scope="explicit_curated_selection_only", batch_id=None):
         def info(self, msg):
             pass
         def warning(self, msg):
-            logs.append({"level": "warning", "message": msg})
+            record_log("warning", msg)
         def error(self, msg):
-            logs.append({"level": "error", "message": msg})
+            record_log("error", msg)
 
     attempt = {"video_id": row["id"], "url": row["url"], "source_ids": row["source_ids"],
                "scope": scope, "batch_id": batch_id,
@@ -297,6 +330,7 @@ def acquire(row, scope="explicit_curated_selection_only", batch_id=None):
                 "extractor_args": {"youtube": {"skip": ["hls", "dash", "translated_subs"]}}}
         with yt_dlp.YoutubeDL(opts) as ydl:
             info = ydl.extract_info(row["url"], download=False)
+            raise_if_access_stopped()
             selected = choose_track(info)
             available = {field: sorted((info.get(field) or {}).keys()) for field in ("subtitles", "automatic_captions")}
             meta = {k: info.get(k) for k in ("id", "title", "duration", "upload_date", "release_timestamp", "channel_id", "channel", "availability", "live_status", "language")}
@@ -309,7 +343,9 @@ def acquire(row, scope="explicit_curated_selection_only", batch_id=None):
             language, origin, track = selected
             with ydl.urlopen(track["url"]) as response:
                 data = response.read()
+            raise_if_access_stopped()
             cues = validate_json3(data)
+        raise_if_access_stopped()
         language = language.removesuffix("-orig")
         safe_lang = re.sub(r"[^A-Za-z0-9_-]", "_", language)
         timing = {"cue_count": len(cues), "first_cue_start_seconds": min(c[0] for c in cues),
@@ -342,11 +378,16 @@ def acquire(row, scope="explicit_curated_selection_only", batch_id=None):
         append(MANIFEST, record)
         attempt.update(result="exported_track", language=language, caption_origin=origin,
                        artifact_paths=[r["path"] for r in record["artifacts"]], cue_count=len(cues))
+    except AccessStopped:
+        attempt.update(access_stop)
     except Exception as exc:
-        result, http, delay = classify_error(exc)
-        attempt.update(result=result, error=str(exc), http_status=http,
-                       next_retry_at=(datetime.now(timezone.utc) + timedelta(seconds=delay)).isoformat(),
-                       next_action="Resume after recorded cooldown; retain same anonymous method. No cookies/proxies/identity workarounds.")
+        if access_stop:
+            attempt.update(access_stop)
+        else:
+            result, http, delay = classify_error(exc)
+            attempt.update(result=result, error=str(exc), http_status=http,
+                           next_retry_at=(datetime.now(timezone.utc) + timedelta(seconds=delay)).isoformat(),
+                           next_action="Resume after recorded cooldown; retain same anonymous method. No cookies/proxies/identity workarounds.")
     finally:
         attempt.update(finished_at=now(), log=logs)
         append(ATTEMPTS, attempt)

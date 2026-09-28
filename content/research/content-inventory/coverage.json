@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-09-28T21:44:00.641260+00:00",
-  "known_items": 5928,
+  "generated_at": "2026-09-28T22:14:58.030903+00:00",
+  "known_items": 5936,
   "by_kind": {
     "article_candidate": 692,
     "lesson_or_assessment": 303,
     "course_index": 10,
     "index_or_utility": 44,
-    "official_document": 9,
-    "video": 4870
+    "official_document": 10,
+    "video": 4877
   },
-  "items_with_study": 61,
-  "items_with_complete_text_read": 71,
-  "items_with_full_source_analysis": 9,
+  "items_with_study": 77,
+  "items_with_complete_text_read": 87,
+  "items_with_full_source_analysis": 13,
   "full_videos_watched": 0,
-  "access_issues": 15,
+  "access_issues": 18,
   "exhaustive_goal_active": true,
   "historical_denominator_verified": false,
   "scope_note": "Known URLs only. Page discovery includes indices/utility pages and article candidates; it does not prove complete archives, free access, complete source reading or complete audiovisual review."

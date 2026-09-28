@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "paths_relative_to": "content/research",
-  "scope": "articles-06: três páginas oficiais inéditas; entrega incremental.",
+  "scope": "articles-06: três páginas oficiais completas, com variantes e painéis pertinentes; entrega limitada concluída.",
   "skill_applied": "/Users/lucasmarques/.codex/skills/.system/openai-docs/SKILL.md",
   "studies": [
     {
@@ -137,8 +137,224 @@
         "kind": "original_study"
       },
       "rights": "Originais e captura locais gitignored; sem licença de republicação presumida."
+    },
+    {
+      "id": "official-codex-agents-md-2026",
+      "source_id": "openai-learn-codex",
+      "url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md",
+      "title": "Custom instructions with AGENTS.md",
+      "author": "OpenAI",
+      "published_at": null,
+      "source_updated_at": null,
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "resources.jsonl:res-codex-project-instructions",
+      "discovery_context": "URL já inventariada com estudo por excerto; nesta rodada leitura integral do corpo e árvores materiais.",
+      "study_path": "studies/backfill/articles-06/codex-agents-md.md",
+      "status": "full_source_analyzed",
+      "text_read_complete": true,
+      "full_source_analyzed": true,
+      "scope": "Página integral, exemplos CLI/TUI, seção GitHub review, diagnóstico e duas árvores de arquivos; não inclui referências externas ou execução operacional.",
+      "surfaces_read": [
+        "Documentação geral de instruções com exemplos CLI/TUI",
+        "Regras de code review no GitHub"
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a06-agents-md.txt",
+          "bytes": 7532,
+          "sha256": "529710f44d42ccf908974747a306c6bd71af1818b12cf159784af429d451e19a",
+          "line_count": 153,
+          "read_lines": [
+            [
+              1,
+              153
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a06-agents-md.html",
+          "bytes": 373673,
+          "sha256": "3386984ee7d2df0453d47d326363f00bfee824de0de11a36d8139c5012f007de",
+          "line_count": 2093,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a06-agents-md-media.json",
+          "bytes": 2,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "line_count": 1,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a06-agents-md-acquisition.json",
+          "bytes": 291,
+          "sha256": "eebdfcef6109d86e9675c8e7c754a7d5f30c611137cebe59451ccc68475bd991",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a06-agents-tree-1.png",
+          "bytes": 102834,
+          "sha256": "221ba31ccec21787509f1c7286e05c77e64aa182312299344be69d8949ee4f02",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Árvore com instruções na raiz e arquivo regular de payments ignorado na presença de override.",
+          "method": "screenshot da árvore renderizada na documentação"
+        },
+        {
+          "path": "studies/local/backfill-a06-agents-tree-2-expanded.png",
+          "bytes": 120529,
+          "sha256": "54571bfc5c457be89741c9e01612831d191ab2f2b1ec39ebf10c895dfbf73e09",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Árvore de fallback com TEAM_GUIDE e support expandido mostrando AGENTS.override.",
+          "method": "screenshot da árvore renderizada na documentação"
+        }
+      ],
+      "embedded_media_pending": [],
+      "not_reviewed": [
+        "links externos",
+        "execução CLI/TUI ou configuração do usuário",
+        "procedimento Desktop equivalente",
+        "operação cloud ou GitHub review"
+      ],
+      "practice_checks": [
+        "conferir origem e escopo das instruções carregadas",
+        "verificar efeito no plano e repetir checks após corrigir a omissão"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-06/codex-agents-md.md",
+        "bytes": 9856,
+        "sha256": "fcc51fba286123165b12114f206ee839ab6fbba63746f992589f8084f4b28c13",
+        "line_count": 61,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida."
+    },
+    {
+      "id": "official-codex-worktrees-2026",
+      "source_id": "openai-learn-codex",
+      "url": "https://learn.chatgpt.com/docs/environments/git-worktrees",
+      "title": "Worktrees",
+      "author": "OpenAI",
+      "published_at": null,
+      "source_updated_at": null,
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "studies/local/official-codex-app.dom.txt",
+      "discovery_context": "Referência oficial de worktrees já descoberta na documentação do app; URL confirmada pela busca oficial nesta rodada.",
+      "study_path": "studies/backfill/articles-06/codex-worktrees.md",
+      "status": "full_source_analyzed",
+      "text_read_complete": true,
+      "full_source_analyzed": true,
+      "scope": "Página integral incluindo painel sobre limitação de branches, três FAQ expandidas e duas figuras materiais; nenhum fluxo operacional executado.",
+      "surfaces_read": [
+        "Desktop: worktrees locais gerenciados e permanentes",
+        "Remote mobile como controle do computador conectado",
+        "Distinções de worktree remoto e Git worktree criado manualmente na CLI"
+      ],
+      "expanded_panels_read": [
+        "Why this limitation exists",
+        "Can I control where worktrees are created?",
+        "Can I move a chat between Local and Worktree?",
+        "What happens to chats if a worktree is deleted?"
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a06-worktrees.txt",
+          "bytes": 11770,
+          "sha256": "a08fc08f4fedd2968e7f8e5126593b705dac8dd420005ed67a9ecb9c50e3f4ce",
+          "line_count": 180,
+          "read_lines": [
+            [
+              1,
+              180
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a06-worktrees.html",
+          "bytes": 382587,
+          "sha256": "723385d6b93c986bd4f129cf32fa96b0b95cf996bd2bcaa9e8c79e73e0cc8799",
+          "line_count": 2144,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a06-worktrees-media.json",
+          "bytes": 445,
+          "sha256": "4887d420dd3e757685e8c7c419743af33ebd11e9abbfee02f915bddf2ec4c3db",
+          "line_count": 23,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a06-worktrees-acquisition.json",
+          "bytes": 285,
+          "sha256": "29b5635a9d152a9c26d481c88321df34715653c1cf65dd25a9a9e3711fce4e28",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a06-worktrees-branch.png",
+          "bytes": 119113,
+          "sha256": "2c85610962532620b4ba0b1bc58560b0e983385ae503da544f54cd4eb58baf3b",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Figura de Create branch com prefixo codex/ e contexto de trabalho no worktree.",
+          "method": "screenshot da figura renderizada na documentação"
+        },
+        {
+          "path": "studies/local/backfill-a06-worktrees-handoff.png",
+          "bytes": 123115,
+          "sha256": "3dd01d54ae088041a4f3e318195a5829d00514853e896a6211a30135d7060f62",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Figura de Hand off para Local, com descrição da operação e contexto documental.",
+          "method": "screenshot da figura renderizada na documentação"
+        }
+      ],
+      "embedded_media_pending": [],
+      "not_reviewed": [
+        "links externos",
+        "criação de worktree, branch e Handoff reais",
+        "preparação de ambiente e testes de produto",
+        "remoção e restauração de snapshots",
+        "configurações e arquivos do usuário"
+      ],
+      "practice_checks": [
+        "conferir origem, estado inicial e checkout usado pela prévia",
+        "observar mudança e regressão de contato, corrigir e repetir os dois checks"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-06/codex-worktrees.md",
+        "bytes": 11156,
+        "sha256": "55ca304696ece291fa477fc374a0acf45bb73c29b376aacc3e613e915e4109e1",
+        "line_count": 67,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida."
     }
   ],
   "blocked_sources": [],
-  "round_deliverables_complete": false
+  "round_deliverables_complete": true
 }

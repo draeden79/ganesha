@@ -1,23 +1,14 @@
 {
   "source_id": "claude-academy",
   "pending": [
-    "https://academy.claude.com/courses/claude-code-in-action/github-actions-and-code-review",
-    "https://academy.claude.com/courses/claude-code-in-action/plugins",
-    "https://academy.claude.com/courses/claude-code-in-action/trust-it-verifying-unsupervised-runs",
     "https://academy.claude.com/courses/claude-platform-101/building-with-claude-code",
     "https://academy.claude.com/courses/claude-platform-101/building-your-first-managed-agent",
     "https://academy.claude.com/courses/claude-platform-101/built-in-tools",
-    "https://academy.claude.com/courses/claude-platform-101/choosing-the-right-model",
     "https://academy.claude.com/courses/claude-platform-101/claude-platform-101-quiz",
     "https://academy.claude.com/courses/claude-platform-101/context-management",
     "https://academy.claude.com/courses/claude-platform-101/mcp",
     "https://academy.claude.com/courses/claude-platform-101/skills",
-    "https://academy.claude.com/courses/claude-platform-101/the-agent-loop-explained",
     "https://academy.claude.com/courses/claude-platform-101/what-are-managed-agents",
-    "https://academy.claude.com/courses/claude-platform-101/what-is-the-claude-platform",
-    "https://academy.claude.com/courses/claude-platform-101/what-is-thinking",
-    "https://academy.claude.com/courses/claude-platform-101/what-is-tool-use",
-    "https://academy.claude.com/courses/claude-platform-101/your-first-api-call",
     "https://academy.claude.com/courses/introduction-to-agent-skills/complete",
     "https://academy.claude.com/courses/introduction-to-agent-skills/configuration-and-multi-file-skills",
     "https://academy.claude.com/courses/introduction-to-agent-skills/creating-your-first-skill",
@@ -295,7 +286,16 @@
     "https://academy.claude.com/courses/claude-code-in-action/steering-long-sessions",
     "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows",
     "https://academy.claude.com/courses/claude-code-in-action/hooks",
-    "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless"
+    "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless",
+    "https://academy.claude.com/courses/claude-code-in-action/github-actions-and-code-review",
+    "https://academy.claude.com/courses/claude-code-in-action/plugins",
+    "https://academy.claude.com/courses/claude-code-in-action/trust-it-verifying-unsupervised-runs",
+    "https://academy.claude.com/courses/claude-platform-101/what-is-the-claude-platform",
+    "https://academy.claude.com/courses/claude-platform-101/your-first-api-call",
+    "https://academy.claude.com/courses/claude-platform-101/choosing-the-right-model",
+    "https://academy.claude.com/courses/claude-platform-101/the-agent-loop-explained",
+    "https://academy.claude.com/courses/claude-platform-101/what-is-tool-use",
+    "https://academy.claude.com/courses/claude-platform-101/what-is-thinking"
   ],
   "blocked": [
     {
@@ -307,6 +307,16 @@
       "url": "https://academy.claude.com/courses/claude-code-101/badge",
       "status": "blocked_authentication",
       "evidence_manifest": "studies/backfill/academy-07/manifest.json"
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/course-quiz",
+      "status": "blocked_authentication",
+      "evidence_manifest": "studies/backfill/academy-12/manifest.json"
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/badge",
+      "status": "blocked_authentication",
+      "evidence_manifest": "studies/backfill/academy-12/manifest.json"
     }
   ],
   "scope_note": "Public rendered lessons queued for complete corpus; acquisition does not prove reading or audiovisual coverage.",

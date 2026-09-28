@@ -1,0 +1,45 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-platform-101/what-is-tool-use",
+  "title": "What is tool use?",
+  "observed_at": "2026-09-28T22:08:48.409Z",
+  "method": "Browser rendered public article, text read separately",
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/Ao759wXbRc0?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "What is tool use?"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=Ao759wXbRc0",
+      "title": "Watch on YouTube\n"
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/what-is-tool-use#what-a-tool-is",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/what-is-tool-use#how-tools-are-defined",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/what-is-tool-use#multiple-tools-letting-claude-pick",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/what-is-tool-use#the-tool-runner-skip-the-boilerplate",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/what-is-tool-use#real-tools-wrap-your-existing-code",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/what-is-tool-use#recap",
+      "title": ""
+    }
+  ],
+  "artifact_path": "studies/local/backfill-ac15-tools.txt",
+  "transcript_label_observed": false
+}

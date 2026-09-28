@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "studies": [
+    {
+      "id": "academy-action-github-actions-and-code-review",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/github-actions-and-code-review",
+      "video_id": "nVGcWczH8fk",
+      "title": "GitHub Actions and Code Review",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-11/github-actions-and-code-review.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac11-github.txt",
+          "bytes": 6083,
+          "sha256": "10f05387e86a79c9b405ed14fac7f5cba439e469dd164b4bb376e46bd50a28d7",
+          "kind": "text",
+          "line_count": 90,
+          "read_lines": [
+            [
+              1,
+              90
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-11/github-actions-and-code-review.md",
+        "bytes": 5997,
+        "sha256": "1f57ab6a52e61a8ef7ef789cca9fc733c310c5f086c81f5c6bf98e4d23a9c5db",
+        "kind": "original_study",
+        "line_count": 37,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/github-actions",
+          "read_scope": "Quick setup, authentication inputs, execution controls",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/code-review",
+          "read_scope": "Organization roles, findings and local fixes/checkpoint limits",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida."
+    },
+    {
+      "id": "academy-action-plugins",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/plugins",
+      "video_id": "DJNaTOFIQPs",
+      "title": "Plugins",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-11/plugins.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac11-plugins.txt",
+          "bytes": 5904,
+          "sha256": "29b45d4404384c65a97df7bb1414b71a3c7894be6ec1b9705a06205c80db0b30",
+          "kind": "text",
+          "line_count": 103,
+          "read_lines": [
+            [
+              1,
+              103
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-11/plugins.md",
+        "bytes": 5739,
+        "sha256": "62f2572d471b6a90bb04d6d7e5c89ba192cf215e52e3a571a38de232ebc75e27",
+        "kind": "original_study",
+        "line_count": 37,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/plugins-reference",
+          "read_scope": "Optional manifest, names, settings and component paths",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida."
+    }
+  ]
+}

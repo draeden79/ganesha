@@ -1,0 +1,41 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-code-in-action/trust-it-verifying-unsupervised-runs",
+  "title": "Trust it: Verifying unsupervised runs",
+  "observed_at": "2026-09-28T21:47:18.683Z",
+  "method": "Browser rendered public article, text read separately",
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/sXonYL7kAoc?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "Trust it: Verifying unsupervised runs"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=sXonYL7kAoc",
+      "title": "Watch on YouTube\n"
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/trust-it-verifying-unsupervised-runs#keep-unattended-runs-in-auto-mode",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/trust-it-verifying-unsupervised-runs#start-with-the-diff-not-the-summary",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/trust-it-verifying-unsupervised-runs#turn-tests-into-a-gate-not-a-promise",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/trust-it-verifying-unsupervised-runs#get-a-cold-second-opinion",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/trust-it-verifying-unsupervised-runs#putting-it-together",
+      "title": ""
+    }
+  ],
+  "artifact_path": "studies/local/backfill-ac11-trust-refresh.txt",
+  "transcript_label_observed": false
+}

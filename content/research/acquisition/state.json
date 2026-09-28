@@ -1,10 +1,15 @@
 {
-  "batch_id": "20260928T212706416534Z",
-  "entire_corpus_complete": false,
-  "finished_at": "2026-09-28T21:37:26.177620+00:00",
-  "new_exported_videos": 30,
-  "next_queue_index": 94,
-  "next_video_id": "LRHvRJw_Djk",
+  "access_review_artifact": {
+    "bytes": 3263,
+    "path": "acquisition/access-reviews/20260928T215646094141Z.json",
+    "sha256": "bdfecf7562a01e949394f9698099f12f9a0da021d14d3c817ee960098826e7cb"
+  },
+  "batch_id": "20260928T215646094141Z",
+  "cooldown_until": "2026-09-29T22:06:47.635677+00:00",
+  "policy": "Stop all network acquisition for 24 hours; no cookies/proxies/identity switching. Collector warning handling must be corrected before restart.",
+  "reason": "access_challenge_found_in_warning_review",
   "scope": "exhaustive_user_directive_2026_09_28",
-  "status": "bounded_batch_finished"
+  "status": "blocked_by_access_challenge",
+  "stopped_at": "2026-09-28T22:06:47.635677+00:00",
+  "video_id": "QjOhG1tadI4"
 }

@@ -1,0 +1,41 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-platform-101/the-agent-loop-explained",
+  "title": "The agent loop explained",
+  "observed_at": "2026-09-28T22:05:08.846Z",
+  "method": "Browser rendered public article, text read separately",
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/tBIdyIoCQVU?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "The agent loop explained"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=tBIdyIoCQVU",
+      "title": "Watch on YouTube\n"
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/the-agent-loop-explained#what-an-agent-actually-is",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/the-agent-loop-explained#a-minimal-working-example",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/the-agent-loop-explained#running-it",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/the-agent-loop-explained#the-same-loop-in-production",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/the-agent-loop-explained#recap",
+      "title": ""
+    }
+  ],
+  "artifact_path": "studies/local/backfill-ac14-loop.txt",
+  "transcript_label_observed": false
+}

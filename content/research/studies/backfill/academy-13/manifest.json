@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "studies": [
+    {
+      "id": "academy-platform-what-is-the-claude-platform",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-platform-101/what-is-the-claude-platform",
+      "video_id": "RfeC02NmLqs",
+      "title": "What is the Claude Platform?",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-13/what-is-the-claude-platform.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac13-platform.txt",
+          "bytes": 4324,
+          "sha256": "277bd34d1d6def7688961cde866873a2d4c24de8122aa49a13afefec81d04318",
+          "kind": "text",
+          "line_count": 83,
+          "read_lines": [
+            [
+              1,
+              83
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-13/what-is-the-claude-platform.md",
+        "bytes": 5365,
+        "sha256": "2d0a8830d8f4db6c188c61737192dcfb7bb97e7a7965ed030378bb84985ddbc0",
+        "kind": "original_study",
+        "line_count": 39,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac13-platform-1.png",
+          "bytes": 41015,
+          "sha256": "9c671afdaeef28b40be04c2067f9b7b750f8cbfb04fd97b7668df7c89988cc43",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac13-platform-2.png",
+          "bytes": 37457,
+          "sha256": "180891f05e9322199f7161ef3673cfd8b3c5f5dabdc899cf0dc9d9c525a6bc70",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac13-platform-3.png",
+          "bytes": 41514,
+          "sha256": "87c9491bd521dcfbb4c051e384573bbaf6588ea90d39d456e706e3bbdcc9ccda",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "complements": [],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida."
+    },
+    {
+      "id": "academy-platform-your-first-api-call",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-platform-101/your-first-api-call",
+      "video_id": "j0ftK_R5DTs",
+      "title": "Your first API call",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-13/your-first-api-call.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac13-first-api.txt",
+          "bytes": 3392,
+          "sha256": "40cc8696b882e06b72994e0b925ddcc978c18483766e8d21610586749b80e10b",
+          "kind": "text",
+          "line_count": 99,
+          "read_lines": [
+            [
+              1,
+              99
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac13-first-api-1-observation.txt",
+          "bytes": 454,
+          "sha256": "7334e391cfbe45e0af17a76bfe8d6ee329f21ca1169ae8a404eb41878aa40bcb",
+          "kind": "visual_observation",
+          "line_count": 2,
+          "read_lines": [
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-13/your-first-api-call.md",
+        "bytes": 5944,
+        "sha256": "15e9cc4f6a3c0e7d247e8e8ab9a9f1fbb47e123aecc0cd1cc62f485f7cc68b97",
+        "kind": "original_study",
+        "line_count": 41,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac13-first-api-2.png",
+          "bytes": 30273,
+          "sha256": "b0ddc41e02f4c167f9ab4b736c40b2b1237452c696386f37a456db101719ace4",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac13-first-api-3.png",
+          "bytes": 50933,
+          "sha256": "0631e926ab87da61122645e8c6abad52f65544993ee7f7b612d305e1d22fb3fe",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "complements": [
+        {
+          "url": "https://git-scm.com/docs/gitignore",
+          "read_scope": "Ignore rules and already tracked files",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        },
+        {
+          "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+          "read_scope": "Server-side use, environment variable and browser defaults",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida."
+    }
+  ]
+}

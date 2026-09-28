@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "studies": [
+    {
+      "id": "academy-platform-what-is-tool-use",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-platform-101/what-is-tool-use",
+      "video_id": "Ao759wXbRc0",
+      "title": "What is tool use?",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-15/what-is-tool-use.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac15-tools.txt",
+          "bytes": 8530,
+          "sha256": "8fa83839a9f932364251058ec2d4939082cf3ec116a89f15c82da5be60368cd6",
+          "kind": "text",
+          "line_count": 216,
+          "read_lines": [
+            [
+              1,
+              216
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-15/what-is-tool-use.md",
+        "bytes": 5105,
+        "sha256": "c8756f119227fbf1b84f776ca0e27608edec65aa9ac5280c2d36cb58698c0e53",
+        "kind": "original_study",
+        "line_count": 35,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac15-tools-1.png",
+          "bytes": 41972,
+          "sha256": "9fbd67f0ca1aa4e63fc94f8f166afa38bbfa5730f99f6184d320ddd6aa6e0d49",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac15-tools-2.png",
+          "bytes": 23263,
+          "sha256": "249fa20aa8aa9880fb86f2efa4d0800dc3edae721643acef307ff70548f37472",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac15-tools-3.png",
+          "bytes": 112179,
+          "sha256": "62ace100cd7f1b431215817fa60e210712190b526cbfa6b285a1adfc412f892d",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "complements": [
+        {
+          "url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons",
+          "read_scope": "Stop reason quick reference; end_turn versus truncation and other states",
+          "entire_source_read": false,
+          "method": "web open/search excerpt",
+          "observed_at": "2026-09-28"
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida."
+    },
+    {
+      "id": "academy-platform-what-is-thinking",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-platform-101/what-is-thinking",
+      "video_id": "4SunBsMGRwA",
+      "title": "What is thinking?",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-15/what-is-thinking.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac15-thinking.txt",
+          "bytes": 4002,
+          "sha256": "6cbe715727570646a9abc1c6a751b7883877e30f690dbbafda119c2ffdd2491c",
+          "kind": "text",
+          "line_count": 97,
+          "read_lines": [
+            [
+              1,
+              97
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-15/what-is-thinking.md",
+        "bytes": 5004,
+        "sha256": "6570a184f9b01ee1c4862796c2ddc7e18aa3d8f279a377a27f0424eb65218493",
+        "kind": "original_study",
+        "line_count": 37,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac15-thinking-1.png",
+          "bytes": 13907,
+          "sha256": "b1e1da94b67c1246ecd4944bf6dbad0fa47ee5e19f3404de6763dc98d5a5a104",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac15-thinking-2.png",
+          "bytes": 48970,
+          "sha256": "df13c33aa81ae30238358d65b9732856e39b9b5d421bd2bfe323c974f79719f6",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac15-thinking-3.png",
+          "bytes": 51132,
+          "sha256": "be19a13d305212f74b0f35522cb6e4828e9a3782f2cc74458078cd00c61444b8",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "complements": [
+        {
+          "url": "https://platform.claude.com/docs/en/build-with-claude/thinking-steering-and-cost",
+          "read_scope": "Effort as soft guidance, configuration location, defaults and model-dependent availability",
+          "entire_source_read": false,
+          "method": "web open/search excerpt",
+          "observed_at": "2026-09-28"
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida."
+    }
+  ]
+}

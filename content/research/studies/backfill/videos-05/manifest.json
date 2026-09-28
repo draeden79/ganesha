@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "artifact_path_base": "content/research",
+  "updated_at": "2026-09-28T22:11:52.620941+00:00",
+  "studies": [
+    {
+      "id": "backfill-v05-oS53by4Hwvo",
+      "video_id": "oS53by4Hwvo",
+      "title": "Full Tutorial: Build a Beautiful Mobile App with Claude Code in 16 Minutes",
+      "url": "https://www.youtube.com/watch?v=oS53by4Hwvo",
+      "published_at": "2026-04-01",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-05/oS53by4Hwvo.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-05/oS53by4Hwvo.md",
+        "bytes": 12126,
+        "sha256": "99d49635b8a44f05d0177d490ce42e6130954848f6fe967749ed41c3044d1e71"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.oS53by4Hwvo.en.dfdf14ebd2cb.txt",
+        "bytes": 33781,
+        "sha256": "dfdf14ebd2cb7be1647054f3561a801de2e7acf73da20135b1cf576248eec799",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 516,
+        "first_cue_start_seconds": 1.0,
+        "last_cue_start_seconds": 1015.2,
+        "last_cue_end_seconds": 1017.72,
+        "track_export_complete": true,
+        "logical_line_count": 516,
+        "sequential_read_ranges": [
+          [
+            1,
+            260
+          ],
+          [
+            261,
+            516
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.oS53by4Hwvo.en.7a11188df9b3.json3",
+        "bytes": 284153,
+        "sha256": "7a11188df9b3f8c8e27d4836f16f8545142cbca7e1c773d4e9de844cfaf24eec"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v05-oS53by4Hwvo-exercise-form.png",
+          "bytes": 68132,
+          "sha256": "471d1daa2f82d4db683f1c69cfe47f706412fc07650e79dae33f5f763227e85b",
+          "player_seconds": 45,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Named workout with an exercise configured as three sets/eight reps."
+        },
+        {
+          "path": "studies/local/backfill-v05-oS53by4Hwvo-session.png",
+          "bytes": 74591,
+          "sha256": "24932057c49ab01b1800d9e13a8ec446226a84d26f7a6d79dfc0aae8ba338254",
+          "player_seconds": 65,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Active workout, completed warmup circle and rest timer."
+        },
+        {
+          "path": "studies/local/backfill-v05-oS53by4Hwvo-calendar.png",
+          "bytes": 69018,
+          "sha256": "591a135e21a1a78b9e69590e977970340d5fed9134cafdab285b14ce3603017f",
+          "player_seconds": 80,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Earlier Workout A records shown in calendar."
+        },
+        {
+          "path": "studies/local/backfill-v05-oS53by4Hwvo-recorded-workout.png",
+          "bytes": 71940,
+          "sha256": "f3ba3d08fe9752ee333f63729e90ca5adb6c173d4842311e93f96de7a114b49f",
+          "player_seconds": 85,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Different date selected with newly named workout and three exercise results; restart persistence untested."
+        },
+        {
+          "path": "studies/local/backfill-v05-oS53by4Hwvo-sdk-report.png",
+          "bytes": 115292,
+          "sha256": "a6918a394bc9db870a59aef32b2a78c19723ad5bf3b99a0bb8187bfb14093e34",
+          "player_seconds": 790,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Agent retrospective reports AsyncStorage persistence, SDK downgrade and keyboard fix; no original command/diff execution proof."
+        },
+        {
+          "path": "studies/local/backfill-v05-oS53by4Hwvo-distribution-plan.png",
+          "bytes": 93819,
+          "sha256": "df0e5bff8c0e7972377c881a86132a83c30d448075ef76a2de899825c7d60c74",
+          "player_seconds": 900,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "EAS Build and App Store options remain advice in response; not executed."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 1016,
+      "duration_seconds_observed_player": 1016,
+      "timing_note": "Automatic captions span 1.000–1017.720s, 1.720s beyond duration; complete speech and caption accuracy unverified.",
+      "source_or_practice_executed": false,
+      "current_interfaces_verified": false,
+      "desktop_cli_parity_assumed": false,
+      "sufficiency": "Mobile input/session/history states demonstrated; construction retrospective, dependency corrections condensed, restart persistence and standalone distribution unverified.",
+      "pending": [
+        "Continuous audiovisual review and correction diff/command inspection",
+        "Persistence across restart, validation, units and progression testing",
+        "Current installation/MCP/SDK compatibility",
+        "Standalone build and App Store distribution are future work in source"
+      ]
+    },
+    {
+      "id": "backfill-v05-pZpoACNOPAw",
+      "video_id": "pZpoACNOPAw",
+      "title": "Lovable Full Course for Beginners: Build & Deploy a Real App",
+      "url": "https://www.youtube.com/watch?v=pZpoACNOPAw",
+      "published_at": "2026-07-21",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-05/pZpoACNOPAw.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-05/pZpoACNOPAw.md",
+        "bytes": 15899,
+        "sha256": "eeaa87205cffc40d5da5d7ee0a4bb5d73e450cff717cfd05e89873d7eda435a0"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.pZpoACNOPAw.en-CA.f7cc560277a3.txt",
+        "bytes": 71536,
+        "sha256": "f7cc560277a34bb91cf990b1c5dbcdb2a13ee10090559f038f24a427da584427",
+        "caption_origin": "authored-or-unspecified",
+        "language": "en-CA",
+        "cue_count": 766,
+        "first_cue_start_seconds": 0.066,
+        "last_cue_start_seconds": 2272.566,
+        "last_cue_end_seconds": 2276.666,
+        "track_export_complete": true,
+        "logical_line_count": 1246,
+        "sequential_read_ranges": [
+          [
+            1,
+            250
+          ],
+          [
+            251,
+            500
+          ],
+          [
+            501,
+            750
+          ],
+          [
+            751,
+            1000
+          ],
+          [
+            1001,
+            1246
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.pZpoACNOPAw.en-CA.680a62c37d98.json3",
+        "bytes": 121534,
+        "sha256": "680a62c37d98df010bd9080d39dcc92c466eb27c6407572ec0058735e44a0752"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v05-pZpoACNOPAw-build-failed.png",
+          "bytes": 104665,
+          "sha256": "483dadce2d3c281eeba70649c8895882b1cf406cf272357995375a7d1fdaf0e2",
+          "player_seconds": 580,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Build unsuccessful visible before repair request."
+        },
+        {
+          "path": "studies/local/backfill-v05-pZpoACNOPAw-build-recovered.png",
+          "bytes": 95812,
+          "sha256": "4d3edc0e6fc97fb7bbadee7ba419c0f89294076f1ce66cc2284f3a017d81a7f5",
+          "player_seconds": 635,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Preview rendered after narrated repair; cause/diff not inspected."
+        },
+        {
+          "path": "studies/local/backfill-v05-pZpoACNOPAw-ephemeral-post.png",
+          "bytes": 91628,
+          "sha256": "17223aae29a2b74a077755fc1284cd4097659e610c5bd87513327e93863072e0",
+          "player_seconds": 880,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "New hello world post present in UI-only milestone."
+        },
+        {
+          "path": "studies/local/backfill-v05-pZpoACNOPAw-post-lost.png",
+          "bytes": 105689,
+          "sha256": "d4e2a66bb72f41f9129eb41f26439867c7efd6b8992c4c3b65719693e2c63712",
+          "player_seconds": 890,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "After narrated refresh, board shows four items and no new post."
+        },
+        {
+          "path": "studies/local/backfill-v05-pZpoACNOPAw-persisted-post.png",
+          "bytes": 85752,
+          "sha256": "36200e81e99d80ec9364bb461897a67c0404c0520b1679497195cebdde31b8f4",
+          "player_seconds": 1345,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Post visible as author announces refresh; isolated frame does not itself prove completed refresh."
+        },
+        {
+          "path": "studies/local/backfill-v05-pZpoACNOPAw-realtime-before.png",
+          "bytes": 99242,
+          "sha256": "0956e02ddc3c2d3989b609aa37eef514018ea22ceacd266de744e96d00374c87",
+          "player_seconds": 1600,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Two windows of same account show Dark mode post with one vote."
+        },
+        {
+          "path": "studies/local/backfill-v05-pZpoACNOPAw-realtime-after.png",
+          "bytes": 100539,
+          "sha256": "e0de15226989485a45bfa49f5a6ab0f9030d48ac23f6338aa779bfedb685e588",
+          "player_seconds": 1605,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Both windows show zero votes and reordered post after narrated unvote."
+        },
+        {
+          "path": "studies/local/backfill-v05-pZpoACNOPAw-published.png",
+          "bytes": 99005,
+          "sha256": "57628c80887aaa0f1cdcf068a19737bc16829f24111a386a15451b1e3aa732f1",
+          "player_seconds": 2240,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "After playback recovered, mind-meld-boards.lovable.app renders the published page with sign-in button; production OAuth not retested."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 2283,
+      "duration_seconds_observed_player": 2283,
+      "timing_note": "Authored-or-unspecified en-CA captions span 0.066–2276.666s, leaving 6.334s before metadata duration. Origin does not certify manual captions or complete speech.",
+      "source_or_practice_executed": false,
+      "current_interfaces_verified": false,
+      "desktop_cli_parity_assumed": false,
+      "sufficiency": "Functional web app progression with loss-before-backend and later data/realtime states; payment/custom-domain omitted, weekly schedule not executed, production readiness unverified.",
+      "pending": [
+        "Continuous audiovisual review and final 6.334 seconds",
+        "Attachment, AI and security scan visual review pending: playback buffered/stale frames; two inconsistent generated captures discarded. Final published URL frame recovered.",
+        "Cross-user authorization, upload limits, vote regression, scheduled job, production OAuth and republishing tests",
+        "Current pricing, Cloud portability and interface assertions unverified"
+      ]
+    }
+  ],
+  "round_complete": false
+}

@@ -1,0 +1,41 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-platform-101/your-first-api-call",
+  "title": "Your first API call",
+  "observed_at": "2026-09-28T21:49:23.598Z",
+  "method": "Browser rendered public article, text read separately",
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/j0ftK_R5DTs?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "Your first API call"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=j0ftK_R5DTs",
+      "title": "Watch on YouTube\n"
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/your-first-api-call#get-set-up",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/your-first-api-call#the-anatomy-of-a-request",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/your-first-api-call#a-real-example-reviewing-buggy-code",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/your-first-api-call#from-script-to-product",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-platform-101/your-first-api-call#recap",
+      "title": ""
+    }
+  ],
+  "artifact_path": "studies/local/backfill-ac13-first-api.txt",
+  "transcript_label_observed": false
+}

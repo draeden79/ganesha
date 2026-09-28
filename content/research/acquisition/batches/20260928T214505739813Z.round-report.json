@@ -1,0 +1,124 @@
+{
+  "generated_at": "2026-09-28T22:09:08.923918+00:00",
+  "scope": "exhaustive_user_directive_2026_09_28",
+  "round_id": "20260928T214505739813Z",
+  "status": "incomplete_blocked_by_access_challenge",
+  "intended_new_videos": 30,
+  "new_videos": 28,
+  "new_artifacts": 56,
+  "artifact_bytes": 15665138,
+  "subbatches": [
+    {
+      "batch_id": "20260928T214505739813Z",
+      "checkpoint": {
+        "path": "acquisition/batches/20260928T214505739813Z.json",
+        "bytes": 4090,
+        "sha256": "9948d692e6877ad54dbcddb650dd1e0ee9b1cc489a329faf3af6b7fa0c7a8b8e"
+      },
+      "validation": {
+        "path": "acquisition/batches/20260928T214505739813Z.validation.json",
+        "bytes": 1230,
+        "sha256": "ece2ede03730b7bcc21d550538fac4bf6ff82a41c6153ed2d846d5f3a562f279"
+      },
+      "artifacts": {
+        "path": "acquisition/batches/20260928T214505739813Z.artifacts.json",
+        "bytes": 7660,
+        "sha256": "68b90cce3856987e2955307e0d068ea06a3e773195647795b63002201a922d48"
+      }
+    },
+    {
+      "batch_id": "20260928T215646094141Z",
+      "checkpoint": {
+        "path": "acquisition/batches/20260928T215646094141Z.json",
+        "bytes": 4476,
+        "sha256": "58cc20b14c8a6aaf30f5a7f5cf7a8210ea5e25afb8985016595931b3a3ba89e2"
+      },
+      "validation": {
+        "path": "acquisition/batches/20260928T215646094141Z.validation.json",
+        "bytes": 1227,
+        "sha256": "408bfe7876cd0705391a93048d50f7b8666de032dfaec679d699fe359ca773a0"
+      },
+      "artifacts": {
+        "path": "acquisition/batches/20260928T215646094141Z.artifacts.json",
+        "bytes": 4969,
+        "sha256": "15d285c4949e95d394b88d48dfc466c5929b6bf3e7cc2b8fe188c2d72064f59f"
+      }
+    }
+  ],
+  "access_policy_status": "warning_not_enforced_by_collector_then_stopped_manually",
+  "access_review_artifact": {
+    "bytes": 3263,
+    "path": "acquisition/access-reviews/20260928T215646094141Z.json",
+    "sha256": "bdfecf7562a01e949394f9698099f12f9a0da021d14d3c817ee960098826e7cb"
+  },
+  "post_challenge_successes": 8,
+  "post_challenge_video_ids": [
+    "QnABGJ8cy_U",
+    "RPoquiZydYc",
+    "SD5E3xdEXuQ",
+    "T0_Y4oCjLxw",
+    "TL527yTpxlk",
+    "Te2IZCVjtF4",
+    "To9lZhP7084",
+    "TzdEpgONurw"
+  ],
+  "dns_failure_recovered_video_id": "PppslXOR7TA",
+  "blocked_video_id": "QjOhG1tadI4",
+  "cooldown_until": "2026-09-29T22:06:47.635677+00:00",
+  "network_process_stopped": true,
+  "file_integrity_errors": [],
+  "canonical_flags_regressed": false,
+  "next_queue_index": 113,
+  "next_video_id": "QjOhG1tadI4",
+  "next_index_snapshot_batch_id": "20260928T215646094141Z",
+  "current_inventory_count": 4875,
+  "current_acquired_union": 149,
+  "current_inventory_pending": 4726,
+  "full_read_or_audiovisual_claim_made": false,
+  "limitation": "File integrity validation does not certify access-policy enforcement. Eight caption exports occurred after the warning because of the logger handling gap; originals are retained and explicitly identified.",
+  "corrective_fix": {
+    "recorded_at": "2026-09-28T22:14:56.772039+00:00",
+    "status": "implemented_and_tested_offline_awaiting_root_commit",
+    "code_artifact": {
+      "path": "acquisition/collect_tracks.py",
+      "bytes": 30145,
+      "sha256": "c4496e1b2e8e7765a12f2afd0faa9b7fef5dd84f2b8aacdce0b11e2aa230625d"
+    },
+    "test_artifact": {
+      "path": "acquisition/test_acquisition_integrity.py",
+      "bytes": 14378,
+      "sha256": "9a80914b504cc20a86b5c0e60d32c7c1468a662e2151b6f750b47e71b99402af"
+    },
+    "behavior": "warning/error callback persists cooldown then immediately raises AccessStopped(BaseException), before extractor fallbacks or any caption request; first blocking reason remains authoritative if another layer raises a generic error.",
+    "local_tests": {
+      "command": "python3 -m unittest discover -s content/research/acquisition -p test_acquisition_integrity.py -v",
+      "passed": 14,
+      "network_used": false,
+      "proofs": [
+        "no fallback client",
+        "no urlopen",
+        "no caption export",
+        "no second candidate",
+        "cooldown persisted inside extractor call",
+        "challenge prevails over later generic error",
+        "benign warning still permits normal flow"
+      ]
+    },
+    "root_reported_validation": {
+      "acquisition_tests_passed": 14,
+      "pipeline_tests_passed": 17,
+      "provenance": "parent agent message after independent review/test execution"
+    },
+    "final_read_only_validation": {
+      "videos_checked": 136,
+      "caption_artifacts_checked": 272,
+      "derived_pairs_checked": 136,
+      "errors": [],
+      "canonical_flags_regressed": false
+    },
+    "network_resumed_after_access_challenge_stop": false,
+    "cooldown_preserved_until": "2026-09-29T22:06:47.635677+00:00",
+    "incident_retained_without_retroactive_erasure": true,
+    "retroactive_retry_selection_changed": false
+  }
+}
