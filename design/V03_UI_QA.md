@@ -6,6 +6,7 @@ Data: 28/09/2026. Responsável: Artista. O trabalho preservou a beta 0.2 e usou 
 
 - Percurso completo: app `71d9c1d`, conteúdo `b8e4a62`, prévia isolada `http://localhost:3104/classroom/pt-BR`.
 - Retestes e mobile: app `446d5cf`, conteúdo atualizado para `63ade13`, prévia isolada `http://localhost:3105/classroom/pt-BR` e `/en`.
+- Indonésio: mesmo app e conteúdo base, catálogo integral `0f73151`, em `http://localhost:3105/classroom/id`.
 - Os registros de prática inseridos declaram explicitamente QA da interface, sem execução externa dos projetos ou das ferramentas de IA.
 
 ## Resultado funcional
@@ -35,4 +36,10 @@ Evidência DOM/medidas: `qa/v03-mobile-ui.json`. Capturas: `qa/v03-routes-deskto
 
 Sem P0/P1 aberto no escopo funcional e visual pt-BR/en verificado. A revisão editorial integral das 120 etapas pt-BR está nos três relatórios de `design/reviews/`.
 
-Pendente para fechar a versão multilíngue: integrar os nove catálogos restantes e conferir a interface com amostras longas, especialmente árabe/RTL. Este relatório não certifica tradução humana, execução dos projetos externos ou publicação da 0.3 no domínio público.
+### Rodada de indonésio — 21:34 UTC
+
+Catálogo integral integrado e verificado na interface móvel (390 × 844): primeiras etapas das 12 aulas, CSV, ensaio e cenário de agendamento e cópia isolada atualizada de Apps. Todas as amostras mantiveram largura 390, sem estouro horizontal. CSV preserva dados e quebras, comandos permanecem LTR e os deltas editoriais finais aparecem traduzidos.
+
+Um registro de prática localizado e um check com resposta errada/correta também passaram pelos controles visíveis. Aviso externo único e bloqueios preservados. Evidências em `qa/v03-id-ui.json` e `qa/v03-id-schedule-mobile.jpg`. Sem P0/P1 encontrado nesta rodada visual/funcional; não equivale a revisão linguística humana integral.
+
+Pendente para fechar a versão multilíngue: integrar os oito catálogos restantes e conferir a interface com amostras longas, especialmente árabe/RTL. Este relatório não certifica tradução humana, execução dos projetos externos ou publicação da 0.3 no domínio público.
