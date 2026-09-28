@@ -1,0 +1,50 @@
+[
+  {
+    "id": "conflict-codex-desktop-name",
+    "status": "needs_curriculum_review",
+    "detectedAt": "2026-09-28T18:51:32Z",
+    "resourceIds": [
+      "res-codex-desktop-start"
+    ],
+    "observation": "A URL histórica do app Codex redireciona para a página ChatGPT desktop app, cujo fluxo inclui escolher Codex.",
+    "risk": "Um tutorial com nome ou botões antigos pode impedir o início do aluno.",
+    "resolution": "Usar nome da competência e confirmar rótulos da versão do aluno; revisar capturas antes de publicar.",
+    "impactCompetencies": [
+      "competency.context",
+      "competency.transfer"
+    ]
+  },
+  {
+    "id": "conflict-claude-desktop-cli",
+    "status": "resolved_for_research",
+    "detectedAt": "2026-09-28T18:51:32Z",
+    "resourceIds": [
+      "res-claude-desktop-start",
+      "res-claude-desktop-reference",
+      "res-tim-claude-beginner-video"
+    ],
+    "observation": "A fonte oficial atual inclui Claude Code no app; instalação CLI/Node.js e vários flags pertencem a outra superfície.",
+    "risk": "Transformar pré-requisito de projeto ou instrução CLI em requisito universal do Desktop.",
+    "resolution": "Onboarding Desktop segue documentação específica; dependências do projeto são explicadas separadamente.",
+    "impactCompetencies": [
+      "competency.context",
+      "competency.transfer"
+    ]
+  },
+  {
+    "id": "conflict-claude-artifacts-generation",
+    "status": "needs_curriculum_review",
+    "detectedAt": "2026-09-28T18:51:32Z",
+    "resourceIds": [
+      "res-claude-artifacts-current",
+      "res-claude-artifacts-sharing"
+    ],
+    "observation": "Docs atuais distinguem Artifacts legados e novos e sua disponibilidade no Claude Code; compartilhamento não garante acesso anônimo.",
+    "risk": "Ensinar Artifacts como exclusivos de Chat ou tratar qualquer link como publicação pública.",
+    "resolution": "Focar local de execução, arquivo, prévia e teste de acesso; aplicar regras atuais da categoria/plano escolhido.",
+    "impactCompetencies": [
+      "competency.evidence",
+      "competency.transfer"
+    ]
+  }
+]

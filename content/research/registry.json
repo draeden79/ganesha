@@ -8,7 +8,7 @@
       "publisher": "Anthropic",
       "kind": "tutorial",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -19,7 +19,7 @@
       "publisher": "Anthropic",
       "kind": "tutorial",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -30,7 +30,7 @@
       "publisher": "Anthropic",
       "kind": "tutorial",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -41,7 +41,7 @@
       "publisher": "Anthropic",
       "kind": "tutorial",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -52,7 +52,7 @@
       "publisher": "Anthropic",
       "kind": "tutorial",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -63,7 +63,7 @@
       "publisher": "Anthropic",
       "kind": "tutorial",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -74,7 +74,7 @@
       "publisher": "Anthropic",
       "kind": "official-docs",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -85,7 +85,7 @@
       "publisher": "Anthropic",
       "kind": "official-docs",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -96,7 +96,7 @@
       "publisher": "Anthropic",
       "kind": "official-docs",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -107,7 +107,7 @@
       "publisher": "OpenAI",
       "kind": "other",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -118,7 +118,7 @@
       "publisher": "OpenAI",
       "kind": "official-docs",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -129,7 +129,7 @@
       "publisher": "OpenAI",
       "kind": "official-docs",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -140,7 +140,7 @@
       "publisher": "OpenAI",
       "kind": "official-docs",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -151,7 +151,7 @@
       "publisher": "OpenAI",
       "kind": "official-docs",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -162,7 +162,7 @@
       "publisher": "Builder.io",
       "kind": "other",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -173,7 +173,7 @@
       "publisher": "Builder.io",
       "kind": "other",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -184,7 +184,7 @@
       "publisher": "Peter Yang",
       "kind": "other",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -195,7 +195,7 @@
       "publisher": "Peter Yang",
       "kind": "other",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
     },
@@ -206,7 +206,7 @@
       "publisher": "Peter Yang",
       "kind": "other",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "unavailable"
     },
@@ -217,7 +217,7 @@
       "publisher": "Tech With Tim",
       "kind": "other",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "unavailable"
     },
@@ -228,9 +228,31 @@
       "publisher": "Nate Herk",
       "kind": "other",
       "language": "en",
-      "retrievedAt": "2026-09-28T18:43:11Z",
-      "trust": "primary",
+      "retrievedAt": "2026-09-28",
+      "trust": "secondary",
       "availability": "unavailable"
+    },
+    {
+      "id": "res-claude-artifacts-current",
+      "url": "https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them",
+      "title": "What are artifacts and how do I use them?",
+      "publisher": "Anthropic",
+      "kind": "official-docs",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:51:32Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-claude-artifacts-sharing",
+      "url": "https://support.claude.com/en/articles/9547008-share-artifacts",
+      "title": "Share artifacts",
+      "publisher": "Anthropic",
+      "kind": "official-docs",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:51:32Z",
+      "trust": "primary",
+      "availability": "verified"
     }
   ],
   "evidence": [
@@ -241,7 +263,7 @@
       "text": "Explica que um agente pode ler arquivos, editar e executar comandos. Contexto, permissões e possibilidade de erros fazem parte do modelo mental inicial.",
       "textKind": "paraphrase",
       "claim": "Explica que um agente pode ler arquivos, editar e executar comandos. Contexto, permissões e possibilidade de erros fazem parte do modelo mental inicial.",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "appliesTo": [
         "claude"
       ],
@@ -254,7 +276,7 @@
       "text": "Apresenta exploração, plano, construção e registro das alterações. Pede critérios de sucesso explícitos e testes confiáveis antes de encerrar. O atalho mostrado é da experiência CLI.",
       "textKind": "paraphrase",
       "claim": "Apresenta exploração, plano, construção e registro das alterações. Pede critérios de sucesso explícitos e testes confiáveis antes de encerrar. O atalho mostrado é da experiência CLI.",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "appliesTo": [
         "claude"
       ],
@@ -267,7 +289,7 @@
       "text": "A checagem de ações perigosas não comprova correção do código. Recomenda examinar as alterações, confirmar resultados reais de testes e obter revisão independente em trabalho relevante.",
       "textKind": "paraphrase",
       "claim": "A checagem de ações perigosas não comprova correção do código. Recomenda examinar as alterações, confirmar resultados reais de testes e obter revisão independente em trabalho relevante.",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "appliesTo": [
         "claude"
       ],
@@ -280,7 +302,7 @@
       "text": "O início no Desktop passa pela aba Code, ambiente Local e pasta do projeto. A instalação do app inclui Claude Code; Node.js e a CLI não são pré-requisitos da aba. Dependências do projeto podem continuar necessárias.",
       "textKind": "paraphrase",
       "claim": "O início no Desktop passa pela aba Code, ambiente Local e pasta do projeto. A instalação do app inclui Claude Code; Node.js e a CLI não são pré-requisitos da aba. Dependências do projeto podem continuar necessárias.",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "appliesTo": [
         "claude"
       ],
@@ -293,7 +315,7 @@
       "text": "A aba Code oferece revisão visual e prévia do app. Desktop e CLI compartilham instruções CLAUDE.md, mas não têm todos os mesmos comandos e controles; o modo de saída para scripts não existe no Desktop.",
       "textKind": "paraphrase",
       "claim": "A aba Code oferece revisão visual e prévia do app. Desktop e CLI compartilham instruções CLAUDE.md, mas não têm todos os mesmos comandos e controles; o modo de saída para scripts não existe no Desktop.",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "appliesTo": [
         "claude"
       ],
@@ -306,7 +328,7 @@
       "text": "Tarefas locais usam os arquivos e ferramentas do computador e precisam do app aberto e máquina acordada. A página distingue rotinas em nuvem e /loop, e descreve recuperação de uma execução perdida recente.",
       "textKind": "paraphrase",
       "claim": "Tarefas locais usam os arquivos e ferramentas do computador e precisam do app aberto e máquina acordada. A página distingue rotinas em nuvem e /loop, e descreve recuperação de uma execução perdida recente.",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "appliesTo": [
         "claude"
       ],
@@ -319,7 +341,7 @@
       "text": "A URL antiga do app Codex redireciona para a página do aplicativo ChatGPT. O início atual descrito é instalar, entrar na conta, escolher projeto/pasta e selecionar Codex para iniciar uma tarefa.",
       "textKind": "paraphrase",
       "claim": "A URL antiga do app Codex redireciona para a página do aplicativo ChatGPT. O início atual descrito é instalar, entrar na conta, escolher projeto/pasta e selecionar Codex para iniciar uma tarefa.",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "appliesTo": [
         "codex"
       ],
@@ -332,7 +354,7 @@
       "text": "Para tarefas maiores, explicitar resultado, contexto, formato e limites relevantes. Anexos e referências devem trazer a informação que muda a resposta; revisar e refinar continua fazendo parte do trabalho.",
       "textKind": "paraphrase",
       "claim": "Para tarefas maiores, explicitar resultado, contexto, formato e limites relevantes. Anexos e referências devem trazer a informação que muda a resposta; revisar e refinar continua fazendo parte do trabalho.",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "appliesTo": [
         "codex"
       ],
@@ -345,7 +367,7 @@
       "text": "Codex lê arquivos AGENTS.md para receber instruções do projeto. O caminho e a precedência influenciam as orientações aplicadas, por isso regras recorrentes precisam ficar no local correto.",
       "textKind": "paraphrase",
       "claim": "Codex lê arquivos AGENTS.md para receber instruções do projeto. O caminho e a precedência influenciam as orientações aplicadas, por isso regras recorrentes precisam ficar no local correto.",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "appliesTo": [
         "codex"
       ],
@@ -358,7 +380,7 @@
       "text": "A documentação distingue tarefas recorrentes ligadas à conversa e tarefas independentes. Trabalho agendado com projeto local exige computador ligado e aplicativo rodando; é possível usar worktree para separar alterações.",
       "textKind": "paraphrase",
       "claim": "A documentação distingue tarefas recorrentes ligadas à conversa e tarefas independentes. Trabalho agendado com projeto local exige computador ligado e aplicativo rodando; é possível usar worktree para separar alterações.",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "appliesTo": [
         "codex"
       ],
@@ -371,7 +393,7 @@
       "text": "O relato usa planos visuais para discutir estados, controles e telas pequenas antes de implementar, e recapitulações para direcionar a revisão depois. A autora ainda lê e testa o código.",
       "textKind": "paraphrase",
       "claim": "O relato usa planos visuais para discutir estados, controles e telas pequenas antes de implementar, e recapitulações para direcionar a revisão depois. A autora ainda lê e testa o código.",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "appliesTo": [
         "codex"
       ],
@@ -384,7 +406,7 @@
       "text": "Mostra que remover alertas e passar testes existentes pode deixar um defeito de validação intacto. Recomenda partir de comportamento reproduzível e declarar o que a correção deve garantir.",
       "textKind": "paraphrase",
       "claim": "Mostra que remover alertas e passar testes existentes pode deixar um defeito de validação intacto. Recomenda partir de comportamento reproduzível e declarar o que a correção deve garantir.",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "appliesTo": [
         "claude",
         "codex"
@@ -398,7 +420,7 @@
       "text": "A parte pública diferencia regras definidas previamente de falhas descobertas ao comparar resultados com revisões humanas. Recomenda observar vários exemplos para evitar transformar um caso isolado em regra geral.",
       "textKind": "paraphrase",
       "claim": "A parte pública diferencia regras definidas previamente de falhas descobertas ao comparar resultados com revisões humanas. Recomenda observar vários exemplos para evitar transformar um caso isolado em regra geral.",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "appliesTo": [
         "claude",
         "codex"
@@ -412,12 +434,38 @@
       "text": "A seção pública propõe descrever todas as etapas manuais antes de decidir o que automatizar. Mostra fases de preparação, edição e produção de podcast; os detalhes das skills estão protegidos.",
       "textKind": "paraphrase",
       "claim": "A seção pública propõe descrever todas as etapas manuais antes de decidir o que automatizar. Mostra fases de preparação, edição e produção de podcast; os detalhes das skills estão protegidos.",
-      "retrievedAt": "2026-09-28T18:43:11Z",
+      "retrievedAt": "2026-09-28",
       "appliesTo": [
         "claude",
         "codex"
       ],
       "caveat": "Seção 1 e índice de capítulos, linhas 34–79; interrupção na barreira de assinatura. Percentuais e economia de horas são alegações do autor, não promessa pedagógica nem resultado validado. Passos completos 2 e 3 não ingeridos."
+    },
+    {
+      "id": "ev-claude-artifacts-current",
+      "sourceId": "res-claude-artifacts-current",
+      "locator": "Introdução, linha 474; What is an artifact?, linha 487; Artifacts in Claude Code, linhas 591–598",
+      "text": "Artifacts são saídas editáveis ao lado da conversa e também existem no Claude Code. A documentação atual distingue os artifacts anteriores a 16/09/2026. Exibir um artifact não prova alteração de arquivos em uma pasta local.",
+      "textKind": "paraphrase",
+      "claim": "Artifacts são saídas editáveis ao lado da conversa e também existem no Claude Code. A documentação atual distingue os artifacts anteriores a 16/09/2026. Exibir um artifact não prova alteração de arquivos em uma pasta local.",
+      "retrievedAt": "2026-09-28T18:51:32Z",
+      "appliesTo": [
+        "claude"
+      ],
+      "caveat": "Introdução, categorias, uso por superfície e Artifacts in Claude Code lidos; não foi criado ou executado um artifact. Criar, editar e compartilhar variam com plano, controles e tipo de artifact; não repetir limites de tutoriais anteriores como universais. Docs complementares oficiais; não alteram o escopo principal de projeto local da Ganesha."
+    },
+    {
+      "id": "ev-claude-artifacts-sharing",
+      "sourceId": "res-claude-artifacts-sharing",
+      "locator": "Introdução, linha 476; Who can open a shared artifact, linhas 575–583",
+      "text": "Artifacts começam privados. Nas regras atuais, abrir um artifact compartilhado requer conta Claude, salvo a exceção de artifacts legados publicados a partir de chat. Portanto, compartilhar artifact e publicar site independente exigem verificações diferentes.",
+      "textKind": "paraphrase",
+      "claim": "Artifacts começam privados. Nas regras atuais, abrir um artifact compartilhado requer conta Claude, salvo a exceção de artifacts legados publicados a partir de chat. Portanto, compartilhar artifact e publicar site independente exigem verificações diferentes.",
+      "retrievedAt": "2026-09-28T18:51:32Z",
+      "appliesTo": [
+        "claude"
+      ],
+      "caveat": "Introdução, opções de compartilhamento e acesso de visitantes lidos; nenhuma publicação realizada. Permissões de organização e tipo de artifact podem restringir o compartilhamento. Não usar esta ficha como guia de deploy de um app em repositório próprio."
     }
   ]
 }

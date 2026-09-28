@@ -5,6 +5,14 @@ Responsável: Devorador. Escopo exclusivo: `content/research/`. Referência temp
 - `sources.json`: nove fontes aprovadas, estado de acesso e cobertura.
 - `resources.jsonl`: uma ficha por URL/recurso, IDs estáveis, datas, síntese original e evidência curta.
 - `EARLY_BATCH.md`: entrega curta para orientar o Educador agora.
+- `registry.json`: ResearchRegistry 1.0.0 canônico para o currículo.
+- `REPORT-2026-09-28.md`: fechamento da ingestão inicial e cobertura atual.
+- `SCHEMA.md` e `WEEKLY_RUNBOOK.md`: campos, integração e procedimento repetível.
+- `queue.json`, `conflicts.json` e `update-proposals.json`: pendências e propostas sem alterar aulas.
+- `ingestion-log.jsonl`: histórico de lotes e observações de acesso.
+- `research.py`: validação, deduplicação, importação incremental e exportação do registry; Python padrão, sem chamadas de rede.
+
+Validação: `python3 content/research/research.py validate`. Testes do processamento: `python3 -m unittest discover -s content/research -p 'test_*.py'`.
 
 Estados: `catalog_indexed` = índice/programa consultado; `excerpt_ingested` = texto das seções indicadas lido; `discovered_only` = apenas localização/metadados. Vídeos não são marcados como assistidos por terem descrição. `partial` respeita a barreira de assinatura. Datas desconhecidas são `null`; consulta/crawl não substituem publicação ou atualização.
 

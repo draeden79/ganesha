@@ -1,0 +1,48 @@
+[
+  {
+    "id": "update-l01-surfaces-2026-09-28",
+    "createdAt": "2026-09-28T18:51:32Z",
+    "baseCourseVersion": "0.1.0",
+    "status": "proposed",
+    "sourceIds": [
+      "res-codex-desktop-start",
+      "res-claude-desktop-start",
+      "res-claude-artifacts-current",
+      "res-claude-artifacts-sharing"
+    ],
+    "changedEvidenceIds": [
+      "ev-codex-desktop-start",
+      "ev-claude-desktop-start",
+      "ev-claude-artifacts-current",
+      "ev-claude-artifacts-sharing"
+    ],
+    "impacts": [
+      {
+        "lessonId": "lesson.first-request",
+        "stepIds": [
+          "step.first-request.scope",
+          "step.first-request.run",
+          "step.first-request.evidence-check",
+          "step.first-request.transfer"
+        ],
+        "severity": "correction",
+        "rationale": "Rever descrição de superfícies e evidência de execução; manter projeto local como prática e contextualizar Artifacts/nomes atuais. Mapeamento feito sobre course.json 0.1.0 do Educador em 28/09/2026; não altera conteúdo automaticamente."
+      }
+    ],
+    "requiredLocales": [
+      "pt-BR",
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "hi",
+      "id",
+      "ar",
+      "ko",
+      "zh-CN"
+    ],
+    "recommendedVersion": "0.1.1",
+    "preserveProgress": true
+  }
+]
