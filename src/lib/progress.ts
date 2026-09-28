@@ -13,7 +13,7 @@ export interface Progress {
 }
 export const emptyStep = (): StepState => ({ draft: "", criteria: [], attempts: [], complete: false });
 export const stateKey = (tool: LearningTool, stepId: string) => `${tool}:${stepId}`;
-export const storageKey = (course: Course) => `ganesha:demo:${course.id}:${course.version}`;
+export const storageKey = (course: Course) => `ganesha:${course.progressScope ?? "demo"}:${course.id}:${course.version}`;
 export const flattenSteps = (course: Course) => course.lessons.flatMap(lesson => lesson.steps.map(step => ({ lesson, step })));
 export function newProgress(course: Course): Progress {
   return { schemaVersion: 1, courseId: course.id, courseVersion: course.version, currentStepId: flattenSteps(course)[0]?.step.id ?? "", tool: "claude", states: {}, updatedAt: new Date().toISOString() };

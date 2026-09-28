@@ -20,6 +20,7 @@ export interface Step {
   hasCanonicalExecutionNotice?: boolean;
   isAssessment?: boolean;
   callouts?: string[];
+  contentBlocks?: { kind: "paragraph" | "callout" | "code"; text: string }[];
   visualDescription?: string;
   toolNotes?: Record<LearningTool, string>;
   example?: string;
@@ -41,6 +42,7 @@ export interface Course {
   translationCoverage?: { translated: number; reviewed: number; total: number };
   title: string;
   description: string;
+  progressScope?: "classroom";
   lessons: Lesson[];
 }
 

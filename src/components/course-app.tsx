@@ -8,6 +8,8 @@ import { labels } from "@/lib/labels";
 import { recoveryText } from "@/lib/recovery-i18n";
 import { TeachingVisual } from "./teaching-visual";
 import { nativeUi } from "@/lib/native-i18n";
+import { classroomUi } from "@/lib/classroom-i18n";
+import { lessonCompletedCount, resumeLessonStep } from "@/lib/lesson-navigation";
 
 function Icon({ name, size = 20 }: { name: "grid" | "book" | "arrow" | "check" | "spark" | "globe" | "info" | "pen" | "page"; size?: number }) {
   const paths = { info: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 11v6M12 7v.1", pen: "m15 4 5 5-10 10-6 1 1-6zM13 6l5 5", page: "M5 3h10l4 4v14H5zM14 3v5h5M8 12h8M8 16h6", grid: "M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z", book: "M12 5v16M12 5C8 2 4 3 2 4v15c4-2 7-1 10 2 3-3 6-4 10-2V4c-2-1-6-2-10 1Z", arrow: "M5 12h14M13 6l6 6-6 6", check: "m5 12 4 4L19 6", spark: "m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z", globe: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z" };
@@ -15,10 +17,12 @@ function Icon({ name, size = 20 }: { name: "grid" | "book" | "arrow" | "check" |
 }
 function Arrow() { return <span className="arrow"><Icon name="arrow" size={18} /></span>; }
 
-export function CourseApp({ course }: { course: Course }) {
+export function CourseApp({ course, routeBase = "/course" }: { course: Course; routeBase?: "/course" | "/classroom" }) {
   const t = ui[course.locale];
   const l = labels[course.locale];
   const n = nativeUi[course.locale];
+  const c = classroomUi[course.locale];
+  const beta = routeBase === "/classroom";
   const number = (n: number) => new Intl.NumberFormat(course.locale).format(n);
   const flat = flattenSteps(course);
   const [progress, setProgress] = useState<Progress>(() => newProgress(course));
@@ -97,12 +101,13 @@ export function CourseApp({ course }: { course: Course }) {
   function overview() { setView("overview"); history.replaceState(null, "", window.location.pathname); }
   function changeLocale(locale: Locale) {
     document.cookie = `ganesha-locale=${locale}; Path=/; Max-Age=31536000; SameSite=Lax`;
-    window.location.assign(`/course/${locale}${view === "step" ? `#${encodeURIComponent(step.id)}` : ""}`);
+    window.location.assign(`${routeBase}/${locale}${view === "step" ? `#${encodeURIComponent(step.id)}` : ""}`);
   }
   function next() {
     const updated = step.check || step.practice ? progress : updateStep(progress, step.id, { complete: true });
     setProgress(updated);
-    if (activeIndex < flat.length - 1) showStep(flat[activeIndex + 1].step.id);
+    if (lastLessonStep && nextLesson) showStep(resumeLessonStep(nextLesson, updated).id);
+    else if (activeIndex < flat.length - 1) showStep(flat[activeIndex + 1].step.id);
     else if (completedCount(course, updated) === flat.length) { setView("complete"); history.replaceState(null, "", window.location.pathname); }
     else overview();
   }
@@ -117,6 +122,10 @@ export function CourseApp({ course }: { course: Course }) {
   }
   const nextEnabled = ready && ((!step.check && !step.practice) || state.complete);
   const stepPosition = lesson.steps.findIndex(item => item.id === step.id);
+  const nextLesson = course.lessons[course.lessons.findIndex(item => item.id === lesson.id) + 1];
+  const lastLessonStep = stepPosition === lesson.steps.length - 1;
+  const totalCompleted = completedCount(course, progress);
+  const completedLessons = course.lessons.filter(item => lessonCompletedCount(item, progress) === item.steps.length).length;
   const progressLabel = interpolate(t.stepOf, { n: number(stepPosition + 1), total: number(lesson.steps.length) });
   const hasDiagram = Boolean(step.visualDescription && step.id !== "step.first-request.request-check" && (!step.practice || step.executionMode === "external-real-task" || step.id === "step.first-request.transfer"));
   const showArt = step.id === "step.first-request.scope";
@@ -136,7 +145,7 @@ export function CourseApp({ course }: { course: Course }) {
   const demoInfo = (
     <div className="demo-info">
       <details className="context-note">
-        <summary><Icon name="info" size={14} />{n.previewReview}</summary>
+        <summary><Icon name="info" size={14} />{beta ? c.betaReview : n.previewReview}</summary>
         <p>{t.demoNotice}</p><p>{t.draftNotice}</p>
         <p>{ready && !saveError ? t.localSaved : ""} <span dir="ltr">v{course.version}</span></p>
       </details>
@@ -165,19 +174,26 @@ export function CourseApp({ course }: { course: Course }) {
       <div className="native-home">
         <aside className="native-sidebar">
           <button className="native-brand" onClick={overview} aria-label="Ganesha">
-            <img src="/images/native/ganesha-symbol.png" alt="" width="33" height="38" /><span>Ganesha</span>
+            <img src="/classroom/images/native/ganesha-symbol.png" alt="" width="33" height="38" /><span>Ganesha</span>
           </button>
           <p className="side-caption">{t.lessons}</p>
           <nav className="lesson-navigation" aria-label={t.lessons}>
             {course.lessons.map(item => {
-              const count = item.steps.filter(s => getStepState(progress, s.id).complete).length;
-              return <button key={item.id} className="lesson-nav" aria-current={item.id === lesson.id ? "page" : undefined} disabled={!ready} onClick={() => selectPreview(item.steps[0].id)}>
+              const count = lessonCompletedCount(item, progress);
+              return <button key={item.id} className="lesson-nav" aria-current={item.id === lesson.id ? "page" : undefined} disabled={!ready} onClick={() => selectPreview(resumeLessonStep(item, progress).id)}>
                 <span className="lesson-symbol"><Icon name="book" size={16} /></span>
                 <span><strong>{item.title}</strong><small>{t.progress}: <bdi dir="ltr">{number(count)} / {number(item.steps.length)}</bdi></small></span>
               </button>;
             })}
           </nav>
+          <label className="mobile-lesson-select">{c.chooseLesson}
+            <select value={lesson.id} disabled={!ready} onChange={event => {
+              const selected = course.lessons.find(item => item.id === event.target.value);
+              if (selected) selectPreview(resumeLessonStep(selected, progress).id);
+            }}>{course.lessons.map(item => <option value={item.id} key={item.id}>{item.title} · {number(lessonCompletedCount(item, progress))}/{number(item.steps.length)}</option>)}</select>
+          </label>
           <div className="side-bottom">
+            <div className="course-progress" aria-live="polite"><p>{t.lessons}: <bdi dir="ltr">{number(completedLessons)} / {number(course.lessons.length)}</bdi></p><p>{t.progress}: <bdi dir="ltr">{number(totalCompleted)} / {number(flat.length)}</bdi></p><progress value={totalCompleted} max={flat.length} aria-label={t.progress} /></div>
             <div className="side-controls">
               <div className="select-row"><Icon name="globe" size={15} />{languageSelect}</div>
               <div className="select-row"><Icon name="spark" size={15} />{toolSelect}</div>
@@ -226,7 +242,7 @@ export function CourseApp({ course }: { course: Course }) {
           <section className={`stage-preview${stepPosition === 0 ? " merge-start" : ""}`} aria-labelledby="preview-heading">
             <div className="preview-main">
               <div className="preview-copy"><h2 id="preview-heading">{step.title}</h2><p>{step.objective}</p><p className="preview-result">{step.expectedResult}</p></div>
-              <img className="preview-figure" src="/images/creative-workshop-transparent.png" alt="" width="300" height="300" />
+              <img className="preview-figure" src="/classroom/images/creative-workshop-transparent.png" alt="" width="300" height="300" />
             </div>
             <div className="preview-bottom"><button className="button primary" disabled={!ready} onClick={() => showStep(step.id)}>{state.complete ? t.review : n.startStep}<Arrow /></button></div>
           </section>
@@ -243,8 +259,8 @@ export function CourseApp({ course }: { course: Course }) {
           {recoveryNotice}
           {view === "complete" ? (
             <section className="sheet-summary">
-              <img src="/images/native/ganesha-help.png" alt="" width="130" height="150" />
-              <h1 ref={heading} tabIndex={-1}>{t.allDone}</h1><p>{t.allDoneBody}</p>
+              <img src="/classroom/images/native/ganesha-help.png" alt="" width="130" height="150" />
+              <h1 ref={heading} tabIndex={-1}>{beta ? c.allDone : t.allDone}</h1><p>{beta ? c.allDoneBody : t.allDoneBody}</p>
               <button className="button primary" onClick={overview}>{t.review}<Arrow /></button>
             </section>
           ) : <>
@@ -252,10 +268,12 @@ export function CourseApp({ course }: { course: Course }) {
             <div className={`lesson-grid${!showArt && !hasDiagram ? " text-only" : ""}`}>
               <div className="lesson-copy">
                 {step.objective && <p className="objective">{step.objective}</p>}
-                {step.body.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
-                {step.callouts?.map((paragraph, index) => <blockquote className="lesson-callout" key={index}>{paragraph}</blockquote>)}
+                {step.contentBlocks ? step.contentBlocks.map((block, index) => block.kind === "code"
+                  ? <pre className="lesson-code" key={index} dir="ltr"><code>{block.text}</code></pre>
+                  : block.kind === "callout" ? <blockquote className="lesson-callout" key={index}>{block.text}</blockquote>
+                  : <p key={index}>{block.text}</p>) : <>{step.body.map((paragraph, index) => <p key={index}>{paragraph}</p>)}{step.callouts?.map((paragraph, index) => <blockquote className="lesson-callout" key={index}>{paragraph}</blockquote>)}</>}
               </div>
-              {showArt ? <aside className="art-aside"><img className="lesson-art" src="/images/creative-workshop-transparent.png" alt="" width="230" height="230" /></aside> : hasDiagram ? <aside className="visual-aside"><TeachingVisual step={step} /></aside> : null}
+              {showArt ? <aside className="art-aside"><img className="lesson-art" src="/classroom/images/creative-workshop-transparent.png" alt="" width="230" height="230" /></aside> : hasDiagram ? <aside className="visual-aside"><TeachingVisual step={step} /></aside> : null}
             </div>
             <div className="tool-context">
               <details className="tool-instruction" key={`${step.id}:${progress.tool}`} open={step.executionMode === "external-real-task"}>
@@ -295,10 +313,10 @@ export function CourseApp({ course }: { course: Course }) {
             {step.expectedResult && <p className="expected"><strong>{l.expected}: </strong>{step.expectedResult}</p>}
             <footer className="lesson-footer">
               <button className="button ghost" disabled={activeIndex === 0} onClick={() => showStep(flat[activeIndex - 1].step.id)}><span className="back-arrow"><Arrow /></span>{t.back}</button>
-              <button className="button primary" disabled={!nextEnabled} onClick={next}>{activeIndex === flat.length - 1 ? t.finish : t.next}<Arrow /></button>
+              <button className="button primary" disabled={!nextEnabled} onClick={next}>{lastLessonStep && nextLesson ? c.nextLesson : activeIndex === flat.length - 1 ? t.finish : t.next}<Arrow /></button>
             </footer>
           </>}
-          <div className="sheet-bottom">{demoInfo}{view === "step" && <button className="help-button" onClick={() => openDialog("help")}><img src="/images/native/ganesha-help.png" alt="" width="32" height="42" />{n.help}</button>}</div>
+          <div className="sheet-bottom">{demoInfo}{view === "step" && <button className="help-button" onClick={() => openDialog("help")}><img src="/classroom/images/native/ganesha-help.png" alt="" width="32" height="42" />{n.help}</button>}</div>
         </main>
       </div>
     )}

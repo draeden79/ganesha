@@ -24,6 +24,11 @@ export function adaptCourse(source: CanonicalCourse, catalog: LocaleCatalog, opt
           id: step.id, type: step.kind === "explain" ? "instruction" : step.kind === "reflect" ? "reflection" : step.kind,
           title: t(step.titleKey), body: step.blocks.filter(b => b.kind === "paragraph" && b.textKey).map(b => t(b.textKey!)),
           callouts: step.blocks.filter(b => b.kind === "callout" && b.textKey).map(b => t(b.textKey!)),
+          contentBlocks: step.blocks.flatMap(block => {
+            if (block.kind === "image") return [];
+            const text = block.textKey ? t(block.textKey) : block.code;
+            return text ? [{ kind: block.kind, text }] : [];
+          }),
           objective: step.objectiveKey ? t(step.objectiveKey) : undefined,
           action: step.actionKey ? t(step.actionKey) : undefined,
           expectedResult: step.expectedResultKey ? t(step.expectedResultKey) : undefined,

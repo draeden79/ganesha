@@ -6,5 +6,6 @@ import { ui } from "@/lib/i18n";
 export default async function NotFound() {
   const requested = (await headers()).get("x-ganesha-locale") ?? "pt-BR";
   const locale = isLocale(requested) ? requested : "pt-BR";
-  return <main className="access-page"><p>Ganesha · 404</p><h1>{statusUi[locale].notFound}</h1><Link className="button primary" href={`/course/${locale}`}>{ui[locale].overview}</Link></main>;
+  const routeBase = (await headers()).get("x-ganesha-route-base") === "/classroom" ? "/classroom" : "/course";
+  return <main className="access-page"><p>Ganesha · 404</p><h1>{statusUi[locale].notFound}</h1><Link className="button primary" href={`${routeBase}/${locale}`}>{ui[locale].overview}</Link></main>;
 }
