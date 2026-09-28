@@ -1,7 +1,9 @@
 {
-  "generated_at": "2026-09-28T20:45:54.967867+00:00",
+  "all_inventory_ids_retained": true,
+  "generated_at": "2026-09-28T20:45:54.949108+00:00",
+  "ordering": "Descending transparent title/duration relevance; ties by video ID. Relevance orders acquisition and study, never permanently excludes a source.",
+  "queue_total": 4853,
   "scope": "exhaustive_user_directive_2026_09_28",
-  "selection_total": 4853,
   "video_ids": [
     "GUgxx6fMiR8",
     "GepHGs_CZdk",

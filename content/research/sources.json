@@ -49,14 +49,15 @@
       "approved_by_user": true,
       "checked_at": "2026-09-28",
       "access_status": "partial",
-      "coverage": "Home vazia; /archive acessível. Dois artigos lidos apenas na parte pública; assinatura bloqueia o restante.",
+      "coverage": "Arquivo HTML público percorrido em 168 páginas; leitura e acesso pagos variam por item. Estudos integrais e barreiras específicas registrados em studies/backfill/ e content-inventory/. Histórico completo não certificado.",
       "last_publication_seen": "2026-09-27",
       "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
       "history_complete": false,
       "discovered_urls": [
         "https://creatoreconomy.so/archive"
       ],
-      "priority_source": true
+      "priority_source": true,
+      "coverage_report": "content-inventory/coverage.json"
     },
     {
       "id": "riley-brown-youtube",
@@ -125,7 +126,7 @@
       "approved_by_user": true,
       "checked_at": "2026-09-28",
       "access_status": "accessible",
-      "coverage": "Primeira página lista 16 artigos (2026-07-30 a 2026-09-23). Dois artigos lidos; histórico não paginado.",
+      "coverage": "Descoberta HTML em 554 páginas e 7 respostas bloqueadas/404; estudos integrais de artigos em andamento. Cobertura textual e multimídia distintas em content-inventory/. Arquivo histórico não certificado.",
       "last_publication_seen": "2026-09-23",
       "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
       "history_complete": false,
@@ -133,7 +134,8 @@
         "https://www.builder.io/blog/stop-watching-your-agent-work",
         "https://www.builder.io/blog/de-slop-ai-generated-codebase"
       ],
-      "priority_source": true
+      "priority_source": true,
+      "coverage_report": "content-inventory/coverage.json"
     },
     {
       "id": "nate-herk-youtube",
@@ -165,12 +167,13 @@
       "approved_by_user": true,
       "checked_at": "2026-09-28",
       "access_status": "accessible",
-      "coverage": "Coleção renderizada lista 10 cursos. Inventário de aulas/players em andamento; texto de aula não é transcrição.",
+      "coverage": "313 páginas HTML descobertas; quatro transcrições publicadas adquiridas via aulas renderizadas, três integralmente estudadas. Texto complementar, transcrição e vídeo têm estados distintos. Restam 289 candidatos à inspeção renderizada.",
       "last_publication_seen": null,
       "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
       "history_complete": false,
       "discovered_urls": [],
-      "priority_source": true
+      "priority_source": true,
+      "coverage_report": "content-inventory/coverage.json"
     },
     {
       "id": "openai-learn-codex",
@@ -180,12 +183,13 @@
       "approved_by_user": true,
       "checked_at": "2026-09-28",
       "access_status": "accessible",
-      "coverage": "Página renderizada consultada: 11 links YouTube encontrados. Transcrições pendentes; vídeos de outras páginas vinculadas ainda não reconciliados.",
+      "coverage": "Onze links YouTube descobertos no hub; faixas adquiridas quando disponíveis e estudo progressivo. Documentação textual oficial e quadros estão nos manifestos. Histórico de páginas vinculadas ainda não reconciliado.",
       "last_publication_seen": null,
       "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
       "history_complete": false,
       "discovered_urls": [],
-      "priority_source": true
+      "priority_source": true,
+      "coverage_report": "content-inventory/coverage.json"
     },
     {
       "id": "netlify-docs",

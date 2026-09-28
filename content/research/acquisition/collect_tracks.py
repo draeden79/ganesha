@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Resumable anonymous caption acquisition of explicitly curated videos.
+"""Resumable anonymous caption acquisition; historical mode is explicit.
 
-The inventory is retained for discovery; it is not the active acquisition queue.
+Default mode uses explicit curation. --historical activates the complete
+inventory under the user's renewed exhaustive directive, ordered by relevance.
 This collector owns only acquisition/
 and newly named aq.* files under transcripts/local/. Existing ledgers remain
 untouched. An exported track is not verified speech coverage or source study.
@@ -21,6 +22,7 @@ ARTIFACTS = ROOT / "transcripts" / "local"
 MANIFEST = HERE / "manifest.jsonl"
 ATTEMPTS = HERE / "attempts.jsonl"
 STATE = HERE / "state.json"
+HISTORICAL_SCOPE = "exhaustive_user_directive_2026_09_28"
 TIMING_NOTE = ("Caption timing bounds do not prove every spoken word was captured. "
                "The whole returned caption track was exported; audiovisual and speech "
                "completeness verification remain pending.")
@@ -121,6 +123,63 @@ def existing_exported():
     return own
 
 
+def prioritize_historical(queue):
+    """Order every inventoried ID; titles guide priority, never exclusion."""
+    rules = [
+        (r"tutorial|step.by.step|full guide|how to |complete guide", 4, "procedural_title"),
+        (r"no.cod|without cod|zero cod|beginner", 6, "beginner_or_no_code_title"),
+        (r"website|landing page|frontend|front.end|web app|\bapp\b", 6, "site_or_app"),
+        (r"deploy|publish|domain", 3, "publication"),
+        (r"test|debug|error|fix|evaluation|reliab", 4, "verification_or_recovery"),
+        (r"claude|codex", 3, "claude_or_codex"),
+        (r"automation|workflow|trigger|routine|webhook", 4, "automation"),
+        (r"\brag\b|vector|\bmcp\b|swarm|multi.agent|enterprise|\bsdk\b|self.host|\bvps\b|kubernetes|docker", -8, "advanced_setup_later"),
+        (r"news|just dropped|just released|leak|\bwar\b|beats|replaced|\bvs\.?\b|winner|insane", -4, "news_or_comparison_later"),
+    ]
+    ranked = []
+    for row in queue:
+        title = row.get("title") or ""
+        reasons = [{"reason": reason, "weight": weight} for pattern, weight, reason in rules if re.search(pattern, title, re.I)]
+        duration = row.get("duration_seconds")
+        if duration and duration < 180:
+            reasons.append({"reason": "short_format_later", "weight": -8})
+        elif duration and duration <= 7200:
+            reasons.append({"reason": "longform_demonstration_length", "weight": 2})
+        rank = {"video_id": row["id"], "title": title, "source_ids": row["source_ids"],
+                "priority_score": sum(r["weight"] for r in reasons), "priority_reasons": reasons,
+                "evidence_level": "inventory_title_and_duration_only", "permanently_excluded": False,
+                "scope": HISTORICAL_SCOPE, "full_source_analyzed": False}
+        ranked.append((rank, row))
+    ranked.sort(key=lambda pair: (-pair[0]["priority_score"], pair[1]["id"]))
+    write_json(HERE / "historical-queue.json", {"generated_at": now(), "scope": HISTORICAL_SCOPE,
+                "queue_total": len(ranked), "all_inventory_ids_retained": True,
+                "ordering": "Descending transparent title/duration relevance; ties by video ID. Relevance orders acquisition and study, never permanently excludes a source.",
+                "video_ids": [row["id"] for _, row in ranked]})
+    index = HERE / "historical-priority.jsonl"
+    tmp = index.with_suffix(".tmp")
+    tmp.write_text("".join(json.dumps({"queue_index": i, **rank}, ensure_ascii=False, sort_keys=True) + "\n" for i, (rank, _) in enumerate(ranked)))
+    tmp.replace(index)
+    return [row for _, row in ranked]
+
+
+def archive_historical_checkpoint(checkpoint):
+    """Retain the exact queue and bounded batch before the next run replaces it."""
+    queue_data = (HERE / "historical-queue.json").read_bytes()
+    digest = hashlib.sha256(queue_data).hexdigest()
+    snapshots = HERE / "queue-snapshots"
+    snapshots.mkdir(exist_ok=True)
+    snapshot = snapshots / (digest + ".json")
+    if not snapshot.exists():
+        snapshot.write_bytes(queue_data)
+    batches = HERE / "batches"
+    batches.mkdir(exist_ok=True)
+    saved = {**checkpoint, "queue_snapshot_artifact": {
+        "path": str(snapshot.relative_to(ROOT)), "bytes": len(queue_data), "sha256": digest}}
+    destination = batches / (checkpoint["batch_id"] + ".json")
+    write_json(destination, saved)
+    return str(destination.relative_to(ROOT))
+
+
 def choose_track(info):
     # Authored English first; otherwise the original automatic track. The
     # suffix 'orig' is yt-dlp's original language flag, not a separate language.
@@ -142,7 +201,7 @@ def classify_error(error):
     lower = message.lower()
     if "429" in message or "too many requests" in lower:
         return "rate_limited", 429, 3600
-    if any(x in lower for x in ("sign in", "sign-in", "not a bot", "login required")):
+    if any(x in lower for x in ("sign in", "sign-in", "not a bot", "login required", "http error 403", "http error 401")):
         return "access_challenge", None, 86400
     if "private video" in lower:
         return "private", None, 604800
@@ -153,7 +212,7 @@ def classify_error(error):
     return "temporary_failure", None, 3600
 
 
-def acquire(row):
+def acquire(row, scope="explicit_curated_selection_only", batch_id=None):
     import yt_dlp
     from yt_dlp.version import __version__
     logs = []
@@ -169,6 +228,7 @@ def acquire(row):
             logs.append({"level": "error", "message": msg})
 
     attempt = {"video_id": row["id"], "url": row["url"], "source_ids": row["source_ids"],
+               "scope": scope, "batch_id": batch_id,
                "started_at": now(), "method": "yt-dlp_json3", "tool_version": __version__,
                "authentication": "anonymous; no cookies, proxies, or identity switching"}
     try:
@@ -208,6 +268,7 @@ def acquire(row):
         published = f"{upload[:4]}-{upload[4:6]}-{upload[6:8]}" if upload and len(upload) == 8 else None
         duration = info.get("duration") or row.get("duration_seconds")
         record = {"schema_version": 1, "video_id": row["id"], "source_ids": row["source_ids"],
+                  "acquisition_scope": scope, "acquisition_batch_id": batch_id,
                   "url": row["url"], "title": info.get("title") or row["title"],
                   "published_at": published, "date_provenance": "yt-dlp public watch metadata" if published else "unknown",
                   "duration_seconds": duration, "duration_provenance": "yt-dlp public watch metadata" if info.get("duration") else "inventory",
@@ -241,20 +302,24 @@ def report():
     curation = json.loads((HERE / "curation.json").read_text()) if (HERE / "curation.json").exists() else {}
     selected = {c["video_id"] for c in curation.get("candidates", []) if c.get("selected")}
     selected_exported = selected & existing_exported()
+    state = json.loads(STATE.read_text()) if STATE.exists() else {}
+    historical = state.get("scope") == HISTORICAL_SCOPE
     report = {"generated_at": now(), "exported_videos": len({r["video_id"] for r in records}),
+              "acquired_unique_videos_across_own_and_canonical": len(existing_exported()),
               "source_counts": dict(Counter(s for r in records for s in r["source_ids"])),
               "artifact_count": sum(len(r["artifacts"]) for r in records),
               "artifact_bytes": sum(a["bytes"] for r in records for a in r["artifacts"]),
               "known_video_duration_seconds": sum(r.get("duration_seconds") or 0 for r in records),
               "queue_snapshot_total": queue.get("queue_total"),
               "queue_snapshot_generated_at": queue.get("generated_at"),
-              "general_historical_queue_active": False,
+              "general_historical_queue_active": historical,
+              "active_scope": state.get("scope", "curated_selection_only"),
               "curated_videos_selected_for_study": len(selected),
               "curated_videos_with_exported_track": len(selected_exported),
               "curated_videos_pending_acquisition": sorted(selected - selected_exported),
               "attempt_results": dict(Counter(a["result"] for a in attempts)),
               "full_source_analyzed": 0, "speech_coverage_verified": 0,
-              "scope_note": "Acquisition evidence only. The active scope is explicit curation; the historical inventory is preserved for discovery, not an active download target."}
+              "scope_note": "Acquisition evidence only; canonical reading/study flags are never rewritten. Exhaustive user scope is ordered by course relevance; this bounded batch does not establish full corpus coverage." if historical else "Acquisition evidence only. Default execution uses explicit curation; --historical is required for the complete inventory."}
     write_json(HERE / "coverage.json", report)
     return report
 
@@ -264,6 +329,8 @@ def main():
     parser.add_argument("--max-videos", type=int, default=40)
     parser.add_argument("--pause-seconds", type=float, default=20)
     parser.add_argument("--ids", nargs="*", help="Acquire only these explicitly selected IDs; never resume the full inventory")
+    parser.add_argument("--historical", action="store_true", help="Explicitly acquire the complete inventory in relevance order under the renewed user directive")
+    parser.add_argument("--plan-only", action="store_true", help="Write the queue and checkpoint without any network calls")
     parser.add_argument("--report-only", action="store_true")
     args = parser.parse_args()
     HERE.mkdir(parents=True, exist_ok=True)
@@ -276,9 +343,14 @@ def main():
         print(json.dumps({"status": "cooldown_active", **state}), flush=True)
         return
     queue = build_queue()
+    scope = HISTORICAL_SCOPE if args.historical else "explicit_curated_selection_only"
+    if args.historical and args.ids:
+        raise SystemExit("Choose either --historical or a constrained --ids selection.")
     if args.ids:
         order = {value: index for index, value in enumerate(args.ids)}
         queue = sorted([row for row in queue if row["id"] in order], key=lambda row: order[row["id"]])
+    elif args.historical:
+        queue = prioritize_historical(queue)
     else:
         curation_path = HERE / "curation.json"
         if not curation_path.exists():
@@ -288,30 +360,78 @@ def main():
                     if item.get("selected") and item.get("acquisition_action") == "acquire_selected"]
         order = {value: index for index, value in enumerate(selected)}
         queue = sorted([row for row in queue if row["id"] in order], key=lambda row: order[row["id"]])
-    write_json(HERE / "active-selection.json", {"generated_at": now(), "scope": "explicit_curated_selection_only",
+    write_json(HERE / "active-selection.json", {"generated_at": now(), "scope": scope,
                 "selection_total": len(queue), "video_ids": [row["id"] for row in queue]})
     exported = existing_exported()
     latest = {r["video_id"]: r for r in read_lines(ATTEMPTS)}
+    checkpoint = {"batch_id": datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ"),
+                  "scope": scope, "started_at": now(), "max_new_attempts": args.max_videos,
+                  "pause_seconds": max(args.pause_seconds, 20), "queue_total": len(queue),
+                  "baseline_exported_video_ids": sorted(exported), "attempted_video_ids": [],
+                  "new_exported_video_ids": [], "new_artifact_count": 0,
+                  "queue_index_base": 0, "status": "planned"}
+    checkpoint_path = HERE / ("historical-checkpoint.json" if args.historical else "selection-checkpoint.json")
+
+    def update_checkpoint(status, position=0, result=None):
+        available = existing_exported()
+        remaining = [(i, r["id"]) for i, r in enumerate(queue) if i >= position and r["id"] not in available]
+        checkpoint.update(status=status, updated_at=now(),
+                          next_queue_index=remaining[0][0] if remaining else None,
+                          next_video_id=remaining[0][1] if remaining else None,
+                          remaining_unexported_in_snapshot=len([r for r in queue if r["id"] not in available]))
+        if result:
+            checkpoint["last_result"] = result["result"]
+            if result.get("next_retry_at"):
+                checkpoint["last_next_retry_at"] = result["next_retry_at"]
+        write_json(checkpoint_path, checkpoint)
+
+    update_checkpoint("planned")
+    if args.plan_only:
+        print(json.dumps(checkpoint, ensure_ascii=False), flush=True)
+        return
+    write_json(STATE, {"scope": scope, "status": "running", "started_at": now(), "batch_id": checkpoint["batch_id"]})
     count = 0
-    for row in queue:
-        if row["id"] in exported:
+    stop_status = "batch_limit_or_selection_exhausted"
+    next_position = 0
+    for position, row in enumerate(queue):
+        # A concurrently integrated canonical record also prevents a duplicate.
+        if row["id"] in existing_exported():
             continue
         earlier = latest.get(row["id"], {})
         if earlier.get("next_retry_at") and datetime.fromisoformat(earlier["next_retry_at"]) > datetime.now(timezone.utc):
             continue
         if count >= args.max_videos:
+            next_position = position
             break
-        result = acquire(row)
+        result = acquire(row, scope=scope, batch_id=checkpoint["batch_id"])
         count += 1
+        next_position = position + 1
+        checkpoint["attempted_video_ids"].append(row["id"])
+        if result["result"] == "exported_track":
+            checkpoint["new_exported_video_ids"].append(row["id"])
+            checkpoint["new_artifact_count"] += len(result.get("artifact_paths", []))
         print(json.dumps({k: result.get(k) for k in ("video_id", "result", "language", "cue_count", "error")}, ensure_ascii=False), flush=True)
-        report()
         if result["result"] in ("rate_limited", "access_challenge", "network_dns_failure"):
-            write_json(STATE, {"stopped_at": now(), "reason": result["result"], "video_id": row["id"], "cooldown_until": result["next_retry_at"],
+            stop_status = "blocked_by_" + result["result"]
+            write_json(STATE, {"scope": scope, "status": stop_status, "batch_id": checkpoint["batch_id"], "stopped_at": now(), "reason": result["result"], "video_id": row["id"], "cooldown_until": result["next_retry_at"],
                               "policy": "Stop batch. Resume after cooldown; no cookies/proxies/identity switching."})
+            next_position = position
+            update_checkpoint(stop_status, position, result)
+            report()
             break
-        write_json(STATE, {"updated_at": now(), "last_video_id": row["id"], "last_result": result["result"]})
+        write_json(STATE, {"scope": scope, "status": "running", "batch_id": checkpoint["batch_id"], "updated_at": now(), "last_video_id": row["id"], "last_result": result["result"]})
+        update_checkpoint("running", next_position, result)
+        report()
         if count < args.max_videos and row is not queue[-1]:
-            time.sleep(max(args.pause_seconds, 10))
+            time.sleep(max(args.pause_seconds, 20))
+    update_checkpoint(stop_status, next_position)
+    if args.historical:
+        archive_historical_checkpoint(checkpoint)
+    if not stop_status.startswith("blocked_by_"):
+        write_json(STATE, {"scope": scope, "status": "bounded_batch_finished", "batch_id": checkpoint["batch_id"],
+                          "finished_at": now(), "new_exported_videos": len(checkpoint["new_exported_video_ids"]),
+                          "next_queue_index": checkpoint["next_queue_index"], "next_video_id": checkpoint["next_video_id"],
+                          "entire_corpus_complete": False})
     print(json.dumps(report(), ensure_ascii=False), flush=True)
 
 

@@ -1600,8 +1600,875 @@
       ],
       "material_conflict": "At 205.272s the environment UI warns against adding secrets/credentials while narration directs the API-dependent workflow variables to that section. No secret values were read, copied or disclosed; no workaround is advised.",
       "next_action": "Use only as optional later evidence of setup cost and incomplete outcome; first CSV exercise and current scheduling references are handled separately in studies/scheduling. No further acquisition or curriculum mutation."
+    },
+    {
+      "id": "article-builder-ai-design-2025",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/ai-design",
+      "title": "Why Is AI Design Bad?",
+      "author": "Alice Moore",
+      "published_at": "2025-09-25",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/builder-blog.json",
+      "study_path": "studies/backfill/articles-01/builder-ai-design.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "text_scope": "main.innerText completo, incluindo rodapé promocional; linhas 1–115",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a01-builder-ai-design.txt",
+          "bytes": 8133,
+          "sha256": "e03ffbcdda72ec3598ccd567c5ee706dfb795ae852956a650437f6140214a6c2",
+          "line_count": 115,
+          "read_lines": [
+            [
+              1,
+              115
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a01-builder-ai-design.html",
+          "bytes": 238860,
+          "sha256": "fdf62951fa46859854f52b16c533f1401f258efda421b9a023c3ced6950e34c4",
+          "line_count": 1295,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a01-builder-ai-design-media.json",
+          "bytes": 3375,
+          "sha256": "f9f5ab5dd97e9dbb59ed9d60c3ed0b3673e541eb47ac1c40f47039aa2caedd63",
+          "line_count": 86,
+          "read_lines": [],
+          "kind": "media_inventory",
+          "scope": "inventário de elementos DOM examinados; não artigo textual"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a01-design-code-loop.png",
+          "bytes": 30724,
+          "sha256": "a8f1982f320bc8b5b1f78b4fed4196b9fbef680a6ef166f58eb9d747b703aa56",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "diagrama do ciclo de código",
+          "method": "screenshot da imagem da fonte aberta no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a01-design-design-loop.png",
+          "bytes": 24782,
+          "sha256": "b3fcd49e6d99aeed7294ac7809ab6ce76e99628941a399ff1a5f4aedb5eadf65",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "diagrama do ciclo de design",
+          "method": "screenshot da imagem da fonte aberta no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a01-design-better-loop.png",
+          "bytes": 40664,
+          "sha256": "ec5d6d26246a0285d2985c172d200f9582cff454f2f24e21fb8159fd4fe2d3a4",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "diagrama de alternativa proposta",
+          "method": "screenshot da imagem da fonte aberta no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "2 elementos video com posters no DOM; movimento não assistido"
+      ],
+      "blocked": false,
+      "acquisition_notes": [
+        "HTML público adquirido por GET; parser inicial retornou cabeçalho incompleto, substituído por texto integral do navegador",
+        "Nenhum paywall observado; conteúdo final e chamada comercial presentes"
+      ],
+      "not_reviewed": [
+        "vídeos embutidos",
+        "produto Fusion em execução",
+        "referências externas do artigo"
+      ],
+      "practice_checks": [
+        "comportamento e hierarquia visual",
+        "alcance da mudança entre componentes/páginas"
+      ],
+      "rights": "Brutos e capturas locais gitignored; sem licença de republicação presumida.",
+      "study_artifact": {
+        "path": "studies/backfill/articles-01/builder-ai-design.md",
+        "bytes": 7954,
+        "sha256": "e09c9fc410e89766f024f63b7ae53e1bb32f3eb334ceb32a3f604a3c1404fdd9",
+        "line_count": 66,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "source_manifest": "studies/backfill/articles-01/manifest.json"
+    },
+    {
+      "id": "article-builder-code-review-ai-2025",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/code-review-ai",
+      "title": "Code Review in the AI Age",
+      "author": "Alice Moore",
+      "published_at": "2025-07-21",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/builder-blog.json",
+      "study_path": "studies/backfill/articles-01/builder-code-review-ai.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "text_scope": "main.innerText completo, incluindo rodapé promocional; linhas 1–157",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a01-builder-code-review-ai.txt",
+          "bytes": 12655,
+          "sha256": "cfbdb04ab63c89243af3751cb2ca6f97331f4a9aa437d208e9837733d342e96e",
+          "line_count": 157,
+          "read_lines": [
+            [
+              1,
+              157
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a01-builder-code-review-ai.html",
+          "bytes": 251566,
+          "sha256": "b061c445d89e344dd136d7dfb9516fd3ceab3652ccc2191177f07b7dd73fc408",
+          "line_count": 1303,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a01-builder-code-review-ai-media.json",
+          "bytes": 3105,
+          "sha256": "25b9f4e098dbfcda740f8c0e795d21cb3381658b4d01dff184e5b328db3ecdf1",
+          "line_count": 86,
+          "read_lines": [],
+          "kind": "media_inventory",
+          "scope": "inventário de elementos DOM examinados; não artigo textual"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a01-review-workflow.png",
+          "bytes": 22706,
+          "sha256": "e5edf1020c396caca707f03096ac3f10a53896ceb925583a4067adbeab8a118a",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "diagrama qualitativo de escrita/revisão sem escala quantitativa",
+          "method": "screenshot no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a01-review-debt.png",
+          "bytes": 54242,
+          "sha256": "e4998c0ada5819797d9f0614677c12ecd7824cb94b717ceb758a3b419cfeeed7",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "meme de dívida técnica",
+          "method": "screenshot no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a01-review-self-review.png",
+          "bytes": 55792,
+          "sha256": "53e9c34aae9dbeb0b9c9711ffe0f4a1cda96cd0bf99b758b56dd20640fc39978",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "meme de geração e revisão pelo mesmo sistema",
+          "method": "screenshot no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a01-review-section.png",
+          "bytes": 56063,
+          "sha256": "9169e49e1c4000d31d35dd618b135edec26b94af9cd4b2ec8b06a763c822a9da",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "cabeçalho e capa; não captura da seção técnica",
+          "method": "screenshot no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "2 elementos video com posters; movimento não assistido"
+      ],
+      "blocked": false,
+      "acquisition_notes": [
+        "HTML público e corpo renderizado íntegro disponíveis",
+        "Nenhum paywall observado"
+      ],
+      "not_reviewed": [
+        "animações embutidas, inclusive exemplo Angular",
+        "estudos externos citados",
+        "produto Fusion em execução"
+      ],
+      "practice_checks": [
+        "regra funcional de busca com entradas conhecidas",
+        "preservação de links/dados e alcance da mudança"
+      ],
+      "rights": "Brutos e capturas locais gitignored; sem licença de republicação presumida.",
+      "study_artifact": {
+        "path": "studies/backfill/articles-01/builder-code-review-ai.md",
+        "bytes": 8151,
+        "sha256": "0775f92a90a103289f3ce2f80e429feb538eb5e95f1e869a89572a16e150e0a4",
+        "line_count": 64,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "source_manifest": "studies/backfill/articles-01/manifest.json"
+    },
+    {
+      "id": "backfill-v01-fK_bm84N7bs",
+      "video_id": "fK_bm84N7bs",
+      "title": "Build beautiful frontends with OpenAI Codex",
+      "url": "https://www.youtube.com/watch?v=fK_bm84N7bs",
+      "published_at": "2025-10-27",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-01/fK_bm84N7bs.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-01/fK_bm84N7bs.md",
+        "bytes": 9162,
+        "sha256": "1c7ffa3e4448dcaf803cae479a72557c072436c15069bc4cf74ab60ed27b019d"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.fK_bm84N7bs.en.6c10d987982b.txt",
+        "bytes": 19242,
+        "sha256": "6c10d987982bb4ece25fa14848488005f89132d43a3ed0477d31f1294dbab3a7",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 288,
+        "first_cue_start_seconds": 4.319,
+        "last_cue_start_seconds": 502.96,
+        "last_cue_end_seconds": 506.36,
+        "track_export_complete": true,
+        "logical_line_count": 288,
+        "sequential_read_ranges": [
+          [
+            1,
+            180
+          ],
+          [
+            181,
+            288
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.fK_bm84N7bs.en.b5b6e402d7af.json3",
+        "bytes": 207018,
+        "sha256": "b5b6e402d7af9238d7ab2c318e900c9fd283c1bf66665d81b9acadfe7e486752"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v01-fK_bm84N7bs-dashboard.png",
+          "bytes": 184132,
+          "sha256": "e4b95b0aa677f0ad69f0a3e930797d69f91381aec319f906fc2e493eb4cd7ca2",
+          "player_seconds": 344,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Cloud preview of globe; testing report says lint fails with missing get-intrinsic and npm registry 403. Filename is a label, not the displayed scene."
+        },
+        {
+          "path": "studies/local/backfill-v01-fK_bm84N7bs-globe.png",
+          "bytes": 168109,
+          "sha256": "e5c535855e48ae370ee5b63a83faec486e08897595926f9a56765620f8ac1ea2",
+          "player_seconds": 384,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Kyoto detail beside globe and matching assistant button; gesture sequence not certified."
+        },
+        {
+          "path": "studies/local/backfill-v01-fK_bm84N7bs-mobile.png",
+          "bytes": 124653,
+          "sha256": "d4983fa8eefc31df949803d8520587ef736a5e8a2c74dce2f15bafaf9a1f17c9",
+          "player_seconds": 414,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Long narrow Travel Log screenshot over desktop preview; visual overview, not all mobile interactions."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 509,
+      "duration_seconds_observed_player": 508,
+      "timing_note": "Caption span 4.319–506.360s; start/tail speech and duration mismatch unresolved. Automatic track is not human-verified.",
+      "source_or_practice_executed": false,
+      "current_desktop_parity_verified": false,
+      "sufficiency": "Useful for sketch-to-requirements and visual review; not standalone beginner setup/full app tutorial.",
+      "material_finding": "Visible lint failure in cloud preview is not resolved or retested in the reviewed evidence.",
+      "pending": [
+        "Continuous audiovisual review and gesture transitions",
+        "Caption accuracy, uncertain terms and first/last speech",
+        "Actual local/cloud execution and all claimed behavior checks"
+      ],
+      "source_manifest": "studies/backfill/videos-01/manifest.json"
+    },
+    {
+      "id": "backfill-v01-bTF3tACqPRU",
+      "video_id": "bTF3tACqPRU",
+      "title": "One n8n Workflow for Unlimited Error Handling (Step-by-Step)",
+      "url": "https://www.youtube.com/watch?v=bTF3tACqPRU",
+      "published_at": "2025-04-20",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-01/bTF3tACqPRU.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-01/bTF3tACqPRU.md",
+        "bytes": 10212,
+        "sha256": "92620031a0a3d213cda6367b40a94d0500fcd23e252557f196ab84db8035aa81"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.bTF3tACqPRU.en.7699c8668864.txt",
+        "bytes": 23615,
+        "sha256": "7699c866886415289a86d31419d26db7a2ebf7d0c6ec21fb325407865c23edc6",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 336,
+        "first_cue_start_seconds": 0.16,
+        "last_cue_start_seconds": 574.56,
+        "last_cue_end_seconds": 577.04,
+        "track_export_complete": true,
+        "logical_line_count": 336,
+        "sequential_read_ranges": [
+          [
+            1,
+            180
+          ],
+          [
+            181,
+            336
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.bTF3tACqPRU.en.196dcec27ebf.json3",
+        "bytes": 258715,
+        "sha256": "196dcec27ebf3457d29496a9a6d1803aa27ab486f3d4fbb2a6a7407f3350f4e1"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v01-bTF3tACqPRU-silent-error.png",
+          "bytes": 124099,
+          "sha256": "fd5efc19a795963774017a0370b8fbd6ee5c7bd3ca9de9da036cf6322f0b604a",
+          "player_seconds": 450,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Telegram reply says search unavailable; no corrected search demonstrated."
+        },
+        {
+          "path": "studies/local/backfill-v01-bTF3tACqPRU-green-run.png",
+          "bytes": 83972,
+          "sha256": "ac42413934f647336f539325adc782743c9a811e036ad2f9a9413bbda69ba79c",
+          "player_seconds": 470,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Think node output green while its text reports search authentication error 401."
+        },
+        {
+          "path": "studies/local/backfill-v01-bTF3tACqPRU-retest.png",
+          "bytes": 98382,
+          "sha256": "cecee2b80d80c1c6d3b9f90a13fe6069d2360bb44e08fc38ce2d4deabf4e7918",
+          "player_seconds": 515,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Sheet still shows only prior disconnected-model error before new row arrives."
+        },
+        {
+          "path": "studies/local/backfill-v01-bTF3tACqPRU-sheet.png",
+          "bytes": 101553,
+          "sha256": "494296b6fd9e77c63f831a8aabcfa32900597738befadf3ab89172d45c2919c7",
+          "player_seconds": 520,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Sheet now shows second row for Simple Memory with different error."
+        },
+        {
+          "path": "studies/local/backfill-v01-bTF3tACqPRU-slack.png",
+          "bytes": 104836,
+          "sha256": "66be21e01250c16eaf9158cd848c4128407caee608b530d834e12a975de81917",
+          "player_seconds": 525,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Two Slack alerts visible, with distinct nodes, timestamps and execution links."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 576,
+      "duration_seconds_observed_player": 576,
+      "timing_note": "Caption span 0.160–577.040s exceeds duration by 1.040s. Caption accuracy and first/last speech not verified.",
+      "source_or_practice_executed": false,
+      "current_desktop_parity_verified": false,
+      "sufficiency": "Concrete error logging/notification case after a first automation; requires preconfigured accounts, workflow and credentials.",
+      "material_findings": [
+        "Green execution can miss user goal and not trigger logger.",
+        "Forgotten save corrected and failure test repeated; new sheet row and Slack alert appear.",
+        "Logger success is not repair of original workflow; logger failure protection not implemented."
+      ],
+      "pending": [
+        "Continuous audiovisual review and transitions",
+        "Complete expressions/field mappings",
+        "Current n8n behavior and original-workflow recovery test"
+      ],
+      "source_manifest": "studies/backfill/videos-01/manifest.json"
+    },
+    {
+      "id": "academy-claude-first-prompt",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/your-first-prompt",
+      "video_id": "gbetp6D7J_Q",
+      "title": "Your first prompt",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-01/first-prompt.md",
+      "status": "transcript_analyzed_visual_pending",
+      "text_read_complete": true,
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "full_source_analyzed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac01-first-prompt.txt",
+          "bytes": 4454,
+          "sha256": "bac7e97cc901ad40c86719d2a21f6c83eee6e458146d2e7e195fd9f4036cc4ec",
+          "kind": "text",
+          "line_count": 60,
+          "read_lines": [
+            [
+              1,
+              60
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac01-first-prompt-summary.txt",
+          "bytes": 2406,
+          "sha256": "8724c2327614768261074e31ba8bfb187856bc18685404b5eba8b810420d497c",
+          "kind": "text",
+          "line_count": 50,
+          "read_lines": [
+            [
+              1,
+              50
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-01/first-prompt.md",
+        "bytes": 4968,
+        "sha256": "bade7b24eff58dd527e9fe763b29d2e33b79b4e8f074ca57aa9c809e8162fdd4",
+        "kind": "original_study",
+        "line_count": 37,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac01-first-prompt-auto.png",
+          "bytes": 54536,
+          "sha256": "9e972057b28b991a97317fb89272d2d2f44171224668bb5b096e695a50a026a8",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-first-prompt-plan.png",
+          "bytes": 50914,
+          "sha256": "e7502a6375344826878bfcbdf063e029d1c2da80dfb5311996e8adc8e6fdb3bc",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-first-prompt-input.png",
+          "bytes": 68242,
+          "sha256": "bda9efaf3362867916f5a1e732b602988daf48504b1ba459c8bbfbe919c81705",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Resultado visual final e critérios de aprovação não demonstrados nas imagens",
+        "Prática original não executada"
+      ],
+      "rights": "Original textual e capturas locais gitignored; sem licença de republicação presumida.",
+      "source_manifest": "studies/backfill/academy-01/manifest.json"
+    },
+    {
+      "id": "article-peter-human-review-2026",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually",
+      "title": "Use My /Human-Review Skill to Edit HTML and Markdown Files Visually",
+      "author": "Peter Yang",
+      "published_at": "2026-08-05",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/peter-yang-newsletter.json",
+      "study_path": "studies/backfill/articles-01/peter-human-review.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "text_scope": "article.innerText completo, 120 linhas; inclui convite de assinatura, patrocínio e fechamento",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a01-peter-human-review.txt",
+          "bytes": 4981,
+          "sha256": "bd86571b0a955beb6e4fbd2b87e3ba588385d1000274e96c69a9543b9f995233",
+          "line_count": 120,
+          "read_lines": [
+            [
+              1,
+              120
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a01-peter-human-review.html",
+          "bytes": 201054,
+          "sha256": "8147ee1d4a6eca4b5612f867672e4b34f6cb5599f54b3427485885d3f249a59d",
+          "line_count": 411,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a01-peter-human-review-media.json",
+          "bytes": 3834,
+          "sha256": "f8cd44ac23396a408233500fe4334bf50dea0eed3a62ba5708ef80360c12e8e7",
+          "line_count": 79,
+          "read_lines": [],
+          "kind": "media_inventory",
+          "scope": "inventário de elementos DOM examinados; não artigo textual"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a01-peter-human-review-ui.png",
+          "bytes": 70757,
+          "sha256": "dd30de6efdb9b84c08a9ab5c1409f7ca88fee5dfe198bc08015093e8c5a876cf",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "imagem central com comentário ancorado, lista de alterações e envio agrupado",
+          "method": "screenshot no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a01-peter-player-observation.png",
+          "bytes": 35252,
+          "sha256": "6beef3b1f4698f5ec06a211132d7f64612642ddb812888670aeb05abee3e3912",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "player no início 0:00 / 0:30; quadro não prova sequência completa",
+          "method": "screenshot no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a01-peter-demo-sample.png",
+          "bytes": 44004,
+          "sha256": "95230e9484841b8ec2ce48f9a0c4fc7e7002117d8580df194509b3bed367d6dc",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "estado posterior com texto selecionado; controles ocultos, timestamp não atribuído",
+          "method": "screenshot no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "demo nativa de 30 segundos; somente dois estados amostrados; audiovisual integral pendente"
+      ],
+      "blocked": false,
+      "acquisition_notes": [
+        "Corpo completo público até crédito final; convite de assinatura fechado sem login",
+        "Extração HTML inicial incompleta por parser, corrigida pela leitura integral no navegador",
+        "Não houve barreira paga no conteúdo estudado nem instalação da skill"
+      ],
+      "not_reviewed": [
+        "audiovisual contínuo da demonstração",
+        "código, instalação, dependências e rede da skill",
+        "referências externas"
+      ],
+      "practice_checks": [
+        "intenção e persistência no arquivo de origem",
+        "alcance e integridade da revisão localizada"
+      ],
+      "rights": "Brutos e capturas locais gitignored; sem licença de republicação presumida.",
+      "study_artifact": {
+        "path": "studies/backfill/articles-01/peter-human-review.md",
+        "bytes": 9922,
+        "sha256": "2ace3e9da638bd4215849199ab9540f81d72fd47d4e4376a8610ffcbf2b686f4",
+        "line_count": 68,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "source_manifest": "studies/backfill/articles-01/manifest.json"
+    },
+    {
+      "id": "academy-claude-context-management",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/context-management",
+      "video_id": "eW3oTyfeWZ0",
+      "title": "Context management",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-01/context-management.md",
+      "status": "transcript_analyzed_visual_pending",
+      "text_read_complete": true,
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "full_source_analyzed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac01-context.txt",
+          "bytes": 6349,
+          "sha256": "b88bce800049c0235597950633c5c2f3dcf963512ca8eed54691fbd834ffad67",
+          "kind": "text",
+          "line_count": 80,
+          "read_lines": [
+            [
+              1,
+              80
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac01-context-summary.txt",
+          "bytes": 3203,
+          "sha256": "a78c14dea3ba9a08b923a36c94ef7d7dffb58882d11fbbfb1311142bda994c7c",
+          "kind": "text",
+          "line_count": 64,
+          "read_lines": [
+            [
+              1,
+              64
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-01/context-management.md",
+        "bytes": 5756,
+        "sha256": "b60f2cd15f32c2cc393c29964a542a5799efc8e6643b63022076ec086c5b2506",
+        "kind": "original_study",
+        "line_count": 46,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac01-context-0.png",
+          "bytes": 33492,
+          "sha256": "3ec5a6fdf60340c965645cf6a3780945b2888b9b3849898b09d4c5c37c8365c2",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-context-1.png",
+          "bytes": 37326,
+          "sha256": "3e9e8f12674ae73f1ac29452f794650c6208fc98d934723af4ddd58f1a0a0c61",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-context-2.png",
+          "bytes": 85549,
+          "sha256": "c871731d88f27c3bb8b2b4b25c6f1bb95e23ae8bd86b58542461672db941e02d",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-context-3.png",
+          "bytes": 45169,
+          "sha256": "90ba18a066eea7e61f153cf190657f3dec95a4bb70b4944c05ca77b73b3dd7fe",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-context-4.png",
+          "bytes": 43945,
+          "sha256": "3beb643bee9821be138921403f13815a3cd72689d6435caab47f4e9b046f02e7",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-context-5.png",
+          "bytes": 52270,
+          "sha256": "79bd9f7622181dd10a10112b37661e6e6371f87f7a0fbd71bf63652ba9e8b1e2",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-context-6.png",
+          "bytes": 59499,
+          "sha256": "c5fcee987c4c397ae2ef425b5a8a48baa7ac8cb5fd146cdaff5f703e6cc783b6",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/mcp",
+          "method": "web open/find",
+          "read_scope": "Tool availability; Scale with MCP tool search; Configure tool search",
+          "entire_source_read": false,
+          "observed_at": "2026-09-28",
+          "finding": "Current documentation describes deferred tool search by default with configuration/provider exceptions; lesson generalization not current universal rule."
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Execução dos comandos",
+        "Prática original não executada"
+      ],
+      "rights": "Original textual e capturas locais gitignored; sem licença de republicação presumida.",
+      "source_manifest": "studies/backfill/academy-01/manifest.json"
+    },
+    {
+      "id": "backfill-v01-E2UgYp2vh5U",
+      "video_id": "E2UgYp2vh5U",
+      "title": "I Built the Same App With Claude Code and Codex",
+      "url": "https://www.youtube.com/watch?v=E2UgYp2vh5U",
+      "published_at": "2026-05-22",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-01/E2UgYp2vh5U.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-01/E2UgYp2vh5U.md",
+        "bytes": 15427,
+        "sha256": "9f9c3ad85cec888d5e6d33e1706d6e9db3b343bbe9d1eba49280fd65553ecc39"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.E2UgYp2vh5U.en-CA.be8096d60e4c.txt",
+        "bytes": 48800,
+        "sha256": "be8096d60e4ccc3605679fd6618a1c522f62fbb445cdc7d541966f5927a7d022",
+        "caption_origin": "authored-or-unspecified",
+        "language": "en-CA",
+        "cue_count": 546,
+        "first_cue_start_seconds": 0.116,
+        "last_cue_start_seconds": 1606.933,
+        "last_cue_end_seconds": 1611.033,
+        "track_export_complete": true,
+        "logical_line_count": 854,
+        "sequential_read_ranges": [
+          [
+            1,
+            190
+          ],
+          [
+            191,
+            470
+          ],
+          [
+            471,
+            730
+          ],
+          [
+            731,
+            854
+          ]
+        ],
+        "origin_note": "authored-or-unspecified does not establish a manually revised transcript; 546 cues occupy 854 logical lines."
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.E2UgYp2vh5U.en-CA.31b0d4aaa724.json3",
+        "bytes": 84322,
+        "sha256": "31b0d4aaa72447f03e0535f36f47e9ec58b89bdd31ea266d9ea436221db3ca90"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v01-E2UgYp2vh5U-setup.png",
+          "bytes": 133042,
+          "sha256": "9e6e8e171849c35dc7badbaaf9519e81e767c4cacd29f53af57a25f229dacb4c",
+          "player_seconds": 195,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Graphical Codex app and local project; selector shows 5.5 Extra High. Historical setup only."
+        },
+        {
+          "path": "studies/local/backfill-v01-E2UgYp2vh5U-collaboration.png",
+          "bytes": 135064,
+          "sha256": "f276c8dce08db55954dbdc6b8432e57215e168f7fb4372eb421723e9f34c95f8",
+          "player_seconds": 621,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Two local windows with same Markdown document and matching preview; no latency or full input sequence measured."
+        },
+        {
+          "path": "studies/local/backfill-v01-E2UgYp2vh5U-presence.png",
+          "bytes": 139269,
+          "sha256": "90b85714de31e4b9e6d060bf36d7c033c3d12a137c1f08254dbd263e14ef83bb",
+          "player_seconds": 996,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Three participant avatars with Share/History/Export controls in local document; scale and persistence not certified."
+        },
+        {
+          "path": "studies/local/backfill-v01-E2UgYp2vh5U-review.png",
+          "bytes": 182581,
+          "sha256": "d6c5386468760185702dea98d3425f3a6a78c7106e61962ab36401e4b319ae58",
+          "player_seconds": 1366,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Claude review alleges save shortcut only displays toast without persistence acknowledgment; allegation not reproduced."
+        },
+        {
+          "path": "studies/local/backfill-v01-E2UgYp2vh5U-usage.png",
+          "bytes": 189088,
+          "sha256": "f5bc5368a0fd1769ed2a731931869120ca5eeec6e299234129672d261593c4b2",
+          "player_seconds": 1486,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Codex app shows 95% remaining for five-hour and 98% weekly; quota percentages are not measured money or token counts."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 1620,
+      "duration_seconds_observed_player": 1619,
+      "timing_note": "Caption span 0.116–1611.033s ends 8.967s before metadata duration; player differs by 1s. Remaining speech/silence and caption accuracy unverified.",
+      "source_or_practice_executed": false,
+      "current_desktop_parity_verified": false,
+      "sufficiency": "Useful later for iterative construction, regression and critical comparison; not first-app recipe or controlled product/cost benchmark.",
+      "material_findings": [
+        "Shared-port process interference undermines isolation.",
+        "Button/loop bugs and later working editing are reported without full cause/retest protocol.",
+        "Save indication and participant count do not certify storage durability.",
+        "Cross-review findings remain reviewer allegations, not reproduced bugs.",
+        "Percent-of-subscription usage lacks token, price and denominator normalization."
+      ],
+      "pending": [
+        "Full audiovisual progression and tail after captions",
+        "Underlying spec/code and exact tool/environment comparability",
+        "Independent persistence/reconnection/export and review reproduction",
+        "Controlled repeatable comparison, if making any broader ranking claim"
+      ],
+      "source_manifest": "studies/backfill/videos-01/manifest.json"
     }
   ],
-  "updated_at": "2026-09-28T20:04:06.410449+00:00",
+  "updated_at": "2026-09-28T20:58:44.707813+00:00",
   "scope_note": "Text acquisition, complete reading, visual inspection and product execution are distinct. See individual scope and pending fields."
 }

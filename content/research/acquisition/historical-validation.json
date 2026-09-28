@@ -1,0 +1,22 @@
+{
+  "validated_at": "2026-09-28T20:56:47.345705+00:00",
+  "scope": "exhaustive_user_directive_2026_09_28",
+  "batch_id": "20260928T204554Z",
+  "batch_status": "batch_limit_or_selection_exhausted",
+  "new_videos": 30,
+  "artifacts_checked": 60,
+  "artifact_bytes": 19041301,
+  "preserved_baseline_videos": 23,
+  "minimum_inter_id_pause_seconds": 20.009519,
+  "canonical_flags_regressed": false,
+  "canonical_manifest_bytes_unchanged": false,
+  "queue_snapshot_ids": 4853,
+  "new_inventory_ids_not_yet_in_snapshot": [],
+  "next_queue_index": 34,
+  "next_video_id": "g328fQNFQYA",
+  "remaining_unexported_in_snapshot": 4800,
+  "errors": [],
+  "entire_corpus_complete": false,
+  "validation_scope": "Files, hashes, queue/checkpoint consistency and non-regression of previously true canonical study flags; no speech or audiovisual verification.",
+  "archived_checkpoint_path": "acquisition/batches/20260928T204554Z.json"
+}

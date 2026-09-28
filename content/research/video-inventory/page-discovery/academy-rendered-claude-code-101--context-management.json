@@ -1,0 +1,20 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-code-101/context-management",
+  "title": "Context management",
+  "observed_at": "2026-09-28T20:56:11.352Z",
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=eW3oTyfeWZ0",
+      "title": "Context management"
+    }
+  ],
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/eW3oTyfeWZ0",
+      "title": "Context management"
+    }
+  ],
+  "acquired_transcript": "transcripts/local/eW3oTyfeWZ0.academy.txt",
+  "inventory_scope": "rendered public lesson; no audiovisual completeness claim"
+}

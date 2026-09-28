@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "artifact_path_base": "content/research",
+  "updated_at": "2026-09-28T20:56:29.257723+00:00",
+  "studies": [
+    {
+      "id": "backfill-v01-fK_bm84N7bs",
+      "video_id": "fK_bm84N7bs",
+      "title": "Build beautiful frontends with OpenAI Codex",
+      "url": "https://www.youtube.com/watch?v=fK_bm84N7bs",
+      "published_at": "2025-10-27",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-01/fK_bm84N7bs.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-01/fK_bm84N7bs.md",
+        "bytes": 9162,
+        "sha256": "1c7ffa3e4448dcaf803cae479a72557c072436c15069bc4cf74ab60ed27b019d"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.fK_bm84N7bs.en.6c10d987982b.txt",
+        "bytes": 19242,
+        "sha256": "6c10d987982bb4ece25fa14848488005f89132d43a3ed0477d31f1294dbab3a7",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 288,
+        "first_cue_start_seconds": 4.319,
+        "last_cue_start_seconds": 502.96,
+        "last_cue_end_seconds": 506.36,
+        "track_export_complete": true,
+        "logical_line_count": 288,
+        "sequential_read_ranges": [
+          [
+            1,
+            180
+          ],
+          [
+            181,
+            288
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.fK_bm84N7bs.en.b5b6e402d7af.json3",
+        "bytes": 207018,
+        "sha256": "b5b6e402d7af9238d7ab2c318e900c9fd283c1bf66665d81b9acadfe7e486752"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v01-fK_bm84N7bs-dashboard.png",
+          "bytes": 184132,
+          "sha256": "e4b95b0aa677f0ad69f0a3e930797d69f91381aec319f906fc2e493eb4cd7ca2",
+          "player_seconds": 344,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Cloud preview of globe; testing report says lint fails with missing get-intrinsic and npm registry 403. Filename is a label, not the displayed scene."
+        },
+        {
+          "path": "studies/local/backfill-v01-fK_bm84N7bs-globe.png",
+          "bytes": 168109,
+          "sha256": "e5c535855e48ae370ee5b63a83faec486e08897595926f9a56765620f8ac1ea2",
+          "player_seconds": 384,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Kyoto detail beside globe and matching assistant button; gesture sequence not certified."
+        },
+        {
+          "path": "studies/local/backfill-v01-fK_bm84N7bs-mobile.png",
+          "bytes": 124653,
+          "sha256": "d4983fa8eefc31df949803d8520587ef736a5e8a2c74dce2f15bafaf9a1f17c9",
+          "player_seconds": 414,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Long narrow Travel Log screenshot over desktop preview; visual overview, not all mobile interactions."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 509,
+      "duration_seconds_observed_player": 508,
+      "timing_note": "Caption span 4.319–506.360s; start/tail speech and duration mismatch unresolved. Automatic track is not human-verified.",
+      "source_or_practice_executed": false,
+      "current_desktop_parity_verified": false,
+      "sufficiency": "Useful for sketch-to-requirements and visual review; not standalone beginner setup/full app tutorial.",
+      "material_finding": "Visible lint failure in cloud preview is not resolved or retested in the reviewed evidence.",
+      "pending": [
+        "Continuous audiovisual review and gesture transitions",
+        "Caption accuracy, uncertain terms and first/last speech",
+        "Actual local/cloud execution and all claimed behavior checks"
+      ]
+    },
+    {
+      "id": "backfill-v01-bTF3tACqPRU",
+      "video_id": "bTF3tACqPRU",
+      "title": "One n8n Workflow for Unlimited Error Handling (Step-by-Step)",
+      "url": "https://www.youtube.com/watch?v=bTF3tACqPRU",
+      "published_at": "2025-04-20",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-01/bTF3tACqPRU.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-01/bTF3tACqPRU.md",
+        "bytes": 10212,
+        "sha256": "92620031a0a3d213cda6367b40a94d0500fcd23e252557f196ab84db8035aa81"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.bTF3tACqPRU.en.7699c8668864.txt",
+        "bytes": 23615,
+        "sha256": "7699c866886415289a86d31419d26db7a2ebf7d0c6ec21fb325407865c23edc6",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 336,
+        "first_cue_start_seconds": 0.16,
+        "last_cue_start_seconds": 574.56,
+        "last_cue_end_seconds": 577.04,
+        "track_export_complete": true,
+        "logical_line_count": 336,
+        "sequential_read_ranges": [
+          [
+            1,
+            180
+          ],
+          [
+            181,
+            336
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.bTF3tACqPRU.en.196dcec27ebf.json3",
+        "bytes": 258715,
+        "sha256": "196dcec27ebf3457d29496a9a6d1803aa27ab486f3d4fbb2a6a7407f3350f4e1"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v01-bTF3tACqPRU-silent-error.png",
+          "bytes": 124099,
+          "sha256": "fd5efc19a795963774017a0370b8fbd6ee5c7bd3ca9de9da036cf6322f0b604a",
+          "player_seconds": 450,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Telegram reply says search unavailable; no corrected search demonstrated."
+        },
+        {
+          "path": "studies/local/backfill-v01-bTF3tACqPRU-green-run.png",
+          "bytes": 83972,
+          "sha256": "ac42413934f647336f539325adc782743c9a811e036ad2f9a9413bbda69ba79c",
+          "player_seconds": 470,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Think node output green while its text reports search authentication error 401."
+        },
+        {
+          "path": "studies/local/backfill-v01-bTF3tACqPRU-retest.png",
+          "bytes": 98382,
+          "sha256": "cecee2b80d80c1c6d3b9f90a13fe6069d2360bb44e08fc38ce2d4deabf4e7918",
+          "player_seconds": 515,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Sheet still shows only prior disconnected-model error before new row arrives."
+        },
+        {
+          "path": "studies/local/backfill-v01-bTF3tACqPRU-sheet.png",
+          "bytes": 101553,
+          "sha256": "494296b6fd9e77c63f831a8aabcfa32900597738befadf3ab89172d45c2919c7",
+          "player_seconds": 520,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Sheet now shows second row for Simple Memory with different error."
+        },
+        {
+          "path": "studies/local/backfill-v01-bTF3tACqPRU-slack.png",
+          "bytes": 104836,
+          "sha256": "66be21e01250c16eaf9158cd848c4128407caee608b530d834e12a975de81917",
+          "player_seconds": 525,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Two Slack alerts visible, with distinct nodes, timestamps and execution links."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 576,
+      "duration_seconds_observed_player": 576,
+      "timing_note": "Caption span 0.160–577.040s exceeds duration by 1.040s. Caption accuracy and first/last speech not verified.",
+      "source_or_practice_executed": false,
+      "current_desktop_parity_verified": false,
+      "sufficiency": "Concrete error logging/notification case after a first automation; requires preconfigured accounts, workflow and credentials.",
+      "material_findings": [
+        "Green execution can miss user goal and not trigger logger.",
+        "Forgotten save corrected and failure test repeated; new sheet row and Slack alert appear.",
+        "Logger success is not repair of original workflow; logger failure protection not implemented."
+      ],
+      "pending": [
+        "Continuous audiovisual review and transitions",
+        "Complete expressions/field mappings",
+        "Current n8n behavior and original-workflow recovery test"
+      ]
+    },
+    {
+      "id": "backfill-v01-E2UgYp2vh5U",
+      "video_id": "E2UgYp2vh5U",
+      "title": "I Built the Same App With Claude Code and Codex",
+      "url": "https://www.youtube.com/watch?v=E2UgYp2vh5U",
+      "published_at": "2026-05-22",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-01/E2UgYp2vh5U.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-01/E2UgYp2vh5U.md",
+        "bytes": 15427,
+        "sha256": "9f9c3ad85cec888d5e6d33e1706d6e9db3b343bbe9d1eba49280fd65553ecc39"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.E2UgYp2vh5U.en-CA.be8096d60e4c.txt",
+        "bytes": 48800,
+        "sha256": "be8096d60e4ccc3605679fd6618a1c522f62fbb445cdc7d541966f5927a7d022",
+        "caption_origin": "authored-or-unspecified",
+        "language": "en-CA",
+        "cue_count": 546,
+        "first_cue_start_seconds": 0.116,
+        "last_cue_start_seconds": 1606.933,
+        "last_cue_end_seconds": 1611.033,
+        "track_export_complete": true,
+        "logical_line_count": 854,
+        "sequential_read_ranges": [
+          [
+            1,
+            190
+          ],
+          [
+            191,
+            470
+          ],
+          [
+            471,
+            730
+          ],
+          [
+            731,
+            854
+          ]
+        ],
+        "origin_note": "authored-or-unspecified does not establish a manually revised transcript; 546 cues occupy 854 logical lines."
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.E2UgYp2vh5U.en-CA.31b0d4aaa724.json3",
+        "bytes": 84322,
+        "sha256": "31b0d4aaa72447f03e0535f36f47e9ec58b89bdd31ea266d9ea436221db3ca90"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v01-E2UgYp2vh5U-setup.png",
+          "bytes": 133042,
+          "sha256": "9e6e8e171849c35dc7badbaaf9519e81e767c4cacd29f53af57a25f229dacb4c",
+          "player_seconds": 195,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Graphical Codex app and local project; selector shows 5.5 Extra High. Historical setup only."
+        },
+        {
+          "path": "studies/local/backfill-v01-E2UgYp2vh5U-collaboration.png",
+          "bytes": 135064,
+          "sha256": "f276c8dce08db55954dbdc6b8432e57215e168f7fb4372eb421723e9f34c95f8",
+          "player_seconds": 621,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Two local windows with same Markdown document and matching preview; no latency or full input sequence measured."
+        },
+        {
+          "path": "studies/local/backfill-v01-E2UgYp2vh5U-presence.png",
+          "bytes": 139269,
+          "sha256": "90b85714de31e4b9e6d060bf36d7c033c3d12a137c1f08254dbd263e14ef83bb",
+          "player_seconds": 996,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Three participant avatars with Share/History/Export controls in local document; scale and persistence not certified."
+        },
+        {
+          "path": "studies/local/backfill-v01-E2UgYp2vh5U-review.png",
+          "bytes": 182581,
+          "sha256": "d6c5386468760185702dea98d3425f3a6a78c7106e61962ab36401e4b319ae58",
+          "player_seconds": 1366,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Claude review alleges save shortcut only displays toast without persistence acknowledgment; allegation not reproduced."
+        },
+        {
+          "path": "studies/local/backfill-v01-E2UgYp2vh5U-usage.png",
+          "bytes": 189088,
+          "sha256": "f5bc5368a0fd1769ed2a731931869120ca5eeec6e299234129672d261593c4b2",
+          "player_seconds": 1486,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Codex app shows 95% remaining for five-hour and 98% weekly; quota percentages are not measured money or token counts."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 1620,
+      "duration_seconds_observed_player": 1619,
+      "timing_note": "Caption span 0.116–1611.033s ends 8.967s before metadata duration; player differs by 1s. Remaining speech/silence and caption accuracy unverified.",
+      "source_or_practice_executed": false,
+      "current_desktop_parity_verified": false,
+      "sufficiency": "Useful later for iterative construction, regression and critical comparison; not first-app recipe or controlled product/cost benchmark.",
+      "material_findings": [
+        "Shared-port process interference undermines isolation.",
+        "Button/loop bugs and later working editing are reported without full cause/retest protocol.",
+        "Save indication and participant count do not certify storage durability.",
+        "Cross-review findings remain reviewer allegations, not reproduced bugs.",
+        "Percent-of-subscription usage lacks token, price and denominator normalization."
+      ],
+      "pending": [
+        "Full audiovisual progression and tail after captions",
+        "Underlying spec/code and exact tool/environment comparability",
+        "Independent persistence/reconnection/export and review reproduction",
+        "Controlled repeatable comparison, if making any broader ranking claim"
+      ]
+    }
+  ],
+  "round_complete": true,
+  "round_completion_meaning": "Three full caption readings and original studies delivered; audiovisual/full-speech certification remains false for all sources."
+}

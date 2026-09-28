@@ -1,6 +1,10 @@
-# Prioridade atual: curadoria relevante e estudo profundo
+# Diretriz atual: consumo integral contínuo, orientado pelo curso
 
-Diretriz posterior do usuário em 2026-09-28: não há tempo para consumir todo o histórico antes de criar o curso. Priorizar pessoas comuns usando IA para construir sites, apps simples e automações. O inventário amplo permanece como backlog; coleta exaustiva não bloqueia as aulas. Ver `CURATION_PLAN.md` e `curation.json`. Triagem pode usar metadados; conteúdo que sustenta aula exige estudo integral do recurso selecionado e revisão visual pertinente. As orientações históricas abaixo só valem quando compatíveis com esta prioridade.
+Em 2026-09-28, às 20:42 UTC, o usuário determinou diretamente: “continue consumindo e organizando com base no nosso. Não pare de fazer isso enquanto não consumir e organizar todo contéudo”. Esta é a diretriz mais recente e substitui o encerramento no corpus selecionado. O objetivo persistente está ativo nesta tarefa.
+
+Consumir e organizar todo o conteúdo acessível das nove fontes prioritárias. O propósito do curso — pessoas comuns criando sites, apps e automações — ordena o trabalho e orienta a classificação, sem excluir definitivamente materiais do histórico. Aulas continuam recebendo lotes úteis; não precisam esperar o acervo inteiro. Fontes complementares permanecem permitidas para lacunas concretas.
+
+Preservar aquisição, leitura integral, análise, inspeção visual e execução como estados separados. Material bloqueado, privado, pago sem acesso ou removido fica identificado com motivo e próxima ação; não conta como consumido nem autoriza contornar barreiras. Não certificar vídeo inteiro a partir de metadados, legendas ou quadros isolados. Originais permanecem internos; entregas públicas usam elaboração própria e referências.
 
 # Entrega incremental ao Educador
 

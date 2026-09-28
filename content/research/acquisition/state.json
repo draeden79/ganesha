@@ -1,9 +1,10 @@
 {
-  "last_result": "exported_track",
-  "last_video_id": "E2UgYp2vh5U",
-  "updated_at": "2026-09-28T19:51:22.805004+00:00",
-  "scope": "curated_selection_only",
-  "status": "selected_acquisition_complete",
-  "general_historical_queue_active": false,
-  "completed_at": "2026-09-28T19:51:51.167771+00:00"
+  "batch_id": "20260928T204554Z",
+  "entire_corpus_complete": false,
+  "finished_at": "2026-09-28T20:56:15.875319+00:00",
+  "new_exported_videos": 30,
+  "next_queue_index": 34,
+  "next_video_id": "g328fQNFQYA",
+  "scope": "exhaustive_user_directive_2026_09_28",
+  "status": "bounded_batch_finished"
 }

@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "scope": "Rodada bounded articles-01: três artigos. Manifesto atualizado por entrega.",
+  "studies": [
+    {
+      "id": "article-builder-ai-design-2025",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/ai-design",
+      "title": "Why Is AI Design Bad?",
+      "author": "Alice Moore",
+      "published_at": "2025-09-25",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/builder-blog.json",
+      "study_path": "studies/backfill/articles-01/builder-ai-design.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "text_scope": "main.innerText completo, incluindo rodapé promocional; linhas 1–115",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a01-builder-ai-design.txt",
+          "bytes": 8133,
+          "sha256": "e03ffbcdda72ec3598ccd567c5ee706dfb795ae852956a650437f6140214a6c2",
+          "line_count": 115,
+          "read_lines": [
+            [
+              1,
+              115
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a01-builder-ai-design.html",
+          "bytes": 238860,
+          "sha256": "fdf62951fa46859854f52b16c533f1401f258efda421b9a023c3ced6950e34c4",
+          "line_count": 1295,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a01-builder-ai-design-media.json",
+          "bytes": 3375,
+          "sha256": "f9f5ab5dd97e9dbb59ed9d60c3ed0b3673e541eb47ac1c40f47039aa2caedd63",
+          "line_count": 86,
+          "read_lines": [],
+          "kind": "media_inventory",
+          "scope": "inventário de elementos DOM examinados; não artigo textual"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a01-design-code-loop.png",
+          "bytes": 30724,
+          "sha256": "a8f1982f320bc8b5b1f78b4fed4196b9fbef680a6ef166f58eb9d747b703aa56",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "diagrama do ciclo de código",
+          "method": "screenshot da imagem da fonte aberta no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a01-design-design-loop.png",
+          "bytes": 24782,
+          "sha256": "b3fcd49e6d99aeed7294ac7809ab6ce76e99628941a399ff1a5f4aedb5eadf65",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "diagrama do ciclo de design",
+          "method": "screenshot da imagem da fonte aberta no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a01-design-better-loop.png",
+          "bytes": 40664,
+          "sha256": "ec5d6d26246a0285d2985c172d200f9582cff454f2f24e21fb8159fd4fe2d3a4",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "diagrama de alternativa proposta",
+          "method": "screenshot da imagem da fonte aberta no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "2 elementos video com posters no DOM; movimento não assistido"
+      ],
+      "blocked": false,
+      "acquisition_notes": [
+        "HTML público adquirido por GET; parser inicial retornou cabeçalho incompleto, substituído por texto integral do navegador",
+        "Nenhum paywall observado; conteúdo final e chamada comercial presentes"
+      ],
+      "not_reviewed": [
+        "vídeos embutidos",
+        "produto Fusion em execução",
+        "referências externas do artigo"
+      ],
+      "practice_checks": [
+        "comportamento e hierarquia visual",
+        "alcance da mudança entre componentes/páginas"
+      ],
+      "rights": "Brutos e capturas locais gitignored; sem licença de republicação presumida.",
+      "study_artifact": {
+        "path": "studies/backfill/articles-01/builder-ai-design.md",
+        "bytes": 7954,
+        "sha256": "e09c9fc410e89766f024f63b7ae53e1bb32f3eb334ceb32a3f604a3c1404fdd9",
+        "line_count": 66,
+        "read_lines": [],
+        "kind": "original_study"
+      }
+    },
+    {
+      "id": "article-builder-code-review-ai-2025",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/code-review-ai",
+      "title": "Code Review in the AI Age",
+      "author": "Alice Moore",
+      "published_at": "2025-07-21",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/builder-blog.json",
+      "study_path": "studies/backfill/articles-01/builder-code-review-ai.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "text_scope": "main.innerText completo, incluindo rodapé promocional; linhas 1–157",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a01-builder-code-review-ai.txt",
+          "bytes": 12655,
+          "sha256": "cfbdb04ab63c89243af3751cb2ca6f97331f4a9aa437d208e9837733d342e96e",
+          "line_count": 157,
+          "read_lines": [
+            [
+              1,
+              157
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a01-builder-code-review-ai.html",
+          "bytes": 251566,
+          "sha256": "b061c445d89e344dd136d7dfb9516fd3ceab3652ccc2191177f07b7dd73fc408",
+          "line_count": 1303,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a01-builder-code-review-ai-media.json",
+          "bytes": 3105,
+          "sha256": "25b9f4e098dbfcda740f8c0e795d21cb3381658b4d01dff184e5b328db3ecdf1",
+          "line_count": 86,
+          "read_lines": [],
+          "kind": "media_inventory",
+          "scope": "inventário de elementos DOM examinados; não artigo textual"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a01-review-workflow.png",
+          "bytes": 22706,
+          "sha256": "e5edf1020c396caca707f03096ac3f10a53896ceb925583a4067adbeab8a118a",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "diagrama qualitativo de escrita/revisão sem escala quantitativa",
+          "method": "screenshot no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a01-review-debt.png",
+          "bytes": 54242,
+          "sha256": "e4998c0ada5819797d9f0614677c12ecd7824cb94b717ceb758a3b419cfeeed7",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "meme de dívida técnica",
+          "method": "screenshot no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a01-review-self-review.png",
+          "bytes": 55792,
+          "sha256": "53e9c34aae9dbeb0b9c9711ffe0f4a1cda96cd0bf99b758b56dd20640fc39978",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "meme de geração e revisão pelo mesmo sistema",
+          "method": "screenshot no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a01-review-section.png",
+          "bytes": 56063,
+          "sha256": "9169e49e1c4000d31d35dd618b135edec26b94af9cd4b2ec8b06a763c822a9da",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "cabeçalho e capa; não captura da seção técnica",
+          "method": "screenshot no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "2 elementos video com posters; movimento não assistido"
+      ],
+      "blocked": false,
+      "acquisition_notes": [
+        "HTML público e corpo renderizado íntegro disponíveis",
+        "Nenhum paywall observado"
+      ],
+      "not_reviewed": [
+        "animações embutidas, inclusive exemplo Angular",
+        "estudos externos citados",
+        "produto Fusion em execução"
+      ],
+      "practice_checks": [
+        "regra funcional de busca com entradas conhecidas",
+        "preservação de links/dados e alcance da mudança"
+      ],
+      "rights": "Brutos e capturas locais gitignored; sem licença de republicação presumida.",
+      "study_artifact": {
+        "path": "studies/backfill/articles-01/builder-code-review-ai.md",
+        "bytes": 8151,
+        "sha256": "0775f92a90a103289f3ce2f80e429feb538eb5e95f1e869a89572a16e150e0a4",
+        "line_count": 64,
+        "read_lines": [],
+        "kind": "original_study"
+      }
+    },
+    {
+      "id": "article-peter-human-review-2026",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually",
+      "title": "Use My /Human-Review Skill to Edit HTML and Markdown Files Visually",
+      "author": "Peter Yang",
+      "published_at": "2026-08-05",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/peter-yang-newsletter.json",
+      "study_path": "studies/backfill/articles-01/peter-human-review.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "text_scope": "article.innerText completo, 120 linhas; inclui convite de assinatura, patrocínio e fechamento",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a01-peter-human-review.txt",
+          "bytes": 4981,
+          "sha256": "bd86571b0a955beb6e4fbd2b87e3ba588385d1000274e96c69a9543b9f995233",
+          "line_count": 120,
+          "read_lines": [
+            [
+              1,
+              120
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a01-peter-human-review.html",
+          "bytes": 201054,
+          "sha256": "8147ee1d4a6eca4b5612f867672e4b34f6cb5599f54b3427485885d3f249a59d",
+          "line_count": 411,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a01-peter-human-review-media.json",
+          "bytes": 3834,
+          "sha256": "f8cd44ac23396a408233500fe4334bf50dea0eed3a62ba5708ef80360c12e8e7",
+          "line_count": 79,
+          "read_lines": [],
+          "kind": "media_inventory",
+          "scope": "inventário de elementos DOM examinados; não artigo textual"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a01-peter-human-review-ui.png",
+          "bytes": 70757,
+          "sha256": "dd30de6efdb9b84c08a9ab5c1409f7ca88fee5dfe198bc08015093e8c5a876cf",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "imagem central com comentário ancorado, lista de alterações e envio agrupado",
+          "method": "screenshot no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a01-peter-player-observation.png",
+          "bytes": 35252,
+          "sha256": "6beef3b1f4698f5ec06a211132d7f64612642ddb812888670aeb05abee3e3912",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "player no início 0:00 / 0:30; quadro não prova sequência completa",
+          "method": "screenshot no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a01-peter-demo-sample.png",
+          "bytes": 44004,
+          "sha256": "95230e9484841b8ec2ce48f9a0c4fc7e7002117d8580df194509b3bed367d6dc",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "estado posterior com texto selecionado; controles ocultos, timestamp não atribuído",
+          "method": "screenshot no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "demo nativa de 30 segundos; somente dois estados amostrados; audiovisual integral pendente"
+      ],
+      "blocked": false,
+      "acquisition_notes": [
+        "Corpo completo público até crédito final; convite de assinatura fechado sem login",
+        "Extração HTML inicial incompleta por parser, corrigida pela leitura integral no navegador",
+        "Não houve barreira paga no conteúdo estudado nem instalação da skill"
+      ],
+      "not_reviewed": [
+        "audiovisual contínuo da demonstração",
+        "código, instalação, dependências e rede da skill",
+        "referências externas"
+      ],
+      "practice_checks": [
+        "intenção e persistência no arquivo de origem",
+        "alcance e integridade da revisão localizada"
+      ],
+      "rights": "Brutos e capturas locais gitignored; sem licença de republicação presumida.",
+      "study_artifact": {
+        "path": "studies/backfill/articles-01/peter-human-review.md",
+        "bytes": 9922,
+        "sha256": "2ace3e9da638bd4215849199ab9540f81d72fd47d4e4376a8610ffcbf2b686f4",
+        "line_count": 68,
+        "read_lines": [],
+        "kind": "original_study"
+      }
+    }
+  ],
+  "round_deliverables_complete": true,
+  "source_audiovisual_completion_claimed": false
+}

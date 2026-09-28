@@ -2,7 +2,6 @@
   "source_id": "claude-academy",
   "pending": [
     "https://academy.claude.com/courses/claude-code-101/code-review",
-    "https://academy.claude.com/courses/claude-code-101/context-management",
     "https://academy.claude.com/courses/claude-code-101/hooks",
     "https://academy.claude.com/courses/claude-code-101/how-claude-code-works",
     "https://academy.claude.com/courses/claude-code-101/installing-claude-code",
@@ -10,7 +9,6 @@
     "https://academy.claude.com/courses/claude-code-101/skills",
     "https://academy.claude.com/courses/claude-code-101/subagents",
     "https://academy.claude.com/courses/claude-code-101/the-claude-md-file",
-    "https://academy.claude.com/courses/claude-code-101/your-first-prompt",
     "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows",
     "https://academy.claude.com/courses/claude-code-in-action/github-actions-and-code-review",
     "https://academy.claude.com/courses/claude-code-in-action/hooks",
@@ -295,9 +293,11 @@
   ],
   "completed": [
     "https://academy.claude.com/courses/claude-code-101/what-is-claude-code",
-    "https://academy.claude.com/courses/claude-code-101/the-explore-plan-code-commit-workflow"
+    "https://academy.claude.com/courses/claude-code-101/the-explore-plan-code-commit-workflow",
+    "https://academy.claude.com/courses/claude-code-101/your-first-prompt",
+    "https://academy.claude.com/courses/claude-code-101/context-management"
   ],
   "blocked": [],
-  "scope_note": "Exhaustive rendered collection is secondary. Only selected curriculum resources are acquired immediately.",
-  "status": "backlog_preserved_after_priority_change"
+  "scope_note": "Public rendered lessons queued for complete corpus; acquisition does not prove reading or audiovisual coverage.",
+  "status": "active_exhaustive_user_directive_2026_09_28"
 }
