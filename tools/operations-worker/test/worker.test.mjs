@@ -20,7 +20,7 @@ async function temporary(t) {
 }
 function deployment(job,state='READY') {return {id:'dpl_test123',projectId,url:'ganesha-classroom-test.vercel.app',readyState:state,meta:{ganeshaOperation:job.id,ganeshaSha:sha}};}
 const alias={projectId,deploymentId:'dpl_test123'};
-const healthy=()=>({status:200,text:async()=>'<script src="/_next/static/test.js"></script>'});
+const healthy=()=>({status:200,text:async()=>'<script src="/classroom/_next/static/test.js"></script>'});
 function context(job,patches=[]) {return {signal:new AbortController().signal,checkpoint:async p=>{patches.push(p);job.checkpoint={...job.checkpoint,...p};}};}
 
 test('only bounded structured operations pass; shell flags and alternate targets fail',()=>{
@@ -77,9 +77,9 @@ test('deployment resumes from checkpoint, verifies project and routes, never red
 test('metadata recovers a remotely created deployment before any upload',async t=>{
   const root=await temporary(t);const job=makeJob(op,{phase:'deploy-creating'});let uploads=0;
   const run=async(exe,args)=>{
-    if(args[1]==='list')return JSON.stringify({deployments:[{uid:'dpl_test123'}]});
+    if(args[1]==='list')return JSON.stringify({contextName:'test',deployments:[{url:'ganesha-classroom-test.vercel.app',state:'READY'}],pagination:{}});
     if(args[2]?.startsWith('/v9/projects/'))return JSON.stringify(project);
-    if(args[2]?.startsWith('/v13/deployments/'))return JSON.stringify(deployment(job));
+    if(args[2]?.startsWith('/v13/deployments/')){assert.ok(args[2].endsWith('ganesha-classroom-test.vercel.app'));return JSON.stringify(deployment(job));}
     if(args[2]?.startsWith('/v4/aliases/'))return JSON.stringify(alias);
     uploads++;throw Error('Unexpected upload');
   };
@@ -122,7 +122,7 @@ test('new deployment uses isolated archive and persists ID before polling health
   const root=await temporary(t);const job=makeJob();const calls=[];const patches=[];let uploaded=false;
   const run=async(exe,args,options)=>{
     calls.push({exe,args,options});
-    if(args[1]==='list')return JSON.stringify({deployments:uploaded?[{uid:'dpl_test123'}]:[]});
+    if(args[1]==='list')return JSON.stringify({contextName:'test',deployments:uploaded?[{url:'ganesha-classroom-test.vercel.app',state:'READY'}]:[]});
     if(args[2]?.startsWith('/v9/projects/'))return JSON.stringify(project);
     if(args[2]?.startsWith('/v13/deployments/'))return JSON.stringify(deployment(job));
     if(args[2]?.startsWith('/v4/aliases/'))return JSON.stringify(alias);

@@ -81,8 +81,12 @@ export function createActions(config, { run = runCommand, sleep = delay, fetchIm
     return source;
   }
   async function deploymentRecord(id,job,signal) {
-    requireCondition(/^dpl_[A-Za-z0-9]+$/.test(id),'invalid_deployment_id');
-    const record = await api(`/v13/deployments/${id}`,signal);
+    // CLI list --json exposes URLs (not IDs) in Vercel 60. Resolve the URL with
+    // the authenticated API, then validate its canonical ID and job metadata.
+    requireCondition(typeof id==='string','invalid_deployment_id');
+    const identifier=/^dpl_[A-Za-z0-9]+$/.test(id)?id:new URL(safeDeploymentUrl(id)).hostname;
+    const record = await api(`/v13/deployments/${encodeURIComponent(identifier)}`,signal);
+    requireCondition(/^dpl_[A-Za-z0-9]+$/.test(record.id),'invalid_deployment_id');
     requireCondition(record.projectId===config.projectId && record.meta?.ganeshaOperation===job.id && record.meta?.ganeshaSha===job.operation.sha,'deployment_identity_mismatch');
     if(record.url) record.verifiedUrl=safeDeploymentUrl(record.url);
     return record;
@@ -93,7 +97,7 @@ export function createActions(config, { run = runCommand, sleep = delay, fetchIm
     requireCondition(Array.isArray(records),'invalid_service_response');
     requireCondition(records.length <= 1,'duplicate_deployment_requires_review');
     if(!records.length) return null;
-    return deploymentRecord(records[0].uid || records[0].id,job,signal);
+    return deploymentRecord(records[0].uid || records[0].id || records[0].url,job,signal);
   }
   async function deploy(job,{signal,checkpoint}) {
     const project = await api(`/v9/projects/${config.projectId}`,signal);
@@ -136,7 +140,7 @@ export function createActions(config, { run = runCommand, sleep = delay, fetchIm
       if(response.status!==200) {await response.body?.cancel();throw new OperationError('deployment_health_failed');}
       const html=await boundedHtml(response);
       for(const match of html.matchAll(/(?:src|href)=["']([^"']+)["']/g)) {
-        try {const asset=new URL(match[1],publicUrl);if(asset.origin===publicUrl && /^\/(?:_next\/static\/|assets\/)/.test(asset.pathname) && /\.(?:css|js|png|svg|webp)$/.test(asset.pathname))assets.add(asset.href);} catch {}
+        try {const asset=new URL(match[1],publicUrl);if(asset.origin===publicUrl && /^\/(?:classroom\/)?(?:_next\/static\/|assets\/|images\/)/.test(asset.pathname) && /\.(?:css|js|png|svg|webp)$/.test(asset.pathname))assets.add(asset.href);} catch {}
       }
     }
     requireCondition(assets.size>0,'deployment_assets_missing');
