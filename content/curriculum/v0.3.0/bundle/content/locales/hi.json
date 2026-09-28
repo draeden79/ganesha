@@ -5753,7 +5753,7 @@
       "sourceRevision": "0.3.0"
     },
     "automation-schedule.tool-conditions.prompt": {
-      "value": "अभी एक बार स्थानीय relatorio फ़ोल्डर में चलाओ, बिना शेड्यूल बनाए। केवल इस कंप्यूटर पर मेरी पहले जाँची कमांड लो: `python3 report.py vendas.csv report.md` या Windows पर `py -3 report.py vendas.csv report.md`। निर्भरताएँ स्थापित, इनपुट फ़ाइलें या प्रोग्राम मत बदलो। अभ्यास इनपुट में ठीक id,item,amount; 1,Caderno,10.50; 2,Curso,20.00 हैं। report.md खोलकर 2 रिकॉर्ड और कुल 30.50 जाँचो। त्रुटि हो तो निदान बताओ और अंतिम वैध रिपोर्ट रखो। डेटा मत भेजो या नतीजे प्रकाशित मत करो।",
+      "value": "अभी एक बार स्थानीय relatorio फ़ोल्डर में चलाओ, बिना शेड्यूल बनाए। केवल इस कंप्यूटर पर मेरी पहले जाँची कमांड लो: `python3 report.py vendas.csv report.md` या Windows पर `py -3 report.py vendas.csv report.md`। कोई निर्भरता स्थापित मत करो और इनपुट फ़ाइलों या प्रोग्राम में कोई बदलाव मत करो। अभ्यास इनपुट में ठीक id,item,amount; 1,Caderno,10.50; 2,Curso,20.00 हैं। report.md खोलकर 2 रिकॉर्ड और कुल 30.50 जाँचो। त्रुटि हो तो निदान बताओ और अंतिम वैध रिपोर्ट रखो। डेटा मत भेजो या नतीजे प्रकाशित मत करो।",
       "status": "translated",
       "sourceRevision": "0.3.0"
     },

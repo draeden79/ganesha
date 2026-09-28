@@ -27,6 +27,12 @@
       "humanReview": "pending",
       "sha256": "69030ed50f82631a5873c66af64df5d3191f140d46f5cbe8a0c29b2fbc16618a"
     },
+    "fr": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "edd63731ef20e2fc45ed1ff2ab654a759f2bbf8b0f309a50a2d049c4f1b7fd7f"
+    },
     "ja": {
       "required": 1192,
       "present": 1192,
@@ -37,13 +43,19 @@
       "required": 1192,
       "present": 1192,
       "humanReview": "pending",
-      "sha256": "b7204e98aece8b1d51b8f1f88aebb87e46120aa70c7162abd68aec6da469d8be"
+      "sha256": "f837090660beb2f3a9d6f1eab79b1904a68279d590ebe73f89062d1e06c8e87a"
     },
     "id": {
       "required": 1192,
       "present": 1192,
       "humanReview": "pending",
       "sha256": "4b845d073d5e29eac4356e519ad4f249d6dc04028abe1fd6e275f97709c3de2a"
+    },
+    "ar": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "9a2fd05f2c27bb6c1ed0aa46c1fac773cd216cc187fd4b0ca1ed13a7892b4c25"
     }
   },
   "requiredLocales": [
