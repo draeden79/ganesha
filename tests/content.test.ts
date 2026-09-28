@@ -10,9 +10,10 @@ import { adaptCourse } from "../src/lib/course-adapter";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import type { Course, LocaleCatalog } from "../contracts/course";
-import { demoConfig } from "../src/lib/demo-config";
+import { publicCourseConfig } from "../src/lib/demo-config";
 import { nativeUi } from "../src/lib/native-i18n";
 import { classroomUi } from "../src/lib/classroom-i18n";
+import { routeUi } from "../src/lib/route-i18n";
 const contentRoot = path.resolve(process.cwd(), process.env.GANESHA_CONTENT_DIR || "content");
 const source = JSON.parse(readFileSync(path.join(contentRoot, "curriculum/course.json"), "utf8")) as Course;
 const catalog = JSON.parse(readFileSync(path.join(contentRoot, "locales/pt-BR.json"), "utf8")) as LocaleCatalog;
@@ -24,14 +25,20 @@ test("every preview lesson has practice and two separate assessments", () => {
     assert.ok(lesson.steps.filter(s => s.check && s.isAssessment).length >= 2);
     assert.ok(lesson.steps.some(s => s.practice));
     assert.equal(new Set(lesson.steps.map(s => s.id)).size,lesson.steps.length);
-    for (const step of lesson.steps) { assert.ok(step.objective); assert.ok(step.action); assert.ok(step.expectedResult); assert.ok(step.hints?.length); assert.ok(step.toolNotes?.claude); assert.ok(step.toolNotes?.codex); }
+    for (const step of lesson.steps) {
+      assert.ok(step.objective); assert.ok(step.action); assert.ok(step.expectedResult); assert.ok(step.hints?.length);
+      for (const tool of ["claude", "codex"] as const) {
+        assert.equal(typeof step.toolNotes?.[tool], "string");
+        if (source.version !== "0.3.0") assert.ok(step.toolNotes?.[tool]);
+      }
+    }
   }
-  assert.ok(course.lessons[0].steps.at(-1)?.practice?.rubricId);
+  assert.ok(course.lessons[0].steps.filter(step => step.practice).every(step => step.practice?.rubricId));
 });
 test("11 UI locales have every visible string including failures and recovery", () => {
   for (const locale of locales) {
     assert.deepEqual(Object.keys(ui[locale]),[...uiKeys]);
-    for (const value of [...Object.values(ui[locale]),...Object.values(labels[locale]),...Object.values(statusUi[locale]),...Object.values(nativeUi[locale]),...Object.values(classroomUi[locale]),recoveryText[locale]]) assert.ok(value.trim());
+    for (const value of [...Object.values(ui[locale]),...Object.values(labels[locale]),...Object.values(statusUi[locale]),...Object.values(nativeUi[locale]),...Object.values(classroomUi[locale]),...Object.values(routeUi[locale]),recoveryText[locale]]) assert.ok(value.trim());
   }
 });
 test("missing or stale pedagogical translations fail explicitly without fallback", () => {
@@ -47,20 +54,20 @@ test("a draft remains out of released content but is allowed by explicit demo sc
   draft.releasedLessonIds = [];
   draft.lessons.forEach(lesson => { lesson.status = "draft"; });
   assert.equal(adaptCourse(draft,catalog as LocaleCatalog).lessons.length,0);
-  const preview = adaptCourse(draft,catalog as LocaleCatalog,{previewLessonIds:demoConfig.lessonIds});
+  const preview = adaptCourse(draft,catalog as LocaleCatalog,{previewLessonIds:publicCourseConfig(source.version).demoLessonIds});
   assert.deepEqual(preview.lessons.map(lesson=>lesson.id),[source.lessons[0].id]);
   assert.equal(preview.lessons[0].steps.length,source.lessons[0].steps.length);
   assert.equal(preview.id,source.id);
   assert.equal(preview.version,source.version);
   draft.lessons[0].status = "planned";
-  assert.equal(adaptCourse(draft,catalog as LocaleCatalog,{previewLessonIds:demoConfig.lessonIds}).lessons.length,0);
+  assert.equal(adaptCourse(draft,catalog as LocaleCatalog,{previewLessonIds:publicCourseConfig(source.version).demoLessonIds}).lessons.length,0);
 });
 test("a listed draft is still excluded unless the explicit demo scope is used", () => {
   const draft = structuredClone(source) as Course;
   draft.lessons[0].status = "draft";
   draft.releasedLessonIds = [draft.lessons[0].id];
   assert.equal(adaptCourse(draft,catalog as LocaleCatalog).lessons.length,0);
-  assert.equal(adaptCourse(draft,catalog as LocaleCatalog,{previewLessonIds:demoConfig.lessonIds}).lessons.length,1);
+  assert.equal(adaptCourse(draft,catalog as LocaleCatalog,{previewLessonIds:publicCourseConfig(source.version).demoLessonIds}).lessons.length,1);
   draft.lessons[0].status = "ready";
   assert.equal(adaptCourse(draft,catalog as LocaleCatalog).lessons.length,1);
 });
@@ -78,7 +85,7 @@ test("adapter preserves content block order and avoids repeating identical feedb
   checked.check.successFeedbackKey = checked.check.options[0].feedbackKey;
   checked.check.retryFeedbackKey = checked.check.options[0].feedbackKey;
   checked.check.options.forEach(option => { option.feedbackKey = checked.check!.successFeedbackKey; });
-  const adapted = adaptCourse(copy, catalog, { previewLessonIds: demoConfig.lessonIds });
+  const adapted = adaptCourse(copy, catalog, { previewLessonIds: publicCourseConfig(source.version).demoLessonIds });
   assert.deepEqual(adapted.lessons[0].steps[0].contentBlocks?.map(block => block.kind), ["paragraph", "code", "callout"]);
   assert.equal(adapted.lessons[0].steps.find(item => item.id === checked.id)?.check?.choices[0].feedback, catalog.messages[checked.check.successFeedbackKey].value);
 });
