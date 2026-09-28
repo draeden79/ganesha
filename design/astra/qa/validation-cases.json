@@ -1,0 +1,26 @@
+[
+  {
+    "val": "",
+    "result": "Não aceitar: falta informar o prazo. Vazio não é zero."
+  },
+  {
+    "val": "1.5",
+    "result": "Não aceitar: este exercício usa dias inteiros."
+  },
+  {
+    "val": "366",
+    "result": "Não aceitar: use um inteiro entre −30 e 365."
+  },
+  {
+    "val": "0",
+    "result": "Aceito: 0. Zero significa hoje."
+  },
+  {
+    "val": "-30",
+    "result": "Aceito: -30. Um valor negativo indica atraso."
+  },
+  {
+    "val": "365",
+    "result": "Aceito: 365. É um prazo inteiro dentro do intervalo."
+  }
+]

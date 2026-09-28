@@ -1,0 +1,429 @@
+[
+  {
+    "figures": 1,
+    "scroll": 390,
+    "title": "Escolher o que vale a pena pedir",
+    "url": "http://127.0.0.1:4180/astra/?lesson=1&step=1",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Fazer um pedido que possa ser conferido",
+    "url": "http://127.0.0.1:4180/astra/?lesson=1&step=2",
+    "width": 390
+  },
+  {
+    "figures": 1,
+    "scroll": 390,
+    "title": "Conferir sem precisar ser especialista",
+    "url": "http://127.0.0.1:4180/astra/?lesson=1&step=3",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Usar o método em outro caso",
+    "url": "http://127.0.0.1:4180/astra/?lesson=1&step=4",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Guardar uma decisão, não só uma resposta",
+    "url": "http://127.0.0.1:4180/astra/?lesson=1&step=5",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Entender o resultado antes de construir",
+    "url": "http://127.0.0.1:4180/astra/?lesson=2&step=1",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Preparar um lugar para os arquivos",
+    "url": "http://127.0.0.1:4180/astra/?lesson=2&step=2",
+    "width": 390
+  },
+  {
+    "figures": 1,
+    "scroll": 390,
+    "title": "Pedir a página com limites claros",
+    "url": "http://127.0.0.1:4180/astra/?lesson=2&step=3",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Abrir e observar",
+    "url": "http://127.0.0.1:4180/astra/?lesson=2&step=4",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Fazer uma pequena alteração sua",
+    "url": "http://127.0.0.1:4180/astra/?lesson=2&step=5",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Olhar pela necessidade de quem chega",
+    "url": "http://127.0.0.1:4180/astra/?lesson=3&step=1",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Proteger a versão que já funciona",
+    "url": "http://127.0.0.1:4180/astra/?lesson=3&step=2",
+    "width": 390
+  },
+  {
+    "figures": 1,
+    "scroll": 390,
+    "title": "Pedir uma reorganização delimitada",
+    "url": "http://127.0.0.1:4180/astra/?lesson=3&step=3",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Fazer uma escolha de aparência com motivo",
+    "url": "http://127.0.0.1:4180/astra/?lesson=3&step=4",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Aplicar a ideia fora da oficina",
+    "url": "http://127.0.0.1:4180/astra/?lesson=3&step=5",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Transformar “parece bom” em verificações",
+    "url": "http://127.0.0.1:4180/astra/?lesson=4&step=1",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Conferir fatos e ausência de promessas",
+    "url": "http://127.0.0.1:4180/astra/?lesson=4&step=2",
+    "width": 390
+  },
+  {
+    "figures": 1,
+    "scroll": 390,
+    "title": "Testar duas condições de leitura",
+    "url": "http://127.0.0.1:4180/astra/?lesson=4&step=3",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Verificar teclado e significado",
+    "url": "http://127.0.0.1:4180/astra/?lesson=4&step=4",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Encerrar com evidência e um limite",
+    "url": "http://127.0.0.1:4180/astra/?lesson=4&step=5",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Perceber o que muda quando você age",
+    "url": "http://127.0.0.1:4180/astra/?lesson=5&step=1",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Pedir a primeira versão pequena",
+    "url": "http://127.0.0.1:4180/astra/?lesson=5&step=2",
+    "width": 390
+  },
+  {
+    "figures": 1,
+    "scroll": 390,
+    "title": "Experimentar um ciclo completo",
+    "url": "http://127.0.0.1:4180/astra/?lesson=5&step=3",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Tentar uma entrada que não serve",
+    "url": "http://127.0.0.1:4180/astra/?lesson=5&step=4",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Ver a diferença entre tela e armazenamento",
+    "url": "http://127.0.0.1:4180/astra/?lesson=5&step=5",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Dar um lugar a cada informação",
+    "url": "http://127.0.0.1:4180/astra/?lesson=6&step=1",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Distinguir tarefas com nomes iguais",
+    "url": "http://127.0.0.1:4180/astra/?lesson=6&step=2",
+    "width": 390
+  },
+  {
+    "figures": 1,
+    "scroll": 390,
+    "title": "Conferir identidade e significado",
+    "url": "http://127.0.0.1:4180/astra/?lesson=6&step=3",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Conferir os limites antes de aceitar dados",
+    "url": "http://127.0.0.1:4180/astra/?lesson=6&step=4",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Preparar a base das próximas aulas",
+    "url": "http://127.0.0.1:4180/astra/?lesson=6&step=5",
+    "width": 390
+  },
+  {
+    "figures": 1,
+    "scroll": 390,
+    "title": "Separar três coisas que parecem iguais",
+    "url": "http://127.0.0.1:4180/astra/?lesson=7&step=1",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Pedir salvamento e uma cópia verificável",
+    "url": "http://127.0.0.1:4180/astra/?lesson=7&step=2",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Verificar se ficou guardado neste ambiente",
+    "url": "http://127.0.0.1:4180/astra/?lesson=7&step=3",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Fazer uma restauração pequena e controlada",
+    "url": "http://127.0.0.1:4180/astra/?lesson=7&step=4",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Recusar uma cópia inválida e continuar",
+    "url": "http://127.0.0.1:4180/astra/?lesson=7&step=5",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Distinguir sintoma, hipótese e evidência",
+    "url": "http://127.0.0.1:4180/astra/?lesson=8&step=1",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Preparar um laboratório que não misture dados",
+    "url": "http://127.0.0.1:4180/astra/?lesson=8&step=2",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Escolher um defeito limitado",
+    "url": "http://127.0.0.1:4180/astra/?lesson=8&step=3",
+    "width": 390
+  },
+  {
+    "figures": 1,
+    "scroll": 390,
+    "title": "Pedir uma correção apoiada no que aconteceu",
+    "url": "http://127.0.0.1:4180/astra/?lesson=8&step=4",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Conferir a correção e o que já funcionava",
+    "url": "http://127.0.0.1:4180/astra/?lesson=8&step=5",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Escrever a regra antes de automatizar",
+    "url": "http://127.0.0.1:4180/astra/?lesson=9&step=1",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Construir primeiro uma prévia",
+    "url": "http://127.0.0.1:4180/astra/?lesson=9&step=2",
+    "width": 390
+  },
+  {
+    "figures": 1,
+    "scroll": 390,
+    "title": "Comparar a seleção com uma previsão sua",
+    "url": "http://127.0.0.1:4180/astra/?lesson=9&step=3",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Testar o limite e o resultado vazio",
+    "url": "http://127.0.0.1:4180/astra/?lesson=9&step=4",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Produzir um resultado local real",
+    "url": "http://127.0.0.1:4180/astra/?lesson=9&step=5",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Descobrir o problema da repetição",
+    "url": "http://127.0.0.1:4180/astra/?lesson=10&step=1",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Guardar também o histórico",
+    "url": "http://127.0.0.1:4180/astra/?lesson=10&step=2",
+    "width": 390
+  },
+  {
+    "figures": 1,
+    "scroll": 390,
+    "title": "Executar duas vezes e comparar",
+    "url": "http://127.0.0.1:4180/astra/?lesson=10&step=3",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Testar mudança, reabertura e recuperação",
+    "url": "http://127.0.0.1:4180/astra/?lesson=10&step=4",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Entender a fronteira antes de conectar o mundo",
+    "url": "http://127.0.0.1:4180/astra/?lesson=10&step=5",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Reconhecer o papel de cada parte",
+    "url": "http://127.0.0.1:4180/astra/?lesson=11&step=1",
+    "width": 390
+  },
+  {
+    "figures": 1,
+    "scroll": 390,
+    "title": "Montar uma pasta de entrega sem carregar confusão",
+    "url": "http://127.0.0.1:4180/astra/?lesson=11&step=2",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Criar os caminhos entre páginas",
+    "url": "http://127.0.0.1:4180/astra/?lesson=11&step=3",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Escrever instruções para quem não estava aqui",
+    "url": "http://127.0.0.1:4180/astra/?lesson=11&step=4",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Fazer um ensaio de entrega",
+    "url": "http://127.0.0.1:4180/astra/?lesson=11&step=5",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Escolher um problema que caiba na prática",
+    "url": "http://127.0.0.1:4180/astra/?lesson=12&step=1",
+    "width": 390
+  },
+  {
+    "figures": 1,
+    "scroll": 390,
+    "title": "Planejar dados e exemplos antes do pedido",
+    "url": "http://127.0.0.1:4180/astra/?lesson=12&step=2",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Preparar uma pasta nova e construir em partes",
+    "url": "http://127.0.0.1:4180/astra/?lesson=12&step=3",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Executar uma demonstração que possa falhar",
+    "url": "http://127.0.0.1:4180/astra/?lesson=12&step=4",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Explicar suas decisões e usar a outra ferramenta, se disponível",
+    "url": "http://127.0.0.1:4180/astra/?lesson=12&step=5",
+    "width": 390
+  },
+  {
+    "figures": 0,
+    "scroll": 390,
+    "title": "Preparar uma entrega honesta",
+    "url": "http://127.0.0.1:4180/astra/?lesson=12&step=6",
+    "width": 390
+  }
+]

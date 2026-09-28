@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 615" role="img" aria-labelledby="title desc">
+<title id="title">Uma frase precisa caber nos fatos</title><desc id="desc">As notas dizem materiais fornecidos e sem inscrição. O aviso de exemplo diz inscreva-se até sexta e traga seu vaso. A inscrição foi inventada e a obrigação de levar um vaso não está nas notas.</desc>
+<style>text{font-family:Figtree,Arial,sans-serif} .literal{direction:ltr;unicode-bidi:isolate}</style>
+<rect width="1200" height="615" rx="28" fill="#F5F3FB"/>
+<text x="40" y="47" font-size="16" letter-spacing="2" fill="#6C3BEE" font-weight="700">GANESHA · DEMONSTRAÇÃO PREPARADA</text>
+<text x="40" y="96" font-size="32" font-weight="700" fill="#17151F">Uma frase precisa caber nos fatos</text>
+<text x="40" y="140" font-size="19" font-weight="400" fill="#625B70">Compare cada afirmação do aviso com a anotação de origem.</text>
+<rect x="40.0" y="190" width="550.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="72.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="72.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">1</text>
+<text x="97.0" y="231" font-size="18" font-weight="700" fill="#17151F">O que sabemos</text>
+<text x="64.0" y="274" font-size="20" font-weight="400" fill="#17151F">Sábado · 15h às 17h</text>
+<text x="64.0" y="316" font-size="20" font-weight="400" fill="#17151F">Sala Girassol · gratuito</text>
+<text x="64.0" y="358" font-size="20" font-weight="600" fill="#246548">Materiais fornecidos</text>
+<text x="64.0" y="400" font-size="20" font-weight="600" fill="#246548">Não haverá inscrição</text>
+<text x="64.0" y="442" font-size="20" font-weight="400" fill="#17151F">Data e endereço a confirmar</text>
+<rect x="610.0" y="190" width="550.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="642.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="642.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">2</text>
+<text x="667.0" y="231" font-size="18" font-weight="700" fill="#17151F">O que a IA escreveu no exemplo</text>
+<text x="634.0" y="274" font-size="20" font-weight="400" fill="#17151F">“Inscreva-se até sexta e traga seu vaso.”</text>
+<text x="634.0" y="316" font-size="20" font-weight="600" fill="#923B25">Inscrição e prazo: inventados</text>
+<text x="634.0" y="358" font-size="20" font-weight="600" fill="#923B25">Levar um vaso: sem apoio nas notas</text>
+<text x="634.0" y="400" font-size="20" font-weight="400" fill="#17151F">Próximo passo: pedir uma correção específica.</text>
+<text x="40" y="577" font-size="18" font-weight="400" fill="#625B70">A resposta pode soar convincente e ainda acrescentar uma informação sem apoio.</text>
+</svg>

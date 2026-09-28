@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 775" role="img" aria-labelledby="title desc">
+<title id="title">Uma pasta que explica como começar</title><desc id="desc">A pasta entrega-aurora tem LEIA-ME.txt com instruções, site.html com informações, app.html com organizador e dados-exemplo.json versão dois com tarefas e histórico. Links relativos conectam site e aplicativo.</desc>
+<style>text{font-family:Figtree,Arial,sans-serif} .literal{direction:ltr;unicode-bidi:isolate}</style>
+<rect width="1200" height="775" rx="28" fill="#F5F3FB"/>
+<text x="40" y="47" font-size="16" letter-spacing="2" fill="#6C3BEE" font-weight="700">GANESHA · DEMONSTRAÇÃO PREPARADA</text>
+<text x="40" y="96" font-size="32" font-weight="700" fill="#17151F">Uma pasta que explica como começar</text>
+<text x="40" y="140" font-size="19" font-weight="400" fill="#625B70">Cada arquivo tem um papel; a pessoa não precisa conhecer sua conversa com a IA.</text>
+<rect x="40.0" y="190" width="550.0" height="230" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="72.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="72.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">1</text>
+<text x="97.0" y="231" font-size="18" font-weight="700" fill="#17151F">LEIA-ME.txt</text>
+<text x="64.0" y="274" font-size="20" font-weight="400" fill="#17151F">Por onde começar</text>
+<text x="64.0" y="316" font-size="20" font-weight="400" fill="#17151F">Como importar o exemplo</text>
+<text x="64.0" y="358" font-size="20" font-weight="400" fill="#17151F">O que foi testado e o que falta</text>
+<rect x="610.0" y="190" width="550.0" height="230" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="642.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="642.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">2</text>
+<text x="667.0" y="231" font-size="18" font-weight="700" fill="#17151F">site.html</text>
+<text x="634.0" y="274" font-size="20" font-weight="400" fill="#17151F">Informações da oficina</text>
+<text x="634.0" y="316" font-size="20" font-weight="600" fill="#6C3BEE">Abrir organizador de treino → app.html</text>
+<rect x="40.0" y="440" width="550.0" height="230" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="72.0" cy="474" r="14" fill="#EDE6FD"/>
+<text x="72.0" y="480" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">3</text>
+<text x="97.0" y="481" font-size="18" font-weight="700" fill="#17151F">app.html</text>
+<text x="64.0" y="524" font-size="20" font-weight="400" fill="#17151F">Tarefas e lembretes locais</text>
+<text x="64.0" y="566" font-size="20" font-weight="600" fill="#6C3BEE">Voltar às informações → site.html</text>
+<rect x="610.0" y="440" width="550.0" height="230" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="642.0" cy="474" r="14" fill="#EDE6FD"/>
+<text x="642.0" y="480" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">4</text>
+<text x="667.0" y="481" font-size="18" font-weight="700" fill="#17151F">dados-exemplo.json</text>
+<text x="634.0" y="524" font-size="20" font-weight="400" fill="#17151F">Formato versão 2</text>
+<text x="634.0" y="566" font-size="20" font-weight="400" fill="#17151F">Tarefas + histórico</text>
+<text x="634.0" y="608" font-size="20" font-weight="400" fill="#17151F">Importar e confirmar substituição</text>
+<text x="40" y="737" font-size="18" font-weight="400" fill="#625B70">Dados viajam no JSON. O armazenamento da entrega deve ser separado do ambiente de trabalho.</text>
+</svg>

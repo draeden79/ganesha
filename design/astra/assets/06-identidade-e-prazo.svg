@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 615" role="img" aria-labelledby="title desc">
+<title id="title">O nome pode repetir. A identidade, não.</title><desc id="desc">A01 e A02 têm o nome Revisar materiais. A01 tem um dia restante; A02 tem três. Concluir A01 não muda A02. Menos um significa atraso, zero significa hoje e um significa um dia restante. Vazio não é zero.</desc>
+<style>text{font-family:Figtree,Arial,sans-serif} .literal{direction:ltr;unicode-bidi:isolate}</style>
+<rect width="1200" height="615" rx="28" fill="#F5F3FB"/>
+<text x="40" y="47" font-size="16" letter-spacing="2" fill="#6C3BEE" font-weight="700">GANESHA · DEMONSTRAÇÃO PREPARADA</text>
+<text x="40" y="96" font-size="32" font-weight="700" fill="#17151F">O nome pode repetir. A identidade, não.</text>
+<text x="40" y="140" font-size="19" font-weight="400" fill="#625B70">O ID indica qual registro mudar; dias restantes é um valor informado por você.</text>
+<rect x="40.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="72.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="72.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">1</text>
+<text x="97.0" y="231" font-size="18" font-weight="700" fill="#17151F">Registro A01</text>
+<text x="64.0" y="274" font-size="20" font-weight="400" fill="#17151F">Revisar materiais</text>
+<text x="64.0" y="316" font-size="20" font-weight="400" fill="#17151F">1 dia restante</text>
+<text x="64.0" y="358" font-size="20" font-weight="600" fill="#6C3BEE">Concluir apenas A01</text>
+<rect x="420.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="452.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="452.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">2</text>
+<text x="477.0" y="231" font-size="18" font-weight="700" fill="#17151F">Registro A02</text>
+<text x="444.0" y="274" font-size="20" font-weight="400" fill="#17151F">Revisar materiais</text>
+<text x="444.0" y="316" font-size="20" font-weight="400" fill="#17151F">3 dias restantes</text>
+<text x="444.0" y="358" font-size="20" font-weight="600" fill="#6C3BEE">Continua pendente</text>
+<rect x="800.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="832.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="832.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">3</text>
+<text x="857.0" y="231" font-size="18" font-weight="700" fill="#17151F">Como ler o prazo</text>
+<text x="824.0" y="274" font-size="20" font-weight="400" fill="#17151F">−1 → um dia de atraso</text>
+<text x="824.0" y="316" font-size="20" font-weight="400" fill="#17151F">0 → hoje</text>
+<text x="824.0" y="358" font-size="20" font-weight="400" fill="#17151F">1 → daqui a um dia</text>
+<text x="824.0" y="400" font-size="20" font-weight="600" fill="#923B25">Vazio não significa zero</text>
+<text x="40" y="577" font-size="18" font-weight="400" fill="#625B70">IDs ilustrativos. No aplicativo do aluno podem ser diferentes; o prazo não muda com o relógio.</text>
+</svg>

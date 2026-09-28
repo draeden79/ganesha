@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 615" role="img" aria-labelledby="title desc">
+<title id="title">O que a nota permite dizer?</title><desc id="desc">A nota diz materiais fornecidos. Dizer os materiais serão fornecidos mantém a informação. Dizer cada pessoa receberá um vaso para levar para casa acrescenta uma promessa que a nota não faz.</desc>
+<style>text{font-family:Figtree,Arial,sans-serif} .literal{direction:ltr;unicode-bidi:isolate}</style>
+<rect width="1200" height="615" rx="28" fill="#F5F3FB"/>
+<text x="40" y="47" font-size="16" letter-spacing="2" fill="#6C3BEE" font-weight="700">GANESHA · DEMONSTRAÇÃO PREPARADA</text>
+<text x="40" y="96" font-size="32" font-weight="700" fill="#17151F">O que a nota permite dizer?</text>
+<text x="40" y="140" font-size="19" font-weight="400" fill="#625B70">Uma IA pode organizar a frase. A conferência dos fatos continua com você.</text>
+<rect x="40.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="72.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="72.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">1</text>
+<text x="97.0" y="231" font-size="18" font-weight="700" fill="#17151F">Nota de origem</text>
+<text x="64.0" y="274" font-size="20" font-weight="600" fill="#6C3BEE">Materiais fornecidos</text>
+<text x="64.0" y="316" font-size="20" font-weight="400" fill="#17151F">É uma informação confirmada da</text><text x="64.0" y="344" font-size="20" font-weight="400" fill="#17151F">Oficina Aurora.</text>
+<rect x="420.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="452.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="452.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">2</text>
+<text x="477.0" y="231" font-size="18" font-weight="700" fill="#17151F">Frase fiel à nota</text>
+<text x="444.0" y="274" font-size="20" font-weight="600" fill="#246548">“Os materiais serão</text><text x="444.0" y="302" font-size="20" font-weight="600" fill="#246548">fornecidos.”</text>
+<text x="444.0" y="344" font-size="20" font-weight="400" fill="#17151F">A forma mudou. O fato foi</text><text x="444.0" y="372" font-size="20" font-weight="400" fill="#17151F">preservado.</text>
+<rect x="800.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="832.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="832.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">3</text>
+<text x="857.0" y="231" font-size="18" font-weight="700" fill="#17151F">Promessa acrescentada</text>
+<text x="824.0" y="274" font-size="20" font-weight="600" fill="#923B25">“Cada pessoa receberá um vaso</text><text x="824.0" y="302" font-size="20" font-weight="600" fill="#923B25">para levar para casa.”</text>
+<text x="824.0" y="344" font-size="20" font-weight="400" fill="#17151F">A nota não promete um brinde.</text>
+<text x="40" y="577" font-size="18" font-weight="400" fill="#625B70">Duas frases preparadas para comparar. Nenhuma mensagem foi enviada nesta demonstração.</text>
+</svg>

@@ -1,5 +1,7 @@
 # Ganesha — entrega do Artista
 
+**Nova proposta isolada: Astra-PTBR-1.0.** Design das 12 aulas e 61 etapas do Professor, 13 gráficos produzidos e demonstrações preparadas em [`astra/README.md`](astra/README.md). Prévia: `http://127.0.0.1:4180/astra/?view=course`. Material para revisão; não integrado à produção. A direção nativa abaixo permanece como histórico e origem da identidade.
+
 **Direção atual: v2, baseada no Ganesha Desktop real.** Leia `specs/NATIVE_REFERENCE.md`. Preview novo: `http://127.0.0.1:4176/native.html`; iniciar com `python3 design/serve-preview.py --port 4176` (o currículo deve estar em `content/`, ou use `--content-dir`). A composição v1 abaixo é histórica.
 
 Direção visual, tokens, asset 3D, protótipo navegável e especificação de telas do curso pós-acesso. Leia primeiro `../DESIGN_SYSTEM.md`, depois `specs/EXPERIENCE.md` e `specs/L01_SCREEN_MAP.md`.

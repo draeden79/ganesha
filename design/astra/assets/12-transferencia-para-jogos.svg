@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 615" role="img" aria-labelledby="title desc">
+<title id="title">Outro problema pede outra regra</title><desc id="desc">Em um encontro de jogos, os campos são ID, nome, peças faltantes e já conferido. A regra seleciona não conferidos com peças faltantes maior que zero. Dois faltantes entra; zero fica fora; já conferido com dois também fica fora.</desc>
+<style>text{font-family:Figtree,Arial,sans-serif} .literal{direction:ltr;unicode-bidi:isolate}</style>
+<rect width="1200" height="615" rx="28" fill="#F5F3FB"/>
+<text x="40" y="47" font-size="16" letter-spacing="2" fill="#6C3BEE" font-weight="700">GANESHA · DEMONSTRAÇÃO PREPARADA</text>
+<text x="40" y="96" font-size="32" font-weight="700" fill="#17151F">Outro problema pede outra regra</text>
+<text x="40" y="140" font-size="19" font-weight="400" fill="#625B70">Exemplo preparado: separar jogos que ainda precisam de revisão.</text>
+<rect x="40.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="72.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="72.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">1</text>
+<text x="97.0" y="231" font-size="18" font-weight="700" fill="#17151F">Problema</text>
+<text x="64.0" y="274" font-size="20" font-weight="400" fill="#17151F">Quais jogos precisam de</text><text x="64.0" y="302" font-size="20" font-weight="400" fill="#17151F">revisão?</text>
+<text x="64.0" y="344" font-size="20" font-weight="400" fill="#17151F">Dados: ID, nome, peças</text><text x="64.0" y="372" font-size="20" font-weight="400" fill="#17151F">faltantes e conferido.</text>
+<rect x="420.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="452.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="452.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">2</text>
+<text x="477.0" y="231" font-size="18" font-weight="700" fill="#17151F">Regra</text>
+<text x="444.0" y="274" font-size="20" font-weight="400" fill="#17151F">Não conferido</text>
+<text x="444.0" y="316" font-size="20" font-weight="600" fill="#6C3BEE">E peças faltantes &gt; 0</text>
+<text x="444.0" y="358" font-size="20" font-weight="400" fill="#17151F">Preparar lista de revisão</text><text x="444.0" y="386" font-size="20" font-weight="400" fill="#17151F">local.</text>
+<rect x="800.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="832.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="832.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">3</text>
+<text x="857.0" y="231" font-size="18" font-weight="700" fill="#17151F">Previsões para testar</text>
+<text x="824.0" y="274" font-size="20" font-weight="600" fill="#246548">2 peças · não conferido →</text><text x="824.0" y="302" font-size="20" font-weight="600" fill="#246548">entra</text>
+<text x="824.0" y="344" font-size="20" font-weight="400" fill="#17151F">0 peças → fica fora</text>
+<text x="824.0" y="386" font-size="20" font-weight="400" fill="#17151F">Conferido · 2 peças → fica</text><text x="824.0" y="414" font-size="20" font-weight="400" fill="#17151F">fora</text>
+<text x="824.0" y="456" font-size="20" font-weight="400" fill="#17151F">Repetir não duplica o mesmo</text><text x="824.0" y="484" font-size="20" font-weight="400" fill="#17151F">ID.</text>
+<text x="40" y="577" font-size="18" font-weight="400" fill="#625B70">Seu projeto precisa mudar uma necessidade ou regra; trocar só nomes e cores não demonstra transferência.</text>
+</svg>

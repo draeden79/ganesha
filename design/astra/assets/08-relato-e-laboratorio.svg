@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 615" role="img" aria-labelledby="title desc">
+<title id="title">Um relato útil separa fato de hipótese</title><desc id="desc">No laboratório foram importadas quatro tarefas, uma concluída. Esperado: três pendências. Observado: quatro. Hipótese: a contagem inclui todas. Após corrigir, repetir os testes de concluir, excluir e importar.</desc>
+<style>text{font-family:Figtree,Arial,sans-serif} .literal{direction:ltr;unicode-bidi:isolate}</style>
+<rect width="1200" height="615" rx="28" fill="#F5F3FB"/>
+<text x="40" y="47" font-size="16" letter-spacing="2" fill="#6C3BEE" font-weight="700">GANESHA · DEMONSTRAÇÃO PREPARADA</text>
+<text x="40" y="96" font-size="32" font-weight="700" fill="#17151F">Um relato útil separa fato de hipótese</text>
+<text x="40" y="140" font-size="19" font-weight="400" fill="#625B70">Quatro tarefas, uma concluída: o problema está no que a contagem promete mostrar.</text>
+<rect x="40.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="72.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="72.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">1</text>
+<text x="97.0" y="231" font-size="18" font-weight="700" fill="#17151F">Arquivo e passos</text>
+<text x="64.0" y="274" font-size="20" font-weight="400" fill="#17151F">app-laboratorio.html</text>
+<text x="64.0" y="316" font-size="20" font-weight="400" fill="#17151F">Importar 4 tarefas</text>
+<text x="64.0" y="358" font-size="20" font-weight="400" fill="#17151F">Uma está concluída</text>
+<rect x="420.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="452.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="452.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">2</text>
+<text x="477.0" y="231" font-size="18" font-weight="700" fill="#17151F">Esperado × observado</text>
+<text x="444.0" y="274" font-size="20" font-weight="600" fill="#246548">Esperado: 3 pendências</text>
+<text x="444.0" y="316" font-size="20" font-weight="600" fill="#923B25">Observado: 4 pendências</text>
+<text x="444.0" y="358" font-size="20" font-weight="400" fill="#17151F">Este é o fato a investigar.</text>
+<rect x="800.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="832.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="832.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">3</text>
+<text x="857.0" y="231" font-size="18" font-weight="700" fill="#17151F">Hipótese e nova tentativa</text>
+<text x="824.0" y="274" font-size="20" font-weight="400" fill="#17151F">Talvez conte todas as tarefas.</text>
+<text x="824.0" y="316" font-size="20" font-weight="400" fill="#17151F">Pedir correção delimitada</text>
+<text x="824.0" y="358" font-size="20" font-weight="400" fill="#17151F">Repetir: concluir, excluir e</text><text x="824.0" y="386" font-size="20" font-weight="400" fill="#17151F">importar.</text>
+<text x="40" y="577" font-size="18" font-weight="400" fill="#625B70">Laboratório identificado e com armazenamento separado do original antes de abrir.</text>
+</svg>

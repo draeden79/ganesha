@@ -1,0 +1,586 @@
+[
+  {
+    "id": "01-primeira-conferencia",
+    "lesson": 1,
+    "step": 1,
+    "kind": "comparison",
+    "title": "O que a nota permite dizer?",
+    "subtitle": "Uma IA pode organizar a frase. A conferência dos fatos continua com você.",
+    "alt": "A nota diz materiais fornecidos. Dizer os materiais serão fornecidos mantém a informação. Dizer cada pessoa receberá um vaso para levar para casa acrescenta uma promessa que a nota não faz.",
+    "caption": "Duas frases preparadas para comparar. Nenhuma mensagem foi enviada nesta demonstração.",
+    "panels": [
+      {
+        "label": "Nota de origem",
+        "items": [
+          {
+            "text": "Materiais fornecidos",
+            "tone": "accent"
+          },
+          "É uma informação confirmada da Oficina Aurora."
+        ]
+      },
+      {
+        "label": "Frase fiel à nota",
+        "items": [
+          {
+            "text": "“Os materiais serão fornecidos.”",
+            "tone": "good"
+          },
+          "A forma mudou. O fato foi preservado."
+        ]
+      },
+      {
+        "label": "Promessa acrescentada",
+        "items": [
+          {
+            "text": "“Cada pessoa receberá um vaso para levar para casa.”",
+            "tone": "bad"
+          },
+          "A nota não promete um brinde."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "01-notas-e-aviso",
+    "lesson": 1,
+    "step": 3,
+    "kind": "comparison",
+    "title": "Uma frase precisa caber nos fatos",
+    "subtitle": "Compare cada afirmação do aviso com a anotação de origem.",
+    "alt": "As notas dizem materiais fornecidos e sem inscrição. O aviso de exemplo diz inscreva-se até sexta e traga seu vaso. A inscrição foi inventada e a obrigação de levar um vaso não está nas notas.",
+    "caption": "A resposta pode soar convincente e ainda acrescentar uma informação sem apoio.",
+    "panels": [
+      {
+        "label": "O que sabemos",
+        "items": [
+          "Sábado · 15h às 17h",
+          "Sala Girassol · gratuito",
+          {
+            "text": "Materiais fornecidos",
+            "tone": "good"
+          },
+          {
+            "text": "Não haverá inscrição",
+            "tone": "good"
+          },
+          "Data e endereço a confirmar"
+        ]
+      },
+      {
+        "label": "O que a IA escreveu no exemplo",
+        "items": [
+          "“Inscreva-se até sexta e traga seu vaso.”",
+          {
+            "text": "Inscrição e prazo: inventados",
+            "tone": "bad"
+          },
+          {
+            "text": "Levar um vaso: sem apoio nas notas",
+            "tone": "bad"
+          },
+          "Próximo passo: pedir uma correção específica."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "02-texto-arquivo-pagina",
+    "lesson": 2,
+    "step": 3,
+    "kind": "fileflow",
+    "title": "O mesmo conteúdo, em três lugares",
+    "subtitle": "Receber código, salvar um arquivo e abrir uma página são ações diferentes.",
+    "alt": "O texto HTML é salvo como site.html na pasta oficina-aurora. O navegador abre esse arquivo e mostra o título Oficina Aurora. Salvar e recarregar permite observar uma alteração.",
+    "caption": "Ilustração conceitual. Não representa menus de uma ferramenta ou sistema operacional.",
+    "panels": [
+      {
+        "label": "Trecho no editor",
+        "items": [
+          "<h1>Oficina Aurora</h1>",
+          "HTML é texto com instruções para a página.",
+          {
+            "text": "Salvar como site.html",
+            "tone": "accent"
+          }
+        ]
+      },
+      {
+        "label": "Arquivo na pasta",
+        "items": [
+          "oficina-aurora/",
+          "└ site.html",
+          "Confira o nome completo.",
+          {
+            "text": "site.html.txt é outro nome",
+            "tone": "bad"
+          }
+        ]
+      },
+      {
+        "label": "Página no navegador",
+        "items": [
+          {
+            "text": "Oficina Aurora",
+            "tone": "accent"
+          },
+          "Cuidados com plantas em vasos",
+          "Sábado · 15h às 17h",
+          "Após uma mudança: salvar e recarregar."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "03-hierarquia-e-copia",
+    "lesson": 3,
+    "step": 3,
+    "kind": "hierarchy",
+    "title": "Mude a ordem. Preserve os fatos.",
+    "subtitle": "O tema vem primeiro; os detalhes ficam em grupos que a pessoa consegue encontrar.",
+    "alt": "Antes, informações da oficina aparecem juntas em um bloco. Depois, o mesmo conteúdo está dividido em título, quando e onde, o que está incluído e o que falta confirmar. Uma cópia anterior é preservada.",
+    "caption": "Guarde site-antes-aula03.html; trabalhe em site.html. As duas versões devem existir.",
+    "panels": [
+      {
+        "label": "Antes · informação misturada",
+        "items": [
+          "Gratuito. Sala Girassol. Oficina Aurora. Materiais fornecidos. Sábado, 15h–17h. Cuidados com plantas. Data e endereço pendentes.",
+          "É preciso procurar o horário dentro do texto."
+        ]
+      },
+      {
+        "label": "Depois · perguntas respondidas",
+        "items": [
+          {
+            "text": "Oficina Aurora · plantas em vasos",
+            "tone": "accent"
+          },
+          "Quando e onde: sábado, 15h–17h, Sala Girassol",
+          "Incluído: gratuito, materiais fornecidos",
+          "A confirmar: data completa e endereço"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "04-condicao-esperado-observado",
+    "lesson": 4,
+    "step": 3,
+    "kind": "test",
+    "title": "Um teste mostra o que aconteceu",
+    "subtitle": "Troque “está estranho” por uma condição e uma observação que outra pessoa possa repetir.",
+    "alt": "Um registro de exemplo informa condição: janela estreita; esperado: título inteiro visível; observado: última palavra cortada. A ação seguinte é corrigir a quebra de texto e repetir a mesma condição.",
+    "caption": "Registro preparado para a aula. Não comprova um teste no arquivo do aluno.",
+    "panels": [
+      {
+        "label": "Condição",
+        "items": [
+          "site.html aberto",
+          "Janela estreita",
+          {
+            "text": "O que você mudou para testar?",
+            "tone": "accent"
+          }
+        ]
+      },
+      {
+        "label": "Esperado",
+        "items": [
+          "Ler o título inteiro",
+          "Sem rolar para os lados",
+          {
+            "text": "O que deveria acontecer?",
+            "tone": "accent"
+          }
+        ]
+      },
+      {
+        "label": "Observado no exemplo",
+        "items": [
+          {
+            "text": "A última palavra fica cortada",
+            "tone": "bad"
+          },
+          "Pedir ajuste na quebra de texto",
+          "Repetir a mesma condição"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "05-estado-e-contagem",
+    "lesson": 5,
+    "step": 3,
+    "kind": "tasks",
+    "title": "Linhas e pendências são contagens diferentes",
+    "subtitle": "A lista muda quando você adiciona, conclui ou exclui uma tarefa.",
+    "alt": "A lista vazia tem zero pendências. Adicionar Separar vasos e Preparar mesa cria duas pendências. Concluir Separar vasos deixa uma. Excluir Preparar mesa deixa uma linha concluída e zero pendências.",
+    "caption": "Nesta primeira versão, recarregar apaga a lista: os dados ficam só na memória da página.",
+    "panels": [
+      {
+        "label": "1 · Lista vazia",
+        "items": [
+          {
+            "text": "0 pendências",
+            "tone": "accent"
+          },
+          "Nenhuma tarefa"
+        ]
+      },
+      {
+        "label": "2 · Adicionar duas",
+        "items": [
+          {
+            "text": "2 pendências",
+            "tone": "accent"
+          },
+          "○ Separar vasos",
+          "○ Preparar mesa"
+        ]
+      },
+      {
+        "label": "3 · Concluir a primeira",
+        "items": [
+          {
+            "text": "1 pendência",
+            "tone": "accent"
+          },
+          "✓ Separar vasos · concluída",
+          "○ Preparar mesa"
+        ]
+      },
+      {
+        "label": "4 · Excluir a segunda",
+        "items": [
+          {
+            "text": "0 pendências",
+            "tone": "accent"
+          },
+          "✓ Separar vasos · concluída",
+          "Uma linha continua na lista."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "06-identidade-e-prazo",
+    "lesson": 6,
+    "step": 3,
+    "kind": "identity",
+    "title": "O nome pode repetir. A identidade, não.",
+    "subtitle": "O ID indica qual registro mudar; dias restantes é um valor informado por você.",
+    "alt": "A01 e A02 têm o nome Revisar materiais. A01 tem um dia restante; A02 tem três. Concluir A01 não muda A02. Menos um significa atraso, zero significa hoje e um significa um dia restante. Vazio não é zero.",
+    "caption": "IDs ilustrativos. No aplicativo do aluno podem ser diferentes; o prazo não muda com o relógio.",
+    "panels": [
+      {
+        "label": "Registro A01",
+        "items": [
+          "Revisar materiais",
+          "1 dia restante",
+          {
+            "text": "Concluir apenas A01",
+            "tone": "accent"
+          }
+        ]
+      },
+      {
+        "label": "Registro A02",
+        "items": [
+          "Revisar materiais",
+          "3 dias restantes",
+          {
+            "text": "Continua pendente",
+            "tone": "accent"
+          }
+        ]
+      },
+      {
+        "label": "Como ler o prazo",
+        "items": [
+          "−1 → um dia de atraso",
+          "0 → hoje",
+          "1 → daqui a um dia",
+          {
+            "text": "Vazio não significa zero",
+            "tone": "bad"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "07-programa-dados-copia",
+    "lesson": 7,
+    "step": 1,
+    "kind": "storage",
+    "title": "O programa não carrega sozinho a sua lista",
+    "subtitle": "Separar instruções, armazenamento e cópia ajuda a entender a recuperação.",
+    "alt": "app.html contém as instruções. As tarefas ficam no armazenamento daquele navegador quando o salvamento funciona. Exportar cria uma cópia JSON dos dados; importar essa cópia permite substituir a lista após confirmação.",
+    "caption": "Copiar o HTML não transfere automaticamente os dados guardados no navegador.",
+    "panels": [
+      {
+        "label": "Programa",
+        "items": [
+          {
+            "text": "app.html",
+            "tone": "accent"
+          },
+          "Instruções de funcionamento",
+          "Não é uma cópia das tarefas."
+        ]
+      },
+      {
+        "label": "Dados no navegador",
+        "items": [
+          "4 tarefas de exemplo",
+          "Dependem do ambiente",
+          {
+            "text": "Podem ser apagados",
+            "tone": "bad"
+          }
+        ]
+      },
+      {
+        "label": "Cópia exportada",
+        "items": [
+          {
+            "text": "tarefas-aurora-copia.json",
+            "tone": "accent"
+          },
+          "Arquivo explícito dos dados",
+          "Exportar → guardar",
+          "Importar → conferir → confirmar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "08-relato-e-laboratorio",
+    "lesson": 8,
+    "step": 4,
+    "kind": "report",
+    "title": "Um relato útil separa fato de hipótese",
+    "subtitle": "Quatro tarefas, uma concluída: o problema está no que a contagem promete mostrar.",
+    "alt": "No laboratório foram importadas quatro tarefas, uma concluída. Esperado: três pendências. Observado: quatro. Hipótese: a contagem inclui todas. Após corrigir, repetir os testes de concluir, excluir e importar.",
+    "caption": "Laboratório identificado e com armazenamento separado do original antes de abrir.",
+    "panels": [
+      {
+        "label": "Arquivo e passos",
+        "items": [
+          "app-laboratorio.html",
+          "Importar 4 tarefas",
+          "Uma está concluída"
+        ]
+      },
+      {
+        "label": "Esperado × observado",
+        "items": [
+          {
+            "text": "Esperado: 3 pendências",
+            "tone": "good"
+          },
+          {
+            "text": "Observado: 4 pendências",
+            "tone": "bad"
+          },
+          "Este é o fato a investigar."
+        ]
+      },
+      {
+        "label": "Hipótese e nova tentativa",
+        "items": [
+          "Talvez conte todas as tarefas.",
+          "Pedir correção delimitada",
+          "Repetir: concluir, excluir e importar."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "09-duas-condicoes",
+    "lesson": 9,
+    "step": 3,
+    "kind": "rule",
+    "title": "Só entra quem atende às duas condições",
+    "subtitle": "Tarefa pendente E dias restantes menor ou igual a 1.",
+    "alt": "Separar vasos, prazo zero, e Preparar mesa, prazo um, entram porque estão pendentes. Conferir cadeiras, prazo três, fica fora pelo prazo. Imprimir roteiro, prazo menos um, fica fora porque está concluída.",
+    "caption": "O clique inicia a seleção. A saída é uma prévia local de lembretes; nenhuma mensagem é enviada.",
+    "panels": [
+      {
+        "label": "Separar vasos",
+        "items": [
+          "0 dias · pendente",
+          {
+            "text": "Entra: atende às duas condições",
+            "tone": "good"
+          }
+        ]
+      },
+      {
+        "label": "Preparar mesa",
+        "items": [
+          "1 dia · pendente",
+          {
+            "text": "Entra: atende às duas condições",
+            "tone": "good"
+          }
+        ]
+      },
+      {
+        "label": "Conferir cadeiras",
+        "items": [
+          "3 dias · pendente",
+          {
+            "text": "Fica fora: prazo maior que 1",
+            "tone": "bad"
+          }
+        ]
+      },
+      {
+        "label": "Imprimir roteiro",
+        "items": [
+          "−1 dia · concluída",
+          {
+            "text": "Fica fora: já foi concluída",
+            "tone": "bad"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10-repeticao-e-historico",
+    "lesson": 10,
+    "step": 3,
+    "kind": "history",
+    "title": "Rodar duas vezes não precisa registrar duas vezes",
+    "subtitle": "A combinação ID da tarefa + regra reconhece uma preparação que já aconteceu.",
+    "alt": "A primeira confirmação registra A01 mais prazo-v1 e A02 mais prazo-v1. Ao repetir, as mesmas chaves são reconhecidas e o histórico permanece com dois registros. Exportar novamente também não aumenta o histórico.",
+    "caption": "Preparado localmente, não enviado. Esta regra não produz lembretes recorrentes para o mesmo ID.",
+    "panels": [
+      {
+        "label": "Antes de confirmar",
+        "items": [
+          "2 candidatos novos",
+          {
+            "text": "Histórico: 0",
+            "tone": "accent"
+          },
+          "Cancelar mantém zero."
+        ]
+      },
+      {
+        "label": "Primeira confirmação",
+        "items": [
+          "A01 + prazo-v1",
+          "A02 + prazo-v1",
+          {
+            "text": "Histórico: 2",
+            "tone": "accent"
+          }
+        ]
+      },
+      {
+        "label": "Segunda execução",
+        "items": [
+          "Mesmas chaves: já preparadas",
+          {
+            "text": "Histórico continua: 2",
+            "tone": "good"
+          },
+          "Exportar textos não registra outra vez."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11-pacote-de-entrega",
+    "lesson": 11,
+    "step": 2,
+    "kind": "package",
+    "title": "Uma pasta que explica como começar",
+    "subtitle": "Cada arquivo tem um papel; a pessoa não precisa conhecer sua conversa com a IA.",
+    "alt": "A pasta entrega-aurora tem LEIA-ME.txt com instruções, site.html com informações, app.html com organizador e dados-exemplo.json versão dois com tarefas e histórico. Links relativos conectam site e aplicativo.",
+    "caption": "Dados viajam no JSON. O armazenamento da entrega deve ser separado do ambiente de trabalho.",
+    "panels": [
+      {
+        "label": "LEIA-ME.txt",
+        "items": [
+          "Por onde começar",
+          "Como importar o exemplo",
+          "O que foi testado e o que falta"
+        ]
+      },
+      {
+        "label": "site.html",
+        "items": [
+          "Informações da oficina",
+          {
+            "text": "Abrir organizador de treino → app.html",
+            "tone": "accent"
+          }
+        ]
+      },
+      {
+        "label": "app.html",
+        "items": [
+          "Tarefas e lembretes locais",
+          {
+            "text": "Voltar às informações → site.html",
+            "tone": "accent"
+          }
+        ]
+      },
+      {
+        "label": "dados-exemplo.json",
+        "items": [
+          "Formato versão 2",
+          "Tarefas + histórico",
+          "Importar e confirmar substituição"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "12-transferencia-para-jogos",
+    "lesson": 12,
+    "step": 2,
+    "kind": "transfer",
+    "title": "Outro problema pede outra regra",
+    "subtitle": "Exemplo preparado: separar jogos que ainda precisam de revisão.",
+    "alt": "Em um encontro de jogos, os campos são ID, nome, peças faltantes e já conferido. A regra seleciona não conferidos com peças faltantes maior que zero. Dois faltantes entra; zero fica fora; já conferido com dois também fica fora.",
+    "caption": "Seu projeto precisa mudar uma necessidade ou regra; trocar só nomes e cores não demonstra transferência.",
+    "panels": [
+      {
+        "label": "Problema",
+        "items": [
+          "Quais jogos precisam de revisão?",
+          "Dados: ID, nome, peças faltantes e conferido."
+        ]
+      },
+      {
+        "label": "Regra",
+        "items": [
+          "Não conferido",
+          {
+            "text": "E peças faltantes > 0",
+            "tone": "accent"
+          },
+          "Preparar lista de revisão local."
+        ]
+      },
+      {
+        "label": "Previsões para testar",
+        "items": [
+          {
+            "text": "2 peças · não conferido → entra",
+            "tone": "good"
+          },
+          "0 peças → fica fora",
+          "Conferido · 2 peças → fica fora",
+          "Repetir não duplica o mesmo ID."
+        ]
+      }
+    ]
+  }
+]

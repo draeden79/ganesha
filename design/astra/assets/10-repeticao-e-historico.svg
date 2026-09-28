@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 615" role="img" aria-labelledby="title desc">
+<title id="title">Rodar duas vezes não precisa registrar duas vezes</title><desc id="desc">A primeira confirmação registra A01 mais prazo-v1 e A02 mais prazo-v1. Ao repetir, as mesmas chaves são reconhecidas e o histórico permanece com dois registros. Exportar novamente também não aumenta o histórico.</desc>
+<style>text{font-family:Figtree,Arial,sans-serif} .literal{direction:ltr;unicode-bidi:isolate}</style>
+<rect width="1200" height="615" rx="28" fill="#F5F3FB"/>
+<text x="40" y="47" font-size="16" letter-spacing="2" fill="#6C3BEE" font-weight="700">GANESHA · DEMONSTRAÇÃO PREPARADA</text>
+<text x="40" y="96" font-size="32" font-weight="700" fill="#17151F">Rodar duas vezes não precisa registrar duas vezes</text>
+<text x="40" y="140" font-size="19" font-weight="400" fill="#625B70">A combinação ID da tarefa + regra reconhece uma preparação que já aconteceu.</text>
+<rect x="40.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="72.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="72.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">1</text>
+<text x="97.0" y="231" font-size="18" font-weight="700" fill="#17151F">Antes de confirmar</text>
+<text x="64.0" y="274" font-size="20" font-weight="400" fill="#17151F">2 candidatos novos</text>
+<text x="64.0" y="316" font-size="20" font-weight="600" fill="#6C3BEE">Histórico: 0</text>
+<text x="64.0" y="358" font-size="20" font-weight="400" fill="#17151F">Cancelar mantém zero.</text>
+<rect x="420.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="452.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="452.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">2</text>
+<text x="477.0" y="231" font-size="18" font-weight="700" fill="#17151F">Primeira confirmação</text>
+<text x="444.0" y="274" font-size="20" font-weight="400" fill="#17151F">A01 + prazo-v1</text>
+<text x="444.0" y="316" font-size="20" font-weight="400" fill="#17151F">A02 + prazo-v1</text>
+<text x="444.0" y="358" font-size="20" font-weight="600" fill="#6C3BEE">Histórico: 2</text>
+<rect x="800.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="832.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="832.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">3</text>
+<text x="857.0" y="231" font-size="18" font-weight="700" fill="#17151F">Segunda execução</text>
+<text x="824.0" y="274" font-size="20" font-weight="400" fill="#17151F">Mesmas chaves: já preparadas</text>
+<text x="824.0" y="316" font-size="20" font-weight="600" fill="#246548">Histórico continua: 2</text>
+<text x="824.0" y="358" font-size="20" font-weight="400" fill="#17151F">Exportar textos não registra</text><text x="824.0" y="386" font-size="20" font-weight="400" fill="#17151F">outra vez.</text>
+<text x="40" y="577" font-size="18" font-weight="400" fill="#625B70">Preparado localmente, não enviado. Esta regra não produz lembretes recorrentes para o mesmo ID.</text>
+</svg>

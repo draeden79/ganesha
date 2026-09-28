@@ -1,0 +1,18 @@
+[
+  {
+    "val": "3",
+    "result": "Separar vasos\n0 dias · pendente\nEntra: duas condições atendidas\nPreparar mesa\n1 dia · pendente\nEntra: duas condições atendidas\nConferir cadeiras\n3 dias · pendente\nFica fora: prazo maior que 1\nImprimir roteiro\n-1 dia · concluída\nFica fora: concluída\n\n2 lembretes nesta prévia preparada. Nenhuma mensagem enviada."
+  },
+  {
+    "val": "2",
+    "result": "Separar vasos\n0 dias · pendente\nEntra: duas condições atendidas\nPreparar mesa\n1 dia · pendente\nEntra: duas condições atendidas\nConferir cadeiras\n2 dias · pendente\nFica fora: prazo maior que 1\nImprimir roteiro\n-1 dia · concluída\nFica fora: concluída\n\n2 lembretes nesta prévia preparada. Nenhuma mensagem enviada."
+  },
+  {
+    "val": "1",
+    "result": "Separar vasos\n0 dias · pendente\nEntra: duas condições atendidas\nPreparar mesa\n1 dia · pendente\nEntra: duas condições atendidas\nConferir cadeiras\n1 dia · pendente\nEntra: duas condições atendidas\nImprimir roteiro\n-1 dia · concluída\nFica fora: concluída\n\n3 lembretes nesta prévia preparada. Nenhuma mensagem enviada."
+  },
+  {
+    "val": "-2",
+    "result": "Separar vasos\n0 dias · pendente\nEntra: duas condições atendidas\nPreparar mesa\n1 dia · pendente\nEntra: duas condições atendidas\nConferir cadeiras\n-2 dias · pendente\nEntra: duas condições atendidas\nImprimir roteiro\n-1 dia · concluída\nFica fora: concluída\n\n3 lembretes nesta prévia preparada. Nenhuma mensagem enviada."
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "overflow": [],
+    "title": "O que a nota permite dizer?",
+    "url": "http://127.0.0.1:4180/astra/assets/01-primeira-conferencia.svg"
+  },
+  {
+    "overflow": [],
+    "title": "Uma frase precisa caber nos fatos",
+    "url": "http://127.0.0.1:4180/astra/assets/01-notas-e-aviso.svg"
+  },
+  {
+    "overflow": [],
+    "title": "O mesmo conteúdo, em três lugares",
+    "url": "http://127.0.0.1:4180/astra/assets/02-texto-arquivo-pagina.svg"
+  },
+  {
+    "overflow": [],
+    "title": "Mude a ordem. Preserve os fatos.",
+    "url": "http://127.0.0.1:4180/astra/assets/03-hierarquia-e-copia.svg"
+  },
+  {
+    "overflow": [],
+    "title": "Um teste mostra o que aconteceu",
+    "url": "http://127.0.0.1:4180/astra/assets/04-condicao-esperado-observado.svg"
+  },
+  {
+    "overflow": [],
+    "title": "Linhas e pendências são contagens diferentes",
+    "url": "http://127.0.0.1:4180/astra/assets/05-estado-e-contagem.svg"
+  },
+  {
+    "overflow": [],
+    "title": "O nome pode repetir. A identidade, não.",
+    "url": "http://127.0.0.1:4180/astra/assets/06-identidade-e-prazo.svg"
+  },
+  {
+    "overflow": [],
+    "title": "O programa não carrega sozinho a sua lista",
+    "url": "http://127.0.0.1:4180/astra/assets/07-programa-dados-copia.svg"
+  },
+  {
+    "overflow": [],
+    "title": "Um relato útil separa fato de hipótese",
+    "url": "http://127.0.0.1:4180/astra/assets/08-relato-e-laboratorio.svg"
+  },
+  {
+    "overflow": [],
+    "title": "Só entra quem atende às duas condições",
+    "url": "http://127.0.0.1:4180/astra/assets/09-duas-condicoes.svg"
+  },
+  {
+    "overflow": [],
+    "title": "Rodar duas vezes não precisa registrar duas vezes",
+    "url": "http://127.0.0.1:4180/astra/assets/10-repeticao-e-historico.svg"
+  },
+  {
+    "overflow": [],
+    "title": "Uma pasta que explica como começar",
+    "url": "http://127.0.0.1:4180/astra/assets/11-pacote-de-entrega.svg"
+  },
+  {
+    "overflow": [],
+    "title": "Outro problema pede outra regra",
+    "url": "http://127.0.0.1:4180/astra/assets/12-transferencia-para-jogos.svg"
+  }
+]

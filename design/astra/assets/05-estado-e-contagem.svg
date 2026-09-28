@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 775" role="img" aria-labelledby="title desc">
+<title id="title">Linhas e pendências são contagens diferentes</title><desc id="desc">A lista vazia tem zero pendências. Adicionar Separar vasos e Preparar mesa cria duas pendências. Concluir Separar vasos deixa uma. Excluir Preparar mesa deixa uma linha concluída e zero pendências.</desc>
+<style>text{font-family:Figtree,Arial,sans-serif} .literal{direction:ltr;unicode-bidi:isolate}</style>
+<rect width="1200" height="775" rx="28" fill="#F5F3FB"/>
+<text x="40" y="47" font-size="16" letter-spacing="2" fill="#6C3BEE" font-weight="700">GANESHA · DEMONSTRAÇÃO PREPARADA</text>
+<text x="40" y="96" font-size="32" font-weight="700" fill="#17151F">Linhas e pendências são contagens diferentes</text>
+<text x="40" y="140" font-size="19" font-weight="400" fill="#625B70">A lista muda quando você adiciona, conclui ou exclui uma tarefa.</text>
+<rect x="40.0" y="190" width="550.0" height="230" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="72.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="72.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">1</text>
+<text x="97.0" y="231" font-size="18" font-weight="700" fill="#17151F">1 · Lista vazia</text>
+<text x="64.0" y="274" font-size="20" font-weight="600" fill="#6C3BEE">0 pendências</text>
+<text x="64.0" y="316" font-size="20" font-weight="400" fill="#17151F">Nenhuma tarefa</text>
+<rect x="610.0" y="190" width="550.0" height="230" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="642.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="642.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">2</text>
+<text x="667.0" y="231" font-size="18" font-weight="700" fill="#17151F">2 · Adicionar duas</text>
+<text x="634.0" y="274" font-size="20" font-weight="600" fill="#6C3BEE">2 pendências</text>
+<text x="634.0" y="316" font-size="20" font-weight="400" fill="#17151F">○ Separar vasos</text>
+<text x="634.0" y="358" font-size="20" font-weight="400" fill="#17151F">○ Preparar mesa</text>
+<rect x="40.0" y="440" width="550.0" height="230" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="72.0" cy="474" r="14" fill="#EDE6FD"/>
+<text x="72.0" y="480" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">3</text>
+<text x="97.0" y="481" font-size="18" font-weight="700" fill="#17151F">3 · Concluir a primeira</text>
+<text x="64.0" y="524" font-size="20" font-weight="600" fill="#6C3BEE">1 pendência</text>
+<text x="64.0" y="566" font-size="20" font-weight="400" fill="#17151F">✓ Separar vasos · concluída</text>
+<text x="64.0" y="608" font-size="20" font-weight="400" fill="#17151F">○ Preparar mesa</text>
+<rect x="610.0" y="440" width="550.0" height="230" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="642.0" cy="474" r="14" fill="#EDE6FD"/>
+<text x="642.0" y="480" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">4</text>
+<text x="667.0" y="481" font-size="18" font-weight="700" fill="#17151F">4 · Excluir a segunda</text>
+<text x="634.0" y="524" font-size="20" font-weight="600" fill="#6C3BEE">0 pendências</text>
+<text x="634.0" y="566" font-size="20" font-weight="400" fill="#17151F">✓ Separar vasos · concluída</text>
+<text x="634.0" y="608" font-size="20" font-weight="400" fill="#17151F">Uma linha continua na lista.</text>
+<text x="40" y="737" font-size="18" font-weight="400" fill="#625B70">Nesta primeira versão, recarregar apaga a lista: os dados ficam só na memória da página.</text>
+</svg>

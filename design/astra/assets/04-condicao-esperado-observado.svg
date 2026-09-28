@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 615" role="img" aria-labelledby="title desc">
+<title id="title">Um teste mostra o que aconteceu</title><desc id="desc">Um registro de exemplo informa condição: janela estreita; esperado: título inteiro visível; observado: última palavra cortada. A ação seguinte é corrigir a quebra de texto e repetir a mesma condição.</desc>
+<style>text{font-family:Figtree,Arial,sans-serif} .literal{direction:ltr;unicode-bidi:isolate}</style>
+<rect width="1200" height="615" rx="28" fill="#F5F3FB"/>
+<text x="40" y="47" font-size="16" letter-spacing="2" fill="#6C3BEE" font-weight="700">GANESHA · DEMONSTRAÇÃO PREPARADA</text>
+<text x="40" y="96" font-size="32" font-weight="700" fill="#17151F">Um teste mostra o que aconteceu</text>
+<text x="40" y="140" font-size="19" font-weight="400" fill="#625B70">Troque “está estranho” por uma condição e uma observação que outra pessoa possa repetir.</text>
+<rect x="40.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="72.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="72.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">1</text>
+<text x="97.0" y="231" font-size="18" font-weight="700" fill="#17151F">Condição</text>
+<text x="64.0" y="274" font-size="20" font-weight="400" fill="#17151F">site.html aberto</text>
+<text x="64.0" y="316" font-size="20" font-weight="400" fill="#17151F">Janela estreita</text>
+<text x="64.0" y="358" font-size="20" font-weight="600" fill="#6C3BEE">O que você mudou para testar?</text>
+<rect x="420.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="452.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="452.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">2</text>
+<text x="477.0" y="231" font-size="18" font-weight="700" fill="#17151F">Esperado</text>
+<text x="444.0" y="274" font-size="20" font-weight="400" fill="#17151F">Ler o título inteiro</text>
+<text x="444.0" y="316" font-size="20" font-weight="400" fill="#17151F">Sem rolar para os lados</text>
+<text x="444.0" y="358" font-size="20" font-weight="600" fill="#6C3BEE">O que deveria acontecer?</text>
+<rect x="800.0" y="190" width="360.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="832.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="832.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">3</text>
+<text x="857.0" y="231" font-size="18" font-weight="700" fill="#17151F">Observado no exemplo</text>
+<text x="824.0" y="274" font-size="20" font-weight="600" fill="#923B25">A última palavra fica cortada</text>
+<text x="824.0" y="316" font-size="20" font-weight="400" fill="#17151F">Pedir ajuste na quebra de</text><text x="824.0" y="344" font-size="20" font-weight="400" fill="#17151F">texto</text>
+<text x="824.0" y="386" font-size="20" font-weight="400" fill="#17151F">Repetir a mesma condição</text>
+<text x="40" y="577" font-size="18" font-weight="400" fill="#625B70">Registro preparado para a aula. Não comprova um teste no arquivo do aluno.</text>
+</svg>

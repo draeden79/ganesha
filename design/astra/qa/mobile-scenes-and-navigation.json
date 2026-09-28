@@ -1,0 +1,32 @@
+[
+  {
+    "scroll": 390,
+    "url": "http://127.0.0.1:4180/astra/?lesson=2&step=3",
+    "width": 390
+  },
+  {
+    "scroll": 390,
+    "url": "http://127.0.0.1:4180/astra/?lesson=3&step=3",
+    "width": 390
+  },
+  {
+    "scroll": 390,
+    "url": "http://127.0.0.1:4180/astra/?lesson=11&step=2",
+    "width": 390
+  },
+  {
+    "scroll": 390,
+    "url": "http://127.0.0.1:4180/astra/?view=course",
+    "width": 390
+  },
+  {
+    "scroll": 390,
+    "url": "http://127.0.0.1:4180/astra/?view=welcome",
+    "width": 390
+  },
+  {
+    "scroll": 390,
+    "url": "http://127.0.0.1:4180/astra/?view=gallery",
+    "width": 390
+  }
+]

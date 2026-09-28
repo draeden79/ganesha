@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 615" role="img" aria-labelledby="title desc">
+<title id="title">Mude a ordem. Preserve os fatos.</title><desc id="desc">Antes, informações da oficina aparecem juntas em um bloco. Depois, o mesmo conteúdo está dividido em título, quando e onde, o que está incluído e o que falta confirmar. Uma cópia anterior é preservada.</desc>
+<style>text{font-family:Figtree,Arial,sans-serif} .literal{direction:ltr;unicode-bidi:isolate}</style>
+<rect width="1200" height="615" rx="28" fill="#F5F3FB"/>
+<text x="40" y="47" font-size="16" letter-spacing="2" fill="#6C3BEE" font-weight="700">GANESHA · DEMONSTRAÇÃO PREPARADA</text>
+<text x="40" y="96" font-size="32" font-weight="700" fill="#17151F">Mude a ordem. Preserve os fatos.</text>
+<text x="40" y="140" font-size="19" font-weight="400" fill="#625B70">O tema vem primeiro; os detalhes ficam em grupos que a pessoa consegue encontrar.</text>
+<rect x="40.0" y="190" width="550.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="72.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="72.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">1</text>
+<text x="97.0" y="231" font-size="18" font-weight="700" fill="#17151F">Antes · informação misturada</text>
+<text x="64.0" y="274" font-size="20" font-weight="400" fill="#17151F">Gratuito. Sala Girassol. Oficina Aurora.</text><text x="64.0" y="302" font-size="20" font-weight="400" fill="#17151F">Materiais fornecidos. Sábado, 15h–17h. Cuidados</text><text x="64.0" y="330" font-size="20" font-weight="400" fill="#17151F">com plantas. Data e endereço pendentes.</text>
+<text x="64.0" y="372" font-size="20" font-weight="400" fill="#17151F">É preciso procurar o horário dentro do texto.</text>
+<rect x="610.0" y="190" width="550.0" height="320" rx="18" fill="white" stroke="#DED8E9"/>
+<circle cx="642.0" cy="224" r="14" fill="#EDE6FD"/>
+<text x="642.0" y="230" text-anchor="middle" font-size="16" fill="#6C3BEE" font-weight="700">2</text>
+<text x="667.0" y="231" font-size="18" font-weight="700" fill="#17151F">Depois · perguntas respondidas</text>
+<text x="634.0" y="274" font-size="20" font-weight="600" fill="#6C3BEE">Oficina Aurora · plantas em vasos</text>
+<text x="634.0" y="316" font-size="20" font-weight="400" fill="#17151F">Quando e onde: sábado, 15h–17h, Sala Girassol</text>
+<text x="634.0" y="358" font-size="20" font-weight="400" fill="#17151F">Incluído: gratuito, materiais fornecidos</text>
+<text x="634.0" y="400" font-size="20" font-weight="400" fill="#17151F">A confirmar: data completa e endereço</text>
+<text x="40" y="577" font-size="18" font-weight="400" fill="#625B70">Guarde site-antes-aula03.html; trabalhe em site.html. As duas versões devem existir.</text>
+</svg>
