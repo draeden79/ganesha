@@ -8,6 +8,8 @@ O contrato canônico aprovado pelo Diretor é `contracts/course.ts` (schemaVersi
 
 O estado vigente de L01 é `draft`, o curso é `preview` e não há `releasedLessonIds`. Visualização provisória deve ser tratada pelo app como demonstração. As traduções permanecem produzidas; sua presença não eleva maturidade. O gate completo, pendências e evidências aceitas estão em `maturity.json` e `PEDAGOGICAL_AUDIT.md`. Uma versão publicada é imutável; qualquer revisão futura usa nova versão e plano de preservação de progresso.
 
+A nova diretriz de foco por competência permite avançar uma aula quando as lacunas materiais do seu objetivo estiverem cobertas por recursos selecionados integralmente estudados. Não é necessário estudar todo o acervo. `RESEARCH_PRIORITIES.md` define suficiência, reutilização e exclusão de redundâncias. Retirar uma fonte do caminho crítico não valida uma etapa que continua sem sustentação; seu escopo ou sua evidência precisa ser revisto.
+
 ## Estrutura
 
 `Course` tem versão, status, competências, rubricas e `releasedLessonIds`. `Lesson` tem `id`, `order`, `status`, `competencyIds`, `prerequisiteLessonIds`, `estimatedMinutes`, `titleKey`, `summaryKey`, `objectiveKeys` e `steps` ordenadas. Aula planejada sem conteúdo não é aula disponível.

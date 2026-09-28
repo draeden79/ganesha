@@ -47,6 +47,8 @@ Nenhum desses pontos foi corrigido por invenção de novos exemplos “reais” 
 
 ## Pedidos ao Devorador e pendências
 
+**Repriorização posterior na mesma data:** o usuário determinou foco no propósito do curso, sem aguardar consumo de todo o acervo. O quadro abaixo preserva a demanda inicial da auditoria; a seleção vigente e o estado de cada pedido estão em `RESEARCH_PRIORITIES.md` e `maturity.json`. S02 foi reduzido a uma sequência principal, S03 a um quickstart por superfície e S04 passou para correção na trilha de sites. Isso não resolve retroativamente a sustentação da etapa `repair` atual: `L01_REVISION_PLAN.md` propõe substituí-la por revisão do plano, ainda não implementada nem aprovada.
+
 Mensagem enviada diretamente à tarefa Devorador em 28/09/2026; ele confirmou o escopo e publicou `content/research/STUDY_PROTOCOL.md`, lido pelo Educador. Os requisitos abaixo se alinham a esse protocolo, sem certificar antecipadamente as fichas.
 
 | Pedido | Fontes / telas | Pacote necessário | Estado |

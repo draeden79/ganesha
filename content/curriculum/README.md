@@ -23,6 +23,8 @@ O mapa de expansão é planejamento editorial, não catálogo disponível. A int
 - `evidence-bindings.json`: vínculos por etapa e ferramenta para o registro do Devorador.
 - `L01_REFERENCE.md`: proposta de sequência e vínculos de descoberta; não certifica estudo integral.
 - `PEDAGOGICAL_AUDIT.md` e `maturity.json`: sustentação por etapa, lacunas, solicitações ao Devorador e critérios para reavaliação.
+- `RESEARCH_PRIORITIES.md`: seleção atual de poucos recursos completos por lacuna, com avanço independente do inventário inteiro.
+- `L01_REVISION_PLAN.md`: proposta de aprofundamento e ajuste de escopo da aula, sem conteúdo novo liberado.
 - `LOCALIZATION.md` e `AUDIT.json`: cobertura efetiva e resultado estrutural histórico, sem certificação pedagógica.
 
 O contrato canônico é `contracts/course.ts`, mantido pelo Diretor. Gere os arquivos com `python3 content/curriculum/build_course.py`. O gate de release `python3 coordination/validate_content.py` deve rejeitar este protótipo sem aulas liberadas; não enfraquecer o gate para manter a demonstração navegável. O Diretor e o Construtor coordenam o percurso de preview separado da liberação.

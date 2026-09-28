@@ -2,6 +2,8 @@
 
 Data: 2026-09-28. Estado: L01 reclassificada como protótipo provisório (`draft`), com tradução produzida nos 11 idiomas e sustentação parcial por seções/sínteses. Nenhuma aula foi aceita como pedagogicamente pronta após a auditoria de profundidade. L01 aguarda estudo integral das fontes pertinentes e revisão da sequência; expansão permanece planejamento. A sequência é decisão do Educador, não uma afirmação de eficácia pedagógica medida. Ver `PEDAGOGICAL_AUDIT.md`.
 
+Diretriz atual: avançar com poucos recursos fortes e completos por competência, sem esperar o inventário inteiro. `RESEARCH_PRIORITIES.md` registra seleção, prioridades e critério de suficiência; `L01_REVISION_PLAN.md` propõe corrigir a coerência do primeiro percurso, ainda sem alterar textos ou avaliações.
+
 ## Resultado e pré-requisitos
 
 Ao terminar a primeira trilha, o aluno tem uma página pequena publicada, verifica a ação principal em navegador e celular, descreve uma correção feita e guarda evidências do resultado. Não precisa conhecer programação. Precisa operar arquivos e navegador, ter acesso à ferramenta escolhida e, na etapa de publicação, ao serviço de hospedagem escolhido. Limites de conta, instalação e interface dependem da versão e devem ser verificados nas fontes.
@@ -53,9 +55,31 @@ A conclusão de leitura não prova domínio. Separar progresso de telas, resulta
 
 Rubrica comum de pedido: (1) resultado concreto; (2) contexto suficiente; (3) limites explícitos; (4) pelo menos um critério verificável. Rubrica de correção: (1) observado; (2) esperado; (3) como reproduzir; (4) reteste. Rubrica de entrega: (1) evidência acessível; (2) ação principal funciona; (3) limitação conhecida declarada; (4) teste na versão entregue.
 
-## Extensão após a primeira trilha
+## Próximas trilhas e núcleo compartilhado
 
-- Aplicativos: duas aulas adicionais planejadas para C09 — entrada/estado/validação e persistência/recuperação. Usar o site anterior como base. Nenhuma tela ou título de catálogo anunciado como disponível neste lote.
+As trilhas compartilham competências, mas não obrigam todo aluno a concluir sites antes de trabalhar com aplicativos ou automações. O núcleo mínimo é delimitar pedido/contexto (C01–C03), observar resultado (C04) e testar/corrigir (C05–C06). Essas competências podem ser demonstradas no próprio projeto escolhido. A publicação de um site não é pré-requisito para uma automação local.
+
+| Rota planejada | Projeto contínuo proposto | Progressão e evidência | Dependências de pesquisa |
+| --- | --- | --- | --- |
+| Sites, L02–L05 após fundamentos | Página de serviço fictício com ação de contato | Primeiro preview e interação → defeito reproduzido/corrigido → teclado/tela pequena e reteste → URL pública testada e atualização | Um caso completo de construção; um caso de correção se o primeiro não cobrir; uma rota primária de hospedagem estática. Nenhum provedor escolhido ainda |
+| Aplicativos, duas unidades propostas | Lista de tarefas local, sem conta e sem servidor na primeira versão | A01: entrada, criar/editar/concluir, estado e validação. A02: persistência, recarga, dados ausentes e recuperação. Distinguir armazenamento local de sincronização | Um caso completo de app pequeno e complemento primário de persistência somente se necessário. Compartilhar/publicar reutiliza a competência C07 quando fizer parte do objetivo |
+| Automações, três unidades propostas | CSV fictício transformado em relatório salvo | AU01: entrada/ação/saída e comparação manual. AU02: fluxo repetível, arquivo inválido, falha, repetição sem duplicidade. AU03: gatilho, execução observada, registro, manutenção e interrupção | Um caso completo de transformação e documentação atual de gatilho/execução por ferramenta. Instalações/conectores só quando necessários ao caso |
+
+Os códigos A01/A02/AU01–AU03 são planejamento editorial, não IDs de aulas liberadas. O número de telas será definido após estudo e teste do percurso, sem quota automática.
+
+| Unidade planejada | Prática principal | Verificação distinta 1 | Verificação distinta 2 |
+| --- | --- | --- | --- |
+| A01 — interação e estado | criar uma tarefa, editar e concluir | prever resultado de uma entrada válida/vazia | testar mudança de estado e explicar um resultado inesperado |
+| A02 — dados que persistem | recarregar, verificar dados e recuperar estado inicial | distinguir estado temporário, armazenamento local e conta remota | interpretar falha de leitura/ausência de dados e verificar recuperação |
+| AU01 — mapear e executar | gerar um relatório de dados fictícios pequenos | especificar entrada, transformação e saída esperada | comparar resultado com contagem verificável manualmente |
+| AU02 — repetir e tratar falhas | executar duas vezes e provocar entrada inválida | prever o efeito da repetição e evitar resultado duplicado | diagnosticar falha a partir do registro e executar recuperação |
+| AU03 — acionar e manter | configurar um gatilho suportado e observar uma execução | verificar condições de execução e distinguir tarefa agendada de tarefa executada | corrigir/retomar ou interromper rotina com base em evidência de falha |
+
+Essas verificações são objetivos de avaliação a desenvolver, não questões já escritas nem execução comprovada. Cada aula futura continua exigindo prática e pelo menos duas telas de verificação com feedback explicativo.
+
+## Limites das extensões
+
+- Aplicativos: duas aulas planejadas para C09 — entrada/estado/validação e persistência/recuperação. O site anterior pode servir de base, mas o aluno pode entrar após demonstrar o núcleo comum. Nenhuma tela ou título de catálogo anunciado como disponível neste lote.
 - Automações: três aulas adicionais planejadas para C10 — mapear tarefa e entrada/saída; executar manualmente com dados de teste; programar e observar falhas/repetição. Agendamento é específico da ferramenta e pode exigir conectores/serviços. Sem prometer envio ou acesso a sistemas reais sem integração.
 - Transferência entre Claude e Codex: preservar objetivo, dados e critérios; adaptar abertura do projeto, leitura de arquivos, execução e inspeção. Não ensinar que chat, Artifact e agente de código são a mesma coisa.
 
@@ -66,3 +90,5 @@ Rubrica comum de pedido: (1) resultado concreto; (2) contexto suficiente; (3) li
 3. Serviço de publicação da primeira trilha: escolher uma rota comprovada antes de redigir instruções exatas.
 4. Validação humana de linguagem nos 11 idiomas e teste de renderização RTL.
 5. Validação com ao menos um iniciante: tempo real, clareza das instruções e bloqueios de instalação.
+
+Autenticação, contas multiusuário e pagamentos ficam fora dos projetos iniciais. Pesquisar esses tópicos somente quando uma extensão os exigir, sem bloquear o app local ou a automação com dados fictícios.

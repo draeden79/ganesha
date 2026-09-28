@@ -90,7 +90,7 @@
     {
       "id": "L01-S01",
       "owner": "Devorador",
-      "status": "requested-not-received",
+      "status": "requested-refined-not-received",
       "sourceIds": [
         "res-codex-prompting"
       ],
@@ -101,16 +101,19 @@
         "step.first-request.repair",
         "step.first-request.transfer"
       ],
-      "requiredDeliverable": "Estudo integral da página substantiva com artefato/hash, raciocínio, exemplos, pressupostos, falhas, limites, iteração e trechos localizáveis."
+      "requiredDeliverable": "Documento principal integral de prompting/contexto, com exemplos, limites, revisão e localizadores; produzir aplicação original documentada caso a fonte não apresente o caso escolhido.",
+      "originalSourceIds": [
+        "res-codex-prompting"
+      ],
+      "priority": "P0",
+      "selectionDecision": "retain"
     },
     {
       "id": "L01-S02",
       "owner": "Devorador",
-      "status": "requested-not-received",
+      "status": "requested-refined-not-received",
       "sourceIds": [
-        "res-claude-agent-basics",
-        "res-claude-plan-build-review",
-        "res-claude-verify-unattended"
+        "res-claude-plan-build-review"
       ],
       "stepIds": [
         "step.first-request.brief",
@@ -118,15 +121,25 @@
         "step.first-request.request-check",
         "step.first-request.evidence-check"
       ],
-      "requiredDeliverable": "Estudo integral de cada recurso, distinguindo texto auxiliar e vídeo; sequência, exemplos, critérios, pré-requisitos, falhas, limites CLI/Desktop e inspeção dos visuais necessários."
+      "requiredDeliverable": "Uma sequência curta completa de planejar, executar e verificar; estudo integral e visuais pertinentes. Fontes adicionais somente para lacuna material; execução sem supervisão não é objetivo inicial.",
+      "originalSourceIds": [
+        "res-claude-agent-basics",
+        "res-claude-plan-build-review",
+        "res-claude-verify-unattended"
+      ],
+      "priority": "P0",
+      "selectionDecision": "reduce-to-one-principal-sequence",
+      "deferredSourceIds": [
+        "res-claude-agent-basics",
+        "res-claude-verify-unattended"
+      ]
     },
     {
       "id": "L01-S03",
       "owner": "Devorador",
-      "status": "requested-not-received",
+      "status": "requested-refined-not-received",
       "sourceIds": [
         "res-claude-desktop-start",
-        "res-claude-desktop-reference",
         "res-codex-desktop-start"
       ],
       "stepIds": [
@@ -138,19 +151,39 @@
         "step.first-request.repair",
         "step.first-request.transfer"
       ],
-      "requiredDeliverable": "Fluxo completo das duas superfícies com pré-requisitos, contexto, envio, revisão e recuperação; artefato/versão e inspeção visual dos passos demonstrados. Afeta variantes anexadas a todas as telas."
+      "requiredDeliverable": "Um fluxo inicial completo por superfície: acesso/contexto/pedido/resposta/revisão e erros pertinentes, com fonte integral e inspeção visual. Referência longa somente se os quickstarts não cobrirem um ponto necessário.",
+      "originalSourceIds": [
+        "res-claude-desktop-start",
+        "res-claude-desktop-reference",
+        "res-codex-desktop-start"
+      ],
+      "priority": "P0",
+      "selectionDecision": "one-quickstart-per-tool",
+      "deferredSourceIds": [
+        "res-claude-desktop-reference"
+      ]
     },
     {
       "id": "L01-S04",
       "owner": "Devorador",
-      "status": "requested-not-received",
+      "status": "deferred-for-proposed-L01-scope",
       "sourceIds": [
         "res-builder-behavior-tests"
       ],
       "stepIds": [
         "step.first-request.repair"
       ],
-      "requiredDeliverable": "Artigo integral e caso completo antes/depois/reteste, pressupostos, limitações, contraexemplos e evidências; separar relato do autor de fato de produto."
+      "requiredDeliverable": "Caso integral adequado ao iniciante de problema reproduzido, correção e reteste; usar Builder se realmente cobrir a necessidade ou substituto mais direto. Não exige uma pesquisa redundante de vários casos.",
+      "originalSourceIds": [
+        "res-builder-behavior-tests"
+      ],
+      "priority": "P1",
+      "selectionDecision": "move-to-site-correction-need",
+      "targetCompetencyIds": [
+        "competency.repair"
+      ],
+      "currentRepairStillUnsubstantiated": true,
+      "resolutionRequired": "A etapa repair atual continua provisória. A próxima revisão deve mudar para correção de um plano com evidência adequada ou manter o caso de site com fonte/caso completo; nenhuma dessas mudanças foi aplicada."
     }
   ],
   "promotionPolicy": {
@@ -187,5 +220,16 @@
       "decision": "limited-textual-input-only",
       "raisesLessonMaturity": false
     }
-  ]
+  ],
+  "researchSelection": {
+    "directiveDate": "2026-09-28",
+    "policyPath": "content/curriculum/RESEARCH_PRIORITIES.md",
+    "revisionPlanPath": "content/curriculum/L01_REVISION_PLAN.md",
+    "unit": "competency-gap",
+    "completeInventoryRequired": false,
+    "fullStudyOfSelectedResourcesRequired": true,
+    "relevantVisualReviewRequired": true,
+    "preferredResourcePattern": "one principal complete resource per need; complement only for a material gap or tool variant",
+    "stopWhen": "All material objective, example, prerequisite, error, assessment and tool-variant gaps are covered and reviewed; additional inventory remains independent."
+  }
 }
