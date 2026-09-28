@@ -17,7 +17,7 @@ O pedido completo continua como texto selecionável fora do SVG. A imagem não d
 | 1. O que é IA | Entender que escreve um pedido e recebe uma resposta que pode conter erro. | A — pedido → IA → resposta | Explicar “IA” antes de pedir qualquer configuração. |
 | 2. Onde fazer a conversa | Distinguir a conversa no aplicativo do registro nesta aula. | B — dois lugares, duas funções | Não exigir pasta/arquivo para uma mensagem que só pede texto. |
 | 3. Conhecer a escola de exemplo | Ter os dados prontos, sem inventar um projeto pessoal. | Sem imagem nova; lista textual “Ponte Musical / violão / piano / canto”. | Essa lista precisa poder ser copiada. |
-| 4. Reconhecer um pedido claro | Ver o que uma mensagem pede, antes de escrever uma do zero. | Sem imagem nova; comparação textual curta, se necessária. | Se for check, a imagem não deve marcar a alternativa correta. |
+| 4. Distinguir pedido e resposta | Reconhecer qual mensagem foi escrita pela pessoa. | Sem imagem nova; conversa de exemplo em texto. | O check não recebe imagem que marque a alternativa correta. |
 | 5. Escolher como acompanhar | Escolher entre ler o exemplo e abrir uma ferramenta já disponível. | Sem imagem nova; B pode ser retomado apenas se necessário. | O caminho pelo exemplo permite concluir a aula sem instalação. |
 | 6. Enviar e reconhecer a resposta | Relacionar escrever, enviar e ver a resposta. | A, versão aplicada à conversa | Uma legenda curta identifica “Seu pedido” e “Resposta da IA”. |
 | 7. Conferir uma coisa | Ver que “canto” foi pedido e pode ter sido omitido. | C — três itens comparados | O exemplo deve estar identificado como exemplo. |
@@ -31,9 +31,9 @@ Mapa confirmado no authoring final: A em `workspace.access` (1); B em `workspace
 
 - **Objetivo:** mostrar a relação entre o texto enviado e o texto recebido.
 - **Composição:** três cartões ligados por setas: “Você escreve” → “A IA prepara uma resposta” → “Você lê e confere”. No celular, empilhar verticalmente.
-- **Exemplo aplicado:** balão de pedido “Resuma a escola Ponte Musical” e balão de resposta “A Ponte Musical oferece aulas de música.” Usar somente uma frase curta em cada balão.
+- **Exemplo da etapa 1:** pedido “Diga olá” → resposta “Olá!”. A escola só aparece a partir da etapa 3. Uma variante sobre Ponte Musical pode ser usada opcionalmente na etapa 6, acompanhando o pedido e a resposta reais daquela etapa.
 - **Rótulos:** “Seu pedido”, “IA”, “Resposta”. Explicar no texto da etapa que pedido é a mensagem que a pessoa escreve.
-- **Alt:** “Você escreve um pedido. A IA prepara uma resposta. Você lê o que apareceu e confere se atende ao pedido.”
+- **Alt da etapa 1:** “Você escreve o pedido ‘Diga olá’. A IA responde ‘Olá!’. Você lê e confere a resposta.”
 - **Formato:** HTML para cartões/rótulos e SVG apenas para setas; funciona como uma coluna em 390 px. Variante aplicada pode usar balões HTML.
 
 ## B — Onde conversar e onde anotar
@@ -57,9 +57,9 @@ Mapa confirmado no authoring final: A em `workspace.access` (1); B em `workspace
 ## D — Corrigir na mesma conversa
 
 - **Objetivo:** mostrar que a pessoa pode enviar uma segunda mensagem curta.
-- **Composição:** três balões em sequência: resposta incompleta; pedido “Inclua também as aulas de canto”; resposta revisada contendo violão, piano e canto. Um marcador “Na mesma conversa” acima da sequência.
+- **Composição:** três balões em sequência: resposta incompleta; pedido “Inclua também canto. Mantenha violão, piano e o nome Ponte Musical.”; resposta revisada contendo violão, piano e canto. Um marcador “Na mesma conversa” acima da sequência.
 - **Rótulos:** “Resposta anterior”, “Seu pedido de correção”, “Resposta revisada”.
-- **Alt:** “Depois de uma resposta sem canto, você escreve ‘Inclua também as aulas de canto’ na mesma conversa. A nova resposta inclui os três serviços.”
+- **Alt:** “Depois de uma resposta sem canto, você escreve ‘Inclua também canto. Mantenha violão, piano e o nome Ponte Musical.’ na mesma conversa. A nova resposta inclui os três tipos de aula.”
 - **Formato:** HTML/SVG; sem animação obrigatória. Ordem de leitura deve ser a mesma da ordem visual.
 
 ## Implementação e acessibilidade
@@ -67,7 +67,7 @@ Mapa confirmado no authoring final: A em `workspace.access` (1); B em `workspace
 **Limitação atual, identificada pelo Diretor:** `adaptCourse` descarta blocos `kind=image`; `TeachingVisual` desenha um esquema genérico e não apresenta esse esquema nas práticas em simulação guiada. Portanto, adicionar imagem/alt ao JSON não implementa este plano. O Construtor precisa ligar componentes próprios às quatro etapas e garantir sua renderização no modo da aula. Isso é trabalho futuro: nesta rodada a entrega é o briefing, e não imagens integradas.
 
 1. Componentes sugeridos: `RequestResponseDiagram`, `ConversationVsNotesDiagram`, `MissingItemComparison` e `FollowupConversation`. Nomes internos não aparecem na aula.
-2. Associar pelo significado da etapa, confirmado com o Educador. IDs atuais de referência: `access`, `select-context`, `read-only-request`, `compare-context`, `access-recovery`. O antigo `folder` não determina que a nova aula precise ensinar pastas.
+2. Mapa obrigatório confirmado com o Educador: `workspace.access` → A; `workspace.folder` → B; `workspace.compare-context` → C; `workspace.access-recovery` → D. O ID `folder` foi preservado, mas agora ensina onde escrever; não desenhar pastas. A variante de A em `workspace.read-only-request` é opcional; `select-context` não exige diagrama novo.
 3. Usar rótulos localizáveis; não embutir português em uma imagem raster. O primeiro candidato pode ser pt-BR, com outras traduções explicitamente pendentes.
 4. Não inserir a mesma informação longa no corpo, na imagem, no pedido e na rubrica. A figura mostra a relação; o corpo orienta; o pedido fica copiável; a ação pede um passo.
 5. Diagramas estáticos não recebem foco de teclado. Fornecer resumo acessível; se o conteúdo já estiver numa lista/tabela semântica adjacente, deixar as setas decorativas fora da árvore acessível.
