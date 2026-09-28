@@ -44,3 +44,7 @@ python3 coordination/validate_content.py
 Após a reclassificação, a segunda chamada deve rejeitar o release por falta de aulas liberadas. Isso não significa perda de traduções. A auditoria pedagógica não modifica o texto dos catálogos.
 
 Editar `messages/{locale}.json`, nunca só o catálogo gerado. Alteração no significado de uma pergunta ou na resposta correta exige rever todos os idiomas e decidir migração de progresso. Revisão humana futura deve ser registrada por idioma/chave e preservada pelo processo editorial; o gerador atual identifica todos como textos produzidos por IA e não inventa nomes de revisores.
+
+## Atualização da beta0.2.0
+
+A fonte vigente passou a `beta/{locale}.json`; `messages/{locale}.json` é derivado pelo gerador. As contagens112/1.232 acima descrevem a versão0.1.0. A0.2.0 tem quatro aulas, mantendo11idiomas sem fallback, autoria por IA, revisão humana pendente e árabe RTL. `BETA_VALIDATION.json` registra a contagem e conferência desta edição. Aprovações linguísticas humanas não são inferidas da validade de JSON ou da revisão pedagógica em português.

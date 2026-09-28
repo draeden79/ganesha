@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "course.first-site",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "status": "preview",
   "defaultLocale": "pt-BR",
   "requiredLocales": [
@@ -22,138 +22,62 @@
   "releasedLessonIds": [],
   "competencies": [
     {
-      "id": "competency.scope",
-      "titleKey": "competency.scope",
-      "outcomeKey": "competency.scope.outcome",
+      "id": "competency.foundations",
+      "titleKey": "foundations.title",
+      "outcomeKey": "foundations.objective",
       "prerequisiteIds": [],
-      "evidenceIds": []
+      "evidenceIds": [
+        "ev-codex-prompting"
+      ]
     },
     {
-      "id": "competency.context",
-      "titleKey": "competency.context",
-      "outcomeKey": "competency.context.outcome",
+      "id": "competency.site",
+      "titleKey": "site.title",
+      "outcomeKey": "site.objective",
       "prerequisiteIds": [
-        "competency.scope"
+        "competency.foundations"
       ],
-      "evidenceIds": []
+      "evidenceIds": [
+        "ev-codex-prompting"
+      ]
     },
     {
-      "id": "competency.evidence",
-      "titleKey": "competency.evidence",
-      "outcomeKey": "competency.evidence.outcome",
+      "id": "competency.app",
+      "titleKey": "app.title",
+      "outcomeKey": "app.objective",
       "prerequisiteIds": [
-        "competency.context"
+        "competency.foundations"
       ],
-      "evidenceIds": []
+      "evidenceIds": [
+        "ev-codex-prompting"
+      ]
     },
     {
-      "id": "competency.repair",
-      "titleKey": "competency.repair",
-      "outcomeKey": "competency.repair.outcome",
+      "id": "competency.automation",
+      "titleKey": "automation.title",
+      "outcomeKey": "automation.objective",
       "prerequisiteIds": [
-        "competency.evidence"
+        "competency.foundations"
       ],
-      "evidenceIds": []
-    },
-    {
-      "id": "competency.transfer",
-      "titleKey": "competency.transfer",
-      "outcomeKey": "competency.transfer.outcome",
-      "prerequisiteIds": [
-        "competency.context"
-      ],
-      "evidenceIds": []
+      "evidenceIds": [
+        "ev-codex-prompting"
+      ]
     }
   ],
   "rubrics": [
     {
-      "id": "rubric.request",
+      "id": "rubric.beta",
       "criteria": [
         {
-          "id": "criterion.request.outcome",
-          "labelKey": "rubric.request.outcome",
-          "feedbackKey": "rubric.request.outcome",
+          "id": "criterion.compare",
+          "labelKey": "criterion.compare",
+          "feedbackKey": "hint.compare",
           "required": true
         },
         {
-          "id": "criterion.request.context",
-          "labelKey": "rubric.request.context",
-          "feedbackKey": "rubric.request.context",
-          "required": true
-        },
-        {
-          "id": "criterion.request.limit",
-          "labelKey": "rubric.request.limit",
-          "feedbackKey": "rubric.request.limit",
-          "required": true
-        },
-        {
-          "id": "criterion.request.test",
-          "labelKey": "rubric.request.test",
-          "feedbackKey": "rubric.request.test",
-          "required": true
-        }
-      ]
-    },
-    {
-      "id": "rubric.execution",
-      "criteria": [
-        {
-          "id": "criterion.execution.location",
-          "labelKey": "rubric.execution.location",
-          "feedbackKey": "rubric.execution.location",
-          "required": true
-        },
-        {
-          "id": "criterion.execution.record",
-          "labelKey": "rubric.execution.record",
-          "feedbackKey": "rubric.execution.record",
-          "required": true
-        }
-      ]
-    },
-    {
-      "id": "rubric.repair",
-      "criteria": [
-        {
-          "id": "criterion.repair.observed",
-          "labelKey": "rubric.repair.observed",
-          "feedbackKey": "rubric.repair.observed",
-          "required": true
-        },
-        {
-          "id": "criterion.repair.expected",
-          "labelKey": "rubric.repair.expected",
-          "feedbackKey": "rubric.repair.expected",
-          "required": true
-        },
-        {
-          "id": "criterion.repair.reproduce",
-          "labelKey": "rubric.repair.reproduce",
-          "feedbackKey": "rubric.repair.reproduce",
-          "required": true
-        },
-        {
-          "id": "criterion.repair.retest",
-          "labelKey": "rubric.repair.retest",
-          "feedbackKey": "rubric.repair.retest",
-          "required": true
-        }
-      ]
-    },
-    {
-      "id": "rubric.transfer",
-      "criteria": [
-        {
-          "id": "criterion.transfer.preserve",
-          "labelKey": "rubric.transfer.preserve",
-          "feedbackKey": "rubric.transfer.preserve",
-          "required": true
-        },
-        {
-          "id": "criterion.transfer.adapt",
-          "labelKey": "rubric.transfer.adapt",
-          "feedbackKey": "rubric.transfer.adapt",
+          "id": "criterion.record",
+          "labelKey": "criterion.record",
+          "feedbackKey": "hint.compare",
           "required": true
         }
       ]
@@ -161,50 +85,46 @@
   ],
   "lessons": [
     {
-      "id": "lesson.first-request",
+      "id": "lesson.foundations",
       "order": 1,
       "status": "draft",
-      "titleKey": "lesson.title",
-      "summaryKey": "lesson.summary",
+      "titleKey": "foundations.title",
+      "summaryKey": "foundations.objective",
       "objectiveKeys": [
-        "competency.context.outcome",
-        "competency.evidence.outcome"
+        "foundations.objective"
       ],
       "competencyIds": [
-        "competency.scope",
-        "competency.context",
-        "competency.evidence",
-        "competency.repair",
-        "competency.transfer"
+        "competency.foundations"
       ],
       "prerequisiteLessonIds": [],
       "estimatedMinutes": 25,
       "steps": [
         {
-          "id": "step.first-request.scope",
+          "id": "step.foundations.learn",
           "kind": "explain",
-          "isAssessment": false,
-          "titleKey": "sscope.title",
-          "objectiveKey": "sscope.objective",
-          "actionKey": "sscope.action",
-          "expectedResultKey": "sscope.expected",
+          "titleKey": "step.learn",
+          "objectiveKey": "foundations.objective",
+          "actionKey": "action.learn",
+          "expectedResultKey": "foundations.objective",
           "hintKeys": [
-            "sscope.hint1",
-            "sscope.hint2"
+            "hint.compare",
+            "hint.repair"
           ],
           "criteriaKeys": [
-            "sscope.criterion"
+            "criterion.compare",
+            "criterion.record"
           ],
+          "isAssessment": false,
           "executionMode": "concept",
           "blocks": [
             {
-              "id": "block.scope.body",
+              "id": "step.foundations.learn.body",
               "kind": "paragraph",
-              "textKey": "sscope.body"
+              "textKey": "foundations.learn"
             }
           ],
           "competencyIds": [
-            "competency.scope"
+            "competency.foundations"
           ],
           "evidenceIds": [
             "ev-codex-prompting"
@@ -213,515 +133,1753 @@
             "claude": {
               "blocks": [
                 {
-                  "id": "block.scope.claude",
+                  "id": "step.foundations.learn.claude",
                   "kind": "paragraph",
                   "textKey": "tool.claude"
                 }
               ],
               "evidenceIds": [
-                "ev-claude-desktop-start",
-                "ev-claude-desktop-reference"
+                "ev-claude-desktop-start"
               ]
             },
             "codex": {
               "blocks": [
                 {
-                  "id": "block.scope.codex",
+                  "id": "step.foundations.learn.codex",
                   "kind": "paragraph",
                   "textKey": "tool.codex"
                 }
               ],
               "evidenceIds": [
-                "ev-codex-desktop-start"
+                "ev-codex-desktop-quickstart"
               ]
             }
-          },
-          "visual": {
-            "kind": "text-cards",
-            "altKey": "sscope.visual"
           }
         },
         {
-          "id": "step.first-request.brief",
+          "id": "step.foundations.prepare",
           "kind": "practice",
-          "isAssessment": false,
-          "titleKey": "sbrief.title",
-          "objectiveKey": "sbrief.objective",
-          "actionKey": "sbrief.action",
-          "expectedResultKey": "sbrief.expected",
+          "titleKey": "step.prepare",
+          "objectiveKey": "foundations.objective",
+          "actionKey": "action.prepare",
+          "expectedResultKey": "foundations.objective",
           "hintKeys": [
-            "sbrief.hint1",
-            "sbrief.hint2"
+            "hint.compare",
+            "hint.repair"
           ],
           "criteriaKeys": [
-            "sbrief.criterion"
+            "criterion.compare",
+            "criterion.record"
           ],
+          "isAssessment": false,
           "executionMode": "guided-simulation",
           "blocks": [
             {
-              "id": "block.brief.body",
-              "kind": "paragraph",
-              "textKey": "sbrief.body"
+              "id": "step.foundations.prepare.notice",
+              "kind": "callout",
+              "textKey": "notice.simulated"
             },
             {
-              "id": "block.brief.example",
-              "kind": "callout",
-              "textKey": "example.request"
+              "id": "step.foundations.prepare.body",
+              "kind": "paragraph",
+              "textKey": "foundations.prepare"
             }
           ],
           "competencyIds": [
-            "competency.scope",
-            "competency.context"
+            "competency.foundations"
           ],
           "evidenceIds": [
-            "ev-codex-prompting",
-            "ev-claude-plan-build-review"
+            "ev-codex-prompting"
           ],
           "toolVariants": {
             "claude": {
               "blocks": [
                 {
-                  "id": "block.brief.claude",
+                  "id": "step.foundations.prepare.claude",
                   "kind": "paragraph",
                   "textKey": "tool.claude"
                 }
               ],
               "evidenceIds": [
-                "ev-claude-desktop-start",
-                "ev-claude-desktop-reference"
+                "ev-claude-desktop-start"
               ]
             },
             "codex": {
               "blocks": [
                 {
-                  "id": "block.brief.codex",
+                  "id": "step.foundations.prepare.codex",
                   "kind": "paragraph",
                   "textKey": "tool.codex"
                 }
               ],
               "evidenceIds": [
-                "ev-codex-desktop-start"
+                "ev-codex-desktop-quickstart"
               ]
             }
-          },
-          "visual": {
-            "kind": "text-cards",
-            "altKey": "sbrief.visual"
           },
           "exercise": {
-            "id": "exercise.brief",
+            "id": "exercise.foundations.prepare.v2",
             "mode": "simulated",
-            "promptKey": "sbrief.action",
-            "deliverableKey": "sbrief.expected",
-            "rubricId": "rubric.request"
+            "promptKey": "foundations.prepare",
+            "deliverableKey": "criterion.record",
+            "rubricId": "rubric.beta"
           }
         },
         {
-          "id": "step.first-request.request-check",
+          "id": "step.foundations.check-plan",
           "kind": "check",
-          "isAssessment": true,
-          "titleKey": "srequest-check.title",
-          "objectiveKey": "srequest-check.objective",
-          "actionKey": "srequest-check.action",
-          "expectedResultKey": "srequest-check.expected",
+          "titleKey": "step.check-plan",
+          "objectiveKey": "foundations.objective",
+          "actionKey": "action.check",
+          "expectedResultKey": "foundations.objective",
           "hintKeys": [
-            "srequest-check.hint1",
-            "srequest-check.hint2"
+            "hint.compare",
+            "hint.repair"
           ],
           "criteriaKeys": [
-            "srequest-check.criterion"
+            "criterion.compare",
+            "criterion.record"
           ],
+          "isAssessment": true,
           "executionMode": "guided-simulation",
           "blocks": [
             {
-              "id": "block.request-check.body",
+              "id": "step.foundations.check-plan.body",
               "kind": "paragraph",
-              "textKey": "srequest-check.body"
+              "textKey": "hint.compare"
             }
           ],
           "competencyIds": [
-            "competency.context"
+            "competency.foundations"
           ],
           "evidenceIds": [
-            "ev-claude-plan-build-review"
+            "ev-codex-prompting"
           ],
           "toolVariants": {
             "claude": {
               "blocks": [
                 {
-                  "id": "block.request-check.claude",
+                  "id": "step.foundations.check-plan.claude",
                   "kind": "paragraph",
                   "textKey": "tool.claude"
                 }
               ],
               "evidenceIds": [
-                "ev-claude-desktop-start",
-                "ev-claude-desktop-reference"
+                "ev-claude-desktop-start"
               ]
             },
             "codex": {
               "blocks": [
                 {
-                  "id": "block.request-check.codex",
+                  "id": "step.foundations.check-plan.codex",
                   "kind": "paragraph",
                   "textKey": "tool.codex"
                 }
               ],
               "evidenceIds": [
-                "ev-codex-desktop-start"
+                "ev-codex-desktop-quickstart"
               ]
             }
           },
-          "visual": {
-            "kind": "text-cards",
-            "altKey": "srequest-check.visual"
-          },
           "check": {
-            "id": "check.check.request",
+            "id": "check.foundations.q1.v2",
             "kind": "single-choice",
-            "questionKey": "check.request.question",
+            "questionKey": "foundations.q1",
             "competencyIds": [
-              "competency.context"
+              "competency.foundations"
             ],
-            "successFeedbackKey": "check.request.success",
-            "retryFeedbackKey": "check.request.retry",
+            "successFeedbackKey": "foundations.q1.feedback",
+            "retryFeedbackKey": "foundations.q1.feedback",
             "required": true,
             "options": [
               {
-                "id": "option.check.request.a",
-                "labelKey": "check.request.a",
-                "feedbackKey": "check.request.a.feedback"
+                "id": "option.foundations.q1.a",
+                "labelKey": "foundations.q1.a",
+                "feedbackKey": "foundations.q1.feedback"
               },
               {
-                "id": "option.check.request.b",
-                "labelKey": "check.request.b",
-                "feedbackKey": "check.request.b.feedback"
+                "id": "option.foundations.q1.b",
+                "labelKey": "foundations.q1.b",
+                "feedbackKey": "foundations.q1.feedback"
               },
               {
-                "id": "option.check.request.c",
-                "labelKey": "check.request.c",
-                "feedbackKey": "check.request.c.feedback"
+                "id": "option.foundations.q1.c",
+                "labelKey": "foundations.q1.c",
+                "feedbackKey": "foundations.q1.feedback"
               }
             ],
             "correctOptionIds": [
-              "option.check.request.b"
+              "option.foundations.q1.b"
             ]
           }
         },
         {
-          "id": "step.first-request.run",
+          "id": "step.foundations.execute",
           "kind": "practice",
-          "isAssessment": false,
-          "titleKey": "srun.title",
-          "objectiveKey": "srun.objective",
-          "actionKey": "srun.action",
-          "expectedResultKey": "srun.expected",
+          "titleKey": "step.execute",
+          "objectiveKey": "foundations.objective",
+          "actionKey": "action.execute",
+          "expectedResultKey": "foundations.objective",
           "hintKeys": [
-            "srun.hint1",
-            "srun.hint2"
+            "hint.compare",
+            "hint.repair"
           ],
           "criteriaKeys": [
-            "srun.criterion"
+            "criterion.compare",
+            "criterion.record"
           ],
+          "isAssessment": false,
           "executionMode": "external-real-task",
           "blocks": [
             {
-              "id": "block.run.body",
+              "id": "step.foundations.execute.body",
               "kind": "paragraph",
-              "textKey": "srun.body"
-            },
-            {
-              "id": "block.run.example",
-              "kind": "callout",
-              "textKey": "example.request"
-            },
-            {
-              "id": "block.run.self-report",
-              "kind": "callout",
-              "textKey": "notice.self-report"
+              "textKey": "foundations.execute"
             }
           ],
           "competencyIds": [
-            "competency.context",
-            "competency.evidence"
+            "competency.foundations"
           ],
           "evidenceIds": [
-            "ev-claude-agent-basics",
-            "ev-claude-desktop-start",
-            "ev-codex-desktop-start"
-          ],
-          "toolVariants": {
-            "claude": {
-              "blocks": [
-                {
-                  "id": "block.run.claude",
-                  "kind": "paragraph",
-                  "textKey": "tool.claude"
-                }
-              ],
-              "evidenceIds": [
-                "ev-claude-desktop-start",
-                "ev-claude-desktop-reference"
-              ]
-            },
-            "codex": {
-              "blocks": [
-                {
-                  "id": "block.run.codex",
-                  "kind": "paragraph",
-                  "textKey": "tool.codex"
-                }
-              ],
-              "evidenceIds": [
-                "ev-codex-desktop-start"
-              ]
-            }
-          },
-          "visual": {
-            "kind": "text-cards",
-            "altKey": "srun.visual"
-          },
-          "exercise": {
-            "id": "exercise.run",
-            "mode": "local-user",
-            "promptKey": "srun.action",
-            "deliverableKey": "srun.expected",
-            "rubricId": "rubric.execution"
-          }
-        },
-        {
-          "id": "step.first-request.evidence-check",
-          "kind": "check",
-          "isAssessment": true,
-          "titleKey": "sevidence-check.title",
-          "objectiveKey": "sevidence-check.objective",
-          "actionKey": "sevidence-check.action",
-          "expectedResultKey": "sevidence-check.expected",
-          "hintKeys": [
-            "sevidence-check.hint1",
-            "sevidence-check.hint2"
-          ],
-          "criteriaKeys": [
-            "sevidence-check.criterion"
-          ],
-          "executionMode": "guided-simulation",
-          "blocks": [
-            {
-              "id": "block.evidence-check.body",
-              "kind": "paragraph",
-              "textKey": "sevidence-check.body"
-            }
-          ],
-          "competencyIds": [
-            "competency.evidence"
-          ],
-          "evidenceIds": [
-            "ev-claude-verify-unattended"
-          ],
-          "toolVariants": {
-            "claude": {
-              "blocks": [
-                {
-                  "id": "block.evidence-check.claude",
-                  "kind": "paragraph",
-                  "textKey": "tool.claude"
-                }
-              ],
-              "evidenceIds": [
-                "ev-claude-desktop-start",
-                "ev-claude-desktop-reference"
-              ]
-            },
-            "codex": {
-              "blocks": [
-                {
-                  "id": "block.evidence-check.codex",
-                  "kind": "paragraph",
-                  "textKey": "tool.codex"
-                }
-              ],
-              "evidenceIds": [
-                "ev-codex-desktop-start"
-              ]
-            }
-          },
-          "visual": {
-            "kind": "text-cards",
-            "altKey": "sevidence-check.visual"
-          },
-          "check": {
-            "id": "check.check.evidence",
-            "kind": "single-choice",
-            "questionKey": "check.evidence.question",
-            "competencyIds": [
-              "competency.evidence"
-            ],
-            "successFeedbackKey": "check.evidence.success",
-            "retryFeedbackKey": "check.evidence.retry",
-            "required": true,
-            "options": [
-              {
-                "id": "option.check.evidence.a",
-                "labelKey": "check.evidence.a",
-                "feedbackKey": "check.evidence.a.feedback"
-              },
-              {
-                "id": "option.check.evidence.b",
-                "labelKey": "check.evidence.b",
-                "feedbackKey": "check.evidence.b.feedback"
-              },
-              {
-                "id": "option.check.evidence.c",
-                "labelKey": "check.evidence.c",
-                "feedbackKey": "check.evidence.c.feedback"
-              }
-            ],
-            "correctOptionIds": [
-              "option.check.evidence.c"
-            ]
-          }
-        },
-        {
-          "id": "step.first-request.repair",
-          "kind": "practice",
-          "isAssessment": false,
-          "titleKey": "srepair.title",
-          "objectiveKey": "srepair.objective",
-          "actionKey": "srepair.action",
-          "expectedResultKey": "srepair.expected",
-          "hintKeys": [
-            "srepair.hint1",
-            "srepair.hint2"
-          ],
-          "criteriaKeys": [
-            "srepair.criterion"
-          ],
-          "executionMode": "guided-simulation",
-          "blocks": [
-            {
-              "id": "block.repair.body",
-              "kind": "paragraph",
-              "textKey": "srepair.body"
-            },
-            {
-              "id": "block.repair.scenario",
-              "kind": "callout",
-              "textKey": "example.failure"
-            }
-          ],
-          "competencyIds": [
-            "competency.repair"
-          ],
-          "evidenceIds": [
-            "ev-builder-behavior-tests",
             "ev-codex-prompting"
           ],
           "toolVariants": {
             "claude": {
               "blocks": [
                 {
-                  "id": "block.repair.claude",
+                  "id": "step.foundations.execute.claude",
                   "kind": "paragraph",
                   "textKey": "tool.claude"
                 }
               ],
               "evidenceIds": [
-                "ev-claude-desktop-start",
-                "ev-claude-desktop-reference"
+                "ev-claude-desktop-start"
               ]
             },
             "codex": {
               "blocks": [
                 {
-                  "id": "block.repair.codex",
+                  "id": "step.foundations.execute.codex",
                   "kind": "paragraph",
                   "textKey": "tool.codex"
                 }
               ],
               "evidenceIds": [
-                "ev-codex-desktop-start"
+                "ev-codex-desktop-quickstart"
               ]
             }
           },
-          "visual": {
-            "kind": "text-cards",
-            "altKey": "srepair.visual"
-          },
           "exercise": {
-            "id": "exercise.repair",
-            "mode": "simulated",
-            "promptKey": "srepair.action",
-            "deliverableKey": "srepair.expected",
-            "rubricId": "rubric.repair"
+            "id": "exercise.foundations.execute.v2",
+            "mode": "local-user",
+            "promptKey": "foundations.execute",
+            "deliverableKey": "criterion.record",
+            "rubricId": "rubric.beta"
           }
         },
         {
-          "id": "step.first-request.transfer",
-          "kind": "reflect",
-          "isAssessment": false,
-          "titleKey": "stransfer.title",
-          "objectiveKey": "stransfer.objective",
-          "actionKey": "stransfer.action",
-          "expectedResultKey": "stransfer.expected",
+          "id": "step.foundations.check-result",
+          "kind": "check",
+          "titleKey": "step.check-result",
+          "objectiveKey": "foundations.objective",
+          "actionKey": "action.check",
+          "expectedResultKey": "foundations.objective",
           "hintKeys": [
-            "stransfer.hint1",
-            "stransfer.hint2"
+            "hint.compare",
+            "hint.repair"
           ],
           "criteriaKeys": [
-            "stransfer.criterion"
+            "criterion.compare",
+            "criterion.record"
           ],
+          "isAssessment": true,
           "executionMode": "guided-simulation",
           "blocks": [
             {
-              "id": "block.transfer.body",
+              "id": "step.foundations.check-result.body",
               "kind": "paragraph",
-              "textKey": "stransfer.body"
+              "textKey": "hint.compare"
             }
           ],
           "competencyIds": [
-            "competency.transfer"
+            "competency.foundations"
           ],
           "evidenceIds": [
-            "ev-claude-desktop-start",
-            "ev-codex-desktop-start"
+            "ev-codex-prompting"
           ],
           "toolVariants": {
             "claude": {
               "blocks": [
                 {
-                  "id": "block.transfer.claude",
+                  "id": "step.foundations.check-result.claude",
                   "kind": "paragraph",
                   "textKey": "tool.claude"
                 }
               ],
               "evidenceIds": [
-                "ev-claude-desktop-start",
-                "ev-claude-desktop-reference"
+                "ev-claude-desktop-start"
               ]
             },
             "codex": {
               "blocks": [
                 {
-                  "id": "block.transfer.codex",
+                  "id": "step.foundations.check-result.codex",
                   "kind": "paragraph",
                   "textKey": "tool.codex"
                 }
               ],
               "evidenceIds": [
-                "ev-codex-desktop-start"
+                "ev-codex-desktop-quickstart"
               ]
             }
           },
-          "visual": {
-            "kind": "text-cards",
-            "altKey": "stransfer.visual"
+          "check": {
+            "id": "check.foundations.q2.v2",
+            "kind": "single-choice",
+            "questionKey": "foundations.q2",
+            "competencyIds": [
+              "competency.foundations"
+            ],
+            "successFeedbackKey": "foundations.q2.feedback",
+            "retryFeedbackKey": "foundations.q2.feedback",
+            "required": true,
+            "options": [
+              {
+                "id": "option.foundations.q2.a",
+                "labelKey": "foundations.q2.a",
+                "feedbackKey": "foundations.q2.feedback"
+              },
+              {
+                "id": "option.foundations.q2.b",
+                "labelKey": "foundations.q2.b",
+                "feedbackKey": "foundations.q2.feedback"
+              },
+              {
+                "id": "option.foundations.q2.c",
+                "labelKey": "foundations.q2.c",
+                "feedbackKey": "foundations.q2.feedback"
+              }
+            ],
+            "correctOptionIds": [
+              "option.foundations.q2.c"
+            ]
+          }
+        },
+        {
+          "id": "step.foundations.deliver",
+          "kind": "practice",
+          "titleKey": "step.deliver",
+          "objectiveKey": "foundations.objective",
+          "actionKey": "action.execute",
+          "expectedResultKey": "foundations.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": false,
+          "executionMode": "external-real-task",
+          "blocks": [
+            {
+              "id": "step.foundations.deliver.body",
+              "kind": "paragraph",
+              "textKey": "foundations.deliver"
+            }
+          ],
+          "competencyIds": [
+            "competency.foundations"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.foundations.deliver.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.foundations.deliver.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
           },
           "exercise": {
-            "id": "exercise.transfer",
+            "id": "exercise.foundations.deliver.v2",
+            "mode": "local-user",
+            "promptKey": "foundations.deliver",
+            "deliverableKey": "criterion.record",
+            "rubricId": "rubric.beta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson.site",
+      "order": 2,
+      "status": "draft",
+      "titleKey": "site.title",
+      "summaryKey": "site.objective",
+      "objectiveKeys": [
+        "site.objective"
+      ],
+      "competencyIds": [
+        "competency.site"
+      ],
+      "prerequisiteLessonIds": [
+        "lesson.foundations"
+      ],
+      "estimatedMinutes": 45,
+      "steps": [
+        {
+          "id": "step.site.learn",
+          "kind": "explain",
+          "titleKey": "step.learn",
+          "objectiveKey": "site.objective",
+          "actionKey": "action.learn",
+          "expectedResultKey": "site.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": false,
+          "executionMode": "concept",
+          "blocks": [
+            {
+              "id": "step.site.learn.body",
+              "kind": "paragraph",
+              "textKey": "site.learn"
+            }
+          ],
+          "competencyIds": [
+            "competency.site"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.site.learn.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.site.learn.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          }
+        },
+        {
+          "id": "step.site.prepare",
+          "kind": "practice",
+          "titleKey": "step.prepare",
+          "objectiveKey": "site.objective",
+          "actionKey": "action.prepare",
+          "expectedResultKey": "site.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": false,
+          "executionMode": "guided-simulation",
+          "blocks": [
+            {
+              "id": "step.site.prepare.notice",
+              "kind": "callout",
+              "textKey": "notice.simulated"
+            },
+            {
+              "id": "step.site.prepare.body",
+              "kind": "paragraph",
+              "textKey": "site.prepare"
+            }
+          ],
+          "competencyIds": [
+            "competency.site"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.site.prepare.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.site.prepare.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "exercise": {
+            "id": "exercise.site.prepare.v2",
             "mode": "simulated",
-            "promptKey": "stransfer.action",
-            "deliverableKey": "stransfer.expected",
-            "rubricId": "rubric.transfer"
+            "promptKey": "site.prepare",
+            "deliverableKey": "criterion.record",
+            "rubricId": "rubric.beta"
+          }
+        },
+        {
+          "id": "step.site.check-plan",
+          "kind": "check",
+          "titleKey": "step.check-plan",
+          "objectiveKey": "site.objective",
+          "actionKey": "action.check",
+          "expectedResultKey": "site.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": true,
+          "executionMode": "guided-simulation",
+          "blocks": [
+            {
+              "id": "step.site.check-plan.body",
+              "kind": "paragraph",
+              "textKey": "hint.compare"
+            }
+          ],
+          "competencyIds": [
+            "competency.site"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.site.check-plan.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.site.check-plan.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "check": {
+            "id": "check.site.q1.v2",
+            "kind": "single-choice",
+            "questionKey": "site.q1",
+            "competencyIds": [
+              "competency.site"
+            ],
+            "successFeedbackKey": "site.q1.feedback",
+            "retryFeedbackKey": "site.q1.feedback",
+            "required": true,
+            "options": [
+              {
+                "id": "option.site.q1.a",
+                "labelKey": "site.q1.a",
+                "feedbackKey": "site.q1.feedback"
+              },
+              {
+                "id": "option.site.q1.b",
+                "labelKey": "site.q1.b",
+                "feedbackKey": "site.q1.feedback"
+              },
+              {
+                "id": "option.site.q1.c",
+                "labelKey": "site.q1.c",
+                "feedbackKey": "site.q1.feedback"
+              }
+            ],
+            "correctOptionIds": [
+              "option.site.q1.b"
+            ]
+          }
+        },
+        {
+          "id": "step.site.execute",
+          "kind": "practice",
+          "titleKey": "step.execute",
+          "objectiveKey": "site.objective",
+          "actionKey": "action.execute",
+          "expectedResultKey": "site.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": false,
+          "executionMode": "external-real-task",
+          "blocks": [
+            {
+              "id": "step.site.execute.body",
+              "kind": "paragraph",
+              "textKey": "site.execute"
+            }
+          ],
+          "competencyIds": [
+            "competency.site"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.site.execute.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.site.execute.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "exercise": {
+            "id": "exercise.site.execute.v2",
+            "mode": "local-user",
+            "promptKey": "site.execute",
+            "deliverableKey": "criterion.record",
+            "rubricId": "rubric.beta"
+          }
+        },
+        {
+          "id": "step.site.check-result",
+          "kind": "check",
+          "titleKey": "step.check-result",
+          "objectiveKey": "site.objective",
+          "actionKey": "action.check",
+          "expectedResultKey": "site.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": true,
+          "executionMode": "guided-simulation",
+          "blocks": [
+            {
+              "id": "step.site.check-result.body",
+              "kind": "paragraph",
+              "textKey": "hint.compare"
+            }
+          ],
+          "competencyIds": [
+            "competency.site"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.site.check-result.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.site.check-result.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "check": {
+            "id": "check.site.q2.v2",
+            "kind": "single-choice",
+            "questionKey": "site.q2",
+            "competencyIds": [
+              "competency.site"
+            ],
+            "successFeedbackKey": "site.q2.feedback",
+            "retryFeedbackKey": "site.q2.feedback",
+            "required": true,
+            "options": [
+              {
+                "id": "option.site.q2.a",
+                "labelKey": "site.q2.a",
+                "feedbackKey": "site.q2.feedback"
+              },
+              {
+                "id": "option.site.q2.b",
+                "labelKey": "site.q2.b",
+                "feedbackKey": "site.q2.feedback"
+              },
+              {
+                "id": "option.site.q2.c",
+                "labelKey": "site.q2.c",
+                "feedbackKey": "site.q2.feedback"
+              }
+            ],
+            "correctOptionIds": [
+              "option.site.q2.a"
+            ]
+          }
+        },
+        {
+          "id": "step.site.deliver",
+          "kind": "practice",
+          "titleKey": "step.deliver",
+          "objectiveKey": "site.objective",
+          "actionKey": "action.execute",
+          "expectedResultKey": "site.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": false,
+          "executionMode": "external-real-task",
+          "blocks": [
+            {
+              "id": "step.site.deliver.body",
+              "kind": "paragraph",
+              "textKey": "site.deliver"
+            }
+          ],
+          "competencyIds": [
+            "competency.site"
+          ],
+          "evidenceIds": [
+            "ev-netlify-drop-static",
+            "ev-netlify-project-visibility"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.site.deliver.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.site.deliver.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "exercise": {
+            "id": "exercise.site.deliver.v2",
+            "mode": "local-user",
+            "promptKey": "site.deliver",
+            "deliverableKey": "criterion.record",
+            "rubricId": "rubric.beta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson.app",
+      "order": 3,
+      "status": "draft",
+      "titleKey": "app.title",
+      "summaryKey": "app.objective",
+      "objectiveKeys": [
+        "app.objective"
+      ],
+      "competencyIds": [
+        "competency.app"
+      ],
+      "prerequisiteLessonIds": [
+        "lesson.foundations"
+      ],
+      "estimatedMinutes": 50,
+      "steps": [
+        {
+          "id": "step.app.learn",
+          "kind": "explain",
+          "titleKey": "step.learn",
+          "objectiveKey": "app.objective",
+          "actionKey": "action.learn",
+          "expectedResultKey": "app.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": false,
+          "executionMode": "concept",
+          "blocks": [
+            {
+              "id": "step.app.learn.body",
+              "kind": "paragraph",
+              "textKey": "app.learn"
+            }
+          ],
+          "competencyIds": [
+            "competency.app"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.app.learn.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.app.learn.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          }
+        },
+        {
+          "id": "step.app.prepare",
+          "kind": "practice",
+          "titleKey": "step.prepare",
+          "objectiveKey": "app.objective",
+          "actionKey": "action.prepare",
+          "expectedResultKey": "app.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": false,
+          "executionMode": "guided-simulation",
+          "blocks": [
+            {
+              "id": "step.app.prepare.notice",
+              "kind": "callout",
+              "textKey": "notice.simulated"
+            },
+            {
+              "id": "step.app.prepare.body",
+              "kind": "paragraph",
+              "textKey": "app.prepare"
+            }
+          ],
+          "competencyIds": [
+            "competency.app"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.app.prepare.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.app.prepare.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "exercise": {
+            "id": "exercise.app.prepare.v2",
+            "mode": "simulated",
+            "promptKey": "app.prepare",
+            "deliverableKey": "criterion.record",
+            "rubricId": "rubric.beta"
+          }
+        },
+        {
+          "id": "step.app.check-plan",
+          "kind": "check",
+          "titleKey": "step.check-plan",
+          "objectiveKey": "app.objective",
+          "actionKey": "action.check",
+          "expectedResultKey": "app.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": true,
+          "executionMode": "guided-simulation",
+          "blocks": [
+            {
+              "id": "step.app.check-plan.body",
+              "kind": "paragraph",
+              "textKey": "hint.compare"
+            }
+          ],
+          "competencyIds": [
+            "competency.app"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.app.check-plan.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.app.check-plan.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "check": {
+            "id": "check.app.q1.v2",
+            "kind": "single-choice",
+            "questionKey": "app.q1",
+            "competencyIds": [
+              "competency.app"
+            ],
+            "successFeedbackKey": "app.q1.feedback",
+            "retryFeedbackKey": "app.q1.feedback",
+            "required": true,
+            "options": [
+              {
+                "id": "option.app.q1.a",
+                "labelKey": "app.q1.a",
+                "feedbackKey": "app.q1.feedback"
+              },
+              {
+                "id": "option.app.q1.b",
+                "labelKey": "app.q1.b",
+                "feedbackKey": "app.q1.feedback"
+              },
+              {
+                "id": "option.app.q1.c",
+                "labelKey": "app.q1.c",
+                "feedbackKey": "app.q1.feedback"
+              }
+            ],
+            "correctOptionIds": [
+              "option.app.q1.b"
+            ]
+          }
+        },
+        {
+          "id": "step.app.execute",
+          "kind": "practice",
+          "titleKey": "step.execute",
+          "objectiveKey": "app.objective",
+          "actionKey": "action.execute",
+          "expectedResultKey": "app.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": false,
+          "executionMode": "external-real-task",
+          "blocks": [
+            {
+              "id": "step.app.execute.body",
+              "kind": "paragraph",
+              "textKey": "app.execute"
+            }
+          ],
+          "competencyIds": [
+            "competency.app"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.app.execute.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.app.execute.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "exercise": {
+            "id": "exercise.app.execute.v2",
+            "mode": "local-user",
+            "promptKey": "app.execute",
+            "deliverableKey": "criterion.record",
+            "rubricId": "rubric.beta"
+          }
+        },
+        {
+          "id": "step.app.check-result",
+          "kind": "check",
+          "titleKey": "step.check-result",
+          "objectiveKey": "app.objective",
+          "actionKey": "action.check",
+          "expectedResultKey": "app.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": true,
+          "executionMode": "guided-simulation",
+          "blocks": [
+            {
+              "id": "step.app.check-result.body",
+              "kind": "paragraph",
+              "textKey": "hint.compare"
+            }
+          ],
+          "competencyIds": [
+            "competency.app"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.app.check-result.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.app.check-result.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "check": {
+            "id": "check.app.q2.v2",
+            "kind": "single-choice",
+            "questionKey": "app.q2",
+            "competencyIds": [
+              "competency.app"
+            ],
+            "successFeedbackKey": "app.q2.feedback",
+            "retryFeedbackKey": "app.q2.feedback",
+            "required": true,
+            "options": [
+              {
+                "id": "option.app.q2.a",
+                "labelKey": "app.q2.a",
+                "feedbackKey": "app.q2.feedback"
+              },
+              {
+                "id": "option.app.q2.b",
+                "labelKey": "app.q2.b",
+                "feedbackKey": "app.q2.feedback"
+              },
+              {
+                "id": "option.app.q2.c",
+                "labelKey": "app.q2.c",
+                "feedbackKey": "app.q2.feedback"
+              }
+            ],
+            "correctOptionIds": [
+              "option.app.q2.c"
+            ]
+          }
+        },
+        {
+          "id": "step.app.deliver",
+          "kind": "practice",
+          "titleKey": "step.deliver",
+          "objectiveKey": "app.objective",
+          "actionKey": "action.execute",
+          "expectedResultKey": "app.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": false,
+          "executionMode": "external-real-task",
+          "blocks": [
+            {
+              "id": "step.app.deliver.body",
+              "kind": "paragraph",
+              "textKey": "app.deliver"
+            }
+          ],
+          "competencyIds": [
+            "competency.app"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.app.deliver.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.app.deliver.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "exercise": {
+            "id": "exercise.app.deliver.v2",
+            "mode": "local-user",
+            "promptKey": "app.deliver",
+            "deliverableKey": "criterion.record",
+            "rubricId": "rubric.beta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson.automation",
+      "order": 4,
+      "status": "draft",
+      "titleKey": "automation.title",
+      "summaryKey": "automation.objective",
+      "objectiveKeys": [
+        "automation.objective"
+      ],
+      "competencyIds": [
+        "competency.automation"
+      ],
+      "prerequisiteLessonIds": [
+        "lesson.foundations"
+      ],
+      "estimatedMinutes": 45,
+      "steps": [
+        {
+          "id": "step.automation.learn",
+          "kind": "explain",
+          "titleKey": "step.learn",
+          "objectiveKey": "automation.objective",
+          "actionKey": "action.learn",
+          "expectedResultKey": "automation.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": false,
+          "executionMode": "concept",
+          "blocks": [
+            {
+              "id": "step.automation.learn.body",
+              "kind": "paragraph",
+              "textKey": "automation.learn"
+            }
+          ],
+          "competencyIds": [
+            "competency.automation"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.automation.learn.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.automation.learn.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          }
+        },
+        {
+          "id": "step.automation.prepare",
+          "kind": "practice",
+          "titleKey": "step.prepare",
+          "objectiveKey": "automation.objective",
+          "actionKey": "action.prepare",
+          "expectedResultKey": "automation.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": false,
+          "executionMode": "guided-simulation",
+          "blocks": [
+            {
+              "id": "step.automation.prepare.notice",
+              "kind": "callout",
+              "textKey": "notice.simulated"
+            },
+            {
+              "id": "step.automation.prepare.body",
+              "kind": "paragraph",
+              "textKey": "automation.prepare"
+            },
+            {
+              "id": "step.automation.prepare.csv",
+              "kind": "code",
+              "code": "id,item,amount\n1,Caderno,10.50\n2,Curso,20.00"
+            }
+          ],
+          "competencyIds": [
+            "competency.automation"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.automation.prepare.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.automation.prepare.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "exercise": {
+            "id": "exercise.automation.prepare.v2",
+            "mode": "simulated",
+            "promptKey": "automation.prepare",
+            "deliverableKey": "criterion.record",
+            "rubricId": "rubric.beta"
+          }
+        },
+        {
+          "id": "step.automation.check-plan",
+          "kind": "check",
+          "titleKey": "step.check-plan",
+          "objectiveKey": "automation.objective",
+          "actionKey": "action.check",
+          "expectedResultKey": "automation.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": true,
+          "executionMode": "guided-simulation",
+          "blocks": [
+            {
+              "id": "step.automation.check-plan.body",
+              "kind": "paragraph",
+              "textKey": "hint.compare"
+            }
+          ],
+          "competencyIds": [
+            "competency.automation"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.automation.check-plan.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.automation.check-plan.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "check": {
+            "id": "check.automation.q1.v2",
+            "kind": "single-choice",
+            "questionKey": "automation.q1",
+            "competencyIds": [
+              "competency.automation"
+            ],
+            "successFeedbackKey": "automation.q1.feedback",
+            "retryFeedbackKey": "automation.q1.feedback",
+            "required": true,
+            "options": [
+              {
+                "id": "option.automation.q1.a",
+                "labelKey": "automation.q1.a",
+                "feedbackKey": "automation.q1.feedback"
+              },
+              {
+                "id": "option.automation.q1.b",
+                "labelKey": "automation.q1.b",
+                "feedbackKey": "automation.q1.feedback"
+              },
+              {
+                "id": "option.automation.q1.c",
+                "labelKey": "automation.q1.c",
+                "feedbackKey": "automation.q1.feedback"
+              }
+            ],
+            "correctOptionIds": [
+              "option.automation.q1.b"
+            ]
+          }
+        },
+        {
+          "id": "step.automation.execute",
+          "kind": "practice",
+          "titleKey": "step.execute",
+          "objectiveKey": "automation.objective",
+          "actionKey": "action.execute",
+          "expectedResultKey": "automation.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": false,
+          "executionMode": "external-real-task",
+          "blocks": [
+            {
+              "id": "step.automation.execute.body",
+              "kind": "paragraph",
+              "textKey": "automation.execute"
+            }
+          ],
+          "competencyIds": [
+            "competency.automation"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.automation.execute.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.automation.execute.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "exercise": {
+            "id": "exercise.automation.execute.v2",
+            "mode": "local-user",
+            "promptKey": "automation.execute",
+            "deliverableKey": "criterion.record",
+            "rubricId": "rubric.beta"
+          }
+        },
+        {
+          "id": "step.automation.check-result",
+          "kind": "check",
+          "titleKey": "step.check-result",
+          "objectiveKey": "automation.objective",
+          "actionKey": "action.check",
+          "expectedResultKey": "automation.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": true,
+          "executionMode": "guided-simulation",
+          "blocks": [
+            {
+              "id": "step.automation.check-result.body",
+              "kind": "paragraph",
+              "textKey": "hint.compare"
+            }
+          ],
+          "competencyIds": [
+            "competency.automation"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.automation.check-result.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.automation.check-result.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "check": {
+            "id": "check.automation.q2.v2",
+            "kind": "single-choice",
+            "questionKey": "automation.q2",
+            "competencyIds": [
+              "competency.automation"
+            ],
+            "successFeedbackKey": "automation.q2.feedback",
+            "retryFeedbackKey": "automation.q2.feedback",
+            "required": true,
+            "options": [
+              {
+                "id": "option.automation.q2.a",
+                "labelKey": "automation.q2.a",
+                "feedbackKey": "automation.q2.feedback"
+              },
+              {
+                "id": "option.automation.q2.b",
+                "labelKey": "automation.q2.b",
+                "feedbackKey": "automation.q2.feedback"
+              },
+              {
+                "id": "option.automation.q2.c",
+                "labelKey": "automation.q2.c",
+                "feedbackKey": "automation.q2.feedback"
+              }
+            ],
+            "correctOptionIds": [
+              "option.automation.q2.c"
+            ]
+          }
+        },
+        {
+          "id": "step.automation.deliver",
+          "kind": "practice",
+          "titleKey": "step.deliver",
+          "objectiveKey": "automation.objective",
+          "actionKey": "action.execute",
+          "expectedResultKey": "automation.objective",
+          "hintKeys": [
+            "hint.compare",
+            "hint.repair"
+          ],
+          "criteriaKeys": [
+            "criterion.compare",
+            "criterion.record"
+          ],
+          "isAssessment": false,
+          "executionMode": "external-real-task",
+          "blocks": [
+            {
+              "id": "step.automation.deliver.body",
+              "kind": "paragraph",
+              "textKey": "automation.deliver"
+            }
+          ],
+          "competencyIds": [
+            "competency.automation"
+          ],
+          "evidenceIds": [
+            "ev-codex-prompting"
+          ],
+          "toolVariants": {
+            "claude": {
+              "blocks": [
+                {
+                  "id": "step.automation.deliver.claude",
+                  "kind": "paragraph",
+                  "textKey": "tool.claude"
+                }
+              ],
+              "evidenceIds": [
+                "ev-claude-desktop-start"
+              ]
+            },
+            "codex": {
+              "blocks": [
+                {
+                  "id": "step.automation.deliver.codex",
+                  "kind": "paragraph",
+                  "textKey": "tool.codex"
+                }
+              ],
+              "evidenceIds": [
+                "ev-codex-desktop-quickstart"
+              ]
+            }
+          },
+          "exercise": {
+            "id": "exercise.automation.deliver.v2",
+            "mode": "local-user",
+            "promptKey": "automation.deliver",
+            "deliverableKey": "criterion.record",
+            "rubricId": "rubric.beta"
           }
         }
       ]

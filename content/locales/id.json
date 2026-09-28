@@ -1,571 +1,426 @@
 {
   "schemaVersion": "1.0.0",
   "courseId": "course.first-site",
-  "courseVersion": "0.1.0",
+  "courseVersion": "0.2.0",
   "locale": "id",
   "direction": "ltr",
   "humanReviewStatus": "pending",
   "translationMethod": "ai-authored",
   "messages": {
-    "course.title": {
-      "value": "Proyek pertamamu dengan AI",
+    "action.check": {
+      "value": "Pilih jawaban yang didukung oleh contoh.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
+    },
+    "action.execute": {
+      "value": "Jalankan di alat Anda, lalu catat perilaku yang diamati, perilaku yang diharapkan, dan pemeriksaan ulang. Nyatakan jika Anda belum menjalankannya.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "action.learn": {
+      "value": "Baca contoh dan kenali hasil yang diharapkan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "action.prepare": {
+      "value": "Sesuaikan permintaan dengan data fiktif dan catat respons Anda.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.deliver": {
+      "value": "Serahkan folder dan petunjuk membuka, menguji, serta menghentikan server, dengan hasil lulus/gagal. Untuk membagikan aplikasi statis, gunakan alur Netlify pada pelajaran situs tanpa mengulang pelajaran tersebut: unggah folder yang berisi index.html, periksa visibilitas, lalu uji URL sebagai pengunjung. Setiap peramban memiliki datanya sendiri; data pada alamat lokal tidak otomatis berpindah ke URL terbitan. Uji muat ulang pada origin akhir. Login dan sinkronisasi memerlukan proyek lain.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.execute": {
+      "value": "Untuk menyajikan aplikasi, minta AI memeriksa Python 3 terlebih dahulu; jika tersedia, jalankan `python3 -m http.server 8000` di tarefas-app (Windows: `py -3 -m http.server 8000`) lalu buka `http://localhost:8000`. Hentikan dengan Ctrl+C pada terminal yang menjalankan server. Jika Python tidak tersedia, minta pratinjau lokal yang tersedia atau alternatif yang dijelaskan sebelum memasang apa pun. Tinjau rencana dan izinkan pembuatan dalam folder. Minta AI memulai server lokal, memberikan alamatnya, serta menjelaskan cara menghentikannya dan dependensi yang diperlukan. Buka alamat tersebut. Uji masukan kosong dan spasi: tidak boleh ada tugas yang dibuat. Tambahkan dua tugas, selesaikan satu, muat ulang, dan periksa keduanya beserta status selesai. Hapus satu lalu muat ulang. Contoh kegagalan: status selesai hilang. Perbaikan: “Setelah tugas diselesaikan dan dimuat ulang, statusnya kembali belum selesai. Pertahankan fungsi tambah/hapus; simpan dan pulihkan status selesai juga.” Ulangi seluruh urutan. Gunakan origin/alamat yang sama saat membandingkan penyimpanan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.learn": {
+      "value": "Aplikasi mengubah keadaan saat seseorang bertindak. Di sini, keadaan berarti daftar tugas dan tugas yang selesai. Penyimpanan persisten mempertahankan data setelah muat ulang. Buat tarefas-app. Gunakan data fiktif. localStorage menyimpan data di peramban dan origin ini; tidak menyinkronkan akun/perangkat dan dapat dihapus. Jangan gunakan prototipe ini untuk informasi penting.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.objective": {
+      "value": "Buat interaksi, validasi masukan, dan periksa penyimpanan lokal.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.prepare": {
+      "value": "Permintaan: “Buat aplikasi tugas tanpa dependensi dalam index.html: kolom masukan berlabel, tombol Tambah, daftar, tandai selesai/belum selesai, dan hapus. Tolak masukan kosong atau hanya spasi dengan pesan yang jelas. Simpan tugas dan status selesai dalam localStorage; pulihkan saat dibuka. Jika data tersimpan tidak valid atau penyimpanan gagal, beri tahu tanpa membuat aplikasi berhenti. Tanpa login atau server. Jelaskan cara menjalankannya di alamat lokal yang tetap dan cara menguji.” Contoh simulasi: menambahkan “Belajar” menampilkan satu baris; menandai selesai memberi penanda; muat ulang mempertahankan baris yang selesai; menghapus lalu memuat ulang meninggalkan daftar kosong. Ini hasil yang diharapkan, bukan catatan pelaksanaan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1": {
+      "value": "Apa yang seharusnya terjadi saat hanya spasi dikirim?",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.a": {
+      "value": "Membuat tugas kosong.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.b": {
+      "value": "Menampilkan panduan dan membiarkan daftar tanpa tugas baru.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.c": {
+      "value": "Menghapus semua tugas yang sudah ada.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.feedback": {
+      "value": "Jawaban kedua memvalidasi masukan tanpa merusak keadaan yang valid. Membuat butir kosong atau menghapus daftar tidak memenuhi tujuan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2": {
+      "value": "Sebuah tugas muncul sebelum muat ulang dan hilang sesudahnya. Apa kesimpulan yang benar?",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.a": {
+      "value": "Penyimpanan persisten sudah terbukti.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.b": {
+      "value": "Penambahan pasti gagal.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.c": {
+      "value": "Penambahan berhasil pada sesi itu; penyimpanan/pemulihan masih perlu diperbaiki dan diuji ulang.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.feedback": {
+      "value": "Jawaban ketiga mengenali batas bukti. Melihat sebuah butir sekali tidak membuktikan penyimpanan persisten; bandingkan origin yang sama sebelum dan sesudah muat ulang.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.title": {
+      "value": "Aplikasi tugas",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.deliver": {
+      "value": "Serahkan CSV fiktif, skrip, report.md, dan petunjuk menjalankan yang tepat, beserta hasil pengujian normal/pengulangan/kesalahan. Orang lain harus dapat mengulanginya menggunakan folder tersebut. Jangan mengklaim penjadwalan hanya karena skrip berjalan sekali. Jika nanti menjadwalkan, tentukan waktu/zona waktu, folder, ketersediaan komputer, tempat memeriksa hasil/kesalahan, serta cara menjeda; amati satu pelaksanaan yang dipicu sebelum mengandalkannya. Beta ini mengajarkan penyerahan manual yang dapat diperiksa; tidak menjalankan jadwal atau mengirim laporan untuk Anda.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.execute": {
+      "value": "Minta AI memeriksa `python3 --version` (Windows: `py -3 --version`). Jika Python 3 tersedia, minta `python3 report.py vendas.csv report.md` di relatorio (Windows: `py -3 report.py vendas.csv report.md`). Terminal adalah area perintah; alat dapat menjalankan perintah untuk Anda dan menampilkan keluarannya. Jika Python tidak tersedia, minta alternatif: HTML lokal yang menerima CSV yang sama dalam peramban, menerapkan aturan yang sama, dan menawarkan unduhan report.md tanpa memasang paket. Buka HTML, pilih CSV, dan simpan hasilnya; saat terjadi kesalahan, jangan unduh pengganti laporan. Tinjau lalu jalankan perintah yang diberikan dalam folder terpilih melalui alat. Jika lingkungan belum tersedia, minta petunjuk untuk sistem Anda; catat kesalahannya alih-alih mengaku sudah menjalankan. Buka report.md dan bandingkan jumlah/total dengan perhitungan. Jalankan lagi: tetap 2 dan 30.50. Salin CSV, hapus amount, lalu jalankan: seharusnya ada pesan kesalahan dan laporan sebelumnya dipertahankan. Pulihkan salinan lalu ulangi. Jika terjadi duplikasi atau penimpaan saat kesalahan, berikan masukan, hasil sebenarnya, dan aturan yang diharapkan; minta perbaikan lalu ulangi ketiga pengujian.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.learn": {
+      "value": "Otomatisasi adalah prosedur yang dapat diulang: masukan, transformasi, dan keluaran. Mulailah dengan menjalankannya secara manual; penjadwalan hanya mengulang proses yang sudah benar. Buat relatorio. CSV adalah tabel teks: baris pertama memberi nama kolom, baris berikutnya berisi catatan. Gunakan contoh di bawah, titik desimal, dan data fiktif. Hasil yang diharapkan: dua catatan valid, total 30.50; tidak ada pesan yang dikirim.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.objective": {
+      "value": "Ubah CSV menjadi laporan yang dapat diperiksa, lalu ulangi tanpa duplikasi.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.prepare": {
+      "value": "Permintaan: “Buat vendas.csv dengan id,item,amount dan baris 1,Caderno,10.50 serta 2,Curso,20.00. Buat report.py dalam Python 3 tanpa paket eksternal, yang menerima argumen masukan dan keluaran, untuk membaca CSV ini, memvalidasi kolom/nilai, menghitung catatan, dan menjumlahkan amount dengan presisi desimal. Hasilkan report.md dengan jumlah 2 dan total 30.50. Menjalankan kembali harus mengganti laporan tanpa duplikasi. Jika kolom hilang atau nilai tidak valid, tampilkan kesalahan dan pertahankan laporan valid terakhir. Jelaskan dependensi, perintah, dan folder kerja; jangan kirim data atau jadwalkan.” Keluaran simulasi: Catatan: 2; Total: 30.50. Perhitungan acuan: 10.50 + 20.00 = 30.50.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1": {
+      "value": "Apa hasil yang benar pada pelaksanaan kedua dari CSV yang sama?",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.a": {
+      "value": "4 catatan dan total 61.00.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.b": {
+      "value": "2 catatan dan total 30.50, mengganti laporan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.c": {
+      "value": "Tidak ada berkas, karena sudah pernah dijalankan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.feedback": {
+      "value": "Jawaban kedua mengulang tanpa duplikasi. Menambahkan ke laporan lama menggandakan data; tidak menghasilkan keluaran tidak menjamin hasil serahan yang diperbarui.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2": {
+      "value": "Kolom amount dihapus. Perilaku mana yang memenuhi aturan?",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.a": {
+      "value": "Menghasilkan nol dan mengganti laporan valid.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.b": {
+      "value": "Mengarang nilai agar dapat melanjutkan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.c": {
+      "value": "Melaporkan kesalahan, mempertahankan laporan valid, dan memungkinkan perbaikan masukan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.feedback": {
+      "value": "Jawaban ketiga membuat kegagalan terlihat tanpa merusak keluaran valid terakhir. Nilai nol tanpa penjelasan dan nilai rekaan menyembunyikan kesalahan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.title": {
+      "value": "Otomatisasi yang berguna",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
     },
     "course.summary": {
-      "value": "Mulai dengan permintaan yang jelas. Pelajari cara mengamati, menguji, dan memperbaiki hasil.",
+      "value": "Beta hackathon: empat pelajaran praktik. Contoh simulasi orisinal; pelaksanaan di luar Ganesha dilaporkan sendiri. Terjemahan AI, menunggu tinjauan manusia.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "lesson.title": {
-      "value": "Dari ide ke permintaan yang bisa diuji",
+    "course.title": {
+      "value": "Situs, aplikasi, dan otomatisasi dengan AI",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "lesson.summary": {
-      "value": "Siapkan permintaan, coba di alat pilihanmu, dan pelajari cara meminta bukti. Pelajaran ini belum menerbitkan situs.",
+    "criterion.compare": {
+      "value": "Hasil dibandingkan dengan kriteria",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.scope": {
-      "value": "Tentukan hasil",
+    "criterion.record": {
+      "value": "Catatan tentang apa yang benar-benar Anda jalankan",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.scope.outcome": {
-      "value": "Jelaskan hasil kerja kecil untuk pengguna yang jelas.",
+    "foundations.deliver": {
+      "value": "Serahkan permintaan, rencana yang diterima, dan perbandingannya. Pisahkan apa yang sudah diperiksa dalam teks dari apa yang masih perlu dibuktikan halaman. Untuk berpindah alat, pertahankan permintaan dan kriteria, tetapi periksa konteks kembali. Lanjutkan ke jalur situs, aplikasi, atau otomatisasi; tidak ada yang mengharuskan Anda menyelesaikan jalur lainnya.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.context": {
-      "value": "Berikan konteks",
+    "foundations.execute": {
+      "value": "Kirim permintaan dalam folder yang dipilih. Baca responsnya: ada judul? tiga layanan? kontak tanpa pengiriman? Jawab pertanyaan yang relevan dengan data fiktif. Bandingkan dan minta perbaikan spesifik. Baca daftar baru. Jika pengeditan diusulkan, kembalilah ke perencanaan. Catat kutipan sebelum/sesudah; jika semua kriteria sudah terpenuhi, jelaskan alasannya. Jangan mengarang kegagalan hanya untuk melengkapi catatan.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.context.outcome": {
-      "value": "Tulis permintaan dengan tujuan, konteks, batasan, dan pengujian.",
+    "foundations.learn": {
+      "value": "Anda memerlukan komputer, peramban, serta Claude Desktop atau Codex Desktop yang sudah terpasang dan masuk dengan akses ke fitur pengembangan. Periksa syarat akses dan biaya terlebih dahulu; pelajaran ini tidak menjanjikan penggunaan gratis. Folder menyimpan berkas proyek; konteks adalah lokasi dan informasi yang digunakan AI untuk bekerja. Buat folder ganesha-pratica di pengelola berkas lalu pilih di alat. Gunakan akun yang memiliki akses. Jika muncul login atau batasan paket, selesaikan masalah akses atau gunakan simulasi; jangan menghitungnya sebagai pelaksanaan. Rencana menjelaskan pekerjaan yang akan dilakukan. Halaman yang berfungsi membutuhkan berkas dan pengujian.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.evidence": {
-      "value": "Periksa bukti",
+    "foundations.objective": {
+      "value": "Tetapkan konteks, minta rencana, dan perbaiki respons.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.evidence.outcome": {
-      "value": "Bedakan jawaban alat dari hasil yang diamati.",
+    "foundations.prepare": {
+      "value": "Permintaan: “Rencanakan halaman Ponte Musical untuk pemula: judul, gitar, piano, dan bernyanyi; kontak menampilkan aulas@example.com tanpa mengirim pesan. Berikan daftar dan pengujian yang akan dilakukan. Jangan mengedit berkas atau menerbitkan.” Respons simulasi: judul benar, gitar dan piano, formulir yang mengirim pesan. Perbandingan: bernyanyi tidak ada dan formulir melampaui cakupan. Perbaikan: “Pertahankan judul, tambahkan bernyanyi dan ganti formulir dengan alamat yang ditampilkan; perbarui pengujiannya.” Rencana revisi simulasi: judul, tiga layanan, kontak menampilkan alamat, pengujian klik yang akan dilakukan.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.repair": {
-      "value": "Minta perbaikan",
+    "foundations.q1": {
+      "value": "Rencana tidak mencantumkan bernyanyi dan mengumpulkan nomor telepon. Perbaikan mana yang memenuhi permintaan?",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.repair.outcome": {
-      "value": "Jelaskan masalah dan cara memeriksa perbaikannya.",
+    "foundations.q1.a": {
+      "value": "Hapus kolom telepon dan pertahankan dua layanan saja.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.transfer": {
-      "value": "Terapkan metode di alat lain",
+    "foundations.q1.b": {
+      "value": "Pertahankan judul, tambahkan bernyanyi dan tampilkan alamat tanpa pengumpulan data atau pengiriman.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.transfer.outcome": {
-      "value": "Sesuaikan permintaan yang sama untuk alat lain.",
+    "foundations.q1.c": {
+      "value": "Tambahkan bernyanyi dan uji pengiriman nomor telepon.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q1.feedback": {
+      "value": "Jawaban kedua memperbaiki kedua penyimpangan. Jawaban pertama masih menghilangkan bernyanyi; jawaban ketiga mempertahankan tindakan yang tidak diminta.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2": {
+      "value": "Rencana revisi mencantumkan semua butir. Apa yang dibuktikannya?",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.a": {
+      "value": "Kontak sudah berfungsi di peramban.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.b": {
+      "value": "Halaman sudah diterbitkan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.c": {
+      "value": "Teks memenuhi kriteria yang dibandingkan; perilakunya masih perlu dijalankan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.feedback": {
+      "value": "Jawaban ketiga membedakan perencanaan dari fungsi yang berjalan. Teks dan usulan pengujian tidak membuktikan klik atau penerbitan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.title": {
+      "value": "Dasar: dari permintaan ke bukti",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "hint.compare": {
+      "value": "Bandingkan hasil dengan kriteria, bukan hanya pesan AI.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "hint.repair": {
+      "value": "Untuk kesalahan, jelaskan langkah untuk mengulanginya, perilaku sebenarnya dan yang diharapkan; minta perubahan spesifik lalu ulangi pengujian.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "notice.simulated": {
+      "value": "Latihan orisinal. Hasil yang dijelaskan merupakan contoh simulasi, bukan catatan pelaksanaan. Ganesha tidak mengoperasikan alat Anda atau memverifikasi pekerjaan Anda secara otomatis.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.deliver": {
+      "value": "Setelah pengujian lokal, masuk ke Netlify lalu buka https://app.netlify.com/drop. Unggah langsung folder yang berisi index.html. Tunggu URL-nya. Periksa visibilitas proyek; jika akses publik diinginkan dan diizinkan, gunakan Make public. Buka URL tanpa sesi pemilik lalu uji kontak. URL saja tidak membuktikan akses publik. Untuk memperbarui, uji secara lokal lalu unggah folder di bagian Production deploys pada proyek yang sama: ini mengubah versi produksi. Periksa versi baru pada URL tersebut. Jika berkas hilang atau halaman kosong, periksa folder yang diunggah. Serahkan URL dan hasil pengujian, atau folder yang sudah diuji beserta hambatan penerbitan yang dicatat.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.execute": {
+      "value": "Tinjau rencana, minta pembuatan, dan periksa berkas yang diubah. Buka index.html dari pengelola berkas di peramban. Hitung tiga layanan; klik Kontak; muat ulang lalu gunakan Tab untuk mencapai tombol, kemudian Enter. Persempit jendela: apakah teks dan tombol tetap dapat digunakan? Jika gagal, kirim langkah, perilaku sebenarnya dan yang diharapkan kepada AI; buka kembali berkas yang benar dan ulangi pengujian yang sama. Pesan “sudah diperbaiki” dari AI tidak menggantikan pengamatan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.learn": {
+      "value": "Situs statis dapat memakai satu index.html: struktur, tampilan, dan interaksi peramban. Latihan ini tidak membutuhkan akun pengunjung atau server data. Buat ponte-site. Hasil: judul Ponte Musical, tiga layanan, dan tombol yang menampilkan alamat fiktif. Jangan sertakan formulir, pengiriman, atau kredensial. Simpan salinan sebelum melakukan perubahan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.objective": {
+      "value": "Buat, uji, perbaiki, dan terbitkan halaman statis.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.prepare": {
+      "value": "Permintaan lengkap: “Di ponte-site, buat index.html mandiri dengan judul Ponte Musical, layanan gitar/piano/bernyanyi, dan tombol Kontak yang menampilkan aulas@example.com. Tanpa pustaka eksternal, pengumpulan data, atau pengiriman. Gunakan tombol yang dapat diakses dengan papan ketik dan tata letak yang cocok untuk layar sempit. Jelaskan cara membuka dan mengujinya. Jelaskan rencana terlebih dahulu.” Contoh simulasi: berkas dibuat, tiga kartu dan satu tombol. Kegagalan simulasi: klik tidak menampilkan alamat. Perbaikan: “Saat membuka index.html dan mengeklik Kontak, tidak ada yang muncul; saya mengharapkan alamat. Perbaiki hanya bagian itu, pertahankan layanan, dan ulangi pengujian.” Hasil perbaikan yang diharapkan: alamat terlihat.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1": {
+      "value": "Pengujian mana yang memeriksa tindakan utama?",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.a": {
+      "value": "Melihat tombol yang tergambar.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.b": {
+      "value": "Mengeklik dan mengamati alamat; mengulanginya dengan papan ketik.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.c": {
+      "value": "Membaca “situs siap” dalam percakapan.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.feedback": {
+      "value": "Jawaban kedua memeriksa perilaku. Tombol yang terlihat atau pernyataan AI tidak membuktikan tindakannya.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2": {
+      "value": "URL terbuka bagi pemilik tetapi meminta pengunjung lain masuk. Apa selanjutnya?",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.a": {
+      "value": "Periksa visibilitas/izin lalu coba kembali tanpa sesi pemilik.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.b": {
+      "value": "Nyatakan situs sudah publik.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.c": {
+      "value": "Unggah berkas yang sama lagi tanpa memeriksa akses.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.feedback": {
+      "value": "Jawaban pertama menyelidiki hambatan sebenarnya. Akses setelah autentikasi tidak membuktikan ketersediaan publik; unggahan lain mungkin tidak memperbaiki visibilitas.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.title": {
+      "value": "Situs pertama Anda",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.check-plan": {
+      "value": "Periksa rencana",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.check-result": {
+      "value": "Periksa hasil",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.deliver": {
+      "value": "Serahkan",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.execute": {
+      "value": "Jalankan dan perbaiki",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.learn": {
+      "value": "Pelajari",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.prepare": {
+      "value": "Siapkan permintaan",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
     },
     "tool.claude": {
-      "value": "Di Claude desktop, buka tab Code, pilih Local, lalu pilih folder proyek. Tab Chat memiliki konteks berbeda. Aplikasi ini menyertakan Claude Code; akses memerlukan langganan yang sesuai. Periksa jawaban dan perubahan di Code.",
+      "value": "Claude Desktop: buka Code, pilih Local dan folder latihan. Untuk perencanaan saja, pilih Plan; untuk membuat proyek, tinjau rencana dan izin sebelum mengizinkan perubahan. Akses bergantung pada akun Anda.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
     "tool.codex": {
-      "value": "Di aplikasi desktop, pilih Codex dan periksa folder atau proyek tugas. Kirim permintaan dalam konteks itu, lalu periksa jawaban dan berkas yang terpengaruh. Nama dan tata letak antarmuka dapat berbeda menurut versi.",
+      "value": "Codex Desktop: pilih Codex dan buka folder/proyek latihan. Periksa konteks sebelum mengirim. Minta perencanaan saja jika sesuai; jangan menganggap kontrolnya sama dengan Claude.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "notice.self-report": {
-      "value": "Latihan di luar Ganesha. Kamu menjalankannya di alatmu sendiri. Catatanmu adalah penilaian mandiri; Ganesha tidak memverifikasi eksekusi atau terhubung ke akunmu.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "example.request": {
-      "value": "Saya ingin halaman untuk layanan kursus musik fiktif bagi pemula. Rencanakan judul, tiga layanan, dan tindakan untuk menghubungi penyedia. Gunakan data fiktif saja. Untuk saat ini, jangan ubah berkas atau terbitkan apa pun. Tuliskan rencana dan tiga kriteria yang bisa saya uji; salah satunya harus memeriksa tindakan kontak.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "example.failure": {
-      "value": "Skenario simulasi: permintaan mensyaratkan tindakan kontak. Di pratinjau, terlihat teks “Hubungi saya”, tetapi mengekliknya tidak menghasilkan apa pun. Tidak ada alat nyata yang dijalankan di sini.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.title": {
-      "value": "Mulai dengan hasil kerja kecil",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.objective": {
-      "value": "Pilih hasil yang bisa kamu periksa.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.body": {
-      "value": "Kita akan menyiapkan halaman untuk layanan fiktif. Minta rencana terlebih dahulu. Dalam pelajaran lanjutan yang direncanakan, permintaan ini dapat menjadi halaman yang diuji dan diterbitkan.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.action": {
-      "value": "Pilih layanan fiktif dan pikirkan: halaman ini membantu siapa melakukan apa?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.expected": {
-      "value": "Pengguna sasaran dan tindakan utama yang jelas.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.hint1": {
-      "value": "Bayangkan seseorang yang akan mengunjungi halaman.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.hint2": {
-      "value": "Contoh: pemula musik ingin mengenal kursus dan menghubungi pengajarnya.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.criterion": {
-      "value": "Kamu dapat menyebutkan pengguna sasaran dan tindakan utama.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.visual": {
-      "value": "Tiga kartu: pengguna sasaran, hasil, dan tindakan utama.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.title": {
-      "value": "Susun permintaan yang berguna",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.objective": {
-      "value": "Gabungkan tujuan, konteks, batasan, dan pengujian dalam satu permintaan.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.body": {
-      "value": "Alat perlu tahu apa yang harus dihasilkan dan bagaimana kamu akan menilainya. Gunakan contoh lalu sesuaikan layanannya. Kolom ini untuk latihan: tidak ada yang dikirim ke Claude atau Codex.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.action": {
-      "value": "Tulis permintaan dengan pengguna sasaran, konten yang diinginkan, batasan, dan pengujian yang bisa diamati.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.expected": {
-      "value": "Permintaan tersimpan yang dapat diperiksa orang lain.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.hint1": {
-      "value": "Ganti “buat sesuatu yang indah” dengan elemen yang harus muncul.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.hint2": {
-      "value": "Sertakan: hanya merencanakan dahulu; data fiktif; jelaskan cara menguji kontak.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.criterion": {
-      "value": "Permintaan mencakup keempat unsur rubrik.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.visual": {
-      "value": "Permintaan dibagi menjadi tujuan, konteks, batasan, dan pengujian.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.title": {
-      "value": "Pemeriksaan 1: apakah permintaan bisa diuji?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.objective": {
-      "value": "Kenali kriteria yang dapat diuji.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.body": {
-      "value": "Kesan umum dapat membantu menentukan gaya. Untuk memeriksa hasil, kamu juga perlu perilaku yang bisa diamati.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.action": {
-      "value": "Pilih kriteria yang paling berguna untuk menguji tindakan kontak.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.expected": {
-      "value": "Pilihan beserta penjelasan kriterianya.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.hint1": {
-      "value": "Pilihan mana menggambarkan sesuatu yang bisa kamu lakukan dan amati?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.hint2": {
-      "value": "Pengujian menggabungkan tindakan pengunjung dengan hasil yang diharapkan.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.criterion": {
-      "value": "Pilihan menjelaskan tindakan dan hasil yang bisa diamati.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.visual": {
-      "value": "Tiga pilihan kriteria penerimaan.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.question": {
-      "value": "Kriteria mana yang dapat memeriksa kontak?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.a": {
-      "value": "Halaman harus terlihat luar biasa.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.a.feedback": {
-      "value": "Ini menyatakan preferensi, tetapi tidak menjelaskan cara menguji kontak.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.b": {
-      "value": "Mengeklik kontak menampilkan alamat fiktif yang ditentukan dalam permintaan.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.b.feedback": {
-      "value": "Kamu bisa mengeklik dan membandingkan alamat yang tampil dengan permintaan. Tindakan dan hasilnya dapat diamati.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.c": {
-      "value": "Alat harus mengatakan bahwa pekerjaan selesai.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.c.feedback": {
-      "value": "Pesan selesai tidak menunjukkan apakah tindakan kontak berfungsi.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.success": {
-      "value": "Kamu memilih perilaku yang bisa diuji. Gunakan prinsip ini dalam permintaanmu.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.retry": {
-      "value": "Coba lagi: cari tindakan dan hasil yang bisa diamati.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.title": {
-      "value": "Coba di alatmu",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.objective": {
-      "value": "Kirim permintaan dalam konteks yang benar dan catat jawaban nyata.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.body": {
-      "value": "Buka alat pilihanmu dan periksa petunjuk di bawah. Kirim permintaan perencanaan. Baca jawaban dan bandingkan dengan kriteriamu. Jika belum punya akses, simpan permintaan dan lanjutkan latihan ini nanti.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.action": {
-      "value": "Kirim permintaan di luar kursus. Catat tempat kamu bekerja dan apa yang diterima, tanpa data pribadi.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.expected": {
-      "value": "Catatan konteks, jawaban, dan sesuatu yang masih perlu diperiksa.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.hint1": {
-      "value": "Sebelum mengirim, pastikan percakapan atau folder proyeknya benar.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.hint2": {
-      "value": "Catat: saya meminta rencana; saya menerima hal-hal ini; saya belum membuka atau menguji halaman.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.criterion": {
-      "value": "Catatan membedakan apa yang diminta, diterima, dan diperiksa.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.visual": {
-      "value": "Alur: buka alat, periksa konteks, kirim permintaan, tinjau jawaban.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.title": {
-      "value": "Pemeriksaan 2: apa yang sudah terbukti?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.objective": {
-      "value": "Kenali kapan bukti eksekusi belum tersedia.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.body": {
-      "value": "Bayangkan skenario simulasi ini: alat menjawab “Halaman sudah siap”. Kamu belum membuka berkas, pratinjau, atau alamat publik apa pun.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.action": {
-      "value": "Pilih kesimpulan yang didukung informasi yang tersedia.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.expected": {
-      "value": "Kesimpulan yang membedakan teks dari bukti.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.hint1": {
-      "value": "Apa yang benar-benar sudah kamu amati?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.hint2": {
-      "value": "Pernyataan alat masih perlu dibandingkan dengan hasilnya.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.criterion": {
-      "value": "Jawaban mengakui perlunya membuka dan menguji hasil.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.visual": {
-      "value": "Pesan selesai di samping area bukti yang masih kosong.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.question": {
-      "value": "Apa yang bisa kamu simpulkan sekarang?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.a": {
-      "value": "Situs sudah diterbitkan dan dapat diakses semua orang.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.a.feedback": {
-      "value": "Kamu belum membuka alamat publik. Pesan tidak membuktikan penerbitan.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.b": {
-      "value": "Semua kriteria sudah berhasil diuji.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.b.feedback": {
-      "value": "Tidak ada catatan pengujian yang diamati. Menyelesaikan permintaan tidak membuktikan setiap kriteria.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.c": {
-      "value": "Saya menerima pernyataan; saya perlu membuka hasil dan menguji kriterianya.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.c.feedback": {
-      "value": "Benar: periksa hasil dan catat pengamatan sebelum menyatakan bahwa hasilnya berfungsi.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.success": {
-      "value": "Kamu memisahkan pesan dari bukti. Ini membantu menemukan kesalahan sejak awal.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.retry": {
-      "value": "Kembali ke skenario: kamu hanya membaca pesan. Pemeriksaan apa yang masih belum dilakukan?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.title": {
-      "value": "Minta perbaikan yang spesifik",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.objective": {
-      "value": "Ubah masalah yang diamati menjadi permintaan perbaikan.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.body": {
-      "value": "Berlatihlah dengan skenario berikut. Jelaskan apa yang terjadi, apa yang seharusnya terjadi, dan cara menguji ulang. Latihan ini adalah simulasi dan tidak mengubah proyekmu.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.action": {
-      "value": "Tulis permintaan untuk memperbaiki tindakan kontak dan mengulangi pengujian.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.expected": {
-      "value": "Permintaan dengan hasil yang diamati, hasil yang diharapkan, langkah reproduksi, dan pengujian ulang.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.hint1": {
-      "value": "Mulai dengan: mengeklik “Hubungi saya” tidak menghasilkan apa pun.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.hint2": {
-      "value": "Lalu sebutkan alamat fiktif yang diharapkan dan minta klik ulang setelah perbaikan.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.criterion": {
-      "value": "Permintaan memungkinkan masalah direproduksi dan solusi diperiksa.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.visual": {
-      "value": "Empat kartu: diamati, diharapkan, reproduksi, dan uji ulang.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.title": {
-      "value": "Bawa metode ini ke alat lain",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.objective": {
-      "value": "Pertahankan tujuan dan sesuaikan konteks eksekusi.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.body": {
-      "value": "Tujuan dan kriteria tetap sama saat berpindah alat. Cara membuka proyek dan memeriksa hasil dapat berubah. Kamu tidak memerlukan akun kedua untuk menulis penyesuaian ini.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.action": {
-      "value": "Tulis ulang petunjuk konteks untuk alat lain. Simpan permintaan dan catat bagian latihan nyata yang masih belum selesai.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.expected": {
-      "value": "Permintaan yang disesuaikan dan catatan jujur tentang latihanmu.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.hint1": {
-      "value": "Pertahankan pengguna sasaran, konten, batasan, dan pengujian.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.hint2": {
-      "value": "Ubah petunjuk percakapan atau folder proyek sesuai alat tujuan.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.criterion": {
-      "value": "Penyesuaian mempertahankan hasil yang diharapkan dan mengenali konteks alat lain.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.visual": {
-      "value": "Permintaan yang sama terhubung ke dua konteks: Claude dan Codex.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.outcome": {
-      "value": "Saya menentukan hasil kerja dan tindakan utamanya.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.context": {
-      "value": "Saya menyebutkan pengguna sasaran dan konten yang diperlukan.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.limit": {
-      "value": "Saya hanya meminta rencana dengan data fiktif, tanpa penerbitan.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.test": {
-      "value": "Saya menyertakan setidaknya satu pengujian dengan tindakan dan hasil yang diharapkan.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.execution.location": {
-      "value": "Saya memastikan konteks alat dan mengirim permintaan di luar kursus.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.execution.record": {
-      "value": "Saya mencatat apa yang diterima dan yang belum diperiksa.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.observed": {
-      "value": "Saya menjelaskan apa yang terjadi.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.expected": {
-      "value": "Saya menjelaskan apa yang seharusnya terjadi.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.reproduce": {
-      "value": "Saya menjelaskan cara mereproduksi masalah.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.retest": {
-      "value": "Saya meminta pengujian diulang setelah perbaikan.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.transfer.preserve": {
-      "value": "Saya mempertahankan tujuan, konteks, batasan, dan kriteria.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.transfer.adapt": {
-      "value": "Saya menyesuaikan tempat bekerja dan cara memeriksa hasil.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     }
   }
 }

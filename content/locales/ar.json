@@ -1,571 +1,426 @@
 {
   "schemaVersion": "1.0.0",
   "courseId": "course.first-site",
-  "courseVersion": "0.1.0",
+  "courseVersion": "0.2.0",
   "locale": "ar",
   "direction": "rtl",
   "humanReviewStatus": "pending",
   "translationMethod": "ai-authored",
   "messages": {
-    "course.title": {
-      "value": "مشروعك الأول باستخدام الذكاء الاصطناعي",
+    "action.check": {
+      "value": "اختر الإجابة التي يدعمها المثال.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
+    },
+    "action.execute": {
+      "value": "نفّذ في أداتك وسجّل السلوك الملحوظ والسلوك المتوقع والتحقّق المتكرر. اذكر إن لم تنفّذ بعد.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "action.learn": {
+      "value": "اقرأ المثال وحدّد النتيجة المتوقعة.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "action.prepare": {
+      "value": "عدّل الطلب باستخدام بيانات خيالية وسجّل إجابتك.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.deliver": {
+      "value": "سلّم المجلد وتعليمات الفتح والاختبار وإيقاف الخادم، مع النتائج الناجحة والفاشلة. لمشاركة تطبيق ثابت، استخدم خطوات Netlify في درس الموقع دون إعادة ذلك الدرس: ارفع المجلد الذي يحتوي على index.html، وتحقّق من الظهور، واختبر الرابط كزائر. لكل متصفح بياناته الخاصة؛ ولا تنتقل بيانات العنوان المحلي تلقائيًا إلى الرابط المنشور. اختبر إعادة التحميل على الأصل النهائي. يتطلب تسجيل الدخول والمزامنة مشروعًا آخر.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.execute": {
+      "value": "لتشغيل التطبيق عبر خادم، اطلب أولًا من الذكاء الاصطناعي التحقّق من Python 3؛ وعند توفره، شغّل `python3 -m http.server 8000` داخل tarefas-app (في Windows: `py -3 -m http.server 8000`) وافتح `http://localhost:8000`. أوقفه باستخدام Ctrl+C في الطرفية التي تشغّل الخادم. إذا لم يتوفر Python، فاطلب معاينة محلية متاحة أو بديلًا مشروحًا قبل تثبيت أي شيء. راجع الخطة واسمح بالبناء داخل المجلد. اطلب من الذكاء الاصطناعي بدء خادم محلي وتقديم عنوانه وشرح إيقافه وأي تبعيات مطلوبة. افتح ذلك العنوان. اختبر الإدخال الفارغ والمسافات: يجب ألا تُنشأ مهمة. أضف مهمتين وأكمل إحداهما وأعد التحميل وتحقّق من كلتيهما وحالة الاكتمال. احذف واحدة وأعد التحميل. مثال إخفاق: تختفي حالة الاكتمال. التصحيح: «بعد الإكمال وإعادة التحميل، تعود المهمة غير مكتملة. حافظ على الإضافة والحذف؛ واحفظ حالة الاكتمال واستعدها أيضًا.» كرّر التسلسل كاملًا. استخدم الأصل أو العنوان نفسه عند مقارنة استمرار البيانات.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.learn": {
+      "value": "يغيّر التطبيق حالته عندما يتصرف أحدهم. تعني الحالة هنا قائمة المهام والمهام المكتملة. يحافظ التخزين المستمر على البيانات بعد إعادة التحميل. أنشئ tarefas-app. استخدم بيانات خيالية. يخزّن localStorage البيانات في هذا المتصفح وهذا الأصل؛ ولا يزامن الحسابات أو الأجهزة ويمكن مسحه. لا تستخدم هذا النموذج الأولي للمعلومات المهمة.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.objective": {
+      "value": "أنشئ تفاعلًا وتحقّق من المدخلات واختبر استمرار البيانات محليًا.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.prepare": {
+      "value": "الطلب: «أنشئ تطبيق مهام دون تبعيات في index.html: إدخال ذو تسمية وزر إضافة وقائمة وتحديد مكتمل/غير مكتمل وحذف. ارفض الإدخال الفارغ أو المكوّن من مسافات فقط برسالة واضحة. احفظ المهام وحالة اكتمالها في localStorage؛ واستعدها عند الفتح. إذا كانت البيانات المخزّنة غير صالحة أو فشل الحفظ، فأبلغ دون انهيار التطبيق. دون تسجيل دخول أو خادم. اشرح التشغيل على عنوان محلي ثابت والاختبار.» مثال محاكاة: إضافة «دراسة» تُظهر صفًا؛ إكمالها يضع علامة؛ إعادة التحميل تحتفظ بالصف المكتمل؛ الحذف وإعادة التحميل يتركان قائمة فارغة. هذه نتائج متوقعة وليست سجلات تنفيذ.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1": {
+      "value": "ماذا يجب أن يحدث عند إرسال مسافات فقط؟",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.a": {
+      "value": "إنشاء مهمة فارغة.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.b": {
+      "value": "عرض إرشاد وترك القائمة دون مهمة جديدة.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.c": {
+      "value": "حذف جميع المهام الحالية.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.feedback": {
+      "value": "تتحقّق الإجابة الثانية من المدخلات دون إتلاف الحالة الصالحة. إنشاء عنصر فارغ أو مسح القائمة لا يحقق الهدف.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2": {
+      "value": "تظهر مهمة قبل إعادة التحميل وتختفي بعدها. ما الاستنتاج الصحيح؟",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.a": {
+      "value": "ثبت استمرار البيانات.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.b": {
+      "value": "فشلت الإضافة بالضرورة.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.c": {
+      "value": "نجحت الإضافة في تلك الجلسة؛ ولا يزال الحفظ والاستعادة بحاجة إلى إصلاح وإعادة اختبار.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.feedback": {
+      "value": "تحدّد الإجابة الثالثة حدود الدليل. رؤية عنصر مرة واحدة لا تثبت استمرار البيانات؛ قارن على الأصل نفسه قبل إعادة التحميل وبعدها.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.title": {
+      "value": "تطبيق للمهام",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.deliver": {
+      "value": "سلّم CSV الخيالي والبرنامج النصي وreport.md وتعليمات التشغيل الدقيقة، مع نتائج الاختبارات العادية والمتكررة وحالة الخطأ. يجب أن يتمكن شخص آخر من التكرار باستخدام المجلد. لا تدّعِ الجدولة لأن البرنامج النصي عمل مرة واحدة. عند الجدولة لاحقًا، حدّد الوقت والمنطقة الزمنية والمجلد وتوفر الحاسوب ومكان فحص النتائج والأخطاء وكيفية الإيقاف المؤقت؛ وراقب تشغيلًا واحدًا فعّلته الجدولة قبل الاعتماد عليها. يعلّم هذا الإصدار التجريبي تسليمًا يدويًا قابلًا للتحقّق؛ ولا يشغّل جداول أو يرسل تقارير نيابة عنك.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.execute": {
+      "value": "اطلب من الذكاء الاصطناعي فحص `python3 --version` (في Windows: `py -3 --version`). عند توفر Python 3، اطلب `python3 report.py vendas.csv report.md` داخل relatorio (في Windows: `py -3 report.py vendas.csv report.md`). الطرفية مساحة الأوامر؛ ويمكن للأداة تشغيل الأوامر لك وعرض المخرجات. إذا لم يتوفر Python، فاطلب بديلًا: HTML محلي يقبل CSV نفسه في المتصفح ويطبّق القواعد نفسها ويتيح تنزيل report.md دون تثبيت حزم. افتح HTML واختر CSV واحفظ النتيجة؛ وعند الخطأ، لا تنزّل بديلًا للتقرير. راجع الأمر المقدّم وشغّله عبر الأداة في المجلد المختار. إذا كانت البيئة غير متوفرة، فاطلب تعليمات لنظامك؛ وسجّل الخطأ بدل ادعاء التنفيذ. افتح report.md وقارن العدد والمجموع بالحساب. شغّل مجددًا: يبقيان 2 و30.50. انسخ CSV واحذف amount ثم شغّل: يجب أن يبلّغ عن خطأ ويحافظ على التقرير السابق. استعد النسخة وكرّر. إذا ضاعف البيانات أو استبدل التقرير عند الخطأ، فقدّم المدخلات والنتيجة الفعلية والقاعدة المتوقعة؛ واطلب التصحيح ثم أعد الاختبارات الثلاثة.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.learn": {
+      "value": "الأتمتة إجراء قابل للتكرار: مدخلات وتحويل ومخرجات. ابدأ بالتشغيل اليدوي؛ فالجدولة تكرّر فقط عملية صحيحة بالفعل. أنشئ relatorio. CSV جدول نصي: يسمّي الصف الأول الأعمدة، وتحمل الصفوف التالية السجلات. استخدم المثال أدناه والنقاط العشرية والبيانات الخيالية. النتيجة المتوقعة: سجلان صالحان، والمجموع 30.50؛ لا تُرسل رسالة.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.objective": {
+      "value": "حوّل CSV إلى تقرير قابل للتحقّق وكرّر دون ازدواجية.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.prepare": {
+      "value": "الطلب: «أنشئ vendas.csv بالأعمدة id,item,amount والصفّين 1,Caderno,10.50 و2,Curso,20.00. أنشئ report.py بلغة Python 3 دون حزم خارجية، يقبل وسيطَي الإدخال والإخراج، لقراءة هذا CSV والتحقّق من الأعمدة والقيم وعدّ السجلات وجمع amount بدقة عشرية. أنشئ report.md بعدد 2 ومجموع 30.50. يجب أن يستبدل التشغيل المتكرر التقرير دون ازدواجية. إذا غاب عمود أو كانت قيمة غير صالحة، فأظهر خطأ واحتفظ بآخر تقرير صالح. اشرح التبعيات والأمر ومجلد العمل؛ لا ترسل بيانات ولا تُجدول.» مخرجات محاكاة: السجلات: 2؛ المجموع: 30.50. الحساب المرجعي: 10.50 + 20.00 = 30.50.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1": {
+      "value": "ما النتيجة الصحيحة عند التشغيل الثاني لملف CSV نفسه؟",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.a": {
+      "value": "4 سجلات ومجموع 61.00.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.b": {
+      "value": "سجلان ومجموع 30.50، مع استبدال التقرير.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.c": {
+      "value": "لا ملف، لأنه شُغّل مرة واحدة بالفعل.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.feedback": {
+      "value": "تكرّر الإجابة الثانية دون ازدواجية. الإضافة إلى التقرير القديم تضاعف البيانات؛ وعدم إنتاج مخرجات لا يضمن نتيجة محدّثة للتسليم.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2": {
+      "value": "حُذف عمود amount. أي سلوك يلبّي القاعدة؟",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.a": {
+      "value": "إنتاج صفر واستبدال التقرير الصالح.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.b": {
+      "value": "اختلاق قيم للمتابعة.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.c": {
+      "value": "الإبلاغ عن الخطأ والحفاظ على التقرير الصالح وإتاحة تصحيح المدخلات.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.feedback": {
+      "value": "تُظهر الإجابة الثالثة الإخفاق دون إتلاف آخر مخرجات صالحة. الأصفار الصامتة والقيم المختلقة تخفي الخطأ.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.title": {
+      "value": "أتمتة مفيدة",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
     },
     "course.summary": {
-      "value": "ابدأ بطلب واضح. تعلّم ملاحظة النتيجة واختبارها وتحسينها.",
+      "value": "نسخة تجريبية للهاكاثون: أربعة دروس عملية. أمثلة أصلية محاكاة؛ يبلّغ المتعلم بنفسه عن التنفيذ خارج المنصة. ترجمة بالذكاء الاصطناعي، والمراجعة البشرية معلّقة.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "lesson.title": {
-      "value": "من الفكرة إلى طلب قابل للتحقق",
+    "course.title": {
+      "value": "مواقع وتطبيقات وأتمتة بالذكاء الاصطناعي",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "lesson.summary": {
-      "value": "جهّز طلبًا، وجرّبه في أداتك، وتعلّم طلب الأدلة. هذا الدرس لا ينشر موقعًا بعد.",
+    "criterion.compare": {
+      "value": "نتيجة قورنت بالمعايير",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.scope": {
-      "value": "تحديد نطاق النتيجة",
+    "criterion.record": {
+      "value": "سجلّ لما نفّذته فعلًا",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.scope.outcome": {
-      "value": "وصف ناتج صغير لفئة محددة من المستخدمين.",
+    "foundations.deliver": {
+      "value": "سلّم الطلب والخطة التي تلقيتها والمقارنة. افصل ما تحقّقت منه في النص عما لا تزال الصفحة بحاجة إلى إثباته. عند تبديل الأدوات، احتفظ بالطلب والمعايير، لكن تحقّق من السياق مجددًا. تابع مسار الموقع أو التطبيق أو الأتمتة؛ لا يتطلب أي منها إكمال المسارات الأخرى.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.context": {
-      "value": "توفير السياق",
+    "foundations.execute": {
+      "value": "أرسل الطلب داخل المجلد المختار. اقرأ الإجابة: هل يوجد عنوان؟ ثلاث خدمات؟ تواصل دون إرسال؟ أجب عن الأسئلة ذات الصلة ببيانات خيالية. قارن واطلب تصحيحًا محددًا. اقرأ القائمة الجديدة. إذا اقتُرح التعديل، فعُد إلى التخطيط. سجّل مقتطفًا قبل التصحيح وبعده؛ وإذا كانت جميع المعايير متحققة بالفعل، فاشرح السبب. لا تختلق إخفاقًا لمجرد إكمال السجل.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.context.outcome": {
-      "value": "كتابة طلب يتضمن الهدف والسياق والحدود والاختبار.",
+    "foundations.learn": {
+      "value": "تحتاج إلى حاسوب ومتصفح وتطبيق Claude Desktop أو Codex Desktop مثبت، مع تسجيل الدخول وإمكانية الوصول إلى ميزات التطوير. تحقّق أولًا من شروط الوصول والتكاليف؛ لا يَعِد هذا الدرس بالاستخدام المجاني. يحتوي المجلد على ملفات المشروع؛ والسياق هو الموقع والمعلومات التي يعمل معها الذكاء الاصطناعي. أنشئ مجلد ganesha-pratica في مدير الملفات واختره في الأداة. استخدم حسابًا لديه صلاحية الوصول. إذا ظهرت شاشة تسجيل دخول أو قيود خطة، فحلّ مشكلة الوصول أو استخدم المحاكاة؛ ولا تحتسب ذلك تنفيذًا. تصف الخطة العمل المزمع إنجازه. أما الصفحة التي تعمل فتحتاج إلى ملفات واختبار.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.evidence": {
-      "value": "التحقق من الأدلة",
+    "foundations.objective": {
+      "value": "حدّد السياق واطلب خطة وصحّح الإجابة.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.evidence.outcome": {
-      "value": "التمييز بين رد الأداة والنتيجة التي تمت ملاحظتها.",
+    "foundations.prepare": {
+      "value": "الطلب: «خطّط لصفحة Ponte Musical للمبتدئين: عنوان وغيتار وبيانو وغناء؛ يكشف التواصل عن aulas@example.com دون إرسال رسالة. أعِد قائمة واختبارات مستقبلية. لا تعدّل الملفات ولا تنشر.» إجابة محاكاة: عنوان صحيح، وغيتار وبيانو، ونموذج يرسل رسالة. المقارنة: الغناء مفقود والنموذج يتجاوز النطاق. التصحيح: «احتفظ بالعنوان، وأضف الغناء، واستبدل النموذج بعرض العنوان؛ وحدّث الاختبارات.» الخطة المعدّلة المحاكاة: عنوان وثلاث خدمات وتواصل يكشف العنوان واختبار نقر مستقبلي.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.repair": {
-      "value": "طلب تصحيح",
+    "foundations.q1": {
+      "value": "تُغفل الخطة الغناء وتجمع رقم هاتف. أي تصحيح يلبّي الطلب؟",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.repair.outcome": {
-      "value": "شرح المشكلة وكيفية التحقق من إصلاحها.",
+    "foundations.q1.a": {
+      "value": "احذف حقل الهاتف واحتفظ بخدمتين فقط.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.transfer": {
-      "value": "نقل الطريقة",
+    "foundations.q1.b": {
+      "value": "احتفظ بالعنوان وأضف الغناء واعرض العنوان دون جمع بيانات أو إرسال.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.transfer.outcome": {
-      "value": "تكييف الطلب نفسه مع الأداة الأخرى.",
+    "foundations.q1.c": {
+      "value": "أضف الغناء واختبر إرسال رقم الهاتف.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q1.feedback": {
+      "value": "تصلح الإجابة الثانية كلا الانحرافين. لا تزال الأولى تُغفل الغناء؛ وتحتفظ الثالثة بإجراء لم يُطلب.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2": {
+      "value": "تسرد الخطة المعدّلة جميع العناصر. ماذا يثبت ذلك؟",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.a": {
+      "value": "التواصل يعمل بالفعل في المتصفح.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.b": {
+      "value": "الصفحة منشورة بالفعل.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.c": {
+      "value": "يلبّي النص المعايير التي قورنت به؛ ولا يزال السلوك بحاجة إلى التنفيذ.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.feedback": {
+      "value": "تفصل الإجابة الثالثة بين التخطيط والعمل الفعلي. النص والاختبار المقترح لا يثبتان نجاح نقرة أو نشر.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.title": {
+      "value": "الأساسيات: من الطلب إلى الدليل",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "hint.compare": {
+      "value": "قارن النتيجة بالمعايير، ولا تكتفِ برسالة الذكاء الاصطناعي.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "hint.repair": {
+      "value": "عند الخطأ، صِف خطوات إعادة إنتاجه والسلوك الفعلي والمتوقع؛ اطلب تغييرًا محددًا ثم أعد الاختبار.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "notice.simulated": {
+      "value": "تمرين أصلي. النتائج الموصوفة أمثلة محاكاة وليست سجلات تنفيذ. لا يشغّل Ganesha أداتك ولا يتحقّق من عملك تلقائيًا.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.deliver": {
+      "value": "بعد الاختبار المحلي، سجّل الدخول إلى Netlify وافتح https://app.netlify.com/drop. ارفع مباشرة المجلد الذي يحتوي على index.html. انتظر الرابط. تحقّق من ظهور المشروع؛ إذا كان الوصول العام مقصودًا ومسموحًا، فاستخدم Make public. افتح الرابط دون جلسة المالك واختبر التواصل. الرابط وحده لا يثبت الوصول العام. للتحديث، اختبر محليًا ثم ارفع المجلد ضمن Production deploys في المشروع نفسه: يغيّر ذلك نسخة الإنتاج. تحقّق من النسخة الجديدة على الرابط. عند فقدان ملفات أو ظهور صفحة فارغة، افحص المجلد المرفوع. سلّم الرابط ونتائج الاختبارات، أو المجلد المختبَر والعائق المسجّل أمام النشر.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.execute": {
+      "value": "راجع الخطة واطلب الإنشاء وافحص الملفات المعدّلة. افتح index.html من مدير الملفات في متصفح. عُدّ الخدمات الثلاث؛ انقر تواصل؛ أعد التحميل واستخدم Tab للوصول إلى الزر، ثم Enter. ضيّق النافذة: هل يمكن استخدام النص والزر؟ عند الإخفاق، أرسل الخطوات والسلوك الفعلي والمتوقع إلى الذكاء الاصطناعي؛ أعد فتح الملف الصحيح وكرّر الاختبارات نفسها. عبارة «تم الإصلاح» من الذكاء الاصطناعي لا تحلّ محل الملاحظة.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.learn": {
+      "value": "يمكن للموقع الثابت استخدام ملف index.html واحد للبنية والمظهر وتفاعل في المتصفح. لا يحتاج هذا التمرين إلى حساب للزائر أو خادم بيانات. أنشئ ponte-site. النتيجة: عنوان Ponte Musical وثلاث خدمات وزر يكشف العنوان الخيالي. لا تضمّن نماذج أو إرسالًا أو بيانات اعتماد. احتفظ بنسخة قبل التغييرات.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.objective": {
+      "value": "أنشئ صفحة ثابتة واختبرها وأصلحها وانشرها.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.prepare": {
+      "value": "الطلب الكامل: «في ponte-site، أنشئ index.html مستقلًا بعنوان Ponte Musical وخدمات الغيتار/البيانو/الغناء وزر تواصل يكشف aulas@example.com. دون مكتبات خارجية أو جمع بيانات أو إرسال. استخدم زرًا يمكن الوصول إليه بلوحة المفاتيح وتخطيطًا يناسب الشاشات الضيقة. اشرح الفتح والاختبار. صِف الخطة أولًا.» مثال محاكاة: إنشاء الملف وثلاث بطاقات وزر. إخفاق محاكاة: النقر لا يكشف العنوان. التصحيح: «عند فتح index.html والنقر على تواصل، لا يظهر شيء؛ أتوقع ظهور العنوان. أصلح ذلك فقط، واحتفظ بالخدمات، وأعد الاختبار.» النتيجة المصحّحة المتوقعة: عنوان ظاهر.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1": {
+      "value": "أي اختبار يتحقّق من الإجراء الرئيسي؟",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.a": {
+      "value": "رؤية الزر مرسومًا.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.b": {
+      "value": "النقر وملاحظة العنوان؛ ثم التكرار باستخدام لوحة المفاتيح.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.c": {
+      "value": "قراءة «الموقع جاهز» في المحادثة.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.feedback": {
+      "value": "تتحقّق الإجابة الثانية من السلوك. ظهور زر أو تأكيد الذكاء الاصطناعي لا يثبت الإجراء.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2": {
+      "value": "يفتح الرابط للمالك لكنه يطلب من زائر آخر تسجيل الدخول. ما الخطوة التالية؟",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.a": {
+      "value": "افحص الظهور والأذونات وأعد المحاولة دون جلسة المالك.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.b": {
+      "value": "أعلن أن الموقع عام.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.c": {
+      "value": "ارفع الملفات نفسها مرة أخرى دون فحص الوصول.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.feedback": {
+      "value": "تبحث الإجابة الأولى في العائق الفعلي. الوصول بعد المصادقة لا يثبت الإتاحة العامة؛ وقد لا يعالج رفع آخر مشكلة الظهور.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.title": {
+      "value": "موقعك الأول",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.check-plan": {
+      "value": "تحقّق من الخطة",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.check-result": {
+      "value": "تحقّق من النتيجة",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.deliver": {
+      "value": "سلّم العمل",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.execute": {
+      "value": "نفّذ وأصلح",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.learn": {
+      "value": "تعلّم",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.prepare": {
+      "value": "جهّز الطلب",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
     },
     "tool.claude": {
-      "value": "في تطبيق Claude لسطح المكتب، افتح تبويب Code، واختر Local، ثم حدد مجلد المشروع. تبويب Chat سياق مختلف. يتضمن التطبيق Claude Code، لكن الوصول يتطلب اشتراكًا متوافقًا. راجع الرد والتغييرات في Code.",
+      "value": "Claude Desktop: افتح Code، واختر Local ومجلد التمرين. للتخطيط فقط، اختر Plan؛ وللبناء، راجع الخطة والأذونات قبل السماح بالتغييرات. يعتمد الوصول على حسابك.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
     "tool.codex": {
-      "value": "في تطبيق سطح المكتب، اختر Codex وتحقق من مجلد المهمة أو مشروعها. أرسل الطلب في ذلك السياق وراجع الرد والملفات المتأثرة. قد تختلف أسماء عناصر الواجهة وترتيبها حسب الإصدار.",
+      "value": "Codex Desktop: اختر Codex وافتح مجلد التمرين أو مشروعه. تحقّق من السياق قبل الإرسال. اطلب التخطيط فقط عند الحاجة؛ ولا تفترض أن عناصر التحكم مطابقة لعناصر Claude.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "notice.self-report": {
-      "value": "تدريب خارج Ganesha. أنت تنفذ المهمة في أداتك. السجل هنا تقييم ذاتي؛ لا يتحقق Ganesha من التنفيذ ولا يتصل بحسابك.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "example.request": {
-      "value": "أريد صفحة لخدمة خيالية لدروس الموسيقى للمبتدئين. خطط لعنوان وثلاث خدمات وإجراء للتواصل. استخدم بيانات خيالية فقط. لا تعدّل الملفات ولا تنشر شيئًا الآن. اعرض الخطة وثلاثة معايير يمكنني اختبارها؛ يجب أن يتحقق أحدها من إجراء التواصل.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "example.failure": {
-      "value": "سيناريو محاكاة: يتطلب الطلب إجراءً للتواصل. تظهر عبارة «تواصل معي» في المعاينة، لكن النقر عليها لا يفعل شيئًا. لم تُشغّل أي أداة حقيقية هنا.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.title": {
-      "value": "ابدأ بناتج صغير",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.objective": {
-      "value": "اختيار نتيجة يمكنك التحقق منها.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.body": {
-      "value": "سنجهّز صفحة لخدمة خيالية. اطلب خطة أولًا. في الدروس اللاحقة المخطط لها، يمكن تحويل هذا الطلب إلى صفحة مختبرة ومنشورة.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.action": {
-      "value": "اختر خدمة خيالية وفكّر: من تساعده الصفحة، وعلى فعل ماذا؟",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.expected": {
-      "value": "فئة مستخدمين وإجراء رئيسي محددان.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.hint1": {
-      "value": "فكّر في شخص قد يزور الصفحة.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.hint2": {
-      "value": "مثال: مبتدئون في الموسيقى يريدون معرفة الدروس والتواصل مع مقدمها.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.criterion": {
-      "value": "يمكنك تحديد المستخدمين والإجراء الرئيسي.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.visual": {
-      "value": "ثلاث بطاقات: المستخدمون والنتيجة والإجراء الرئيسي.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.title": {
-      "value": "صغ طلبًا مفيدًا",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.objective": {
-      "value": "جمع الهدف والسياق والحدود والاختبار في طلب واحد.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.body": {
-      "value": "تحتاج الأداة إلى معرفة المطلوب وكيف ستقيّم النتيجة. استعن بالمثال وعدّل الخدمة. هذا الحقل للتدريب؛ لن يُرسل شيء إلى Claude أو Codex.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.action": {
-      "value": "اكتب طلبك مع المستخدمين المستهدفين والمحتوى المطلوب وحدّ واضح واختبار يمكن ملاحظته.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.expected": {
-      "value": "طلب محفوظ يمكن لشخص آخر التحقق منه.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.hint1": {
-      "value": "استبدل «اصنع شيئًا جميلًا» بعناصر محددة يجب أن تظهر.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.hint2": {
-      "value": "أضف: التخطيط فقط الآن؛ بيانات خيالية؛ شرح اختبار التواصل.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.criterion": {
-      "value": "يتضمن الطلب عناصر التقييم الأربعة.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.visual": {
-      "value": "طلب مقسم إلى هدف وسياق وحدود واختبار.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.title": {
-      "value": "التحقق ١: هل يمكن اختبار الطلب؟",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.objective": {
-      "value": "التعرف على معيار قابل للاختبار.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.body": {
-      "value": "قد يوجّه الانطباع العام الأسلوب البصري. لكن التحقق من النتيجة يحتاج أيضًا إلى سلوك يمكن ملاحظته.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.action": {
-      "value": "اختر المعيار الأكثر فائدة لاختبار إجراء التواصل.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.expected": {
-      "value": "اختيار مع شرح للمعيار.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.hint1": {
-      "value": "أي خيار يصف شيئًا يمكنك فعله وملاحظته؟",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.hint2": {
-      "value": "يجمع الاختبار بين فعل الزائر والنتيجة المتوقعة.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.criterion": {
-      "value": "يصف الخيار المحدد فعلًا ونتيجة يمكن ملاحظتهما.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.visual": {
-      "value": "ثلاثة خيارات لمعايير القبول.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.question": {
-      "value": "أي معيار يسمح بالتحقق من التواصل؟",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.a": {
-      "value": "يجب أن تبدو الصفحة مذهلة.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.a.feedback": {
-      "value": "هذا تفضيل، لكنه لا يحدد كيفية اختبار التواصل.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.b": {
-      "value": "عند النقر على التواصل، تعرض الصفحة العنوان الخيالي المحدد في الطلب.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.b.feedback": {
-      "value": "يمكنك النقر ومقارنة العنوان الظاهر بالطلب. الفعل والنتيجة قابلان للملاحظة.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.c": {
-      "value": "يجب أن تقول الأداة إنها انتهت.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.c.feedback": {
-      "value": "رسالة الانتهاء لا تثبت أن إجراء التواصل يعمل.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.success": {
-      "value": "اخترت سلوكًا قابلًا للتحقق. استخدم المبدأ نفسه في طلبك.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.retry": {
-      "value": "حاول مرة أخرى: ابحث عن فعل ونتيجة يمكنك ملاحظتهما.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.title": {
-      "value": "جرّب في أداتك",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.objective": {
-      "value": "إرسال الطلب في السياق الصحيح وتسجيل الرد الحقيقي.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.body": {
-      "value": "افتح الأداة المختارة واقرأ الإرشادات أدناه. أرسل طلب التخطيط، ثم اقرأ الرد وقارنه بالمعايير. إن لم يتوفر لك الوصول بعد، احفظ الطلب وعد إلى التدريب لاحقًا.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.action": {
-      "value": "أرسل الطلب خارج الدورة. سجّل أين عملت وما تلقيته، دون بيانات خاصة.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.expected": {
-      "value": "سجل للسياق والرد وأمر ما زال يحتاج إلى تحقق.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.hint1": {
-      "value": "قبل الإرسال، تحقق من المحادثة أو مجلد المشروع.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.hint2": {
-      "value": "اكتب: طلبت خطة؛ تلقيت هذه العناصر؛ لم أفتح صفحة أو أختبرها بعد.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.criterion": {
-      "value": "يميّز السجل بين ما طلبته وما تلقيته وما تحققت منه.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.visual": {
-      "value": "تسلسل: فتح الأداة، والتحقق من السياق، وإرسال الطلب، ومراجعة الرد.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.title": {
-      "value": "التحقق ٢: ما الذي ثبت؟",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.objective": {
-      "value": "معرفة متى يغيب دليل التنفيذ.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.body": {
-      "value": "تأمل سيناريو المحاكاة هذا: ترد الأداة «الصفحة جاهزة». لم تفتح بعد أي ملف أو معاينة أو عنوان عام.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.action": {
-      "value": "اختر الاستنتاج الذي تدعمه المعلومات المتاحة.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.expected": {
-      "value": "استنتاج لا يخلط بين النص والدليل.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.hint1": {
-      "value": "ما الذي لاحظته بنفسك حتى الآن؟",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.hint2": {
-      "value": "ما تقوله الأداة ما زال يحتاج إلى مقارنة بالنتيجة.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.criterion": {
-      "value": "تقر الإجابة بضرورة فتح النتيجة واختبارها.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.visual": {
-      "value": "رسالة انتهاء بجانب مساحة أدلة ما زالت فارغة.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.question": {
-      "value": "ماذا يمكنك أن تستنتج الآن؟",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.a": {
-      "value": "الموقع منشور ومتاح للجميع.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.a.feedback": {
-      "value": "لم تفتح عنوانًا عامًا. الرسالة لا تثبت النشر.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.b": {
-      "value": "اختُبرت كل المعايير بنجاح.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.b.feedback": {
-      "value": "لا يوجد سجل لاختبارات تمت ملاحظتها. انتهاء الطلب لا يثبت تحقق كل معيار.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.c": {
-      "value": "تلقيت ادعاءً؛ أحتاج إلى فتح النتيجة واختبار المعايير.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.c.feedback": {
-      "value": "صحيح: افحص النتيجة وسجّل ما لاحظته قبل القول إنها تعمل.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.success": {
-      "value": "فصلت بين الرسالة والدليل. يساعد ذلك على اكتشاف الأخطاء مبكرًا.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.retry": {
-      "value": "عد إلى السيناريو: لقد قرأت رسالة فقط. ما التحقق الذي ما زال ناقصًا؟",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.title": {
-      "value": "اطلب تصحيحًا محددًا",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.objective": {
-      "value": "تحويل مشكلة ملحوظة إلى طلب تصحيح.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.body": {
-      "value": "تدرّب باستخدام السيناريو أدناه. اشرح ما حدث وما ينبغي أن يحدث وكيفية الاختبار مجددًا. هذا تمرين محاكاة لا يغير مشروعك.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.action": {
-      "value": "اكتب طلبًا لإصلاح إجراء التواصل وتكرار الاختبار.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.expected": {
-      "value": "طلب يتضمن السلوك الملحوظ والمتوقع وخطوات إعادة المشكلة وإعادة الاختبار.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.hint1": {
-      "value": "ابدأ هكذا: النقر على «تواصل معي» لا يفعل شيئًا.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.hint2": {
-      "value": "ثم حدد العنوان الخيالي المتوقع واطلب النقر مجددًا بعد الإصلاح.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.criterion": {
-      "value": "يسمح الطلب بإعادة إنتاج المشكلة والتحقق من الحل.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.visual": {
-      "value": "أربع بطاقات: الملحوظ والمتوقع وإعادة المشكلة وإعادة الاختبار.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.title": {
-      "value": "انقل الطريقة إلى أداة أخرى",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.objective": {
-      "value": "الحفاظ على الهدف وتكييف سياق التنفيذ.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.body": {
-      "value": "يبقى الهدف والمعايير كما هما عند تبديل الأداة. قد تتغير طريقة فتح المشروع وفحص النتيجة. لا تحتاج إلى حساب ثانٍ لكتابة هذا التعديل.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.action": {
-      "value": "أعد كتابة إرشادات السياق للأداة الأخرى. احفظ طلبك وسجّل ما بقي غير مكتمل في التدريب الحقيقي.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.expected": {
-      "value": "طلب معدّل وسجل صادق لما تدرّبت عليه.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.hint1": {
-      "value": "حافظ على المستخدمين والمحتوى والحدود والاختبار.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.hint2": {
-      "value": "غيّر إرشادات المحادثة أو مجلد المشروع لتناسب الأداة الأخرى.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.criterion": {
-      "value": "يحافظ التعديل على النتيجة المتوقعة ويحدد سياق الأداة الأخرى.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.visual": {
-      "value": "طلب واحد مرتبط بسياقين: Claude وCodex.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.outcome": {
-      "value": "حددت الناتج والإجراء الرئيسي.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.context": {
-      "value": "حددت المستخدمين والمحتوى اللازم.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.limit": {
-      "value": "طلبت خطة فقط ببيانات خيالية ومن دون نشر.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.test": {
-      "value": "أدرجت اختبارًا واحدًا على الأقل بفعل ونتيجة متوقعة.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.execution.location": {
-      "value": "تحققت من سياق الأداة وأرسلت الطلب خارج الدورة.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.execution.record": {
-      "value": "سجّلت ما تلقيته وما لم أتحقق منه بعد.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.observed": {
-      "value": "وصفت ما حدث.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.expected": {
-      "value": "وصفت ما ينبغي أن يحدث.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.reproduce": {
-      "value": "شرحت كيفية إعادة إنتاج المشكلة.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.retest": {
-      "value": "طلبت تكرار الاختبار بعد الإصلاح.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.transfer.preserve": {
-      "value": "حافظت على الهدف والسياق والحدود والمعايير.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.transfer.adapt": {
-      "value": "عدّلت مكان العمل وطريقة فحص النتيجة.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     }
   }
 }

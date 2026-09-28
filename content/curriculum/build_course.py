@@ -1,137 +1,68 @@
-"""Build the provisional prototype and its locale source messages.
-
-No translation or fallback occurs here. Run from any working directory.
-"""
+"""Build the reviewed hackathon beta. No locale fallback; published data immutable."""
 import json
 from pathlib import Path
-
-ROOT = Path(__file__).resolve().parent
-VERSION = "0.1.0"
-LOCALES = ["pt-BR", "en", "es", "fr", "de", "ja", "hi", "id", "ar", "ko", "zh-CN"]
-COURSE_ID = "course.first-site"
-
-# This generator only maintains an unpublished prototype. A structurally valid
-# catalog does not certify source study or pedagogical readiness.
-existing_course = ROOT / "course.json"
-if existing_course.exists() and json.loads(existing_course.read_text()).get("status") == "published":
-    raise ValueError("Published course is immutable; create a reviewed new version instead")
-
-def block(identifier, key, kind="paragraph"):
-    return {"id": identifier, "kind": kind, "textKey": key}
-
-def variant(tool, step):
-    return {"blocks": [block(f"block.{step}.{tool}", f"tool.{tool}")], "evidenceIds": []}
-
-def step(short, kind, competencies, mode="concept"):
-    prefix = f"s{short}"
-    identifier = f"step.first-request.{short}"
-    return {
-        "id": identifier, "kind": kind, "isAssessment": kind == "check",
-        "titleKey": f"{prefix}.title", "objectiveKey": f"{prefix}.objective",
-        "actionKey": f"{prefix}.action", "expectedResultKey": f"{prefix}.expected",
-        "hintKeys": [f"{prefix}.hint1", f"{prefix}.hint2"],
-        "criteriaKeys": [f"{prefix}.criterion"], "executionMode": mode,
-        "blocks": [block(f"block.{short}.body", f"{prefix}.body")],
-        "competencyIds": competencies, "evidenceIds": [],
-        "toolVariants": {tool: variant(tool, short) for tool in ["claude", "codex"]},
-        "visual": {"kind": "text-cards", "altKey": f"{prefix}.visual"},
-    }
-
-def exercise(s, mode, rubric):
-    short = s["id"].split(".")[-1]
-    s["exercise"] = {"id": f"exercise.{short}", "mode": mode,
-        "promptKey": f"s{short}.action", "deliverableKey": f"s{short}.expected", "rubricId": rubric}
-
-def check(s, prefix, correct):
-    s["check"] = {"id": f"check.{prefix}", "kind": "single-choice",
-        "questionKey": f"{prefix}.question", "competencyIds": s["competencyIds"],
-        "successFeedbackKey": f"{prefix}.success", "retryFeedbackKey": f"{prefix}.retry", "required": True,
-        "options": [{"id": f"option.{prefix}.{x}", "labelKey": f"{prefix}.{x}", "feedbackKey": f"{prefix}.{x}.feedback"} for x in ["a", "b", "c"]],
-        "correctOptionIds": [f"option.{prefix}.{correct}"]}
-
-competencies = [
-    {"id": f"competency.{key}", "titleKey": f"competency.{key}", "outcomeKey": f"competency.{key}.outcome", "prerequisiteIds": prereqs, "evidenceIds": []}
-    for key, prereqs in [("scope", []), ("context", ["competency.scope"]), ("evidence", ["competency.context"]), ("repair", ["competency.evidence"]), ("transfer", ["competency.context"])]
-]
-steps = [
-    step("scope", "explain", ["competency.scope"]),
-    step("brief", "practice", ["competency.scope", "competency.context"], "guided-simulation"),
-    step("request-check", "check", ["competency.context"], "guided-simulation"),
-    step("run", "practice", ["competency.context", "competency.evidence"], "external-real-task"),
-    step("evidence-check", "check", ["competency.evidence"], "guided-simulation"),
-    step("repair", "practice", ["competency.repair"], "guided-simulation"),
-    step("transfer", "reflect", ["competency.transfer"], "guided-simulation"),
-]
-exercise(steps[1], "simulated", "rubric.request")
-exercise(steps[3], "local-user", "rubric.execution")
-exercise(steps[5], "simulated", "rubric.repair")
-exercise(steps[6], "simulated", "rubric.transfer")
-steps[1]["blocks"].append(block("block.brief.example", "example.request", "callout"))
-steps[3]["blocks"].append(block("block.run.example", "example.request", "callout"))
-steps[3]["blocks"].append(block("block.run.self-report", "notice.self-report", "callout"))
-steps[5]["blocks"].append(block("block.repair.scenario", "example.failure", "callout"))
-check(steps[2], "check.request", "b")
-check(steps[4], "check.evidence", "c")
-
-rubrics = []
-for name, criteria in {"request": ["outcome", "context", "limit", "test"], "execution": ["location", "record"], "repair": ["observed", "expected", "reproduce", "retest"], "transfer": ["preserve", "adapt"]}.items():
-    rubrics.append({"id": f"rubric.{name}", "criteria": [
-        {"id": f"criterion.{name}.{c}", "labelKey": f"rubric.{name}.{c}", "feedbackKey": f"rubric.{name}.{c}", "required": True}
-        for c in criteria]})
-
-course = {"schemaVersion": "1.0.0", "id": COURSE_ID, "version": VERSION, "status": "preview", "defaultLocale": "pt-BR",
-    "requiredLocales": LOCALES, "titleKey": "course.title", "summaryKey": "course.summary", "releasedLessonIds": [],
-    "competencies": competencies, "rubrics": rubrics,
-    "lessons": [{"id": "lesson.first-request", "order": 1, "status": "draft", "titleKey": "lesson.title", "summaryKey": "lesson.summary",
-        "objectiveKeys": ["competency.context.outcome", "competency.evidence.outcome"], "competencyIds": [c["id"] for c in competencies],
-        "prerequisiteLessonIds": [], "estimatedMinutes": 25, "steps": steps}]}
-
-# These bindings trace the initial, partial research batch. They do not certify
-# full source study; see PEDAGOGICAL_AUDIT.md and maturity.json.
-bindings_file = ROOT / "evidence-bindings.json"
-if bindings_file.exists():
-    bindings = json.loads(bindings_file.read_text())
-    for s in steps:
-        s["evidenceIds"] = bindings["steps"].get(s["id"], [])
-        for tool in ["claude", "codex"]:
-            s["toolVariants"][tool]["evidenceIds"] = bindings["tools"][tool]
-
-# Validate the full set before writing the prototype. Missing source text is an
-# error, never a reason to reuse another language or leave stale generated data.
-required_keys = set()
-def collect_keys(value):
-    if isinstance(value, dict):
-        for key, child in value.items():
-            if key.endswith("Key") and isinstance(child, str):
-                required_keys.add(child)
-            elif key.endswith("Keys") and isinstance(child, list):
-                required_keys.update(child)
-            else:
-                collect_keys(child)
-    elif isinstance(value, list):
-        for child in value:
-            collect_keys(child)
-collect_keys(course)
-catalogs = {}
+ROOT=Path(__file__).resolve().parent
+LOCALES=['pt-BR','en','es','fr','de','ja','hi','id','ar','ko','zh-CN']
+VERSION='0.2.0'
+SLUGS=['foundations','site','app','automation']
+COMMON=['course.title','course.summary','step.learn','step.prepare','step.check-plan','step.execute','step.check-result','step.deliver','action.learn','action.prepare','action.check','action.execute','hint.compare','hint.repair','tool.claude','tool.codex','notice.simulated','criterion.compare','criterion.record','feedback.retry','feedback.success']
+FIELDS=['title','objective','learn','prepare','execute','deliver','q1','q1.a','q1.b','q1.c','q1.feedback','q2','q2.a','q2.b','q2.c','q2.feedback']
+existing=ROOT/'course.json'
+if existing.exists() and json.loads(existing.read_text()).get('status')=='published':
+ raise ValueError('Published course is immutable; create a new version')
+# Draft lessons are available only through the explicitly authorized beta allowlist.
+course={'schemaVersion':'1.0.0','id':'course.first-site','version':VERSION,'status':'preview','defaultLocale':'pt-BR','requiredLocales':LOCALES,'titleKey':'course.title','summaryKey':'course.summary','releasedLessonIds':[],'competencies':[],'rubrics':[],'lessons':[]}
+for slug in SLUGS:
+ course['competencies'].append({'id':f'competency.{slug}','titleKey':f'{slug}.title','outcomeKey':f'{slug}.objective','prerequisiteIds':[] if slug=='foundations' else ['competency.foundations'],'evidenceIds':['ev-codex-prompting']})
+course['rubrics']=[{'id':'rubric.beta','criteria':[{'id':f'criterion.{key}','labelKey':f'criterion.{key}','feedbackKey':'hint.compare','required':True} for key in ['compare','record']]}]
+for i,slug in enumerate(SLUGS):
+ lesson={'id':f'lesson.{slug}','order':i+1,'status':'draft','titleKey':f'{slug}.title','summaryKey':f'{slug}.objective','objectiveKeys':[f'{slug}.objective'],'competencyIds':[f'competency.{slug}'],'prerequisiteLessonIds':[] if i==0 else ['lesson.foundations'],'estimatedMinutes':[25,45,50,45][i],'steps':[]}
+ for name in ['learn','prepare','check-plan','execute','check-result','deliver']:
+  sid=f'step.{slug}.{name}'
+  ischeck=name.startswith('check')
+  action='action.check' if ischeck else 'action.prepare' if name=='prepare' else 'action.learn' if name=='learn' else 'action.execute'
+  body='hint.compare' if ischeck else f'{slug}.{name}'
+  step={'id':sid,'kind':'check' if ischeck else 'explain' if name=='learn' else 'practice','titleKey':f'step.{name}','objectiveKey':f'{slug}.objective','actionKey':action,'expectedResultKey':f'{slug}.objective','hintKeys':['hint.compare','hint.repair'],'criteriaKeys':['criterion.compare','criterion.record'],'isAssessment':ischeck,'executionMode':'guided-simulation' if ischeck or name=='prepare' else 'concept' if name=='learn' else 'external-real-task','blocks':[{'id':f'{sid}.body','kind':'paragraph','textKey':body}],'competencyIds':[f'competency.{slug}'],'evidenceIds':['ev-codex-prompting'],'toolVariants':{t:{'blocks':[{'id':f'{sid}.{t}','kind':'paragraph','textKey':f'tool.{t}'}],'evidenceIds':['ev-claude-desktop-start' if t=='claude' else 'ev-codex-desktop-quickstart']} for t in ['claude','codex']}}
+  if name=='prepare': step['blocks'].insert(0,{'id':sid+'.notice','kind':'callout','textKey':'notice.simulated'})
+  if slug=='automation' and name=='prepare':
+   step['blocks'].append({'id':sid+'.csv','kind':'code','code':'id,item,amount\n1,Caderno,10.50\n2,Curso,20.00'})
+  if slug=='site' and name=='deliver':
+   step['evidenceIds']=['ev-netlify-drop-static','ev-netlify-project-visibility']
+  if ischeck:
+   q='q1' if name=='check-plan' else 'q2'
+   correct='b' if q=='q1' else ['c','a','c','c'][i]
+   step['check']={'id':f'check.{slug}.{q}.v2','kind':'single-choice','questionKey':f'{slug}.{q}','competencyIds':[f'competency.{slug}'],'successFeedbackKey':f'{slug}.{q}.feedback','retryFeedbackKey':f'{slug}.{q}.feedback','required':True,'options':[{'id':f'option.{slug}.{q}.{o}','labelKey':f'{slug}.{q}.{o}','feedbackKey':f'{slug}.{q}.feedback'} for o in ['a','b','c']],'correctOptionIds':[f'option.{slug}.{q}.{correct}']}
+  elif name!='learn':
+   step['exercise']={'id':f'exercise.{slug}.{name}.v2','mode':'simulated' if name=='prepare' else 'local-user','promptKey':f'{slug}.{name}','deliverableKey':'criterion.record','rubricId':'rubric.beta'}
+  lesson['steps'].append(step)
+ course['lessons'].append(lesson)
+required=set()
+def keys(x):
+ if isinstance(x,dict):
+  for k,v in x.items():
+   if k.endswith('Key') and isinstance(v,str): required.add(v)
+   elif k.endswith('Keys'): required.update(v)
+   else: keys(v)
+ elif isinstance(x,list):
+  for v in x: keys(v)
+keys(course)
+catalogs={}
 for locale in LOCALES:
-    source = ROOT / "messages" / f"{locale}.json"
-    if not source.exists():
-        raise ValueError(f"Missing locale source: {locale}")
-    messages = json.loads(source.read_text())
-    if set(messages) != required_keys:
-        raise ValueError(f"Locale {locale}: missing={required_keys - set(messages)}, extra={set(messages) - required_keys}")
-    if not all(isinstance(value, str) and value.strip() for value in messages.values()):
-        raise ValueError(f"Empty or invalid message in {locale}")
-    catalog = {"schemaVersion": "1.0.0", "courseId": COURSE_ID, "courseVersion": VERSION, "locale": locale,
-        "direction": "rtl" if locale == "ar" else "ltr", "humanReviewStatus": "pending",
-        "translationMethod": "ai-authored",
-        "messages": {key: {"value": value, "status": "translated", "sourceRevision": VERSION} for key, value in messages.items()}}
-    catalogs[locale] = catalog
-if not bindings_file.exists():
-    raise ValueError("The prototype requires traceable evidence bindings")
-(ROOT / "course.json").write_text(json.dumps(course, ensure_ascii=False, indent=2) + "\n")
-destination = ROOT.parent / "locales"
-destination.mkdir(exist_ok=True)
-for locale, catalog in catalogs.items():
-    (destination / f"{locale}.json").write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
-print("Built course and available locale catalogs; run coordination/validate_content.py in the integrated checkout to audit coverage.")
+ source=ROOT/'beta'/f'{locale}.json'
+ raw=json.loads(source.read_text())
+ assert len(raw['common'])==len(COMMON),(locale,'common',len(raw['common']))
+ assert len(raw['lessons'])==4
+ messages=dict(zip(COMMON,raw['common']))
+ for slug,row in zip(SLUGS,raw['lessons']):
+  assert len(row)==len(FIELDS),(locale,slug,len(row))
+  messages.update({f'{slug}.{key}':value for key,value in zip(FIELDS,row)})
+ assert all(isinstance(v,str) and v.strip() for v in messages.values()),locale
+ assert required<=messages.keys(),required-messages.keys()
+ # Keep the serialized catalog restricted to keys actually used by this course.
+ messages={k:messages[k] for k in sorted(required)}
+ catalogs[locale]={'schemaVersion':'1.0.0','courseId':course['id'],'courseVersion':VERSION,'locale':locale,'direction':'rtl' if locale=='ar' else 'ltr','humanReviewStatus':'pending','translationMethod':'ai-authored','messages':{k:{'value':v,'status':'translated','sourceRevision':VERSION} for k,v in messages.items()}}
+(ROOT/'course.json').write_text(json.dumps(course,ensure_ascii=False,indent=2)+'\n')
+for locale,catalog in catalogs.items():
+ (ROOT.parent/'locales'/f'{locale}.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n')
+ (ROOT/'messages'/f'{locale}.json').write_text(json.dumps({k:v['value'] for k,v in catalog['messages'].items()},ensure_ascii=False,indent=2)+'\n')
+print(f'Built {len(course["lessons"])} draft beta lessons, 24 steps, 8 checks, {len(required)} keys × {len(catalogs)} locales.')

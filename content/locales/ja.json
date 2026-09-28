@@ -1,571 +1,426 @@
 {
   "schemaVersion": "1.0.0",
   "courseId": "course.first-site",
-  "courseVersion": "0.1.0",
+  "courseVersion": "0.2.0",
   "locale": "ja",
   "direction": "ltr",
   "humanReviewStatus": "pending",
   "translationMethod": "ai-authored",
   "messages": {
-    "course.title": {
-      "value": "AIで作る最初のプロジェクト",
+    "action.check": {
+      "value": "例の根拠に合う答えを選んでください。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
+    },
+    "action.execute": {
+      "value": "ツールで実行し、実際の動作、期待する動作、再確認の結果を記録してください。未実行ならそう明記してください。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "action.learn": {
+      "value": "例を読み、期待される結果を確認してください。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "action.prepare": {
+      "value": "架空のデータで依頼を調整し、応答を記録してください。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.deliver": {
+      "value": "フォルダーと、開き方、テスト方法、サーバー停止方法、成功／失敗の結果を提出します。静的アプリの共有にはサイトレッスンのNetlify手順を利用でき、そのレッスンを繰り返す必要はありません。index.htmlを含むフォルダーをアップロードし、公開範囲を確認し、訪問者としてURLをテストします。データはブラウザーごとに独立しています。ローカルアドレスのデータは公開URLへ自動移行しません。最終オリジンで再読み込みをテストしてください。ログインと同期には別のプロジェクトが必要です。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.execute": {
+      "value": "アプリを配信するには、まずAIにPython 3の確認を依頼します。利用可能ならtarefas-appで `python3 -m http.server 8000`（Windowsでは `py -3 -m http.server 8000`）を実行し、`http://localhost:8000`を開いてください。サーバーを動かしているターミナルでCtrl+Cを押すと停止します。Pythonがなければ、何かをインストールする前に、利用可能なローカルプレビューや説明付きの代替方法を依頼してください。計画を確認し、フォルダー内での作成を許可します。AIにローカルサーバーの起動、アドレスの提示、停止方法と必要な依存ソフトの説明を依頼してください。そのアドレスを開きます。空欄と空白だけでテストし、タスクが作成されないことを確認します。2件追加し、1件を完了にして再読み込みし、2件と完了状態を確認します。1件削除して再読み込みします。失敗例：完了状態が消える。修正：「完了にして再読み込みすると未完了に戻ります。追加と削除を維持し、完了状態も保存、復元してください。」すべての手順を繰り返します。保存状態を比較するときは、同じオリジン／アドレスを使ってください。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.learn": {
+      "value": "アプリは人が操作すると状態が変化します。ここでの状態はタスク一覧と完了したタスクです。永続化とは再読み込み後もデータが残ることです。tarefas-appを作成し、架空のデータを使います。localStorageはこのブラウザーのこのオリジンに保存され、アカウントや端末間で同期せず、消去される場合があります。この試作品に重要な情報を保存しないでください。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.objective": {
+      "value": "操作を作り、入力を検証し、ローカル保存を確認する。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.prepare": {
+      "value": "依頼：「index.htmlに依存ライブラリー不要のタスクアプリを作ってください。ラベル付き入力欄、追加ボタン、一覧、完了／未完了の切り替え、削除を備えます。空欄や空白だけの入力には明確なメッセージを表示し、追加を拒否します。タスクと完了状態をlocalStorageに保存し、開くときに復元してください。保存済みデータが無効、または保存に失敗した場合は、異常終了せず通知します。ログインやサーバーは不要です。一定のローカルアドレスでの実行とテストを説明してください。」模擬例：「勉強」を追加すると1行表示され、完了にすると印が付き、再読み込み後も完了済みの行が残ります。削除して再読み込みすると一覧は空です。これは期待結果で、実行記録ではありません。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1": {
+      "value": "空白だけを送信した場合、どうなるべきですか？",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.a": {
+      "value": "空のタスクを作成する。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.b": {
+      "value": "案内を表示し、一覧に新しいタスクを追加しない。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.c": {
+      "value": "既存のタスクをすべて削除する。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.feedback": {
+      "value": "2番目は正常な状態を壊さず入力を検証します。空の項目の作成や一覧の消去は目的に合いません。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2": {
+      "value": "再読み込み前に見えたタスクが、再読み込み後に消えました。正しい結論は？",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.a": {
+      "value": "永続化が証明された。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.b": {
+      "value": "追加そのものが必ず失敗した。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.c": {
+      "value": "そのセッションでは追加できたが、保存と復元にはまだ修正と再テストが必要である。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.feedback": {
+      "value": "3番目は根拠の限界を示します。一度表示されたことは永続化の証明にはなりません。同じオリジンで再読み込みの前後を比較してください。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.title": {
+      "value": "タスク管理アプリ",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.deliver": {
+      "value": "架空のCSV、スクリプト、report.md、正確な実行手順と、通常、再実行、エラーのテスト結果を提出します。他の人がフォルダーを使って再現できるようにしてください。スクリプトが一度動いただけでスケジュール済みとは言わないでください。後でスケジュール設定する場合は、日時とタイムゾーン、フォルダー、コンピューターが使用可能な条件、結果とエラーの確認場所、一時停止方法を決め、実際に1回起動されたことを確認してから頼るようにします。このベータ版は検証可能な手動の成果物作成を教えます。代わりにスケジュールを実行したり、レポートを送信したりはしません。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.execute": {
+      "value": "AIに `python3 --version`（Windowsでは `py -3 --version`）の確認を依頼してください。Python 3があれば、relatorio内で `python3 report.py vendas.csv report.md`（Windowsでは `py -3 report.py vendas.csv report.md`）を依頼します。ターミナルはコマンドを扱う場所で、ツールに実行してもらい出力を表示できます。Pythonがなければ代替方法を依頼してください。同じCSVをブラウザーで読み、同じ規則を適用し、パッケージのインストールなしでreport.mdをダウンロードできるローカルHTMLです。HTMLを開いてCSVを選び、結果を保存します。エラーの場合は置き換え用ファイルをダウンロードしないでください。内容を確認し、ツール経由で選択フォルダー内の指定コマンドを実行します。環境が不足していれば自分のOS向けの手順を依頼し、実行したと主張せずエラーを記録してください。report.mdを開き、件数と合計を計算結果と比較します。再実行しても2と30.50のままか確認します。CSVをコピーし、amountを削除して実行します。エラーになり、以前のレポートが維持されるはずです。コピーを復元して繰り返します。重複やエラー時の上書きがあれば、入力、実際の結果、期待する規則を示して修正を依頼し、3種類のテストをすべて繰り返してください。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.learn": {
+      "value": "自動化とは、入力、変換、出力からなる繰り返し可能な手順です。まず手動で実行します。スケジュールは正しく動く処理を繰り返すだけです。relatorioを作成します。CSVは文章形式の表で、最初の行が列名、以降の行がレコードです。以下の例、小数点、架空のデータを使ってください。期待結果は有効な2件、合計30.50で、メッセージは送信しません。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.objective": {
+      "value": "CSVから確認可能なレポートを作り、重複なく繰り返す。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.prepare": {
+      "value": "依頼：「列id,item,amountと行1,Caderno,10.50および2,Curso,20.00を持つvendas.csvを作成してください。外部パッケージを使わずPython 3でreport.pyを作成し、入力と出力の引数を受け取るようにしてください。このCSVを読み、列と値を検証し、件数を数え、十進数の精度でamountを合計します。件数2、合計30.50のreport.mdを生成します。再実行時は重複させずレポートを置き換えます。列不足や無効な値があればエラーを示し、最後の正常なレポートを維持してください。依存ソフト、コマンド、作業フォルダーを説明し、データの送信やスケジュール設定はしないでください。」模擬出力：件数：2、合計：30.50。照合計算：10.50 + 20.00 = 30.50。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1": {
+      "value": "同じCSVを2回目に実行したときの正しい結果は？",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.a": {
+      "value": "4件、合計61.00。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.b": {
+      "value": "2件、合計30.50でレポートを置き換える。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.c": {
+      "value": "一度実行したのでファイルを作らない。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.feedback": {
+      "value": "2番目は重複なく繰り返します。以前のレポートへの加算はデータを重複させ、出力しない方法では成果物の更新を保証できません。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2": {
+      "value": "amount列を削除しました。規則に合う動作は？",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.a": {
+      "value": "ゼロを生成して正常なレポートを置き換える。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.b": {
+      "value": "値を作り上げて続行する。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.c": {
+      "value": "エラーを通知し、正常なレポートを維持して、入力を修正できるようにする。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.feedback": {
+      "value": "3番目は最後の正常な出力を壊さずに失敗を見える形にします。無言のゼロや架空の値ではエラーを隠してしまいます。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.title": {
+      "value": "役立つ自動化",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
     },
     "course.summary": {
-      "value": "明確な依頼から始めましょう。結果を観察し、テストし、改善する方法を学びます。",
+      "value": "ハッカソン向けベータ版：4つの実践レッスン。独自の模擬例を使用し、外部での実行は自己申告です。AI翻訳で、人による確認は未完了です。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "lesson.title": {
-      "value": "アイデアを検証できる依頼にする",
+    "course.title": {
+      "value": "AIで作るサイト、アプリ、自動化",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "lesson.summary": {
-      "value": "依頼を準備して自分のツールで試し、根拠を確認する方法を学びます。このレッスンでは、まだサイトを公開しません。",
+    "criterion.compare": {
+      "value": "結果を基準と比較する",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.scope": {
-      "value": "成果を絞り込む",
+    "criterion.record": {
+      "value": "実際に実行したことの記録",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.scope.outcome": {
-      "value": "対象者を決め、小さな成果物を説明できる。",
+    "foundations.deliver": {
+      "value": "依頼、受け取った計画、比較を提出します。文章で確認したことと、ページの動作としてまだ実証が必要なことを分けてください。ツールを替える場合は依頼と基準を維持し、コンテキストを再確認します。サイト、アプリ、自動化のいずれかに進めます。他のコースを先に終える必要はありません。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.context": {
-      "value": "背景情報を伝える",
+    "foundations.execute": {
+      "value": "選択したフォルダーで依頼を送信します。応答を読み、タイトル、3つのサービス、送信しない連絡先を確認してください。必要な質問には架空のデータで答えます。比較して具体的な修正を依頼し、新しい一覧を読みます。編集を提案されたら計画に戻してください。修正前後の抜粋を記録し、最初からすべての基準を満たしていれば、その理由を説明します。記録を埋めるために失敗を作り上げないでください。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.context.outcome": {
-      "value": "目的、背景情報、制約、テストを含む依頼を書ける。",
+    "foundations.learn": {
+      "value": "コンピューター、ブラウザー、インストール済みのClaude DesktopまたはCodex Desktopが必要で、開発機能を利用できるアカウントにログインしてください。まず利用条件と費用を確認してください。このレッスンは無料利用を保証しません。フォルダーにはプロジェクトのファイルを保存します。コンテキストとは、AIが作業する場所や参照する情報です。ファイル管理アプリでganesha-praticaフォルダーを作成し、ツールで選択してください。利用権限のあるアカウントを使います。ログインやプランの制限が表示されたら、利用条件を解決するか模擬演習を使い、それを実行済みとは数えないでください。計画は予定する作業の説明です。動くページにはファイルの作成とテストが必要です。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.evidence": {
-      "value": "根拠を確認する",
+    "foundations.objective": {
+      "value": "コンテキストを設定し、計画を依頼し、応答を修正する。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.evidence.outcome": {
-      "value": "ツールの返答と、自分で観察した結果を区別できる。",
+    "foundations.prepare": {
+      "value": "依頼：「初心者向けのPonte Musicalページを計画してください。タイトル、ギター、ピアノ、歌の案内を含め、連絡先ではメッセージを送信せずaulas@example.comを表示します。一覧と今後のテストを返してください。ファイルの編集や公開はしないでください。」模擬応答：正しいタイトル、ギターとピアノ、メッセージを送るフォーム。比較：歌が抜け、フォームは依頼の範囲を超えています。修正：「タイトルは維持し、歌を追加し、フォームをアドレス表示に置き換えて、テストも更新してください。」模擬修正版：タイトル、3つのサービス、アドレスを表示する連絡先、今後行うクリックテスト。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.repair": {
-      "value": "修正を依頼する",
+    "foundations.q1": {
+      "value": "計画では歌が抜け、電話番号を収集します。どの修正が依頼を満たしますか？",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.repair.outcome": {
-      "value": "問題と、修正を確認する方法を説明できる。",
+    "foundations.q1.a": {
+      "value": "電話番号の入力欄を削除し、サービスは2つのままにする。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.transfer": {
-      "value": "方法を応用する",
+    "foundations.q1.b": {
+      "value": "タイトルを維持し、歌を追加し、収集も送信もせずアドレスを表示する。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.transfer.outcome": {
-      "value": "同じ依頼を別のツールに合わせて調整できる。",
+    "foundations.q1.c": {
+      "value": "歌を追加し、電話番号の送信をテストする。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q1.feedback": {
+      "value": "2番目は両方の逸脱を修正します。1番目は歌が抜けたままで、3番目は依頼していない操作が残ります。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2": {
+      "value": "修正後の計画にはすべての項目があります。それで何が確認できますか？",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.a": {
+      "value": "ブラウザーで連絡先がすでに動作する。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.b": {
+      "value": "ページはすでに公開されている。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.c": {
+      "value": "文章は比較した基準を満たしているが、動作にはまだ実行が必要である。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.feedback": {
+      "value": "3番目は計画と動作を区別しています。文章と予定したテストだけでは、クリックや公開の成功は証明できません。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.title": {
+      "value": "基礎：依頼から根拠へ",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "hint.compare": {
+      "value": "AIのメッセージだけでなく、基準と結果を比較してください。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "hint.repair": {
+      "value": "エラーがあれば、再現手順、実際と期待する動作を説明し、具体的な修正を依頼して同じテストを繰り返してください。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "notice.simulated": {
+      "value": "Ganesha独自の演習です。記載した結果は模擬例で、実行記録ではありません。Ganeshaがツールを操作したり、成果を自動検証したりすることはありません。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.deliver": {
+      "value": "ローカルでのテスト後、Netlifyにログインしhttps://app.netlify.com/dropを開きます。index.htmlが直下にあるフォルダーをアップロードしてください。URLが発行されるまで待ちます。プロジェクトの公開範囲を確認し、一般公開が目的で許可されている場合はMake publicを使います。所有者のログイン状態を使わずURLを開き、連絡先をテストしてください。URLがあるだけでは一般公開の証明にはなりません。更新時はローカルでテストし、同じプロジェクトのProduction deploysでフォルダーをアップロードします。これは本番サイトを変更します。URLで新版を確認してください。ファイル不足や空白ページならアップロードしたフォルダーを確認します。URLとテスト結果、またはテスト済みフォルダーと記録した公開上の問題を提出してください。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.execute": {
+      "value": "計画を確認して作成を依頼し、変更されたファイルを確認します。ファイル管理アプリからindex.htmlをブラウザーで開いてください。サービスが3つあることを確認し、連絡先をクリックします。再読み込みしてTabでボタンに移動し、Enterを押します。ウィンドウを狭めても文章やボタンを使えますか？失敗したら、手順、実際の動作、期待する動作をAIに送り、正しいファイルを開き直して同じテストを繰り返します。AIの「修正済み」は観察の代わりになりません。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.learn": {
+      "value": "静的サイトはindex.htmlひとつで構造、見た目、ブラウザーでの操作を実装できます。この演習では訪問者のアカウントやデータサーバーは不要です。ponte-siteを作成します。目標はPonte Musicalのタイトル、3つのサービス、架空のアドレスを表示するボタンです。フォーム、送信、認証情報は含めません。変更前にはコピーを保存してください。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.objective": {
+      "value": "静的ページを作成、テスト、修正し、公開する。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.prepare": {
+      "value": "依頼全文：「ponte-siteに、Ponte Musicalのタイトル、ギター／ピアノ／歌のサービス、aulas@example.comを表示する連絡先ボタンを備えた単体で動くindex.htmlを作成してください。外部ライブラリー、データ収集、送信は使いません。キーボード操作できるボタンと狭い画面に収まるレイアウトにしてください。開き方とテスト方法を説明し、最初に計画を示してください。」模擬例：ファイル、3枚のカード、ボタンが作成されます。模擬失敗：クリックしてもアドレスが表示されません。修正：「index.htmlを開いて連絡先をクリックしても何も表示されません。アドレスが表示されるはずです。サービスは維持してこの部分だけを修正し、テストを繰り返してください。」修正後の期待結果：アドレスが表示される。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1": {
+      "value": "主要な操作を確認するテストはどれですか？",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.a": {
+      "value": "ボタンが描画されていることを見る。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.b": {
+      "value": "クリックしてアドレスを確認し、キーボードでも繰り返す。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.c": {
+      "value": "チャットで「サイト完成」と読む。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.feedback": {
+      "value": "2番目は動作を確認します。ボタンが見えることやAIの主張だけでは、操作の成功は実証できません。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2": {
+      "value": "所有者はURLを開けますが、別の訪問者にはログインを求めます。次に何をしますか？",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.a": {
+      "value": "公開範囲と権限を確認し、所有者のログイン状態を使わず再試行する。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.b": {
+      "value": "サイトは一般公開済みだと宣言する。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.c": {
+      "value": "アクセスを確認せず、同じファイルを再アップロードする。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.feedback": {
+      "value": "1番目は実際の障害を調べます。ログイン済みでのアクセスは一般公開の証明にはならず、再アップロードで公開範囲が直るとは限りません。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.title": {
+      "value": "初めてのサイト",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.check-plan": {
+      "value": "計画を確認する",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.check-result": {
+      "value": "結果を確認する",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.deliver": {
+      "value": "成果物を渡す",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.execute": {
+      "value": "実行して修正する",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.learn": {
+      "value": "学ぶ",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.prepare": {
+      "value": "依頼を準備する",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
     },
     "tool.claude": {
-      "value": "ClaudeのデスクトップアプリでCodeタブを開き、Localを選んでプロジェクトのフォルダーを指定します。Chatタブは別の作業環境です。アプリにはClaude Codeが含まれますが、利用には対応するサブスクリプションが必要です。Codeで返答と変更内容を確認してください。",
+      "value": "Claude Desktop：Codeを開き、Localと演習用フォルダーを選びます。計画だけならPlanを選択します。作成するときは、変更を許可する前に計画と権限を確認してください。利用可否はアカウントによって異なります。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
     "tool.codex": {
-      "value": "デスクトップアプリでCodexを選び、タスクのフォルダーまたはプロジェクトを確認します。その環境で依頼を送り、返答と変更されたファイルを確認してください。画面の名称や配置はバージョンにより異なる場合があります。",
+      "value": "Codex Desktop：Codexを選び、演習用フォルダー／プロジェクトを開きます。送信前にコンテキストを確認してください。必要に応じて計画だけを依頼し、Claudeと同じ操作画面だとは考えないでください。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "notice.self-report": {
-      "value": "Ganeshaの外で行う実習です。自分のツールで実行してください。ここでの記録は自己評価です。Ganeshaは実行を確認せず、あなたのアカウントにも接続しません。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "example.request": {
-      "value": "初心者向けの架空の音楽教室のページを作りたいです。見出し、3つのサービス、連絡用の操作を計画してください。架空のデータだけを使ってください。今はファイルを変更したり、公開したりしないでください。計画と、私がテストできる3つの基準を挙げてください。そのうち1つは連絡用の操作を確認する基準にしてください。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "example.failure": {
-      "value": "模擬シナリオ：依頼には連絡用の操作が必要です。プレビューには「お問い合わせ」と表示されていますが、クリックしても何も起きません。ここでは実際のツールは実行されていません。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.title": {
-      "value": "小さな成果物から始める",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.objective": {
-      "value": "自分で確認できる成果を選ぶ。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.body": {
-      "value": "架空のサービスを紹介するページを準備します。まずは計画を依頼しましょう。今後予定されているレッスンでは、この依頼をもとにページを作り、テストして公開する流れを学びます。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.action": {
-      "value": "架空のサービスを選び、「このページは、誰が何をするのを助けるか」を考えてください。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.expected": {
-      "value": "対象者と主な操作が決まっている。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.hint1": {
-      "value": "ページを見る人を1人思い浮かべましょう。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.hint2": {
-      "value": "例：音楽初心者がレッスンの内容を知り、問い合わせる。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.criterion": {
-      "value": "対象者と主な操作を説明できる。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.visual": {
-      "value": "対象者、成果、主な操作の3枚のカード。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.title": {
-      "value": "役に立つ依頼を組み立てる",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.objective": {
-      "value": "目的、背景情報、制約、テストを1つの依頼に含める。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.body": {
-      "value": "ツールには、何を作るのか、どのように評価するのかを伝える必要があります。例を参考にサービスを変更してください。この入力欄は練習用で、ClaudeやCodexには送信されません。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.action": {
-      "value": "対象者、必要な内容、制約、観察できるテストを含む依頼を書いてください。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.expected": {
-      "value": "他の人も確認できる依頼が保存されている。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.hint1": {
-      "value": "「きれいにして」を、表示する具体的な要素に置き換えましょう。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.hint2": {
-      "value": "今は計画だけ、架空のデータを使う、連絡機能のテスト方法を説明する、という条件を入れましょう。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.criterion": {
-      "value": "依頼に評価基準の4項目が含まれている。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.visual": {
-      "value": "目的、背景情報、制約、テストに分けた依頼。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.title": {
-      "value": "確認1：その依頼は検証できる？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.objective": {
-      "value": "テストできる基準を見分ける。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.body": {
-      "value": "全体的な印象はデザインの方向を決める助けになります。結果を確認するには、観察できる動作も必要です。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.action": {
-      "value": "連絡用の操作をテストするのに最も役立つ基準を選んでください。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.expected": {
-      "value": "選んだ基準と、その理由が確認できる。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.hint1": {
-      "value": "実際に操作して観察できるのはどの選択肢ですか？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.hint2": {
-      "value": "テストは、訪問者の操作と期待する結果を組み合わせます。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.criterion": {
-      "value": "選んだ答えが、観察できる操作と結果を示している。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.visual": {
-      "value": "受け入れ基準の3つの選択肢。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.question": {
-      "value": "連絡機能を確認できる基準はどれですか？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.a": {
-      "value": "ページの見た目がすばらしいこと。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.a.feedback": {
-      "value": "好みは伝わりますが、連絡機能をどうテストするかは決まっていません。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.b": {
-      "value": "連絡用の操作をクリックすると、依頼で指定した架空のアドレスが表示されること。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.b.feedback": {
-      "value": "クリックして、表示されたアドレスを依頼と比較できます。操作も結果も観察できます。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.c": {
-      "value": "ツールが完了したと言うこと。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.c.feedback": {
-      "value": "完了メッセージだけでは、連絡用の操作が動くかは分かりません。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.success": {
-      "value": "検証できる動作を選べました。自分の依頼にも同じ考え方を使いましょう。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.retry": {
-      "value": "もう一度考えましょう。観察できる操作と結果を探してください。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.title": {
-      "value": "自分のツールで試す",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.objective": {
-      "value": "正しい作業環境で依頼を送り、実際の返答を記録する。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.body": {
-      "value": "選んだツールを開き、下の案内を確認してください。計画の依頼を送り、返答を読んで基準と比較しましょう。まだ利用できない場合は、依頼を保存して後で実習に戻ってください。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.action": {
-      "value": "コースの外で依頼を送ってください。個人情報を含めずに、どこで作業し、何を受け取ったかを記録してください。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.expected": {
-      "value": "作業環境、返答、まだ確認が必要な点が記録されている。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.hint1": {
-      "value": "送信前に、会話またはプロジェクトのフォルダーを確認しましょう。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.hint2": {
-      "value": "「計画を依頼した。この項目を受け取った。まだページは開いておらず、テストもしていない」と記録しましょう。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.criterion": {
-      "value": "依頼したこと、受け取ったこと、確認したことが区別されている。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.visual": {
-      "value": "ツールを開く、環境を確認する、依頼を送る、返答を確認する流れ。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.title": {
-      "value": "確認2：何が確かめられた？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.objective": {
-      "value": "実行の根拠が足りない場面を見分ける。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.body": {
-      "value": "模擬シナリオです。ツールが「ページができました」と返答しました。あなたはまだファイル、プレビュー、公開URLを開いていません。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.action": {
-      "value": "今ある情報から言える結論を選んでください。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.expected": {
-      "value": "文章と実際の証拠を混同しない結論。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.hint1": {
-      "value": "これまでに自分で観察したのは何ですか？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.hint2": {
-      "value": "ツールの主張は、実際の結果と照らし合わせる必要があります。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.criterion": {
-      "value": "結果を開いてテストする必要があると認識している。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.visual": {
-      "value": "完了メッセージと、まだ空の証拠欄。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.question": {
-      "value": "この時点で何が言えますか？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.a": {
-      "value": "サイトは公開され、誰でもアクセスできる。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.a.feedback": {
-      "value": "公開URLを開いていません。メッセージだけでは公開の証明になりません。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.b": {
-      "value": "すべての基準をテストし、合格した。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.b.feedback": {
-      "value": "観察したテストの記録がありません。依頼の完了は、各基準の達成を証明しません。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.c": {
-      "value": "主張を受け取った段階なので、結果を開いて基準をテストする必要がある。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.c.feedback": {
-      "value": "そのとおりです。動くと断言する前に結果を確認し、観察したことを記録しましょう。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.success": {
-      "value": "メッセージと根拠を区別できました。早い段階で誤りを見つける助けになります。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.retry": {
-      "value": "シナリオを振り返りましょう。読んだのはメッセージだけです。まだ何の確認が必要ですか？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.title": {
-      "value": "具体的な修正を依頼する",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.objective": {
-      "value": "観察した問題を修正依頼に変える。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.body": {
-      "value": "下のシナリオで練習しましょう。何が起きたか、何が起きるべきか、どう再テストするかを説明してください。これは模擬演習で、プロジェクトは変更されません。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.action": {
-      "value": "連絡用の操作を修正し、テストを繰り返すための依頼を書いてください。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.expected": {
-      "value": "実際の動作、期待する動作、再現方法、再テストを含む依頼。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.hint1": {
-      "value": "「『お問い合わせ』をクリックしても何も起きません」から始めましょう。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.hint2": {
-      "value": "表示すべき架空のアドレスを指定し、修正後にもう一度クリックするよう依頼しましょう。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.criterion": {
-      "value": "問題を再現し、解決を確認できる依頼になっている。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.visual": {
-      "value": "実際の動作、期待する動作、再現、再テストの4枚のカード。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.title": {
-      "value": "別のツールでも方法を使う",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.objective": {
-      "value": "目的を保ち、実行する環境に合わせる。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.body": {
-      "value": "ツールを変えても、目的と基準は同じです。プロジェクトの開き方や結果の確認方法は変わる場合があります。この書き換えに、もう1つのアカウントは必要ありません。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.action": {
-      "value": "別のツールに合わせて作業環境の説明を書き換えてください。依頼を保存し、実際の実習で未完了の点を記録しましょう。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.expected": {
-      "value": "調整した依頼と、実習についての正確な記録。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.hint1": {
-      "value": "対象者、内容、制約、テストは保ちましょう。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.hint2": {
-      "value": "移行先のツールに合わせ、会話やプロジェクトのフォルダーに関する案内を変えましょう。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.criterion": {
-      "value": "期待する成果を保ち、別のツールの作業環境を説明している。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.visual": {
-      "value": "同じ依頼がClaudeとCodexの2つの環境につながっている図。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.outcome": {
-      "value": "成果物と主な操作を決めた。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.context": {
-      "value": "対象者と必要な内容を伝えた。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.limit": {
-      "value": "架空のデータで計画だけを作り、公開しないよう依頼した。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.test": {
-      "value": "操作と期待する結果を含むテストを1つ以上入れた。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.execution.location": {
-      "value": "ツールの作業環境を確認し、コースの外で依頼を送った。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.execution.record": {
-      "value": "受け取った内容と、まだ確認していない点を記録した。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.observed": {
-      "value": "何が起きたかを説明した。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.expected": {
-      "value": "何が起きるべきかを説明した。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.reproduce": {
-      "value": "問題の再現方法を説明した。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.retest": {
-      "value": "修正後に再テストするよう依頼した。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.transfer.preserve": {
-      "value": "目的、背景情報、制約、基準を保った。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.transfer.adapt": {
-      "value": "作業する場所と結果の確認方法を調整した。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     }
   }
 }

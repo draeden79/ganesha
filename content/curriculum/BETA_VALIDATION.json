@@ -1,0 +1,120 @@
+{
+  "courseVersion": "0.2.0",
+  "betaStructurePassed": true,
+  "canonicalReleasePassed": false,
+  "expectedReleaseError": "course: no released lesson IDs to audit",
+  "generatorRepeatable": true,
+  "lessons": 4,
+  "steps": 24,
+  "checks": 8,
+  "practices": 12,
+  "requiredLocales": [
+    "pt-BR",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "hi",
+    "id",
+    "ar",
+    "ko",
+    "zh-CN"
+  ],
+  "coverage": {
+    "pt-BR": {
+      "required": 83,
+      "present": 83,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "en": {
+      "required": 83,
+      "present": 83,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "es": {
+      "required": 83,
+      "present": 83,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "fr": {
+      "required": 83,
+      "present": 83,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "de": {
+      "required": 83,
+      "present": 83,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "ja": {
+      "required": 83,
+      "present": 83,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "hi": {
+      "required": 83,
+      "present": 83,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "id": {
+      "required": 83,
+      "present": 83,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "ar": {
+      "required": 83,
+      "present": 83,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "ko": {
+      "required": 83,
+      "present": 83,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "zh-CN": {
+      "required": 83,
+      "present": 83,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    }
+  },
+  "humanLanguageReview": "pending",
+  "externalExecutionValidated": false,
+  "learningEfficacyValidated": false,
+  "hashes": {
+    "content/curriculum/course.json": "28df96543e64a6770f3d85609b08594a977e477cf1ae5a21704b8d2f9214ee57",
+    "content/locales/ja.json": "515eeafa5df563d2d8b80a94a371c3f9ce59f1e6929009420f1670102e8d02ca",
+    "content/locales/de.json": "a619aec656721d49f6a96b527a4ef182ffd47409854ad62aaec147aa13409e84",
+    "content/locales/zh-CN.json": "cba9eb9e7851df85e8ac55a46614a63755b414f0f90ae7fbd1c4d54d68ea4b8a",
+    "content/locales/en.json": "5240939ba075393a7db46035c567f688d436c4885d20ce0e056b45d214dfb041",
+    "content/locales/fr.json": "8219c1fa94d814336705b32b5584ca4144d8b6277ef5e991f1d3ef7397255f61",
+    "content/locales/hi.json": "1d234fe79b88bebca5fc98ee8bde9ec56c118c12e6dbba4bf27acee1f6dc15c2",
+    "content/locales/pt-BR.json": "9baac831f6474f5f49a3e22b37d23408dedaade84691a69b72a00af1cdbd9d0f",
+    "content/locales/ko.json": "7d7b04250a5ee46602dd72fdf8a7d19335240b231a2dcad9af818dcb85bb6590",
+    "content/locales/id.json": "0e78fcf64da38978aba5b95ab74889b90e0318ac46397430b41919112d92e0d2",
+    "content/locales/es.json": "603b232ec7a331ebcc5e0ebe707fc12193d1948e15a18e5b1c03263695f47c84",
+    "content/locales/ar.json": "e9ee7eeb194aa0a693c18e6ea5a189cf22aa79f1178cfe360adf97d689ca24eb"
+  }
+}

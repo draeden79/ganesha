@@ -1,571 +1,426 @@
 {
   "schemaVersion": "1.0.0",
   "courseId": "course.first-site",
-  "courseVersion": "0.1.0",
+  "courseVersion": "0.2.0",
   "locale": "zh-CN",
   "direction": "ltr",
   "humanReviewStatus": "pending",
   "translationMethod": "ai-authored",
   "messages": {
-    "course.title": {
-      "value": "用 AI 完成你的第一个项目",
+    "action.check": {
+      "value": "选择有示例依据的答案。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
+    },
+    "action.execute": {
+      "value": "在工具中运行，记录观察到的行为、预期行为和复测结果。未运行时请如实说明。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "action.learn": {
+      "value": "阅读示例，找出预期结果。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "action.prepare": {
+      "value": "使用虚构数据调整请求，并记录回复。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.deliver": {
+      "value": "交付文件夹、打开／测试／停止服务器的说明，以及通过／失败结果。要分享静态应用，可使用网站课的 Netlify 流程，无需重做该课：上传包含 index.html 的文件夹，检查可见性，并以访客身份测试 URL。每个浏览器拥有独立数据；本地地址的数据不会自动迁移到发布后的 URL。在最终来源下测试刷新。登录和同步需要另一个项目。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.execute": {
+      "value": "为应用提供本地访问时，先让 AI 检查 Python 3；若可用，在 tarefas-app 中运行 `python3 -m http.server 8000`（Windows：`py -3 -m http.server 8000`），并打开 `http://localhost:8000`。在运行服务器的终端中按 Ctrl+C 停止。若缺少 Python，在安装任何软件前，要求提供可用的本地预览或解释清楚的替代方案。审查计划并允许在文件夹内构建。让 AI 启动本地服务器，提供地址，并解释停止方法和所需依赖。打开该地址。测试空输入和空白：不应创建任务。添加两项任务，将一项标为完成，刷新后检查两项任务及完成状态。删除一项并刷新。失败示例：完成状态消失。修正：‘完成后刷新，任务变回未完成。保留添加／删除功能，同时保存并恢复完成状态。’重复完整流程。比较持久化时使用相同来源／地址。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.learn": {
+      "value": "应用会随着人的操作改变状态。此处的状态指任务列表和已完成任务。持久化意味着刷新后数据仍然保留。创建 tarefas-app。使用虚构数据。localStorage 将数据保存在当前浏览器的当前来源下，不会跨账户／设备同步，也可能被清除。不要用此原型保存重要信息。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.objective": {
+      "value": "创建交互、验证输入并检查本地持久化。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.prepare": {
+      "value": "请求：‘在 index.html 中创建无需外部依赖的待办应用：带标签的输入框、添加按钮、列表、完成／取消完成以及删除。拒绝空输入或仅含空白的输入，并显示清晰提示。将任务和完成状态保存到 localStorage，打开时恢复。如果已存数据无效或保存失败，应提示而不崩溃。不需要登录或服务器。说明如何在固定的本地地址运行和测试。’模拟示例：添加‘学习’后出现一行；标记完成后出现完成状态；刷新后仍保留该已完成行；删除并刷新后列表为空。这些是预期结果，不是执行记录。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1": {
+      "value": "只提交空白时应发生什么？",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.a": {
+      "value": "创建空任务。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.b": {
+      "value": "显示指导信息，且不向列表添加新任务。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.c": {
+      "value": "删除所有已有任务。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.feedback": {
+      "value": "第二项在不破坏有效状态的情况下验证输入。创建空条目或清空列表都不符合目标。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2": {
+      "value": "刷新前能看到任务，刷新后却消失。正确结论是什么？",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.a": {
+      "value": "持久化已获证明。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.b": {
+      "value": "添加功能必然失败。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.c": {
+      "value": "本次会话中添加成功；保存／恢复仍需修复并复测。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.feedback": {
+      "value": "第三项说明证据的边界。看到一次条目不能证明持久化；应在同一来源下比较刷新前后。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.title": {
+      "value": "待办事项应用",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.deliver": {
+      "value": "交付虚构 CSV、脚本、report.md 和准确的运行说明，附上正常／重复／错误测试结果。其他人应能利用该文件夹复现。脚本只运行一次并不意味着已经定时调度。日后设置调度时，明确时间／时区、文件夹、电脑可用条件、结果／错误查看位置以及暂停方法；先观察一次触发运行，再依赖它。本测试版教授可验证的手动交付，不会代你运行调度或发送报告。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.execute": {
+      "value": "让 AI 检查 `python3 --version`（Windows：`py -3 --version`）。Python 3 可用时，请求在 relatorio 中运行 `python3 report.py vendas.csv report.md`（Windows：`py -3 report.py vendas.csv report.md`）。终端是命令区域；工具可以代你执行命令并显示输出。若没有 Python，请求替代方案：本地 HTML，在浏览器中接收同一 CSV，应用相同规则，并提供 report.md 下载，无需安装包。打开 HTML，选择 CSV 并保存结果；出错时不要下载替代报告。检查所给命令，通过工具在选定文件夹内运行。如果缺少环境，请求适合你系统的说明；记录错误，不要声称已运行。打开 report.md，将数量／合计与计算结果比较。再次运行：仍为 2 和 30.50。复制 CSV，删除 amount 并运行：应报错且保留之前的报告。恢复副本并重试。如果出现重复或出错时覆盖，提供输入、实际结果和预期规则；要求修正，并重复全部三项测试。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.learn": {
+      "value": "自动化是可重复的流程：输入、转换和输出。先手动运行；定时调度只是重复已经正确的流程。创建 relatorio。CSV 是文本表格：首行是列名，后续行是记录。使用下方示例、小数点和虚构数据。预期结果是两条有效记录、合计 30.50，不发送消息。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.objective": {
+      "value": "将 CSV 转为可验证的报告，并无重复地再次运行。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.prepare": {
+      "value": "请求：‘创建 vendas.csv，列为 id,item,amount，数据行为 1,Caderno,10.50 和 2,Curso,20.00。用 Python 3 创建无需外部包的 report.py，接收输入和输出参数，读取此 CSV，验证列和值，统计记录数，并以十进制精度汇总 amount。生成 report.md，数量为 2，合计为 30.50。重复运行必须替换报告而不产生重复。若缺列或数值无效，显示错误并保留最后一份有效报告。说明依赖、命令和工作文件夹；不要发送数据或设置调度。’模拟输出：记录数：2；合计：30.50。核算：10.50 + 20.00 = 30.50。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1": {
+      "value": "第二次运行同一 CSV 时，什么结果正确？",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.a": {
+      "value": "4 条记录，合计 61.00。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.b": {
+      "value": "2 条记录，合计 30.50，并替换报告。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.c": {
+      "value": "因为已经运行过一次，所以不生成文件。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.feedback": {
+      "value": "第二项无重复地再次运行。叠加到旧报告会导致数据重复；不生成输出也不能保证交付物已更新。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2": {
+      "value": "amount 列被删除。哪种行为符合规则？",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.a": {
+      "value": "生成零并替换有效报告。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.b": {
+      "value": "编造数值以继续。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.c": {
+      "value": "报告错误，保留有效报告，并允许修正输入。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.feedback": {
+      "value": "第三项明确暴露失败，同时保留最后一份有效输出。无提示的零值和编造数值会掩盖错误。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.title": {
+      "value": "有用的自动化",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
     },
     "course.summary": {
-      "value": "从清晰的请求开始，学会观察、测试和改进结果。",
+      "value": "黑客松测试版：四节实践课。采用原创模拟示例；外部执行情况由学习者自行报告。AI 翻译，尚待人工审校。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "lesson.title": {
-      "value": "把想法变成可验证的请求",
+    "course.title": {
+      "value": "用 AI 创建网站、应用和自动化",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "lesson.summary": {
-      "value": "准备请求，在自己的工具中尝试，并学会检查证据。本课还不会发布网站。",
+    "criterion.compare": {
+      "value": "结果已与标准比较",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.scope": {
-      "value": "明确结果范围",
+    "criterion.record": {
+      "value": "实际运行内容的记录",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.scope.outcome": {
-      "value": "为明确的目标用户描述一个小型交付成果。",
+    "foundations.deliver": {
+      "value": "交付请求、收到的计划和比较记录。区分已从文字中检查的内容，与页面仍需通过运行证明的内容。切换工具时保留请求和标准，但重新确认上下文。接着可选择网站、应用或自动化路线；任何路线都不要求先完成其他路线。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.context": {
-      "value": "提供背景信息",
+    "foundations.execute": {
+      "value": "在选定文件夹中发送请求。阅读回复：有标题吗？有三项服务吗？联系功能是否不发送消息？用虚构数据回答相关问题。对照后提出具体修正。阅读新列表。如果它提议编辑，要求回到规划。记录前后片段；如果已满足全部标准，说明原因。不要为了填写记录而编造失败。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.context.outcome": {
-      "value": "写出包含目标、背景、限制和测试的请求。",
+    "foundations.learn": {
+      "value": "你需要电脑、浏览器，以及已安装的 Claude Desktop 或 Codex Desktop，并登录拥有开发功能使用权限的账户。先检查使用条件和费用；本课不承诺免费使用。文件夹用于存放项目文件；上下文是 AI 工作的位置和所用信息。在文件管理器中创建 ganesha-pratica 文件夹，并在工具中选择它。请使用有权限的账户。如果出现登录或套餐限制，先解决访问问题或使用模拟练习；不要将此算作已执行。计划描述打算开展的工作。能够运行的页面需要文件和测试。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.evidence": {
-      "value": "检查证据",
+    "foundations.objective": {
+      "value": "设置上下文，请求计划，并修正回复。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.evidence.outcome": {
-      "value": "区分工具的回复和实际观察到的结果。",
+    "foundations.prepare": {
+      "value": "请求：‘为初学者规划一个 Ponte Musical 页面：标题、吉他、钢琴和声乐；联系功能显示 aulas@example.com，但不发送消息。返回列表及今后要做的测试。不要编辑文件或发布。’模拟回复：标题正确，有吉他和钢琴，但使用发送消息的表单。比较：缺少声乐，表单超出范围。修正：‘保留标题，加入声乐，将表单改为显示地址，并更新测试。’模拟修订计划：标题、三项服务、显示地址的联系功能，以及未来的点击测试。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.repair": {
-      "value": "提出修改请求",
+    "foundations.q1": {
+      "value": "计划遗漏声乐，还收集电话号码。哪项修正符合请求？",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.repair.outcome": {
-      "value": "说明问题以及如何验证修复。",
+    "foundations.q1.a": {
+      "value": "删除电话字段，只保留两项服务。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.transfer": {
-      "value": "迁移方法",
+    "foundations.q1.b": {
+      "value": "保留标题，加入声乐，显示地址且不收集或发送信息。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.transfer.outcome": {
-      "value": "将同一请求调整为适合另一款工具的版本。",
+    "foundations.q1.c": {
+      "value": "加入声乐，并测试电话号码发送。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q1.feedback": {
+      "value": "第二项修复两处偏差。第一项仍缺少声乐；第三项保留了未经要求的操作。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2": {
+      "value": "修订后的计划列出所有项目。这能说明什么？",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.a": {
+      "value": "联系功能已在浏览器中正常运行。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.b": {
+      "value": "页面已经发布。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.c": {
+      "value": "文字满足所比较的标准；实际行为仍需执行验证。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.feedback": {
+      "value": "第三项区分规划与运行。文字和拟议的测试不能证明点击或发布成功。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.title": {
+      "value": "基础：从请求到证据",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "hint.compare": {
+      "value": "将结果与标准比较，不要只看 AI 的消息。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "hint.repair": {
+      "value": "出错时，说明复现步骤、实际行为和预期行为，要求具体修改，然后重复测试。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "notice.simulated": {
+      "value": "原创练习。所述结果是模拟示例，并非执行记录。Ganesha 不会操作你的工具，也不会自动验证你的成果。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.deliver": {
+      "value": "完成本地测试后，登录 Netlify 并打开 https://app.netlify.com/drop。上传直接包含 index.html 的文件夹。等待生成 URL。检查项目可见性；若目标是公开访问且已获允许，使用 Make public。不要使用所有者登录会话，打开 URL 并测试联系功能。仅有 URL 不能证明已公开。更新时先本地测试，再在同一项目的 Production deploys 中上传文件夹：这会修改生产网站。通过 URL 检查新版本。遇到缺失文件或空白页面时，检查上传的文件夹。交付 URL 和测试结果，或交付测试过的文件夹并记录发布障碍。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.execute": {
+      "value": "审查计划，请求创建，并检查变更文件。从文件管理器在浏览器中打开 index.html。数一下三项服务；点击联系；刷新后用 Tab 定位按钮，再按 Enter。缩窄窗口：文字和按钮是否仍可使用？如果失败，将步骤、实际行为和预期行为发给 AI；重新打开正确文件，并重复相同测试。AI 说‘已修好’不能代替观察。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.learn": {
+      "value": "静态网站可以只用一个 index.html 实现结构、外观和浏览器交互。本练习不需要访客账户或数据服务器。创建 ponte-site。目标成果：Ponte Musical 标题、三项服务，以及显示虚构地址的按钮。不包含表单、发送功能或凭据。修改前保留副本。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.objective": {
+      "value": "构建、测试、修正并发布静态页面。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.prepare": {
+      "value": "完整请求：‘在 ponte-site 中创建独立运行的 index.html，包含 Ponte Musical 标题、吉他／钢琴／声乐服务，以及显示 aulas@example.com 的联系按钮。不使用外部库，不收集或发送数据。按钮需支持键盘操作，布局应适应窄屏。说明打开和测试方法。先描述计划。’模拟示例：创建了文件、三张卡片和一个按钮。模拟失败：点击后未显示地址。修正：‘打开 index.html 并点击联系后没有任何显示；我预期看到地址。只修复此问题，保留服务内容，并重复测试。’修正后预期结果：地址可见。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1": {
+      "value": "哪项测试能够检查主要操作？",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.a": {
+      "value": "看到按钮已绘制出来。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.b": {
+      "value": "点击并观察地址，再用键盘重复。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.c": {
+      "value": "在聊天中读到‘网站已完成’。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.feedback": {
+      "value": "第二项检查实际行为。按钮可见或 AI 的断言都不能证明操作成功。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2": {
+      "value": "所有者能打开 URL，但其他访客被要求登录。下一步应如何做？",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.a": {
+      "value": "检查可见性／权限，并在不使用所有者会话的情况下重试。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.b": {
+      "value": "宣布网站已公开。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.c": {
+      "value": "不检查访问权限，直接再次上传相同文件。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.feedback": {
+      "value": "第一项调查实际障碍。登录后可访问不能证明公众可访问；重新上传未必能修复可见性问题。",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.title": {
+      "value": "你的第一个网站",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.check-plan": {
+      "value": "检查计划",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.check-result": {
+      "value": "检查结果",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.deliver": {
+      "value": "交付",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.execute": {
+      "value": "执行并修正",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.learn": {
+      "value": "学习",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.prepare": {
+      "value": "准备请求",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
     },
     "tool.claude": {
-      "value": "在 Claude 桌面应用中打开 Code 标签页，选择 Local，再选择项目文件夹。Chat 标签页属于不同的工作环境。应用包含 Claude Code，但使用需要符合条件的订阅。请在 Code 中检查回复和改动。",
+      "value": "Claude Desktop：打开 Code，选择 Local 和练习文件夹。仅做计划时选择 Plan；开始构建前，先审查计划和权限，再允许修改。是否可用取决于你的账户。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
     "tool.codex": {
-      "value": "在桌面应用中选择 Codex，确认任务所在的文件夹或项目。在该环境中发送请求，并检查回复和受影响的文件。界面名称和布局可能因版本而异。",
+      "value": "Codex Desktop：选择 Codex 并打开练习文件夹／项目。发送前确认上下文。适当时仅要求规划；不要假定其操作控件与 Claude 相同。",
       "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "notice.self-report": {
-      "value": "这是在 Ganesha 之外进行的练习。你需要在自己的工具中执行。此处的记录属于自我评估；Ganesha 不会验证执行情况，也不会连接你的账户。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "example.request": {
-      "value": "我想为面向初学者的虚构音乐课程服务制作一个页面。请规划一个标题、三项服务和一个联系操作。只使用虚构数据。暂时不要修改文件或发布。请列出计划和三个我可以测试的标准，其中一个必须检查联系操作。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "example.failure": {
-      "value": "模拟情境：请求要求提供联系操作。预览中显示“联系我”，但点击后没有任何反应。这里没有运行任何真实工具。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.title": {
-      "value": "从小型成果开始",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.objective": {
-      "value": "选择一个你能检查的结果。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.body": {
-      "value": "我们将为一项虚构服务准备介绍页面。先请求一个计划。在后续规划中的课程里，这个请求可以逐步变成经过测试并发布的页面。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.action": {
-      "value": "选择一项虚构服务，想一想：这个页面帮助谁完成什么事情？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.expected": {
-      "value": "明确的目标用户和主要操作。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.hint1": {
-      "value": "想象一位会访问页面的人。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.hint2": {
-      "value": "例如：音乐初学者希望了解课程并取得联系。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.criterion": {
-      "value": "你能说清目标用户和主要操作。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.visual": {
-      "value": "三张卡片：目标用户、结果和主要操作。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.title": {
-      "value": "组织一个有用的请求",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.objective": {
-      "value": "在一个请求中包含目标、背景、限制和测试。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.body": {
-      "value": "工具需要知道要交付什么，以及你将如何判断结果。参考示例并替换服务内容。这个输入框用于练习，不会向 Claude 或 Codex 发送任何内容。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.action": {
-      "value": "写出包含目标用户、所需内容、限制和可观察测试的请求。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.expected": {
-      "value": "保存一份其他人也能检查的请求。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.hint1": {
-      "value": "把“做得漂亮一点”换成必须出现的具体元素。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.hint2": {
-      "value": "加入这些要求：暂时只做计划；使用虚构数据；说明如何测试联系功能。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.criterion": {
-      "value": "请求包含评估清单中的全部四项。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.visual": {
-      "value": "按目标、背景、限制和测试拆分的请求。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.title": {
-      "value": "检查 1：请求可以验证吗？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.objective": {
-      "value": "识别可以测试的标准。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.body": {
-      "value": "整体印象可以指导风格。要检查结果，还需要能观察到的行为。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.action": {
-      "value": "选择最有助于测试联系操作的标准。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.expected": {
-      "value": "一个选择，以及对该标准的解释。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.hint1": {
-      "value": "哪个选项描述了你可以执行并观察的事情？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.hint2": {
-      "value": "测试把访问者的操作与预期结果结合起来。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.criterion": {
-      "value": "所选答案描述了可观察的操作和结果。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.visual": {
-      "value": "三个可选的验收标准。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.question": {
-      "value": "哪个标准可以检查联系功能？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.a": {
-      "value": "页面看起来必须很棒。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.a.feedback": {
-      "value": "这表达了偏好，但没有定义如何测试联系功能。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.b": {
-      "value": "点击联系后，页面显示请求中指定的虚构地址。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.b.feedback": {
-      "value": "你可以点击，并将显示的地址与请求比较。操作和结果都能观察到。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.c": {
-      "value": "工具应该说它已经完成了。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.c.feedback": {
-      "value": "完成消息不能证明联系操作是否有效。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.success": {
-      "value": "你选择了可验证的行为。把同样的原则用于自己的请求。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.retry": {
-      "value": "再试一次：寻找你能观察到的操作和结果。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.title": {
-      "value": "在自己的工具中尝试",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.objective": {
-      "value": "在正确的环境中发送请求，并记录真实回复。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.body": {
-      "value": "打开所选工具，查看下方说明。发送你的规划请求，阅读回复并与标准比较。如果暂时无法使用工具，请保存请求，稍后再完成这项练习。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.action": {
-      "value": "在课程之外发送请求。记录你在哪里操作、收到了什么，不要包含私人数据。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.expected": {
-      "value": "记录工作环境、回复，以及仍需确认的事项。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.hint1": {
-      "value": "发送前，确认对话或项目文件夹。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.hint2": {
-      "value": "可以记录：我请求了计划；收到了这些内容；尚未打开或测试页面。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.criterion": {
-      "value": "记录区分了请求的内容、收到的内容和已验证的内容。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.visual": {
-      "value": "流程：打开工具、确认环境、发送请求、检查回复。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.title": {
-      "value": "检查 2：什么已经得到证明？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.objective": {
-      "value": "识别缺少执行证据的情况。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.body": {
-      "value": "考虑这个模拟情境：工具回复“页面已完成”。你还没有打开任何文件、预览或公开地址。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.action": {
-      "value": "选择现有信息能够支持的结论。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.expected": {
-      "value": "不把文字与证据混为一谈的结论。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.hint1": {
-      "value": "到目前为止，你实际观察到了什么？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.hint2": {
-      "value": "工具的说法仍需要与实际结果进行比较。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.criterion": {
-      "value": "答案承认需要打开并测试结果。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.visual": {
-      "value": "一条完成消息，旁边是仍然空白的证据区域。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.question": {
-      "value": "此时你能得出什么结论？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.a": {
-      "value": "网站已经发布，所有人都可以访问。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.a.feedback": {
-      "value": "你尚未打开公开地址。消息不能证明网站已经发布。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.b": {
-      "value": "所有标准都已成功通过测试。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.b.feedback": {
-      "value": "没有实际观察测试的记录。请求完成不等于每项标准都得到证明。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.c": {
-      "value": "我收到了一项说法；需要打开结果并测试各项标准。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.c.feedback": {
-      "value": "正确：先检查结果并记录观察，再确认它是否有效。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.success": {
-      "value": "你区分了消息和证据，这有助于尽早发现错误。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.retry": {
-      "value": "回到情境：你只读到了一条消息。还缺少什么检查？",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.title": {
-      "value": "提出具体的修改请求",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.objective": {
-      "value": "把观察到的问题转化为修改请求。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.body": {
-      "value": "用下方情境练习。说明发生了什么、应该发生什么，以及如何重新测试。本练习是模拟的，不会修改你的项目。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.action": {
-      "value": "写一个请求，修复联系操作并重复测试。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.expected": {
-      "value": "请求包含实际行为、预期行为、复现步骤和重新测试。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.hint1": {
-      "value": "可以这样开始：点击“联系我”后没有任何反应。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.hint2": {
-      "value": "然后说明应显示的虚构地址，并要求修复后再次点击测试。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.criterion": {
-      "value": "请求足以让人复现问题并验证解决方案。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.visual": {
-      "value": "四张卡片：实际行为、预期行为、复现和重新测试。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.title": {
-      "value": "把方法应用到另一款工具",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.objective": {
-      "value": "保留目标，调整执行环境。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.body": {
-      "value": "更换工具时，目标和标准保持不变。打开项目和检查结果的方式可能改变。完成这次文字调整不需要第二个账户。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.action": {
-      "value": "为另一款工具重写工作环境说明。保存请求，并记录真实练习中尚未完成的部分。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.expected": {
-      "value": "一份调整后的请求，以及对练习情况的如实记录。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.hint1": {
-      "value": "保留目标用户、内容、限制和测试。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.hint2": {
-      "value": "根据目标工具，修改有关对话或项目文件夹的说明。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.criterion": {
-      "value": "调整后的请求保留预期结果，并明确另一款工具的工作环境。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.visual": {
-      "value": "同一个请求连接到 Claude 和 Codex 两种环境。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.outcome": {
-      "value": "我明确了交付成果及其主要操作。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.context": {
-      "value": "我说明了目标用户和所需内容。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.limit": {
-      "value": "我只要求使用虚构数据制定计划，不进行发布。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.test": {
-      "value": "我加入了至少一个包含操作和预期结果的测试。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.execution.location": {
-      "value": "我确认了工具中的环境，并在课程之外发送了请求。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.execution.record": {
-      "value": "我记录了收到的内容和尚未验证的内容。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.observed": {
-      "value": "我描述了实际发生的情况。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.expected": {
-      "value": "我描述了应该发生的情况。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.reproduce": {
-      "value": "我说明了如何复现问题。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.retest": {
-      "value": "我要求修复后重复测试。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.transfer.preserve": {
-      "value": "我保留了目标、背景、限制和标准。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.transfer.adapt": {
-      "value": "我调整了工作位置和检查结果的方式。",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     }
   }
 }

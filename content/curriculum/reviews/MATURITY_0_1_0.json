@@ -1,0 +1,398 @@
+{
+  "schemaVersion": "1.0.0",
+  "auditDate": "2026-09-28",
+  "courseId": "course.first-site",
+  "courseVersion": "0.1.0",
+  "lessonId": "lesson.first-request",
+  "pedagogicalStatus": "provisional-prototype",
+  "recommendedLessonStatus": "draft",
+  "releaseEligible": false,
+  "reason": "A L01 continua protótipo: textos P0 foram revisados com aceites delimitados e duas capturas inspecionadas. Faltam percurso operacional pertinente das duas superfícies, cobertura audiovisual selecionada, revisão da aplicação e avaliações, localização e aceite coordenado.",
+  "reportPath": "content/curriculum/PEDAGOGICAL_AUDIT.md",
+  "acceptedFullStudyRecords": [
+    {
+      "studyId": "official-claude-desktop-quickstart",
+      "resourceId": "res-claude-desktop-start",
+      "researchCommit": "8af94e4",
+      "educatorReviewPath": "content/curriculum/reviews/OFFICIAL_SUBSET_01.md",
+      "artifactPath": "content/research/studies/local/official-claude-desktop-quickstart.md",
+      "artifactSha256": "7e0fbc28948beca6fa3e042857f07ffccfffe08b9ce0039fee2c66214cf66ac8",
+      "readLines": [
+        [
+          1,
+          140
+        ]
+      ],
+      "scope": "Documento textual integral; afirmações delimitadas de instalação/acesso, contexto, pedido e revisão. Não certifica demonstração visual ou execução no aplicativo.",
+      "executedByEducator": false,
+      "visualDemonstrationAccepted": false
+    }
+  ],
+  "acceptedVisualReviewRecords": [
+    {
+      "studyId": "official-codex-quickstart",
+      "artifactPath": "content/research/studies/local/official-codex-quickstart-selector.png",
+      "artifactSha256": "75d58a03b02fce0f1456a50575c0daca73b5c6d161e2cdc72623af993f4b78db",
+      "educatorReviewPath": "content/curriculum/reviews/OFFICIAL_SUBSET_02.md",
+      "entireImageInspected": true,
+      "kind": "documentation-illustration-screenshot",
+      "observation": "Documentação e ilustração no estado ChatGPT; transição do seletor não observada.",
+      "operationalDemonstrationAccepted": false
+    },
+    {
+      "studyId": "official-claude-workflow",
+      "artifactPath": "content/research/studies/local/official-claude-workflow-plan.png",
+      "artifactSha256": "683e7f9b7d31affc2160174c5b0c1ad6224760aacb112e8914cb790df5028206",
+      "educatorReviewPath": "content/curriculum/reviews/OFFICIAL_SUBSET_02.md",
+      "entireImageInspected": true,
+      "kind": "cli-plan-indicator-screenshot",
+      "observation": "Terminal com plan mode e Shift+Tab; não é demonstração Desktop.",
+      "operationalDemonstrationAccepted": false
+    }
+  ],
+  "originalResearchBaseline": {
+    "resourceRecords": 23,
+    "shortEvidenceRecords": 16,
+    "acceptedFullStudyRecords": 0,
+    "acceptedVisualDemonstrations": 0,
+    "commits": [
+      "c531c9e",
+      "5226254"
+    ],
+    "scope": "Base usada na elaboração original; não é contagem global atual de pesquisa."
+  },
+  "laterResearchObserved": {
+    "source": "content/research/transcripts/manifest.json e mensagem do Devorador nesta rodada",
+    "exportedVideos": 3,
+    "transcriptReadReported": [
+      "ntDIxaeo3Wg"
+    ],
+    "studyStatus": "transcript_analyzed_visual_pending",
+    "fullSourceAnalyzed": false,
+    "usedToRaiseLessonMaturity": false
+  },
+  "gates": [
+    {
+      "id": "gate.full-source-study",
+      "status": "not-met",
+      "required": true,
+      "evidenceIds": []
+    },
+    {
+      "id": "gate.educator-integral-review",
+      "status": "not-met",
+      "required": true,
+      "evidenceIds": []
+    },
+    {
+      "id": "gate.visual-demonstration-review",
+      "status": "not-met",
+      "required": true,
+      "evidenceIds": []
+    },
+    {
+      "id": "gate.complete-worked-sequence",
+      "status": "not-met",
+      "required": true,
+      "evidenceIds": []
+    },
+    {
+      "id": "gate.prerequisites-errors-recovery",
+      "status": "not-met",
+      "required": true,
+      "evidenceIds": []
+    },
+    {
+      "id": "gate.assessment-alignment-review",
+      "status": "not-met",
+      "required": true,
+      "evidenceIds": []
+    },
+    {
+      "id": "gate.beginner-pilot",
+      "status": "not-met",
+      "required": false,
+      "requiredForClaims": [
+        "learning-efficacy",
+        "validated-completion-time"
+      ],
+      "evidenceIds": []
+    },
+    {
+      "id": "gate.director-pedagogical-acceptance",
+      "status": "not-met",
+      "required": true,
+      "evidenceIds": []
+    }
+  ],
+  "sourceRequests": [
+    {
+      "id": "L01-S01",
+      "owner": "Devorador",
+      "status": "text-reviewed-bounded-claims-accepted",
+      "sourceIds": [
+        "res-codex-prompting"
+      ],
+      "stepIds": [
+        "step.first-request.scope",
+        "step.first-request.brief",
+        "step.first-request.request-check",
+        "step.first-request.repair",
+        "step.first-request.transfer"
+      ],
+      "requiredDeliverable": "Documento principal integral de prompting/contexto, com exemplos, limites, revisão e localizadores; produzir aplicação original documentada caso a fonte não apresente o caso escolhido.",
+      "originalSourceIds": [
+        "res-codex-prompting"
+      ],
+      "priority": "P0",
+      "selectionDecision": "retain",
+      "acceptedStudyIds": [
+        "official-codex-prompting"
+      ],
+      "remainingGap": "Aplicação didática completa ainda interna e não validada; página multimídia continua parcial. Não ensinar ditado nem declarar revisão da animação."
+    },
+    {
+      "id": "L01-S02",
+      "owner": "Devorador",
+      "status": "text-and-one-cli-image-reviewed-audiovisual-pending",
+      "sourceIds": [
+        "res-claude-plan-build-review"
+      ],
+      "stepIds": [
+        "step.first-request.brief",
+        "step.first-request.run",
+        "step.first-request.request-check",
+        "step.first-request.evidence-check"
+      ],
+      "requiredDeliverable": "Uma sequência curta completa de planejar, executar e verificar; estudo integral e visuais pertinentes. Fontes adicionais somente para lacuna material; execução sem supervisão não é objetivo inicial.",
+      "originalSourceIds": [
+        "res-claude-agent-basics",
+        "res-claude-plan-build-review",
+        "res-claude-verify-unattended"
+      ],
+      "priority": "P0",
+      "selectionDecision": "reduce-to-one-principal-sequence",
+      "deferredSourceIds": [
+        "res-claude-agent-basics",
+        "res-claude-verify-unattended"
+      ],
+      "acceptedStudyIds": [
+        "official-claude-workflow"
+      ],
+      "remainingGap": "Estudo audiovisual da fonte selecionada continua pendente; texto não mostra resultado WebP ou reparo real. Aplicação original de plano elaborada internamente para revisão."
+    },
+    {
+      "id": "L01-S03",
+      "owner": "Devorador",
+      "status": "both-quickstart-texts-reviewed-operational-demonstration-pending",
+      "sourceIds": [
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "stepIds": [
+        "step.first-request.scope",
+        "step.first-request.brief",
+        "step.first-request.request-check",
+        "step.first-request.run",
+        "step.first-request.evidence-check",
+        "step.first-request.repair",
+        "step.first-request.transfer"
+      ],
+      "requiredDeliverable": "Um fluxo inicial completo por superfície: acesso/contexto/pedido/resposta/revisão e erros pertinentes, com fonte integral e inspeção visual. Referência longa somente se os quickstarts não cobrirem um ponto necessário.",
+      "originalSourceIds": [
+        "res-claude-desktop-start",
+        "res-claude-desktop-reference",
+        "res-codex-desktop-start"
+      ],
+      "priority": "P0",
+      "selectionDecision": "one-quickstart-per-tool",
+      "deferredSourceIds": [
+        "res-claude-desktop-reference"
+      ],
+      "acceptedStudyIds": [
+        "official-claude-desktop-quickstart",
+        "official-codex-quickstart"
+      ],
+      "remainingGap": "Percurso visual/operacional pertinente de contexto, pedido, resposta e revisão nas duas superfícies. O cadastro próprio do quickstart está commitado e conferido em f3bd174; isso fecha a pendência de proveniência, não a demonstração operacional.",
+      "supportingSourceIds": [
+        "res-codex-desktop-start"
+      ]
+    },
+    {
+      "id": "L01-S04",
+      "owner": "Devorador",
+      "status": "deferred-for-proposed-L01-scope",
+      "sourceIds": [
+        "res-builder-behavior-tests"
+      ],
+      "stepIds": [
+        "step.first-request.repair"
+      ],
+      "requiredDeliverable": "Caso integral adequado ao iniciante de problema reproduzido, correção e reteste; usar Builder se realmente cobrir a necessidade ou substituto mais direto. Não exige uma pesquisa redundante de vários casos.",
+      "originalSourceIds": [
+        "res-builder-behavior-tests"
+      ],
+      "priority": "P1",
+      "selectionDecision": "move-to-site-correction-need",
+      "targetCompetencyIds": [
+        "competency.repair"
+      ],
+      "currentRepairStillUnsubstantiated": true,
+      "resolutionRequired": "A etapa repair atual continua provisória. A próxima revisão deve mudar para correção de um plano com evidência adequada ou manter o caso de site com fonte/caso completo; nenhuma dessas mudanças foi aplicada."
+    }
+  ],
+  "promotionPolicy": {
+    "automaticFromDownloads": false,
+    "automaticFromTranslations": false,
+    "automaticFromStructuralAudit": false,
+    "automaticFromCollectorStudyStatus": false,
+    "educatorReviewRequired": true,
+    "directorAcceptanceRequired": true,
+    "publishedVersionsImmutable": true
+  },
+  "educatorTextReviews": [
+    {
+      "resourceId": "res-tim-claude-beginner-video",
+      "researchCommit": "f42b1b5",
+      "reviewPath": "content/curriculum/reviews/TIM_TRANSCRIPT_REVIEW.md",
+      "artifactPath": "content/research/transcripts/local/ntDIxaeo3Wg.en-CA.txt",
+      "artifactSha256": "3f852a6f777ad4c0397c8b9036d3c1e18019f024f37c2a3d06d1761d7b63dffb",
+      "readLines": [
+        [
+          1,
+          360
+        ],
+        [
+          361,
+          711
+        ]
+      ],
+      "cueCount": 706,
+      "fullExportedTextReadByEducator": true,
+      "fullSpeechCoverageVerifiedByEducator": false,
+      "visualReviewByEducator": false,
+      "fullAudiovisualStudyAccepted": false,
+      "decision": "limited-textual-input-only",
+      "raisesLessonMaturity": false
+    }
+  ],
+  "researchSelection": {
+    "directiveDate": "2026-09-28",
+    "policyPath": "content/curriculum/RESEARCH_PRIORITIES.md",
+    "revisionPlanPath": "content/curriculum/L01_REVISION_PLAN.md",
+    "unit": "competency-gap",
+    "completeInventoryRequired": false,
+    "fullStudyOfSelectedResourcesRequired": true,
+    "relevantVisualReviewRequired": true,
+    "preferredResourcePattern": "one principal complete resource per need; complement only for a material gap or tool variant",
+    "stopWhen": "All material objective, example, prerequisite, error, assessment and tool-variant gaps are covered and reviewed; additional inventory remains independent."
+  },
+  "acceptedBoundedStudyRecords": [
+    {
+      "studyId": "official-codex-prompting",
+      "resourceId": "res-codex-prompting",
+      "researchCommit": "8af94e4",
+      "educatorReviewPath": "content/curriculum/reviews/OFFICIAL_SUBSET_01.md",
+      "artifactPath": "content/research/studies/local/codex-prompting.txt",
+      "artifactSha256": "f4a155ddbf7af5bf24f4e117b61bc4b6025a637bf8dcfd51941bed5cd1e1d367",
+      "readLines": [
+        [
+          1,
+          503
+        ]
+      ],
+      "fullTextReadByEducator": true,
+      "fullMultimediaSourceAccepted": false,
+      "scope": "Método textual de objetivo/contexto/limites/refinamento e verificação; exemplos são instruções propostas, não resultados executados.",
+      "pending": [
+        "Animação de ditado não inspecionada; fora do escopo de ensino da L01.",
+        "Exemplo operacional não executado."
+      ]
+    },
+    {
+      "studyId": "official-codex-quickstart",
+      "resourceId": "res-codex-desktop-quickstart",
+      "sourceUrl": "https://learn.chatgpt.com/docs/quickstart",
+      "researchCommit": "3beec63",
+      "registryStatus": "committed and verified by Educator",
+      "educatorReviewPath": "content/curriculum/reviews/OFFICIAL_SUBSET_02.md",
+      "artifactPath": "content/research/studies/local/official-codex-quickstart.md",
+      "artifactSha256": "5c052386e1de596504ce11df740000577d8acc5b6c5693a524b3f711cceabcef",
+      "readLines": [
+        [
+          1,
+          204
+        ]
+      ],
+      "supplementalText": {
+        "artifactPath": "content/research/studies/local/official-codex-quickstart-rendered.txt",
+        "artifactSha256": "874ed2f9b79609da7f3a6c33fec6d5baa67891b82cadd83931d1e71242f6c0a0",
+        "readLines": [
+          [
+            1,
+            98
+          ]
+        ]
+      },
+      "fullTextReadByEducator": true,
+      "fullMultimediaSourceAccepted": false,
+      "scope": "Documento textual integral e captura de uma ilustração. Fundamenta contexto, escolha de produto e primeiro pedido; não certifica todos os estados interativos ou um aplicativo real.",
+      "pending": [
+        "Percurso operacional e estados de interface pertinentes não observados.",
+        "Não há resposta executada, teste de página ou publicação."
+      ],
+      "registryCommit": "f3bd174",
+      "registryEvidenceId": "ev-codex-desktop-quickstart"
+    },
+    {
+      "studyId": "official-claude-workflow",
+      "resourceId": "res-claude-plan-build-review",
+      "researchCommit": "3beec63",
+      "educatorReviewPath": "content/curriculum/reviews/OFFICIAL_SUBSET_02.md",
+      "artifactPath": "content/research/studies/local/official-claude-workflow-transcript.txt",
+      "artifactSha256": "03284d5e7dbc15df695ed5c6961a66184f8003f57145038b06b54bdf8f9243b9",
+      "readLines": [
+        [
+          1,
+          79
+        ]
+      ],
+      "supplementalText": {
+        "artifactPath": "content/research/studies/local/official-claude-explore-plan-code-commit.txt",
+        "artifactSha256": "c841cfed33d8ad0bdce440b2d6c4e12a299d7b666dbf5a4f72c7aab417bb4085",
+        "readLines": [
+          [
+            1,
+            145
+          ]
+        ]
+      },
+      "fullTextReadByEducator": true,
+      "fullMultimediaSourceAccepted": false,
+      "fullSpeechCoverageVerifiedByEducator": false,
+      "scope": "Método textual de explorar, planejar, revisar, executar e conferir. Captura confirma CLI; não demonstra operação Desktop nem teste WebP concluído.",
+      "pending": [
+        "Vídeo integral não assistido; transcrição sem timestamps não comparada ao áudio.",
+        "Demais imagens e sequência operacional não inspecionadas."
+      ]
+    }
+  ],
+  "internalLessonDevelopment": {
+    "path": "content/curriculum/L01_WORKED_EXAMPLE.md",
+    "authorship": "Educador original example",
+    "executionMode": "simulated",
+    "productIntegration": false,
+    "studentCatalogsChanged": false,
+    "locale": "pt-BR",
+    "localizationRequiredBeforeExposure": true,
+    "purpose": "Sequência simulada de pedido→plano incompleto→comparação→correção→novo plano; duas questões concretas e roteiro externo proposto para revisão.",
+    "desktopPracticePath": "content/curriculum/L01_DESKTOP_PRACTICE.md",
+    "assessmentDrafts": {
+      "count": 2,
+      "alternativesAndFeedbackWritten": true,
+      "editorialAcceptance": false,
+      "studentTested": false,
+      "runtimeChanged": false
+    }
+  }
+}

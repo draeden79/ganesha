@@ -1,571 +1,426 @@
 {
   "schemaVersion": "1.0.0",
   "courseId": "course.first-site",
-  "courseVersion": "0.1.0",
+  "courseVersion": "0.2.0",
   "locale": "en",
   "direction": "ltr",
   "humanReviewStatus": "pending",
   "translationMethod": "ai-authored",
   "messages": {
-    "course.title": {
-      "value": "Your first project with AI",
+    "action.check": {
+      "value": "Choose the answer supported by the example.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
+    },
+    "action.execute": {
+      "value": "Run it in your tool and record observed behavior, expected behavior and the repeat check. Say if you have not run it.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "action.learn": {
+      "value": "Read the example and identify the expected result.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "action.prepare": {
+      "value": "Adapt the request using fictional data and record your response.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.deliver": {
+      "value": "Deliver the folder and instructions for opening, testing and stopping the server, with passes/failures. To share a static app, use the site lesson's Netlify flow without repeating that lesson: upload the folder with index.html, check visibility and test the URL as a visitor. Each browser has its own data; local-address data does not automatically migrate to the published URL. Test reload at the final origin. Login and sync would require another project.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.execute": {
+      "value": "To serve the app, first ask the AI to check Python 3; when available, run `python3 -m http.server 8000` in tarefas-app (Windows: `py -3 -m http.server 8000`) and open `http://localhost:8000`. Stop with Ctrl+C in the terminal running the server. If Python is missing, request an available local preview or an explained alternative before installing anything. Review the plan and allow building in the folder. Ask the AI to start a local server, provide its address and explain how to stop it and any required dependencies. Open that address. Test empty input and spaces: no task should be created. Add two tasks, complete one, reload and check both plus completion. Remove one and reload. Example failure: completion disappears. Correction: ‘After completing and reloading, the task becomes pending. Preserve add/remove; save and restore completion too.’ Repeat the whole sequence. Use the same origin/address when comparing persistence.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.learn": {
+      "value": "An app changes state when someone acts. Here, state means the task list and completed tasks. Persistence keeps data after reload. Create tarefas-app. Use fictional data. localStorage stores data in this browser and origin; it does not sync accounts/devices and can be cleared. Do not use this prototype for important information.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.objective": {
+      "value": "Create interaction, validate input and check local persistence.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.prepare": {
+      "value": "Request: ‘Create a dependency-free task app in index.html: labeled input, Add button, list, complete/uncomplete and remove. Reject empty or whitespace-only input with a clear message. Save tasks and completion in localStorage; restore on opening. If stored data is invalid or saving fails, notify without crashing. No login or server. Explain running at a stable local address and testing.’ Simulated example: adding ‘Study’ shows one row; completing marks it; reload keeps the completed row; remove and reload leaves an empty list. These are expected results, not recorded execution.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1": {
+      "value": "What should submitting only spaces do?",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.a": {
+      "value": "Create a blank task.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.b": {
+      "value": "Show guidance and leave the list without a new task.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.c": {
+      "value": "Delete all existing tasks.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q1.feedback": {
+      "value": "The second answer validates input without destroying valid state. Creating an empty item or clearing the list misses the goal.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2": {
+      "value": "A task appears before reload and disappears afterward. What is the correct conclusion?",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.a": {
+      "value": "Persistence is proven.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.b": {
+      "value": "Adding necessarily failed.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.c": {
+      "value": "Adding worked in that session; saving/restoring still needs fixing and retesting.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.q2.feedback": {
+      "value": "The third answer identifies the evidence limit. Seeing an item once does not prove persistence; compare the same origin before and after reload.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "app.title": {
+      "value": "A task app",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.deliver": {
+      "value": "Deliver the fictional CSV, script, report.md and exact run instructions, with normal/repeat/error test results. Someone should be able to repeat using the folder. Do not claim scheduling because a script ran once. If scheduling later, define time/time zone, folder, computer availability, where to inspect results/errors and how to pause; observe one triggered run before relying on it. This beta teaches verifiable manual delivery; it does not run schedules or send reports for you.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.execute": {
+      "value": "Ask the AI to check `python3 --version` (Windows: `py -3 --version`). With Python 3 available, request `python3 report.py vendas.csv report.md` in relatorio (Windows: `py -3 report.py vendas.csv report.md`). A terminal is the command area; the tool can run commands for you and show output. If Python is missing, request an alternative: local HTML that accepts the same CSV in a browser, applies the same rules and offers report.md for download without installing packages. Open the HTML, select the CSV and save the result; on error, do not download a replacement. Review and run the provided command in the selected folder through the tool. If the environment is missing, request instructions for your system; record the error instead of claiming execution. Open report.md and compare count/total with the calculation. Run again: still 2 and 30.50. Copy the CSV, remove amount and run: it should report an error and preserve the previous report. Restore the copy and repeat. If it duplicates or overwrites on error, provide input, actual result and expected rule; request correction and repeat all three tests.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.learn": {
+      "value": "Automation is a repeatable procedure: input, transformation and output. Start by running manually; scheduling only repeats an already-correct process. Create relatorio. CSV is a text table: the first row names columns, later rows hold records. Use the example below, decimal points and fictional data. Expected result: two valid records, total 30.50; no message sent.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.objective": {
+      "value": "Turn a CSV into a verifiable report and repeat without duplication.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.prepare": {
+      "value": "Request: ‘Create vendas.csv with id,item,amount and rows 1,Caderno,10.50 and 2,Curso,20.00. Create report.py in Python 3 without external packages, accepting input and output arguments, to read this CSV, validate columns/values, count records and sum amount using decimal precision. Generate report.md with count 2 and total 30.50. Rerunning must replace the report without duplication. If a column is missing or a value invalid, show an error and preserve the last valid report. Explain dependencies, command and working folder; do not send data or schedule.’ Simulated output: Records: 2; Total: 30.50. Reference calculation: 10.50 + 20.00 = 30.50.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1": {
+      "value": "What is correct on the second run of the same CSV?",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.a": {
+      "value": "4 records and total 61.00.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.b": {
+      "value": "2 records and total 30.50, replacing the report.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.c": {
+      "value": "No file, because it already ran once.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q1.feedback": {
+      "value": "The second answer repeats without duplication. Adding to the old report duplicates data; producing no output does not ensure an updated deliverable.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2": {
+      "value": "The amount column was removed. Which behavior meets the rule?",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.a": {
+      "value": "Generate zero and replace the valid report.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.b": {
+      "value": "Invent values to continue.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.c": {
+      "value": "Report the error, preserve the valid report and allow the input to be corrected.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.q2.feedback": {
+      "value": "The third answer makes failure visible without destroying the last valid output. Silent zeros and invented values hide the error.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "automation.title": {
+      "value": "A useful automation",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
     },
     "course.summary": {
-      "value": "Start with a clear request. Learn to observe, test and improve the result.",
+      "value": "Hackathon beta: four practical lessons. Original simulated examples; external execution is self-reported. AI translation, human review pending.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "lesson.title": {
-      "value": "From an idea to a testable request",
+    "course.title": {
+      "value": "Sites, apps and automations with AI",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "lesson.summary": {
-      "value": "Prepare a request, try it in your tool and learn to ask for evidence. This lesson does not publish a website yet.",
+    "criterion.compare": {
+      "value": "Result compared with criteria",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.scope": {
-      "value": "Define the outcome",
+    "criterion.record": {
+      "value": "A record of what you actually ran",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.scope.outcome": {
-      "value": "Describe a small deliverable for a defined audience.",
+    "foundations.deliver": {
+      "value": "Deliver the request, received plan and comparison. Separate what you checked in the text from what a page still needs to demonstrate. To switch tools, keep the request and criteria but check the context again. Continue with the site, app or automation route; none requires completing the others.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.context": {
-      "value": "Provide context",
+    "foundations.execute": {
+      "value": "Send the request in the chosen folder. Read the response: title? three services? contact without sending? Answer relevant questions with fictional data. Compare and request a specific correction. Read the new list. If editing is proposed, return to planning. Record a before/after excerpt; if all criteria already pass, explain why. Do not invent a failure just to complete the record.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.context.outcome": {
-      "value": "Write a request with a goal, context, limits and a test.",
+    "foundations.learn": {
+      "value": "You need a computer, browser and installed Claude Desktop or Codex Desktop, signed in with access to development features. Check access conditions and costs first; this lesson does not promise free use. A folder holds project files; context is the location and information the AI works with. Create a ganesha-pratica folder in your file manager and select it in the tool. Use an account with access. If login or a plan restriction appears, resolve access or use the simulation; do not count that as execution. A plan describes intended work. A working page requires files and testing.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.evidence": {
-      "value": "Check evidence",
+    "foundations.objective": {
+      "value": "Set context, request a plan and correct a response.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.evidence.outcome": {
-      "value": "Distinguish a tool's response from an observed result.",
+    "foundations.prepare": {
+      "value": "Request: ‘Plan a Ponte Musical page for beginners: title, guitar, piano and singing; contact reveals aulas@example.com without sending a message. Return a list and future tests. Do not edit files or publish.’ Simulated response: correct title, guitar and piano, a form that sends a message. Comparison: singing is missing and the form exceeds scope. Correction: ‘Keep the title, add singing and replace the form with the displayed address; update the tests.’ Simulated revised plan: title, three services, contact reveals the address, future click test.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.repair": {
-      "value": "Request a correction",
+    "foundations.q1": {
+      "value": "The plan omits singing and collects a phone number. Which correction meets the request?",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.repair.outcome": {
-      "value": "Explain the problem and how to check the fix.",
+    "foundations.q1.a": {
+      "value": "Remove the phone field and keep only two services.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.transfer": {
-      "value": "Transfer the method",
+    "foundations.q1.b": {
+      "value": "Keep the title, add singing and show the address without collection or sending.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
-    "competency.transfer.outcome": {
-      "value": "Adapt the same request to the other tool.",
+    "foundations.q1.c": {
+      "value": "Add singing and test sending the phone number.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q1.feedback": {
+      "value": "The second answer fixes both deviations. The first still omits singing; the third retains an unrequested action.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2": {
+      "value": "The revised plan lists every item. What does that establish?",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.a": {
+      "value": "Contact already works in the browser.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.b": {
+      "value": "The page is already published.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.c": {
+      "value": "The text meets the compared criteria; behavior still needs execution.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.q2.feedback": {
+      "value": "The third answer separates planning from functioning. Text and a proposed test do not prove a click or publication.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "foundations.title": {
+      "value": "Foundations: from request to evidence",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "hint.compare": {
+      "value": "Compare the result with the criteria, not just the AI message.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "hint.repair": {
+      "value": "For errors, describe reproduction steps, actual and expected behavior; request a specific change and repeat the test.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "notice.simulated": {
+      "value": "Original exercise. Described results are simulated examples, not execution records. Ganesha neither operates your tool nor automatically verifies your work.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.deliver": {
+      "value": "After local testing, sign in to Netlify and open https://app.netlify.com/drop. Upload the folder containing index.html directly. Wait for the URL. Check project visibility; if public access is intended and permitted, use Make public. Open the URL without the owner's session and test contact. A URL alone does not prove public access. To update, test locally then upload the folder under Production deploys in the same project: this changes production. Check the new version at the URL. For missing files or blank pages, check the uploaded folder. Deliver the URL and test results, or the tested folder and the recorded publishing obstacle.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.execute": {
+      "value": "Review the plan, request creation and inspect changed files. Open index.html from your file manager in a browser. Count the three services; click Contact; reload and use Tab to reach the button, then Enter. Narrow the window: are text and button usable? For failure, send steps, actual and expected behavior to the AI; reopen the correct file and repeat the same tests. ‘Fixed’ from the AI does not replace observation.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.learn": {
+      "value": "A static site can use one index.html: structure, appearance and a browser interaction. This exercise needs no visitor account or data server. Create ponte-site. Result: Ponte Musical title, three services and a button revealing the fictional address. Include no forms, sending or credentials. Keep a copy before changes.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.objective": {
+      "value": "Build, test, fix and publish a static page.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.prepare": {
+      "value": "Complete request: ‘In ponte-site, create a self-contained index.html with title Ponte Musical, guitar/piano/singing services and a Contact button revealing aulas@example.com. No external libraries, data collection or sending. Use a keyboard-accessible button and a layout fitting narrow screens. Explain opening and testing. Describe the plan first.’ Simulated example: file created, three cards and a button. Simulated failure: clicking does not reveal the address. Correction: ‘Opening index.html and clicking Contact shows nothing; I expect the address. Fix only that, preserve the services and repeat the test.’ Expected corrected result: visible address.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1": {
+      "value": "Which test checks the main action?",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.a": {
+      "value": "See the button drawn.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.b": {
+      "value": "Click and observe the address; repeat using the keyboard.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.c": {
+      "value": "Read ‘site ready’ in the chat.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q1.feedback": {
+      "value": "The second answer checks behavior. A visible button or AI assertion does not demonstrate the action.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2": {
+      "value": "The URL opens for the owner but asks another visitor to log in. What next?",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.a": {
+      "value": "Check visibility/permissions and retry without the owner's session.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.b": {
+      "value": "Declare the site public.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.c": {
+      "value": "Upload the same files again without checking access.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.q2.feedback": {
+      "value": "The first answer investigates the actual obstacle. Authenticated access does not prove public availability; another upload may not fix visibility.",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "site.title": {
+      "value": "Your first site",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.check-plan": {
+      "value": "Check the plan",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.check-result": {
+      "value": "Check the result",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.deliver": {
+      "value": "Deliver",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.execute": {
+      "value": "Run and fix",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.learn": {
+      "value": "Learn",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
+    },
+    "step.prepare": {
+      "value": "Prepare the request",
+      "status": "translated",
+      "sourceRevision": "0.2.0"
     },
     "tool.claude": {
-      "value": "In Claude desktop, open the Code tab, choose Local and select the project folder. The Chat tab is a different context. The app includes Claude Code; access requires a compatible subscription. Review the response and changes in Code.",
+      "value": "Claude Desktop: open Code, choose Local and the exercise folder. For planning only, choose Plan; for building, review the plan and permissions before allowing changes. Access depends on your account.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     },
     "tool.codex": {
-      "value": "In the desktop app, select Codex and check the task's folder or project. Send your request in that context and review the response and affected files. Interface labels and layout may vary by version.",
+      "value": "Codex Desktop: select Codex and open the exercise folder/project. Check the context before sending. Request planning only when appropriate; do not assume its controls match Claude's.",
       "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "notice.self-report": {
-      "value": "Practice outside Ganesha. You run the task in your own tool. Your record is a self-assessment; Ganesha does not verify execution or connect to your account.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "example.request": {
-      "value": "I want a page for a fictional music lesson service for beginners. Plan a heading, three services and a contact action. Use fictional data only. For now, do not change files or publish anything. List the plan and three criteria I can test; one must check the contact action.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "example.failure": {
-      "value": "Simulated scenario: the request requires a contact action. In the preview, you see “Contact me”, but clicking it does nothing. No real tool has been run here.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.title": {
-      "value": "Start with a small deliverable",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.objective": {
-      "value": "Choose an outcome you can check.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.body": {
-      "value": "We will prepare a page for a fictional service. First, ask for a plan. In the planned next lessons, that request can become a tested, published page.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.action": {
-      "value": "Choose a fictional service and finish this thought: who does the page help, and what does it help them do?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.expected": {
-      "value": "A defined audience and main action.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.hint1": {
-      "value": "Think of someone who would visit the page.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.hint2": {
-      "value": "Example: music beginners want to learn about lessons and get in touch.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.criterion": {
-      "value": "You can name the audience and the main action.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sscope.visual": {
-      "value": "Three cards: audience, outcome and main action.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.title": {
-      "value": "Build a useful request",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.objective": {
-      "value": "Include a goal, context, limit and test in one request.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.body": {
-      "value": "The tool needs to know what to deliver and how you will judge it. Use the example and adapt the service. This field is a rehearsal: nothing is sent to Claude or Codex.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.action": {
-      "value": "Write your request with the audience, desired content, a limit and an observable test.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.expected": {
-      "value": "A saved request that another person can check.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.hint1": {
-      "value": "Replace “make something beautiful” with elements that must appear.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.hint2": {
-      "value": "Include: plan only for now; use fictional data; explain how to test contact.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.criterion": {
-      "value": "The request includes all four rubric items.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sbrief.visual": {
-      "value": "A request divided into goal, context, limits and test.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.title": {
-      "value": "Check 1: can the request be tested?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.objective": {
-      "value": "Recognize a criterion you can test.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.body": {
-      "value": "A general impression can guide the style. To check the result, you also need observable behavior.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.action": {
-      "value": "Choose the most useful criterion for testing the contact action.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.expected": {
-      "value": "A choice with an explanation of the criterion.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.hint1": {
-      "value": "Which option describes something you can do and observe?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.hint2": {
-      "value": "A test combines a visitor's action with an expected result.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.criterion": {
-      "value": "The selected option describes an observable action and result.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srequest-check.visual": {
-      "value": "Three possible acceptance criteria.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.question": {
-      "value": "Which criterion lets you check contact?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.a": {
-      "value": "The page should look amazing.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.a.feedback": {
-      "value": "This expresses a preference, but does not define how to test contact.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.b": {
-      "value": "Clicking contact shows the fictional address specified in the request.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.b.feedback": {
-      "value": "You can click and compare the displayed address with the request. Both the action and result are observable.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.c": {
-      "value": "The tool should say it is finished.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.c.feedback": {
-      "value": "A completion message does not show whether the contact action works.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.success": {
-      "value": "You chose a testable behavior. Apply the same principle to your request.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.request.retry": {
-      "value": "Try again: look for an action and a result you can observe.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.title": {
-      "value": "Try it in your tool",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.objective": {
-      "value": "Send the request in the right context and record the real response.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.body": {
-      "value": "Open your chosen tool and check the instructions below. Send your planning request. Read the response and compare it with your criteria. If you do not have access yet, save the request and return to this practice later.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.action": {
-      "value": "Send the request outside the course. Record where you worked and what you received, without private data.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.expected": {
-      "value": "A record of the context, response and something still needing verification.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.hint1": {
-      "value": "Before sending, confirm the conversation or project folder.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.hint2": {
-      "value": "Write: I asked for a plan; I received these items; I have not opened or tested a page yet.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.criterion": {
-      "value": "The record distinguishes what you requested, received and verified.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srun.visual": {
-      "value": "Flow: open tool, check context, send request, review response.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.title": {
-      "value": "Check 2: what has been proven?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.objective": {
-      "value": "Recognize when execution evidence is missing.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.body": {
-      "value": "Consider this simulated scenario: the tool replies “The page is ready.” You have not opened a file, preview or public address yet.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.action": {
-      "value": "Choose the conclusion supported by the available information.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.expected": {
-      "value": "A conclusion that distinguishes text from proof.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.hint1": {
-      "value": "What have you actually observed so far?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.hint2": {
-      "value": "A tool's claim still needs comparison with the result.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.criterion": {
-      "value": "The answer recognizes the need to open and test the result.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "sevidence-check.visual": {
-      "value": "A completion message beside an empty evidence area.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.question": {
-      "value": "What can you conclude at this point?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.a": {
-      "value": "The website is published and available to everyone.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.a.feedback": {
-      "value": "You have not opened a public address. The message does not prove publication.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.b": {
-      "value": "All criteria have been successfully tested.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.b.feedback": {
-      "value": "There is no record of observed tests. Finishing a request does not prove each criterion.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.c": {
-      "value": "I received a claim; I need to open the result and test the criteria.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.c.feedback": {
-      "value": "Correct: inspect the result and record what you observe before claiming it works.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.success": {
-      "value": "You separated the message from the evidence. This helps you find errors early.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "check.evidence.retry": {
-      "value": "Return to the scenario: you only read a message. What check is still missing?",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.title": {
-      "value": "Ask for a specific correction",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.objective": {
-      "value": "Turn an observed problem into a correction request.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.body": {
-      "value": "Practice with the scenario below. Explain what happened, what should happen and how to test again. This exercise is simulated and does not change your project.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.action": {
-      "value": "Write a request to fix the contact action and repeat the test.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.expected": {
-      "value": "A request covering observed behavior, expected behavior, reproduction and retesting.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.hint1": {
-      "value": "Start with: clicking “Contact me” does nothing.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.hint2": {
-      "value": "Then specify the expected fictional address and ask to click again after the fix.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.criterion": {
-      "value": "The request makes it possible to reproduce the problem and verify the solution.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "srepair.visual": {
-      "value": "Four cards: observed, expected, reproduce and retest.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.title": {
-      "value": "Take the method to another tool",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.objective": {
-      "value": "Keep the goal and adapt the execution context.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.body": {
-      "value": "Your goal and criteria stay the same when you change tools. How you open the project and inspect the result may change. You do not need a second account to write this adaptation.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.action": {
-      "value": "Rewrite the context instructions for the other tool. Save your request and record what remains unfinished in the real practice.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.expected": {
-      "value": "An adapted request and an honest record of your practice.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.hint1": {
-      "value": "Keep the audience, content, limits and test.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.hint2": {
-      "value": "Change the conversation or project folder instructions to match the destination tool.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.criterion": {
-      "value": "The adaptation keeps the expected outcome and identifies the other tool's context.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "stransfer.visual": {
-      "value": "The same request linked to two contexts: Claude and Codex.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.outcome": {
-      "value": "I defined the deliverable and its main action.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.context": {
-      "value": "I stated the audience and required content.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.limit": {
-      "value": "I requested only a plan with fictional data, without publishing.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.request.test": {
-      "value": "I included at least one test with an action and expected result.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.execution.location": {
-      "value": "I confirmed the tool's context and sent the request outside the course.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.execution.record": {
-      "value": "I recorded what I received and what I have not verified yet.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.observed": {
-      "value": "I described what happened.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.expected": {
-      "value": "I described what should happen.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.reproduce": {
-      "value": "I explained how to reproduce the problem.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.repair.retest": {
-      "value": "I asked to repeat the test after the fix.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.transfer.preserve": {
-      "value": "I kept the goal, context, limits and criteria.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
-    },
-    "rubric.transfer.adapt": {
-      "value": "I adapted where to work and how to inspect the result.",
-      "status": "translated",
-      "sourceRevision": "0.1.0"
+      "sourceRevision": "0.2.0"
     }
   }
 }
