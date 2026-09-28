@@ -5,10 +5,12 @@ The US$9.99 one-time test flow is deployed. No real money was charged.
 ## Deployed source
 
 - Host: `eef89af91825623ad4be24a2dcb1ecd310e7e64c`, deployment `dpl_EykRJS2YE4YMqduZF2AU5wWg3jHK`.
-- Classroom: `3264654366b63eab6b73720c44e9326f8d1f2a33`, deployment `dpl_2vFU4FPEL2nP24nX6uGJTCk9EQdW`.
+- Classroom: `740dc94c2d5b74108d905d203a0e90306329cfb9`, deployment `dpl_Bb27yGGmuYtr1Zuib3RqQN9s4DCe`, curriculum version 0.3.0.
 - Test checkout: https://ganesha-devops.vercel.app/checkout.
 - Stripe's configured webhook remains https://www.iganesha.online/api/payments/webhook.
-- Review remains separate in [host PR #4](https://github.com/draeden79/ganesha/pull/4) and [classroom PR #5](https://github.com/draeden79/ganesha/pull/5). Newer unreleased curriculum was not promoted.
+- Review remains separate in [host PR #4](https://github.com/draeden79/ganesha/pull/4) and [classroom PR #5](https://github.com/draeden79/ganesha/pull/5). The classroom combines published product release `7c7be20a8bb5563f9a94823a18ee91ab782f4ed7` with the payment guards: 12 lessons, 120 steps, 24 assessments and all eleven locales.
+
+The initial protected deployment used the earlier four-lesson beta. Production history subsequently confirmed that a concurrent product release had already published version 0.3.0. The corrected deployment above restores that published curriculum while preserving every access guard. Later unpublished product experiments remain outside this release.
 
 The current PC cannot validate the custom domain's certificate through its network. Test return/email URLs use the verified Vercel alias. TLS validation and network policy were not weakened. Public custom-domain webhook delivery was verified by the independent payment test below.
 
@@ -23,7 +25,7 @@ The current PC cannot validate the custom domain's certificate through its netwo
 7. The retired public beta deployment URL redirected to Vercel SSO, rather than returning lesson content.
 8. Gdevops's operations worker validates the protected release branch, minimum commit and reviewed source manifest before upload. Its 30 tests passed; the restarted worker reported the protected commit. The generation worker stayed running.
 
-[Host CI](https://github.com/draeden79/ganesha/actions/runs/36496062259) passed tests including real Redis integration, type checking, production build and audit. Classroom validation passed 21 tests, type checking, production build and content parity across all eleven languages. Refund/dispute revocation and out-of-order events are covered by automated tests; a dashboard refund was not part of this live acceptance.
+[Host CI](https://github.com/draeden79/ganesha/actions/runs/36496062259) passed tests including real Redis integration, type checking, production build and audit. The corrected classroom passed 28 tests, type checking, production build and content parity across all eleven languages (1192/1192 translation keys each). The existing paid token returned all twelve lesson titles at both origins, followed by anonymous denial on the same URLs; browser lesson controls worked. Ten additional live probes confirmed rejection of anonymous, forged-cookie, legacy, RSC and exercise requests, with API access returning 401. Refund/dispute revocation and out-of-order events are covered by automated tests; a dashboard refund was not part of this live acceptance.
 
 ## Operating limits
 

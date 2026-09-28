@@ -32,7 +32,7 @@ Supported inputs are validated again locally:
   submodules, unsafe Windows paths and environment files are rejected. The
   Vercel build runs remotely. Before an upload or a resumed job proceeds, the
   candidate must descend from secure commit
-  `3264654366b63eab6b73720c44e9326f8d1f2a33` and match the reviewed code/config
+  `740dc94c2d5b74108d905d203a0e90306329cfb9` and match the reviewed code/config
   blob hashes in `src/classroom-release.json`. The manifest lives in this worker;
   candidate repositories cannot update their own approval. This pins the origin
   proxy, token verifier, authorized course loaders, route entry points, build
@@ -52,6 +52,13 @@ Supported inputs are validated again locally:
 ### Updating the classroom release policy
 
 The secure release baseline was reviewed in the coordinated deployment chat.
+It combines the payment guard with the published v0.3.0 curriculum (12 lessons,
+120 steps, 11 languages); both the earlier secure baseline `3264654` and published
+product release `7c7be20` are ancestors. The four-lesson protected release is no
+longer an eligible deployment candidate. Token verification, origin proxy and
+route guards retain their reviewed behavior, and both production loaders authorize
+access before reading or serializing curriculum data. Offline QA fixtures use the
+shared data adapter without being imported by production route code.
 Keep content changes on `codex/classroom-paywall`. When executable classroom code
 or build settings change, review the resulting access controls and rerun origin
 authorization tests before updating this worker's pinned blob manifest. Do not

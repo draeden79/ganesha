@@ -1,6 +1,6 @@
 # Ganesha agent behavior and communication guide
 
-Version 1.5 — 2026-09-28
+Version 1.6 — 2026-09-28
 
 ## Where to request work
 
@@ -53,6 +53,8 @@ The owner approved a US$9.99 one-time Stripe **test** checkout for the existing 
 The classroom now requires a server-verified entitlement, including on its direct origin, legacy course routes and exercise downloads. Opening `/classroom/<opaque-token>` establishes the buyer's private browser session. Refund/dispute notifications revoke access. Existing public classroom URLs should no longer be advertised as free previews. Test checkout is deployed and verified at https://ganesha-devops.vercel.app/checkout: the confirmation flow, independent Stripe webhook fulfillment, protected lessons and Resend email all passed; the owner confirmed email receipt. See [the payment runbook](payments.md) and [release evidence](releases/2026-09-28-payment-test.md). Real sales remain disabled.
 
 ## Runtime and communication
+
+The protected classroom currently serves the published 0.3.0 curriculum: 12 lessons, 120 steps and 24 assessments in eleven languages. Its approved release is `740dc94c2d5b74108d905d203a0e90306329cfb9`. Coordinate classroom releases through Gdevops and preserve the server access guards when incorporating product changes. Direct CLI releases outside that workflow can overwrite one another; a successful deployment alone does not establish that it contains the latest approved curriculum and payment protection together.
 
 English is the default. Generation uses local Codex with ChatGPT authentication, GPT-6 Astra and extra-high reasoning. Both local workers require this Windows PC to remain awake and authenticated; startup is currently manual. Accepted work persists offline; there is no automatic paid API fallback. Public pages remain on Vercel while workers are offline.
 
