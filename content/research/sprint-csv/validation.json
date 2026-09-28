@@ -1,0 +1,89 @@
+{
+  "executed_at": "2026-09-28T20:24:33.528452+00:00",
+  "scope": "Local Python reference script only; no agent product UI or scheduling executed",
+  "unit_tests_passed": 3,
+  "cli_cases": [
+    {
+      "case": "valid",
+      "exit_code": 0,
+      "passed": true,
+      "report_preserved": null,
+      "expected_total": "30.50"
+    },
+    {
+      "case": "repeat",
+      "exit_code": 0,
+      "passed": true,
+      "report_preserved": true,
+      "expected_total": "30.50"
+    },
+    {
+      "case": "missing_column",
+      "exit_code": 2,
+      "passed": true,
+      "report_preserved": true,
+      "expected_total": null
+    },
+    {
+      "case": "invalid_amount",
+      "exit_code": 2,
+      "passed": true,
+      "report_preserved": true,
+      "expected_total": null
+    },
+    {
+      "case": "recovery",
+      "exit_code": 0,
+      "passed": true,
+      "report_preserved": false,
+      "expected_total": "31.50"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "sprint-csv/report.py",
+      "bytes": 3223,
+      "sha256": "8d3879290d9f334a242e5208f70782b7d34b6fa2181c5f6d7a3b5bc2b515b14f"
+    },
+    {
+      "path": "sprint-csv/test_report.py",
+      "bytes": 2108,
+      "sha256": "076e72b2a6a612dca6d57677f012e2e5b0b41b85cb0116800fd4124ee7b59811"
+    },
+    {
+      "path": "sprint-csv/report.html",
+      "bytes": 3254,
+      "sha256": "186e95643860ad89aede613ac424331747ab35cf5113abdbb04606220dd6b1b0"
+    }
+  ],
+  "browser_validation": {
+    "executed_at": "2026-09-28T20:27:26.549458+00:00",
+    "url": "http://127.0.0.1:3121/report.html",
+    "surface": "actual Browser DOM interactions; no AI product simulation",
+    "cases": {
+      "valid_two_rows_total_30_50": true,
+      "repeat_identical": true,
+      "invalid_amount_preserves_previous": true,
+      "missing_column_preserves_previous": true,
+      "recovery_total_31_50": true
+    },
+    "download_click_executed": false,
+    "direct_file_url_tested": false,
+    "scheduling_executed": false
+  },
+  "command": "python3 report.py input.csv report.md",
+  "command_runs": [
+    {
+      "command": "python3 report.py <temp>/input.csv <temp>/report.md",
+      "exit_code": 0,
+      "stdout": "Relatório atualizado: <temp>/report.md\n",
+      "stderr": ""
+    },
+    {
+      "command": "python3 report.py <temp>/input.csv <temp>/report.md",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "Erro: Linha 3: amount deve ser não negativo, com ponto e até 2 casas decimais.\n"
+    }
+  ]
+}

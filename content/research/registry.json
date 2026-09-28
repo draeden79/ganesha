@@ -264,6 +264,30 @@
       "retrievedAt": "2026-09-28",
       "trust": "primary",
       "availability": "verified"
+    },
+    {
+      "id": "res-netlify-drop-static",
+      "url": "https://docs.netlify.com/start/quickstarts/netlify-drop-quickstart",
+      "title": "Netlify Drop Quickstart",
+      "publisher": "Netlify",
+      "kind": "official-docs",
+      "language": "en",
+      "retrievedAt": "2026-09-28",
+      "trust": "primary",
+      "availability": "verified",
+      "updatedAt": "2026-07-28"
+    },
+    {
+      "id": "res-netlify-project-visibility",
+      "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility",
+      "title": "Project visibility",
+      "publisher": "Netlify",
+      "kind": "official-docs",
+      "language": "en",
+      "retrievedAt": "2026-09-28",
+      "trust": "primary",
+      "availability": "verified",
+      "updatedAt": "2026-08-19"
     }
   ],
   "evidence": [
@@ -490,6 +514,34 @@
         "codex"
       ],
       "caveat": "Documento textual integral (204 linhas) e ilustração de seleção conferidos. Não executadas instalação, tarefa ou revisão no app. Estado histórico excerpt_ingested não limita a cobertura adicional no manifesto de estudo. Não foi operado o aplicativo nem demonstrado um resultado executado. Acesso por conta/plano e sistema específico do aluno permanecem sem validação."
+    },
+    {
+      "id": "ev-netlify-drop-static",
+      "sourceId": "res-netlify-drop-static",
+      "locator": "Original publishing-netlify-drop.md, linhas18–42 e60–70",
+      "text": "O guia descreve upload manual de pasta e atualização no mesmo projeto. Receber uma URL não comprova acesso público. Enviar a pasta atualizada em Production deploys publica diretamente a nova versão de produção.",
+      "textKind": "paraphrase",
+      "claim": "O guia descreve upload manual de pasta e atualização no mesmo projeto. Receber uma URL não comprova acesso público. Enviar a pasta atualizada em Production deploys publica diretamente a nova versão de produção.",
+      "retrievedAt": "2026-09-28",
+      "appliesTo": [
+        "claude",
+        "codex"
+      ],
+      "caveat": "Texto integral de cada documento lido; PNGs oficiais conferidas, GIFs da principal parcialmente; nenhuma operação real. Nenhuma conta, upload, acesso visitante ou atualização foram executados. Animações da página principal vistas parcialmente; roteiro não cobre backend, compilação ou custo ilimitado."
+    },
+    {
+      "id": "ev-netlify-project-visibility",
+      "sourceId": "res-netlify-project-visibility",
+      "locator": "Original publishing-netlify-visibility.md, linhas45–64; papéis e política de equipe no documento integral",
+      "text": "A visibilidade de produção é distinta dos previews. Make public requer um deploy de produção bem-sucedido e depende de papel e política de equipe. A prática precisa conferir o acesso de um visitante sem a sessão do dono.",
+      "textKind": "paraphrase",
+      "claim": "A visibilidade de produção é distinta dos previews. Make public requer um deploy de produção bem-sucedido e depende de papel e política de equipe. A prática precisa conferir o acesso de um visitante sem a sessão do dono.",
+      "retrievedAt": "2026-09-28",
+      "appliesTo": [
+        "claude",
+        "codex"
+      ],
+      "caveat": "Texto integral de cada documento lido; PNGs oficiais conferidas, GIFs da principal parcialmente; nenhuma operação real. Nenhuma conta, upload, acesso visitante ou atualização foram executados. Animações da página principal vistas parcialmente; roteiro não cobre backend, compilação ou custo ilimitado."
     }
   ]
 }

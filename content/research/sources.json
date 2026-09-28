@@ -186,6 +186,22 @@
       "history_complete": false,
       "discovered_urls": [],
       "priority_source": true
+    },
+    {
+      "id": "netlify-docs",
+      "name": "Netlify — documentação oficial",
+      "canonical_url": "https://docs.netlify.com/",
+      "type": "official_docs",
+      "approved_by_user": false,
+      "selection_authority": "Fontes complementares autorizadas; inclusão focal para lacuna de publicação, não nova fonte prioritária.",
+      "checked_at": "2026-09-28",
+      "access_status": "accessible",
+      "coverage": "Somente dois documentos escolhidos: Drop Quickstart e Project visibility, textos integrais estudados. PNGs vistas; GIFs parciais; nenhuma publicação executada.",
+      "last_publication_seen": null,
+      "last_publication_note": "Datas de atualização dos documentos constam nos recursos; histórico não inventariado.",
+      "history_complete": false,
+      "discovered_urls": [],
+      "priority_source": false
     }
   ],
   "source_policy": "Priority sources, not exclusive. Complementary internet sources authorized; retain provenance and prefer primary verification."

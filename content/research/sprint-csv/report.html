@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CSV de treino para relatório</title>
+<style>body{font:18px system-ui;max-width:760px;margin:40px auto;padding:0 20px}textarea{width:100%;min-height:150px;font:16px monospace}button,a{display:inline-block;margin:16px 16px 16px 0;padding:10px}pre{white-space:pre-wrap;background:#eee;padding:16px}#status{min-height:2em}</style>
+<h1>CSV de treino para relatório</h1>
+<p>Exemplo original e local. Cole CSV simples com as colunas id,item,amount. Use ponto decimal. Este exercício não aceita aspas nem vírgulas dentro do nome do item. Os dados ficam nesta página; nada é enviado pela rede.</p>
+<label for="csv">Conteúdo do CSV</label>
+<textarea id="csv" spellcheck="false">id,item,amount
+P01,Caderno,20.00
+P02,Caneta,10.50</textarea>
+<button id="generate">Gerar relatório</button>
+<a id="download" hidden download="report.md">Baixar report.md</a>
+<p id="status" role="status" aria-live="polite"></p>
+<pre id="report" aria-label="Último relatório válido">Nenhum relatório gerado.</pre>
+<script>
+const input=document.getElementById('csv');
+const output=document.getElementById('report');
+const status=document.getElementById('status');
+const download=document.getElementById('download');
+let previousUrl;
+function createReport(text){
+  const rows=text.replace(/^\uFEFF/,'').split(/\r?\n/).filter(x=>x.trim());
+  if(rows.shift()!=='id,item,amount')throw Error('Cabeçalho esperado: id,item,amount.');
+  if(!rows.length)throw Error('CSV sem registros.');
+  const seen=new Set();let total=0n;const entries=[];
+  for(let i=0;i<rows.length;i++){
+    if(rows[i].includes('"'))throw Error(`Linha ${i+2}: aspas não são aceitas neste exemplo simples.`);
+    const fields=rows[i].split(',').map(x=>x.trim());
+    if(fields.length!==3)throw Error(`Linha ${i+2}: quantidade de campos incorreta.`);
+    const [id,item,amount]=fields;
+    if(!id||!item||seen.has(id))throw Error(`Linha ${i+2}: id/item vazio ou id repetido.`);
+    if(!/^[0-9]+(?:\.[0-9]{1,2})?$/.test(amount))throw Error(`Linha ${i+2}: amount inválido.`);
+    const [whole,fraction='']=amount.split('.');
+    const cents=BigInt(whole)*100n+BigInt(fraction.padEnd(2,'0'));
+    seen.add(id);total+=cents;entries.push([id,item,cents]);
+  }
+  const money=c=>`${c/100n}.${String(c%100n).padStart(2,'0')}`;
+  const cell=v=>v.replace(/\|/g,'\\|');
+  return ['# Relatório de treino','',`Registros: ${entries.length}`,`Total: ${money(total)}`,'','| id | item | amount |','| --- | --- | ---: |',...entries.map(([id,item,c])=>`| ${cell(id)} | ${cell(item)} | ${money(c)} |`),''].join('\n');
+}
+document.getElementById('generate').addEventListener('click',()=>{
+  try{
+    const result=createReport(input.value);
+    const nextUrl=URL.createObjectURL(new Blob([result],{type:'text/markdown;charset=utf-8'}));
+    if(previousUrl)URL.revokeObjectURL(previousUrl);
+    previousUrl=nextUrl;output.textContent=result;download.href=nextUrl;download.hidden=false;
+    status.textContent='Relatório atualizado. Confira os totais antes de baixar.';
+  }catch(error){status.textContent=`Erro: ${error.message} O último relatório válido foi preservado.`;}
+});
+</script>
+</html>
