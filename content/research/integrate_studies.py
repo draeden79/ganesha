@@ -53,7 +53,20 @@ def main():
     study_path = ROOT / 'studies/manifest.json'
     study_manifest = read(study_path)
     studies = {s.get('id') or s['video_id']: s for s in study_manifest['studies']}
+    blocked_sources = {b['url']: b for b in study_manifest.get('blocked_sources', [])}
+    backfill = []
+    for batch in sorted((ROOT / 'studies/backfill').glob('*/manifest.json')):
+        batch_data = read(batch, {'studies': []})
+        for study in batch_data['studies']:
+            backfill.append({**study, 'source_manifest': str(batch.relative_to(ROOT))})
+        for blocked in batch_data.get('blocked_sources', []):
+            blocked_sources[blocked['url']] = {**blocked, 'source_manifest': str(batch.relative_to(ROOT))}
     checks = 0
+    for blocked in blocked_sources.values():
+        assert not blocked.get('text_read_complete') and not blocked.get('full_source_analyzed')
+        for artifact in blocked.get('artifacts', []) + blocked.get('visual_artifacts', []):
+            verify(ROOT / artifact['path'], artifact)
+            checks += 1
     for record in jsonl(ROOT / 'acquisition/manifest.jsonl'):
         assert Path(record['artifact_root']) == artifact_root, 'Unexpected artifact root'
         for a in record['artifacts']:
@@ -104,15 +117,23 @@ def main():
         checks += 2
     document_studies = read(ROOT / 'studies/official/manifest.json', {'studies': []})['studies']
     document_studies += read(ROOT / 'studies/scheduling/manifest.json', {'studies': []})['studies']
+    document_studies += [s for s in backfill if 'caption_artifact' not in s]
     for study in document_studies:
         assert (ROOT / study['study_path']).is_file()
+        if study.get('study_artifact'):
+            verify(ROOT / study['study_artifact']['path'], study['study_artifact'])
+            checks += 1
         read_texts = []
         for a in study['artifacts']:
             data = verify(ROOT / a['path'], a)
-            if study['text_read_complete']:
+            # Raw HTML and media inventories prove acquisition, not reading.
+            # A complete-text declaration applies to the study's text artifact.
+            if study['text_read_complete'] and a.get('kind', 'text') == 'text':
                 verify_full_read(data, a['read_lines'], a['line_count'])
                 read_texts.append(data.decode())
             checks += 1
+        if study['text_read_complete']:
+            assert read_texts, study['id'] + ': complete reading requires a text artifact'
         for visual in study.get('visual_artifacts', []):
             verify(ROOT / visual['path'], visual)
             checks += 1
@@ -155,8 +176,11 @@ def main():
             'full_source_analyzed': all(s['full_source_analyzed'] for s in publishing['sources']),
             'source_manifest': 'studies/publishing/manifest.json',
             'artifact_path_base': 'studies/'}
-    for category in ('site', 'app', 'automation'):
-        for study in read(ROOT / f'studies/{category}/manifest.json', {'studies': []})['studies']:
+    video_batches = [read(ROOT / f'studies/{category}/manifest.json', {'studies': []})['studies']
+                     for category in ('site', 'app', 'automation')]
+    video_batches.append([s for s in backfill if 'caption_artifact' in s])
+    for video_batch in video_batches:
+        for study in video_batch:
             caption = study['caption_artifact']
             data = verify(ROOT / caption['path'], caption)
             if study['full_transcript_read']:
@@ -169,7 +193,7 @@ def main():
             v = videos[study['video_id']]
             assert caption['sha256'] in {a['sha256'] for a in v['artifacts']}
             for key in ('full_transcript_read', 'full_video_watched', 'full_speech_coverage_verified', 'full_source_analyzed'):
-                v[key] = study[key]
+                v[key] = v.get(key, False) or study[key]
             v['study_path'] = study['study_path']
             v['study_status'] = study.get('study_status', study.get('status', 'transcript_analyzed_visual_pending'))
             studies[study['id']] = study
@@ -177,6 +201,7 @@ def main():
     manifest['videos'] = sorted(videos.values(), key=lambda v: v['video_id'])
     manifest['updated_at'] = datetime.now(timezone.utc).isoformat()
     study_manifest['studies'] = list(studies.values())
+    study_manifest['blocked_sources'] = list(blocked_sources.values())
     study_manifest['updated_at'] = manifest['updated_at']
     study_manifest['scope_note'] = 'Text acquisition, complete reading, visual inspection and product execution are distinct. See individual scope and pending fields.'
     write(transcript_path, manifest)

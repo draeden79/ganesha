@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "studies": [
+    {
+      "id": "academy-claude-first-prompt",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/your-first-prompt",
+      "video_id": "gbetp6D7J_Q",
+      "title": "Your first prompt",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-01/first-prompt.md",
+      "status": "transcript_analyzed_visual_pending",
+      "text_read_complete": true,
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "full_source_analyzed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac01-first-prompt.txt",
+          "bytes": 4454,
+          "sha256": "bac7e97cc901ad40c86719d2a21f6c83eee6e458146d2e7e195fd9f4036cc4ec",
+          "kind": "text",
+          "line_count": 60,
+          "read_lines": [
+            [
+              1,
+              60
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac01-first-prompt-summary.txt",
+          "bytes": 2406,
+          "sha256": "8724c2327614768261074e31ba8bfb187856bc18685404b5eba8b810420d497c",
+          "kind": "text",
+          "line_count": 50,
+          "read_lines": [
+            [
+              1,
+              50
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-01/first-prompt.md",
+        "bytes": 4968,
+        "sha256": "bade7b24eff58dd527e9fe763b29d2e33b79b4e8f074ca57aa9c809e8162fdd4",
+        "kind": "original_study",
+        "line_count": 37,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac01-first-prompt-auto.png",
+          "bytes": 54536,
+          "sha256": "9e972057b28b991a97317fb89272d2d2f44171224668bb5b096e695a50a026a8",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-first-prompt-plan.png",
+          "bytes": 50914,
+          "sha256": "e7502a6375344826878bfcbdf063e029d1c2da80dfb5311996e8adc8e6fdb3bc",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-first-prompt-input.png",
+          "bytes": 68242,
+          "sha256": "bda9efaf3362867916f5a1e732b602988daf48504b1ba459c8bbfbe919c81705",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Resultado visual final e critérios de aprovação não demonstrados nas imagens",
+        "Prática original não executada"
+      ],
+      "rights": "Original textual e capturas locais gitignored; sem licença de republicação presumida."
+    },
+    {
+      "id": "academy-claude-context-management",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/context-management",
+      "video_id": "eW3oTyfeWZ0",
+      "title": "Context management",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-01/context-management.md",
+      "status": "transcript_analyzed_visual_pending",
+      "text_read_complete": true,
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "full_source_analyzed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac01-context.txt",
+          "bytes": 6349,
+          "sha256": "b88bce800049c0235597950633c5c2f3dcf963512ca8eed54691fbd834ffad67",
+          "kind": "text",
+          "line_count": 80,
+          "read_lines": [
+            [
+              1,
+              80
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac01-context-summary.txt",
+          "bytes": 3203,
+          "sha256": "a78c14dea3ba9a08b923a36c94ef7d7dffb58882d11fbbfb1311142bda994c7c",
+          "kind": "text",
+          "line_count": 64,
+          "read_lines": [
+            [
+              1,
+              64
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-01/context-management.md",
+        "bytes": 5756,
+        "sha256": "b60f2cd15f32c2cc393c29964a542a5799efc8e6643b63022076ec086c5b2506",
+        "kind": "original_study",
+        "line_count": 46,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac01-context-0.png",
+          "bytes": 33492,
+          "sha256": "3ec5a6fdf60340c965645cf6a3780945b2888b9b3849898b09d4c5c37c8365c2",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-context-1.png",
+          "bytes": 37326,
+          "sha256": "3e9e8f12674ae73f1ac29452f794650c6208fc98d934723af4ddd58f1a0a0c61",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-context-2.png",
+          "bytes": 85549,
+          "sha256": "c871731d88f27c3bb8b2b4b25c6f1bb95e23ae8bd86b58542461672db941e02d",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-context-3.png",
+          "bytes": 45169,
+          "sha256": "90ba18a066eea7e61f153cf190657f3dec95a4bb70b4944c05ca77b73b3dd7fe",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-context-4.png",
+          "bytes": 43945,
+          "sha256": "3beb643bee9821be138921403f13815a3cd72689d6435caab47f4e9b046f02e7",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-context-5.png",
+          "bytes": 52270,
+          "sha256": "79bd9f7622181dd10a10112b37661e6e6371f87f7a0fbd71bf63652ba9e8b1e2",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac01-context-6.png",
+          "bytes": 59499,
+          "sha256": "c5fcee987c4c397ae2ef425b5a8a48baa7ac8cb5fd146cdaff5f703e6cc783b6",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/mcp",
+          "method": "web open/find",
+          "read_scope": "Tool availability; Scale with MCP tool search; Configure tool search",
+          "entire_source_read": false,
+          "observed_at": "2026-09-28",
+          "finding": "Current documentation describes deferred tool search by default with configuration/provider exceptions; lesson generalization not current universal rule."
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Execução dos comandos",
+        "Prática original não executada"
+      ],
+      "rights": "Original textual e capturas locais gitignored; sem licença de republicação presumida."
+    }
+  ]
+}

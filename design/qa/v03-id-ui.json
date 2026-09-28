@@ -1,0 +1,244 @@
+[
+  {
+    "case": "csv-mobile-id",
+    "automaticNoticeCount": 0,
+    "callouts": [
+      "Di relatorio, buat hanya vendas.csv sebagai teks UTF-8 dengan isi di bawah, pertahankan nama dan titik desimal. Jangan membuat laporan, memasang apa pun, atau menjadwalkan tugas. Tampilkan jalur berkas agar saya dapat membukanya.\n\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00",
+      "Catat apa yang benar-benar Anda jalankan atau hambatan yang ditemui. Jika menganalisis contoh simulasi, sebutkan mode tersebut; itu tidak membuktikan pelaksanaan eksternal."
+    ],
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "id,item,amount\n1,Caderno,10.50\n2,Curso,20.00"
+      }
+    ],
+    "dir": "ltr",
+    "h1": "Buat tabel latihan",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.automation-input.create-csv.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-lesson.workspace",
+    "automaticNoticeCount": 0,
+    "callouts": [
+      "Catat apa yang benar-benar Anda jalankan atau hambatan yang ditemui. Jika menganalisis contoh simulasi, sebutkan mode tersebut; itu tidak membuktikan pelaksanaan eksternal."
+    ],
+    "code": [],
+    "dir": "ltr",
+    "h1": "Pilih alat dan periksa akses",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.workspace.access.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-lesson.requests",
+    "automaticNoticeCount": 1,
+    "callouts": [],
+    "code": [],
+    "dir": "ltr",
+    "h1": "Ubah ide samar menjadi hasil serahan",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.requests.desired-result.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-lesson.verification",
+    "automaticNoticeCount": 1,
+    "callouts": [],
+    "code": [],
+    "dir": "ltr",
+    "h1": "Bedakan klaim, berkas, dan perilaku",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.verification.evidence-types.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-lesson.site-build",
+    "automaticNoticeCount": 0,
+    "callouts": [],
+    "code": [],
+    "dir": "ltr",
+    "h1": "Apa yang perlu dilakukan halaman ini",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.site-build.page-contract.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-lesson.site-quality",
+    "automaticNoticeCount": 1,
+    "callouts": [],
+    "code": [],
+    "dir": "ltr",
+    "h1": "Tentukan kualitas yang dapat diamati",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.site-quality.quality-criteria.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-lesson.site-publish",
+    "automaticNoticeCount": 0,
+    "callouts": [],
+    "code": [],
+    "dir": "ltr",
+    "h1": "Bedakan berkas, hosting, dan akses",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.site-publish.local-versus-hosted.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-lesson.app-state",
+    "automaticNoticeCount": 1,
+    "callouts": [],
+    "code": [],
+    "dir": "ltr",
+    "h1": "Apa yang berubah ketika Anda bertindak",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.app-state.state-model.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-lesson.app-storage",
+    "automaticNoticeCount": 1,
+    "callouts": [],
+    "code": [],
+    "dir": "ltr",
+    "h1": "Pisahkan layar, memori, dan penyimpanan",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.app-storage.memory-storage.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-lesson.app-delivery",
+    "automaticNoticeCount": 1,
+    "callouts": [],
+    "code": [],
+    "dir": "ltr",
+    "h1": "Pisahkan program dari salinan datanya",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.app-delivery.files-and-data.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-lesson.automation-input",
+    "automaticNoticeCount": 1,
+    "callouts": [],
+    "code": [],
+    "dir": "ltr",
+    "h1": "Masukan, transformasi, dan keluaran",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.automation-input.pipeline.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-lesson.automation-report",
+    "automaticNoticeCount": 1,
+    "callouts": [],
+    "code": [],
+    "dir": "ltr",
+    "h1": "Pilih cara menjalankan transformasi",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.automation-report.execution-paths.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-lesson.automation-schedule",
+    "automaticNoticeCount": 1,
+    "callouts": [],
+    "code": [],
+    "dir": "ltr",
+    "h1": "Agenda mengulang suatu proses",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.automation-schedule.schedule-boundary.v3",
+    "width": 390
+  },
+  {
+    "case": "long-schedule-id",
+    "automaticNoticeCount": 0,
+    "callouts": [
+      "Jalankan sekali sekarang, tanpa membuat agenda, dalam folder lokal relatorio. Gunakan hanya perintah yang sudah saya uji pada komputer ini: python3 report.py vendas.csv report.md atau, di Windows, py -3 report.py vendas.csv report.md. Jangan memasang dependensi atau mengubah berkas masukan maupun program. Masukan latihan berisi tepat id,item,amount; 1,Caderno,10.50; 2,Curso,20.00. Buka report.md dan periksa 2 catatan serta total 30.50. Jika terjadi kesalahan, laporkan diagnosis dan pertahankan laporan valid terakhir. Jangan mengirim data atau menerbitkan hasil.",
+      "Catat apa yang benar-benar Anda jalankan atau hambatan yang ditemui. Jika menganalisis contoh simulasi, sebutkan mode tersebut; itu tidak membuktikan pelaksanaan eksternal."
+    ],
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "python3 report.py vendas.csv report.md"
+      },
+      {
+        "dir": "ltr",
+        "text": "py -3 report.py vendas.csv report.md"
+      }
+    ],
+    "dir": "ltr",
+    "h1": "Berlatih sebelum mengaktifkan waktu",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.automation-schedule.tool-conditions.v3",
+    "width": 390
+  },
+  {
+    "case": "localized-practice-gate",
+    "result": {
+      "blocked": false,
+      "feedback": "Selesai\n\nLatihan manual diperiksa sebelum mengizinkan pengulangan, atau hambatan dicatat secara jelas."
+    }
+  },
+  {
+    "case": "history-scenario-visible-id",
+    "automaticNoticeCount": 0,
+    "callouts": [
+      "Catat apa yang benar-benar Anda jalankan atau hambatan yang ditemui. Jika menganalisis contoh simulasi, sebutkan mode tersebut; itu tidak membuktikan pelaksanaan eksternal."
+    ],
+    "code": [],
+    "dir": "ltr",
+    "h1": "Amati pemicu pertama",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.automation-schedule.history-triage.v3",
+    "width": 390
+  },
+  {
+    "case": "apps-test-copy-id",
+    "automaticNoticeCount": 0,
+    "callouts": [
+      "Perbarui hanya salinan uji terisolasi dengan versi aplikasi terkini, termasuk ekspor/impor. Dalam salinan itu, gunakan hanya ganesha.tasks.test; jangan membaca, menulis, atau menghapus ganesha.tasks.v1. Lalu simulasikan kegagalan penulisan saat mengonfirmasi impor valid. Pertahankan daftar dan data sebelumnya, tampilkan kesalahan, dan jangan mengklaim penggantian berhasil. Jelaskan cara menghapus latihan. Saya akan menguji impor cadangan, muat ulang, dan membandingkan tugas serta penyelesaian.",
+      "Catat apa yang benar-benar Anda jalankan atau hambatan yang ditemui. Jika menganalisis contoh simulasi, sebutkan mode tersebut; itu tidak membuktikan pelaksanaan eksternal."
+    ],
+    "code": [],
+    "dir": "ltr",
+    "h1": "Pulihkan cadangan dan uji penulisan yang ditolak",
+    "h1y": 118.59375,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/id#step.app-delivery.restore-backup.v3",
+    "width": 390
+  },
+  {
+    "case": "localized-check",
+    "answer": "option.app-delivery.check-contract.a.v3",
+    "result": {
+      "blocked": true,
+      "feedback": "Mari coba lagi\n\nEkstensi tidak menjamin bentuk atau tipe yang diwajibkan. Bandingkan tipe yang diwajibkan dengan nilai dalam tanda kutip.\n\n1 percobaan"
+    }
+  },
+  {
+    "case": "localized-check",
+    "answer": "option.app-delivery.check-contract.c.v3",
+    "result": {
+      "blocked": false,
+      "feedback": "Bagus sekali!\n\nKontrak mewajibkan true/false tanpa tanda kutip dan mempertahankan data saat kesalahan. Benar: JSON yang dapat diurai tetap dapat melanggar kontrak aplikasi.\n\n2 percobaan"
+    }
+  }
+]

@@ -3,7 +3,7 @@
     "id": "q-curated-deep-study",
     "priority": "P0",
     "priority_order": 1,
-    "status": "batch_delivered_gaps_explicit",
+    "status": "in_progress",
     "owner": "Devorador",
     "created_at": "2026-09-28",
     "task": "Selecionar fontes relevantes para iniciantes construírem sites, apps e automações; estudar integralmente cada recurso selecionado e conferir demonstrações materiais antes de fundamentar aulas.",
@@ -12,12 +12,14 @@
     "done_when": "Cada competência necessária tem fonte apropriada estudada, exemplos completos, prática e verificações sustentáveis; lacunas explícitas. Tamanho do corpus conforme suficiência, não meta arbitrária de downloads.",
     "scope_note": "P0: pedido e quickstarts com ciclo curto. P1: site local/testar/corrigir e publicação. P2: app simples e CSV fictício para relatório. Inventário histórico é backlog.",
     "handoff": "DELIVERY_STATUS.md",
-    "next_action": "Aguardar validação didática por competência e preencher lacuna concreta; não retomar histórico amplo."
+    "next_action": "Retomar lotes históricos; estudar integralmente e organizar por pertinência sem excluir o restante do acervo.",
+    "latest_directive_at": "2026-09-28T20:44:52.684123+00:00",
+    "priority_note": "Diretriz direta mais recente do usuário exige consumir e organizar todo o conteúdo acessível; seleção orienta ordem, não encerramento."
   },
   {
     "id": "q-all-priority-video-transcripts",
-    "priority": "P2",
-    "status": "backlog_preserved",
+    "priority": "P0",
+    "status": "in_progress",
     "owner": "Devorador",
     "created_at": "2026-09-28",
     "scope": "Todos os vídeos históricos das cinco fontes de canal e vídeos incorporados às quatro fontes de páginas; prioridade não exclusiva.",
@@ -27,13 +29,15 @@
     "plan": "TRANSCRIPTION_PLAN.md",
     "done_when": "Denominadores conhecidos por escopo; cada vídeo tem transcrição integral verificada ou impedimento específico com próxima tentativa. Não encerrar por amostra.",
     "history_total_known": false,
-    "priority_note": "Diretriz posterior do usuário: acervo exaustivo deixa de bloquear aulas; priorizar corpus relevante e profundo."
+    "priority_note": "Diretriz direta mais recente do usuário exige consumir e organizar todo o conteúdo acessível; seleção orienta ordem, não encerramento.",
+    "latest_directive_at": "2026-09-28T20:44:52.684123+00:00",
+    "next_action": "Retomar lotes históricos; estudar integralmente e organizar por pertinência sem excluir o restante do acervo."
   },
   {
     "id": "q-youtube-riley-index",
     "source_id": "riley-brown-youtube",
-    "priority": "P2",
-    "status": "backlog_preserved",
+    "priority": "P1",
+    "status": "pending_reconciliation",
     "url": "https://www.youtube.com/@rileybrownai/videos",
     "task": "Reconciliar playlists/podcasts e links externos com os uploads públicos já paginados.",
     "done_when": "Todos os itens acessíveis reconciliados; privado/removido/bloqueado com motivo e próxima ação.",
@@ -45,8 +49,8 @@
   {
     "id": "q-youtube-designcourse-index",
     "source_id": "designcourse-youtube",
-    "priority": "P2",
-    "status": "backlog_preserved",
+    "priority": "P1",
+    "status": "pending_reconciliation",
     "url": "https://www.youtube.com/@DesignCourse/videos",
     "task": "Reconciliar playlists/podcasts e links externos com os uploads públicos já paginados.",
     "done_when": "Todos os itens acessíveis reconciliados; privado/removido/bloqueado com motivo e próxima ação.",

@@ -1,13 +1,16 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-28T19:51:51.033456+00:00",
+  "updated_at": "2026-09-28T20:50:40.495414+00:00",
   "policy": {
-    "general_historical_acquisition_active": false,
-    "reason": "Mudança explícita do usuário: foco em pessoas comuns criando sites, apps simples e automações; não maximizar downloads.",
+    "general_historical_acquisition_active": true,
+    "reason": "Nova diretriz explícita retomou todo o histórico. A seleção anterior classifica prioridade imediata de estudo e não exclui definitivamente nenhuma fonte.",
     "general_queue_stopped_after_video_id": "iqNzfK4_meQ",
     "selection_basis": "Objetivos não cobertos, adequação do percurso, dependências e duplicação; sem quota por canal ou número-alvo de vídeos.",
     "metadata_is_not_study": true,
-    "new_acquisitions_are_research_only": true
+    "new_acquisitions_are_research_only": true,
+    "scope": "exhaustive_user_directive_2026_09_28",
+    "directive_effective_at": "2026-09-28T20:42:00+00:00",
+    "default_collector_still_requires_explicit_historical_option": true
   },
   "criteria": {
     "include": [
@@ -132,7 +135,7 @@
         "policy": "Escolher uma fonte por lacuna; alternativas ficam em reserva e não geram download automático."
       },
       "reason": "App cotidiano para organizar filmes, séries e jogos; problema, telas, especificação e estados de borda são explícitos. Substitui o tutorial antigo de watchlist.",
-      "status": "exported_track_study_pending",
+      "status": "transcript_analyzed_visual_pending",
       "acquisition_action": "reuse_existing",
       "next_action": "Confirmar persistência, criar/editar/excluir, estados vazios e entradas inválidas na faixa inteira e nas telas. Não deduzir CRUD apenas da descrição.",
       "metadata_evidence": {
@@ -179,7 +182,12 @@
         }
       ],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false,
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false
     },
     {
       "video_id": "GUgxx6fMiR8",
@@ -219,8 +227,8 @@
         "policy": "Escolher uma fonte por lacuna; alternativas ficam em reserva e não geram download automático."
       },
       "reason": "Percurso explícito de planejamento, construção e publicação em domínio próprio, mas com setup e patrocínio de hospedagem. Mantido como alternativa somente se o estudo de Riley revelar lacuna material.",
-      "status": "not_selected",
-      "acquisition_action": "do_not_acquire",
+      "status": "exported_track_study_pending",
+      "acquisition_action": "reuse_existing",
       "next_action": "Não baixar agora. Reabrir apenas se Riley deixar lacuna material; separar patrocínio de requisito e evitar administração de servidor como rota inicial.",
       "metadata_evidence": {
         "acquisition": "yt-dlp public metadata only",
@@ -230,9 +238,48 @@
         "path": "aq.GUgxx6fMiR8.triage.307050927205.json",
         "sha256": "3070509272051a6865ccadf95b32832b7028e7733d2b98bc2ea98a6b59fa2f95"
       },
-      "transcript_artifacts": [],
+      "transcript_artifacts": [
+        {
+          "acquisition": "yt-dlp anonymous public captions; original JSON3 response",
+          "bytes": 80102,
+          "caption_origin": "authored-or-unspecified",
+          "collected_at": "2026-09-28T20:45:56.372945+00:00",
+          "cue_count": 510,
+          "first_cue_start_seconds": 0.0,
+          "format": "youtube_json3",
+          "language": "en-CA",
+          "last_cue_end_seconds": 1435.466,
+          "last_cue_start_seconds": 1432.55,
+          "path": "aq.GUgxx6fMiR8.en-CA.d552c674d7cc.json3",
+          "sha256": "d552c674d7cc6fdecf40edde083718a8df62fad39d4163b77d9df20243902f9c",
+          "timing_note": "Caption timing bounds do not prove every spoken word was captured. The whole returned caption track was exported; audiovisual and speech completeness verification remain pending.",
+          "track_export_complete": true
+        },
+        {
+          "acquisition": "yt-dlp anonymous public captions; original JSON3 response",
+          "bytes": 46941,
+          "caption_origin": "authored-or-unspecified",
+          "collected_at": "2026-09-28T20:45:56.373669+00:00",
+          "cue_count": 510,
+          "derived_from_sha256": "d552c674d7cc6fdecf40edde083718a8df62fad39d4163b77d9df20243902f9c",
+          "first_cue_start_seconds": 0.0,
+          "format": "derived_cue_text",
+          "language": "en-CA",
+          "last_cue_end_seconds": 1435.466,
+          "last_cue_start_seconds": 1432.55,
+          "path": "aq.GUgxx6fMiR8.en-CA.5b10d430f086.txt",
+          "sha256": "5b10d430f086dfc45c4254e1058390cd1f41edf3f8686d764fd2b915316c5974",
+          "timing_note": "Caption timing bounds do not prove every spoken word was captured. The whole returned caption track was exported; audiovisual and speech completeness verification remain pending.",
+          "track_export_complete": true
+        }
+      ],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false,
+      "full_transcript_read": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false
     },
     {
       "video_id": "68BnH29qvAA",
@@ -267,7 +314,7 @@
         "policy": "Escolher uma fonte por lacuna; alternativas ficam em reserva e não geram download automático."
       },
       "reason": "Demonstra uma primeira rotina curta e distingue tarefa agendada determinística de tarefa que precisa de decisão; candidato ao primeiro resultado de automação.",
-      "status": "exported_track_study_pending",
+      "status": "transcript_analyzed_visual_pending",
       "acquisition_action": "reuse_existing",
       "next_action": "Conferir na faixa e no visual o gatilho, ação, resultado, pausa/cancelamento e histórico. Verificar a interface e acesso atuais antes de ensinar passos.",
       "metadata_evidence": {
@@ -314,7 +361,12 @@
         }
       ],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false,
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false
     },
     {
       "video_id": "HN0oWxbF2bM",
@@ -399,7 +451,12 @@
         }
       ],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false,
+      "full_transcript_read": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false
     },
     {
       "video_id": "bTF3tACqPRU",
@@ -482,7 +539,12 @@
         }
       ],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false,
+      "full_transcript_read": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false
     },
     {
       "video_id": "-zFd1nPn6U0",
@@ -567,7 +629,12 @@
         }
       ],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false,
+      "full_transcript_read": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false
     },
     {
       "video_id": "E2UgYp2vh5U",
@@ -650,7 +717,12 @@
         }
       ],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false,
+      "full_transcript_read": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false
     },
     {
       "video_id": "ntDIxaeo3Wg",
@@ -688,7 +760,7 @@
         "policy": "Escolher uma fonte por lacuna; alternativas ficam em reserva e não geram download automático."
       },
       "reason": "Faixa já estudada integralmente: jogo local simples, teste e mudança limitada. Reaproveitar a evidência existente; não recomendar todo o setup de CLI como primeira aula.",
-      "status": "existing_transcript_analyzed_visual_pending",
+      "status": "transcript_analyzed_visual_pending",
       "acquisition_action": "reuse_existing",
       "next_action": "Concluir pendências visuais da ficha existente. Primeiro resultado deve verificar separadamente abrir, cumprir o pedido e manter comportamento após uma mudança.",
       "metadata_evidence": null,
@@ -744,7 +816,12 @@
         }
       ],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false,
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false
     },
     {
       "video_id": "fK_bm84N7bs",
@@ -821,7 +898,12 @@
         }
       ],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false,
+      "full_transcript_read": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false
     },
     {
       "video_id": "SKBDC3QugZw",
@@ -858,7 +940,7 @@
         "policy": "Escolher uma fonte por lacuna; alternativas ficam em reserva e não geram download automático."
       },
       "reason": "Selecionado pelo Diretor: a descrição confirma landing page, erros enfrentados e resultado final; capítulos identificam ajustes e deploy. A narrativa de correção tem prioridade, e música/imagens/chat são desvios a analisar, não requisitos para o aluno.",
-      "status": "exported_track_study_pending",
+      "status": "transcript_analyzed_visual_pending",
       "acquisition_action": "reuse_existing",
       "next_action": "Adquirir primeiro, estudar integralmente e conferir visualmente landing page, falhas, ajustes e deploy. Há complemento primário de upload/publicação sendo estudado por outro agente; Tim só substitui se houver lacuna material.",
       "metadata_evidence": {
@@ -905,7 +987,12 @@
         }
       ],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false,
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false
     },
     {
       "video_id": "vQDAxWS9OXc",
@@ -943,8 +1030,8 @@
         "policy": "Escolher uma fonte por lacuna; alternativas ficam em reserva e não geram download automático."
       },
       "reason": "Apesar do exemplo neutro de tarefas, tutorial de 2024 começa com SSH e Firebase. A carga de configuração e a idade o tornam uma rota inicial pior para o público definido.",
-      "status": "not_selected",
-      "acquisition_action": "do_not_acquire",
+      "status": "deferred_in_exhaustive_priority",
+      "acquisition_action": "historical_queue",
       "next_action": "Preservar metadados. Não adquirir para a prioridade atual.",
       "metadata_evidence": {
         "acquisition": "yt-dlp public metadata only",
@@ -956,7 +1043,9 @@
       },
       "transcript_artifacts": [],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false
     },
     {
       "video_id": "yXsBQGnx0dA",
@@ -993,8 +1082,8 @@
         "policy": "Escolher uma fonte por lacuna; alternativas ficam em reserva e não geram download automático."
       },
       "reason": "O exemplo é FAQ de saúde e passa a gerar respostas quando não encontra resposta cadastrada. Não é o domínio simples e neutro desejado para a primeira prática.",
-      "status": "not_selected",
-      "acquisition_action": "do_not_acquire",
+      "status": "deferred_in_exhaustive_priority",
+      "acquisition_action": "historical_queue",
       "next_action": "Não adquirir para a rota inicial. Evitar transportar o fallback como padrão de app de perguntas.",
       "metadata_evidence": {
         "acquisition": "yt-dlp public metadata only",
@@ -1006,7 +1095,9 @@
       },
       "transcript_artifacts": [],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false
     },
     {
       "video_id": "06Beyp_iDL0",
@@ -1043,8 +1134,8 @@
         "policy": "Escolher uma fonte por lacuna; alternativas ficam em reserva e não geram download automático."
       },
       "reason": "O rótulo beginner não corresponde ao percurso mínimo: RAG, chatbot, suporte e conteúdo em um só vídeo. O caso de inbox tem um objetivo cotidiano mais delimitado.",
-      "status": "not_selected",
-      "acquisition_action": "do_not_acquire",
+      "status": "exported_track_study_pending",
+      "acquisition_action": "reuse_existing",
       "next_action": "Não adquirir para a prioridade atual.",
       "metadata_evidence": {
         "acquisition": "yt-dlp public metadata only",
@@ -1054,9 +1145,48 @@
         "path": "aq.06Beyp_iDL0.triage.d9324e1baf89.json",
         "sha256": "d9324e1baf892cf8c1320f8f5bbdeb9d1092d214df81585909f56671aae5821b"
       },
-      "transcript_artifacts": [],
+      "transcript_artifacts": [
+        {
+          "acquisition": "yt-dlp anonymous public captions; original JSON3 response",
+          "bytes": 1140402,
+          "caption_origin": "automatic",
+          "collected_at": "2026-09-28T20:49:08.218504+00:00",
+          "cue_count": 1425,
+          "first_cue_start_seconds": 0.08,
+          "format": "youtube_json3",
+          "language": "en",
+          "last_cue_end_seconds": 2664.16,
+          "last_cue_start_seconds": 2661.119,
+          "path": "aq.06Beyp_iDL0.en.9507184a24af.json3",
+          "sha256": "9507184a24af486d29c50472d0e23961b3f3c13dcb33b754c39d64d58b120472",
+          "timing_note": "Caption timing bounds do not prove every spoken word was captured. The whole returned caption track was exported; audiovisual and speech completeness verification remain pending.",
+          "track_export_complete": true
+        },
+        {
+          "acquisition": "yt-dlp anonymous public captions; original JSON3 response",
+          "bytes": 100460,
+          "caption_origin": "automatic",
+          "collected_at": "2026-09-28T20:49:08.220767+00:00",
+          "cue_count": 1425,
+          "derived_from_sha256": "9507184a24af486d29c50472d0e23961b3f3c13dcb33b754c39d64d58b120472",
+          "first_cue_start_seconds": 0.08,
+          "format": "derived_cue_text",
+          "language": "en",
+          "last_cue_end_seconds": 2664.16,
+          "last_cue_start_seconds": 2661.119,
+          "path": "aq.06Beyp_iDL0.en.f542bd50e10f.txt",
+          "sha256": "f542bd50e10f72cc11ceab31f938991bbfec41e77a84a4ac5c3a3607d2658a29",
+          "timing_note": "Caption timing bounds do not prove every spoken word was captured. The whole returned caption track was exported; audiovisual and speech completeness verification remain pending.",
+          "track_export_complete": true
+        }
+      ],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false,
+      "full_transcript_read": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false
     },
     {
       "video_id": "jlZfuNoBBCY",
@@ -1093,8 +1223,8 @@
         "policy": "Escolher uma fonte por lacuna; alternativas ficam em reserva e não geram download automático."
       },
       "reason": "O título sobre dados cotidianos oculta uma arquitetura RAG com banco vetorial e duas pipelines KNIME. Excede a necessidade de app simples com campos e interações.",
-      "status": "not_selected",
-      "acquisition_action": "do_not_acquire",
+      "status": "deferred_in_exhaustive_priority",
+      "acquisition_action": "historical_queue",
       "next_action": "Não adquirir para a prioridade atual.",
       "metadata_evidence": {
         "acquisition": "yt-dlp public metadata only",
@@ -1106,7 +1236,9 @@
       },
       "transcript_artifacts": [],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false
     },
     {
       "video_id": "GepHGs_CZdk",
@@ -1143,8 +1275,8 @@
         "policy": "Escolher uma fonte por lacuna; alternativas ficam em reserva e não geram download automático."
       },
       "reason": "Watchlist é pertinente, mas o caso de 2026 do mesmo autor acrescenta problema, telas e estados de borda. Evitar duas introduções de filmes e duplicação de setup.",
-      "status": "not_selected",
-      "acquisition_action": "do_not_acquire",
+      "status": "exported_track_study_pending",
+      "acquisition_action": "reuse_existing",
       "next_action": "Não adquirir enquanto o caso mais recente atender à lacuna de dados/interações.",
       "metadata_evidence": {
         "acquisition": "yt-dlp public metadata only",
@@ -1154,9 +1286,48 @@
         "path": "aq.GepHGs_CZdk.triage.c6d01b3e5adc.json",
         "sha256": "c6d01b3e5adc98abf1c9b6969d69364571bca8b3fd4a8e956085abcde8c85c29"
       },
-      "transcript_artifacts": [],
+      "transcript_artifacts": [
+        {
+          "acquisition": "yt-dlp anonymous public captions; original JSON3 response",
+          "bytes": 307379,
+          "caption_origin": "automatic",
+          "collected_at": "2026-09-28T20:46:17.572443+00:00",
+          "cue_count": 408,
+          "first_cue_start_seconds": 1.12,
+          "format": "youtube_json3",
+          "language": "en",
+          "last_cue_end_seconds": 1003.68,
+          "last_cue_start_seconds": 999.759,
+          "path": "aq.GepHGs_CZdk.en.dfbe2a731e17.json3",
+          "sha256": "dfbe2a731e1784e1cbbb15625e956465d95e5dc47a6c959223616f5004fc6c76",
+          "timing_note": "Caption timing bounds do not prove every spoken word was captured. The whole returned caption track was exported; audiovisual and speech completeness verification remain pending.",
+          "track_export_complete": true
+        },
+        {
+          "acquisition": "yt-dlp anonymous public captions; original JSON3 response",
+          "bytes": 28409,
+          "caption_origin": "automatic",
+          "collected_at": "2026-09-28T20:46:17.573311+00:00",
+          "cue_count": 408,
+          "derived_from_sha256": "dfbe2a731e1784e1cbbb15625e956465d95e5dc47a6c959223616f5004fc6c76",
+          "first_cue_start_seconds": 1.12,
+          "format": "derived_cue_text",
+          "language": "en",
+          "last_cue_end_seconds": 1003.68,
+          "last_cue_start_seconds": 999.759,
+          "path": "aq.GepHGs_CZdk.en.9196058f9883.txt",
+          "sha256": "9196058f9883e4f76021fe95e3cced3fc82186b4b691f39b58e25f9ed9aaff6c",
+          "timing_note": "Caption timing bounds do not prove every spoken word was captured. The whole returned caption track was exported; audiovisual and speech completeness verification remain pending.",
+          "track_export_complete": true
+        }
+      ],
       "full_source_analyzed": false,
-      "curriculum_approved": false
+      "curriculum_approved": false,
+      "selection_scope": "immediate_course_study_priority_only",
+      "permanently_excluded": false,
+      "full_transcript_read": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false
     }
   ],
   "preserved_prior_acquisitions": [
@@ -1217,6 +1388,90 @@
     {
       "video_id": "iqNzfK4_meQ",
       "title": "Using OpenAI Codex CLI with GPT-5-Codex",
+      "status": "preserved_not_selected",
+      "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
+    },
+    {
+      "video_id": "GUgxx6fMiR8",
+      "title": "How to Build an App With Claude Code - Full Tutorial for Beginners",
+      "status": "preserved_not_selected",
+      "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
+    },
+    {
+      "video_id": "GepHGs_CZdk",
+      "title": "Claude Code Beginner's Tutorial: Build a Movie App in 15 Minutes (2025)",
+      "status": "preserved_not_selected",
+      "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
+    },
+    {
+      "video_id": "SBbAcXlmfe0",
+      "title": "How to build a mobile app with Cursor in 53 minutes (No Coding)",
+      "status": "preserved_not_selected",
+      "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
+    },
+    {
+      "video_id": "jQm42x6VpN4",
+      "title": "Cursor Landing Page Full Tutorial (No Coding just AI Prompts)",
+      "status": "preserved_not_selected",
+      "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
+    },
+    {
+      "video_id": "ly0hAtV7EBg",
+      "title": "Flutter Tutorial For Beginners #1 - Setup For Flutter Mobile App Development",
+      "status": "preserved_not_selected",
+      "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
+    },
+    {
+      "video_id": "nxqA3VHKE-s",
+      "title": "How to use AI to Build an App (No Coding)",
+      "status": "preserved_not_selected",
+      "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
+    },
+    {
+      "video_id": "-FRBotBLc1o",
+      "title": "Building an App with ZERO Coding Knowledge is NOW Possible (Claude 3.7 in Cursor)",
+      "status": "preserved_not_selected",
+      "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
+    },
+    {
+      "video_id": "Ccf5yhlT2UU",
+      "title": "Claude Sonnet 4.5: I Built a Full App in 18 Minutes (With No Code)",
+      "status": "preserved_not_selected",
+      "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
+    },
+    {
+      "video_id": "pZpoACNOPAw",
+      "title": "Lovable Full Course for Beginners: Build & Deploy a Real App",
+      "status": "preserved_not_selected",
+      "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
+    },
+    {
+      "video_id": "06Beyp_iDL0",
+      "title": "3 AI Workflows Step-by-Step (Beginner's Guide to n8n)",
+      "status": "preserved_not_selected",
+      "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
+    },
+    {
+      "video_id": "8gNrZ4lAnAw",
+      "title": "The 2019 Frontend Developer Crash Course - HTML & CSS Tutorial for Beginners",
+      "status": "preserved_not_selected",
+      "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
+    },
+    {
+      "video_id": "AGi3U79zMIM",
+      "title": "How to Trigger n8n AI Agents from ChatGPT (no code)",
+      "status": "preserved_not_selected",
+      "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
+    },
+    {
+      "video_id": "xJ5oz63mIec",
+      "title": "How to Deploy Your Claude Automations (3 Methods)",
+      "status": "preserved_not_selected",
+      "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
+    },
+    {
+      "video_id": "COh_cjrDOzc",
+      "title": "Build Amazing Websites with Claude (Full Guide)",
       "status": "preserved_not_selected",
       "reason": "Adquirido antes da mudança explícita de prioridade; não entra automaticamente na curadoria."
     },

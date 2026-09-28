@@ -1,0 +1,100 @@
+{
+  "version": "0.3.0",
+  "structuralPassed": true,
+  "lessons": 12,
+  "steps": 120,
+  "checks": 24,
+  "exercises": 94,
+  "externalSelfReportedPractices": 67,
+  "uniqueMessageKeys": 1192,
+  "estimatedMinutes": 395,
+  "coverage": {
+    "pt-BR": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "b201fd09bcbf49640a85ebb429c758fbc227233fe5a988573e4a33d6a8bb0d42"
+    },
+    "en": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "3552dee8e1a100122db7e35e630b0e38fc5d2d31da022b1e985eb76167f9dec2"
+    },
+    "es": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "69030ed50f82631a5873c66af64df5d3191f140d46f5cbe8a0c29b2fbc16618a"
+    },
+    "fr": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "edd63731ef20e2fc45ed1ff2ab654a759f2bbf8b0f309a50a2d049c4f1b7fd7f"
+    },
+    "de": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "b77200262be3356a828aadba9de2152cb3a4d74e880994c407f607ba5804fe38"
+    },
+    "ja": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "60d2c40139404a4521e995d300a4ce613a51dc22661d1561809ee6e5b4e8e92a"
+    },
+    "hi": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "f837090660beb2f3a9d6f1eab79b1904a68279d590ebe73f89062d1e06c8e87a"
+    },
+    "id": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "4b845d073d5e29eac4356e519ad4f249d6dc04028abe1fd6e275f97709c3de2a"
+    },
+    "ar": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "606a4efe4ec7f9c50a2add51e79eda8a1a0ad8475973fec4f30eca50eacb0f66"
+    },
+    "ko": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "dc6a02217c1464ce3312e6403c4ec32778c3b9d186536bd271a0647aaa6aa7e4"
+    },
+    "zh-CN": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "b632cca8b23b95657685c1678e01a114debd8b00901b1b27e4539a14de68b51f"
+    }
+  },
+  "requiredLocales": [
+    "pt-BR",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "hi",
+    "id",
+    "ar",
+    "ko",
+    "zh-CN"
+  ],
+  "localizationComplete": true,
+  "literalReviewFindings": [],
+  "active0.2.0Unchanged": true,
+  "courseSha256": "3ef6d85dd87b1b6564ef983d7da689c63735e21b6151386e5611d71a6e1e5667",
+  "canonicalReleaseEligible": false,
+  "humanLanguageReview": "pending",
+  "externalDesktopExecutionValidated": false,
+  "learningEfficacyValidated": false
+}

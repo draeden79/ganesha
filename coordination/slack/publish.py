@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 import urllib.error
@@ -20,7 +21,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("event", help="Unique, descriptive milestone ID")
     parser.add_argument("message", type=Path, help="Reviewed Slack mrkdwn text file")
+    parser.add_argument("--thread-ts", help="Verified parent message timestamp in #management")
     args = parser.parse_args()
+    if args.thread_ts and not re.fullmatch(r"[0-9]+\.[0-9]{6}", args.thread_ts):
+        parser.error("Thread timestamp must be a verified Slack message ID")
     root = Path(__file__).resolve().parents[2]
     text = args.message.read_text().strip()
     if not text or len(text) > 4000:
@@ -50,13 +54,18 @@ def main():
             "app_id": "A0C555FGZCZ", "identity": "Diretor — Produto",
             "status": "attempt_started",
         }
+        if args.thread_ts:
+            record["thread_ts"] = args.thread_ts
 
         def save():
             ledger.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records))
 
         records.append(record)
         save()
-        request = urllib.request.Request(url, data=json.dumps({"text": text, "unfurl_links": False, "unfurl_media": False}).encode(), headers={"Content-Type": "application/json"}, method="POST")
+        payload = {"text": text, "unfurl_links": False, "unfurl_media": False}
+        if args.thread_ts:
+            payload["thread_ts"] = args.thread_ts
+        request = urllib.request.Request(url, data=json.dumps(payload).encode(), headers={"Content-Type": "application/json"}, method="POST")
         try:
             with urllib.request.build_opener(NoRedirect).open(request, timeout=25) as response:
                 accepted = response.status == 200 and response.read(100).strip() == b"ok"

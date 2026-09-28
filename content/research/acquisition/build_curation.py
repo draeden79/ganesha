@@ -143,5 +143,29 @@ result={
  ],
  'candidates':candidates,'preserved_prior_acquisitions':preserved,
  'handoff':'Estudar integralmente as faixas selecionadas, registrar limitações e conferir visuais materiais. Nenhum item é aprovado para currículo apenas pela triagem ou exportação.'}
+previous=json.loads((HERE/'curation.json').read_text()) if (HERE/'curation.json').exists() else {}
+# Preserve later editorial decisions and user directives. Regeneration refreshes
+# evidence; it must not reinstate an earlier restriction or erase study flags.
+result['policy'].update(previous.get('policy',{}))
+for field in ('tracks','criteria','handoff'):
+    if field in previous:
+        result[field]=previous[field]
+previous_candidates={c['video_id']:c for c in previous.get('candidates',[])}
+historical=result['policy'].get('scope')=='exhaustive_user_directive_2026_09_28'
+for candidate in result['candidates']:
+    candidate.update(previous_candidates.get(candidate['video_id'],{}))
+    current=acquired.get(candidate['video_id'])
+    if current:
+        candidate['transcript_artifacts']=current.get('artifacts',[])
+        for flag in ('full_transcript_read','full_video_watched','full_source_analyzed','full_speech_coverage_verified'):
+            candidate[flag]=bool(candidate.get(flag) or current.get(flag))
+        candidate['status']='full_source_analyzed' if candidate.get('full_source_analyzed') else 'transcript_analyzed_visual_pending' if candidate.get('full_transcript_read') else 'exported_track_study_pending'
+        candidate['acquisition_action']='reuse_existing'
+    if historical:
+        candidate['selection_scope']='immediate_course_study_priority_only'
+        candidate['permanently_excluded']=False
+        if not candidate['selected'] and not current:
+            candidate['acquisition_action']='historical_queue'
+            candidate['status']='deferred_in_exhaustive_priority'
 (HERE/'curation.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({'selected_for_study':sum(c['selected'] for c in candidates),'selected_pending_acquisition':sum(c['acquisition_action']=='acquire_selected' for c in candidates),'not_selected_after_metadata_triage':sum(not c['selected'] for c in candidates),'preserved_prior_acquisitions':len(preserved)}))

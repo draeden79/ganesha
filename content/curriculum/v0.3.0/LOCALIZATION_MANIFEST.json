@@ -1,0 +1,78 @@
+{
+  "version": "0.3.0",
+  "sourceEnglishSha256": "b6d7fb2a57d75927cd887986a9a7a3ae81f90b469eb199fc1f7717f376e1966e",
+  "messageCountPerLocale": 1192,
+  "totalMessages": 13112,
+  "method": "direct AI translation; no external translation service used for curriculum",
+  "humanReview": "pending",
+  "locales": {
+    "pt-BR": {
+      "messageCount": 1192,
+      "sourceCatalogSha256": "fa18464d5751714249dccf4c0520d5d78ef53f263a2d2ee872859a96fc76868d",
+      "identicalEnglishValues": 0,
+      "humanReview": "pending"
+    },
+    "en": {
+      "messageCount": 1192,
+      "sourceCatalogSha256": "b6d7fb2a57d75927cd887986a9a7a3ae81f90b469eb199fc1f7717f376e1966e",
+      "identicalEnglishValues": 0,
+      "humanReview": "pending"
+    },
+    "es": {
+      "messageCount": 1192,
+      "sourceCatalogSha256": "47183bd56123c8dd7dd5d6f02f858fe2a5ea908167e8562bb38b18b9985805d8",
+      "identicalEnglishValues": 0,
+      "humanReview": "pending"
+    },
+    "fr": {
+      "messageCount": 1192,
+      "sourceCatalogSha256": "924a8b5ea498227ccfe6203d01d0202c83f0d2be0b802ccf306d9e81929538d0",
+      "identicalEnglishValues": 0,
+      "humanReview": "pending"
+    },
+    "de": {
+      "messageCount": 1192,
+      "sourceCatalogSha256": "ceff3a19d15f9afed4d076e85d8ae83f566bfa83524782c4cf8b1f913d8a78d8",
+      "identicalEnglishValues": 0,
+      "humanReview": "pending"
+    },
+    "ja": {
+      "messageCount": 1192,
+      "sourceCatalogSha256": "b3e431ddb6e9a9e13c389ca6b58b76c0f4a81553fc9d5b52d8df17bb57a6b487",
+      "identicalEnglishValues": 0,
+      "humanReview": "pending"
+    },
+    "hi": {
+      "messageCount": 1192,
+      "sourceCatalogSha256": "23efe15951cc3cefb80c087f111934fc3da3702d0b60f4322e686a6f87de012b",
+      "identicalEnglishValues": 0,
+      "humanReview": "pending"
+    },
+    "id": {
+      "messageCount": 1192,
+      "sourceCatalogSha256": "1676bb4491a432aa502f2eaf02ca0c3d514dc5480ffe5824acd38ca5f52ba885",
+      "identicalEnglishValues": 0,
+      "humanReview": "pending"
+    },
+    "ar": {
+      "messageCount": 1192,
+      "sourceCatalogSha256": "68e44807037e44b94dbba1a33d46137eb37ab7b0d4eca6165b3856a270bad67d",
+      "identicalEnglishValues": 0,
+      "humanReview": "pending"
+    },
+    "ko": {
+      "messageCount": 1192,
+      "sourceCatalogSha256": "f6937cbf971e2fb644993def902edfcd8dd40e746d5f818b64ed434aea4e42f0",
+      "identicalEnglishValues": 0,
+      "humanReview": "pending"
+    },
+    "zh-CN": {
+      "messageCount": 1192,
+      "sourceCatalogSha256": "db2281ced111ef4d091b2b44e822602f48a339d4acbbcbf0d46b65154bf49d7b",
+      "identicalEnglishValues": 0,
+      "humanReview": "pending"
+    }
+  },
+  "compiledBuildRepeatable": true,
+  "active0.2.0Unchanged": true
+}

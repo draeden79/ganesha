@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { type Course, type LearningTool, type Locale, localeNames, locales } from "@/lib/course-schema";
+import { type Course, type Lesson, type LearningTool, type Locale, localeNames, locales } from "@/lib/course-schema";
 import { completedCount, evaluateCheck, flattenSteps, getStepState, mergeProgress, newProgress, restoreProgressWithStatus, storageKey, updateStep, type Progress } from "@/lib/progress";
 import { interpolate, ui } from "@/lib/i18n";
 import { labels } from "@/lib/labels";
@@ -9,10 +9,12 @@ import { recoveryText } from "@/lib/recovery-i18n";
 import { TeachingVisual } from "./teaching-visual";
 import { nativeUi } from "@/lib/native-i18n";
 import { classroomUi } from "@/lib/classroom-i18n";
-import { lessonCompletedCount, resumeLessonStep } from "@/lib/lesson-navigation";
+import { lessonCompletedCount, resumeLessonStep, nextLessonFor, routeForLesson, routeLessons, resumeRouteLesson } from "@/lib/lesson-navigation";
 import { inlineCodeParts } from "@/lib/inline-code";
+import { routeUi } from "@/lib/route-i18n";
+import { saveLocalProgress } from "@/lib/progress-storage";
 
-function InlineCode({ text }: { text: string }) {
+export function InlineCode({ text }: { text: string }) {
   return <>{inlineCodeParts(text).map((part, index) => part.code ? <code className="inline-code" dir="ltr" key={index}>{part.text}</code> : part.text)}</>;
 }
 
@@ -27,12 +29,13 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
   const l = labels[course.locale];
   const n = nativeUi[course.locale];
   const c = classroomUi[course.locale];
+  const r = routeUi[course.locale];
   const beta = routeBase === "/classroom";
   const number = (n: number) => new Intl.NumberFormat(course.locale).format(n);
   const flat = flattenSteps(course);
   const [progress, setProgress] = useState<Progress>(() => newProgress(course));
   const [ready, setReady] = useState(false);
-  const [view, setView] = useState<"overview" | "step" | "complete">("overview");
+  const [view, setView] = useState<"overview" | "step" | "complete" | "routes">("overview");
   const [saveError, setSaveError] = useState(false);
   const [recovered, setRecovered] = useState(false);
   const savingAllowed = useRef(true);
@@ -47,6 +50,7 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
   const lastAttempt = state.attempts.at(-1);
   const feedback = step.check && lastAttempt ? evaluateCheck(step, lastAttempt.answer) : null;
   const typeLabel = step.check ? t.knowledge : step.practice ? t.practice : t.read;
+  const toolNote = step.toolNotes?.[progress.tool] ?? "";
 
   useEffect(() => {
     let restored = newProgress(course);
@@ -70,12 +74,10 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
   useEffect(() => {
     if (!ready || !savingAllowed.current) return;
     try {
-      const raw = localStorage.getItem(storageKey(course));
-      const remote = restoreProgressWithStatus(raw, course);
-      const merged = mergeProgress(progress, remote.progress, course);
-      if (JSON.stringify(merged.states) !== JSON.stringify(progress.states)) setProgress(merged);
-      localStorage.setItem(storageKey(course), JSON.stringify(merged));
-      setSaveError(false);
+      const result = saveLocalProgress(localStorage, course, progress);
+      if (JSON.stringify(result.progress.states) !== JSON.stringify(progress.states)) setProgress(result.progress);
+      if (result.recovered) setRecovered(true);
+      setSaveError(!result.saved);
     } catch { setSaveError(true); }
   }, [progress, ready, course]);
   useEffect(() => {
@@ -111,7 +113,11 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
   function next() {
     const updated = step.check || step.practice ? progress : updateStep(progress, step.id, { complete: true });
     setProgress(updated);
-    if (lastLessonStep && nextLesson) showStep(resumeLessonStep(nextLesson, updated).id);
+    if (lastLessonStep && course.routes && !nextLesson) {
+      setView(completedCount(course, updated) === flat.length ? "complete" : "routes");
+      history.replaceState(null, "", window.location.pathname);
+    }
+    else if (lastLessonStep && nextLesson) showStep(resumeLessonStep(nextLesson, updated).id);
     else if (activeIndex < flat.length - 1) showStep(flat[activeIndex + 1].step.id);
     else if (completedCount(course, updated) === flat.length) { setView("complete"); history.replaceState(null, "", window.location.pathname); }
     else overview();
@@ -127,7 +133,10 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
   }
   const nextEnabled = ready && ((!step.check && !step.practice) || state.complete);
   const stepPosition = lesson.steps.findIndex(item => item.id === step.id);
-  const nextLesson = course.lessons[course.lessons.findIndex(item => item.id === lesson.id) + 1];
+  const nextLesson = nextLessonFor(course, lesson.id);
+  const activeRoute = routeForLesson(course, lesson.id);
+  const prerequisites = course.routes ? (lesson.prerequisiteLessonIds ?? []).map(id => course.lessons.find(item => item.id === id)).filter((item): item is Lesson => Boolean(item)) : [];
+  const previousStep = stepPosition > 0 ? lesson.steps[stepPosition - 1] : course.routes ? undefined : flat[activeIndex - 1]?.step;
   const lastLessonStep = stepPosition === lesson.steps.length - 1;
   const totalCompleted = completedCount(course, progress);
   const completedLessons = course.lessons.filter(item => lessonCompletedCount(item, progress) === item.steps.length).length;
@@ -172,30 +181,32 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
     setDialogKind(kind);
   }
   function closeDialog() { dialog.current?.close(); }
+  function lessonButton(item: Lesson) {
+    const count = lessonCompletedCount(item, progress);
+    return <button key={item.id} className="lesson-nav" aria-current={item.id === lesson.id ? "page" : undefined} disabled={!ready} onClick={() => selectPreview(resumeLessonStep(item, progress).id)}>
+      <span className="lesson-symbol"><Icon name={course.routes && count === item.steps.length ? "check" : "book"} size={16} /></span>
+      <span><strong>{item.title}</strong><small>{t.progress}: <bdi dir="ltr">{number(count)} / {number(item.steps.length)}</bdi></small></span>
+    </button>;
+  }
+  const prerequisiteInfo = prerequisites.length > 0 && <p className="prerequisite-info"><span>{r.recommendedBefore}: </span>{prerequisites.map(item => <button className="text-button" key={item.id} onClick={() => { selectPreview(resumeLessonStep(item, progress).id); overview(); }}>{item.title}{lessonCompletedCount(item, progress) === item.steps.length && <span aria-label={t.completed}> ✓</span>}</button>)}</p>;
 
   return <>
     <a className="skip" href="#main">{t.skip}</a>
     {view === "overview" ? (
-      <div className="native-home">
+      <div className={`native-home${course.routes ? " expanded-course" : ""}`}>
         <aside className="native-sidebar">
           <button className="native-brand" onClick={overview} aria-label="Ganesha">
             <img src="/classroom/images/native/ganesha-symbol.png" alt="" width="33" height="38" /><span>Ganesha</span>
           </button>
           <p className="side-caption">{t.lessons}</p>
           <nav className="lesson-navigation" aria-label={t.lessons}>
-            {course.lessons.map(item => {
-              const count = lessonCompletedCount(item, progress);
-              return <button key={item.id} className="lesson-nav" aria-current={item.id === lesson.id ? "page" : undefined} disabled={!ready} onClick={() => selectPreview(resumeLessonStep(item, progress).id)}>
-                <span className="lesson-symbol"><Icon name="book" size={16} /></span>
-                <span><strong>{item.title}</strong><small>{t.progress}: <bdi dir="ltr">{number(count)} / {number(item.steps.length)}</bdi></small></span>
-              </button>;
-            })}
+            {course.routes ? course.routes.map(route => <section className="route-group" key={route.id} aria-label={r[route.id]}><h2>{r[route.id]}</h2>{routeLessons(course, route).map(lessonButton)}</section>) : course.lessons.map(lessonButton)}
           </nav>
           <label className="mobile-lesson-select">{c.chooseLesson}
             <select value={lesson.id} disabled={!ready} onChange={event => {
               const selected = course.lessons.find(item => item.id === event.target.value);
               if (selected) selectPreview(resumeLessonStep(selected, progress).id);
-            }}>{course.lessons.map(item => <option value={item.id} key={item.id}>{item.title} · {number(lessonCompletedCount(item, progress))}/{number(item.steps.length)}</option>)}</select>
+            }}>{course.routes ? course.routes.map(route => <optgroup label={r[route.id]} key={route.id}>{routeLessons(course, route).map(item => <option value={item.id} key={item.id}>{item.title} · {number(lessonCompletedCount(item, progress))}/{number(item.steps.length)}</option>)}</optgroup>) : course.lessons.map(item => <option value={item.id} key={item.id}>{item.title} · {number(lessonCompletedCount(item, progress))}/{number(item.steps.length)}</option>)}</select>
           </label>
           <div className="side-bottom">
             <div className="course-progress" aria-live="polite"><p>{t.lessons}: <bdi dir="ltr">{number(completedLessons)} / {number(course.lessons.length)}</bdi></p><p>{t.progress}: <bdi dir="ltr">{number(totalCompleted)} / {number(flat.length)}</bdi></p><progress value={totalCompleted} max={flat.length} aria-label={t.progress} /></div>
@@ -215,6 +226,7 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
               <button className="icon-button" onClick={() => movePreview(1)} disabled={!ready || stepPosition === lesson.steps.length - 1} aria-label={t.next}><Arrow /></button>
             </div>
           </header>
+          {prerequisiteInfo}
           <div className="rail-viewport">
             <ol className="step-rail" aria-label={n.lessonSteps}>
               {lesson.steps.map((item, index) => {
@@ -256,20 +268,30 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
     ) : (
       <div className="focus-root">
         <header className="focusbar">
-          <div className="focus-left"><button className="button ghost" onClick={overview}><span className="back-arrow"><Arrow /></span>{t.back}</button><span>{lesson.title}</span></div>
-          <div className="focus-progress"><span>{typeLabel}</span><div className="progress-dots" aria-hidden="true">{lesson.steps.map(item => <i key={item.id} className={item.id === step.id ? "current" : getStepState(progress, item.id).complete ? "complete" : ""} />)}</div></div>
-          <div className="focus-actions">{languageSelect}<button className="button ghost" onClick={() => openDialog("steps")} aria-label={`${n.lessonSteps}: ${progressLabel}`}><Icon name="book" size={16} /><bdi dir="ltr">{number(stepPosition + 1)} / {number(lesson.steps.length)}</bdi></button></div>
+          <div className="focus-left"><button className="button ghost" onClick={overview}><span className="back-arrow"><Arrow /></span>{t.back}</button><span>{view === "routes" ? t.curriculum : lesson.title}</span></div>
+          {view !== "routes" && <div className="focus-progress"><span>{typeLabel}</span><div className="progress-dots" aria-hidden="true">{lesson.steps.map(item => <i key={item.id} className={item.id === step.id ? "current" : getStepState(progress, item.id).complete ? "complete" : ""} />)}</div></div>}
+          <div className="focus-actions">{languageSelect}{view !== "routes" && <button className="button ghost" onClick={() => openDialog("steps")} aria-label={`${n.lessonSteps}: ${progressLabel}`}><Icon name="book" size={16} /><bdi dir="ltr">{number(stepPosition + 1)} / {number(lesson.steps.length)}</bdi></button>}</div>
         </header>
         <main id="main" className="lesson-sheet">
           {recoveryNotice}
-          {view === "complete" ? (
+          {view === "routes" ? <section className="routes-summary">
+            <h1 ref={heading} tabIndex={-1}>{r.chooseRoute}</h1><p>{r.routeHint}</p>
+            <div className="route-options">{course.routes?.map(route => {
+              const lessons = routeLessons(course, route);
+              const done = lessons.filter(item => lessonCompletedCount(item, progress) === item.steps.length).length;
+              const destination = resumeRouteLesson(course, route, progress);
+              return <article className="route-option" key={route.id}><h2>{r[route.id]}</h2><p>{t.lessons}: <bdi dir="ltr">{number(done)} / {number(lessons.length)}</bdi>{done === lessons.length && ` · ${t.completed}`}</p><button className="button secondary" onClick={() => { selectPreview(resumeLessonStep(destination, progress).id); overview(); }}>{done === lessons.length ? t.review : t.resume}<Arrow /></button></article>;
+            })}</div>
+          </section> : view === "complete" ? (
             <section className="sheet-summary">
               <img src="/classroom/images/native/ganesha-help.png" alt="" width="130" height="150" />
               <h1 ref={heading} tabIndex={-1}>{beta ? c.allDone : t.allDone}</h1><p>{beta ? c.allDoneBody : t.allDoneBody}</p>
               <button className="button primary" onClick={overview}>{t.review}<Arrow /></button>
             </section>
           ) : <>
+            {activeRoute && <p className="mobile-lesson-context">{r[activeRoute.id]} · {lesson.title}</p>}
             <h1 ref={heading} tabIndex={-1}>{step.title}</h1>
+            {prerequisiteInfo}
             <div className={`lesson-grid${!showArt && !hasDiagram ? " text-only" : ""}`}>
               <div className="lesson-copy">
                 {step.objective && <p className="objective">{step.objective}</p>}
@@ -280,11 +302,11 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
               </div>
               {showArt ? <aside className="art-aside"><img className="lesson-art" src="/classroom/images/creative-workshop-transparent.png" alt="" width="230" height="230" /></aside> : hasDiagram ? <aside className="visual-aside"><TeachingVisual step={step} /></aside> : null}
             </div>
-            <div className="tool-context">
-              <details className="tool-instruction" key={`${step.id}:${progress.tool}`} open={step.executionMode === "external-real-task"}>
+            <div className={`tool-context${toolNote ? "" : " no-tool-note"}`}>
+              {toolNote ? <details className="tool-instruction" key={`${step.id}:${progress.tool}`} open={step.executionMode === "external-real-task"}>
                 <summary><Icon name="spark" size={16} />{t.tool}</summary>
-                <p><InlineCode text={step.toolNotes?.[progress.tool] ?? ""} /></p>
-              </details>
+                <p><InlineCode text={toolNote} /></p>
+              </details> : <p className="tool-caption">{t.tool}</p>}
               <div className="inline-tool-select">{toolSelect}</div>
             </div>
             {lesson.id === "lesson.automation" && step.practice && <p className="example-files"><span>{c.exampleFiles}: </span><a href="/classroom/exercises/vendas.csv" download>CSV</a><span> · </span><a href="/classroom/exercises/report.py" download>Python</a><span> · </span><a href="/classroom/exercises/csv-report.html" target="_blank" rel="noopener noreferrer">HTML · {localeNames["pt-BR"]}</a></p>}
@@ -297,7 +319,7 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
                   <fieldset className="review-list"><legend>{t.selfReview}</legend>
                     {step.practice.criteria.map((criterion, index) => <label className="criterion" key={step.practice?.criterionIds?.[index] ?? index}>
                       <input type="checkbox" checked={state.criteria.includes(index)} onChange={event => setProgress(p => updateStep(p, step.id, { criteria: event.target.checked ? [...state.criteria, index] : state.criteria.filter(value => value !== index), complete: false }))} />
-                      <span>{criterion}</span>
+                      <span><InlineCode text={criterion} /></span>
                     </label>)}
                   </fieldset>
                   <button className="button secondary" type="submit" disabled={!ready || !state.draft.trim() || state.criteria.length !== step.practice.criteria.length}>{t.completePractice}<Icon name="check" size={18} /></button>
@@ -306,7 +328,7 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
               ) : <>
                 {step.action && <p className="activity-instruction"><InlineCode text={step.action} /></p>}
                 {step.check && <form onSubmit={event => { event.preventDefault(); submitCheck(); }}>
-                  <fieldset className="check-group"><legend>{step.check.prompt}</legend>
+                  <fieldset className="check-group"><legend><InlineCode text={step.check.prompt} /></legend>
                     {step.check.choices.map(choice => <label className="answer" key={choice.id}>
                       <input type="radio" name={step.id} value={choice.id} checked={state.draft === choice.id} onChange={() => setProgress(p => updateStep(p, step.id, { draft: choice.id }))} /><span><InlineCode text={choice.text} /></span>
                     </label>)}
@@ -318,8 +340,8 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
             </section>
             {step.expectedResult && <p className="expected"><strong>{l.expected}: </strong>{step.expectedResult}</p>}
             <footer className="lesson-footer">
-              <button className="button ghost" disabled={activeIndex === 0} onClick={() => showStep(flat[activeIndex - 1].step.id)}><span className="back-arrow"><Arrow /></span>{t.back}</button>
-              <button className="button primary" disabled={!nextEnabled} onClick={next}>{lastLessonStep && nextLesson ? c.nextLesson : activeIndex === flat.length - 1 ? t.finish : t.next}<Arrow /></button>
+              <button className="button ghost" disabled={!previousStep} onClick={() => previousStep && showStep(previousStep.id)}><span className="back-arrow"><Arrow /></span>{t.back}</button>
+              <button className="button primary" disabled={!nextEnabled} onClick={next}>{lastLessonStep && nextLesson ? c.nextLesson : lastLessonStep && course.routes && totalCompleted !== flat.length ? r.chooseRoute : activeIndex === flat.length - 1 ? t.finish : t.next}<Arrow /></button>
             </footer>
           </>}
           <div className="sheet-bottom">{demoInfo}{view === "step" && <button className="help-button" onClick={() => openDialog("help")}><img src="/classroom/images/native/ganesha-help.png" alt="" width="32" height="42" />{n.help}</button>}</div>

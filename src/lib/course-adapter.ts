@@ -19,6 +19,7 @@ export function adaptCourse(source: CanonicalCourse, catalog: LocaleCatalog, opt
       : source.releasedLessonIds.includes(l.id) && l.status === "ready"
     ).sort((a, b) => a.order - b.order).map(lesson => ({
       id: lesson.id, title: t(lesson.titleKey), summary: t(lesson.summaryKey), durationMinutes: lesson.estimatedMinutes,
+      prerequisiteLessonIds: lesson.prerequisiteLessonIds,
       steps: lesson.steps.map(step => {
         const mapped: Step = {
           id: step.id, type: step.kind === "explain" ? "instruction" : step.kind === "reflect" ? "reflection" : step.kind,
@@ -34,7 +35,7 @@ export function adaptCourse(source: CanonicalCourse, catalog: LocaleCatalog, opt
           expectedResult: step.expectedResultKey ? t(step.expectedResultKey) : undefined,
           hints: step.hintKeys?.map(t), criteria: step.criteriaKeys?.map(t),
           isAssessment: step.isAssessment, executionMode: step.executionMode,
-          hasCanonicalExecutionNotice: step.blocks.some(block => block.kind === "callout" && block.textKey === "notice.self-report"),
+          hasCanonicalExecutionNotice: step.blocks.some(block => block.kind === "callout" && (block.textKey === "notice.self-report" || block.textKey === "notice.external-record")),
           evidenceIds: [...new Set([...step.evidenceIds, ...step.toolVariants.claude.evidenceIds, ...step.toolVariants.codex.evidenceIds])],
           visualDescription: step.visual?.altKey ? t(step.visual.altKey) : undefined,
           toolNotes: {

@@ -1,0 +1,19 @@
+{
+  "scope": "Arabic catalog only; English and Portuguese sources remain frozen",
+  "locale": "ar",
+  "unchangedEnglishSha256": "b6d7fb2a57d75927cd887986a9a7a3ae81f90b469eb199fc1f7717f376e1966e",
+  "operation": "Wrap complete single-line JSON and CSV literals in backticks. For multiline CSV, wrap each individual line in its own pair, retaining every newline. No literal data bytes change.",
+  "reason": "Artist visual QA confirmed RTL reordered punctuation and record columns in ordinary paragraphs. Existing InlineCode isolates LTR.",
+  "keys": [
+    "app-delivery.check-contract.body",
+    "automation-input.create-csv.criterion.1",
+    "automation-input.create-csv.prompt",
+    "automation-input.decimal-check.body",
+    "automation-input.decimal-check.check.question",
+    "automation-input.decimal-check.check.retry",
+    "automation-input.decimal-check.option.c",
+    "automation-report.build-transform.prompt",
+    "automation-schedule.tool-conditions.prompt"
+  ],
+  "verification": "Every Arabic value matches its original translation after removing inline-code backticks; all three CSV lines match the existing single-line InlineCode parser."
+}

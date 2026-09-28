@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "studies": [
+    {
+      "id": "academy-skills",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/skills",
+      "video_id": "bjdBVZa66oU",
+      "title": "Skills",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-05/skills.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac05-skills.txt",
+          "bytes": 2509,
+          "sha256": "867cde895629fb4ca354de51fef71c31add9081c978c404414d1c8341465e2ad",
+          "kind": "text",
+          "line_count": 18,
+          "read_lines": [
+            [
+              1,
+              18
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-05/skills.md",
+        "bytes": 4613,
+        "sha256": "09abc674036bc66dcca37f25491d01fcf0945528b6c24e552a4e1024ca44dd06",
+        "kind": "original_study",
+        "line_count": 31,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Prática original não executada",
+        "Transcrição identificada como tal não observada; texto da página não certificado como faixa do vídeo"
+      ],
+      "rights": "Brutos e capturas internos gitignored; sem licença de republicação presumida.",
+      "transcript_label_observed": false
+    },
+    {
+      "id": "academy-mcp",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/mcp",
+      "video_id": "kkBFmwkDzdo",
+      "title": "MCP",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-05/mcp.md",
+      "status": "transcript_analyzed_visual_pending",
+      "text_read_complete": true,
+      "full_transcript_read": true,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac05-mcp.txt",
+          "bytes": 5835,
+          "sha256": "79ab013ca1022e2507253a15f8196a9935124fbec612d5cf3aa405bb95ed6dab",
+          "kind": "text",
+          "line_count": 84,
+          "read_lines": [
+            [
+              1,
+              84
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac05-mcp-summary.txt",
+          "bytes": 2837,
+          "sha256": "2797520dac0fddc6cdeffd42bcc95cdb77b2ee0ec71e73fede596b092a01adb7",
+          "kind": "text",
+          "line_count": 64,
+          "read_lines": [
+            [
+              1,
+              64
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-05/mcp.md",
+        "bytes": 5984,
+        "sha256": "3ceebe8873b731cd3564c770e3871d8b3dfa5014f3ef85559ee050251391b7e6",
+        "kind": "original_study",
+        "line_count": 48,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac05-mcp-0.png",
+          "bytes": 68839,
+          "sha256": "f801da7afe1d639f0cdf2b42cdf41aba10a81ec1c3610b36644911d6b9b70531",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac05-mcp-1.png",
+          "bytes": 90338,
+          "sha256": "538d2c14205d22a772e865ad85fd3cd4ee91de0efecf8912714d228ef9abdd39",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac05-mcp-2.png",
+          "bytes": 27180,
+          "sha256": "7331f589e9b750921d0415245e245547877ebf0e3fbfdae21e29c5fe79451621",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac05-mcp-3.png",
+          "bytes": 27756,
+          "sha256": "90d9de67a26172b33febc3ce47285d88ef5184713dcffd6133962a8d209720b0",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac05-mcp-4.png",
+          "bytes": 56024,
+          "sha256": "04ca46c0767f149ee622ed69bf070870c9b6724354951c036a63d338128660bb",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac05-mcp-5.png",
+          "bytes": 52287,
+          "sha256": "d93ff01304090a71eb9a7ced6f0acf323ef6d0d3f289189c1c1bcb645a0a615d",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Prática original não executada"
+      ],
+      "rights": "Brutos e capturas internos gitignored; sem licença de republicação presumida.",
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/mcp#scale-with-mcp-tool-search",
+          "read_scope": "Tool search default and ENABLE_TOOL_SEARCH=auto threshold",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28",
+          "finding": "Do not generalize the auto threshold to every supported configuration."
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "directive": "Relevant, sufficient, deeply studied corpus; exhaustive inventory preserved as secondary backlog.",
-  "updated_at": "2026-09-28T20:03:01.046668+00:00",
+  "directive": "Consume and organize the entire accessible priority corpus continuously; course relevance orders and classifies work rather than excluding historical content.",
+  "updated_at": "2026-09-28T20:44:52.684123+00:00",
   "triage_is_not_evidence": true,
   "curriculum_acceptance_owner": "Educador",
   "selected_or_supporting_resources": [
@@ -290,5 +290,9 @@
     "obsolete surface instructions",
     "redundant coverage"
   ],
-  "video_triage_ledger": "acquisition/curation.json"
+  "video_triage_ledger": "acquisition/curation.json",
+  "goal_status": "active",
+  "directive_received_at": "2026-09-28T20:44:52.684123+00:00",
+  "exhaustive_priority_corpus_active": true,
+  "excluded_from_immediate_priority_note": "These categories remain in the exhaustive corpus; deferred order is not permanent exclusion."
 }

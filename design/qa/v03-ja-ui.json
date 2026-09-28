@@ -1,0 +1,52 @@
+[
+  {
+    "case": "ja-apps-test-copy",
+    "automaticNotices": 0,
+    "code": [],
+    "copy": "復元とエラー時の保持を実証します。\n\nCの状態のコピーを保存し、検証済みの手順でantes-de-importar.jsonを読み込みます。再読み込み後にA完了とB未完了を確認してください。ファイル読み込みを備えた現在の版で分離したテスト用コピーを更新し、ganesha.tasks.testを維持します。そのコピーで読み込み保存を失敗させ、前の一覧を保ち、未置き換えと警告させます。試験を解除し、正常な読み込みを繰り返してください。\n\n書き出しと読み込みを含む現在のアプリ版で、分離したテスト用コピーだけを更新してください。このコピーではganesha.tasks.testだけを使い、ganesha.tasks.v1は読み書きも削除もしません。その後、有効な読み込みを確認した際の書き込み失敗を模擬します。前の一覧とデータを保ち、エラーを示して、置き換え成功とは言わないでください。試験の除去方法を説明してください。バックアップを読み込み、再読み込みしてタスクと完了を比較します。\n実際に実行したこと、または遭遇した障害を記録してください。模擬例を分析した場合は、その方法を明記してください。外部で実行した証拠にはなりません。",
+    "dir": "ltr",
+    "font": "\"Hiragino Kaku Gothic ProN\", \"Yu Gothic\", Meiryo, sans-serif",
+    "h1": "バックアップを復元し、書き込み拒否を試す",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ja#step.app-delivery.restore-backup.v3",
+    "width": 390
+  },
+  {
+    "case": "ja-csv",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "id,item,amount\n1,Caderno,10.50\n2,Curso,20.00"
+      }
+    ],
+    "copy": "正確なCSVファイルを作成し、調べます。\n\nCSVは文章で書いた表で、最初の行が列名、その後の各行がレコードです。relatorioフォルダーを作り、Claude Desktop/CodeまたはCodex Desktopで選びます。下のデータと完全に一致するUTF-8テキストファイルvendas.csvを依頼します。作成メッセージだけで済ませず、エディターで開いて確認してください。\n\nrelatorioに、名前と小数点を保って下の内容のUTF-8テキストvendas.csvだけを作成してください。レポート生成、インストール、タスクの予定設定はしません。開けるようファイルパスを示してください。\n\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\n実際に実行したこと、または遭遇した障害を記録してください。模擬例を分析した場合は、その方法を明記してください。外部で実行した証拠にはなりません。",
+    "dir": "ltr",
+    "font": "\"Hiragino Kaku Gothic ProN\", \"Yu Gothic\", Meiryo, sans-serif",
+    "h1": "練習用の表を作る",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ja#step.automation-input.create-csv.v3",
+    "width": 390
+  },
+  {
+    "case": "ja-schedule",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "python3 report.py vendas.csv report.md"
+      },
+      {
+        "dir": "ltr",
+        "text": "py -3 report.py vendas.csv report.md"
+      }
+    ],
+    "copy": "予定設定前に選択コンテキストで完全な依頼を検証します。\n\n条件がそろったら、このフォルダーの練習タスクだけを使います。Claude DesktopのCodeタブでManualを選ぶローカルルーチンを作成し、Run nowを使います。保存前にフォルダー、指示、権限を確認してください。Codexでは先にローカルプロジェクトの通常会話で完全な依頼を実行します。出力を2件・30.50と比較します。利用できなければ試行を模擬分析し、実行したとは言いません。\n\n予定を作らず、ローカルのrelatorioフォルダーで今1回だけ実行してください。このコンピューターで私がテスト済みのpython3 report.py vendas.csv report.md、Windowsではpy -3 report.py vendas.csv report.mdだけを使います。依存ソフトのインストール、入力やプログラムの変更はしません。練習入力は正確にid,item,amount; 1,Caderno,10.50; 2,Curso,20.00です。report.mdを開き2件・合計30.50を確認してください。エラーなら診断を報告し、最後の正常レポートを保ちます。データを送信したり結果を公開したりしないでください。\n実際に実行したこと、または遭遇した障害を記録してください。模擬例を分析した場合は、その方法を明記してください。外部で実行した証拠にはなりません。",
+    "dir": "ltr",
+    "font": "\"Hiragino Kaku Gothic ProN\", \"Yu Gothic\", Meiryo, sans-serif",
+    "h1": "時刻を有効にする前に試す",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ja#step.automation-schedule.tool-conditions.v3",
+    "width": 390
+  }
+]

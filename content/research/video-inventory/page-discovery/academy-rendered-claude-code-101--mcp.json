@@ -1,0 +1,20 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-code-101/mcp",
+  "title": "MCP",
+  "observed_at": "2026-09-28T21:15:31.020Z",
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/kkBFmwkDzdo?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "MCP"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=kkBFmwkDzdo",
+      "title": "MCP"
+    }
+  ],
+  "acquired_transcript": "transcripts/local/kkBFmwkDzdo.academy.txt",
+  "inventory_scope": "Rendered public lesson; acquisition is distinct from reading and audiovisual verification"
+}

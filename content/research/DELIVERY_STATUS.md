@@ -1,6 +1,10 @@
 # Entrega ao Educador — 28/09/2026
 
-**O Educador já pode trabalhar na primeira aula. O corpus histórico inteiro não é o critério de prontidão.** O resultado da L01 continua sendo um plano revisado; propostas de editar páginas nestas fichas pertencem a etapas posteriores.
+**Atualização de 21:25 UTC: pesquisa integral ativa por instrução direta do usuário.** O Educador pode produzir as aulas com os lotes disponíveis enquanto o Devorador continua consumindo e organizando todo o conteúdo acessível das fontes prioritárias. O resultado da L01 continua sendo um plano revisado; propostas de editar páginas nestas fichas pertencem a etapas posteriores.
+
+Nesta atualização: 91 vídeos com faixa textual adquirida, 24 transcrições integralmente lidas, 45 registros de estudo (44 fichas distintas) e nenhuma certificação audiovisual integral. O índice integrado conhece 5.919 URLs, incluindo vídeos, candidatos a artigo, aulas, índices e utilidades; o denominador histórico ainda não está fechado. Ver `content-inventory/coverage.json` e `studies/manifest.json` para estados atualizados.
+
+Novas entregas em `studies/backfill/`: estudos de implementação/publicação, watchlist, design, revisão, testes e confiabilidade; artigos sobre descoberta de necessidades e edição humana; aulas Academy sobre instalação, funcionamento, contexto, CLAUDE.md, subagentes, skills, MCP, hooks e revisão de código. O estudo de revisão percorreu também exercícios interativos e seus feedbacks. Divergências de MCP, retenção de subagentes e garantias de hooks foram conferidas em trechos da documentação atual, sem declarar leitura integral desses documentos complementares. Três artigos pagos têm bloqueios próprios; nenhuma leitura parcial foi promovida a integral. Todos os estudos mantêm exemplos, dependências, critérios e pendências explícitos.
 
 | Etapa | Material entregue | O que está pronto | O que falta para validar a prática |
 | --- | --- | --- | --- |
@@ -14,12 +18,12 @@
 
 ## Leitura integral e limites
 
-Manifestos separam arquivo adquirido, texto lido, quadros inspecionados, audiovisual acompanhado e procedimento executado. Nenhum vídeo foi certificado como integralmente assistido. Legendas automáticas preservadas integralmente podem conter erros; um timestamp próximo ao fim não prova cobertura de toda a fala. Nenhuma prática proposta nesta entrega é apresentada como execução real do pesquisador.
+Manifestos separam arquivo adquirido, texto lido, quadros inspecionados, audiovisual acompanhado e procedimento executado. Nenhum vídeo foi certificado como integralmente assistido. Legendas automáticas preservadas integralmente podem conter erros; um timestamp próximo ao fim não prova cobertura de toda a fala. As práticas das fichas são propostas; a implementação original CSV do sprint possui validação própria em `sprint-csv/validation.json`, sem equivaler a execução nos produtos de IA ou a agendamento.
 
-Originais completos usados na pesquisa ficam nas pastas locais ignoradas pelo Git, com hashes. Estão acessíveis aos agentes locais no worktree `81be`; commits levam fichas e índices, não cópias integrais para republicação. O inventário amplo permanece em backlog. O coletor padrão não retoma automaticamente todos os vídeos.
+Originais completos usados na pesquisa ficam nas pastas locais ignoradas pelo Git, com hashes. Estão acessíveis aos agentes locais no worktree `81be`; commits levam fichas e índices, não cópias integrais para republicação. O inventário amplo está ativo, ordenado pela pertinência ao curso. A execução histórica exige a opção explícita `--historical`; cada lote mantém checkpoint, fila e evidências próprias.
 
 ## Prazo e passagem de trabalho
 
 A primeira base utilizável já foi entregue e parcialmente aceita pelo Educador. O lote de estudos selecionados chega por etapa, permitindo trabalho simultâneo. Ainda não há estimativa confiável para uma cobertura integral de todo o histórico nem para certificar todas as práticas: alguns candidatos omitem justamente implementação e verificação. Não converter duração do vídeo ou quantidade de agentes em promessa de conclusão do curso.
 
-Próxima decisão do Educador/Diretor: usar os materiais aprovados para L01 e validar exercícios reduzidos das etapas posteriores. Pesquisa complementar deve preencher uma lacuna concreta identificada nessa validação, sem reabrir aquisição indiscriminada. Não é necessário aguardar o restante do acervo para começar as aulas.
+O Educador/Diretor pode usar os materiais aprovados para L01 e validar os exercícios das etapas posteriores. O Devorador mantém o objetivo integral ativo e entrega novos lotes sem alterar automaticamente o currículo. Não é necessário aguardar o restante do acervo para começar as aulas.

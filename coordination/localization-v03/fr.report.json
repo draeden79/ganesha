@@ -1,0 +1,172 @@
+{
+  "locale": "fr",
+  "status": "complete_ai_translation_pending_human_review",
+  "generated_at_utc": "2026-09-28T21:38:07.548450+00:00",
+  "source": {
+    "commit": "b8e4a62ee452db8577d52a10e6669a30f5dbdfb7",
+    "path": "content/curriculum/v0.3.0/source-messages/en.json",
+    "base_file_sha256": "d15887e7b40829f65f35505015aa294826fe1aa66fd9e459ca10d428141d6b63",
+    "base_key_count": 1192,
+    "base_word_count_whitespace": 17858,
+    "delta_path": "coordination/localization-v03/TRANSLATION_DELTA.json",
+    "delta_file_sha256": "b6d44afedc66d96b7686aab1f1abe0996fabbe39ed7e8350efd961d4a6599ea8",
+    "delta_applied_keys": [
+      "automation-schedule.tool-conditions.prompt",
+      "automation-schedule.history-triage.body",
+      "app-delivery.restore-backup.body",
+      "app-delivery.restore-backup.prompt",
+      "automation-schedule.tool-conditions.body",
+      "automation-schedule.tool-conditions.tool.claude"
+    ],
+    "delta_changed_keys": [
+      "app-delivery.restore-backup.body",
+      "app-delivery.restore-backup.prompt",
+      "automation-schedule.tool-conditions.body",
+      "automation-schedule.tool-conditions.tool.claude"
+    ],
+    "effective_canonical_sha256": "232d45f82deae01d96642c9e6917733f6ead881685328adeeee66e0814eaae66",
+    "canonical_hash_encoding": "UTF-8 JSON, ensure_ascii=false, sort_keys=true, separators=(comma,colon), no trailing newline"
+  },
+  "output": {
+    "path": "coordination/localization-v03/fr.json",
+    "file_sha256": "924a8b5ea498227ccfe6203d01d0202c83f0d2be0b802ccf306d9e81929538d0",
+    "canonical_sha256": "700b5e31b311204a19aecc201c5859e9adc507ee219a6cb7cadbe456ef5c1391",
+    "key_count": 1192,
+    "word_count_whitespace": 20659
+  },
+  "coverage": {
+    "source_keys": 1192,
+    "translated_keys": 1192,
+    "percent": 100,
+    "missing_keys": [],
+    "extra_keys": [],
+    "empty_strings": [],
+    "unchanged_english_values": [],
+    "english_fallback_keys": [],
+    "domains": {
+      "course": {
+        "expected": 2,
+        "translated": 2
+      },
+      "notice": {
+        "expected": 1,
+        "translated": 1
+      },
+      "criterion": {
+        "expected": 2,
+        "translated": 2
+      },
+      "workspace": {
+        "expected": 83,
+        "translated": 83
+      },
+      "requests": {
+        "expected": 80,
+        "translated": 80
+      },
+      "verification": {
+        "expected": 82,
+        "translated": 82
+      },
+      "site-build": {
+        "expected": 106,
+        "translated": 106
+      },
+      "site-quality": {
+        "expected": 103,
+        "translated": 103
+      },
+      "site-publish": {
+        "expected": 103,
+        "translated": 103
+      },
+      "app-state": {
+        "expected": 107,
+        "translated": 107
+      },
+      "app-storage": {
+        "expected": 107,
+        "translated": 107
+      },
+      "app-delivery": {
+        "expected": 110,
+        "translated": 110
+      },
+      "automation-input": {
+        "expected": 101,
+        "translated": 101
+      },
+      "automation-report": {
+        "expected": 102,
+        "translated": 102
+      },
+      "automation-schedule": {
+        "expected": 103,
+        "translated": 103
+      }
+    }
+  },
+  "verification": {
+    "key_parity": "passed",
+    "all_values_nonempty_strings": "passed",
+    "technical_literals": {
+      "backtick_spans": {
+        "status": "passed",
+        "source_occurrences": 8,
+        "comparison": "exact per-key multiset"
+      },
+      "urls": {
+        "status": "passed",
+        "source_occurrences": 8,
+        "comparison": "exact per-key multiset"
+      },
+      "email_addresses": {
+        "status": "passed",
+        "source_occurrences": 13,
+        "comparison": "exact per-key multiset"
+      },
+      "filenames_and_storage_keys": {
+        "status": "passed",
+        "source_occurrences": 115,
+        "comparison": "exact per-key multiset"
+      },
+      "numeric_literals": {
+        "status": "passed",
+        "source_occurrences": 154,
+        "comparison": "exact per-key multiset"
+      },
+      "csv_literals": {
+        "status": "passed",
+        "source_occurrences": 12,
+        "comparison": "exact per-key multiset"
+      },
+      "json_examples": {
+        "status": "passed",
+        "source_occurrences": 1,
+        "comparison": "exact per-key multiset"
+      },
+      "fixed_names_and_paths": {
+        "status": "passed",
+        "source_occurrences": 71,
+        "comparison": "exact per-key multiset"
+      }
+    },
+    "technical_literal_mismatches": [],
+    "multiline_csv_preserved": true,
+    "editorial_delta": "all six supplied final English values translated; four differences from frozen base applied"
+  },
+  "translation": {
+    "method": "Complete French translation authored directly by the Codex AI; assembled deterministically from indexed translations. No external translation service or Google used.",
+    "human_reviewed": false,
+    "language": "French",
+    "audience": "beginners",
+    "preserved": "Identifiers, URLs, email addresses, paths, storage keys, Python commands, backticks, inline JSON, CSV records, decimal dots and numbers. Interface labels retained where they name controls users must find.",
+    "meaning": "Simulated examples, self-reported external execution, prerequisites, costs, scope boundaries, errors and pending checks remain explicit."
+  },
+  "limitations": [
+    "AI translation has not been reviewed by a human French-language editor.",
+    "Structural and literal validation does not prove complete linguistic correctness.",
+    "No external application execution, publication, schedule activation or browser rendering was performed as part of this translation.",
+    "Proper names, technical identifiers and exact interface-control labels intentionally remain in their source form."
+  ]
+}

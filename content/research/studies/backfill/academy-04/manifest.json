@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "studies": [
+    {
+      "id": "academy-claude-code-review",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/code-review",
+      "title": "Code review",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-04/code-review.md",
+      "status": "text_and_interactive_lesson_analyzed",
+      "text_read_complete": true,
+      "full_source_analyzed": true,
+      "full_source_scope": "Public article, three expanded notes, eight displayed diff samples and all feedback choices in two exercises. No external linked documents or real product execution.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac04-code-review-expanded.txt",
+          "bytes": 10179,
+          "sha256": "58c2b97492e91e6a1a2a7fc420a0ada222bb53e4a6012a21c6f0d96494d4e7ab",
+          "kind": "text",
+          "line_count": 266,
+          "read_lines": [
+            [
+              1,
+              266
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac04-code-review-diffs.txt",
+          "bytes": 3626,
+          "sha256": "de54cf32f5b82503513f396314d4db3774bad770e20a1acf7e2ff8024a203956",
+          "kind": "text",
+          "line_count": 339,
+          "read_lines": [
+            [
+              1,
+              339
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac04-code-review-feedback.txt",
+          "bytes": 11290,
+          "sha256": "1ddb92639830569738efdc80371685d05f22b6214ca26d6752757b25644ccce6",
+          "kind": "text",
+          "line_count": 293,
+          "read_lines": [
+            [
+              1,
+              293
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac04-code-review-alternative-feedback.txt",
+          "bytes": 3996,
+          "sha256": "f87d5f94df9614a064a352fd1b022d40e3a6389272bef5d27abc546a80060f47",
+          "kind": "text",
+          "line_count": 8,
+          "read_lines": [
+            [
+              1,
+              8
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac04-code-review-all-flags.txt",
+          "bytes": 1784,
+          "sha256": "dcc3f82d3d62a2bca378d4f2494e6d128944eb3bd25bab6dfcb7c3497a6aa760",
+          "kind": "text",
+          "line_count": 73,
+          "read_lines": [
+            [
+              1,
+              73
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac04-code-review-other-flags.txt",
+          "bytes": 7010,
+          "sha256": "751751bd79140d13c0b8d45b11473bfd08c06531cf70f7784c51adb9fb107c7d",
+          "kind": "text",
+          "line_count": 5,
+          "read_lines": [
+            [
+              1,
+              5
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-04/code-review.md",
+        "bytes": 6712,
+        "sha256": "cde25208e9f158cd7966ef249ecd44e41742248dd30faea7d960c8f94ea62e01",
+        "kind": "original_study",
+        "line_count": 56,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac04-code-review-feedback.png",
+          "bytes": 82573,
+          "sha256": "37188646fce5b9537363a85ed9ca7e56876e4299c1b136ce66b2b603f230bc0c",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "interactive_review": {
+        "eight_file_feedbacks_read": true,
+        "classification_choices_read": 12,
+        "correct_path_completed": true,
+        "signed_in": false,
+        "actual_claude_commands_executed": false
+      },
+      "media_observation": {
+        "article_images": 0,
+        "article_videos": 0,
+        "article_iframes": 0
+      },
+      "pending": [
+        "Prática original não executada",
+        "Comandos Claude/Git não executados"
+      ],
+      "rights": "Brutos e captura internos gitignored; sem licença de republicação presumida."
+    }
+  ]
+}

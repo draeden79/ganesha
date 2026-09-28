@@ -1,0 +1,212 @@
+[
+  {
+    "case": "external-notice-deduplicated",
+    "snapshot": "- link \"Ir para o conteúdo\":\n  - /url: \"#main\"\n- banner:\n  - button \"Voltar\":\n    - text: Voltar\n  - combobox \"Idioma\":\n    - option \"Português (Brasil)\" [selected]\n    - option \"English\"\n    - option \"Español\"\n    - option \"Français\"\n    - option \"Deutsch\"\n    - option \"日本語\"\n    - option \"हिन्दी\"\n    - option \"Bahasa Indonesia\"\n    - option \"العربية\"\n    - option \"한국어\"\n    - option \"简体中文\"\n  - 'button \"Etapas da aula: Etapa 1 de 10\"':\n    - generic: 1 / 10\n- main:\n  - paragraph: Fundamentos · Preparar seu espaço de trabalho\n  - heading \"Escolher uma ferramenta e conferir o acesso\" [active] [level=1]\n  - paragraph: Reconhecer os pré-requisitos da prática Desktop.\n  - paragraph: \"Você precisa de computador, navegador e acesso ao Claude Desktop/Code ou Codex Desktop. Abra a documentação oficial de início, baixe a versão compatível e entre na sua conta. Confira condições de uso e custos; o curso não promete acesso gratuito. Não é necessário assinar as duas ferramentas: você pratica em uma e compara as instruções da outra. Início oficial: Claude https://code.claude.com/docs/en/desktop-quickstart ; Codex https://learn.chatgpt.com/docs/quickstart .\"\n  - blockquote: Registre o que realmente executou ou o impedimento encontrado. Se analisar um exemplo simulado, identifique esse modo; ele não comprova execução externa.\n  - paragraph: Ferramenta\n  - combobox \"Ferramenta\":\n    - option \"Claude\" [selected]\n    - option \"Codex\"\n  - generic: Anote a ferramenta escolhida e se conseguiu entrar.\n  - textbox \"Sua resposta\":\n    - /placeholder: Anote a ferramenta escolhida e se conseguiu entrar.\n  - group \"Revise sua prática\":\n    - generic: Revise sua prática\n    - checkbox \"O registro distingue observação real, análise simulada e pendências.\"\n    - generic: O registro distingue observação real, análise simulada e pendências.\n    - checkbox \"Comparei com os critérios da etapa e indiquei o que está conferido ou pendente.\"\n    - generic: Comparei com os critérios da etapa e indiquei o que está conferido ou pendente.\n  - button \"Registrar minha prática\" [disabled]:\n    - text: Registrar minha prática\n  - paragraph:\n    - strong: \"Resultado esperado:\"\n    - text: Ferramenta e estado de acesso registrados.\n  - button \"Voltar\" [disabled]:\n    - text: Voltar\n  - button \"Continuar\" [disabled]:\n    - text: Continuar\n  - generic \"Beta do hackathon · conteúdo em revisão\":\n    - text: Beta do hackathon · conteúdo em revisão\n  - button \"Ajuda\"\n- alert",
+    "metrics": {
+      "automaticNoticeCount": 0,
+      "h1y": 118.59375,
+      "notices": [
+        "Registre o que realmente executou ou o impedimento encontrado. Se analisar um exemplo simulado, identifique esse modo; ele não comprova execução externa."
+      ],
+      "scrollWidth": 390,
+      "width": 390
+    }
+  },
+  {
+    "case": "csv-pt-mobile",
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "id,item,amount\n1,Caderno,10.50\n2,Curso,20.00"
+      }
+    ],
+    "h1": "Criar a tabela de treino",
+    "h1y": 118.59375,
+    "noticeCount": 0,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.automation-input.create-csv.v3",
+    "width": 390
+  },
+  {
+    "case": "apps-update-test-copy-pt-mobile",
+    "code": [],
+    "h1": "Recuperar e testar uma gravação recusada",
+    "h1y": 118.59375,
+    "noticeCount": 0,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.app-delivery.restore-backup.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-mobile-lesson.workspace",
+    "code": [],
+    "h1": "Escolher uma ferramenta e conferir o acesso",
+    "h1y": 118.59375,
+    "noticeCount": 0,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.workspace.access.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-mobile-lesson.requests",
+    "code": [],
+    "h1": "Trocar uma ideia vaga por uma entrega",
+    "h1y": 118.59375,
+    "noticeCount": 1,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.requests.desired-result.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-mobile-lesson.verification",
+    "code": [],
+    "h1": "Distinguir afirmação, arquivo e comportamento",
+    "h1y": 118.59375,
+    "noticeCount": 1,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.verification.evidence-types.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-mobile-lesson.site-build",
+    "code": [],
+    "h1": "O que esta página precisa fazer",
+    "h1y": 118.59375,
+    "noticeCount": 0,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.site-build.page-contract.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-mobile-lesson.site-quality",
+    "code": [],
+    "h1": "Definir qualidade observável",
+    "h1y": 118.59375,
+    "noticeCount": 1,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.site-quality.quality-criteria.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-mobile-lesson.site-publish",
+    "code": [],
+    "h1": "Distinguir arquivo, hospedagem e acesso",
+    "h1y": 118.59375,
+    "noticeCount": 0,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.site-publish.local-versus-hosted.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-mobile-lesson.app-state",
+    "code": [],
+    "h1": "O que muda quando você age",
+    "h1y": 118.59375,
+    "noticeCount": 1,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.app-state.state-model.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-mobile-lesson.app-storage",
+    "code": [],
+    "h1": "Separar tela, memória e armazenamento",
+    "h1y": 118.59375,
+    "noticeCount": 1,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.app-storage.memory-storage.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-mobile-lesson.app-delivery",
+    "code": [],
+    "h1": "Separar o programa da cópia de dados",
+    "h1y": 118.59375,
+    "noticeCount": 1,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.app-delivery.files-and-data.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-mobile-lesson.automation-input",
+    "code": [],
+    "h1": "Entrada, transformação e saída",
+    "h1y": 118.59375,
+    "noticeCount": 1,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.automation-input.pipeline.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-mobile-lesson.automation-report",
+    "code": [],
+    "h1": "Escolher como executar a transformação",
+    "h1y": 118.59375,
+    "noticeCount": 1,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.automation-report.execution-paths.v3",
+    "width": 390
+  },
+  {
+    "case": "first-step-mobile-lesson.automation-schedule",
+    "code": [],
+    "h1": "Uma agenda repete um processo",
+    "h1y": 118.59375,
+    "noticeCount": 1,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.automation-schedule.schedule-boundary.v3",
+    "width": 390
+  },
+  {
+    "case": "schedule-codex-pt-mobile",
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "python3 report.py vendas.csv report.md"
+      },
+      {
+        "dir": "ltr",
+        "text": "py -3 report.py vendas.csv report.md"
+      }
+    ],
+    "h1": "Ensaiar antes de ativar o horário",
+    "h1y": 118.59375,
+    "noticeCount": 0,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/pt-BR#step.automation-schedule.tool-conditions.v3",
+    "width": 390
+  },
+  {
+    "case": "schedule-codex-en-mobile",
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "python3 report.py vendas.csv report.md"
+      },
+      {
+        "dir": "ltr",
+        "text": "py -3 report.py vendas.csv report.md"
+      }
+    ],
+    "h1": "Rehearse before activating the time",
+    "h1y": 118.59375,
+    "noticeCount": 0,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/en#step.automation-schedule.tool-conditions.v3",
+    "width": 390
+  },
+  {
+    "case": "apps-update-test-copy-en-mobile",
+    "code": [],
+    "h1": "Restore a backup and test a rejected write",
+    "h1y": 118.59375,
+    "noticeCount": 0,
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/en#step.app-delivery.restore-backup.v3",
+    "width": 390
+  },
+  {
+    "case": "apps-source-delta-en",
+    "text": "Demonstrate recovery and preservation on error.\n\nSave a copy of state C and import antes-de-importar.json through the validated flow. Confirm completed A and pending B after reloading. Update the isolated test copy with the current version that already imports files, keeping ganesha.tasks.test. In that copy, simulate a failure while saving an import: preserve the earlier list and warn that nothing was replaced. Disable the rehearsal and repeat a valid import.\n\nUpdate only the isolated test copy with the current app version, including export/import. In that copy, use only ganesha.tasks.test; do not read, write or remove ganesha.tasks.v1. Then simulate a write failure when confirming a valid import. Preserve the previous list and data, show an error and do not claim replacement succeeded. Explain how to remove the rehearsal. I will test importing the backup, reloading and comparing tasks and completion.\nRecord what you actually ran or the obstacle encountered. If you analyze a simulated example, identify that mode; it does not establish external execution."
+  }
+]

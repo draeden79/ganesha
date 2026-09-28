@@ -32,8 +32,11 @@ export interface Lesson {
   title: string;
   summary: string;
   durationMinutes: number;
+  prerequisiteLessonIds?: string[];
   steps: Step[];
 }
+export type LearningRoute = "foundations" | "sites" | "apps" | "automations";
+export interface CourseRoute { id: LearningRoute; lessonIds: readonly string[] }
 export interface Course {
   id: string;
   version: string;
@@ -43,6 +46,7 @@ export interface Course {
   title: string;
   description: string;
   progressScope?: "classroom";
+  routes?: readonly CourseRoute[];
   lessons: Lesson[];
 }
 

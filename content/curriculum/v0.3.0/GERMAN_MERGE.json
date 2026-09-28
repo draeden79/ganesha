@@ -1,0 +1,28 @@
+{
+  "version": "0.3.0",
+  "keyCount": 1192,
+  "parts": {
+    "de.part-root": {
+      "keys": 88,
+      "sha256": "5705b3c130d088d3d2381fa67cc080f4748b14f1ee42a1d2886d7e50d3e0496b"
+    },
+    "de.part-global": {
+      "keys": 162,
+      "sha256": "1efe1663731e3d66d55b35da7a4029cc571ab28634999fe31a1990b69468206f"
+    },
+    "de.part-europe": {
+      "keys": 312,
+      "sha256": "6eda3b6bc41ec3f099d34927f393e75008507fdeec6dc5efc5b0608c3008e343"
+    },
+    "de.part-apps": {
+      "keys": 324,
+      "sha256": "d90c662c5113aeebfe83fe729b19c37e4f8d4077bc7092770b7f7d7ebf69f819"
+    },
+    "de.part-automation": {
+      "keys": 306,
+      "sha256": "399f86ea0536bd1188d1b37b4c45c07843772221d6a3c3fc0a4dc2da2f9c6f06"
+    }
+  },
+  "method": "disjoint key sets, no fallback, du/dein register",
+  "retainedFragments": "authoring/fragments/"
+}

@@ -1,0 +1,693 @@
+{
+  "scope": "Source review only, not app rendering QA",
+  "source": "/Users/lucasmarques/.codex/worktrees/30b2/Ganesha/content/curriculum/v0.3.0/authoring/foundations.pt-BR.json",
+  "lessons": 3,
+  "steps": 30,
+  "kinds": {
+    "explain": 2,
+    "practice": 19,
+    "check": 6,
+    "reflect": 3
+  },
+  "bodyWordRange": [
+    17,
+    60
+  ],
+  "maxCoreWords": 136,
+  "rows": [
+    {
+      "lesson": "workspace",
+      "position": 1,
+      "step": "access",
+      "kind": "explain",
+      "mode": "concept",
+      "bodyWords": 57,
+      "coreWordsWithPromptAndCriteria": 90,
+      "maxToolVariantWords": 0,
+      "titleChars": 43,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "workspace",
+      "position": 2,
+      "step": "folder",
+      "kind": "practice",
+      "mode": "external-real-task",
+      "bodyWords": 54,
+      "coreWordsWithPromptAndCriteria": 86,
+      "maxToolVariantWords": 0,
+      "titleChars": 35,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "workspace",
+      "position": 3,
+      "step": "fictional-brief",
+      "kind": "practice",
+      "mode": "external-real-task",
+      "bodyWords": 53,
+      "coreWordsWithPromptAndCriteria": 88,
+      "maxToolVariantWords": 0,
+      "titleChars": 36,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "workspace",
+      "position": 4,
+      "step": "context-check",
+      "kind": "check",
+      "mode": "guided-simulation",
+      "bodyWords": 20,
+      "coreWordsWithPromptAndCriteria": 52,
+      "maxToolVariantWords": 0,
+      "titleChars": 26,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true,
+      "optionWordCounts": [
+        9,
+        11,
+        7
+      ]
+    },
+    {
+      "lesson": "workspace",
+      "position": 5,
+      "step": "select-context",
+      "kind": "practice",
+      "mode": "external-real-task",
+      "bodyWords": 53,
+      "coreWordsWithPromptAndCriteria": 88,
+      "maxToolVariantWords": 21,
+      "titleChars": 37,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "workspace",
+      "position": 6,
+      "step": "read-only-request",
+      "kind": "practice",
+      "mode": "external-real-task",
+      "bodyWords": 49,
+      "coreWordsWithPromptAndCriteria": 112,
+      "maxToolVariantWords": 29,
+      "titleChars": 32,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "workspace",
+      "position": 7,
+      "step": "compare-context",
+      "kind": "practice",
+      "mode": "external-real-task",
+      "bodyWords": 49,
+      "coreWordsWithPromptAndCriteria": 86,
+      "maxToolVariantWords": 0,
+      "titleChars": 31,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "workspace",
+      "position": 8,
+      "step": "access-recovery",
+      "kind": "practice",
+      "mode": "guided-simulation",
+      "bodyWords": 59,
+      "coreWordsWithPromptAndCriteria": 94,
+      "maxToolVariantWords": 0,
+      "titleChars": 38,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "workspace",
+      "position": 9,
+      "step": "access-evidence",
+      "kind": "check",
+      "mode": "guided-simulation",
+      "bodyWords": 19,
+      "coreWordsWithPromptAndCriteria": 47,
+      "maxToolVariantWords": 0,
+      "titleChars": 31,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true,
+      "optionWordCounts": [
+        6,
+        5,
+        10
+      ]
+    },
+    {
+      "lesson": "workspace",
+      "position": 10,
+      "step": "workspace-record",
+      "kind": "reflect",
+      "mode": "external-real-task",
+      "bodyWords": 48,
+      "coreWordsWithPromptAndCriteria": 88,
+      "maxToolVariantWords": 0,
+      "titleChars": 39,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "requests",
+      "position": 1,
+      "step": "desired-result",
+      "kind": "practice",
+      "mode": "guided-simulation",
+      "bodyWords": 54,
+      "coreWordsWithPromptAndCriteria": 97,
+      "maxToolVariantWords": 0,
+      "titleChars": 37,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "requests",
+      "position": 2,
+      "step": "relevant-context",
+      "kind": "practice",
+      "mode": "guided-simulation",
+      "bodyWords": 51,
+      "coreWordsWithPromptAndCriteria": 87,
+      "maxToolVariantWords": 0,
+      "titleChars": 40,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "requests",
+      "position": 3,
+      "step": "complete-request",
+      "kind": "practice",
+      "mode": "guided-simulation",
+      "bodyWords": 54,
+      "coreWordsWithPromptAndCriteria": 136,
+      "maxToolVariantWords": 0,
+      "titleChars": 38,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "requests",
+      "position": 4,
+      "step": "scope-check",
+      "kind": "check",
+      "mode": "guided-simulation",
+      "bodyWords": 26,
+      "coreWordsWithPromptAndCriteria": 60,
+      "maxToolVariantWords": 0,
+      "titleChars": 30,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true,
+      "optionWordCounts": [
+        9,
+        9,
+        5
+      ]
+    },
+    {
+      "lesson": "requests",
+      "position": 5,
+      "step": "worked-plan",
+      "kind": "practice",
+      "mode": "guided-simulation",
+      "bodyWords": 56,
+      "coreWordsWithPromptAndCriteria": 98,
+      "maxToolVariantWords": 0,
+      "titleChars": 35,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "requests",
+      "position": 6,
+      "step": "clarification",
+      "kind": "practice",
+      "mode": "guided-simulation",
+      "bodyWords": 55,
+      "coreWordsWithPromptAndCriteria": 89,
+      "maxToolVariantWords": 0,
+      "titleChars": 34,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "requests",
+      "position": 7,
+      "step": "targeted-revision",
+      "kind": "practice",
+      "mode": "guided-simulation",
+      "bodyWords": 60,
+      "coreWordsWithPromptAndCriteria": 134,
+      "maxToolVariantWords": 0,
+      "titleChars": 41,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "requests",
+      "position": 8,
+      "step": "send-and-review",
+      "kind": "practice",
+      "mode": "external-real-task",
+      "bodyWords": 58,
+      "coreWordsWithPromptAndCriteria": 94,
+      "maxToolVariantWords": 0,
+      "titleChars": 39,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "requests",
+      "position": 9,
+      "step": "plan-evidence",
+      "kind": "check",
+      "mode": "guided-simulation",
+      "bodyWords": 25,
+      "coreWordsWithPromptAndCriteria": 56,
+      "maxToolVariantWords": 0,
+      "titleChars": 27,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true,
+      "optionWordCounts": [
+        7,
+        13,
+        8
+      ]
+    },
+    {
+      "lesson": "requests",
+      "position": 10,
+      "step": "portable-request",
+      "kind": "reflect",
+      "mode": "guided-simulation",
+      "bodyWords": 58,
+      "coreWordsWithPromptAndCriteria": 99,
+      "maxToolVariantWords": 0,
+      "titleChars": 47,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "verification",
+      "position": 1,
+      "step": "evidence-types",
+      "kind": "explain",
+      "mode": "concept",
+      "bodyWords": 55,
+      "coreWordsWithPromptAndCriteria": 89,
+      "maxToolVariantWords": 0,
+      "titleChars": 45,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "verification",
+      "position": 2,
+      "step": "success-criteria",
+      "kind": "practice",
+      "mode": "guided-simulation",
+      "bodyWords": 58,
+      "coreWordsWithPromptAndCriteria": 94,
+      "maxToolVariantWords": 0,
+      "titleChars": 43,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "verification",
+      "position": 3,
+      "step": "baseline",
+      "kind": "practice",
+      "mode": "guided-simulation",
+      "bodyWords": 45,
+      "coreWordsWithPromptAndCriteria": 79,
+      "maxToolVariantWords": 0,
+      "titleChars": 26,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "verification",
+      "position": 4,
+      "step": "diagnosis-check",
+      "kind": "check",
+      "mode": "guided-simulation",
+      "bodyWords": 17,
+      "coreWordsWithPromptAndCriteria": 50,
+      "maxToolVariantWords": 0,
+      "titleChars": 39,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true,
+      "optionWordCounts": [
+        4,
+        6,
+        21
+      ]
+    },
+    {
+      "lesson": "verification",
+      "position": 5,
+      "step": "reproduction",
+      "kind": "practice",
+      "mode": "guided-simulation",
+      "bodyWords": 54,
+      "coreWordsWithPromptAndCriteria": 89,
+      "maxToolVariantWords": 0,
+      "titleChars": 36,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "verification",
+      "position": 6,
+      "step": "repair-request",
+      "kind": "practice",
+      "mode": "guided-simulation",
+      "bodyWords": 50,
+      "coreWordsWithPromptAndCriteria": 118,
+      "maxToolVariantWords": 0,
+      "titleChars": 30,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "verification",
+      "position": 7,
+      "step": "retest",
+      "kind": "practice",
+      "mode": "guided-simulation",
+      "bodyWords": 51,
+      "coreWordsWithPromptAndCriteria": 92,
+      "maxToolVariantWords": 0,
+      "titleChars": 50,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "verification",
+      "position": 8,
+      "step": "real-small-change",
+      "kind": "practice",
+      "mode": "external-real-task",
+      "bodyWords": 54,
+      "coreWordsWithPromptAndCriteria": 91,
+      "maxToolVariantWords": 0,
+      "titleChars": 31,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    },
+    {
+      "lesson": "verification",
+      "position": 9,
+      "step": "verification-limit",
+      "kind": "check",
+      "mode": "guided-simulation",
+      "bodyWords": 18,
+      "coreWordsWithPromptAndCriteria": 50,
+      "maxToolVariantWords": 0,
+      "titleChars": 38,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true,
+      "optionWordCounts": [
+        15,
+        8,
+        8
+      ]
+    },
+    {
+      "lesson": "verification",
+      "position": 10,
+      "step": "verification-record",
+      "kind": "reflect",
+      "mode": "guided-simulation",
+      "bodyWords": 58,
+      "coreWordsWithPromptAndCriteria": 103,
+      "maxToolVariantWords": 0,
+      "titleChars": 48,
+      "criteriaCount": 1,
+      "criteriaRepeatExpected": true
+    }
+  ],
+  "initialSnapshot": true,
+  "afterPriorityAndAssessmentFixes": {
+    "kinds": {
+      "practice": 21,
+      "check": 6,
+      "reflect": 3
+    },
+    "bodyWordRange": [
+      17,
+      77
+    ],
+    "rows": [
+      {
+        "lesson": "workspace",
+        "step": "access",
+        "kind": "practice",
+        "bodyWords": 65,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "workspace",
+        "step": "folder",
+        "kind": "practice",
+        "bodyWords": 74,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "workspace",
+        "step": "fictional-brief",
+        "kind": "practice",
+        "bodyWords": 72,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "workspace",
+        "step": "context-check",
+        "kind": "check",
+        "bodyWords": 20,
+        "criteriaCount": 1,
+        "optionWordCounts": [
+          9,
+          11,
+          11
+        ]
+      },
+      {
+        "lesson": "workspace",
+        "step": "select-context",
+        "kind": "practice",
+        "bodyWords": 77,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "workspace",
+        "step": "read-only-request",
+        "kind": "practice",
+        "bodyWords": 71,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "workspace",
+        "step": "compare-context",
+        "kind": "practice",
+        "bodyWords": 64,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "workspace",
+        "step": "access-recovery",
+        "kind": "practice",
+        "bodyWords": 59,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "workspace",
+        "step": "access-evidence",
+        "kind": "check",
+        "bodyWords": 19,
+        "criteriaCount": 1,
+        "optionWordCounts": [
+          6,
+          5,
+          10
+        ]
+      },
+      {
+        "lesson": "workspace",
+        "step": "workspace-record",
+        "kind": "reflect",
+        "bodyWords": 48,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "requests",
+        "step": "desired-result",
+        "kind": "practice",
+        "bodyWords": 54,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "requests",
+        "step": "relevant-context",
+        "kind": "practice",
+        "bodyWords": 51,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "requests",
+        "step": "complete-request",
+        "kind": "practice",
+        "bodyWords": 54,
+        "criteriaCount": 3
+      },
+      {
+        "lesson": "requests",
+        "step": "scope-check",
+        "kind": "check",
+        "bodyWords": 26,
+        "criteriaCount": 1,
+        "optionWordCounts": [
+          9,
+          9,
+          5
+        ]
+      },
+      {
+        "lesson": "requests",
+        "step": "worked-plan",
+        "kind": "practice",
+        "bodyWords": 56,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "requests",
+        "step": "clarification",
+        "kind": "practice",
+        "bodyWords": 55,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "requests",
+        "step": "targeted-revision",
+        "kind": "practice",
+        "bodyWords": 60,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "requests",
+        "step": "send-and-review",
+        "kind": "practice",
+        "bodyWords": 58,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "requests",
+        "step": "plan-evidence",
+        "kind": "check",
+        "bodyWords": 25,
+        "criteriaCount": 1,
+        "optionWordCounts": [
+          7,
+          13,
+          8
+        ]
+      },
+      {
+        "lesson": "requests",
+        "step": "portable-request",
+        "kind": "reflect",
+        "bodyWords": 58,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "verification",
+        "step": "evidence-types",
+        "kind": "practice",
+        "bodyWords": 55,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "verification",
+        "step": "success-criteria",
+        "kind": "practice",
+        "bodyWords": 58,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "verification",
+        "step": "baseline",
+        "kind": "practice",
+        "bodyWords": 45,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "verification",
+        "step": "diagnosis-check",
+        "kind": "check",
+        "bodyWords": 17,
+        "criteriaCount": 1,
+        "optionWordCounts": [
+          17,
+          17,
+          21
+        ]
+      },
+      {
+        "lesson": "verification",
+        "step": "reproduction",
+        "kind": "practice",
+        "bodyWords": 54,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "verification",
+        "step": "repair-request",
+        "kind": "practice",
+        "bodyWords": 50,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "verification",
+        "step": "retest",
+        "kind": "practice",
+        "bodyWords": 51,
+        "criteriaCount": 3
+      },
+      {
+        "lesson": "verification",
+        "step": "real-small-change",
+        "kind": "practice",
+        "bodyWords": 54,
+        "criteriaCount": 1
+      },
+      {
+        "lesson": "verification",
+        "step": "verification-limit",
+        "kind": "check",
+        "bodyWords": 18,
+        "criteriaCount": 1,
+        "optionWordCounts": [
+          15,
+          8,
+          8
+        ]
+      },
+      {
+        "lesson": "verification",
+        "step": "verification-record",
+        "kind": "reflect",
+        "bodyWords": 58,
+        "criteriaCount": 3
+      }
+    ]
+  }
+}

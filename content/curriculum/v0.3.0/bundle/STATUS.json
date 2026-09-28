@@ -1,0 +1,37 @@
+{
+  "version": "0.3.0",
+  "canonicalActivation": false,
+  "requiredLocales": [
+    "pt-BR",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "hi",
+    "id",
+    "ar",
+    "ko",
+    "zh-CN"
+  ],
+  "availableLocales": [
+    "pt-BR",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "hi",
+    "id",
+    "ar",
+    "ko",
+    "zh-CN"
+  ],
+  "localizationComplete": true,
+  "humanReview": "pending",
+  "lessonCount": 12,
+  "stepCount": 120,
+  "assessmentCount": 24,
+  "releaseEligible": false,
+  "mode": "isolated-review-package"
+}

@@ -1,0 +1,20 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-code-101/hooks",
+  "title": "Hooks",
+  "observed_at": "2026-09-28T21:22:14.698Z",
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/IkaPHiMDazM?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "Hooks"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=IkaPHiMDazM",
+      "title": "Hooks"
+    }
+  ],
+  "acquired_transcript": "transcripts/local/IkaPHiMDazM.academy.txt",
+  "inventory_scope": "Rendered public lesson; acquisition is distinct from reading and audiovisual verification"
+}

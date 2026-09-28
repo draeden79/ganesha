@@ -1,0 +1,314 @@
+[
+  {
+    "case": "ar-json-fixed",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "{\"version\":1,\"tasks\":[{\"id\":\"t1\",\"text\":\"A\",\"done\":\"false\"}]}"
+      }
+    ],
+    "copy": "افصل JSON القابل للتحليل عن البيانات المقبولة.\n\nسيناريو محاكٍ أصلي: يحتوي ملف على {\"version\":1,\"tasks\":[{\"id\":\"t1\",\"text\":\"A\",\"done\":\"false\"}]}. يستطيع القارئ تحليل صيغته. لكن على المستورد التحقق من معنى الحقول المطلوبة وأنواعها وفق المتطلبات. انظر تحديدًا إلى طريقة كتابة قيمة done بدلًا من اعتبار امتداد الملف كافيًا.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "ميّز الصياغة عن المحتوى",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.app-delivery.check-contract.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-csv-fixed",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "id,item,amount"
+      },
+      {
+        "dir": "ltr",
+        "text": "1,Caderno,10.50"
+      },
+      {
+        "dir": "ltr",
+        "text": "2,Curso,20.00"
+      },
+      {
+        "dir": "ltr",
+        "text": "id,item,amount\n1,Caderno,10.50\n2,Curso,20.00"
+      },
+      {
+        "dir": "ltr",
+        "text": "id,item,amount"
+      }
+    ],
+    "copy": "أنشئ ملف CSV حرفيًا وافحصه.\n\nCSV جدول مكتوب كنص: يسمّي السطر الأول الأعمدة، ويمثّل كل سطر تالٍ سجلًا. أنشئ مجلد relatorio وحدّده في Claude Desktop/Code أو Codex Desktop. اطلب ملفًا نصيًا بترميز UTF-8 باسم vendas.csv يحتوي البيانات أدناه بالضبط. افتحه في المحرر وتحقّق منه؛ فلا تكفي رسالة الإنشاء.\n\nفي relatorio، أنشئ vendas.csv فقط كنص بترميز UTF-8 بالمحتوى أدناه، مع الحفاظ على الأسماء والنقاط العشرية. لا تنشئ تقريرًا ولا تثبّت شيئًا ولا تجدول مهمة. اعرض مسار الملف كي أفتحه.\n\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nسجّل ما نفّذته فعلًا أو العائق الذي واجهته. إذا حلّلت مثالًا محاكيًا، فحدّد هذا النمط؛ فهو لا يثبت حدوث تنفيذ خارجي.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "أنشئ جدول التدريب",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.automation-input.create-csv.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-schedule-fixed",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "python3 report.py vendas.csv report.md"
+      },
+      {
+        "dir": "ltr",
+        "text": "py -3 report.py vendas.csv report.md"
+      },
+      {
+        "dir": "ltr",
+        "text": "id,item,amount"
+      },
+      {
+        "dir": "ltr",
+        "text": "1,Caderno,10.50"
+      },
+      {
+        "dir": "ltr",
+        "text": "2,Curso,20.00"
+      }
+    ],
+    "copy": "تحقّق من الطلب الكامل في السياق المحدّد قبل الجدولة.\n\nعند استيفاء الشروط، استخدم مهمة تدريب هذا المجلد فقط. في علامة التبويب Code في Claude Desktop، أنشئ الروتين المحلي باستخدام Manual ثم استخدم Run now؛ وراجع المجلد والتعليمات والأذونات قبل الحفظ. في Codex، نفّذ الطلب الكامل أولًا في محادثة عادية مع المشروع المحلي. قارن المخرج بـ2 سجل و30.50. من دون الوصول، حلّل هذه التجربة كمحاكاة من دون ادعاء التنفيذ.\n\nشغّل مرة واحدة الآن، من دون إنشاء جدول زمني، في مجلد relatorio المحلي. استخدم فقط الأمر الذي اختبرته بالفعل على هذا الحاسوب: python3 report.py vendas.csv report.md أو، في Windows، py -3 report.py vendas.csv report.md. لا تثبّت تبعيات أو تغيّر ملفات الإدخال أو البرنامج. تحتوي مدخلات التدريب بالضبط على id,item,amount؛ 1,Caderno,10.50؛ 2,Curso,20.00. افتح report.md وتحقّق من 2 سجل ومجموع 30.50. إذا حدث خطأ، فأبلغ عن تشخيصه وحافظ على آخر تقرير صالح. لا ترسل بيانات أو تنشر نتائج.\nسجّل ما نفّذته فعلًا أو العائق الذي واجهته. إذا حلّلت مثالًا محاكيًا، فحدّد هذا النمط؛ فهو لا يثبت حدوث تنفيذ خارجي.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "تدرّب قبل تفعيل الموعد",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.automation-schedule.tool-conditions.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-decimal-runtime-pending",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "1,Caderno,10,50"
+      },
+      {
+        "dir": "ltr",
+        "text": "1,Caderno,10.50"
+      }
+    ],
+    "copy": "طبّق قاعدة الفاصل.\n\nتأمّل هذا السطر المحاكي المستلم من شخص آخر: 1,Caderno,10,50. تستخدم متطلبات هذا التمرين الفواصل بين الحقول والنقطة للأجزاء العشرية. قرّر ما ستفعله قبل الحساب. السطر حالة تقييم، لا تنفيذ من الأداة ولا تغيير لملفك الأصلي.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "تعرّف على حقل ينقسم",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.automation-input.decimal-check.v3",
+    "width": 390
+  },
+  {
+    "case": "ko-csv",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "id,item,amount\n1,Caderno,10.50\n2,Curso,20.00"
+      }
+    ],
+    "copy": "내용이 정확한 CSV 파일을 만들고 검사합니다.\n\nCSV는 글로 쓴 표입니다. 첫 줄은 열 이름이며 이후 각 줄은 기록입니다. relatorio 폴더를 만들고 Claude Desktop/Code 또는 Codex Desktop에서 선택하세요. 아래 데이터와 정확히 일치하는 vendas.csv라는 UTF-8 텍스트 파일을 요청하세요. 편집기에서 열어 확인하세요. 생성 메시지만으로는 충분하지 않습니다.\n\nrelatorio에 아래 내용으로 vendas.csv만 UTF-8 텍스트로 만들어 주세요. 이름과 소수점을 유지해 주세요. 보고서를 만들거나 무엇을 설치하거나 작업을 예약하지 마세요. 열어 볼 수 있도록 파일 경로를 보여 주세요.\n\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\n실제로 실행한 내용이나 마주친 장애 요인을 기록하세요. 모의 예제를 분석했다면 그 방식을 명시하세요. 모의 분석은 외부 실행을 입증하지 않습니다.",
+    "dir": "ltr",
+    "font": "\"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+    "h1": "연습용 표 만들기",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ko#step.automation-input.create-csv.v3",
+    "width": 390
+  },
+  {
+    "case": "ko-apps-test-copy",
+    "automaticNotices": 0,
+    "code": [],
+    "copy": "복구와 오류 시 보존을 입증합니다.\n\nC 상태의 사본을 저장하고 검증된 절차로 antes-de-importar.json을 가져오세요. 새로고침 후 완료된 A와 미완료 B를 확인하세요. ganesha.tasks.test를 유지하면서 분리된 시험용 사본을 파일 가져오기가 이미 가능한 현재 버전으로 업데이트하세요. 그 사본에서 가져오기를 저장하는 중 실패를 모의 실행하세요. 이전 목록을 보존하고 아무것도 교체하지 않았다고 경고해야 합니다. 모의 시험을 끄고 유효한 가져오기를 반복하세요.\n\n분리된 시험용 사본만 내보내기/가져오기가 포함된 현재 앱 버전으로 업데이트해 주세요. 그 사본에서는 ganesha.tasks.test만 사용하고 ganesha.tasks.v1을 읽거나 쓰거나 제거하지 마세요. 이어 유효한 가져오기를 확인할 때 쓰기 실패를 모의 실행해 주세요. 이전 목록과 데이터를 보존하고 오류를 표시하며 교체에 성공했다고 주장하지 마세요. 모의 시험을 제거하는 방법을 설명해 주세요. 백업 가져오기, 새로고침, 할 일과 완료 여부 비교를 시험하겠습니다.\n실제로 실행한 내용이나 마주친 장애 요인을 기록하세요. 모의 예제를 분석했다면 그 방식을 명시하세요. 모의 분석은 외부 실행을 입증하지 않습니다.",
+    "dir": "ltr",
+    "font": "\"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+    "h1": "백업 복원과 거부된 쓰기 시험하기",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ko#step.app-delivery.restore-backup.v3",
+    "width": 390
+  },
+  {
+    "case": "ko-schedule",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "python3 report.py vendas.csv report.md"
+      },
+      {
+        "dir": "ltr",
+        "text": "py -3 report.py vendas.csv report.md"
+      }
+    ],
+    "copy": "예약 전에 선택한 맥락에서 전체 요청을 검증합니다.\n\n조건이 충족되면 이 폴더의 연습용 작업만 사용하세요. Claude Desktop의 Code 탭에서 Manual로 로컬 루틴을 만들고 Run now를 사용하세요. 저장 전에 폴더, 지시, 권한을 검토하세요. Codex에서는 먼저 로컬 프로젝트의 일반 대화에서 전체 요청을 실행하세요. 출력을 기록 2개와 30.50에 비교하세요. 접근할 수 없다면 실행했다고 주장하지 말고 이 사전 시험을 모의 분석하세요.\n\n예약을 만들지 말고 로컬 relatorio 폴더에서 지금 한 번 실행해 주세요. 이 컴퓨터에서 이미 시험한 명령만 사용하세요. python3 report.py vendas.csv report.md 또는 Windows의 py -3 report.py vendas.csv report.md입니다. 의존성을 설치하거나 입력 파일 또는 프로그램을 바꾸지 마세요. 연습 입력은 정확히 id,item,amount; 1,Caderno,10.50; 2,Curso,20.00입니다. report.md를 열어 기록 2개와 합계 30.50을 확인해 주세요. 오류가 나면 진단을 보고하고 마지막 유효한 보고서를 보존해 주세요. 데이터를 보내거나 결과를 게시하지 마세요.\n실제로 실행한 내용이나 마주친 장애 요인을 기록하세요. 모의 예제를 분석했다면 그 방식을 명시하세요. 모의 분석은 외부 실행을 입증하지 않습니다.",
+    "dir": "ltr",
+    "font": "\"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+    "h1": "예약 시간을 활성화하기 전에 사전 시험하기",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ko#step.automation-schedule.tool-conditions.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-final-check-3106",
+    "answer": "option.automation-input.decimal-check.a.v3",
+    "result": {
+      "backticks": false,
+      "blocked": true,
+      "codes": [
+        {
+          "bidi": "isolate",
+          "dir": "ltr",
+          "text": "1,Caderno,10,50"
+        },
+        {
+          "bidi": "isolate",
+          "dir": "ltr",
+          "text": "1,Caderno,10,50"
+        },
+        {
+          "bidi": "isolate",
+          "dir": "ltr",
+          "text": "1,Caderno,10.50"
+        },
+        {
+          "bidi": "isolate",
+          "dir": "ltr",
+          "text": "id,item,amount"
+        }
+      ],
+      "feedback": "لنحاول مرة أخرى\n\nيغيّر تجاهل حقل القيمة ويخفي مشكلة في المدخلات. قارن عدد الحقول بـid,item,amount وحاول مجددًا.\n\n1 محاولة",
+      "legendCode": "1,Caderno,10,50"
+    }
+  },
+  {
+    "case": "ar-final-correct-3106",
+    "result": {
+      "backticks": false,
+      "blocked": false,
+      "codes": [
+        {
+          "bidi": "isolate",
+          "dir": "ltr",
+          "text": "1,Caderno,10,50"
+        },
+        {
+          "bidi": "isolate",
+          "dir": "ltr",
+          "text": "1,Caderno,10,50"
+        },
+        {
+          "bidi": "isolate",
+          "dir": "ltr",
+          "text": "1,Caderno,10.50"
+        }
+      ],
+      "feedback": "أحسنت!\n\nيعيد هذا الحقول الثلاثة والتنسيق العشري المحدّد. فحصت البنية قبل الحساب.\n\n2 محاولة",
+      "legendCode": "1,Caderno,10,50"
+    }
+  },
+  {
+    "case": "zh-csv-3106",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "id,item,amount\n1,Caderno,10.50\n2,Curso,20.00"
+      }
+    ],
+    "copy": "按原样创建并检查 CSV 文件。\n\nCSV 是用文本书写的表格：第一行是列名，后续每行是一条记录。创建 relatorio 文件夹，并在 Claude Desktop/Code 或 Codex Desktop 中选择它。要求创建 UTF-8 文本文件 vendas.csv，内容与下方数据完全一致。在编辑器中打开核对；仅有创建成功的消息还不够。\n\n在 relatorio 中仅创建 UTF-8 文本文件 vendas.csv，使用以下内容，保留名称和小数点。不要生成报告、安装任何内容或创建计划任务。显示文件路径，便于我打开。\n\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\n请记录实际执行的操作或遇到的阻碍。如果分析的是模拟示例，请注明这一模式；模拟分析不能证明已在外部执行。",
+    "dir": "ltr",
+    "font": "\"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "h1": "创建练习数据表",
+    "scrollWidth": 390,
+    "url": "http://localhost:3106/classroom/zh-CN#step.automation-input.create-csv.v3",
+    "width": 390
+  },
+  {
+    "case": "zh-apps-test-copy-3106",
+    "automaticNotices": 0,
+    "code": [],
+    "copy": "证明恢复和出错时的数据保留。\n\n保存 C 状态的副本，通过已验证流程导入 antes-de-importar.json。刷新后确认 A 已完成、B 待完成。用已具备导入功能的当前版本更新隔离测试副本，继续使用 ganesha.tasks.test。在该副本中模拟导入保存失败：保留旧列表，警告没有替换。关闭演练，再进行有效导入。\n\n只用当前应用版本更新隔离测试副本，包含导出／导入。该副本只使用 ganesha.tasks.test；不要读取、写入或删除 ganesha.tasks.v1。然后模拟确认有效导入时的写入失败。保留原列表和数据，显示错误，不声称替换成功。说明如何移除演练。我会测试导入备份、刷新并比较任务与完成状态。\n请记录实际执行的操作或遇到的阻碍。如果分析的是模拟示例，请注明这一模式；模拟分析不能证明已在外部执行。",
+    "dir": "ltr",
+    "font": "\"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "h1": "恢复备份并测试写入拒绝",
+    "scrollWidth": 390,
+    "url": "http://localhost:3106/classroom/zh-CN#step.app-delivery.restore-backup.v3",
+    "width": 390
+  },
+  {
+    "case": "zh-schedule-3106",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "python3 report.py vendas.csv report.md"
+      },
+      {
+        "dir": "ltr",
+        "text": "py -3 report.py vendas.csv report.md"
+      }
+    ],
+    "copy": "在排程前验证所选上下文中的完整请求。\n\n条件满足后，只使用该文件夹的练习任务。在 Claude Desktop 的 Code 标签页中，以 Manual 创建本地例程并使用 Run now；保存前审查文件夹、指令和权限。在 Codex 中，先在本地项目的普通对话里运行完整请求。核对输出是否为 2 条记录、30.50。没有访问权限时，以模拟方式分析演练，不声称实际执行。\n\n现在仅运行一次，不创建计划任务，使用本地 relatorio 文件夹。只用我已在此电脑测试过的命令：python3 report.py vendas.csv report.md，Windows 则用 py -3 report.py vendas.csv report.md。不要安装依赖项，也不要修改输入文件或程序。练习输入恰为 id,item,amount；1,Caderno,10.50；2,Curso,20.00。打开 report.md，检查 2 条记录及总额 30.50。出错时给出诊断并保留最后的有效报告。不要发送数据或发布结果。\n请记录实际执行的操作或遇到的阻碍。如果分析的是模拟示例，请注明这一模式；模拟分析不能证明已在外部执行。",
+    "dir": "ltr",
+    "font": "\"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "h1": "启用时间安排前先演练",
+    "scrollWidth": 390,
+    "url": "http://localhost:3106/classroom/zh-CN#step.automation-schedule.tool-conditions.v3",
+    "width": 390
+  },
+  {
+    "case": "de-csv-3106",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "id,item,amount\n1,Caderno,10.50\n2,Curso,20.00"
+      }
+    ],
+    "copy": "Erstelle und prüfe eine CSV-Datei mit dem exakt vorgegebenen Inhalt.\n\nCSV ist eine als Text geschriebene Tabelle: Die erste Zeile benennt die Spalten, jede folgende Zeile ist ein Datensatz. Erstelle den Ordner relatorio und wähle ihn in Claude Desktop/Code oder Codex Desktop aus. Fordere eine UTF-8-Textdatei namens vendas.csv mit genau den folgenden Daten an. Öffne sie im Editor und prüfe sie; eine Meldung über die Erstellung reicht nicht aus.\n\nErstelle in relatorio ausschließlich vendas.csv als UTF-8-Text mit dem folgenden Inhalt. Behalte Namen und Dezimalpunkte bei. Erzeuge keinen Bericht, installiere nichts und plane keine Aufgabe. Zeige den Dateipfad, damit ich die Datei öffnen kann.\n\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nDokumentiere, was du tatsächlich ausgeführt hast oder welches Hindernis auftrat. Wenn du ein simuliertes Beispiel analysierst, kennzeichne diesen Modus; er belegt keine externe Ausführung.",
+    "dir": "ltr",
+    "font": "\"Figtree Variable\", system-ui, sans-serif",
+    "h1": "Die Übungstabelle erstellen",
+    "scrollWidth": 390,
+    "url": "http://localhost:3106/classroom/de#step.automation-input.create-csv.v3",
+    "width": 390
+  },
+  {
+    "case": "de-apps-test-copy-3106",
+    "automaticNotices": 0,
+    "code": [],
+    "copy": "Weise Wiederherstellung und Datenerhalt bei Fehlern nach.\n\nSpeichere eine Kopie des Zustands C und importiere antes-de-importar.json über den validierten Ablauf. Bestätige nach dem Neuladen A als erledigt und B als offen. Aktualisiere die isolierte Testkopie mit der aktuellen Version, die bereits Dateien importieren kann, und behalte ganesha.tasks.test bei. Simuliere in dieser Kopie einen Fehler beim Speichern eines Imports: Bewahre die vorherige Liste und warne, dass nichts ersetzt wurde. Deaktiviere die Probe und wiederhole einen gültigen Import.\n\nAktualisiere ausschließlich die isolierte Testkopie mit der aktuellen App-Version einschließlich Export/Import. Verwende in dieser Kopie ausschließlich ganesha.tasks.test; lies, schreibe oder entferne ganesha.tasks.v1 nicht. Simuliere anschließend beim Bestätigen eines gültigen Imports einen Schreibfehler. Bewahre die vorherige Liste und die Daten, zeige einen Fehler und behaupte nicht, das Ersetzen sei gelungen. Erkläre, wie ich die Probe entferne. Ich werde den Import der Sicherung, Neuladen und den Vergleich von Aufgaben und Erledigungsstatus testen.\nDokumentiere, was du tatsächlich ausgeführt hast oder welches Hindernis auftrat. Wenn du ein simuliertes Beispiel analysierst, kennzeichne diesen Modus; er belegt keine externe Ausführung.",
+    "dir": "ltr",
+    "font": "\"Figtree Variable\", system-ui, sans-serif",
+    "h1": "Stelle eine Sicherung wieder her und teste einen abgewiesenen Schreibvorgang",
+    "scrollWidth": 390,
+    "url": "http://localhost:3106/classroom/de#step.app-delivery.restore-backup.v3",
+    "width": 390
+  },
+  {
+    "case": "de-schedule-3106",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "python3 report.py vendas.csv report.md"
+      },
+      {
+        "dir": "ltr",
+        "text": "py -3 report.py vendas.csv report.md"
+      }
+    ],
+    "copy": "Validiere die vollständige Anfrage vor der Zeitplanung im ausgewählten Kontext.\n\nWenn die Bedingungen erfüllt sind, verwende ausschließlich die Übungsaufgabe dieses Ordners. Erstelle im Tab Code von Claude Desktop die lokale Routine mit Manual und verwende Run now; prüfe vor dem Speichern Ordner, Anweisungen und Berechtigungen. Führe in Codex die vollständige Anfrage zuerst in einem normalen Gespräch mit dem lokalen Projekt aus. Vergleiche die Ausgabe mit 2 Datensätzen und 30.50. Analysiere diesen Probelauf ohne Zugriff als Simulation, ohne eine Ausführung zu behaupten.\n\nFühre jetzt einmal im lokalen Ordner relatorio aus, ohne einen Zeitplan zu erstellen. Verwende nur den Befehl, den ich auf diesem Computer bereits getestet habe: python3 report.py vendas.csv report.md oder unter Windows py -3 report.py vendas.csv report.md. Installiere keine Abhängigkeiten und ändere weder Eingabedateien noch das Programm. Die Übungseingabe enthält genau id,item,amount; 1,Caderno,10.50; 2,Curso,20.00. Öffne report.md und prüfe 2 Datensätze sowie die Summe 30.50. Wenn ein Fehler auftritt, melde seine Diagnose und erhalte den letzten gültigen Bericht. Versende keine Daten und veröffentliche keine Ergebnisse.\nDokumentiere, was du tatsächlich ausgeführt hast oder welches Hindernis auftrat. Wenn du ein simuliertes Beispiel analysierst, kennzeichne diesen Modus; er belegt keine externe Ausführung.",
+    "dir": "ltr",
+    "font": "\"Figtree Variable\", system-ui, sans-serif",
+    "h1": "Vor dem Aktivieren des Zeitplans proben",
+    "scrollWidth": 390,
+    "url": "http://localhost:3106/classroom/de#step.automation-schedule.tool-conditions.v3",
+    "width": 390
+  }
+]

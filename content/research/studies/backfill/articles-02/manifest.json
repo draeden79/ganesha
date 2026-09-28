@@ -1,0 +1,430 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "scope": "articles-02: três estudos públicos novos, entregues incrementalmente; impedimentos separados.",
+  "studies": [
+    {
+      "id": "article-peter-understand-identify-execute-2023",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/understand-identify-and-execute",
+      "title": "Understand, Identify, and Execute",
+      "author": "Peter Yang",
+      "published_at": "2023-11-01",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/peter-yang-newsletter.json",
+      "study_path": "studies/backfill/articles-02/peter-understand-identify-execute.md",
+      "status": "full_source_analyzed",
+      "text_read_complete": true,
+      "full_source_analyzed": true,
+      "scope": "todo artigo público renderizado e cinco imagens materiais; exclui comentários e referências externas",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a02-peter-understand-identify-execute.txt",
+          "bytes": 5953,
+          "sha256": "e88a57d7b9789ca731d463fda07b5700ec15c456873fe9c6151ddd6b0fa0ab32",
+          "line_count": 134,
+          "read_lines": [
+            [
+              1,
+              134
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a02-peter-understand-identify-execute.html",
+          "bytes": 207864,
+          "sha256": "aa9284a026022d5be7b0d46871e548ff726c4832cfcd80d71a3c160e2081b18c",
+          "line_count": 411,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a02-peter-understand-identify-execute-media.json",
+          "bytes": 3474,
+          "sha256": "1ea773f96547dec0e9b735624a3e2975b3750581968b8cdd1bf3523c78b9a2b7",
+          "line_count": 68,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a02-peter-understand-identify-execute-acquisition.json",
+          "bytes": 289,
+          "sha256": "510a5bfe7d38108efae4ce485b0da09e58a15dffebf84ceaeafcbd7ac490b60e",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a02-plan-cover.png",
+          "bytes": 45393,
+          "sha256": "40bf842fa14de4870f7b22f01eed4443e49f6785cd1d52a479ec5c89a1e341ef",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "capa",
+          "method": "screenshot da imagem no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a02-plan-framework.png",
+          "bytes": 32181,
+          "sha256": "cce196786cba22ae98491078ea0f5b204646970f1d033017d08bca1dccc6c9b2",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "diagrama circular das três fases",
+          "method": "screenshot da imagem no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a02-plan-product.png",
+          "bytes": 38639,
+          "sha256": "1e19ee84f41a3a33e8dfd28a8f049ac841ffc62f75cc10fe4ecd10ac55bfb747",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "post de terceiro reproduzido no artigo, sem verificação do original externo",
+          "method": "screenshot da imagem no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a02-plan-career.png",
+          "bytes": 32181,
+          "sha256": "c10ed294c216fa64a9ebd62c9f078427aef0530bca8113dfb75d356266811bb6",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "gráfico qualitativo de carreira, sem escala",
+          "method": "screenshot da imagem no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a02-plan-pool.png",
+          "bytes": 90606,
+          "sha256": "b9e88c096e3bc28919cac6aefe9752a4a7d93a898fc4e9a59c91c4dfb6515ac9",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "foto ilustrativa de natação",
+          "method": "screenshot da imagem no navegador"
+        }
+      ],
+      "embedded_media_pending": [],
+      "not_reviewed": [
+        "verificação empírica dos relatos",
+        "fontes externas ligadas"
+      ],
+      "practice_checks": [
+        "ligação entre problema observado e solução",
+        "critério observável e cenário contrário"
+      ],
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida.",
+      "study_artifact": {
+        "path": "studies/backfill/articles-02/peter-understand-identify-execute.md",
+        "bytes": 8330,
+        "sha256": "157f9cbe1b9dd825103f33bff15517678d59155c012a6323352a1134d9492599",
+        "line_count": 68,
+        "read_lines": [],
+        "kind": "original_study"
+      }
+    },
+    {
+      "id": "article-peter-customer-insights-2023",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather",
+      "title": "How to Talk to Customers to Gather Useful Insights",
+      "author": "Peter Yang",
+      "published_at": "2023-01-18",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/peter-yang-newsletter.json",
+      "study_path": "studies/backfill/articles-02/peter-customer-insights.md",
+      "status": "full_source_analyzed",
+      "text_read_complete": true,
+      "full_source_analyzed": true,
+      "scope": "todo artigo público renderizado, post social em texto e quatro imagens materiais; exclui comentários e referências externas",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a02-peter-customer-insights.txt",
+          "bytes": 6608,
+          "sha256": "5763b48e8b7fa44fef324337c48c809aa9ea651bb68acb0f62473ccdfe285922",
+          "line_count": 185,
+          "read_lines": [
+            [
+              1,
+              185
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a02-peter-customer-insights.html",
+          "bytes": 224808,
+          "sha256": "a4f8c3111c08e334499262e683b2367abac40130946a49a2895166965dcddf3c",
+          "line_count": 413,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a02-peter-customer-insights-media.json",
+          "bytes": 3451,
+          "sha256": "3d0535895a8675dcec173951cfc370111ec2215f7e72fad77155cfb60d532166",
+          "line_count": 68,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a02-peter-customer-insights-acquisition.json",
+          "bytes": 295,
+          "sha256": "cfa22360c70abdf7cb7ff55b363ec47b047a29d14248954d7e0d9659f8a5c85c",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a02-customers-cover.png",
+          "bytes": 52302,
+          "sha256": "2fadf27d2e1f888119cbd9683aab0a331a972ab3d273550641a2f64782ff0eaa",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "capa",
+          "method": "screenshot da imagem no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a02-customers-questions.png",
+          "bytes": 51090,
+          "sha256": "ed8fd2dc315efd9c19c4901742a46bd98d860d29f1e5f6e3ea507717db9a1bd3",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "meme sobre pedir experiência passada",
+          "method": "screenshot da imagem no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a02-customers-listen.png",
+          "bytes": 42500,
+          "sha256": "1412803fe1d90e0e501a8da02aa326531cce79965c75ddd085fd2cff42915c6b",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "meme sobre distinguir sinais fracos de experiência concreta",
+          "method": "screenshot da imagem no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a02-customers-ideas.png",
+          "bytes": 44134,
+          "sha256": "bc463ecceb86946fb80a2a86d65fcaa96a07293d543411a972b0e8556a554c2e",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "meme sobre evitar apresentar a ideia cedo",
+          "method": "screenshot da imagem no navegador"
+        }
+      ],
+      "embedded_media_pending": [],
+      "not_reviewed": [
+        "entrevistas reais ou validação empírica",
+        "livro e links externos"
+      ],
+      "practice_checks": [
+        "rastreabilidade entre relato e requisito",
+        "pergunta capaz de contrariar hipótese e revisão do plano"
+      ],
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida.",
+      "study_artifact": {
+        "path": "studies/backfill/articles-02/peter-customer-insights.md",
+        "bytes": 8943,
+        "sha256": "809bc7dbc09d21b8b31f52238397b9452d71d700c8a97e0c8d8d624431b5b36e",
+        "line_count": 72,
+        "read_lines": [],
+        "kind": "original_study"
+      }
+    },
+    {
+      "id": "article-builder-mock-up-website-2025",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/mock-up-a-website",
+      "title": "Mock Up a Website in Five Prompts",
+      "author": "Alice Moore",
+      "published_at": "2025-06-10",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/builder-blog.json",
+      "study_path": "studies/backfill/articles-02/builder-mock-up-website.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "scope": "texto integral e quatro imagens centrais; sete animações/vídeos não assistidos",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a02-builder-mock-up-website.txt",
+          "bytes": 11024,
+          "sha256": "c21d54d4c5928aca571b777479551f6bbff981d1fed59bc1799babde2ccce817",
+          "line_count": 174,
+          "read_lines": [
+            [
+              1,
+              174
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a02-builder-mock-up-website.html",
+          "bytes": 276138,
+          "sha256": "5b2ccd33aed46f2e967b840aa44bd5d7786c1a2d2c42f380c6bb3d5f2b34f249",
+          "line_count": 1360,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a02-builder-mock-up-website-media.json",
+          "bytes": 4590,
+          "sha256": "1612cd8678f55bf249011ea2628b13856ae42bb1937fd368d57496fa2f7e1b90",
+          "line_count": 149,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a02-builder-mock-up-website-acquisition.json",
+          "bytes": 261,
+          "sha256": "fce2aeee5a0579eba039e82f834b5318c8f51959317e4e85a64ff9cc919bbe15",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a02-builder-tradeoffs.png",
+          "bytes": 39302,
+          "sha256": "061332c311c6cab975331a8b291735d7b3813f7a2a4b300833f9319fd8fcd585",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "comparação retórica de ferramentas, sem benchmark",
+          "method": "screenshot da imagem no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a02-builder-order-alert.png",
+          "bytes": 37334,
+          "sha256": "6f2fa22d97a976d0c22a669120057df29f437d4304853450f43707ad4e8aafd0",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "aviso de pedido ainda indisponível; estado inicial",
+          "method": "screenshot da imagem no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a02-builder-bot-comment.png",
+          "bytes": 70154,
+          "sha256": "7932d6a8cc6640f806049cb82d3038898df61c92cffedb1b7307fb923e1f31a2",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "pedido para remover vídeo, resposta do bot e nove commits",
+          "method": "screenshot da imagem no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a02-builder-video-diff.png",
+          "bytes": 37507,
+          "sha256": "cf6d530191ac77e7635dff784a6114b0e3d83239d4cc81a735f67aa5e9e18cd5",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "diff retirando propriedades de vídeo num uso de cartão; sem reteste funcional demonstrado",
+          "method": "screenshot da imagem no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "7 tags video observadas no corpo, sem src/source/poster naquele estado do DOM; animações não assistidas"
+      ],
+      "not_reviewed": [
+        "sequência audiovisual de uso do editor e carrinho",
+        "produto Builder em execução e PR completo",
+        "publicação e visitante externo",
+        "preços e integrações atuais"
+      ],
+      "practice_checks": [
+        "seleção/quantidade/total/remoção e estado vazio",
+        "regressão e alcance após mudança visual"
+      ],
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida.",
+      "study_artifact": {
+        "path": "studies/backfill/articles-02/builder-mock-up-website.md",
+        "bytes": 9972,
+        "sha256": "3c60c7f2046f9706936b73ed95a9be1a528509fc80a45e7d6677bd106bedf66c",
+        "line_count": 78,
+        "read_lines": [],
+        "kind": "original_study"
+      }
+    }
+  ],
+  "blocked_sources": [
+    {
+      "id": "blocked-peter-production-ready-2026",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/how-to-build-production-ready-apps-with-ai-colin-matthews",
+      "title": "How to Build Production-Ready Apps with AI | Colin Matthews",
+      "published_at": "2026-07-30",
+      "status": "blocked_paywall",
+      "text_read_complete": false,
+      "full_source_analyzed": false,
+      "reason": "Player marcado Paid episode; corpo termina no cabeçalho da primeira seção e região This post is for paid subscribers. Sem acesso autorizado ao restante.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a02-peter-production-ready-partial.txt",
+          "bytes": 1243,
+          "sha256": "889c622ed3082af042af61ef72b1cec4f78c22cac2fa50144b84a2e8a799b66f",
+          "line_count": 36,
+          "read_lines": [],
+          "kind": "partial_text"
+        },
+        {
+          "path": "studies/local/backfill-a02-peter-production-ready.html",
+          "bytes": 159902,
+          "sha256": "f21d3bce2f62f98e9daf9bad5a666dfb0a68f6e64089e968a2f885a821bfa30f",
+          "line_count": 411,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a02-peter-production-ready-acquisition.json",
+          "bytes": 341,
+          "sha256": "090b138cabd84d8021660d3cec062b929acf46c104afe16d2df7a72ddfc5e3ea",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a02-peter-production-ready-paywall.png",
+          "bytes": 135046,
+          "sha256": "e4d4c3cab1d1849528e4ba1c0067f322231c747550ee6071ff7a08a13b2c6d3d",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "barreiras pagas do episódio e do texto"
+        }
+      ],
+      "next_action": "Preservar impedimento; leitura pública alternativa na rodada: how-to-talk-to-customers-to-gather. Retomar apenas com acesso legítimo fornecido."
+    }
+  ],
+  "round_deliverables_complete": true,
+  "source_audiovisual_completion_claimed": false
+}

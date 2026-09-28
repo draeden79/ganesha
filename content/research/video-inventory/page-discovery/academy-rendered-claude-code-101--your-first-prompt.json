@@ -1,0 +1,20 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-code-101/your-first-prompt",
+  "title": "Your first prompt",
+  "observed_at": "2026-09-28T20:53:24.868Z",
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=gbetp6D7J_Q",
+      "title": "Your first prompt"
+    }
+  ],
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/gbetp6D7J_Q",
+      "title": "Your first prompt"
+    }
+  ],
+  "acquired_transcript": "transcripts/local/gbetp6D7J_Q.academy.txt",
+  "inventory_scope": "rendered public lesson; no audiovisual completeness claim"
+}

@@ -1,0 +1,1508 @@
+[
+  {
+    "lesson": "lesson.workspace",
+    "step": "step.workspace.access.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nFerramenta e estado de acesso registrados.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.workspace",
+    "step": "step.workspace.folder.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nPasta contém brief.txt, ou impedimento e análise do exemplo registrados.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.workspace",
+    "step": "step.workspace.fictional-brief.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nQuatro dados salvos e conferidos, ou impedimento e comparação simulada registrados.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.workspace",
+    "step": "step.workspace.context-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.workspace.context-check.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nO nome de um arquivo não entrega seu conteúdo nem corrige a pasta escolhida. Procure a ação que corrige a pasta, sem inventar dados.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.workspace.context-check.b.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nIsso alinha a pasta exibida ao arquivo que você preparou. Você corrigiu a origem da informação antes de avaliar a resposta.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.workspace",
+    "step": "step.workspace.select-context.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nContexto ganesha-pratica conferido, ou impedimento e escolha simulada registrados.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.workspace",
+    "step": "step.workspace.read-only-request.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nResumo comparado com o brief, ou leitura não executada explicitamente registrada.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.workspace",
+    "step": "step.workspace.compare-context.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nDados comparados na resposta real ou no exemplo, com modo identificado.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.workspace",
+    "step": "step.workspace.access-recovery.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nImpedimento classificado e próximo passo coerente.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.workspace",
+    "step": "step.workspace.access-evidence.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.workspace.access-evidence.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nNão houve resposta nem observação que confirme leitura. Não transforme uma tentativa ou simulação em execução externa.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.workspace.access-evidence.c.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nO registro separa o trabalho preparado do que não aconteceu. Seu registro mostra o progresso real e o impedimento.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.workspace",
+    "step": "step.workspace.workspace-record.v3",
+    "kind": "reflect",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nRegistro contém contexto, observação e pendência ou próximo passo.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.requests",
+    "step": "step.requests.desired-result.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nFrase identifica um plano e a finalidade da página.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.requests",
+    "step": "step.requests.relevant-context.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nLista contém somente informações pertinentes e lacunas declaradas.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.requests",
+    "step": "step.requests.complete-request.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nPedido inclui entrega, dados, limite e conferência futura.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.requests",
+    "step": "step.requests.scope-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.requests.scope-check.b.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nMais recursos mudam o objetivo e introduzem pré-requisitos não escolhidos. Compare a sugestão com a entrega e os limites originais.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.requests.scope-check.a.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nEssa resposta conserva a entrega simples e os limites definidos. Você resolveu a decisão antes de aumentar o trabalho.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.requests",
+    "step": "step.requests.worked-plan.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nComparação separa acerto, omissão e mudança de escopo.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.requests",
+    "step": "step.requests.clarification.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nResposta define exibição do endereço, sem envio.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.requests",
+    "step": "step.requests.targeted-revision.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nCorreção preserva título e resolve omissão e envio.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.requests",
+    "step": "step.requests.send-and-review.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nPlano recebido e comparação, ou impedimento explicitado.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.requests",
+    "step": "step.requests.plan-evidence.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.requests.plan-evidence.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nA lista descreve o comportamento, mas não o executa. Separe “descreve” de “foi observado funcionando”.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.requests.plan-evidence.b.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nA conclusão corresponde à evidência textual disponível. Você reconhece o valor do plano sem atribuir a ele um teste inexistente.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.requests",
+    "step": "step.requests.portable-request.v3",
+    "kind": "reflect",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nPedido reutilizável com critérios e contexto de transferência.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.verification",
+    "step": "step.verification.evidence-types.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nRegistro identifica resposta textual e erro verificável de horário.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.verification",
+    "step": "step.verification.success-criteria.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nCritérios incluem resultado correto e elementos que devem permanecer.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.verification",
+    "step": "step.verification.baseline.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nRegistro mostra 17:45 observado,16:45 esperado e a conta.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.verification",
+    "step": "step.verification.diagnosis-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.verification.diagnosis-check.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nA conta passaria a bater, mas você alteraria o início que deveria ser preservado. Procure observado, esperado e o que não deve mudar.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.verification.diagnosis-check.c.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nO relato traz observado, esperado, motivo e limite. Você forneceu dados que permitem uma mudança delimitada.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.verification",
+    "step": "step.verification.reproduction.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nPassos ligam os dados de entrada à diferença observada.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.verification",
+    "step": "step.verification.repair-request.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nPedido define horário correto e preservação do restante.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.verification",
+    "step": "step.verification.retest.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nTodos os critérios têm resultado conferido ou pendente.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.verification",
+    "step": "step.verification.real-small-change.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nRegistro distingue correção de erro e mudança solicitada.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.verification",
+    "step": "step.verification.verification-limit.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.verification.verification-limit.b.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nUm teste textual não demonstra outros programas nem situações. Descreva a evidência observada e o que continua fora dela.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.verification.verification-limit.a.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nO registro limita a conclusão ao que foi realmente verificado. Sua conclusão é útil porque informa também o alcance do teste.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.verification",
+    "step": "step.verification.verification-record.v3",
+    "kind": "reflect",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nRegistro possui evidência e próximo passo para a rota escolhida.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "case": "free-navigation-with-pending-prerequisite",
+    "snapshot": "- link \"Ir para o conteúdo\":\n  - /url: \"#main\"\n- banner:\n  - button \"Voltar\":\n    - text: Voltar\n  - generic: Entregar e manter o app\n  - generic: Prática\n  - combobox \"Idioma\":\n    - option \"Português (Brasil)\" [selected]\n    - option \"English\"\n    - option \"Español\"\n    - option \"Français\"\n    - option \"Deutsch\"\n    - option \"日本語\"\n    - option \"हिन्दी\"\n    - option \"Bahasa Indonesia\"\n    - option \"العربية\"\n    - option \"한국어\"\n    - option \"简体中文\"\n  - 'button \"Etapas da aula: Etapa 1 de 10\"':\n    - generic: 1 / 10\n- main:\n  - heading \"Separar o programa da cópia de dados\" [active] [level=1]\n  - paragraph:\n    - generic: \"Antes desta aula, recomendamos:\"\n    - button \"Guardar e recuperar dados\"\n  - paragraph: Distinguir arquivo do app e cópia de dados.\n  - paragraph: \"index.html contém o programa; os dados locais do navegador não vêm automaticamente dentro desse arquivo. Exportar cria um arquivo com uma cópia das tarefas. Importar lê essa cópia para reconstruir o estado. Exemplo original simulado: exportar A concluída e B pendente, abrir outra instância vazia e importar a cópia. Isso é transferência manual, não sincronização ou conta.\"\n  - paragraph: Ferramenta\n  - combobox \"Ferramenta\":\n    - option \"Claude\" [selected]\n    - option \"Codex\"\n  - paragraph: Prática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto.\n  - generic: Identifique os dois arquivos necessários para entregar o programa e uma cópia das tarefas fictícias.\n  - textbox \"Sua resposta\":\n    - /placeholder: Identifique os dois arquivos necessários para entregar o programa e uma cópia das tarefas fictícias.\n  - group \"Revise sua prática\":\n    - generic: Revise sua prática\n    - checkbox \"Distingue código de dados.\"\n    - generic: Distingue código de dados.\n    - checkbox \"Não chama transferência manual de sincronização.\"\n    - generic: Não chama transferência manual de sincronização.\n  - button \"Registrar minha prática\" [disabled]:\n    - text: Registrar minha prática\n  - paragraph:\n    - strong: \"Resultado esperado:\"\n    - text: index.html para o app e tarefas.json para os dados exportados.\n  - button \"Voltar\" [disabled]:\n    - text: Voltar\n  - button \"Continuar\" [disabled]:\n    - text: Continuar\n  - generic \"Beta do hackathon · conteúdo em revisão\":\n    - text: Beta do hackathon · conteúdo em revisão\n  - button \"Ajuda\"\n- alert"
+  },
+  {
+    "lesson": "lesson.automation-input",
+    "step": "step.automation-input.pipeline.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nUm mapa que liga vendas.csv à contagem, à soma e a report.md.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.automation-input",
+    "step": "step.automation-input.create-csv.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nArquivo com cabeçalho e dois registros, sem extensão .txt adicional.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-input",
+    "step": "step.automation-input.data-contract.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nContrato que permite decidir se uma entrada é válida antes de somar.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.automation-input",
+    "step": "step.automation-input.decimal-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.automation-input.decimal-check.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nIgnorar um campo muda o valor e esconde um problema na entrada. Compare o número de campos com id,item,amount e tente novamente.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.automation-input.decimal-check.c.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nA correção restaura três campos e o formato decimal definido. Você conferiu a estrutura antes de calcular.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.automation-input",
+    "step": "step.automation-input.reference-total.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\n2 registros, 3050 centavos e total 30.50, calculados antes da execução.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.automation-input",
+    "step": "step.automation-input.failure-fixtures.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nDuas entradas de erro identificadas e um original válido preservado.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-input",
+    "step": "step.automation-input.review-validation.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nCorreção que exige diagnóstico da linha e nenhuma substituição quando houver erro.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.automation-input",
+    "step": "step.automation-input.prepare-recovery.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nUma cópia válida conferida e uma lista de arquivos para testar e restaurar.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-input",
+    "step": "step.automation-input.duplicate-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.automation-input.duplicate-check.b.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nEssa troca pode atribuir uma identidade incorreta sem confirmação dos dados. Considere quem pode decidir a identidade correta de cada registro.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.automation-input.duplicate-check.a.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nIsso expõe a ambiguidade e deixa a correção com quem conhece os dados. Você preservou a informação e tornou o erro corrigível.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.automation-input",
+    "step": "step.automation-input.handoff-input.v3",
+    "kind": "reflect",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nPacote de entrada compreensível para outra pessoa, com limites de evidência claros.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-report",
+    "step": "step.automation-report.execution-paths.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nUm caminho de execução definido, com forma de salvar e comparar a saída.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.automation-report",
+    "step": "step.automation-report.environment.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nEvidência de Python disponível, ou escolha explícita da alternativa HTML sem alegar execução Python.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-report",
+    "step": "step.automation-report.build-transform.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nreport.py ou report.html criado na pasta, com instruções de uso e sem agenda.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-report",
+    "step": "step.automation-report.path-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.automation-report.path-check.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nO programa ainda não leu o arquivo; mudar valores não resolve seu caminho. Separe encontrar o arquivo de interpretar seu conteúdo.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.automation-report.path-check.b.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nIsso verifica se o comando procura o arquivo no local correto. Você investigou o contexto da execução antes de alterar a transformação.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.automation-report",
+    "step": "step.automation-report.normal-run.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nSaída observada com 2 registros e total 30.50, ou impedimento descrito com precisão.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-report",
+    "step": "step.automation-report.repeat-run.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nO mesmo resultado de conteúdo, sem registros ou totais acumulados.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-report",
+    "step": "step.automation-report.error-run.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nDois erros visíveis, sem perda do relatório válido nem atualização com soma parcial.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-report",
+    "step": "step.automation-report.recover-retest.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nRecuperação conferida e relatório final correspondente aos dados originais.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-report",
+    "step": "step.automation-report.download-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.automation-report.download-check.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nUma nova prévia não modifica por si só um arquivo que já está no disco. Pense em qual arquivo outra pessoa receberá e abrirá.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.automation-report.download-check.c.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nVocê verifica o artefato efetivo sem confundir prévia com substituição de arquivo. Você distinguiu o resultado na página do arquivo entregue.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.automation-report",
+    "step": "step.automation-report.deliver-report.v3",
+    "kind": "reflect",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nPacote repetível com resultado conferido e limitações explícitas, pronto para discutir uma agenda.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-schedule",
+    "step": "step.automation-schedule.schedule-boundary.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nTrês situações distintas, cada uma com a evidência que ainda precisaria mostrar.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.automation-schedule",
+    "step": "step.automation-schedule.manual-gate.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nDecisão sustentada por evidências específicas, com próxima ação para qualquer teste pendente.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.automation-schedule",
+    "step": "step.automation-schedule.durable-instructions.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nInstruções autossuficientes que executariam um programa conhecido, sem alterar o escopo.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.automation-schedule",
+    "step": "step.automation-schedule.availability-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.automation-schedule.availability-check.b.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nO teste demonstra o processo naquele momento, não a disponibilidade futura da máquina. Pergunte onde o programa e o arquivo precisam existir quando a tarefa disparar.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.automation-schedule.availability-check.a.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nO caminho local depende do computador, do aplicativo e dos arquivos disponíveis. Você considerou o ambiente necessário além da regra de horário.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.automation-schedule",
+    "step": "step.automation-schedule.schedule-fields.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nHorário, fuso, pasta e condições conferidos, com uma decisão explícita sobre ativação.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-schedule",
+    "step": "step.automation-schedule.tool-conditions.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nEnsaio manual conferido antes de permitir recorrência, ou impedimento explicitamente registrado.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-schedule",
+    "step": "step.automation-schedule.history-triage.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nEvidência de um disparo e saída conferida, ou diagnóstico honesto de ausência ou simulação.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-schedule",
+    "step": "step.automation-schedule.pause-rehearsal.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nTarefa de treino confirmada como pausada, ou procedimento simulado explicitamente identificado.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.automation-schedule",
+    "step": "step.automation-schedule.change-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.automation-schedule.change-check.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nA saída antiga não confirma que a nova entrada foi processada. Considere o que a alteração do nome da coluna mudou na leitura dos dados.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.automation-schedule.change-check.b.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nIsso limita falhas repetidas e exige evidência para a nova versão do processo. Você tratou a mudança como uma nova condição a validar.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.automation-schedule",
+    "step": "step.automation-schedule.schedule-handoff.v3",
+    "kind": "reflect",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nEntrega que distingue planejamento, execução observada, falhas e estado final da tarefa.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-build",
+    "step": "step.site-build.page-contract.v3",
+    "kind": "explain",
+    "initialBlocked": false
+  },
+  {
+    "lesson": "lesson.site-build",
+    "step": "step.site-build.project-folder.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nA ferramenta aponta para a pasta destinada somente a esta página.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-build",
+    "step": "step.site-build.plan-page.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nUm plano contém os elementos pedidos e não inclui coleta de dados.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-build",
+    "step": "step.site-build.scope-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.site-build.scope-check.b.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nMesmo com um único campo, o formulário ainda coleta um dado que não foi solicitado. Volte ao resultado pedido: três serviços e endereço exibido, sem coleta.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.site-build.scope-check.a.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nIsso mantém os três serviços e corrige a ação que ultrapassava o pedido. O plano agora pode orientar a criação sem introduzir cadastro.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.site-build",
+    "step": "step.site-build.create-html.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nA pasta contém um index.html completo, sem exigir instalação de bibliotecas.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-build",
+    "step": "step.site-build.open-local-page.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nVocê vê a página renderizada e reconhece o arquivo local que abriu.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-build",
+    "step": "step.site-build.verify-content.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nO conteúdo observado coincide com título, serviços e limites do pedido.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-build",
+    "step": "step.site-build.first-contact-test.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nO clique revela o endereço na própria página, sem enviar mensagem.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-build",
+    "step": "step.site-build.evidence-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.site-build.evidence-check.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nA confirmação da ferramenta não mostra o comportamento no navegador. Pergunte qual ação você realmente observou, sem usar a mensagem da IA como substituta.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.site-build.evidence-check.c.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nIsso registra o que foi observado e conserva as verificações ainda necessárias. Seu registro distingue arquivo criado de comportamento verificado.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.site-build",
+    "step": "step.site-build.local-handoff.v3",
+    "kind": "reflect",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nA pasta e o registro permitem continuar sem confundir pendência com teste aprovado.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-quality",
+    "step": "step.site-quality.quality-criteria.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nVocê tem critérios distintos e não declara aprovação antes de realizar cada teste.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.site-quality",
+    "step": "step.site-quality.read-as-visitor.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nO conteúdo apresenta a escola e os três serviços sem informações inventadas ou restos de instruções.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-quality",
+    "step": "step.site-quality.contact-behavior.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nO contato revela o endereço uma vez, sem envio, e funciona novamente após recarregar.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-quality",
+    "step": "step.site-quality.behavior-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.site-quality.behavior-check.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nIsso verifica aparência, mas não mostra se o endereço aparece. Procure a opção que combina ação do visitante e resultado observado.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.site-quality.behavior-check.b.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nEssa ação permite comparar o comportamento real com o resultado combinado. A verificação produz evidência do resultado, além da presença do botão.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.site-quality",
+    "step": "step.site-quality.keyboard-path.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nO botão pode ser localizado e acionado pelo teclado com resultado equivalente ao clique.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-quality",
+    "step": "step.site-quality.narrow-layout.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nConteúdo e botão permanecem legíveis e utilizáveis na largura efetivamente testada.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-quality",
+    "step": "step.site-quality.targeted-repair.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nO pedido indica condição, comportamento esperado e o que precisa ser preservado.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-quality",
+    "step": "step.site-quality.regression-pass.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nVocê sabe se a correção resolveu o problema e preservou as outras funções testadas.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-quality",
+    "step": "step.site-quality.regression-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.site-quality.regression-check.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nA correção resolveu um problema, mas removeu um serviço obrigatório. O título, os três serviços e o contato continuam fazendo parte do acordo.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.site-quality.regression-check.c.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nIsso trata a perda concreta e confere se as duas necessidades passam a ser atendidas. Sua revisão preserva o resultado completo, não apenas a mudança mais recente.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.site-quality",
+    "step": "step.site-quality.quality-handoff.v3",
+    "kind": "reflect",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nA decisão de seguir ou corrigir depende de evidência local e deixa os limites explícitos.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-publish",
+    "step": "step.site-publish.local-versus-hosted.v3",
+    "kind": "explain",
+    "initialBlocked": false
+  },
+  {
+    "lesson": "lesson.site-publish",
+    "step": "step.site-publish.publish-package.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nA pasta contém a página correta e uma identificação visível da versão a enviar.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-publish",
+    "step": "step.site-publish.hosting-account.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nVocê identifica onde o site será administrado e quais condições de acesso foram encontradas.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-publish",
+    "step": "step.site-publish.package-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.site-publish.package-check.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nEla pode incluir material alheio ao site e deixar index.html dentro de subpastas. Procure a pasta testada cuja página inicial está diretamente dentro dela.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.site-publish.package-check.b.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nEsse pacote corresponde à página preparada e evita misturar versões ou atividades. O pacote corresponde à versão que você poderá reconhecer na URL.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.site-publish",
+    "step": "step.site-publish.first-upload.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nHá uma URL do projeto ou um impedimento documentado, sem presumir acesso público.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-publish",
+    "step": "step.site-publish.visitor-permission.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nA configuração corresponde ao público pretendido ou a restrição de acesso está claramente registrada.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-publish",
+    "step": "step.site-publish.visitor-test.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nO visitante pretendido vê a versão correta e consegue usar o contato, ou há impedimentos documentados.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-publish",
+    "step": "step.site-publish.publish-update.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nA mesma URL mostra Versão B e mantém os serviços e o contato funcionando.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.site-publish",
+    "step": "step.site-publish.public-access-check.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.site-publish.public-access-check.b.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nConclusão do upload não demonstra que um visitante não autenticado tem acesso. O sintoma depende da sessão do visitante; comece pela configuração de acesso.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.site-publish.public-access-check.a.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nIsso investiga a diferença de acesso e exige confirmar o resultado como visitante. Você mantém separados o envio de arquivos e a permissão para vê-los.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.site-publish",
+    "step": "step.site-publish.delivery-record.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nA entrega identifica versão, evidências observadas e um caminho concreto para atualizar ou recuperar.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-state",
+    "step": "step.app-state.state-model.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nDuas tarefas: A concluída e B pendente; nenhuma tarefa removida.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.app-state",
+    "step": "step.app-state.request-state.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nPlano e index.html com campo rotulado, lista e ações previstas.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-state",
+    "step": "step.app-state.serve-local.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nO navegador abre o app por HTTP e você sabe interromper o servidor.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-state",
+    "step": "step.app-state.check-empty.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.app-state.check-empty.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nIsso registra uma entrada sem conteúdo e dificulta reconhecer a tarefa. Reavalie separadamente a entrada nova e as tarefas existentes.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.app-state.check-empty.b.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nIsso permite corrigir a entrada e preserva os dados válidos. Correto: a validação impede a nova entrada sem destruir a lista.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.app-state",
+    "step": "step.app-state.add-two.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nUma linha após A; duas após B, ambas pendentes.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-state",
+    "step": "step.app-state.toggle-one.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nA alterna entre concluída e pendente; B e a quantidade permanecem iguais.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-state",
+    "step": "step.app-state.remove-target.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nApenas a tarefa escolhida é removida; a outra mantém seu estado.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-state",
+    "step": "step.app-state.input-keyboard.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nEntradas vazias são rejeitadas e os controles essenciais funcionam sem mouse.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-state",
+    "step": "step.app-state.check-regression.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.app-state.check-regression.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nUma ação passou, mas concluir ainda viola o contrato. Considere o efeito sobre Concluir, além do resultado de Remover.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.app-state.check-regression.c.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nIsso trata a regressão e verifica as funções relacionadas. Correto: corrigir inclui preservar e retestar comportamentos exigidos.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.app-state",
+    "step": "step.app-state.state-handoff.v3",
+    "kind": "reflect",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nArquivo e evidências de interação separados das funcionalidades que ainda não foram construídas.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-storage",
+    "step": "step.app-storage.memory-storage.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nDuas evidências separadas: interação atual e recuperação posterior.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.app-storage",
+    "step": "step.app-storage.request-storage.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nPlano inclui salvar, restaurar, validar e informar falhas sem apagar dados existentes.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-storage",
+    "step": "step.app-storage.reload-state.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nPrimeiro A concluída e B pendente; depois somente A concluída.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-storage",
+    "step": "step.app-storage.check-origin.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.app-storage.check-origin.b.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nIsso pode destruir dados e não explica a mudança de porta. Observe a diferença concreta entre os dois endereços.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.app-storage.check-origin.a.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nCorreto: ainda não há evidência de que os dados da origem anterior sumiram. Correto: compare a mesma origem antes de diagnosticar perda.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.app-storage",
+    "step": "step.app-storage.reopen-limit.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nA tarefa retorna nas mesmas condições, ou a falha fica descrita de forma reproduzível.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-storage",
+    "step": "step.app-storage.invalid-storage.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nErro de leitura visível, app responsivo e dados principais preservados.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-storage",
+    "step": "step.app-storage.failed-write.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nO app diferencia dados visíveis de dados salvos e demonstra recuperação após o ensaio.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-storage",
+    "step": "step.app-storage.repair-persistence.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nAdicionar, concluir, remover e validar continuam corretos, inclusive depois de recarregar.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-storage",
+    "step": "step.app-storage.check-save-claim.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.app-storage.check-save-claim.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nA tela mostra a sessão; o aviso contradiz a garantia de salvamento. Use o aviso de falha como parte da evidência.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.app-storage.check-save-claim.c.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nO registro separa o observado daquilo que falta verificar. Correto: preserve a distinção entre estado atual e dados salvos.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.app-storage",
+    "step": "step.app-storage.storage-handoff.v3",
+    "kind": "reflect",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nNota explica localização dos dados, limitações e resultados sem confundir ensaio com execução normal.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-delivery",
+    "step": "step.app-delivery.files-and-data.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nindex.html para o app e tarefas.json para os dados exportados.\n\nPrática guiada. Esta atividade não executa IA nem avalia automaticamente a qualidade do texto."
+    }
+  },
+  {
+    "lesson": "lesson.app-delivery",
+    "step": "step.app-delivery.request-portable.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nPlano separa leitura, validação, prévia, confirmação e gravação; erros preservam a lista.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-delivery",
+    "step": "step.app-delivery.export-inspect.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nArquivo legível com version 1, duas tarefas e conclusão correspondente à tela.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-delivery",
+    "step": "step.app-delivery.check-contract.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.app-delivery.check-contract.a.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nA extensão não garante o formato nem os tipos necessários. Compare o tipo exigido com o valor entre aspas.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.app-delivery.check-contract.c.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nO contrato exige true/false sem aspas e preservação em caso de erro. Correto: JSON interpretável ainda pode violar o contrato do app.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.app-delivery",
+    "step": "step.app-delivery.preview-cancel-import.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nCancelar preserva A/B; confirmar a cópia válida deixa somente C pendente após recarga.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-delivery",
+    "step": "step.app-delivery.reject-bad-import.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nCada arquivo falha de forma compreensível e C continua pendente, sem alterações.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-delivery",
+    "step": "step.app-delivery.restore-backup.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nCópia recuperada corretamente; importação recusada preserva os dados anteriores.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-delivery",
+    "step": "step.app-delivery.package-handoff.v3",
+    "kind": "practice",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nPacote e instruções permitem abrir o app e recuperar uma cópia de dados fictícios.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "lesson": "lesson.app-delivery",
+    "step": "step.app-delivery.check-delivery.v3",
+    "kind": "check",
+    "initialBlocked": true,
+    "attempts": [
+      {
+        "answer": "option.app-delivery.check-delivery.b.v3",
+        "blocked": true,
+        "feedback": "Vamos tentar de novo\n\nAtualizar outra origem ou navegador não cria sincronização. Separe acesso ao app de acesso aos dados de outro navegador.\n\n1 tentativa(s)"
+      },
+      {
+        "answer": "option.app-delivery.check-delivery.a.v3",
+        "blocked": false,
+        "feedback": "Muito bem!\n\nIsso usa o fluxo construído e explicita a substituição manual. Correto: a transferência é explícita, validada e manual.\n\n2 tentativa(s)"
+      }
+    ]
+  },
+  {
+    "lesson": "lesson.app-delivery",
+    "step": "step.app-delivery.maintain-version.v3",
+    "kind": "reflect",
+    "initialBlocked": true,
+    "blockedWithoutCriteria": true,
+    "result": {
+      "blocked": false,
+      "feedback": "Concluído\n\nEntrega distingue recursos comprovados, limites, cópia recuperável e próximos cuidados.\n\nAtividade externa: você executa na sua ferramenta. O Ganesha não acessa seu projeto nem verifica a execução."
+    }
+  },
+  {
+    "case": "draft-restored-after-reload",
+    "result": {
+      "blocked": true,
+      "criteria": [
+        true,
+        true
+      ],
+      "draft": "QA DE PERSISTÊNCIA 0.3: editei este rascunho após registrar a prática. Não houve execução externa; estou conferindo o salvamento e a retomada.",
+      "url": "http://localhost:3104/classroom/pt-BR#step.workspace.access.v3"
+    }
+  },
+  {
+    "case": "locale-change-keeps-record",
+    "result": {
+      "blocked": false,
+      "checked": [
+        true,
+        true
+      ],
+      "draft": "QA DE PERSISTÊNCIA 0.3: editei este rascunho após registrar a prática. Não houve execução externa; estou conferindo o salvamento e a retomada.",
+      "url": "http://localhost:3104/classroom/en#step.workspace.access.v3"
+    }
+  }
+]

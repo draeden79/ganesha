@@ -1,0 +1,279 @@
+[
+  {
+    "case": "ar-first-lesson.workspace",
+    "automaticNotices": 0,
+    "code": [],
+    "copy": "تعرّف على متطلبات التدريب باستخدام تطبيق سطح المكتب.\n\nتحتاج إلى حاسوب ومتصفح وإمكانية الوصول إلى Claude Desktop/Code أو Codex Desktop. افتح وثائق البدء الرسمية، ونزّل الإصدار المتوافق وسجّل الدخول. تحقّق من شروط الوصول والتكاليف؛ فهذه الدورة لا تعد بالاستخدام المجاني. لا تحتاج إلى الاشتراك في الأداتين: تدرّب بإحداهما وقارن التعليمات الخاصة بالأخرى. أدلة البدء السريع الرسمية: Claude https://code.claude.com/docs/en/desktop-quickstart ؛ Codex https://learn.chatgpt.com/docs/quickstart .\n\nسجّل ما نفّذته فعلًا أو العائق الذي واجهته. إذا حلّلت مثالًا محاكيًا، فحدّد هذا النمط؛ فهو لا يثبت حدوث تنفيذ خارجي.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "اختر أداة وتحقّق من إمكانية الوصول",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.workspace.access.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-first-lesson.requests",
+    "automaticNotices": 1,
+    "code": [],
+    "copy": "حدّد ما ينبغي أن يوجد عند انتهاء المهمة.\n\nعبارة «اصنع شيئًا جميلًا» لا تحدّد نتيجة قابلة للتحقق. بالنسبة إلى Ponte Musical، النتيجة الأولى خطة على هيئة قائمة لصفحة تعريفية، وليست الصفحة المنشأة. يتيح اختيار نتيجة صغيرة إجراء المقارنة من دون فهم البرمجة. يدعم هذا الهيكل التمرين؛ وليس صيغة عامة لكل الطلبات.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "حوّل فكرة مبهمة إلى نتيجة قابلة للتسليم",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.requests.desired-result.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-first-lesson.verification",
+    "automaticNotices": 1,
+    "code": [],
+    "copy": "تعرّف على درجات مختلفة لقوة الأدلة.\n\nرسالة «تم» ادعاء. يعرض الملف المفتوح محتوى. ويُظهر التفاعل الملحوظ سلوكًا في ذلك الاختبار. لا يضمن أي منها البقية. نستخدم هنا جدولًا نصيًا خياليًا: تبدأ ورشة عند 16:00 وتستمر 45 دقيقة. تنتهي الإجابة المحاكية عند 17:45. نستطيع التحقق من الحساب من دون بناء تطبيق.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "ميّز الادعاءات والملفات والسلوك",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.verification.evidence-types.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-first-lesson.site-build",
+    "automaticNotices": 0,
+    "code": [],
+    "copy": "حدّد محتوى هذه الصفحة الأولى وتفاعلها الوحيد.\n\nسننشئ Ponte Musical، وهي مدرسة خيالية للمبتدئين. ستحتوي الصفحة على عنوان وخدمات الغيتار والبيانو والغناء، إضافة إلى زر اتصال يُظهر aulas@example.com. يقدّم الموقع الثابت ملفات إلى المتصفح؛ ويتّسع ملف index.html واحد لهذا التمرين. لن يوجد نموذج أو إرسال أو تسجيل دخول أو خادم بيانات. المثال والنتائج المتوقعة مادة أصلية من Ganesha؛ ولا تمثّل تنفيذًا تم إثباته.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "ما الذي تحتاج هذه الصفحة إلى فعله",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.site-build.page-contract.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-first-lesson.site-quality",
+    "automaticNotices": 1,
+    "code": [],
+    "copy": "حدّد اختبارات منفصلة للمراجعة الأولية للصفحة.\n\nقد تخفي صفحة جميلة زرًا معطّلًا أو نصًا لا يمكن قراءته في نافذة ضيقة. سنفحص أربعة جوانب: المحتوى والنقر ولوحة المفاتيح والتكيّف مع العرض. تمارين Ganesha الأصلية هذه مراجعة أولية، وليست شهادة شاملة لإمكانية الوصول. لكل اختبار إجراء ونتيجة متوقعة يسجّلهما المتعلم.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "حدّد جودة قابلة للملاحظة",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.site-quality.quality-criteria.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-first-lesson.site-publish",
+    "automaticNotices": 0,
+    "code": [],
+    "copy": "افصل الاستضافة عن الإذن بالوصول العام.\n\nفتح index.html على حاسوبك يعرض نسخة محلية. تعني الاستضافة إرسال الملفات إلى خدمة توفّر عنوان URL. امتلاك هذا العنوان لا يضمن الوصول العام: فقد تتطلب المشاهدة جلسة مصرحًا لها. سنستخدم الإجراء الموثّق لـNetlify Drop من دون Git أو طرفية. لا يدّعي هذا الدرس أنه ينشر نيابةً عنك؛ تحقّق من الأسعار والوصول والأذونات في حسابك.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "ميّز الملفات والاستضافة والوصول",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.site-publish.local-versus-hosted.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-first-lesson.app-state",
+    "automaticNotices": 1,
+    "code": [],
+    "copy": "تعرّف على المهام واكتمالها باعتبارها حالة.\n\nالحالة هي المعلومات الحالية للتطبيق: ما المهام الموجودة وأيّها مكتملة. تعرض الشاشة هذه الحالة. مثال محاكٍ أصلي: قائمة فارغة ← إضافة A ← A معلّقة ← إكمال A ← A مكتملة ← إزالة A ← قائمة فارغة. في هذا الدرس، تستمر الحالة للجلسة فقط؛ وقد تمحوها إعادة التحميل. الحفظ لوقت لاحق هو التحسين التالي.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "ما الذي يتغيّر عندما تتصرف",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.app-state.state-model.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-first-lesson.app-storage",
+    "automaticNotices": 1,
+    "code": [],
+    "copy": "ميّز الحالة الظاهرة عن البيانات المحفوظة دائمًا.\n\nقد توجد القائمة الظاهرة في ذاكرة الصفحة فقط. يعني الحفظ الدائم حفظ البيانات لاستعادتها لاحقًا. يحتفظ localStorage بنص في المتصفح لأصل عنوان يتكوّن من البروتوكول واسم الخادم والمنفذ. مثال محاكٍ أصلي: تظهر A، وتُعاد الصفحة إلى التحميل فتختفي A. لا يثبت هذا أن الإضافة أخفقت؛ بل يعني أن استعادة الحالة لم تُثبت.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "افصل الشاشة والذاكرة والتخزين",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.app-storage.memory-storage.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-first-lesson.app-delivery",
+    "automaticNotices": 1,
+    "code": [],
+    "copy": "ميّز ملف التطبيق عن نسخة بياناته.\n\nيحتوي index.html على البرنامج؛ والبيانات المحلية في المتصفح ليست داخله تلقائيًا. ينشئ التصدير ملفًا يحتوي نسخة من المهام. يقرأ الاستيراد تلك النسخة لإعادة بناء الحالة. مثال محاكٍ أصلي: صدّر A المكتملة وB المعلّقة، وافتح نسخة تشغيل أخرى فارغة واستورد النسخة. هذا نقل يدوي، لا مزامنة ولا حساب.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "افصل البرنامج عن نسخة بياناته",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.app-delivery.files-and-data.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-first-lesson.automation-input",
+    "automaticNotices": 1,
+    "code": [],
+    "copy": "افصل مكونات العملية الثلاثة.\n\nالأتمتة تسلسل يمكنك تكراره. المدخلات هنا جدول مبيعات خيالية؛ ويعدّ التحويل السجلات ويجمع مبالغها؛ والمخرج report.md، وهو ملف نصي. سنحدّد البيانات أولًا ونتحقق من النتيجة يدويًا. لم يُشغَّل أي برنامج نصي، ولا يوجد جدول زمني، ولم يُرسل أي تقرير.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "المدخلات والتحويل والمخرجات",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.automation-input.pipeline.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-first-lesson.automation-report",
+    "automaticNotices": 1,
+    "code": [],
+    "copy": "ميّز استبدال الملف عن التنزيل.\n\nيمكنك استخدام Python 3 لإنشاء report.md مباشرة في المجلد، أو صفحة HTML محلية للصق CSV وفحص معاينة وتنزيل التقرير. قواعد البيانات هي نفسها. يستطيع البرنامج النصي استبدال الملف بعد التحقق؛ ويتيح المتصفح تنزيلًا ولا يستبدل تلقائيًا الملفات المنزّلة سابقًا. اختر مسارًا وحدّد هذا الفرق.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "اختر كيفية تشغيل التحويل",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.automation-report.execution-paths.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-first-lesson.automation-schedule",
+    "automaticNotices": 1,
+    "code": [],
+    "copy": "ميّز الخطة والاختبار اليدوي والتشغيل المحفَّز بموعد.\n\nيحدّد الجدول الزمني موعد محاولة التنفيذ؛ ولا يصلح تقريرًا غير صحيح. جهّز مسودة أولًا. إذا نجحت الاختبارات اليدوية الأربعة كلها، وكان Python متاحًا وحسابك يسمح بذلك، فيمكنك تفعيل مهمة تدريب تحت إشرافك. وإلا فاستخدم التحليل المحاكي واذكر أنك لم تفعّلها. الإعداد المحفوظ والتنفيذ اليدوي لا يثبتان تشغيلًا بدأ بموعد مجدول.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "يكرّر الجدول الزمني عملية",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.automation-schedule.schedule-boundary.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-csv",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "id,item,amount\n1,Caderno,10.50\n2,Curso,20.00"
+      }
+    ],
+    "copy": "أنشئ ملف CSV حرفيًا وافحصه.\n\nCSV جدول مكتوب كنص: يسمّي السطر الأول الأعمدة، ويمثّل كل سطر تالٍ سجلًا. أنشئ مجلد relatorio وحدّده في Claude Desktop/Code أو Codex Desktop. اطلب ملفًا نصيًا بترميز UTF-8 باسم vendas.csv يحتوي البيانات أدناه بالضبط. افتحه في المحرر وتحقّق منه؛ فلا تكفي رسالة الإنشاء.\n\nفي relatorio، أنشئ vendas.csv فقط كنص بترميز UTF-8 بالمحتوى أدناه، مع الحفاظ على الأسماء والنقاط العشرية. لا تنشئ تقريرًا ولا تثبّت شيئًا ولا تجدول مهمة. اعرض مسار الملف كي أفتحه.\n\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nسجّل ما نفّذته فعلًا أو العائق الذي واجهته. إذا حلّلت مثالًا محاكيًا، فحدّد هذا النمط؛ فهو لا يثبت حدوث تنفيذ خارجي.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "أنشئ جدول التدريب",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.automation-input.create-csv.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-schedule",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "python3 report.py vendas.csv report.md"
+      },
+      {
+        "dir": "ltr",
+        "text": "py -3 report.py vendas.csv report.md"
+      }
+    ],
+    "copy": "تحقّق من الطلب الكامل في السياق المحدّد قبل الجدولة.\n\nعند استيفاء الشروط، استخدم مهمة تدريب هذا المجلد فقط. في علامة التبويب Code في Claude Desktop، أنشئ الروتين المحلي باستخدام Manual ثم استخدم Run now؛ وراجع المجلد والتعليمات والأذونات قبل الحفظ. في Codex، نفّذ الطلب الكامل أولًا في محادثة عادية مع المشروع المحلي. قارن المخرج بـ2 سجل و30.50. من دون الوصول، حلّل هذه التجربة كمحاكاة من دون ادعاء التنفيذ.\n\nشغّل مرة واحدة الآن، من دون إنشاء جدول زمني، في مجلد relatorio المحلي. استخدم فقط الأمر الذي اختبرته بالفعل على هذا الحاسوب: python3 report.py vendas.csv report.md أو، في Windows، py -3 report.py vendas.csv report.md. لا تثبّت تبعيات أو تغيّر ملفات الإدخال أو البرنامج. تحتوي مدخلات التدريب بالضبط على id,item,amount؛ 1,Caderno,10.50؛ 2,Curso,20.00. افتح report.md وتحقّق من 2 سجل ومجموع 30.50. إذا حدث خطأ، فأبلغ عن تشخيصه وحافظ على آخر تقرير صالح. لا ترسل بيانات أو تنشر نتائج.\nسجّل ما نفّذته فعلًا أو العائق الذي واجهته. إذا حلّلت مثالًا محاكيًا، فحدّد هذا النمط؛ فهو لا يثبت حدوث تنفيذ خارجي.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "تدرّب قبل تفعيل الموعد",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.automation-schedule.tool-conditions.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-apps-test-copy",
+    "automaticNotices": 0,
+    "code": [],
+    "copy": "أثبت الاستعادة والحفاظ على البيانات عند الخطأ.\n\nاحفظ نسخة من الحالة C واستورد antes-de-importar.json عبر المسار الذي تم التحقق منه. أكّد A المكتملة وB المعلّقة بعد إعادة التحميل. حدّث نسخة الاختبار المعزولة بالإصدار الحالي الذي يستورد الملفات بالفعل، مع الإبقاء على ganesha.tasks.test. في تلك النسخة، حاكِ إخفاقًا أثناء حفظ استيراد: حافظ على القائمة السابقة وحذّر من عدم استبدال أي شيء. عطّل التجربة وكرّر استيرادًا صالحًا.\n\nحدّث نسخة الاختبار المعزولة وحدها بالإصدار الحالي للتطبيق، بما فيه التصدير والاستيراد. استخدم في تلك النسخة ganesha.tasks.test فقط؛ ولا تقرأ ganesha.tasks.v1 أو تكتب إليه أو تزيله. ثم حاكِ إخفاق كتابة عند تأكيد استيراد صالح. حافظ على القائمة والبيانات السابقتين، وأظهر خطأ ولا تدّعِ نجاح الاستبدال. اشرح كيفية إزالة التجربة. سأختبر استيراد النسخة الاحتياطية وإعادة التحميل ومقارنة المهام والاكتمال.\nسجّل ما نفّذته فعلًا أو العائق الذي واجهته. إذا حلّلت مثالًا محاكيًا، فحدّد هذا النمط؛ فهو لا يثبت حدوث تنفيذ خارجي.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "استعد نسخة احتياطية واختبر كتابة مرفوضة",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.app-delivery.restore-backup.v3",
+    "width": 390
+  },
+  {
+    "case": "ar-json-check",
+    "automaticNotices": 0,
+    "code": [],
+    "copy": "افصل JSON القابل للتحليل عن البيانات المقبولة.\n\nسيناريو محاكٍ أصلي: يحتوي ملف على {\"version\":1,\"tasks\":[{\"id\":\"t1\",\"text\":\"A\",\"done\":\"false\"}]}. يستطيع القارئ تحليل صيغته. لكن على المستورد التحقق من معنى الحقول المطلوبة وأنواعها وفق المتطلبات. انظر تحديدًا إلى طريقة كتابة قيمة done بدلًا من اعتبار امتداد الملف كافيًا.",
+    "dir": "rtl",
+    "font": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+    "h1": "ميّز الصياغة عن المحتوى",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/ar#step.app-delivery.check-contract.v3",
+    "width": 390
+  },
+  {
+    "case": "fr-schedule",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "python3 report.py vendas.csv report.md"
+      },
+      {
+        "dir": "ltr",
+        "text": "py -3 report.py vendas.csv report.md"
+      }
+    ],
+    "copy": "Valider la demande complète dans le contexte sélectionné avant de planifier.\n\nSi les conditions sont remplies, utilisez uniquement la tâche d’entraînement de ce dossier. Dans l’onglet Code de Claude Desktop, créez la routine locale avec Manual et utilisez Run now ; examinez le dossier, les instructions et les autorisations avant d’enregistrer. Dans Codex, exécutez d’abord la demande complète dans une conversation ordinaire avec le projet local. Comparez la sortie à 2 enregistrements et 30.50. Sans accès, analysez cette répétition comme une simulation sans déclarer d’exécution.\n\nExécute une fois maintenant, sans créer de planification, dans le dossier local relatorio. Utilise uniquement la commande que j’ai déjà testée sur cet ordinateur : python3 report.py vendas.csv report.md ou, sur Windows, py -3 report.py vendas.csv report.md. N’installe pas de dépendances et ne modifie ni les fichiers d’entrée ni le programme. L’entrée d’entraînement contient exactement id,item,amount; 1,Caderno,10.50; 2,Curso,20.00. Ouvre report.md et vérifie 2 enregistrements et un total de 30.50. Si une erreur survient, rapporte son diagnostic et conserve le dernier rapport valide. N’envoie pas de données et ne publie pas les résultats.\nConsignez ce que vous avez réellement exécuté ou l’obstacle rencontré. Si vous analysez un exemple simulé, précisez ce mode ; il ne prouve pas une exécution externe.",
+    "dir": "ltr",
+    "font": "\"Figtree Variable\", system-ui, sans-serif",
+    "h1": "Faire une répétition avant d’activer l’horaire",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/fr#step.automation-schedule.tool-conditions.v3",
+    "width": 390
+  },
+  {
+    "case": "fr-csv",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "id,item,amount\n1,Caderno,10.50\n2,Curso,20.00"
+      }
+    ],
+    "copy": "Créer et examiner un fichier CSV littéral.\n\nUn CSV est un tableau écrit en texte : la première ligne nomme les colonnes et chaque ligne suivante est un enregistrement. Créez le dossier relatorio et sélectionnez-le dans Claude Desktop/Code ou Codex Desktop. Demandez un fichier texte UTF-8 nommé vendas.csv contenant exactement les données ci-dessous. Ouvrez-le dans l’éditeur et vérifiez-le ; un message de création ne suffit pas.\n\nDans relatorio, crée uniquement vendas.csv comme texte UTF-8 avec le contenu ci-dessous, en conservant les noms et les points décimaux. Ne génère pas de rapport, n’installe rien et ne planifie pas de tâche. Montre le chemin du fichier pour que je puisse l’ouvrir.\n\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nConsignez ce que vous avez réellement exécuté ou l’obstacle rencontré. Si vous analysez un exemple simulé, précisez ce mode ; il ne prouve pas une exécution externe.",
+    "dir": "ltr",
+    "font": "\"Figtree Variable\", system-ui, sans-serif",
+    "h1": "Créer le tableau d’entraînement",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/fr#step.automation-input.create-csv.v3",
+    "width": 390
+  },
+  {
+    "case": "fr-apps-test-copy",
+    "automaticNotices": 0,
+    "code": [],
+    "copy": "Démontrer la récupération et la conservation en cas d’erreur.\n\nEnregistrez une copie de l’état C et importez antes-de-importar.json par le parcours validé. Confirmez A terminée et B en attente après rechargement. Mettez à jour la copie de test isolée avec la version actuelle qui importe déjà des fichiers, en conservant ganesha.tasks.test. Dans cette copie, simulez un échec lors de l’enregistrement d’un import : conservez la liste précédente et avertissez que rien n’a été remplacé. Désactivez la simulation et répétez un import valide.\n\nMets à jour uniquement la copie de test isolée avec la version actuelle de l’application, y compris l’export/l’import. Dans cette copie, utilise uniquement ganesha.tasks.test ; ne lis, n’écris et ne supprime pas ganesha.tasks.v1. Simule ensuite un échec d’écriture lors de la confirmation d’un import valide. Conserve la liste et les données précédentes, affiche une erreur et ne prétends pas que le remplacement a réussi. Explique comment retirer la simulation. Je testerai l’import de la sauvegarde, le rechargement et la comparaison des tâches et de leur réalisation.\nConsignez ce que vous avez réellement exécuté ou l’obstacle rencontré. Si vous analysez un exemple simulé, précisez ce mode ; il ne prouve pas une exécution externe.",
+    "dir": "ltr",
+    "font": "\"Figtree Variable\", system-ui, sans-serif",
+    "h1": "Restaurer une sauvegarde et tester une écriture rejetée",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/fr#step.app-delivery.restore-backup.v3",
+    "width": 390
+  },
+  {
+    "case": "hi-negation-delta",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "python3 report.py vendas.csv report.md"
+      },
+      {
+        "dir": "ltr",
+        "text": "py -3 report.py vendas.csv report.md"
+      }
+    ],
+    "copy": "शेड्यूल से पहले चुने संदर्भ में पूरा अनुरोध जाँचें।\n\nशर्तें पूरी हों तो केवल इस फ़ोल्डर का अभ्यास कार्य लें। Claude Desktop के Code टैब में Manual से स्थानीय रूटीन बनाकर Run now लें; सहेजने से पहले फ़ोल्डर, निर्देश और अनुमतियाँ देखें। Codex में पहले स्थानीय प्रोजेक्ट की सामान्य बातचीत में पूरा अनुरोध चलाएँ। आउटपुट को 2 रिकॉर्ड और 30.50 से मिलाएँ। पहुँच बिना अभ्यास का सिमुलेट विश्लेषण करें, निष्पादन का दावा नहीं।\n\nअभी एक बार स्थानीय relatorio फ़ोल्डर में चलाओ, बिना शेड्यूल बनाए। केवल इस कंप्यूटर पर मेरी पहले जाँची कमांड लो: python3 report.py vendas.csv report.md या Windows पर py -3 report.py vendas.csv report.md। कोई निर्भरता स्थापित मत करो और इनपुट फ़ाइलों या प्रोग्राम में कोई बदलाव मत करो। अभ्यास इनपुट में ठीक id,item,amount; 1,Caderno,10.50; 2,Curso,20.00 हैं। report.md खोलकर 2 रिकॉर्ड और कुल 30.50 जाँचो। त्रुटि हो तो निदान बताओ और अंतिम वैध रिपोर्ट रखो। डेटा मत भेजो या नतीजे प्रकाशित मत करो।\nआपने वास्तव में क्या चलाया या कौन-सी बाधा आई, दर्ज करें। यदि सिमुलेट किए गए उदाहरण का विश्लेषण करें, तो वह तरीका बताएँ; इससे बाहरी कार्य चलाना सिद्ध नहीं होता।",
+    "dir": "ltr",
+    "font": "\"Noto Sans Devanagari Variable\", \"Devanagari Sangam MN\", sans-serif",
+    "h1": "समय सक्रिय करने से पहले अभ्यास करें",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/hi#step.automation-schedule.tool-conditions.v3",
+    "width": 390
+  }
+]

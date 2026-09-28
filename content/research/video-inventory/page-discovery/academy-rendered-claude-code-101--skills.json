@@ -1,0 +1,20 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-code-101/skills",
+  "title": "Skills",
+  "observed_at": "2026-09-28T21:15:19.392Z",
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/bjdBVZa66oU?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "Skills"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=bjdBVZa66oU",
+      "title": "What are skills?"
+    }
+  ],
+  "transcript_label_observed": false,
+  "inventory_scope": "Whole visible lesson text saved separately; not labelled as a transcript in this rendered page."
+}

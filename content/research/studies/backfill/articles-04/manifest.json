@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "scope": "articles-04: três artigos públicos novos, entrega incremental; bloqueios separados.",
+  "studies": [
+    {
+      "id": "article-builder-reliable-ai-tools-2024",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/build-ai-tools",
+      "title": "How to Build Reliable AI Tools",
+      "author": "Manu Mtz.-Almeida",
+      "published_at": "2024-11-15",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/builder-blog.json",
+      "study_path": "studies/backfill/articles-04/builder-reliable-ai-tools.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "scope": "Texto integral e três diagramas materiais; cinco vídeos pendentes.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a04-builder-reliable-ai-tools.txt",
+          "bytes": 6648,
+          "sha256": "0e79b21718d5bcadc33bb31a4c5042d3acb724b8a872152fed5d4c9ce272aa26",
+          "line_count": 135,
+          "read_lines": [
+            [
+              1,
+              135
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a04-builder-reliable-ai-tools.html",
+          "bytes": 243257,
+          "sha256": "f40b965d89e8718470eb32c1a25b3976ec3b40c24093076c6c25befd01ec3377",
+          "line_count": 1374,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a04-builder-reliable-ai-tools-media.json",
+          "bytes": 3110,
+          "sha256": "7c66e69620107924c5de2abacadf4c71f3f7b58f0b0eb63198ab421bc01f0e0d",
+          "line_count": 121,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a04-builder-reliable-ai-tools-acquisition.json",
+          "bytes": 255,
+          "sha256": "31ca0036e8604a461005ea5603aa2970112bdc2c057dd3b3280a6eac4ed48f13",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a04-reliable-0.png",
+          "bytes": 31110,
+          "sha256": "04323cc227c319b198e6a40c9adbf2871940832f1e2a7effee9153267b83f96c",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "modelo único e ciclo de agentes",
+          "method": "screenshot de conteúdo observado no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a04-reliable-1.png",
+          "bytes": 23798,
+          "sha256": "9d12c020799eaaac8f346eabc06f0acda405969c459ae8370b6624c01a4911b6",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "categorias de contexto",
+          "method": "screenshot de conteúdo observado no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a04-reliable-2.png",
+          "bytes": 31147,
+          "sha256": "5876989d4f9161f05d64d35bb4b9caca998f336d8d4687638744660eda9c65c4",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "classificação conceitual de componentes determinísticos e probabilísticos",
+          "method": "screenshot de conteúdo observado no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "5 elementos video sem src/source no DOM observado; conteúdo não acompanhado"
+      ],
+      "not_reviewed": [
+        "vídeos",
+        "código e dependências",
+        "reprodução dos benchmarks e confiabilidade declarada"
+      ],
+      "practice_checks": [
+        "textos e destino do cartão alterado",
+        "preservação do segundo cartão e regressão móvel"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-04/builder-reliable-ai-tools.md",
+        "bytes": 7068,
+        "sha256": "d22223ef67a426e2f9668a6cd1d52cef1182c48d4a818c2b525cc8a0ded2f6b3",
+        "line_count": 58,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida."
+    }
+  ],
+  "blocked_sources": [
+    {
+      "id": "blocked-peter-three-step-2026",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/my-3-step-system-to-automate-90-of",
+      "title": "My 3-Step System to Automate 90% of My Content Workflow with AI",
+      "published_at": "2026-09-16",
+      "status": "blocked_paywall",
+      "text_read_complete": false,
+      "full_source_analyzed": false,
+      "reason": "Texto público interrompido no início da etapa 2; região explícita de assinatura paga. Timestamps não substituem o restante.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a04-peter-three-step-partial.txt",
+          "bytes": 2808,
+          "sha256": "68ad66a2af34fdb24202d3bf43a04acb192946e6b18a4abb9ba73e060ddf5f90",
+          "line_count": 73,
+          "read_lines": [
+            [
+              1,
+              73
+            ]
+          ],
+          "kind": "partial_text"
+        },
+        {
+          "path": "studies/local/backfill-a04-peter-three-step.html",
+          "bytes": 158533,
+          "sha256": "6f2dce36dd585fa837ccf94190e4b99b75b71ee30231edb414a7930ea3e57531",
+          "line_count": 411,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a04-peter-three-step-acquisition.json",
+          "bytes": 295,
+          "sha256": "4b26b08d276e5c026e14485c01e30c03f97a6c116651e7fbfb11ca846eb7c3b7",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a04-peter-three-step-paywall.png",
+          "bytes": 357762,
+          "sha256": "fae043af46d7c7064d0d0843cbd8bf9c221718b0c9390a99701be5e2fdc1a197",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "página completa com interrupção paga após introdução da etapa 2; áreas de mídia não carregadas não são certificadas",
+          "method": "screenshot de conteúdo observado no navegador"
+        }
+      ],
+      "related_public_video": "https://www.youtube.com/watch?v=PZHBW6yld5U",
+      "public_video_studied_in_this_round": false,
+      "next_action": "Obter acesso legítimo ao artigo; vídeo público exige estudo independente, sem substituir texto pago."
+    }
+  ],
+  "round_deliverables_complete": false,
+  "source_audiovisual_completion_claimed": false
+}

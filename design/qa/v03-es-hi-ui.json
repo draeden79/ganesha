@@ -1,0 +1,102 @@
+[
+  {
+    "case": "es-csv",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "id,item,amount\n1,Caderno,10.50\n2,Curso,20.00"
+      }
+    ],
+    "copy": "Crear e inspeccionar un archivo CSV literal.\n\nCSV es una tabla escrita como texto: la primera línea nombra columnas y cada línea siguiente es un registro. Crea la carpeta relatorio y selecciónala en Claude Desktop/Code o Codex Desktop. Pide un archivo de texto UTF-8 llamado vendas.csv con exactamente los datos siguientes. Ábrelo en el editor y compruébalo; un mensaje de creación no basta.\n\nEn relatorio, crea únicamente vendas.csv como texto UTF-8 con el contenido siguiente, conservando nombres y puntos decimales. No generes informes, instales nada ni programes tareas. Muestra la ruta para poder abrirlo.\n\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nRegistra lo que realmente ejecutaste o el impedimento encontrado. Si analizas un ejemplo simulado, identifica esa modalidad; no demuestra ejecución externa.",
+    "dir": "ltr",
+    "font": "\"Figtree Variable\", system-ui, sans-serif",
+    "h1": "Crea la tabla de práctica",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/es#step.automation-input.create-csv.v3",
+    "width": 390
+  },
+  {
+    "case": "es-apps-test-copy",
+    "automaticNotices": 0,
+    "code": [],
+    "copy": "Demostrar recuperación y conservación ante errores.\n\nGuarda una copia del estado C e importa antes-de-importar.json mediante el flujo validado. Confirma A completada y B pendiente tras recargar. Actualiza la copia de prueba aislada con la versión actual que ya importa archivos, conservando ganesha.tasks.test. En esa copia, simula un fallo al guardar una importación: conserva la lista anterior y avisa de que nada se sustituyó. Desactiva el ensayo y repite una importación válida.\n\nActualiza únicamente la copia de prueba aislada con la versión actual de la aplicación, incluida exportación/importación. En esa copia usa solo ganesha.tasks.test; no leas, escribas ni elimines ganesha.tasks.v1. Después simula un fallo de escritura al confirmar una importación válida. Conserva lista y datos anteriores, muestra un error y no afirmes que la sustitución tuvo éxito. Explica cómo retirar el ensayo. Probaré importar la copia, recargar y comparar tareas y finalización.\nRegistra lo que realmente ejecutaste o el impedimento encontrado. Si analizas un ejemplo simulado, identifica esa modalidad; no demuestra ejecución externa.",
+    "dir": "ltr",
+    "font": "\"Figtree Variable\", system-ui, sans-serif",
+    "h1": "Recupera una copia y prueba una escritura rechazada",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/es#step.app-delivery.restore-backup.v3",
+    "width": 390
+  },
+  {
+    "case": "es-schedule",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "python3 report.py vendas.csv report.md"
+      },
+      {
+        "dir": "ltr",
+        "text": "py -3 report.py vendas.csv report.md"
+      }
+    ],
+    "copy": "Validar la solicitud completa en el contexto elegido antes de programar.\n\nCon las condiciones cumplidas, usa solo la tarea de práctica de esta carpeta. En la pestaña Code de Claude Desktop, crea la rutina local con Manual y usa Run now; revisa carpeta, instrucciones y permisos antes de guardar. En Codex, ejecuta primero la solicitud completa en una conversación normal con el proyecto local. Compara la salida con 2 registros y 30.50. Sin acceso, analiza este ensayo como simulación sin afirmar ejecución.\n\nEjecuta una vez ahora, sin crear programación, en la carpeta local relatorio. Usa solo el comando que ya probé en este ordenador: python3 report.py vendas.csv report.md o, en Windows, py -3 report.py vendas.csv report.md. No instales dependencias ni cambies archivos de entrada o programa. La entrada de práctica contiene exactamente id,item,amount; 1,Caderno,10.50; 2,Curso,20.00. Abre report.md y comprueba 2 registros y total 30.50. Si hay error, informa del diagnóstico y conserva el último informe válido. No envíes datos ni publiques resultados.\nRegistra lo que realmente ejecutaste o el impedimento encontrado. Si analizas un ejemplo simulado, identifica esa modalidad; no demuestra ejecución externa.",
+    "dir": "ltr",
+    "font": "\"Figtree Variable\", system-ui, sans-serif",
+    "h1": "Ensaya antes de activar el horario",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/es#step.automation-schedule.tool-conditions.v3",
+    "width": 390
+  },
+  {
+    "case": "hi-schedule",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "python3 report.py vendas.csv report.md"
+      },
+      {
+        "dir": "ltr",
+        "text": "py -3 report.py vendas.csv report.md"
+      }
+    ],
+    "copy": "शेड्यूल से पहले चुने संदर्भ में पूरा अनुरोध जाँचें।\n\nशर्तें पूरी हों तो केवल इस फ़ोल्डर का अभ्यास कार्य लें। Claude Desktop के Code टैब में Manual से स्थानीय रूटीन बनाकर Run now लें; सहेजने से पहले फ़ोल्डर, निर्देश और अनुमतियाँ देखें। Codex में पहले स्थानीय प्रोजेक्ट की सामान्य बातचीत में पूरा अनुरोध चलाएँ। आउटपुट को 2 रिकॉर्ड और 30.50 से मिलाएँ। पहुँच बिना अभ्यास का सिमुलेट विश्लेषण करें, निष्पादन का दावा नहीं।\n\nअभी एक बार स्थानीय relatorio फ़ोल्डर में चलाओ, बिना शेड्यूल बनाए। केवल इस कंप्यूटर पर मेरी पहले जाँची कमांड लो: python3 report.py vendas.csv report.md या Windows पर py -3 report.py vendas.csv report.md। निर्भरताएँ स्थापित, इनपुट फ़ाइलें या प्रोग्राम मत बदलो। अभ्यास इनपुट में ठीक id,item,amount; 1,Caderno,10.50; 2,Curso,20.00 हैं। report.md खोलकर 2 रिकॉर्ड और कुल 30.50 जाँचो। त्रुटि हो तो निदान बताओ और अंतिम वैध रिपोर्ट रखो। डेटा मत भेजो या नतीजे प्रकाशित मत करो।\nआपने वास्तव में क्या चलाया या कौन-सी बाधा आई, दर्ज करें। यदि सिमुलेट किए गए उदाहरण का विश्लेषण करें, तो वह तरीका बताएँ; इससे बाहरी कार्य चलाना सिद्ध नहीं होता।",
+    "dir": "ltr",
+    "font": "\"Noto Sans Devanagari Variable\", \"Devanagari Sangam MN\", sans-serif",
+    "h1": "समय सक्रिय करने से पहले अभ्यास करें",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/hi#step.automation-schedule.tool-conditions.v3",
+    "width": 390
+  },
+  {
+    "case": "hi-csv",
+    "automaticNotices": 0,
+    "code": [
+      {
+        "dir": "ltr",
+        "text": "id,item,amount\n1,Caderno,10.50\n2,Curso,20.00"
+      }
+    ],
+    "copy": "ठीक दिए पाठ वाली CSV फ़ाइल बनाएँ और जाँचें।\n\nCSV पाठ में लिखी तालिका है: पहली पंक्ति कॉलम नाम देती और हर अगली पंक्ति रिकॉर्ड है। relatorio फ़ोल्डर बनाकर Claude Desktop/Code या Codex Desktop में चुनें। ठीक नीचे के डेटा वाली UTF-8 पाठ फ़ाइल vendas.csv माँगें। संपादक में खोलकर जाँचें; बनाने का संदेश पर्याप्त नहीं।\n\nrelatorio में नीचे की सामग्री से केवल UTF-8 पाठ वाली vendas.csv बनाओ, नाम और दशमलव बिंदु जस के तस रखो। रिपोर्ट मत बनाओ, कुछ स्थापित या शेड्यूल मत करो। फ़ाइल पथ दिखाओ ताकि खोल सकूँ।\n\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00\nआपने वास्तव में क्या चलाया या कौन-सी बाधा आई, दर्ज करें। यदि सिमुलेट किए गए उदाहरण का विश्लेषण करें, तो वह तरीका बताएँ; इससे बाहरी कार्य चलाना सिद्ध नहीं होता।",
+    "dir": "ltr",
+    "font": "\"Noto Sans Devanagari Variable\", \"Devanagari Sangam MN\", sans-serif",
+    "h1": "अभ्यास की तालिका बनाएँ",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/hi#step.automation-input.create-csv.v3",
+    "width": 390
+  },
+  {
+    "case": "hi-apps-test-copy",
+    "automaticNotices": 0,
+    "code": [],
+    "copy": "पुनर्प्राप्ति और त्रुटि पर संरक्षण दिखाएँ।\n\nC स्थिति की कॉपी सहेजें और सत्यापित क्रम से antes-de-importar.json आयात करें। फिर लोड कर पूरा A और लंबित B पुष्टि करें। अलग परीक्षण कॉपी को फ़ाइल आयात वाले वर्तमान संस्करण से अद्यतन करें, ganesha.tasks.test रखते हुए। उसमें आयात सहेजने की विफलता सिमुलेट करें: पुरानी सूची रखें और बताएँ कि कुछ नहीं बदला। अभ्यास बंद करके वैध आयात दोहराएँ।\n\nकेवल अलग परीक्षण कॉपी को निर्यात/आयात सहित वर्तमान ऐप से अद्यतन करो। उसमें केवल ganesha.tasks.test लो; ganesha.tasks.v1 न पढ़ो, न लिखो, न हटाओ। फिर वैध आयात पुष्टि पर लिखने की विफलता सिमुलेट करो। पुरानी सूची और डेटा रखो, त्रुटि दो और प्रतिस्थापन सफल न कहो। अभ्यास हटाना समझाओ। मैं बैकअप आयात, फिर लोड और कामों तथा पूर्णता की तुलना जाँचूँगा।\nआपने वास्तव में क्या चलाया या कौन-सी बाधा आई, दर्ज करें। यदि सिमुलेट किए गए उदाहरण का विश्लेषण करें, तो वह तरीका बताएँ; इससे बाहरी कार्य चलाना सिद्ध नहीं होता।",
+    "dir": "ltr",
+    "font": "\"Noto Sans Devanagari Variable\", \"Devanagari Sangam MN\", sans-serif",
+    "h1": "बैकअप लौटाएँ और अस्वीकृत लिखना जाँचें",
+    "scrollWidth": 390,
+    "url": "http://localhost:3105/classroom/hi#step.app-delivery.restore-backup.v3",
+    "width": 390
+  }
+]

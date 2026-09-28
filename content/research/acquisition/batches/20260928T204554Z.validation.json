@@ -1,0 +1,28 @@
+{
+  "validated_at": "2026-09-28T21:04:41.858389+00:00",
+  "scope": "exhaustive_user_directive_2026_09_28",
+  "batch_id": "20260928T204554Z",
+  "batch_status": "batch_limit_or_selection_exhausted",
+  "new_videos": 30,
+  "artifacts_checked": 60,
+  "artifact_bytes": 19041301,
+  "preserved_baseline_videos": 23,
+  "minimum_inter_id_pause_seconds": 20.009519,
+  "first_attempt_pause_from_previous_process_seconds": 3272.373064,
+  "batch_specific_baseline": false,
+  "baseline_path": "acquisition/historical-baseline.json",
+  "archived_queue_hash_verified": true,
+  "canonical_flags_regressed": false,
+  "canonical_manifest_bytes_unchanged": false,
+  "queue_snapshot_ids": 4853,
+  "new_inventory_ids_not_yet_in_snapshot": [
+    "eW3oTyfeWZ0",
+    "gbetp6D7J_Q"
+  ],
+  "next_queue_index": 34,
+  "next_video_id": "g328fQNFQYA",
+  "remaining_unexported_in_snapshot": 4800,
+  "errors": [],
+  "entire_corpus_complete": false,
+  "validation_scope": "Files, hashes, full TXT/JSON3 derivation, archived snapshot hashes, cross-process pause, queue/checkpoint consistency and batch-specific canonical flags; no speech or audiovisual verification."
+}

@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "artifact_path_base": "content/research",
+  "updated_at": "2026-09-28T21:22:38.559152+00:00",
+  "studies": [
+    {
+      "id": "backfill-v03--Emf7un0Wt4",
+      "video_id": "-Emf7un0Wt4",
+      "title": "Using AI to Create a SICK Web Design",
+      "url": "https://www.youtube.com/watch?v=-Emf7un0Wt4",
+      "published_at": "2022-08-12",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-03/-Emf7un0Wt4.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-03/-Emf7un0Wt4.md",
+        "bytes": 7782,
+        "sha256": "f0c9f1a969b61c3ad6c7ef3c0cb7974ffd8f5df8278537881615e4d14b5cef71"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.-Emf7un0Wt4.en.de8441586f44.txt",
+        "bytes": 5741,
+        "sha256": "de8441586f449b8bdb17ed2c77feaa292cd4b34bf67751dbe131acf2df75ad38",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 84,
+        "first_cue_start_seconds": 6.56,
+        "last_cue_start_seconds": 268.28,
+        "last_cue_end_seconds": 271.04,
+        "track_export_complete": true,
+        "logical_line_count": 84,
+        "sequential_read_ranges": [
+          [
+            1,
+            84
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.-Emf7un0Wt4.en.d1d3447b28f8.json3",
+        "bytes": 48005,
+        "sha256": "d1d3447b28f8088327b88004dfc78d8462e90f6ffee3d16a07d4de6119f30010"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v03--Emf7un0Wt4-contrast.png",
+          "bytes": 112448,
+          "sha256": "670657fe96a9b41d9449876e79117db0eaaf5c4fdab82d19427f0d42cea53557",
+          "player_seconds": 100,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Figma composition with mountain and upper typography partially visible; contrast is claimed, not measured."
+        },
+        {
+          "path": "studies/local/backfill-v03--Emf7un0Wt4-edit.png",
+          "bytes": 58034,
+          "sha256": "571c8d445cdd719c6953f5c4bf33eff28c45c296396603772a16e16c022e9752",
+          "player_seconds": 140,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Intermediate Figma composition with green mountains and irregular pale border; not the Photoshop brush operation itself."
+        },
+        {
+          "path": "studies/local/backfill-v03--Emf7un0Wt4-result.png",
+          "bytes": 111134,
+          "sha256": "8ac35c94e4e329d12008c25ff2ba4e0f87613bdd216840886fe79ce6b79d0780",
+          "player_seconds": 215,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Part of final design: mountain background, dotted path and three columns; no working web controls demonstrated."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 269,
+      "duration_seconds_observed_player": 268,
+      "timing_note": "Caption span 6.560–271.040s; metadata duration 269s, player 268s; no full speech verification.",
+      "source_or_practice_executed": false,
+      "current_interfaces_verified": false,
+      "desktop_cli_parity_assumed": false,
+      "sufficiency": "Visual asset selection and manual composition example, not implemented or published website.",
+      "pending": [
+        "Continuous audiovisual review including caption gaps",
+        "Detailed image editing sequence",
+        "Current tool interfaces and functional implementation checks"
+      ]
+    },
+    {
+      "id": "backfill-v03-GUgxx6fMiR8",
+      "video_id": "GUgxx6fMiR8",
+      "title": "How to Build an App With Claude Code - Full Tutorial for Beginners",
+      "url": "https://www.youtube.com/watch?v=GUgxx6fMiR8",
+      "published_at": "2026-05-06",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-03/GUgxx6fMiR8.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-03/GUgxx6fMiR8.md",
+        "bytes": 12083,
+        "sha256": "989ea077286ddbe5c70a8256a5c5fc1953b4e0e010c3bfba30f15fd01f2b33f9"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.GUgxx6fMiR8.en-CA.5b10d430f086.txt",
+        "bytes": 46941,
+        "sha256": "5b10d430f086dfc45c4254e1058390cd1f41edf3f8686d764fd2b915316c5974",
+        "caption_origin": "authored-or-unspecified",
+        "language": "en-CA",
+        "cue_count": 510,
+        "first_cue_start_seconds": 0.0,
+        "last_cue_start_seconds": 1432.55,
+        "last_cue_end_seconds": 1435.466,
+        "track_export_complete": true,
+        "logical_line_count": 817,
+        "sequential_read_ranges": [
+          [
+            1,
+            220
+          ],
+          [
+            221,
+            450
+          ],
+          [
+            451,
+            700
+          ],
+          [
+            701,
+            817
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.GUgxx6fMiR8.en-CA.d552c674d7cc.json3",
+        "bytes": 80102,
+        "sha256": "d552c674d7cc6fdecf40edde083718a8df62fad39d4163b77d9df20243902f9c"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v03-GUgxx6fMiR8-content.png",
+          "bytes": 129949,
+          "sha256": "b3d5fb8521b729a66c9840177424e6ba2da04d16c09d6096f977828e67f89aa3",
+          "player_seconds": 825,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "SAP experience entry visible; author questions it in captions, no documented correction."
+        },
+        {
+          "path": "studies/local/backfill-v03-GUgxx6fMiR8-published.png",
+          "bytes": 97996,
+          "sha256": "a83bb306f5363333f62d69f032cb47c49d3b94b9810bd9d7b53424012a9458e8",
+          "player_seconds": 1140,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Portfolio rendered at timruscica.com in author browser; no session-independent visitor test."
+        },
+        {
+          "path": "studies/local/backfill-v03-GUgxx6fMiR8-mcp-missing.png",
+          "bytes": 107288,
+          "sha256": "f4c89001431ba1d78735c108ea62673df11d67bda633e0f073b83e02ff543640",
+          "player_seconds": 1250,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Agent states no Hostinger MCP connected; visible configuration contains placeholder only. Requested seek 1250s and matching caption; time widget transiently showed 0, so exact time not independently observed.",
+          "timestamp_basis": "requested_seek_and_matching_caption",
+          "player_seconds_directly_observed": false
+        },
+        {
+          "path": "studies/local/backfill-v03-GUgxx6fMiR8-mcp-connected.png",
+          "bytes": 83904,
+          "sha256": "d1dd1d8aa534c8c1cf2bf7cd0c3ee85843a64072ad483cc459292b299ea04263",
+          "player_seconds": 1385,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Hostinger MCP Connected in new Claude Code session; other integrations show Failed/Needs Auth."
+        },
+        {
+          "path": "studies/local/backfill-v03-GUgxx6fMiR8-updated.png",
+          "bytes": 102185,
+          "sha256": "a065dadd24321ae686eb7e67f90a68fa5407b66a4a2de76c3f45315f5ddeffee",
+          "player_seconds": 1415,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Same timruscica.com domain and hero says Tim Tech, while small header brand still says Tim Ruscica; partial name change confirmed."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 1444,
+      "duration_seconds_observed_player": 1443,
+      "timing_note": "Caption span 0–1435.466s ends 8.534s before acquired duration; authored-or-unspecified is not proof of manual review.",
+      "source_or_practice_executed": false,
+      "current_interfaces_verified": false,
+      "desktop_cli_parity_assumed": false,
+      "sufficiency": "Informational portfolio built and deployed, MCP-access recovery and visible update; not data-entry/persistent-user-data app.",
+      "material_findings": [
+        "Questioned biographical fact persists without documented correction",
+        "MCP available to Cursor does not automatically become available to Claude Code",
+        "Published hero renamed while header retains prior name",
+        "Git checkpoint is created but rollback is not tested"
+      ],
+      "pending": [
+        "Continuous audiovisual and speech coverage review",
+        "Current authentication/client/hosting interfaces",
+        "Session-independent visitor, functional regression and recovery test"
+      ]
+    }
+  ],
+  "round_complete": false
+}
