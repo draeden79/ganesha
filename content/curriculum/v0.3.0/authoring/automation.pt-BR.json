@@ -1,0 +1,642 @@
+{
+  "lessons": [
+    {
+      "slug": "automation-input",
+      "title": "Preparar dados para automação",
+      "summary": "Defina a entrada, as regras e o resultado esperado antes de gerar um relatório.",
+      "outcome": "Uma pasta com vendas.csv, cópias de teste e um contrato verificável de dados.",
+      "prerequisites": [
+        "verification"
+      ],
+      "minutes": 25,
+      "sourceRefs": [],
+      "steps": [
+        {
+          "slug": "pipeline",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Entrada, transformação e saída",
+          "body": "Automação é uma sequência que pode ser repetida. Aqui, a entrada será uma tabela de vendas fictícias; a transformação contará registros e somará valores; a saída será report.md, um arquivo de texto. Primeiro vamos definir os dados e conferir o resultado à mão. Ainda não há script executado, agendamento ou envio de relatório.",
+          "action": "Descreva a entrada, a transformação e a saída deste exercício em três frases próprias.",
+          "expected": "Um mapa que liga vendas.csv à contagem, à soma e a report.md.",
+          "hint": "A saída é um arquivo; enviar esse arquivo a alguém seria outra ação.",
+          "criteria": [
+            "Nomeia vendas.csv como entrada e report.md como saída.",
+            "Inclui contar registros e somar amount, sem envio."
+          ],
+          "objective": "Separar os três componentes do processo."
+        },
+        {
+          "slug": "create-csv",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Criar a tabela de treino",
+          "body": "CSV é uma tabela escrita como texto: a primeira linha nomeia as colunas e cada linha seguinte é um registro. Crie a pasta relatorio e selecione-a no Claude Desktop/Code ou no Codex Desktop. Peça um arquivo de texto UTF-8 chamado vendas.csv, exatamente com os dados abaixo. Abra o arquivo no editor e confira; não basta a mensagem de criação.",
+          "action": "Crie vendas.csv na pasta relatorio, abra-o e compare as três linhas com o exemplo.",
+          "expected": "Arquivo com cabeçalho e dois registros, sem extensão .txt adicional.",
+          "hint": "Se o arquivo aparecer como vendas.csv.txt, peça para corrigir o nome e abra novamente.",
+          "criteria": [
+            "Cabeçalho id,item,amount e dois registros coincidem com o exemplo.",
+            "Arquivo está na pasta escolhida e foi aberto para conferência."
+          ],
+          "prompt": "Na pasta relatorio, crie apenas vendas.csv como texto UTF-8 com o conteúdo abaixo, preservando nomes e pontos decimais. Não gere relatório, não instale nada e não agende. Mostre o caminho do arquivo para eu abri-lo.\n\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00",
+          "code": "id,item,amount\n1,Caderno,10.50\n2,Curso,20.00",
+          "objective": "Criar e conferir um CSV literal."
+        },
+        {
+          "slug": "data-contract",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Escrever o contrato dos dados",
+          "body": "Neste exemplo original, o contrato é um acordo sobre o que aceitar. id identifica um registro e não pode repetir; item é um nome não vazio; amount é um valor não negativo, com ponto e até duas casas decimais. Para usar o mesmo conjunto nas duas alternativas, não coloque vírgulas ou aspas nos nomes. Cabeçalho incompleto e tabela sem registros devem causar erro.",
+          "action": "Escreva essas regras em uma lista e associe cada regra à coluna ou à tabela.",
+          "expected": "Contrato que permite decidir se uma entrada é válida antes de somar.",
+          "hint": "Uma linha com amount igual a abc viola o tipo do valor, mesmo com as três colunas.",
+          "criteria": [
+            "Inclui IDs únicos, campos obrigatórios e o formato decimal.",
+            "Inclui cabeçalho completo, pelo menos um registro e limites do CSV simples."
+          ],
+          "objective": "Definir o que torna uma entrada válida."
+        },
+        {
+          "slug": "decimal-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Reconhecer um campo que se divide",
+          "body": "Considere esta linha simulada recebida de outra pessoa: 1,Caderno,10,50. O contrato deste exercício usa vírgula entre campos e ponto para a parte decimal. Sua tarefa é decidir o que fazer antes do cálculo. A linha é um caso de avaliação, não uma execução da ferramenta nem uma mudança no seu arquivo original.",
+          "action": "Escolha o tratamento que mantém o contrato da tabela e torna o problema visível.",
+          "expected": "Uma decisão justificada pelo formato dos campos, antes de gerar saída.",
+          "hint": "Conte os campos separados por vírgulas e compare com o cabeçalho.",
+          "criteria": [
+            "Identifica o problema de estrutura sem inventar um valor."
+          ],
+          "check": {
+            "question": "Como tratar a linha 1,Caderno,10,50?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Somar 10 e ignorar o campo 50.",
+                "feedback": "Ignorar um campo muda o valor e esconde um problema na entrada."
+              },
+              {
+                "id": "b",
+                "text": "Aceitar 10,50 como se o separador tivesse sido configurado de outro modo.",
+                "feedback": "O contrato não mudou: a vírgula continua separando campos. Aceitar silenciosamente tornaria a leitura ambígua."
+              },
+              {
+                "id": "c",
+                "text": "Rejeitar a linha e pedir a correção para 1,Caderno,10.50.",
+                "feedback": "A correção restaura três campos e o formato decimal definido."
+              }
+            ],
+            "correct": "c",
+            "success": "Você conferiu a estrutura antes de calcular.",
+            "retry": "Compare o número de campos com id,item,amount e tente novamente."
+          },
+          "objective": "Aplicar a regra de separadores."
+        },
+        {
+          "slug": "reference-total",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Calcular o gabarito sem a IA",
+          "body": "Agora calcule o resultado esperado usando os dois registros originais. O cabeçalho não é uma venda. Para evitar confusão entre vírgulas e pontos, pense em centavos: 10.50 corresponde a 1050 e 20.00 a 2000. Este cálculo original é o gabarito que você usará depois; ainda não prova que algum programa leu o arquivo.",
+          "action": "Conte as linhas de dados, some os centavos e registre o total com duas casas.",
+          "expected": "2 registros, 3050 centavos e total 30.50, calculados antes da execução.",
+          "hint": "1050 + 2000 = 3050; divida por 100 para voltar à unidade.",
+          "criteria": [
+            "Exclui o cabeçalho da contagem.",
+            "Registra total 30.50 e explica de onde veio."
+          ],
+          "objective": "Produzir um gabarito independente."
+        },
+        {
+          "slug": "failure-fixtures",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Separar testes do arquivo válido",
+          "body": "Um teste de erro precisa ser controlado e reversível. Preserve vendas.csv e crie duas cópias na pasta: vendas-sem-coluna.csv, sem a coluna amount, e vendas-valor-invalido.csv, com abc no lugar de 10.50. Ainda não execute uma transformação. Abra cada cópia e confirme que só a mudança prevista foi feita; não use dados pessoais.",
+          "action": "Crie as duas cópias inválidas e compare cada uma com vendas.csv, que deve continuar intacto.",
+          "expected": "Duas entradas de erro identificadas e um original válido preservado.",
+          "hint": "Na cópia sem coluna, remova também os valores correspondentes; não altere o arquivo original.",
+          "criteria": [
+            "Original mantém exatamente os dois registros do exercício.",
+            "Cada cópia tem uma única falha planejada e um nome distinto."
+          ],
+          "prompt": "Preserve vendas.csv. Crie vendas-sem-coluna.csv removendo amount do cabeçalho e seus valores das linhas. Crie vendas-valor-invalido.csv alterando apenas 10.50 para abc. Não execute nem gere relatório. Mostre os três arquivos para conferência.",
+          "objective": "Preparar falhas controladas sem perder o original."
+        },
+        {
+          "slug": "review-validation",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Revisar um plano que esconde erros",
+          "body": "Exemplo original simulado: a IA propõe “se uma linha for inválida, ignore-a e grave a soma das restantes”. Isso pode gerar um relatório aparentemente correto com parte dos dados. Nosso acordo é validar a entrada inteira antes de substituir qualquer saída. Leia o plano como revisor e peça uma mudança específica, sem afirmar que houve execução.",
+          "action": "Reescreva a regra de erro para impedir soma parcial e preservar o último relatório válido.",
+          "expected": "Correção que exige diagnóstico da linha e nenhuma substituição quando houver erro.",
+          "hint": "“Melhore a validação” é vago; diga o que deve acontecer com a saída já existente.",
+          "criteria": [
+            "Proíbe ignorar silenciosamente registros inválidos.",
+            "Exige erro explicado e preservação do último relatório válido."
+          ],
+          "objective": "Rejeitar uma saída parcial disfarçada de sucesso."
+        },
+        {
+          "slug": "prepare-recovery",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Preparar uma recuperação rastreável",
+          "body": "Antes de executar, você precisa conseguir voltar aos dados corretos. Guarde uma cópia chamada vendas-valido.csv. Abra-a e confira o mesmo gabarito. Essa cópia permitirá restaurar a entrada depois dos testes. Se o original já estiver correto, registre isso: você não precisa inventar uma falha. Recuperar dados não significa mudar uma regra para aceitar qualquer valor.",
+          "action": "Salve vendas-valido.csv e registre os nomes das cópias e o gabarito que cada teste deve respeitar.",
+          "expected": "Uma cópia válida conferida e uma lista de arquivos para testar e restaurar.",
+          "hint": "As cópias inválidas devem falhar; não precisam ter um total calculado.",
+          "criteria": [
+            "Cópia válida possui 2 registros e total esperado 30.50.",
+            "Distingue arquivos válidos de testes que devem produzir erro."
+          ],
+          "objective": "Preparar a restauração dos dados."
+        },
+        {
+          "slug": "duplicate-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Decidir sobre uma identidade repetida",
+          "body": "Em outra entrada simulada, duas linhas usam id igual a 1. Os nomes dos itens e os valores são diferentes, mas o contrato exige identificação única. Você ainda está avaliando a entrada; nenhum relatório foi gerado. Escolha uma resposta que permita à pessoa corrigir o dado sem alterar silenciosamente seu significado.",
+          "action": "Escolha como o processo deve lidar com dois registros usando o mesmo id.",
+          "expected": "Decisão que respeita a identidade única e protege a saída anterior.",
+          "hint": "O programa não sabe se houve duplicação acidental ou se um ID deveria ser outro.",
+          "criteria": [
+            "Aplica a regra de IDs únicos sem excluir ou renomear dados por conta própria."
+          ],
+          "check": {
+            "question": "O que fazer com dois registros de id 1?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Informar o ID repetido, preservar o relatório válido e pedir correção da entrada.",
+                "feedback": "Isso expõe a ambiguidade e deixa a correção com quem conhece os dados."
+              },
+              {
+                "id": "b",
+                "text": "Renomear automaticamente o segundo ID para 2 e seguir.",
+                "feedback": "Essa troca pode atribuir uma identidade incorreta sem confirmação dos dados."
+              },
+              {
+                "id": "c",
+                "text": "Descartar a segunda linha e somar somente a primeira.",
+                "feedback": "Descartar silenciosamente pode perder uma venda válida e criar um total incompleto."
+              }
+            ],
+            "correct": "a",
+            "success": "Você preservou a informação e tornou o erro corrigível.",
+            "retry": "Considere quem pode decidir a identidade correta de cada registro."
+          },
+          "objective": "Aplicar a unicidade de identificação."
+        },
+        {
+          "slug": "handoff-input",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Entregar uma entrada pronta para testar",
+          "body": "Reúna o arquivo válido, as cópias de erro e o contrato. Escreva que o resultado esperado é 2 registros e total 30.50, enquanto as cópias inválidas devem gerar diagnóstico e preservar a saída válida. Registre quais arquivos você realmente abriu. Isso encerra a preparação dos dados; a próxima aula executará a transformação, sem exigir as rotas de sites ou apps.",
+          "action": "Entregue a pasta e um registro curto separando arquivos conferidos, gabarito e testes ainda não executados.",
+          "expected": "Pacote de entrada compreensível para outra pessoa, com limites de evidência claros.",
+          "hint": "Se trabalhou só na simulação, declare isso e mantenha os mesmos critérios.",
+          "criteria": [
+            "Inclui contrato, arquivo válido, cópias de teste e gabarito.",
+            "Não declara execução da transformação antes de realizá-la."
+          ],
+          "objective": "Documentar o pacote de entrada e seus limites."
+        }
+      ]
+    },
+    {
+      "slug": "automation-report",
+      "title": "Gerar um relatório repetível",
+      "summary": "Execute, compare, provoque um erro controlado e recupere sem duplicar dados.",
+      "outcome": "Relatório conferido com evidências de execução normal, repetição, erro e recuperação.",
+      "prerequisites": [
+        "automation-input"
+      ],
+      "minutes": 35,
+      "sourceRefs": [
+        "res-codex-prompting"
+      ],
+      "steps": [
+        {
+          "slug": "execution-paths",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Escolher como executar a transformação",
+          "body": "Você pode usar Python 3 para gerar report.md diretamente na pasta, ou uma página HTML local para colar o CSV, conferir a prévia e baixar o relatório. As regras dos dados são as mesmas. O script pode substituir o arquivo após validar; o navegador oferece um download e não substitui automaticamente arquivos já baixados. Escolha um caminho e identifique essa diferença.",
+          "action": "Escolha Python ou HTML e explique onde a entrada será lida e a saída ficará.",
+          "expected": "Um caminho de execução definido, com forma de salvar e comparar a saída.",
+          "hint": "Não é necessário instalar Python para seguir a alternativa HTML.",
+          "criteria": [
+            "Distingue arquivo substituído pelo script de download feito pelo navegador.",
+            "Mantém o mesmo contrato de dados nos dois caminhos."
+          ],
+          "objective": "Distinguir substituição de arquivo de download."
+        },
+        {
+          "slug": "environment",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Conferir a pasta e o ambiente",
+          "body": "Terminal é a área em que comandos são executados; seu assistente pode executá-los e mostrar a saída. Abra relatorio no Claude Desktop/Code ou Codex Desktop e peça a conferência da pasta, dos arquivos e de Python 3. Use `python3 --version`; no Windows, `py -3 --version`. Se não existir, registre o impedimento e escolha HTML, sem instalar nada automaticamente.",
+          "action": "Peça a conferência do ambiente e registre a pasta, o comando e a versão ou o impedimento.",
+          "expected": "Evidência de Python disponível, ou escolha explícita da alternativa HTML sem alegar execução Python.",
+          "hint": "“Comando não encontrado” é informação útil sobre o ambiente, não uma falha na soma.",
+          "criteria": [
+            "Pasta contém vendas.csv e as cópias de teste.",
+            "Registra saída observada da verificação ou declara que não a executou."
+          ],
+          "prompt": "Confira a pasta relatorio e liste vendas.csv e as cópias de teste. Verifique Python 3 com `python3 --version`, ou `py -3 --version` no Windows. Mostre a saída. Não instale nada e não agende. Se indisponível, proponha a alternativa HTML local.",
+          "objective": "Identificar um ambiente disponível para execução."
+        },
+        {
+          "slug": "build-transform",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Pedir uma implementação com limites",
+          "body": "Peça primeiro um plano e leia como ele valida toda a entrada, calcula o total e lida com erro. Depois autorize criar a versão escolhida. Para Python, o comando recebe entrada e saída como argumentos. Para HTML, peça área para colar CSV, prévia, mensagem de erro e download. Os pedidos abaixo descrevem trabalho a executar; não são prova de um programa pronto.",
+          "action": "Envie o pedido do seu caminho, revise o plano e autorize os arquivos após conferir as regras.",
+          "expected": "report.py ou report.html criado na pasta, com instruções de uso e sem agenda.",
+          "hint": "No caminho HTML, peça explicitamente para não enviar dados pela rede.",
+          "criteria": [
+            "Valida a entrada inteira antes de atualizar a saída.",
+            "Inclui regras de erro e repetição e preserva vendas.csv."
+          ],
+          "prompt": "Na pasta relatorio, planeje e depois crie report.py Python 3 sem pacotes externos, com entrada/saída por argumentos; sem Python, report.html para colar CSV, prévia e download. CSV: id,item,amount; IDs únicos, item não vazio, amount não negativo com ponto e até duas casas; nomes sem vírgulas/aspas. Rejeite campos extras/ausentes e tabela vazia. Valide tudo antes de contar e somar com precisão decimal. Preserve entrada e saída válida em erro; repetição não acumula. Sem rede/agendamento. Aguarde revisão do plano antes de editar; explique execução.",
+          "objective": "Transformar regras em um pedido implementável."
+        },
+        {
+          "slug": "path-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Investigar um arquivo não encontrado",
+          "body": "Exemplo original simulado: o comando informa que vendas.csv não foi encontrado. Você já sabe que uma cópia existe no computador, mas ainda não conferiu onde o comando está sendo executado. Escolha a primeira investigação útil. Esse erro acontece antes da leitura dos registros; ainda não permite concluir nada sobre a fórmula da soma.",
+          "action": "Escolha uma investigação que compare o comando ao local e ao nome real do arquivo.",
+          "expected": "Próximo passo que verifica o contexto sem alterar dados para esconder o erro.",
+          "hint": "Um nome correto em outra pasta pode continuar inacessível ao comando atual.",
+          "criteria": [
+            "Investiga pasta e caminho antes de modificar cálculo ou dados."
+          ],
+          "check": {
+            "question": "O comando diz que não encontrou vendas.csv. O que verificar primeiro?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Trocar 10.50 por 0 para simplificar o cálculo.",
+                "feedback": "O programa ainda não leu o arquivo; mudar valores não resolve seu caminho."
+              },
+              {
+                "id": "b",
+                "text": "Conferir a pasta atual, o nome exato e o caminho passado ao comando.",
+                "feedback": "Isso verifica se o comando procura o arquivo no local correto."
+              },
+              {
+                "id": "c",
+                "text": "Criar um relatório vazio e considerá-lo concluído.",
+                "feedback": "Uma saída vazia não substitui a execução com a entrada exigida."
+              }
+            ],
+            "correct": "b",
+            "success": "Você investigou o contexto da execução antes de alterar a transformação.",
+            "retry": "Separe encontrar o arquivo de interpretar seu conteúdo."
+          },
+          "objective": "Diagnosticar um caminho de arquivo incorreto."
+        },
+        {
+          "slug": "normal-run",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Executar e abrir a saída",
+          "body": "No caminho Python, execute `python3 report.py vendas.csv report.md` dentro de relatorio; no Windows use `py -3 report.py vendas.csv report.md`. No HTML, abra report.html no navegador, cole os dados exatos e gere a prévia. Se abrir falhar, peça uma prévia local disponível e registre o obstáculo. Compare 2 registros e 30.50 antes de salvar ou baixar; depois abra a saída.",
+          "action": "Execute seu caminho, abra report.md e compare contagem e total com o gabarito da aula anterior.",
+          "expected": "Saída observada com 2 registros e total 30.50, ou impedimento descrito com precisão.",
+          "hint": "Confirme também que vendas.csv continua com as três linhas originais.",
+          "criteria": [
+            "Abre a saída e compara dois valores, sem depender só da mensagem da IA.",
+            "Distingue resultado esperado de execução realmente observada."
+          ],
+          "objective": "Comparar uma saída real com o gabarito."
+        },
+        {
+          "slug": "repeat-run",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Repetir sem acumular o resultado",
+          "body": "Execute de novo com a mesma entrada. A contagem deve continuar 2 e o total 30.50; o relatório não deve ganhar uma segunda cópia dos registros. No Python, compare o arquivo substituído. No HTML, compare a prévia antes de baixar: o navegador pode dar outro nome ao download, e isso não significa que o programa atualizou o arquivo anterior.",
+          "action": "Repita a transformação e compare a contagem, o total e as linhas com a primeira saída.",
+          "expected": "O mesmo resultado de conteúdo, sem registros ou totais acumulados.",
+          "hint": "Um arquivo chamado report (1).md pode ser um novo download; abra-o antes de escolher a versão.",
+          "criteria": [
+            "Segunda execução mantém 2 registros e total 30.50.",
+            "Identifica qual arquivo ou prévia foi comparado."
+          ],
+          "objective": "Verificar repetição sem duplicação."
+        },
+        {
+          "slug": "error-run",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Testar erro sem perder a saída válida",
+          "body": "Use primeiro vendas-sem-coluna.csv e depois vendas-valor-invalido.csv, preservando vendas.csv. No Python, mude somente o argumento de entrada e mantenha report.md como saída. No HTML, cole uma cópia inválida por vez. Cada tentativa deve mostrar o problema e manter o último resultado válido; não aceite soma parcial. No navegador, mantenha a aba aberta e não baixe uma substituição após erro.",
+          "action": "Execute as duas entradas inválidas e compare a saída válida antes e depois de cada tentativa.",
+          "expected": "Dois erros visíveis, sem perda do relatório válido nem atualização com soma parcial.",
+          "hint": "Se o programa sobrescrever a saída no erro, registre o comportamento antes de pedir correção.",
+          "criteria": [
+            "Coluna ausente e valor abc produzem diagnóstico.",
+            "Arquivo Python ou prévia HTML válida permanece preservado."
+          ],
+          "objective": "Comprovar a proteção da saída no erro."
+        },
+        {
+          "slug": "recover-retest",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Corrigir e comprovar a recuperação",
+          "body": "Se um teste falhou, envie entrada, passos, resultado e regra esperada; peça uma correção restrita e repita normal, repetição e erro. Se todos passaram, registre isso. Depois crie uma variação válida com 11.50 no lugar de 10.50: espere 2 registros e 31.50. Por fim restaure a entrada original e confira 30.50; assim você testa atualização e retorno.",
+          "action": "Registre falhas reais ou aprovação, teste a variação 31.50 e restaure o caso original com 30.50.",
+          "expected": "Recuperação conferida e relatório final correspondente aos dados originais.",
+          "hint": "Não invente uma falha: a variação válida já permite observar uma mudança de resultado.",
+          "criteria": [
+            "Variação mantém 2 registros e muda somente o total esperado para 31.50.",
+            "Entrada original restaurada produz novamente 30.50."
+          ],
+          "prompt": "Ao executar [entrada e passos], observei [resultado real]; esperava [regra do contrato]. Corrija apenas a causa, preserve as regras já aprovadas e explique o que mudou. Depois repita os testes normal, repetição e erro. Não declare sucesso sem mostrar os resultados.",
+          "objective": "Testar mudança válida e retorno ao original."
+        },
+        {
+          "slug": "download-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Separar prévia de arquivo baixado",
+          "body": "Exemplo original simulado: no caminho HTML, você gerou a prévia de 31.50, mas o arquivo report.md aberto no editor ainda contém 30.50. A página não recebeu autorização para substituir arquivos do disco. Escolha como identificar a entrega atual. Não há evidência de erro no cálculo apenas porque um arquivo antigo continua aberto.",
+          "action": "Escolha a ação que confirma o conteúdo da entrega sem presumir sobrescrita pelo navegador.",
+          "expected": "Um arquivo identificado e conferido como a versão que será entregue.",
+          "hint": "A prévia e um arquivo já baixado são objetos diferentes.",
+          "criteria": [
+            "Exige abrir o download atual e conferir seu conteúdo."
+          ],
+          "check": {
+            "question": "A prévia HTML mudou, mas report.md antigo não. O que fazer?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Declarar que o arquivo antigo foi atualizado automaticamente.",
+                "feedback": "Uma nova prévia não modifica por si só um arquivo que já está no disco."
+              },
+              {
+                "id": "b",
+                "text": "Somar manualmente os dois relatórios para juntar as execuções.",
+                "feedback": "Isso duplicaria dados de versões que deveriam substituir uma à outra."
+              },
+              {
+                "id": "c",
+                "text": "Baixar a versão atual, conferir nome e conteúdo, e escolher conscientemente o arquivo da entrega.",
+                "feedback": "Você verifica o artefato efetivo sem confundir prévia com substituição de arquivo."
+              }
+            ],
+            "correct": "c",
+            "success": "Você distinguiu o resultado na página do arquivo entregue.",
+            "retry": "Pense em qual arquivo outra pessoa receberá e abrirá."
+          },
+          "objective": "Identificar o arquivo efetivamente entregue."
+        },
+        {
+          "slug": "deliver-report",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Entregar um processo que outra pessoa repete",
+          "body": "Reúna vendas.csv, o programa escolhido e report.md. Acrescente instruções para abrir ou executar, a pasta usada e os resultados dos testes normal, repetição, erro e recuperação. Explique os limites: dados fictícios, formato CSV simples e nenhuma agenda ou mensagem enviada. Se algo não executou, registre o motivo. Uma entrega útil permite repetir o processo e reconhecer falhas.",
+          "action": "Prepare uma nota de entrega com arquivos, comando ou fluxo HTML, gabarito e evidências dos quatro testes.",
+          "expected": "Pacote repetível com resultado conferido e limitações explícitas, pronto para discutir uma agenda.",
+          "hint": "No HTML, explique onde colar os dados e como selecionar o download certo.",
+          "criteria": [
+            "Instruções permitem repetir o caminho escolhido.",
+            "Testes e impedimentos são relatados sem execução presumida."
+          ],
+          "objective": "Documentar uma execução repetível."
+        }
+      ]
+    },
+    {
+      "slug": "automation-schedule",
+      "title": "Agendar com controle",
+      "summary": "Planeje horário, contexto e acompanhamento sem confundir configuração com execução.",
+      "outcome": "Agenda opcional ensaiada, observada e pausada, ou análise simulada com impedimentos e plano de ativação.",
+      "prerequisites": [
+        "automation-report"
+      ],
+      "minutes": 30,
+      "sourceRefs": [
+        "res-claude-local-schedule",
+        "res-codex-local-schedule"
+      ],
+      "steps": [
+        {
+          "slug": "schedule-boundary",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Uma agenda repete um processo",
+          "body": "Uma agenda decide quando tentar executar; ela não corrige um relatório errado. Primeiro prepare um rascunho. Se os quatro testes manuais passaram, Python está disponível e sua conta permite, você poderá ativar uma tarefa de treino acompanhada. Caso contrário, use a análise simulada e declare que não ativou. Configuração salva e execução manual não provam um disparo agendado.",
+          "action": "Explique a diferença entre uma configuração, uma execução manual e uma execução disparada pelo horário.",
+          "expected": "Três situações distintas, cada uma com a evidência que ainda precisaria mostrar.",
+          "hint": "Um horário escrito é uma intenção; uma saída conferida após o disparo é evidência de execução.",
+          "criteria": [
+            "Distingue rascunho, teste manual e disparo observado.",
+            "Só considera ativação após testes aprovados, Python e acesso disponíveis."
+          ],
+          "objective": "Distinguir plano, teste manual e disparo agendado."
+        },
+        {
+          "slug": "manual-gate",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Decidir se o processo está pronto",
+          "body": "Use o registro da aula anterior como revisão, sem executar uma agenda. Procure evidências de total correto, repetição sem duplicar, erro preservando saída e recuperação. Se um item estiver ausente, marque “pendente” e escreva como testá-lo. Isso é uma decisão sobre prontidão, não uma exigência de inventar testes aprovados. Na simulação, aceite somente o que o cenário descreve.",
+          "action": "Marque os quatro testes como comprovado ou pendente e decida se falta trabalho antes de agendar.",
+          "expected": "Decisão sustentada por evidências específicas, com próxima ação para qualquer teste pendente.",
+          "hint": "“A IA disse pronto” não informa se a saída continuou intacta após um erro.",
+          "criteria": [
+            "Revisa normal, repetição, erro e recuperação.",
+            "Mantém pendências visíveis e não afirma agenda validada."
+          ],
+          "objective": "Avaliar a prontidão com quatro evidências."
+        },
+        {
+          "slug": "durable-instructions",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Escrever instruções que sobrevivem à conversa",
+          "body": "Uma execução futura pode não ter todas as lembranças da conversa atual. Escreva entrada, saída, pasta, regra de erro e limite de ações no próprio rascunho. Para este caso, use o caminho Python já testado; uma página que exige colar e baixar manualmente não se torna desassistida só por receber um horário. Não peça criação da agenda nesta atividade.",
+          "action": "Adapte o rascunho abaixo com a pasta real e registre como localizar resultados e erros.",
+          "expected": "Instruções autossuficientes que executariam um programa conhecido, sem alterar o escopo.",
+          "hint": "Se você só testou HTML, registre que ainda falta validar um caminho adequado para execução desassistida.",
+          "criteria": [
+            "Especifica pasta, entrada, saída e programa previamente testado.",
+            "Proíbe envio e mantém relatório válido quando houver erro."
+          ],
+          "prompt": "Prepare apenas um rascunho, sem criar agenda: na pasta [caminho de relatorio], execute o comando Python já testado com vendas.csv e report.md. Valide todo o CSV; erro deve ser relatado e preservar a saída válida. Não envie dados nem altere o programa. Registre horário, entrada usada, resultado e caminho da saída. Se pasta, ambiente ou permissão faltarem, informe o impedimento sem declarar sucesso.",
+          "objective": "Escrever instruções completas para uso futuro."
+        },
+        {
+          "slug": "availability-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Distinguir horário de disponibilidade",
+          "body": "Considere este cenário simulado: a tarefa depende de arquivos locais, está marcada para 09:00 e o computador ficará desligado. O programa passou nos testes manuais. Você precisa decidir o que essa informação permite prometer. O cenário não inclui um serviço remoto configurado nem prova de execução posterior; não suponha que o arquivo será acessível na nuvem.",
+          "action": "Escolha a conclusão compatível com os recursos necessários para acessar os arquivos locais.",
+          "expected": "Uma expectativa de execução que considera disponibilidade do computador, aplicativo e pasta.",
+          "hint": "Teste correto da transformação não torna o computador disponível no horário.",
+          "criteria": [
+            "Distingue disponibilidade local de sucesso nos testes de conteúdo."
+          ],
+          "check": {
+            "question": "O que é correto dizer sobre a execução das 09:00?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Ela não está garantida com a máquina desligada; é preciso revisar as condições ou outro modo de execução.",
+                "feedback": "O caminho local depende do computador, do aplicativo e dos arquivos disponíveis."
+              },
+              {
+                "id": "b",
+                "text": "Ela ocorrerá normalmente porque o programa passou no teste manual.",
+                "feedback": "O teste demonstra o processo naquele momento, não a disponibilidade futura da máquina."
+              },
+              {
+                "id": "c",
+                "text": "Uma tarefa local vira remota automaticamente quando o computador desliga.",
+                "feedback": "O cenário não criou uma rotina remota nem disponibilizou os arquivos nesse ambiente."
+              }
+            ],
+            "correct": "a",
+            "success": "Você considerou o ambiente necessário além da regra de horário.",
+            "retry": "Pergunte onde o programa e o arquivo precisam existir quando a tarefa disparar."
+          },
+          "objective": "Relacionar execução local à disponibilidade."
+        },
+        {
+          "slug": "schedule-fields",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Definir horário, fuso e destino",
+          "body": "Prepare primeiro a ficha: pasta relatorio, saída report.md, horário próximo que a ferramenta aceite e fuso explícito, por exemplo America/Sao_Paulo. Reserve tempo para acompanhar e pausar. Confirme computador acordado, aplicativo aberto, pasta disponível e os quatro testes aprovados com Python. Se faltar uma condição ou acesso, mantenha só o rascunho e registre o motivo; não prometa execução pontual.",
+          "action": "Confira a ficha e os pré-requisitos; escolha ativação acompanhada ou simulação e registre a decisão.",
+          "expected": "Horário, fuso, pasta e condições conferidos, com uma decisão explícita sobre ativação.",
+          "hint": "Use um horário próximo suportado pela interface; o início pode atrasar, então planeje acompanhar o histórico.",
+          "criteria": [
+            "Registra horário, fuso, pasta e condições locais.",
+            "Ativação exige quatro testes aprovados, Python e acesso; ausência mantém simulação."
+          ],
+          "objective": "Decidir com evidências se é possível ativar e acompanhar."
+        },
+        {
+          "slug": "tool-conditions",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Ensaiar antes de ativar o horário",
+          "body": "Com as condições aprovadas, use apenas a tarefa de treino desta pasta. No Claude Desktop/Code, crie a rotina local com Manual e use Run now; revise pasta, instruções e permissões antes de salvar. No Codex, execute primeiro o pedido completo em conversa comum com o projeto local. Compare a saída com 2 registros e 30.50. Sem acesso, analise esse ensaio como simulação, sem alegar execução.",
+          "action": "Faça o ensaio da sua ferramenta e registre saída e permissões, ou marque o caminho simulado.",
+          "expected": "Ensaio manual conferido antes de permitir recorrência, ou impedimento explicitamente registrado.",
+          "hint": "Não amplie todas as permissões para evitar um bloqueio; confira o acesso necessário à pasta e ao comando.",
+          "criteria": [
+            "Confere pasta, instruções e permissões do exercício antes da ativação.",
+            "Abre saída do ensaio e compara 2 e 30.50, ou declara simulação."
+          ],
+          "objective": "Validar o pedido completo no contexto escolhido antes da agenda.",
+          "variants": {
+            "claude": "Em Code → Routines → New routine → Local, selecione a pasta relatorio, confira o pedido e escolha Manual para o primeiro ensaio. Salve somente a tarefa de treino e use Run now. Abra o resultado, confira o relatório e responda a permissões específicas quando necessário. Se a função não estiver disponível, registre o impedimento.",
+            "codex": "No projeto local relatorio, envie o pedido completo em conversa comum e confira report.md. Após o ensaio aprovado, peça uma tarefa de treino com o trabalho, horário/fuso e destino definidos. Revise a configuração exibida antes de ativar. A documentação reúne tarefas e resultados em Scheduled; confirme os nomes disponíveis na sua versão."
+          },
+          "prompt": "Execute uma vez agora, sem criar agenda, na pasta local relatorio. Use somente o comando que já testei nesta máquina: `python3 report.py vendas.csv report.md` ou, no Windows, `py -3 report.py vendas.csv report.md`. Não instale dependências nem altere os arquivos de entrada ou o programa. A entrada de treino contém exatamente id,item,amount; 1,Caderno,10.50; 2,Curso,20.00. Abra report.md e confira 2 registros e total 30.50. Se houver erro, informe o diagnóstico e preserve o último relatório válido. Não envie dados nem publique resultados."
+        },
+        {
+          "slug": "history-triage",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Observar o primeiro disparo",
+          "body": "Depois do ensaio aprovado, configure o horário próximo conferido e acompanhe a primeira execução pelo histórico. Registre horário previsto e início real: pode haver atraso. Abra a saída, confira 2 registros e 30.50 e identifique a entrada usada. Se nada iniciar, confira aplicativo, computador, pasta e motivo no histórico; não confunda isso com erro na soma. Sem acesso, analise este cenário simulado: 09:00 não iniciou; às 09:20, uma execução manual produziu 2 registros e 30.50. Isso comprova o disparo agendado?",
+          "action": "Observe um disparo e registre horário e saída, ou analise o cenário sem declarar uma execução real.",
+          "expected": "Evidência de um disparo e saída conferida, ou diagnóstico honesto de ausência ou simulação.",
+          "hint": "Cenário simulado: 09:00 não iniciou; 09:20 execução manual produziu 30.50. Isso ainda não comprova o disparo das 09:00.",
+          "criteria": [
+            "Distingue disparo agendado, execução manual e ausência de execução.",
+            "Registra horários e confere entrada e saída, ou marca a evidência pendente."
+          ],
+          "objective": "Conferir disparo e resultado sem garantir pontualidade."
+        },
+        {
+          "slug": "pause-rehearsal",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Pausar a tarefa de treino",
+          "body": "Após observar uma execução, pause a tarefa de treino para evitar repetições desnecessárias. No Claude, abra os detalhes e altere Active para Paused; no Codex, peça a pausa dessa tarefa e confira o estado em Scheduled. Preserve arquivos e histórico. Se houver uma execução em andamento, verifique-a separadamente: pausar próximas execuções não garante interromper a atual. Na simulação, escreva a ação e a confirmação esperada.",
+          "action": "Pause apenas a tarefa deste exercício, confira o estado e registre como trataria uma execução ainda em andamento.",
+          "expected": "Tarefa de treino confirmada como pausada, ou procedimento simulado explicitamente identificado.",
+          "hint": "Se algo falhar antes do primeiro disparo, também pause a tarefa criada antes de encerrar o exercício.",
+          "criteria": [
+            "Confirma pausa da tarefa correta e verifica execuções em andamento.",
+            "Preserva evidências; retomar exigirá novo teste após mudanças."
+          ],
+          "objective": "Interromper novas execuções e confirmar o estado da tarefa."
+        },
+        {
+          "slug": "change-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Revalidar quando a entrada muda",
+          "body": "Em um cenário simulado, alguém muda a coluna amount para valor. A tarefa foi configurada anteriormente e o último relatório válido ainda existe. Agora você deve decidir como manter o processo controlado. Não houve aprovação de um novo contrato nem teste da transformação com esse formato; o relatório antigo não representa automaticamente os dados novos.",
+          "action": "Escolha uma resposta que permita corrigir o contrato e avaliar novamente antes de confiar na agenda.",
+          "expected": "Uma ação de manutenção que evita repetir falhas ou publicar uma saída não conferida.",
+          "hint": "Um arquivo antigo preservado é uma proteção; não é prova de atualização bem-sucedida.",
+          "criteria": [
+            "Pede novo teste depois de mudar contrato ou programa."
+          ],
+          "check": {
+            "question": "O que fazer depois da troca de amount para valor?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Continuar a agenda e tratar o relatório antigo como atualizado.",
+                "feedback": "A saída antiga não confirma que a nova entrada foi processada."
+              },
+              {
+                "id": "b",
+                "text": "Pausar novas execuções, alinhar o contrato, testar manualmente e só então considerar retomar.",
+                "feedback": "Isso limita falhas repetidas e exige evidência para a nova versão do processo."
+              },
+              {
+                "id": "c",
+                "text": "Apagar o relatório válido para obrigar o sistema a produzir outro.",
+                "feedback": "Excluir a saída remove uma proteção e não corrige a incompatibilidade da entrada."
+              }
+            ],
+            "correct": "b",
+            "success": "Você tratou a mudança como uma nova condição a validar.",
+            "retry": "Considere o que a alteração do nome da coluna mudou na leitura dos dados."
+          },
+          "objective": "Reavaliar o processo após mudança do contrato."
+        },
+        {
+          "slug": "schedule-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Entregar o registro da agenda",
+          "body": "Reúna instruções, horário/fuso, condições, histórico e estado final. Se ativou, registre o ensaio manual, o disparo observado ou não ocorrido, os valores da saída e a confirmação de pausa. Se trabalhou na simulação, declare “agenda não ativada” e liste os impedimentos. Uma configuração salva não substitui esses registros. Para uso contínuo futuro, revise as primeiras saídas e reteste após mudanças.",
+          "action": "Entregue o registro com evidências de ativação e pausa, ou a análise simulada com condições pendentes.",
+          "expected": "Entrega que distingue planejamento, execução observada, falhas e estado final da tarefa.",
+          "hint": "Inclua onde outra pessoa encontrará a saída e o histórico, sem expor dados privados da conta.",
+          "criteria": [
+            "Relata separadamente ensaio, disparo, saída e pausa quando executados.",
+            "Quando simulada, declara agenda não ativada e informa condições pendentes."
+          ],
+          "objective": "Documentar o que ocorreu e o que permanece pendente."
+        }
+      ]
+    }
+  ]
+}

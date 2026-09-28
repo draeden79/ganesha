@@ -1,0 +1,642 @@
+{
+  "lessons": [
+    {
+      "slug": "automation-input",
+      "title": "Prepare data for automation",
+      "summary": "Define the input, its rules and the expected result before generating a report.",
+      "outcome": "A folder with vendas.csv, test copies and a verifiable data contract.",
+      "prerequisites": [
+        "verification"
+      ],
+      "minutes": 25,
+      "sourceRefs": [],
+      "steps": [
+        {
+          "slug": "pipeline",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Input, transformation and output",
+          "body": "Automation is a sequence you can repeat. Here, the input is a table of fictional sales; the transformation counts records and adds their amounts; the output is report.md, a text file. First we will define the data and check the result by hand. No script has run, no schedule exists and no report has been sent.",
+          "action": "Describe this exercise’s input, transformation and output in three sentences of your own.",
+          "expected": "A map linking vendas.csv to the count, the sum and report.md.",
+          "hint": "The output is a file; sending that file to someone would be another action.",
+          "criteria": [
+            "Names vendas.csv as input and report.md as output.",
+            "Includes counting records and summing amount, without sending anything."
+          ],
+          "objective": "Separate the process’s three components."
+        },
+        {
+          "slug": "create-csv",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Create the training table",
+          "body": "CSV is a table written as text: the first line names the columns and each following line is a record. Create the relatorio folder and select it in Claude Desktop/Code or Codex Desktop. Request a UTF-8 text file named vendas.csv with exactly the data below. Open it in the editor and check it; a creation message is not enough.",
+          "action": "Create vendas.csv in relatorio, open it and compare its three lines with the example.",
+          "expected": "A file with a header and two records, without an extra .txt extension.",
+          "hint": "If it appears as vendas.csv.txt, request the correct name and open it again.",
+          "criteria": [
+            "The id,item,amount header and two records match the example.",
+            "The file is in the selected folder and was opened for inspection."
+          ],
+          "prompt": "In relatorio, create only vendas.csv as UTF-8 text with the content below, preserving names and decimal points. Do not generate a report, install anything or schedule a task. Show the file path so I can open it.\n\nid,item,amount\n1,Caderno,10.50\n2,Curso,20.00",
+          "code": "id,item,amount\n1,Caderno,10.50\n2,Curso,20.00",
+          "objective": "Create and inspect a literal CSV file."
+        },
+        {
+          "slug": "data-contract",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Write the data contract",
+          "body": "In this original example, the contract is an agreement about what to accept. id identifies a record and cannot repeat; item is a nonempty name; amount is nonnegative, with a decimal point and at most two decimal places. To use the same dataset in both alternatives, omit commas and quotation marks inside names. Incomplete headers and tables without records must cause an error.",
+          "action": "Write these rules as a list and connect each rule to a column or the table.",
+          "expected": "A contract that lets you decide whether input is valid before adding amounts.",
+          "hint": "A row with amount equal to abc violates the value type even with all three columns.",
+          "criteria": [
+            "Includes unique IDs, required fields and the decimal format.",
+            "Includes the complete header, at least one record and the limits of this simple CSV."
+          ],
+          "objective": "Define what makes input valid."
+        },
+        {
+          "slug": "decimal-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Recognize a field that splits",
+          "body": "Consider this simulated line received from someone else: 1,Caderno,10,50. This exercise’s contract uses commas between fields and a point for decimals. Decide what to do before calculating. The line is an assessment case, not an execution by the tool or a change to your original file.",
+          "action": "Choose the handling that maintains the table contract and makes the problem visible.",
+          "expected": "A decision justified by field format before any output is generated.",
+          "hint": "Count the comma-separated fields and compare them with the header.",
+          "criteria": [
+            "Identifies the structural problem without inventing a value."
+          ],
+          "check": {
+            "question": "How should you handle the line 1,Caderno,10,50?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Add 10 and ignore the 50 field.",
+                "feedback": "Ignoring a field changes the value and hides an input problem."
+              },
+              {
+                "id": "b",
+                "text": "Accept 10,50 as if a different separator had been configured.",
+                "feedback": "The contract has not changed: commas still separate fields. Silent acceptance would make the reading ambiguous."
+              },
+              {
+                "id": "c",
+                "text": "Reject the line and request correction to 1,Caderno,10.50.",
+                "feedback": "This restores three fields and the defined decimal format."
+              }
+            ],
+            "correct": "c",
+            "success": "You checked structure before calculating.",
+            "retry": "Compare the field count with id,item,amount and try again."
+          },
+          "objective": "Apply the separator rule."
+        },
+        {
+          "slug": "reference-total",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Calculate the reference without AI",
+          "body": "Now calculate the expected result using the two original records. The header is not a sale. To avoid confusion between commas and points, think in hundredths: 10.50 equals 1050 hundredths and 20.00 equals 2000. This original calculation is the reference you will use later; it does not yet prove that any program read the file.",
+          "action": "Count the data lines, add the hundredths and record the total with two decimal places.",
+          "expected": "2 records, 3050 hundredths and a total of 30.50, calculated before execution.",
+          "hint": "1050 + 2000 = 3050; divide by 100 to return to the unit.",
+          "criteria": [
+            "Excludes the header from the count.",
+            "Records a total of 30.50 and explains its origin."
+          ],
+          "objective": "Produce an independent reference result."
+        },
+        {
+          "slug": "failure-fixtures",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Separate tests from valid data",
+          "body": "An error test should be controlled and reversible. Preserve vendas.csv and create two copies in the folder: vendas-sem-coluna.csv without the amount column, and vendas-valor-invalido.csv with abc replacing 10.50. Do not run a transformation yet. Open each copy and confirm that only the planned change was made; do not use personal data.",
+          "action": "Create the two invalid copies and compare each with vendas.csv, which must remain unchanged.",
+          "expected": "Two identified error inputs and a preserved valid original.",
+          "hint": "In the copy without a column, remove the corresponding values too; do not change the original.",
+          "criteria": [
+            "The original retains exactly the exercise’s two records.",
+            "Each copy has one planned fault and a distinct name."
+          ],
+          "prompt": "Preserve vendas.csv. Create vendas-sem-coluna.csv by removing amount from the header and its values from the rows. Create vendas-valor-invalido.csv by changing only 10.50 to abc. Do not execute or generate a report. Show all three files for inspection.",
+          "objective": "Prepare controlled faults without losing the original."
+        },
+        {
+          "slug": "review-validation",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Review a plan that hides errors",
+          "body": "Original simulated example: the AI proposes “if a row is invalid, skip it and save the sum of the rest.” That can produce a seemingly correct report containing only some data. Our agreement is to validate all input before replacing any output. Read the plan as a reviewer and request a specific change without claiming execution occurred.",
+          "action": "Rewrite the error rule to prevent partial totals and preserve the last valid report.",
+          "expected": "A correction requiring a row diagnosis and no replacement whenever an error occurs.",
+          "hint": "“Improve validation” is vague; say what must happen to an existing output.",
+          "criteria": [
+            "Forbids silently skipping invalid records.",
+            "Requires an explained error and preservation of the last valid report."
+          ],
+          "objective": "Reject partial output disguised as success."
+        },
+        {
+          "slug": "prepare-recovery",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Prepare a traceable recovery",
+          "body": "Before execution, you need a way back to correct data. Keep a copy named vendas-valido.csv. Open it and check the same reference result. This copy will let you restore input after the tests. If the original is already correct, record that: you need not invent a failure. Recovering data does not mean changing a rule to accept any value.",
+          "action": "Save vendas-valido.csv and record the copy names and reference result each test must respect.",
+          "expected": "A checked valid copy and a list of files for testing and restoration.",
+          "hint": "Invalid copies should fail; they do not need a calculated total.",
+          "criteria": [
+            "The valid copy has 2 records and an expected total of 30.50.",
+            "Distinguishes valid files from tests that should produce errors."
+          ],
+          "objective": "Prepare data restoration."
+        },
+        {
+          "slug": "duplicate-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Decide about a repeated identity",
+          "body": "In another simulated input, two rows use id equal to 1. The item names and amounts differ, but the contract requires unique identification. You are still evaluating input; no report has been generated. Choose a response that lets someone correct the data without silently changing its meaning.",
+          "action": "Choose how the process should handle two records using the same id.",
+          "expected": "A decision that respects unique identity and protects the previous output.",
+          "hint": "The program does not know whether a row was duplicated accidentally or an ID should differ.",
+          "criteria": [
+            "Applies unique-ID rules without independently deleting or renaming data."
+          ],
+          "check": {
+            "question": "What should happen with two records using id 1?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Report the repeated ID, preserve the valid report and request corrected input.",
+                "feedback": "This exposes the ambiguity and leaves correction to someone who knows the data."
+              },
+              {
+                "id": "b",
+                "text": "Automatically rename the second ID to 2 and continue.",
+                "feedback": "This may assign the wrong identity without confirmation of the data."
+              },
+              {
+                "id": "c",
+                "text": "Discard the second row and sum only the first.",
+                "feedback": "Silent removal may lose a valid sale and produce an incomplete total."
+              }
+            ],
+            "correct": "a",
+            "success": "You preserved information and made the error correctable.",
+            "retry": "Consider who can decide the correct identity of each record."
+          },
+          "objective": "Apply unique identification."
+        },
+        {
+          "slug": "handoff-input",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Deliver input ready for testing",
+          "body": "Gather the valid file, error copies and contract. Write that the expected result is 2 records and total 30.50, while invalid copies must produce a diagnosis and preserve valid output. Record which files you actually opened. This completes data preparation; the next lesson runs the transformation without requiring the site or app routes.",
+          "action": "Deliver the folder and a short record separating checked files, reference results and tests not yet run.",
+          "expected": "An input package another person can understand, with clear evidence limits.",
+          "hint": "If you worked only in simulation, say so and retain the same criteria.",
+          "criteria": [
+            "Includes the contract, valid file, test copies and reference result.",
+            "Does not claim transformation execution before performing it."
+          ],
+          "objective": "Document the input package and its limits."
+        }
+      ]
+    },
+    {
+      "slug": "automation-report",
+      "title": "Generate a repeatable report",
+      "summary": "Run, compare, trigger a controlled error and recover without duplicating data.",
+      "outcome": "A checked report with evidence of normal execution, repetition, error handling and recovery.",
+      "prerequisites": [
+        "automation-input"
+      ],
+      "minutes": 35,
+      "sourceRefs": [
+        "res-codex-prompting"
+      ],
+      "steps": [
+        {
+          "slug": "execution-paths",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Choose how to run the transformation",
+          "body": "You can use Python 3 to generate report.md directly in the folder, or a local HTML page to paste CSV, inspect a preview and download the report. The data rules are the same. The script can replace the file after validation; the browser offers a download and does not automatically replace previously downloaded files. Choose a route and identify this distinction.",
+          "action": "Choose Python or HTML and explain where input will be read and output will go.",
+          "expected": "A defined execution route with a way to save and compare output.",
+          "hint": "You do not need to install Python to use the HTML alternative.",
+          "criteria": [
+            "Distinguishes a file replaced by the script from a browser download.",
+            "Keeps the same data contract in both routes."
+          ],
+          "objective": "Distinguish file replacement from downloading."
+        },
+        {
+          "slug": "environment",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Check the folder and environment",
+          "body": "A terminal is the area where commands run; your assistant can run them and show output. Open relatorio in Claude Desktop/Code or Codex Desktop and request checks of the folder, files and Python 3. Use `python3 --version`; on Windows use `py -3 --version`. If unavailable, record the obstacle and choose HTML without installing anything automatically.",
+          "action": "Request an environment check and record the folder, command and version or obstacle.",
+          "expected": "Evidence of available Python, or an explicit HTML choice without claiming Python execution.",
+          "hint": "“Command not found” is useful environment information, not a fault in the sum.",
+          "criteria": [
+            "The folder contains vendas.csv and the test copies.",
+            "Records observed check output or states that the check was not run."
+          ],
+          "prompt": "Check the relatorio folder and list vendas.csv and the test copies. Check Python 3 with `python3 --version`, or `py -3 --version` on Windows. Show the output. Do not install or schedule anything. If unavailable, propose the local HTML alternative.",
+          "objective": "Identify an available execution environment."
+        },
+        {
+          "slug": "build-transform",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Request an implementation with boundaries",
+          "body": "Ask for a plan first and read how it validates all input, calculates the total and handles errors. Then authorize creation of your chosen version. For Python, the command takes input and output arguments. For HTML, request a CSV paste area, preview, error message and download. These requests describe work to perform; they are not proof of a finished program.",
+          "action": "Send your route’s request, review the plan and authorize the files after checking the rules.",
+          "expected": "report.py or report.html created in the folder, with usage instructions and no schedule.",
+          "hint": "For HTML, explicitly request that no data be sent over the network.",
+          "criteria": [
+            "Validates all input before updating output.",
+            "Includes error and repetition rules and preserves vendas.csv."
+          ],
+          "prompt": "In relatorio, plan then create report.py in Python 3 without external packages, taking input/output arguments; without Python, use report.html with CSV pasting, preview and download. CSV: id,item,amount; unique IDs, nonempty item, nonnegative amount with decimal point and at most two decimals; names without commas/quotes. Reject extra/missing fields and empty tables. Validate everything before counting and decimal summation. Preserve input and valid output on error; repetition never accumulates. No network/scheduling. Wait for plan review before editing; explain execution.",
+          "objective": "Turn rules into an implementable request."
+        },
+        {
+          "slug": "path-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Investigate a file not found",
+          "body": "Original simulated example: the command says vendas.csv was not found. You know a copy exists on the computer but have not checked where the command is running. Choose a useful first investigation. This error occurs before reading the records; it does not yet support any conclusion about the addition formula.",
+          "action": "Choose an investigation that compares the command with the file’s actual location and name.",
+          "expected": "A next step that checks context without changing data to hide the error.",
+          "hint": "A correct filename in another folder may still be unavailable to the current command.",
+          "criteria": [
+            "Investigates folder and path before modifying calculations or data."
+          ],
+          "check": {
+            "question": "The command cannot find vendas.csv. What should you check first?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Replace 10.50 with 0 to simplify the calculation.",
+                "feedback": "The program has not read the file yet; changing values cannot fix its path."
+              },
+              {
+                "id": "b",
+                "text": "Check the current folder, exact filename and path passed to the command.",
+                "feedback": "This checks whether the command is looking for the file in the correct place."
+              },
+              {
+                "id": "c",
+                "text": "Create an empty report and consider the task complete.",
+                "feedback": "Empty output does not replace execution with the required input."
+              }
+            ],
+            "correct": "b",
+            "success": "You investigated execution context before changing the transformation.",
+            "retry": "Separate finding a file from interpreting its contents."
+          },
+          "objective": "Diagnose an incorrect file path."
+        },
+        {
+          "slug": "normal-run",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Run and open the output",
+          "body": "For Python, run `python3 report.py vendas.csv report.md` inside relatorio; on Windows use `py -3 report.py vendas.csv report.md`. For HTML, open report.html in the browser, paste the exact data and generate the preview. If opening fails, request an available local preview and record the obstacle. Compare 2 records and 30.50 before saving or downloading, then open the output.",
+          "action": "Run your chosen route, open report.md and compare its count and total with the previous lesson’s reference.",
+          "expected": "Observed output with 2 records and total 30.50, or a precisely described obstacle.",
+          "hint": "Also confirm that vendas.csv still contains the three original lines.",
+          "criteria": [
+            "Opens output and compares two values rather than relying only on the AI message.",
+            "Distinguishes expected results from execution actually observed."
+          ],
+          "objective": "Compare actual output with the reference."
+        },
+        {
+          "slug": "repeat-run",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Repeat without accumulating results",
+          "body": "Run again with the same input. The count must remain 2 and the total 30.50; the report must not gain a second copy of the records. In Python, compare the replaced file. In HTML, compare the preview before downloading: the browser may give a download another name, which does not mean the program updated the previous file.",
+          "action": "Repeat the transformation and compare its count, total and rows with the first output.",
+          "expected": "The same content result without accumulated records or totals.",
+          "hint": "A file called report (1).md may be a new download; open it before choosing a version.",
+          "criteria": [
+            "The second run keeps 2 records and total 30.50.",
+            "Identifies the file or preview that was compared."
+          ],
+          "objective": "Verify repetition without duplication."
+        },
+        {
+          "slug": "error-run",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Test errors without losing valid output",
+          "body": "First use vendas-sem-coluna.csv, then vendas-valor-invalido.csv, preserving vendas.csv. In Python, change only the input argument and keep report.md as output. In HTML, paste one invalid copy at a time. Each attempt must show the problem and keep the last valid result; do not accept a partial sum. In the browser, keep the tab open and do not download a replacement after an error.",
+          "action": "Run both invalid inputs and compare the valid output before and after each attempt.",
+          "expected": "Two visible errors without losing the valid report or replacing it with a partial sum.",
+          "hint": "If the program overwrites output on error, record the behavior before requesting a fix.",
+          "criteria": [
+            "The missing column and abc value produce a diagnosis.",
+            "The valid Python file or HTML preview remains preserved."
+          ],
+          "objective": "Demonstrate output protection on error."
+        },
+        {
+          "slug": "recover-retest",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Correct and demonstrate recovery",
+          "body": "If a test failed, send the input, steps, result and expected rule; request a narrow correction and repeat normal, repetition and error tests. If all passed, record that. Then create a valid variation replacing 10.50 with 11.50: expect 2 records and 31.50. Finally restore the original input and check 30.50; this tests an update and a return.",
+          "action": "Record actual failures or success, test the 31.50 variation and restore the original 30.50 case.",
+          "expected": "Checked recovery and a final report matching the original data.",
+          "hint": "Do not invent a failure: the valid variation already lets you observe a changed result.",
+          "criteria": [
+            "The variation keeps 2 records and changes only the expected total to 31.50.",
+            "Restored original input produces 30.50 again."
+          ],
+          "prompt": "When running [input and steps], I observed [actual result]; I expected [contract rule]. Fix only the cause, preserve already-passing rules and explain what changed. Then repeat normal, repetition and error tests. Do not declare success without showing the results.",
+          "objective": "Test a valid change and return to original data."
+        },
+        {
+          "slug": "download-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Separate preview from downloaded file",
+          "body": "Original simulated example: using HTML, you generated a 31.50 preview, but report.md open in the editor still contains 30.50. The page was not authorized to replace files on disk. Choose how to identify the current deliverable. An old file remaining open is not, by itself, evidence of a calculation error.",
+          "action": "Choose the action that confirms deliverable content without assuming the browser overwrote a file.",
+          "expected": "An identified file checked as the version to be delivered.",
+          "hint": "A preview and a previously downloaded file are different objects.",
+          "criteria": [
+            "Requires opening the current download and checking its contents."
+          ],
+          "check": {
+            "question": "The HTML preview changed but the old report.md did not. What should you do?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Declare that the old file was updated automatically.",
+                "feedback": "A new preview does not by itself modify a file already on disk."
+              },
+              {
+                "id": "b",
+                "text": "Manually add both reports to combine the runs.",
+                "feedback": "That would duplicate data from versions meant to replace one another."
+              },
+              {
+                "id": "c",
+                "text": "Download the current version, check its name and contents, and deliberately choose the delivery file.",
+                "feedback": "You verify the actual artifact without confusing a preview with file replacement."
+              }
+            ],
+            "correct": "c",
+            "success": "You distinguished the page result from the delivered file.",
+            "retry": "Consider which file another person will receive and open."
+          },
+          "objective": "Identify the actual delivered file."
+        },
+        {
+          "slug": "deliver-report",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Deliver a process someone can repeat",
+          "body": "Gather vendas.csv, your chosen program and report.md. Add opening or execution instructions, the folder used and normal, repetition, error and recovery test results. Explain the limits: fictional data, simple CSV format and no schedule or message sent. If something did not run, record why. A useful delivery lets someone repeat the process and recognize failures.",
+          "action": "Prepare a delivery note with files, command or HTML workflow, reference result and evidence from all four tests.",
+          "expected": "A repeatable package with checked output and explicit limits, ready for a scheduling discussion.",
+          "hint": "For HTML, explain where to paste data and how to select the correct download.",
+          "criteria": [
+            "Instructions let someone repeat the chosen route.",
+            "Tests and obstacles are reported without presumed execution."
+          ],
+          "objective": "Document repeatable execution."
+        }
+      ]
+    },
+    {
+      "slug": "automation-schedule",
+      "title": "Schedule with control",
+      "summary": "Plan timing, context and follow-up without confusing configuration with execution.",
+      "outcome": "An optional schedule rehearsed, observed and paused, or a simulated analysis with obstacles and an activation plan.",
+      "prerequisites": [
+        "automation-report"
+      ],
+      "minutes": 30,
+      "sourceRefs": [
+        "res-claude-local-schedule",
+        "res-codex-local-schedule"
+      ],
+      "steps": [
+        {
+          "slug": "schedule-boundary",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "A schedule repeats a process",
+          "body": "A schedule decides when to attempt execution; it does not fix an incorrect report. Prepare a draft first. If all four manual tests passed, Python is available and your account allows it, you may activate a supervised training task. Otherwise use simulated analysis and state that you did not activate it. Saved configuration and manual execution do not prove a scheduled trigger.",
+          "action": "Explain the difference between configuration, manual execution and execution triggered by a scheduled time.",
+          "expected": "Three distinct situations, each with the evidence it would still need to show.",
+          "hint": "A written time is an intention; checked output after a trigger is execution evidence.",
+          "criteria": [
+            "Distinguishes a draft, manual test and observed trigger.",
+            "Considers activation only after passing tests, available Python and access."
+          ],
+          "objective": "Distinguish a plan, manual test and scheduled trigger."
+        },
+        {
+          "slug": "manual-gate",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Decide whether the process is ready",
+          "body": "Use the previous lesson’s record as a review without running a schedule. Look for evidence of correct totals, repetition without duplication, errors preserving output and recovery. If an item is missing, mark it pending and write how to test it. This is a readiness decision, not a requirement to invent passing tests. In simulation, accept only what the scenario describes.",
+          "action": "Mark all four tests as evidenced or pending and decide what is missing before scheduling.",
+          "expected": "A decision supported by specific evidence, with a next action for any pending test.",
+          "hint": "“The AI said ready” does not tell you whether output remained intact after an error.",
+          "criteria": [
+            "Reviews normal execution, repetition, errors and recovery.",
+            "Keeps gaps visible and does not claim validated scheduling."
+          ],
+          "objective": "Assess readiness using four pieces of evidence."
+        },
+        {
+          "slug": "durable-instructions",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Write instructions that outlast the conversation",
+          "body": "A future run may not retain everything from the current conversation. Put input, output, folder, error rules and action limits in the draft itself. For this case, use the already-tested Python route; a page requiring manual pasting and downloading does not become unattended merely by receiving a time. Do not request schedule creation in this activity.",
+          "action": "Adapt the draft below with the actual folder and record how to find results and errors.",
+          "expected": "Self-contained instructions that would run a known program without changing its scope.",
+          "hint": "If you tested only HTML, record that an unattended execution route still needs validation.",
+          "criteria": [
+            "Specifies folder, input, output and a previously tested program.",
+            "Forbids sending and retains the valid report on error."
+          ],
+          "prompt": "Prepare only a draft; create no schedule: in [relatorio folder path], run the already-tested Python command with vendas.csv and report.md. Validate all CSV data; report errors and preserve valid output. Do not send data or change the program. Record time, input used, result and output path. If the folder, environment or permission is unavailable, report the obstacle without claiming success.",
+          "objective": "Write complete instructions for future use."
+        },
+        {
+          "slug": "availability-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Distinguish timing from availability",
+          "body": "Consider this simulated scenario: the task needs local files, is set for 09:00 and the computer will be off. The program passed manual tests. Decide what this information allows you to promise. The scenario includes neither a configured remote service nor evidence of later execution; do not assume the file will be available in the cloud.",
+          "action": "Choose the conclusion consistent with the resources needed to access local files.",
+          "expected": "An execution expectation that considers computer, application and folder availability.",
+          "hint": "Correct transformation tests do not make the computer available at the scheduled time.",
+          "criteria": [
+            "Distinguishes local availability from successful content tests."
+          ],
+          "check": {
+            "question": "What can you correctly say about the 09:00 run?",
+            "options": [
+              {
+                "id": "a",
+                "text": "It is not guaranteed with the machine off; conditions or another execution mode need review.",
+                "feedback": "The local route depends on available computer, application and files."
+              },
+              {
+                "id": "b",
+                "text": "It will run normally because the program passed its manual test.",
+                "feedback": "That test demonstrates the process at that moment, not future machine availability."
+              },
+              {
+                "id": "c",
+                "text": "A local task automatically becomes remote when the computer turns off.",
+                "feedback": "The scenario created no remote routine and made no files available there."
+              }
+            ],
+            "correct": "a",
+            "success": "You considered the required environment as well as the time rule.",
+            "retry": "Ask where the program and file must exist when the task triggers."
+          },
+          "objective": "Connect local execution to availability."
+        },
+        {
+          "slug": "schedule-fields",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Define time, time zone and destination",
+          "body": "Prepare the form first: relatorio folder, report.md output, a nearby time supported by the tool and an explicit time zone, such as America/Sao_Paulo. Allow time to observe and pause. Confirm an awake computer, open application, available folder and all four passing tests with Python. If a condition or access is missing, keep only the draft and record why; do not promise punctual execution.",
+          "action": "Check the form and prerequisites; choose supervised activation or simulation and record your decision.",
+          "expected": "Checked time, time zone, folder and conditions, with an explicit activation decision.",
+          "hint": "Use a nearby time supported by the interface; starts may be delayed, so plan to watch history.",
+          "criteria": [
+            "Records time, time zone, folder and local conditions.",
+            "Activation requires four passing tests, Python and access; otherwise use simulation."
+          ],
+          "objective": "Decide from evidence whether activation and observation are possible."
+        },
+        {
+          "slug": "tool-conditions",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Rehearse before activating the time",
+          "body": "With conditions met, use only this folder’s training task. In Claude Desktop/Code, create the local routine with Manual and use Run now; review folder, instructions and permissions before saving. In Codex, first run the complete request in a regular conversation with the local project. Compare output with 2 records and 30.50. Without access, analyze this rehearsal as simulation without claiming execution.",
+          "action": "Perform your tool’s rehearsal and record output and permissions, or mark the simulated route.",
+          "expected": "A checked manual rehearsal before allowing recurrence, or an explicitly recorded obstacle.",
+          "hint": "Do not broaden every permission to avoid a block; check access needed for the folder and command.",
+          "criteria": [
+            "Checks the exercise folder, instructions and permissions before activation.",
+            "Opens rehearsal output and compares 2 and 30.50, or declares simulation."
+          ],
+          "objective": "Validate the complete request in the selected context before scheduling.",
+          "variants": {
+            "claude": "In Code → Routines → New routine → Local, select relatorio, check the request and choose Manual for the first rehearsal. Save only the training task and use Run now. Open the result, check the report and respond to specific permissions as needed. If the feature is unavailable, record the obstacle.",
+            "codex": "In the local relatorio project, send the complete request in a regular conversation and check report.md. After a passing rehearsal, request a training task with the defined work, time/time zone and destination. Review the displayed configuration before activation. Documentation gathers tasks and results in Scheduled; confirm names available in your version."
+          },
+          "prompt": "Run once now, without creating a schedule, in the local relatorio folder. Use only the command I already tested on this computer: `python3 report.py vendas.csv report.md` or, on Windows, `py -3 report.py vendas.csv report.md`. Do not install dependencies or change input files or the program. The training input contains exactly id,item,amount; 1,Caderno,10.50; 2,Curso,20.00. Open report.md and check 2 records and total 30.50. If an error occurs, report its diagnosis and preserve the last valid report. Do not send data or publish results."
+        },
+        {
+          "slug": "history-triage",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Observe the first trigger",
+          "body": "After a passing rehearsal, configure the checked nearby time and watch the first run in history. Record planned time and actual start: delays are possible. Open output, check 2 records and 30.50 and identify the input used. If nothing starts, check application, computer, folder and the reason in history; do not confuse this with a sum error. Without access, analyze this simulated scenario: 09:00 did not start; at 09:20, a manual run produced 2 records and 30.50. Does that establish the scheduled trigger?",
+          "action": "Observe one trigger and record time and output, or analyze the scenario without claiming real execution.",
+          "expected": "Evidence of a trigger and checked output, or an honest diagnosis of absence or simulation.",
+          "hint": "Simulated scenario: 09:00 did not start; a 09:20 manual run produced 30.50. That still does not prove the 09:00 trigger.",
+          "criteria": [
+            "Distinguishes scheduled triggers, manual execution and no execution.",
+            "Records times and checks input and output, or marks evidence pending."
+          ],
+          "objective": "Check the trigger and result without guaranteeing punctuality."
+        },
+        {
+          "slug": "pause-rehearsal",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Pause the training task",
+          "body": "After observing one run, pause the training task to avoid unnecessary repetition. In Claude, open details and change Active to Paused; in Codex, request pausing that task and check its state in Scheduled. Preserve files and history. Check any ongoing run separately: pausing future runs does not guarantee stopping the current one. In simulation, write the action and expected confirmation.",
+          "action": "Pause only this exercise’s task, check its status and record how you would handle an ongoing run.",
+          "expected": "Training task confirmed paused, or an explicitly identified simulated procedure.",
+          "hint": "If something fails before the first trigger, also pause the created task before ending the exercise.",
+          "criteria": [
+            "Confirms the correct task is paused and checks ongoing runs.",
+            "Preserves evidence; resuming after changes requires a new test."
+          ],
+          "objective": "Stop future runs and confirm the task state."
+        },
+        {
+          "slug": "change-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Revalidate when input changes",
+          "body": "In a simulated scenario, someone renames the amount column to valor. The task was configured earlier and the last valid report still exists. Decide how to keep the process controlled. No new contract was approved and the transformation was not tested with this format; the old report does not automatically represent the new data.",
+          "action": "Choose a response that allows contract correction and reevaluation before trusting the schedule.",
+          "expected": "A maintenance action that avoids repeated failures or delivery of unchecked output.",
+          "hint": "A preserved old file is protection, not proof of a successful update.",
+          "criteria": [
+            "Requires a new test after changes to the contract or program."
+          ],
+          "check": {
+            "question": "What should happen after changing amount to valor?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Keep the schedule running and treat the old report as updated.",
+                "feedback": "Old output does not confirm that new input was processed."
+              },
+              {
+                "id": "b",
+                "text": "Pause new runs, align the contract, test manually and only then consider resuming.",
+                "feedback": "This limits repeated failures and requires evidence for the new process version."
+              },
+              {
+                "id": "c",
+                "text": "Delete the valid report to force the system to produce another.",
+                "feedback": "Deleting output removes protection and does not fix incompatible input."
+              }
+            ],
+            "correct": "b",
+            "success": "You treated the change as a new condition to validate.",
+            "retry": "Consider what renaming the column changed about reading the data."
+          },
+          "objective": "Reassess the process after a contract change."
+        },
+        {
+          "slug": "schedule-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Deliver the scheduling record",
+          "body": "Gather instructions, time/time zone, conditions, history and final status. If activated, record the manual rehearsal, observed or missing trigger, output values and pause confirmation. If you used simulation, state “schedule not activated” and list obstacles. Saved configuration does not replace these records. For future continuous use, review initial outputs and retest after changes.",
+          "action": "Deliver the record with activation and pause evidence, or the simulated analysis with pending conditions.",
+          "expected": "A delivery distinguishing planning, observed execution, failures and final task status.",
+          "hint": "Include where another person can find output and history without exposing private account data.",
+          "criteria": [
+            "Separately reports rehearsal, trigger, output and pausing when performed.",
+            "For simulation, states schedule not activated and lists pending conditions."
+          ],
+          "objective": "Document what happened and what remains pending."
+        }
+      ]
+    }
+  ]
+}

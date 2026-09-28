@@ -1,0 +1,673 @@
+{
+  "lessons": [
+    {
+      "slug": "app-state",
+      "title": "Create an app with state",
+      "summary": "Make a list respond to actions and reject empty input.",
+      "outcome": "A local app with working add, complete, reopen and remove actions, plus recorded tests.",
+      "prerequisites": [
+        "verification"
+      ],
+      "minutes": 30,
+      "sourceRefs": [
+        "https://developer.mozilla.org/en-US/docs/Glossary/DOM",
+        "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/set_up_a_local_testing_server",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "steps": [
+        {
+          "slug": "state-model",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "What changes when you act",
+          "body": "State is the app’s current information: which tasks exist and which are completed. The screen displays that state. Original simulated example: empty list → add A → A pending → complete A → A completed → remove A → empty list. In this lesson, state lasts only for the session; reloading may erase it. Saving for later is the next improvement.",
+          "action": "Describe the expected state after adding A, adding B and completing only A.",
+          "expected": "Two tasks: A completed and B pending; neither task removed.",
+          "hint": "Separate a task’s existence from its completion mark.",
+          "criteria": [
+            "Identifies both tasks.",
+            "Distinguishes completion from removal."
+          ],
+          "objective": "Recognize tasks and completion as state."
+        },
+        {
+          "slug": "request-state",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Request a small, testable app",
+          "body": "Create tarefas-app inside the practice folder and select it in your tool. In Claude Desktop, use Code and the Local context; in Codex Desktop, confirm the active project/folder. Request a plan first and compare its proposed controls with the request. External practice is self-reported: record the response you received or say you have not run it yet.",
+          "action": "Send the request, review the plan and allow creation only inside tarefas-app.",
+          "expected": "A plan and index.html with a labeled field, list and requested actions.",
+          "hint": "Do not accept login, a data server or synchronization as prerequisites for this prototype.",
+          "criteria": [
+            "Folder confirmed before creation.",
+            "Plan stays within the local scope."
+          ],
+          "prompt": "In tarefas-app, plan and then create a self-contained index.html without external libraries. Include a labeled input, Add button, list, complete/undo completion and remove per task. Use unique identifiers, display text as text and reject empty/whitespace input with a clear message without clearing the list. Start in memory only, without login, networking or persistence. Use keyboard-operable controls. Explain changed files and how to test each action. Wait for my plan review before editing.",
+          "objective": "Set app boundaries before authorizing creation.",
+          "variants": {
+            "claude": "In Claude Desktop, open Code and choose Local and tarefas-app; to begin with planning only, choose Plan before sending. Review the plan before allowing edits.",
+            "codex": "In Codex Desktop, choose Codex and confirm tarefas-app as the active folder/project. Explicitly request plan review before editing; do not assume Claude’s controls."
+          }
+        },
+        {
+          "slug": "serve-local",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Open a local address",
+          "body": "A local server delivers files to the browser while it is running. A terminal is the command area; ask the tool to run inside tarefas-app and show its output. If Python 3 is available, use the command below; on Windows replace python3 with py -3. Open http://localhost:8000. If Python is missing, request an available HTTP preview or specific instructions before installing.",
+          "action": "Confirm the folder and Python 3, start the server and record the address and observed page.",
+          "expected": "The browser opens the app over HTTP and you know how to stop the server.",
+          "hint": "Ctrl+C in the server terminal stops it. Port busy: request another port and record the new address.",
+          "criteria": [
+            "HTTP address recorded.",
+            "Served folder matches the app.",
+            "Prerequisite or error recorded without claiming an unperformed run."
+          ],
+          "prompt": "Check whether Python 3 is available and confirm that the working folder is tarefas-app. If available, start the local server for this folder, give the exact URL and explain how to stop it. Otherwise explain an HTTP alternative compatible with my system before any installation. Do not publish online.",
+          "code": "python3 -m http.server 8000",
+          "objective": "Open the app over HTTP and stop its server."
+        },
+        {
+          "slug": "check-empty",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Choose an input rule",
+          "body": "Original simulated scenario: two valid tasks are already visible. A person enters only spaces and presses Add. You need to decide the behavior before implementing it. Consider both the new input and existing data. The response should make the problem understandable without changing valid tasks.",
+          "action": "Choose the behavior that respects the input and preserves existing work.",
+          "expected": "A rule that distinguishes invalid input from an empty list.",
+          "hint": "Think about what the person can correct and what should remain intact.",
+          "criteria": [
+            "Applies validation without losing state."
+          ],
+          "check": {
+            "question": "What should happen?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Create an untitled task.",
+                "feedback": "That records an entry without content and makes the task hard to identify."
+              },
+              {
+                "id": "b",
+                "text": "Show guidance and keep both tasks without adding another.",
+                "feedback": "This lets the person correct the input and preserves valid data."
+              },
+              {
+                "id": "c",
+                "text": "Clear the list to start again.",
+                "feedback": "Invalid input does not authorize deleting existing tasks."
+              }
+            ],
+            "correct": "b",
+            "success": "Correct: validation blocks the new input without destroying the list.",
+            "retry": "Reconsider the new input and existing tasks separately."
+          },
+          "objective": "Validate input without destroying valid tasks."
+        },
+        {
+          "slug": "add-two",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Add without duplicating a click",
+          "body": "In the open app, add A with one click and then B with one click. Observe the list after each action: first one row, then two. Both should start pending. If one action creates two rows, record the exact gesture and result; a success response in chat does not replace counting the rows.",
+          "action": "Add A and B once each and record the count and state after each click.",
+          "expected": "One row after A; two after B, both pending.",
+          "hint": "If data already exists, use an empty test session or record the initial count.",
+          "criteria": [
+            "Each submission creates exactly one task.",
+            "Labels match the entered text."
+          ],
+          "objective": "Confirm one task per submission."
+        },
+        {
+          "slug": "toggle-one",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Complete and reopen only one task",
+          "body": "With A and B visible, complete only A. Its mark should change without removing A or changing B. Undo A’s completion and observe its return to pending. This tests a state transition in both directions. Marking every row or deleting the task does not meet the request.",
+          "action": "Complete A, undo its completion and record A and B’s states after both actions.",
+          "expected": "A switches between completed and pending; B and the count remain unchanged.",
+          "hint": "Use the control on row A, not a general action for the entire list.",
+          "criteria": [
+            "Completion does not remove the task.",
+            "Undo restores pending.",
+            "B is unchanged."
+          ],
+          "objective": "Verify completion and its reversal."
+        },
+        {
+          "slug": "remove-target",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Remove the selected task",
+          "body": "Remove B and observe A. Only A should remain, with its previous state. Original simulated failure: clicking Remove B deletes A. A useful correction specifies the list order and the row used, while preserving functions that already passed. If your app passes, record the result; do not invent a defect.",
+          "action": "Remove B; if it fails, describe the clicked row, request a fix and repeat with two tasks.",
+          "expected": "Only the selected task is removed; the other keeps its state.",
+          "hint": "Ask for the task identifier to be used rather than an incorrect position.",
+          "criteria": [
+            "Removes the correct target.",
+            "Retest includes another task to reveal side effects."
+          ],
+          "prompt": "In tarefas-app, A and B were in that order. Clicking Remove on B produced [actual result]; I expected only A, with completion unchanged. Fix task targeting, preserve add/complete and explain the change. I will repeat adding A/B, completing A and removing B. If you cannot reproduce it, ask for the missing detail.",
+          "objective": "Remove only the selected task."
+        },
+        {
+          "slug": "input-keyboard",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Test whitespace and the keyboard",
+          "body": "With A still in the list, submit an empty field and then three spaces. No row should appear; guidance should be visible and A should stay unchanged. Use Tab to reach the field and buttons. Activate controls with Enter or Space as appropriate for their type and confirm that focus is visible.",
+          "action": "Test empty input, spaces and keyboard access; record inaccessible controls or unintended changes.",
+          "expected": "Empty input is rejected and essential controls work without a mouse.",
+          "hint": "Fix one issue at a time and repeat a valid submission after the fix.",
+          "criteria": [
+            "Empty and whitespace input create no task.",
+            "Existing data remains.",
+            "Keyboard focus and actions checked."
+          ],
+          "objective": "Check empty inputs and keyboard operation."
+        },
+        {
+          "slug": "check-regression",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Evaluate an incomplete fix",
+          "body": "Original simulated scenario: the AI fixed deletion of the wrong row. Removing B now preserves A, but clicking Complete A deletes A. The AI report says the fix is finished. You need to decide whether the requested set of behaviors still works after the change.",
+          "action": "Choose the conclusion supported by both observations rather than the AI’s message.",
+          "expected": "A decision considering both the fixed action and the side effect.",
+          "hint": "Compare every action that the change needed to preserve.",
+          "criteria": [
+            "Recognizes a regression in required behavior."
+          ],
+          "check": {
+            "question": "Does the app now meet the request?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Yes, because Remove B passed.",
+                "feedback": "One action passed, but completion still violates the contract."
+              },
+              {
+                "id": "b",
+                "text": "Yes, because the AI declared completion.",
+                "feedback": "That claim does not override observed behavior."
+              },
+              {
+                "id": "c",
+                "text": "Not yet: record the completion failure and repeat add, complete and remove after fixing it.",
+                "feedback": "This addresses the regression and checks related functions."
+              }
+            ],
+            "correct": "c",
+            "success": "Correct: fixing includes preserving and retesting required behaviors.",
+            "retry": "Consider the effect on Complete as well as Remove."
+          },
+          "objective": "Recognize side effects of a fix."
+        },
+        {
+          "slug": "state-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Record what already works",
+          "body": "Keep a copy of index.html and a record containing address, actions, expected and observed results. Include add, complete, undo, remove, empty/whitespace and keyboard tests. Mark untested when needed. This lesson delivers session interaction, not persistence, login or synchronization. External results are your reports, not automatic platform verification.",
+          "action": "Summarize the tests performed and choose the next improvement: keeping data after reloading.",
+          "expected": "A file and interaction evidence separated from features not yet built.",
+          "hint": "A documented failure is more useful than marking everything complete without observing it.",
+          "criteria": [
+            "Distinguishes passed, failed and untested.",
+            "Does not infer persistence from one session."
+          ],
+          "objective": "Record interaction without promising persistence."
+        }
+      ]
+    },
+    {
+      "slug": "app-storage",
+      "title": "Save and restore data",
+      "summary": "Add local persistence and test reloads, origins and failures.",
+      "outcome": "Tasks and completion restored at the same origin, with visible errors and documented limits.",
+      "prerequisites": [
+        "app-state"
+      ],
+      "minutes": 30,
+      "sourceRefs": [
+        "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "https://developer.mozilla.org/en-US/docs/Glossary/Origin",
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+      ],
+      "steps": [
+        {
+          "slug": "memory-storage",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Separate screen, memory and storage",
+          "body": "The visible list may exist only in page memory. Persistence means saving data to recover later. localStorage holds text in the browser for an origin: protocol, server name and port. Original simulated example: A appears, the page reloads and A disappears. That does not prove adding failed; it means state recovery has not been demonstrated.",
+          "action": "Explain the difference between seeing A now and finding A after reloading at the same address.",
+          "expected": "Two separate pieces of evidence: current interaction and later recovery.",
+          "hint": "Keep the same browser and address so test conditions do not change.",
+          "criteria": [
+            "Distinguishes memory from persistence.",
+            "Recognizes the need to reload."
+          ],
+          "objective": "Distinguish visible state from persisted data."
+        },
+        {
+          "slug": "request-storage",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Request saving without losing features",
+          "body": "Copy the version that passed the tests. Request saving the complete list, including identifiers and completion, and restoring it when opened. JSON is a text representation of data; the app can use it to store the list. Choose a dedicated key, ganesha.tasks.v1, to avoid mixing other exercises at the same origin. Review the plan before changes.",
+          "action": "Send the request, preserve the earlier copy and check the proposed handling of failures.",
+          "expected": "The plan covers saving, restoring, validating and reporting failures without deleting existing data.",
+          "hint": "Do not use clearing all localStorage as a fix for an app error.",
+          "criteria": [
+            "Previous copy preserved.",
+            "Dedicated key and complete state specified.",
+            "Read and write failures considered."
+          ],
+          "prompt": "In tarefas-app, preserve add/complete/undo/remove and validation. Save tasks and completion as JSON in localStorage under ganesha.tasks.v1; restore on opening. Validate the list, unique ids, nonempty text and boolean completion. If reading or writing fails, show a useful message; do not delete invalid data or claim a failed save succeeded. Keep session tasks visible when possible. Explain the plan, format and reload/error tests before editing.",
+          "objective": "Specify complete saving and recovery."
+        },
+        {
+          "slug": "reload-state",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Reload content and completion",
+          "body": "Open the HTTP address already recorded. Use two fictional tasks A and B and complete only A. Record the exact state and reload in the same browser. Compare count, text and completion. Then remove B and reload again. A list that returns with every item pending saves only part of the required state.",
+          "action": "Compare both reloads: first after completing A, then after removing B.",
+          "expected": "First A completed and B pending; then only A completed.",
+          "hint": "If nothing returns, record the address and any error before requesting a fix.",
+          "criteria": [
+            "Text and count restored.",
+            "Completion restored.",
+            "Removal persists after reload."
+          ],
+          "objective": "Demonstrate recovery of text and completion."
+        },
+        {
+          "slug": "check-origin",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Interpret an address change",
+          "body": "Original simulated scenario: you saved A at http://localhost:8000. The next server opened http://localhost:8001 and showed an empty list. You have not returned to the earlier address. Before deciding the data was deleted, assess which conditions changed. The number after the colon is part of the tested address.",
+          "action": "Choose the investigation that separates changed context from actual data loss.",
+          "expected": "A conclusion limited to the address that was actually checked.",
+          "hint": "Consider the definition of origin before requesting a reset or rewrite.",
+          "criteria": [
+            "Recognizes that the port is part of the origin."
+          ],
+          "check": {
+            "question": "What is the appropriate next step?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Return to the earlier origin and check; the port changed, so storage may be separate.",
+                "feedback": "Correct: there is no evidence yet that data at the earlier origin vanished."
+              },
+              {
+                "id": "b",
+                "text": "Clear all browser storage.",
+                "feedback": "That may destroy data and does not explain the changed port."
+              },
+              {
+                "id": "c",
+                "text": "Claim the Add function stopped working.",
+                "feedback": "An empty screen at another origin does not test adding in the earlier session."
+              }
+            ],
+            "correct": "a",
+            "success": "Correct: compare the same origin before diagnosing data loss.",
+            "retry": "Notice the concrete difference between the two addresses."
+          },
+          "objective": "Diagnose a change of origin."
+        },
+        {
+          "slug": "reopen-limit",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Close and return under the same conditions",
+          "body": "Record the URL and use a regular, not private, window for this test. Close the app tab, reopen the same URL and check completed A. If the server stopped, restart it in the same folder and port. Local storage can be blocked or cleared; it is not a backup, account or cross-device synchronization. Also record the browser used.",
+          "action": "Close and reopen the tab; compare the task and completion using the recorded URL and browser.",
+          "expected": "The task returns under the same conditions, or the failure is described reproducibly.",
+          "hint": "If there is a connection error, first confirm that the server is still running.",
+          "criteria": [
+            "Same browser and origin used.",
+            "Connection failure separated from data failure."
+          ],
+          "objective": "Reopen the app under the same conditions."
+        },
+        {
+          "slug": "invalid-storage",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Rehearse invalid stored data",
+          "body": "Do not damage valid data to test. Request a test copy with key ganesha.tasks.test and a mode that reads broken JSON only in that copy. This is an identified artificial rehearsal, not a real incident. On opening, the app should report the problem and provide guidance without silently deleting the problematic content or freezing the entire interface.",
+          "action": "Run the test copy, observe the warning and confirm that the main key was unchanged.",
+          "expected": "Visible read error, responsive app and preserved main data.",
+          "hint": "If you cannot arrange the rehearsal, record untested and the limitation.",
+          "criteria": [
+            "Rehearsal isolated from the main key.",
+            "Invalid input produces a warning.",
+            "No silent clearing."
+          ],
+          "prompt": "Create an isolated test copy of tarefas-app using only ganesha.tasks.test. Add an explicitly labeled rehearsal that supplies invalid JSON to the read routine without touching ganesha.tasks.v1 or clearing other keys. I want to observe a readable warning, usable interface and no silent deletion. Explain how to start and remove the rehearsal; do not include this mode in the final delivery.",
+          "objective": "Verify handling of invalid stored data."
+        },
+        {
+          "slug": "failed-write",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Make a saving failure visible",
+          "body": "In the test copy, request an intentionally failed write without changing global browser settings. Add C during this rehearsal and observe the message. If C remains visible only for the session, the app must say it was not saved. Then disable the rehearsal, perform a normal write and reload to distinguish the simulated failure from recovery.",
+          "action": "Observe a rejected write and a later normal write, noting what survives a reload.",
+          "expected": "The app distinguishes visible data from saved data and demonstrates recovery after the rehearsal.",
+          "hint": "Do not describe an injected error as a spontaneous browser failure.",
+          "criteria": [
+            "Failure is not announced as success.",
+            "Unsaved state is identified.",
+            "Normal writing is retested."
+          ],
+          "prompt": "In the isolated test copy, allow a simulated write failure without changing browser settings. When saving is attempted, show that the change was not persisted and keep the interface usable. Explain how to disable the rehearsal. I will then verify a normal write and reload. Do not change the main key or include the test mode in the final version.",
+          "objective": "Observe a write failure and recovery."
+        },
+        {
+          "slug": "repair-persistence",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Fix and repeat the entire sequence",
+          "body": "Original simulated example: text returns after reloading but completion disappears. The correction request must name the missing field and preserve adding and removing. Use a real failure from your test if present; if everything passes, request a review of the mechanism and record results without inventing a defect. Also retest removal and whitespace rejection.",
+          "action": "Apply the needed fix or review the passing solution; repeat the complete data cycle.",
+          "expected": "Adding, completing, removing and validation remain correct, including after a reload.",
+          "hint": "A saving fix must not change the input criteria.",
+          "criteria": [
+            "Retest covers the missing field.",
+            "Earlier functions remain checked."
+          ],
+          "prompt": "In tarefas-app at the same URL, I observed [actual result] after [steps]. I expected text, ids and completion to survive reloading. Inspect saving and restoring; fix only what is needed without breaking add/remove/validation. Explain which data is written. I will retest two tasks, one completion, reload, removal and another reload. If all criteria already pass, explain the mechanism without unnecessary changes.",
+          "objective": "Retest persistence alongside earlier functions."
+        },
+        {
+          "slug": "check-save-claim",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Limit the conclusion to observations",
+          "body": "Original simulated scenario: C appears in the list, but the app displays a saving failure warning. You have not reloaded yet. The activity record must describe this state accurately because someone may rely on it when closing the tab. Choose the statement that matches the available evidence.",
+          "action": "Assess the difference between a visible change and a demonstrably persisted change.",
+          "expected": "A report that does not promise recovery after a failure warning.",
+          "hint": "Do not turn an unperformed test into positive confirmation.",
+          "criteria": [
+            "Distinguishes visibility from confirmed persistence."
+          ],
+          "check": {
+            "question": "Which record is accurate?",
+            "options": [
+              {
+                "id": "a",
+                "text": "C is saved because it appeared on screen.",
+                "feedback": "The screen shows session state; the warning contradicts a saving guarantee."
+              },
+              {
+                "id": "b",
+                "text": "C synchronized across all devices.",
+                "feedback": "This app implements neither accounts nor synchronization."
+              },
+              {
+                "id": "c",
+                "text": "C is visible in this session, but saving failed; recovery is not yet confirmed.",
+                "feedback": "This separates the observation from what still needs checking."
+              }
+            ],
+            "correct": "c",
+            "success": "Correct: keep current state distinct from saved data.",
+            "retry": "Include the failure warning in your evidence."
+          },
+          "objective": "Accurately report a rejected save."
+        },
+        {
+          "slug": "storage-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Document where data lives",
+          "body": "Record the browser, complete URL, storage key and reload/error results. Deliver the version without test modes. Explain that changing protocol, server, port or browser can lead to a different data area, and browser clearing can remove data. The next lesson creates an exportable copy for moving and recovering tasks without promising synchronization.",
+          "action": "Write a limitations note and preserve the version that passed normal tests.",
+          "expected": "The note explains data location, limits and results without confusing rehearsals with normal execution.",
+          "hint": "Do not use important data before recovery has been demonstrated.",
+          "criteria": [
+            "Test modes absent from delivery.",
+            "Local limits and origin recorded.",
+            "Simulated results labeled."
+          ],
+          "objective": "Document data location and limits."
+        }
+      ]
+    },
+    {
+      "slug": "app-delivery",
+      "title": "Deliver and maintain the app",
+      "summary": "Export a copy, validate imports and document use.",
+      "outcome": "An app and instructions delivered with a recoverable data copy and controlled replacement.",
+      "prerequisites": [
+        "app-storage"
+      ],
+      "minutes": 35,
+      "sourceRefs": [
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Blob/text",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "https://docs.netlify.com/start/quickstarts/netlify-drop-quickstart/",
+        "https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility/"
+      ],
+      "steps": [
+        {
+          "slug": "files-and-data",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Separate the program from its data copy",
+          "body": "index.html contains the program; browser-local data is not automatically inside that file. Exporting creates a file containing a copy of the tasks. Importing reads that copy to rebuild state. Original simulated example: export completed A and pending B, open another empty instance and import the copy. This is manual transfer, not synchronization or an account.",
+          "action": "Identify the two files needed to deliver the program and a copy of fictional tasks.",
+          "expected": "index.html for the app and tarefas.json for exported data.",
+          "hint": "A copy becomes trustworthy only after inspecting its content and testing recovery.",
+          "criteria": [
+            "Distinguishes code from data.",
+            "Does not call manual transfer synchronization."
+          ],
+          "objective": "Distinguish the app file from its data copy."
+        },
+        {
+          "slug": "request-portable",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Define a verifiable format",
+          "body": "Request export and import with a simple contract: version equals 1 and tasks is a list. Each task has a unique text id, nonempty text and done set to true or false. Limit this exercise to 100 tasks, titles up to 120 characters and files up to 1 MB. These limits are prototype design choices. Selecting a file alone never replaces data.",
+          "action": "Review the contract and request export, preview, cancel and confirm-import controls.",
+          "expected": "The plan separates reading, validation, preview, confirmation and saving; errors preserve the list.",
+          "hint": "Parsing JSON is insufficient: values such as 42 are valid JSON but do not represent this contract.",
+          "criteria": [
+            "Format and limits explicit.",
+            "Replacement requires confirmation.",
+            "Current data preserved on error."
+          ],
+          "prompt": "Add tarefas.json export and import to the app. Format: version:1, tasks with unique text id, text of 1–120 characters after trimming, boolean done; maximum 100 tasks and 1 MB. Validate everything before changing data. Show preview and Cancel/Confirm. Require exporting the current list and confirming the copy was saved before replacement. Update the list only after successful saving; errors preserve current data. Display text as text. No networking. Explain the plan and tests.",
+          "code": "{\"version\":1,\"tasks\":[{\"id\":\"t1\",\"text\":\"A\",\"done\":true},{\"id\":\"t2\",\"text\":\"B\",\"done\":false}]}",
+          "objective": "Define validation and controlled replacement."
+        },
+        {
+          "slug": "export-inspect",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Export and inspect the copy",
+          "body": "Prepare completed A and pending B. Use Export, locate tarefas.json in Downloads or the chosen destination and open it as text. Compare count, names and done with the screen. Save an identified copy named antes-de-importar.json outside the published folder. The app can initiate a download, but you need to confirm the file was actually saved.",
+          "action": "Export and check both tasks and their states; keep the copy unedited.",
+          "expected": "A readable file with version 1, two tasks and completion matching the screen.",
+          "hint": "true means completed; false means pending. Preserve the fields even when task names differ.",
+          "criteria": [
+            "File located and opened.",
+            "Data matches observed state.",
+            "Earlier copy protected from overwriting."
+          ],
+          "objective": "Inspect an export’s content."
+        },
+        {
+          "slug": "check-contract",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Distinguish syntax from content",
+          "body": "Original simulated scenario: a file contains {\"version\":1,\"tasks\":[{\"id\":\"t1\",\"text\":\"A\",\"done\":\"false\"}]}. The reader can parse its syntax. The importer must still check the meaning and types of the fields required by the contract. Look specifically at how the done value is written rather than treating the file extension as sufficient.",
+          "action": "Choose how to handle this file before replacing any current list.",
+          "expected": "A decision based on the data contract, not only accepted syntax.",
+          "hint": "Quotation marks distinguish text from other values in JSON.",
+          "criteria": [
+            "Validates the done type before importing."
+          ],
+          "check": {
+            "question": "What should the importer do?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Accept because the extension is .json.",
+                "feedback": "The extension does not guarantee the required shape or types."
+              },
+              {
+                "id": "b",
+                "text": "Replace the list and decide completion later.",
+                "feedback": "That changes data before validation and may lose the previous state."
+              },
+              {
+                "id": "c",
+                "text": "Reject with an explanation: done must be boolean, not text; keep the current list.",
+                "feedback": "The contract requires true/false without quotes and preservation on error."
+              }
+            ],
+            "correct": "c",
+            "success": "Correct: parseable JSON can still violate the app’s contract.",
+            "retry": "Compare the required type with the quoted value."
+          },
+          "objective": "Separate parseable JSON from accepted data."
+        },
+        {
+          "slug": "preview-cancel-import",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Cancel before replacing",
+          "body": "Create a test copy of the exported file containing only pending task C with its own identifier. Keep A/B in the app. Select the file and observe the one-task preview; click Cancel and confirm A/B remain intact. Then select it again, save the current copy and confirm replacement. Reload and compare the new state.",
+          "action": "Test Cancel first and then Confirm; record the list before, preview and post-reload result.",
+          "expected": "Cancel preserves A/B; confirming the valid copy leaves only pending C after reload.",
+          "hint": "Import in this contract replaces the list; it does not append records or synchronize versions.",
+          "criteria": [
+            "Selecting a file does not change the list.",
+            "Cancel preserves data.",
+            "Valid confirmation persists imported state."
+          ],
+          "code": "{\"version\":1,\"tasks\":[{\"id\":\"t3\",\"text\":\"C\",\"done\":false}]}",
+          "objective": "Compare cancellation with confirmed import."
+        },
+        {
+          "slug": "reject-bad-import",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Reject files without losing tasks",
+          "body": "In separate copies, rehearse three defects: remove a closing brace from the JSON; make done text; duplicate the same id in two tasks. Try importing each file while keeping C in the list. All must be rejected with a useful reason before replacing any data. Reload after each attempt to check the saved content too. These test inputs are deliberately created.",
+          "action": "Perform all three invalid imports and compare the list before and after each reload.",
+          "expected": "Each file fails understandably and C stays pending without changes.",
+          "hint": "If the list changes, stop importing and request a fix before using another copy.",
+          "criteria": [
+            "Invalid syntax rejected.",
+            "Wrong type and duplicate id rejected.",
+            "Current state remains after reload."
+          ],
+          "objective": "Reject invalid input without losing data."
+        },
+        {
+          "slug": "restore-backup",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Restore a backup and test a rejected write",
+          "body": "Save a copy of state C and import antes-de-importar.json through the validated flow. Confirm completed A and pending B after reloading. In the isolated test copy from the previous lesson, simulate failure while saving an import: the earlier list must remain, with a warning that nothing was replaced. Disable the rehearsal and repeat a valid import.",
+          "action": "Demonstrate recovery from the copy and behavior during the isolated write failure.",
+          "expected": "The copy restores correctly; a rejected import preserves previous data.",
+          "hint": "If a copy fails validation, keep it intact and record the error before investigating.",
+          "criteria": [
+            "Recovery includes text and completion.",
+            "Failed writing does not replace the list.",
+            "Rehearsal removed from delivery."
+          ],
+          "prompt": "In the isolated test copy, simulate a write failure when confirming a valid import. Preserve the previous list and data, show an error and do not claim replacement succeeded. Do not touch the main key. Explain how to remove the rehearsal. I will then test importing the backup, reloading and comparing tasks and completion.",
+          "objective": "Demonstrate recovery and preservation on error."
+        },
+        {
+          "slug": "package-handoff",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Prepare a reproducible handoff",
+          "body": "Create README.md covering folder, prerequisites, local command/address, server stop, use, export/import and tests. Keep exported data separate from public files. Static publishing is optional: check Netlify account/cost conditions, upload the folder containing index.html at https://app.netlify.com/drop and verify visitor access. If choosing public access, check permissions and Make public; a URL alone does not prove access.",
+          "action": "Request handoff instructions, follow them from the beginning and record whether you delivered a folder or also a URL.",
+          "expected": "Package and instructions allow opening the app and restoring a fictional data copy.",
+          "hint": "Publishing changes the origin: retest reload and import; local data does not migrate automatically.",
+          "criteria": [
+            "Instructions reproduced and obstacles recorded.",
+            "Personal exports excluded from public files.",
+            "If published, access and behavior tested at the final URL."
+          ],
+          "prompt": "Create README.md for the final tarefas-app without test modes. Explain opening the folder, checking Python 3 or an alternative HTTP preview, running the server, opening its URL and stopping it. Describe add/complete/remove, local saving, export, checking the copy, import, cancel and recovery. Include A/B tests, no-account/no-sync limits and known failures. List only required public files; exclude my exports. Do not publish automatically.",
+          "objective": "Prepare reproducible instructions and a package."
+        },
+        {
+          "slug": "check-delivery",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Assess what sharing actually does",
+          "body": "Original simulated scenario: the published app works on the author’s computer. A colleague opens its URL in another browser and finds an empty list. The author wants her to see a copy of fictional tasks, but the app has no account or data server. Choose a solution consistent with what was built and tested.",
+          "action": "Decide how to transfer data without promising features the app does not have.",
+          "expected": "A manual transfer plan with validation and preservation of the recipient’s state.",
+          "hint": "Sharing the program and sharing a data copy are different actions.",
+          "criteria": [
+            "Respects no-account/no-sync limits.",
+            "Uses validated import with an earlier copy."
+          ],
+          "check": {
+            "question": "Which guidance is correct?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Send the exported copy; she saves her current data, validates and confirms the import, knowing it will not synchronize.",
+                "feedback": "This uses the implemented flow and makes manual replacement explicit."
+              },
+              {
+                "id": "b",
+                "text": "Ask her to refresh until the author’s list appears.",
+                "feedback": "Refreshing another origin or browser does not create synchronization."
+              },
+              {
+                "id": "c",
+                "text": "Promise that publishing HTML includes all of the author’s local data.",
+                "feedback": "Local storage is not automatically embedded in the HTML file."
+              }
+            ],
+            "correct": "a",
+            "success": "Correct: transfer is explicit, validated and manual.",
+            "retry": "Separate access to the app from access to another browser’s data."
+          },
+          "objective": "Choose manual transfer without promising synchronization."
+        },
+        {
+          "slug": "maintain-version",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Maintain a version you can recover",
+          "body": "Deliver index.html, README.md and results; share a data copy only if desired. Before future changes, preserve files and export data. Repeat interaction, reload, cancellation and invalid-import tests after every change. If updating through Netlify, test locally first and upload to the same project under Production deploys: this changes the public version. Check the final URL again.",
+          "action": "Write what passed, failed and remains untested; record the version and recovery path.",
+          "expected": "The handoff distinguishes evidenced features, limits, a recoverable copy and future precautions.",
+          "hint": "Changing the data format? Plan compatibility before overwriting the only existing copy.",
+          "criteria": [
+            "External evidence identified as the learner’s report.",
+            "Earlier version and recoverable copy preserved.",
+            "Limits and failures disclosed."
+          ],
+          "objective": "Preserve versions and repeat tests after changes."
+        }
+      ]
+    }
+  ]
+}

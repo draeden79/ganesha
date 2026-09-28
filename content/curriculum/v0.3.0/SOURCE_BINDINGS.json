@@ -1,0 +1,149 @@
+{
+  "version": "0.3.0",
+  "scope": "Sources support the stated concepts or procedures; original examples are not represented as source executions.",
+  "lessons": {
+    "workspace": {
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "evidenceIds": [
+        "ev-codex-prompting",
+        "ev-claude-desktop-start",
+        "ev-codex-desktop-quickstart"
+      ],
+      "unmappedReferences": []
+    },
+    "requests": {
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "evidenceIds": [
+        "ev-codex-prompting",
+        "ev-claude-desktop-start",
+        "ev-codex-desktop-quickstart"
+      ],
+      "unmappedReferences": []
+    },
+    "verification": {
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "evidenceIds": [
+        "ev-codex-prompting",
+        "ev-claude-desktop-start",
+        "ev-codex-desktop-quickstart"
+      ],
+      "unmappedReferences": []
+    },
+    "site-build": {
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "evidenceIds": [
+        "ev-codex-prompting",
+        "ev-claude-desktop-start",
+        "ev-codex-desktop-quickstart"
+      ],
+      "unmappedReferences": []
+    },
+    "site-quality": {
+      "sourceRefs": [
+        "res-codex-prompting"
+      ],
+      "evidenceIds": [
+        "ev-codex-prompting"
+      ],
+      "unmappedReferences": []
+    },
+    "site-publish": {
+      "sourceRefs": [
+        "res-netlify-drop-static",
+        "res-netlify-project-visibility"
+      ],
+      "evidenceIds": [
+        "ev-netlify-drop-static",
+        "ev-netlify-project-visibility"
+      ],
+      "unmappedReferences": []
+    },
+    "app-state": {
+      "sourceRefs": [
+        "https://developer.mozilla.org/en-US/docs/Glossary/DOM",
+        "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/set_up_a_local_testing_server",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "evidenceIds": [
+        "ev-claude-desktop-start",
+        "ev-codex-desktop-quickstart"
+      ],
+      "unmappedReferences": [
+        "https://developer.mozilla.org/en-US/docs/Glossary/DOM",
+        "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/set_up_a_local_testing_server"
+      ]
+    },
+    "app-storage": {
+      "sourceRefs": [
+        "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "https://developer.mozilla.org/en-US/docs/Glossary/Origin",
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+      ],
+      "evidenceIds": [],
+      "unmappedReferences": [
+        "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "https://developer.mozilla.org/en-US/docs/Glossary/Origin",
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+      ]
+    },
+    "app-delivery": {
+      "sourceRefs": [
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Blob/text",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "https://docs.netlify.com/start/quickstarts/netlify-drop-quickstart/",
+        "https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility/"
+      ],
+      "evidenceIds": [],
+      "unmappedReferences": [
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Blob/text",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "https://docs.netlify.com/start/quickstarts/netlify-drop-quickstart/",
+        "https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility/"
+      ]
+    },
+    "automation-input": {
+      "sourceRefs": [],
+      "evidenceIds": [],
+      "unmappedReferences": []
+    },
+    "automation-report": {
+      "sourceRefs": [
+        "res-codex-prompting"
+      ],
+      "evidenceIds": [
+        "ev-codex-prompting"
+      ],
+      "unmappedReferences": []
+    },
+    "automation-schedule": {
+      "sourceRefs": [
+        "res-claude-local-schedule",
+        "res-codex-local-schedule"
+      ],
+      "evidenceIds": [
+        "ev-claude-local-schedule",
+        "ev-codex-local-schedule"
+      ],
+      "unmappedReferences": []
+    }
+  }
+}

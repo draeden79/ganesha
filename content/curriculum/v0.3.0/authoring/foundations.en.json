@@ -1,0 +1,630 @@
+{
+  "lessons": [
+    {
+      "slug": "workspace",
+      "title": "Prepare your workspace",
+      "summary": "Account, folder, files and context before your first request.",
+      "outcome": "Open the correct context and record what the tool can access.",
+      "prerequisites": [],
+      "minutes": 30,
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "steps": [
+        {
+          "slug": "access",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Choose a tool and check access",
+          "objective": "Recognize the prerequisites for Desktop practice.",
+          "body": "You need a computer, browser and access to Claude Desktop/Code or Codex Desktop. Open the official getting-started documentation, download the compatible version and sign in. Check access conditions and costs; this course does not promise free use. You do not need both subscriptions: practice in one tool and compare the instructions for the other. Official quickstarts: Claude https://code.claude.com/docs/en/desktop-quickstart ; Codex https://learn.chatgpt.com/docs/quickstart .",
+          "action": "Record your chosen tool and whether you could sign in.",
+          "expected": "Tool and access state recorded.",
+          "hint": "If access fails, record the message; simulation remains available.",
+          "criteria": [
+            "Tool and access state recorded."
+          ]
+        },
+        {
+          "slug": "folder",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Create a folder for the exercise",
+          "objective": "Distinguish the exercise folder from other files.",
+          "body": "A folder groups related files. In the file manager, create ganesha-pratica somewhere you can find again. To create brief.txt, open an editor: TextEdit in plain-text mode on macOS, or Notepad on Windows. Use Save As, select ganesha-pratica and name the file brief.txt. Check it in the folder; it should be plain text, not RTF, a shortcut or a compressed archive. If you cannot execute, use the simulated example and record the obstacle; do not claim execution.",
+          "action": "Create the folder and file; record their location.",
+          "expected": "Folder contains brief.txt, or obstacle and example analysis are recorded.",
+          "hint": "On macOS, choose plain text before saving; on Windows, use Notepad.",
+          "criteria": [
+            "Folder contains brief.txt, or obstacle and example analysis are recorded."
+          ],
+          "code": "ganesha-pratica/\n└── brief.txt"
+        },
+        {
+          "slug": "fictional-brief",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Prepare a small fictional brief",
+          "objective": "Supply enough context without mixing projects.",
+          "body": "Open brief.txt in a text editor and write: Ponte Musical; beginner audience; guitar, piano and singing services; contact aulas@example.com. Save it. These fictional details will be used in the site lessons. Necessary information must be readable and linked to the right folder; an old conversation about another project can lead to an unsuitable response. If you cannot execute, compare the four fictional details presented in this step and record the obstacle; do not claim execution.",
+          "action": "Save the four details and reread the file.",
+          "expected": "Four details saved and checked, or obstacle and simulated comparison recorded.",
+          "hint": "Check the saved file, not only a window with unsaved changes.",
+          "criteria": [
+            "Four details saved and checked, or obstacle and simulated comparison recorded."
+          ]
+        },
+        {
+          "slug": "context-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Identify the wrong folder",
+          "objective": "Choose the right recovery for a context error.",
+          "body": "Simulated case: you created ganesha-pratica, but the tool displays another project named loja-antiga. The brief.txt file has not yet been provided.",
+          "action": "Choose an answer and read its feedback.",
+          "expected": "Choice justified by the situation’s criterion.",
+          "hint": "Use the case information without inventing observations.",
+          "criteria": [
+            "Choice justified by the situation’s criterion."
+          ],
+          "check": {
+            "question": "What is the appropriate next step?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Ask the AI to guess the contents of brief.txt.",
+                "feedback": "A filename does not supply its contents or correct the selected folder."
+              },
+              {
+                "id": "b",
+                "text": "Select ganesha-pratica and check the context before requesting a read.",
+                "feedback": "This aligns the displayed folder with the file you prepared."
+              },
+              {
+                "id": "c",
+                "text": "Copy brief.txt into loja-antiga and continue without reviewing the chosen project.",
+                "feedback": "This mixes projects to accommodate the wrong context; the exercise requires selecting and checking the right folder."
+              }
+            ],
+            "correct": "b",
+            "success": "You corrected the information source before judging the response.",
+            "retry": "Find the action that fixes the folder without inventing data."
+          }
+        },
+        {
+          "slug": "select-context",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Open the correct project in the tool",
+          "objective": "Check the location before sending data.",
+          "body": "Open the exercise folder in your chosen tool and check the displayed name. The selected location defines the file context; access to a folder does not mean you requested changes to everything in it. Before continuing, identify where the conversation, folder and proposed or completed actions appear. If you cannot execute, analyze the earlier case: ganesha-pratica is the expected context and loja-antiga is incorrect and record the obstacle; do not claim execution.",
+          "action": "Record the folder name displayed by the tool.",
+          "expected": "ganesha-pratica context checked, or obstacle and simulated choice recorded.",
+          "hint": "If controls differ, consult your tool’s official quickstart.",
+          "criteria": [
+            "ganesha-pratica context checked, or obstacle and simulated choice recorded."
+          ],
+          "variants": {
+            "claude": "In Claude Desktop, open Code, choose Local and select ganesha-pratica. Access to Code depends on account conditions.",
+            "codex": "In the Desktop app, select Codex and open the ganesha-pratica folder or project. Check the displayed context before sending."
+          }
+        },
+        {
+          "slug": "read-only-request",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Request reading before editing",
+          "objective": "Separate understanding the context from changing files.",
+          "body": "A request can ask only for reading and explanation. Planning describes an approach; execution may change files or use tools. For this step, use the request below and read any permission request before continuing. If the tool proposes creation or publication, return to the boundary: only check the brief. If you cannot execute, analyze the request below and state that reading did not happen and record the obstacle; do not claim execution.",
+          "action": "Send the request and record the summary received.",
+          "expected": "Summary compared with the brief, or reading explicitly recorded as not executed.",
+          "hint": "An AI statement alone does not establish the state of the files.",
+          "criteria": [
+            "Summary compared with the brief, or reading explicitly recorded as not executed."
+          ],
+          "prompt": "Read brief.txt in the selected folder. Summarize the name, audience, three services and contact. Say if any information is unavailable. Do not edit files or publish.",
+          "variants": {
+            "claude": "For proposing without editing, use Plan as described in Desktop documentation. Do not treat terminal shortcuts as Desktop controls.",
+            "codex": "State that you want reading and planning. Do not assume a text instruction guarantees no actions; inspect what the tool proposes and does."
+          }
+        },
+        {
+          "slug": "compare-context",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Compare the summary with the file",
+          "objective": "Detect omissions using an accessible reference.",
+          "body": "Simulated example: the response says “Ponte Musical offers guitar and piano.” Compare it with brief.txt: the name is correct, but singing is missing and audience/contact are not confirmed. Your real response might be complete; if so, record what you checked. Do not invent a failure to fill in the exercise. If you cannot execute, use the simulated example and record the obstacle; do not claim execution.",
+          "action": "Compare your response with the four brief details.",
+          "expected": "Details compared in the real response or example, with the mode identified.",
+          "hint": "Use the file as the reference, not your memory.",
+          "criteria": [
+            "Details compared in the real response or example, with the mode identified."
+          ]
+        },
+        {
+          "slug": "access-recovery",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Separate access from response quality",
+          "objective": "Choose recovery according to the obstacle.",
+          "body": "Pending login, an account without access and an unavailable folder are entry problems. A summary missing singing is a response problem. For the former, record the message and resolve access through official guidance; for the latter, ask the AI to check the specific detail in the brief. Repeating the same request will not necessarily fix blocked account access.",
+          "action": "Classify a real obstacle or the simulated missing-singing case.",
+          "expected": "Obstacle classified with a suitable next step.",
+          "hint": "Use the simulated case if you encountered no real error.",
+          "criteria": [
+            "Obstacle classified with a suitable next step."
+          ]
+        },
+        {
+          "slug": "access-evidence",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Distinguish an attempt from execution",
+          "objective": "Report a blocked practice honestly.",
+          "body": "Simulated case: you wrote the request, but the app displayed a login screen and no response arrived.",
+          "action": "Choose an answer and read its feedback.",
+          "expected": "Choice justified by the situation’s criterion.",
+          "hint": "Use the case information without inventing observations.",
+          "criteria": [
+            "Choice justified by the situation’s criterion."
+          ],
+          "check": {
+            "question": "What can you record?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The AI read and validated brief.txt.",
+                "feedback": "No response or observation confirmed reading."
+              },
+              {
+                "id": "b",
+                "text": "All files are correct.",
+                "feedback": "An access attempt did not test the files."
+              },
+              {
+                "id": "c",
+                "text": "Request prepared; reading not executed because access is pending.",
+                "feedback": "This separates prepared work from what did not happen."
+              }
+            ],
+            "correct": "c",
+            "success": "Your record shows real progress and the obstacle.",
+            "retry": "Do not turn an attempt or simulation into external execution."
+          }
+        },
+        {
+          "slug": "workspace-record",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Keep a useful continuation record",
+          "objective": "Summarize the context and remaining work.",
+          "body": "Record the tool, folder, file used and one detail checked in the response. If reading did not happen, say so and record the obstacle. This allows you to continue the next lesson without recounting the entire conversation. Ganesha does not automatically inspect your computer; completion of this practice is self-reported.",
+          "action": "Write your context record and next action.",
+          "expected": "The record contains context, observation and an obstacle or next step.",
+          "hint": "Do not include passwords or account information.",
+          "criteria": [
+            "The record contains context, observation and an obstacle or next step."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "requests",
+      "title": "Write requests that guide the work",
+      "summary": "Outcome, data, boundaries, criteria and clarification.",
+      "outcome": "Write a bounded request and review a plan before execution.",
+      "prerequisites": [
+        "workspace"
+      ],
+      "minutes": 30,
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "steps": [
+        {
+          "slug": "desired-result",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Turn a vague idea into a deliverable",
+          "objective": "Define what should exist when the task ends.",
+          "body": "“Make something beautiful” does not define a verifiable deliverable. For Ponte Musical, the first result is a list-form plan for a presentation page, not the built page. Choosing a small deliverable makes comparison possible without understanding code. This structure supports the exercise; it is not a universal formula for requests.",
+          "action": "Write one sentence describing the deliverable you want.",
+          "expected": "The sentence identifies a plan and the page’s purpose.",
+          "hint": "Describe what you will receive, not only how you want to feel.",
+          "criteria": [
+            "The sentence identifies a plan and the page’s purpose."
+          ]
+        },
+        {
+          "slug": "relevant-context",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Select context that changes the answer",
+          "objective": "Include necessary context and exclude irrelevant information.",
+          "body": "Use the brief: fictional school name, beginner audience, guitar/piano/singing and contact. Another business’s opening hours or an old conversation does not help this goal. Explicitly identify missing important details. Asking the AI to invent the school’s location would produce an unsupported claim.",
+          "action": "Select the details the plan needs.",
+          "expected": "The list contains relevant details and declared gaps.",
+          "hint": "A missing detail can become a question, not an invention.",
+          "criteria": [
+            "The list contains relevant details and declared gaps."
+          ]
+        },
+        {
+          "slug": "complete-request",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Write a copyable, bounded request",
+          "objective": "Combine deliverable, context, boundaries and verification criteria.",
+          "body": "Combine your decisions. Contact should only reveal a fictional address; it must not collect data or send messages. This keeps a simple plan from becoming another system. Mentioned tests are future tests: there is no page to click yet. Read the full request before sending and adapt only details you will still be able to verify.",
+          "action": "Adapt the request and identify its main boundary.",
+          "expected": "The request includes deliverable, data, boundary and future verification.",
+          "hint": "Keep this lesson limited to planning.",
+          "criteria": [
+            "Deliverable and necessary data are explicit.",
+            "The boundary excludes editing, collection and sending.",
+            "Future verification matches the requested items."
+          ],
+          "prompt": "Plan a Ponte Musical page for beginners, with a title, guitar/piano/singing services and a Contact button revealing aulas@example.com without collecting data or sending a message. Return only a list-form plan and explain how to test these items once the page exists. Do not edit files or publish."
+        },
+        {
+          "slug": "scope-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Make a scope decision",
+          "objective": "Apply the request’s boundary to an AI suggestion.",
+          "body": "Simulated case: before planning, the AI suggests adding login and monthly fee collection. The goal is still a presentation page with contact that sends nothing.",
+          "action": "Choose an answer and read its feedback.",
+          "expected": "Choice justified by the situation’s criterion.",
+          "hint": "Use the case information without inventing observations.",
+          "criteria": [
+            "Choice justified by the situation’s criterion."
+          ],
+          "check": {
+            "question": "Which response preserves scope?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Omit login and billing; plan only the requested items.",
+                "feedback": "This keeps the small deliverable and its defined boundaries."
+              },
+              {
+                "id": "b",
+                "text": "Include every feature so the site looks complete.",
+                "feedback": "More features change the goal and add unchosen prerequisites."
+              },
+              {
+                "id": "c",
+                "text": "Publish immediately and decide later.",
+                "feedback": "Publication was not requested and does not resolve the planning decision."
+              }
+            ],
+            "correct": "a",
+            "success": "You resolved the decision before expanding the work.",
+            "retry": "Compare the suggestion with the original deliverable and boundaries."
+          }
+        },
+        {
+          "slug": "worked-plan",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Read a complete example response",
+          "objective": "Compare a plan against every request criterion.",
+          "body": "Simulated plan: 1) title “Ponte Musical — music for beginners”; 2) guitar and piano services; 3) name/email form that sends a message; 4) check title and sending after building. The title fits; singing is missing; form and sending violate the boundary; verification steps need changing. This analysis concerns text, not files supposedly created.",
+          "action": "Mark what fits, what is missing and what exceeds scope.",
+          "expected": "Comparison separates correct content, omission and scope change.",
+          "hint": "Check every request item, including the future test.",
+          "criteria": [
+            "Comparison separates correct content, omission and scope change."
+          ]
+        },
+        {
+          "slug": "clarification",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Answer a relevant question",
+          "objective": "Resolve ambiguity without expanding the project.",
+          "body": "Simulated AI question: “Should Contact open email or show the address on the page?” Here, answer that it should display the address without sending. A relevant question clarifies behavior or necessary data; it does not automatically indicate failure. If you do not know yet, choose a smaller scope instead of accepting any assumption.",
+          "action": "Answer the question and explain the chosen behavior.",
+          "expected": "The answer specifies displaying the address without sending.",
+          "hint": "Choose an action that can be observed later.",
+          "criteria": [
+            "The answer specifies displaying the address without sending."
+          ]
+        },
+        {
+          "slug": "targeted-revision",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Request a revision that preserves what works",
+          "objective": "Correct specific points without restarting everything.",
+          "body": "You do not need to discard a plan to fix two problems. Name the omission and unwanted behavior; preserve the correct title. Simulated revision: the plan now lists three services and contact revealing the address; future tests count services and check the click. Reread the revision: a clear request can still produce an incomplete response.",
+          "action": "Write a correction and compare the example revised plan.",
+          "expected": "The correction keeps the title and fixes omission and sending.",
+          "hint": "Ask for a specific change and another check.",
+          "criteria": [
+            "The correction keeps the title and fixes omission and sending."
+          ],
+          "prompt": "Keep the title. Add singing alongside guitar and piano. Replace the form with contact that only reveals aulas@example.com. Continue planning only and update tests for the three services and this behavior."
+        },
+        {
+          "slug": "send-and-review",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Try the request in your tool",
+          "objective": "Compare a real response without confusing it with the example.",
+          "body": "In your prepared tool and folder, send your planning request. Answer relevant questions and compare the plan with your criteria. If it deviates, request revision; if it already fits, record that. Its wording need not match the example. Record the real result or obstacle; simulation does not count as external sending.",
+          "action": "Send, compare and record one checked criterion.",
+          "expected": "A received plan and comparison, or an explicit obstacle.",
+          "hint": "Do not push the tool to invent missing details.",
+          "criteria": [
+            "A received plan and comparison, or an explicit obstacle."
+          ]
+        },
+        {
+          "slug": "plan-evidence",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Decide what the plan proves",
+          "objective": "Distinguish suitable text from implemented behavior.",
+          "body": "You received a list containing three services and describing a button that reveals the address. No page has been built or opened in this lesson.",
+          "action": "Choose an answer and read its feedback.",
+          "expected": "Choice justified by the situation’s criterion.",
+          "hint": "Use the case information without inventing observations.",
+          "criteria": [
+            "Choice justified by the situation’s criterion."
+          ],
+          "check": {
+            "question": "Which conclusion is supported?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The button works with mouse and keyboard.",
+                "feedback": "The list describes behavior but does not execute it."
+              },
+              {
+                "id": "b",
+                "text": "The plan covers the items; the button still needs implementation and testing.",
+                "feedback": "This matches the available textual evidence."
+              },
+              {
+                "id": "c",
+                "text": "The site is already available to every visitor.",
+                "feedback": "No publication or public-access test was shown."
+              }
+            ],
+            "correct": "b",
+            "success": "You recognize the plan’s value without assigning it a nonexistent test.",
+            "retry": "Separate “describes” from “was observed working”."
+          }
+        },
+        {
+          "slug": "portable-request",
+          "kind": "reflect",
+          "mode": "guided-simulation",
+          "title": "Deliver a request another tool can understand",
+          "objective": "Preserve intent and criteria when changing context.",
+          "body": "Keep the request, revised plan and criteria list. For another tool, retain this information and check its folder/context; control names may differ. You do not need another account for this exercise: write what you would preserve and what you would need to check. The next lesson develops test and correction records.",
+          "action": "Record the final request and transfer checks.",
+          "expected": "A reusable request with criteria and transfer context.",
+          "hint": "The method transfers; interface controls are not necessarily identical.",
+          "criteria": [
+            "A reusable request with criteria and transfer context."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "verification",
+      "title": "Verify, correct and repeat",
+      "summary": "Observable criteria, failure reports and retesting.",
+      "outcome": "Compare a result and record a correction with evidence.",
+      "prerequisites": [
+        "requests"
+      ],
+      "minutes": 30,
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "steps": [
+        {
+          "slug": "evidence-types",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Distinguish claims, files and behavior",
+          "objective": "Recognize different strengths of evidence.",
+          "body": "A “done” message is a claim. An opened file displays content. An observed interaction shows behavior in that test. None guarantees all the others. Here we use a fictional text schedule: a workshop starts at 16:00 and lasts 45 minutes. The simulated response ends at 17:45. We can check the arithmetic without building an application.",
+          "action": "Classify the evidence available in the example.",
+          "expected": "The record identifies a text response and a verifiable time error.",
+          "hint": "16:00 plus 45 minutes does not require trusting the same AI.",
+          "criteria": [
+            "The record identifies a text response and a verifiable time error."
+          ]
+        },
+        {
+          "slug": "success-criteria",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Define criteria before requesting correction",
+          "objective": "Describe success in observable terms.",
+          "body": "Set four schedule criteria: name “Music workshop”, start 16:00, duration 45 minutes and finish 16:45. The name and start must remain unchanged during correction. Short criteria distinguish fixing an error from changing the agreement. On a site, a criterion could be the address appearing on click; in a report, it could be a calculated total.",
+          "action": "Write the four schedule criteria.",
+          "expected": "Criteria include the correct result and what must remain unchanged.",
+          "hint": "Avoid vague criteria such as “looks good”.",
+          "criteria": [
+            "Criteria include the correct result and what must remain unchanged."
+          ]
+        },
+        {
+          "slug": "baseline",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Record the baseline before changing it",
+          "objective": "Capture the observation and calculate the expectation.",
+          "body": "Simulated example before correction: “Music workshop,16:00–17:45,45 minutes.” Compare start and duration:16:00+45 minutes=16:45. Record the received phrase and the arithmetic supporting the expectation. Keeping this reference avoids relying on memory and helps check whether revision fixed the time without changing the name.",
+          "action": "Record observed, expected and the basis for the difference.",
+          "expected": "The record shows observed 17:45, expected 16:45 and the calculation.",
+          "hint": "Do not claim a program ran: this is a text example.",
+          "criteria": [
+            "The record shows observed 17:45, expected 16:45 and the calculation."
+          ]
+        },
+        {
+          "slug": "diagnosis-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Choose a useful failure report",
+          "objective": "Provide enough information to locate the problem.",
+          "body": "The AI needs to correct the fictional schedule’s finish time while preserving everything else. Which report is most useful?",
+          "action": "Choose an answer and read its feedback.",
+          "expected": "Choice justified by the situation’s criterion.",
+          "hint": "Use the case information without inventing observations.",
+          "criteria": [
+            "Choice justified by the situation’s criterion."
+          ],
+          "check": {
+            "question": "Choose the report that identifies the error and boundary.",
+            "options": [
+              {
+                "id": "a",
+                "text": "The workshop ends 17:45. Change the start to 17:00 and keep 45 minutes so the times match.",
+                "feedback": "The arithmetic would match, but you would change the start that should be preserved."
+              },
+              {
+                "id": "b",
+                "text": "Keep 16:00–17:45 and change the duration to 105 minutes; the arithmetic then works without changing the interval.",
+                "feedback": "This changes the agreed duration to accommodate the error instead of correcting the finish."
+              },
+              {
+                "id": "c",
+                "text": "“The workshop starts 16:00 and lasts 45 minutes, but the text ends 17:45. Correct it to 16:45 and preserve name/start.”",
+                "feedback": "The report provides actual, expected, reason and boundary."
+              }
+            ],
+            "correct": "c",
+            "success": "You provided information for a bounded change.",
+            "retry": "Look for observed behavior, expectation and what must stay unchanged."
+          }
+        },
+        {
+          "slug": "reproduction",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Describe how you found the difference",
+          "objective": "Connect input, response and checking.",
+          "body": "Reproduction does not promise an AI will always answer identically. For text, record the request, data and problematic phrase. For a page, record file/address and click sequence. Here the sequence is reading start/duration, calculating finish and comparing it with the phrase. Another person can follow these steps without guessing your reasoning.",
+          "action": "Write three steps to repeat the check.",
+          "expected": "Steps connect input data to the observed difference.",
+          "hint": "Include the version or passage you actually compared.",
+          "criteria": [
+            "Steps connect input data to the observed difference."
+          ]
+        },
+        {
+          "slug": "repair-request",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Request a small correction",
+          "objective": "Ask for change while preserving valid criteria.",
+          "body": "Use your recorded reference to request a precise change. Simulated revised response: “Music workshop,16:00–16:45,45 minutes.” The correction looks right but still needs comparison. The same method applies to an unresponsive button or a report duplicating rows: specify the difference, boundary and test to repeat.",
+          "action": "Write the correction and read the simulated revised response.",
+          "expected": "The request specifies the right time and preserves the rest.",
+          "hint": "Avoid adding new features during a small repair.",
+          "criteria": [
+            "The request specifies the right time and preserves the rest."
+          ],
+          "prompt": "Correct only the Music workshop finish time: start 16:00 and duration 45 minutes require finish 16:45. Preserve the name, start and duration. Show the revised phrase and the calculation used."
+        },
+        {
+          "slug": "retest",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Repeat the failed test and preserved criteria",
+          "objective": "Check the correction and its effects on the rest.",
+          "body": "Compare the new simulated phrase with all four criteria: finish 16:45, start 16:00, duration 45 minutes and unchanged name. Merely repeating “is it fixed?” provides little evidence. Recalculate and read. In real practice, use the response or artifact you received; do not mark success if the new version is unavailable.",
+          "action": "Record each criterion’s result after revision.",
+          "expected": "All criteria have a checked or pending result.",
+          "hint": "Retesting the error and checking preserved behavior complement each other.",
+          "criteria": [
+            "The revised finish matches the calculation.",
+            "Name, start and duration were preserved.",
+            "Pending results were not marked as observed."
+          ]
+        },
+        {
+          "slug": "real-small-change",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Practice without inventing a failure",
+          "objective": "Apply the cycle to a real text change.",
+          "body": "In your tool, request and check the same fictional schedule. If an error occurs, use the correction cycle. If it is correct, make a deliberate change: duration becomes 30 minutes, so finish should be 16:30. Label this a new request, not an earlier failure. Compare time and name afterward. Record what actually happened.",
+          "action": "Make the small change and record before/after.",
+          "expected": "The record distinguishes error correction from a requested change.",
+          "hint": "If you cannot run it, complete only simulated analysis and say so.",
+          "criteria": [
+            "The record distinguishes error correction from a requested change."
+          ]
+        },
+        {
+          "slug": "verification-limit",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Keep the conclusion within the test",
+          "objective": "Report the result and its limits precisely.",
+          "body": "The AI responded “all tests passed”, but you only compared the schedule phrase and its calculation.",
+          "action": "Choose an answer and read its feedback.",
+          "expected": "Choice justified by the situation’s criterion.",
+          "hint": "Use the case information without inventing observations.",
+          "criteria": [
+            "Choice justified by the situation’s criterion."
+          ],
+          "check": {
+            "question": "What is the appropriate record?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The checked phrase and calculation are correct; I observed no program tests or publication.",
+                "feedback": "The record limits its conclusion to what was actually checked."
+              },
+              {
+                "id": "b",
+                "text": "Every app generated by this AI is validated.",
+                "feedback": "A text check does not demonstrate other programs or situations."
+              },
+              {
+                "id": "c",
+                "text": "No comparison is valid without code access.",
+                "feedback": "You can check text and arithmetic without code; that evidence is useful within its scope."
+              }
+            ],
+            "correct": "a",
+            "success": "Your conclusion is useful because it also states the test’s scope.",
+            "retry": "Describe observed evidence and what remains outside it."
+          }
+        },
+        {
+          "slug": "verification-record",
+          "kind": "reflect",
+          "mode": "guided-simulation",
+          "title": "Take a test record into your next route",
+          "objective": "Organize input, criterion, result and next step.",
+          "body": "Deliver a short record: input used, criterion, observation, requested adjustment when applicable, retest result and remaining work. In the next routes, use this format with a page, app or CSV. Choose the route matching your goal; automation does not require completing site lessons first. This record supports comparison; it is not automatic certification.",
+          "action": "Complete the record and choose site, app or automation.",
+          "expected": "The record has evidence and a next step for the chosen route.",
+          "hint": "A declared obstacle is more useful than invented execution.",
+          "criteria": [
+            "Input and criterion are recorded.",
+            "Observation and retest are separate.",
+            "Remaining work and next route are indicated."
+          ]
+        }
+      ]
+    }
+  ]
+}
