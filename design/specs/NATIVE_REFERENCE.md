@@ -92,3 +92,7 @@ Preservados: Figtree, roxo#6C3BEE, tinta#17151F, superfícies claras/creme/lavan
 ## Referência x implementação
 
 Não foi copiado código funcional do desktop. Foram observados UI/AX, lidos tokensCSS para precisão e reutilizados assets estáticos locais legítimos. O protótipo mostra uma adaptação ao currículo web atual, não uma migração do curso nativo de viagem. O pacote mantém evidência e entrega separadas.
+
+### Estado editorial da prévia
+
+O currículo atual está em prévia e não declara aulas liberadas (`releasedLessonIds=[]`). A única aula pode ser exibida como conteúdo em revisão; nunca converter seu status para publicada/liberada por uma decisão visual. O protótipo seleciona essa aula pelo ID apenas para revisão de design.

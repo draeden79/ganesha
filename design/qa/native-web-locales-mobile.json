@@ -1,0 +1,84 @@
+{
+  "screen": "canonical brief practice",
+  "viewport": "390x844",
+  "note": "Existing reading scroll position preserved; initial title position tested separately.",
+  "results": [
+    {
+      "dir": "ltr",
+      "lang": "pt-BR",
+      "scrollWidth": 390,
+      "title": "Monte um pedido útil",
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "lang": "en",
+      "scrollWidth": 390,
+      "title": "Build a useful request",
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "lang": "es",
+      "scrollWidth": 390,
+      "title": "Prepara una petición útil",
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "lang": "fr",
+      "scrollWidth": 390,
+      "title": "Construisez une demande utile",
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "lang": "de",
+      "scrollWidth": 390,
+      "title": "Formuliere einen hilfreichen Auftrag",
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "lang": "ja",
+      "scrollWidth": 390,
+      "title": "役に立つ依頼を組み立てる",
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "lang": "hi",
+      "scrollWidth": 390,
+      "title": "उपयोगी अनुरोध बनाएँ",
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "lang": "id",
+      "scrollWidth": 390,
+      "title": "Susun permintaan yang berguna",
+      "width": 390
+    },
+    {
+      "dir": "rtl",
+      "lang": "ar",
+      "scrollWidth": 390,
+      "title": "صغ طلبًا مفيدًا",
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "lang": "ko",
+      "scrollWidth": 390,
+      "title": "유용한 요청 만들기",
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "lang": "zh-CN",
+      "scrollWidth": 390,
+      "title": "组织一个有用的请求",
+      "width": 390
+    }
+  ]
+}
