@@ -2,6 +2,8 @@
 
 Data: 28/09/2026. Responsável: Artista. O trabalho preservou a beta 0.2 e usou `localhost` para manter os registros de QA separados dos testes da equipe em `127.0.0.1`.
 
+**Resultado final às 22:01 UTC:** 120 etapas percorridas em pt-BR e amostras visuais/funcionais dos 11 idiomas, sem P0/P1 aberto. Aceite enviado ao Diretor. Permanece um P2 decorativo nos conectores RTL. O detalhamento abaixo preserva as versões e os retestes que sustentam esse aceite.
+
 ## Versões verificadas
 
 - Percurso completo: app `71d9c1d`, conteúdo `b8e4a62`, prévia isolada `http://localhost:3104/classroom/pt-BR`.
@@ -10,6 +12,7 @@ Data: 28/09/2026. Responsável: Artista. O trabalho preservou a beta 0.2 e usou 
 - Espanhol e hindi: catálogos `a74b73a`, no mesmo app e prévia, rotas `/es` e `/hi`.
 - Japonês: catálogo `7db8adb`, no mesmo app e prévia, rota `/ja`.
 - Árabe, francês e ajuste de negação do hindi: catálogos `4e316ee`, no mesmo app e prévia.
+- Fechamento: conteúdo `fc2efa3` com 11 catálogos; correções AR em `9aae28f`; runtime `d101d2f` e `d46956c`. Este último exporta o helper existente para teste, sem diferença de renderização. Reteste final também realizado no build do Diretor em `http://localhost:3106/classroom/ar`.
 - Os registros de prática inseridos declaram explicitamente QA da interface, sem execução externa dos projetos ou das ferramentas de IA.
 
 ## Resultado funcional
@@ -63,10 +66,18 @@ Francês passou pelas três amostras de CSV, recuperação de Apps e ensaio de a
 
 Árabe foi inspecionado nas primeiras etapas das 12 aulas, com `dir=rtl` e largura 390 sem estouro. Comandos delimitados e bloco CSV literal estão LTR. Foi encontrado um P1 de apresentação nos trechos técnicos ainda sem delimitadores: o JSON inline da avaliação `app-delivery.check-contract` desloca chaves/pontuação; o CSV dentro do pedido `automation-input.create-csv` desloca o identificador para o fim da linha. O bloco CSV separado permanece correto.
 
-Correção solicitada ao Educador: delimitar o JSON completo com backticks e cada linha CSV com seu próprio par, incluindo os literais do ensaio de agendamento. O parser atual aceita somente código inline de uma linha; não foi solicitada alteração de UI. Reteste árabe pendente do pacote corrigido.
+Correção solicitada ao Educador: delimitar o JSON completo com backticks e cada linha CSV com seu próprio par, incluindo os literais do ensaio de agendamento. O parser atual aceita somente código inline de uma linha; nessa rodada, o reteste ainda dependia do pacote corrigido. O fechamento posterior está registrado abaixo.
 
 Evidências desta rodada: `qa/v03-ar-fr-initial-ui.json`, `qa/v03-fr-apps-mobile.jpg`, `qa/v03-ar-json-before.jpg`, `qa/v03-ar-csv-before.jpg` e `qa/v03-ar-schedule-before.jpg`. As capturas com sufixo `before` registram a condição anterior à correção e não representam aprovação RTL. A jornada desktop também foi inspecionada a 1280 × 720: quatro grupos e 12 aulas, sem estouro (`qa/v03-ar-overview-desktop.jpg`).
 
 Observação P2 de acabamento: os conectores decorativos `››` entre cartões da jornada ainda apontam para a direita em RTL. Os controles de navegação permanecem operáveis; isso não bloqueia a rodada de publicação, mas pode ser espelhado posteriormente.
 
-Pendente para fechar a versão multilíngue: retestar os trechos técnicos em árabe e conferir alemão, coreano e chinês após integração. Este relatório não certifica tradução humana, execução dos projetos externos ou publicação da 0.3 no domínio público.
+### Fechamento dos 11 idiomas — 22:01 UTC
+
+Os P1 de RTL foram corrigidos e retestados. JSON passou a usar um único trecho `code` LTR/isolate; cada linha CSV recebeu seu próprio trecho, mantendo quebras e identificadores na posição correta. Os literais do ensaio de agendamento também ficaram isolados. As capturas `qa/v03-ar-json-after.jpg` e `qa/v03-ar-csv-after.jpg` mostram o resultado.
+
+O runtime passou a renderizar código também em enunciados e critérios. No build final do Diretor (3106), o check decimal em árabe foi testado com erro e acerto: erro bloqueia, acerto libera; enunciado, opção e feedback mantêm LTR/isolate e não exibem backticks crus. Uma tentativa de QA precisou trocar o seletor pelo valor do input porque a composição de texto/código acrescenta espaço no nome acessível; não foi falha do produto.
+
+Coreano (3105), chinês e alemão (3106) passaram pelas amostras de CSV, cópia isolada de Apps e ensaio de agendamento. Todas mantiveram `scrollWidth = innerWidth = 390`, dados e comandos intactos. As capturas de coreano, chinês e alemão foram inspecionadas e mostram caracteres legíveis e parágrafos sem cortes. Evidências: `qa/v03-final-locales-ui.json`, `qa/v03-ko-schedule-mobile.jpg`, `qa/v03-zh-schedule-mobile.jpg` e `qa/v03-de-schedule-mobile.jpg`.
+
+**Aceite final enviado ao Diretor às 22:01 UTC, sem P0/P1 aberto no escopo verificado.** Os 11 idiomas receberam conferência visual/funcional por amostras; o percurso completo de 120 etapas foi realizado em pt-BR. Resta apenas o P2 decorativo dos conectores RTL. Não há alegação de revisão linguística humana integral, execução dos projetos externos ou publicação da 0.3 no domínio público neste relatório.
