@@ -21,9 +21,10 @@ export async function POST(request: NextRequest) {
     return new Response(null, { status: 303, headers: { ...privateHeaders(), Location: url } });
   } catch (error) {
     // Provider diagnostics only: never log messages, request bodies, keys or customer data.
-    const failure = error as { type?: string; code?: string; param?: string };
+    const failure = error as { type?: string; code?: string; param?: string; message?: string };
     const safe = (value: unknown) => typeof value === 'string' && /^[A-Za-z0-9_.\[\]-]{1,80}$/.test(value) ? value : undefined;
-    console.error('payment_checkout_failed', { type: safe(failure?.type), code: safe(failure?.code), param: safe(failure?.param) });
+    const detail = failure?.type === 'StripeInvalidRequestError' ? (failure.message || '').replace(/https?:\/\/\S+|\S*[@_\d]\S*/g, '[redacted]').slice(0, 400) : undefined;
+    console.error('payment_checkout_failed', { type: safe(failure?.type), code: safe(failure?.code), param: safe(failure?.param), detail });
     return paymentPage('Checkout is temporarily unavailable.', '<p>No classroom access has been issued. Return to checkout and try again.</p><a class="button" href="/checkout">Back to checkout</a>', { status: 503 });
   }
 }
