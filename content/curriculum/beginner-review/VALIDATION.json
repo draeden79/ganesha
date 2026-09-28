@@ -27,11 +27,17 @@
   "changedKeyCount": 74,
   "addedKeyCount": 7,
   "removedKeyCount": 13,
-  "visualReview": "pending Artista and app preview",
+  "visualReview": "Visual plan reviewed; rendered UI and implemented illustrations pending",
   "learnerTest": "not performed",
   "files": {
     "bundle/content/curriculum/course.json": "06cca3c55848eee62eb5ee94f05de021e560bc5ae2bd60a69bc684afbeabe15f",
     "bundle/content/locales/en.json": "63d4c664ff38bae5665362583ad40d113d3db7cc272627debaded59abc748993",
     "bundle/content/locales/pt-BR.json": "2c164c579b3f3cb9fc89c911da825e7e53146ee14cdee631a393e152ffc4a428"
+  },
+  "didacticReview": {
+    "reviewer": "Artista",
+    "status": "accepted-for-isolated-preview",
+    "scope": "First lesson only; no P0 in editorial review",
+    "receivedAtUtc": "2026-09-28T22:53:45Z"
   }
 }
