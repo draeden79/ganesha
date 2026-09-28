@@ -13,6 +13,16 @@ Pedido de Lucas em 28/09/2026: criar outra sessão chamada Professor para escrev
 - A tentativa de encaminhamento feita pelo Professor foi rejeitada pela revisão automática por falta de autorização comprovada no contexto dele. O Diretor verificou as identidades das tarefas, reapresentou a instrução direta de Lucas e encaminhou o pacote ao Artista com sucesso em 28/09/2026, após 23:23 UTC. Não houve nova solicitação de autorização ao usuário nem envio via Slack.
 - Artista recebeu os caminhos locais, o briefing e a instrução de começar o design e a produção das imagens/gráficos em artefatos separados da produção.
 
+## Prévia visual entregue — 28/09/2026, 23:39 UTC
+
+- Autoria preservada no commit do Professor `5d0e655`, integrado pelo Diretor como `13d6789` em `professor-experiment/`.
+- Design do Artista `f442770`, integrado como `9fd41a2`, em `design/astra/`: 12 aulas, 61 etapas, 13 gráficos SVG produzidos e cinco demonstrações com dados preparados.
+- Primeira atividade: http://127.0.0.1:4180/astra/?lesson=1&step=1
+- Mapa: http://127.0.0.1:4180/astra/?view=course
+- Galeria: http://127.0.0.1:4180/astra/?view=gallery
+- O Diretor conferiu a abertura visual, o avanço entre as duas primeiras etapas e a preservação byte a byte dos textos das 12 aulas no snapshot do design. A revisão completa de larguras e demonstrações do Artista está em `design/astra/QA.md`.
+- Estado: proposta navegável para revisão humana. Não há avaliação automática do aluno, persistência de progresso, integração com as ferramentas ou publicação desta proposta. Os gráficos são entregues; testes com iniciantes, demonstrações operacionais e dez traduções continuam pendentes.
+
 ## Limites do experimento
 
 O Professor escreve do zero, sem pesquisa na internet, sem transcrições, fichas do Devorador, aulas do Educador, currículo publicado ou autoria delegada a outros agentes. Pode usar ferramentas locais para gravar e conferir seus próprios arquivos. A autoria deve permanecer isolada numa pasta nova, sugerida como `professor-experiment/`.

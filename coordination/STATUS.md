@@ -2,6 +2,8 @@
 
 ## Professor — nova direção de autoria, 28/09/2026
 
+Prévia visual entregue às 23:39 UTC: http://127.0.0.1:4180/astra/?lesson=1&step=1 . Professor e Artista integrados em áreas isoladas (`13d6789` e `9fd41a2`): 12 aulas, 61 etapas, 13 gráficos produzidos e cinco demonstrações preparadas. Diretor conferiu abertura/navegação e preservação dos textos. Material disponível para revisão humana; nenhuma alteração de produção ou declaração de aprendizagem validada.
+
 Lucas pediu uma nova sessão independente, Professor, usando GPT Astra para criar do zero as 12 aulas completas e todas as etapas apenas com o conhecimento do modelo. Sessão `01a0ea49-c401-76e1-8d55-00ab06ac3677`, worktree `aa29`. Pacote Astra-PTBR-1.0 concluído: 12 aulas, 61 etapas, 20 documentos. Após rejeição automática do envio inicial por autorização não comprovada, o Diretor verificou os destinatários e reapresentou a autorização explícita de Lucas; o encaminhamento ao Artista foi aceito. O Artista está instruído a começar o design, imagens e gráficos. Detalhes em `PROFESSOR_EXPERIMENT.md`. A hipótese sobre a fonte dos problemas permanece aberta; nenhuma aprovação pedagógica ou publicação automática foi concedida.
 
 ## Qualidade da primeira aula — 28/09/2026, após 22:58 UTC
