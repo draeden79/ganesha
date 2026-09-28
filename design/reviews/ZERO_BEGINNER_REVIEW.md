@@ -30,4 +30,12 @@ A rubrica de conclusão permanece visível e obrigatória na implementação atu
 
 Para cada uma das primeiras etapas: uma pessoa sabe onde começar, o que copiar/clicar, o que deve aparecer e o que fazer se não aparecer? Termos indispensáveis foram explicados antes da ação? Existe um exemplo de resposta do aluno antes de pedir resposta livre? O caminho sem acesso à ferramenta tem instrução própria e resultado honesto?
 
-Estado inicial: cinco barreiras e três P0 pedagógicos enviados ao Educador e ao Diretor. Candidato simplificado ainda será revisado; este documento não concede aceite antecipado.
+## Aceite da primeira aula candidata
+
+Revisão concluída às 22:53 UTC sobre o snapshot do Educador de 22:53:01: `content/curriculum/beginner-review/authoring/foundations.pt-BR.json`, `PREVIEW.md` e critérios/avisos em `build.py`, no worktree `30b2`.
+
+**Aceite didático para instalar a prévia local.** As dez etapas agora podem ser acompanhadas integralmente por exemplo, sem instalar ferramenta nem criar pasta. O texto explica IA, pedido e resposta antes da ação; distingue a conversa externa da anotação na Ganesha; usa Ponte Musical para mostrar uma omissão e sua correção; e pede registros curtos e explícitos. O pedido copiável está separado da resposta ilustrativa. Os dois checks usam os conceitos apresentados e reconhecem o aprendizado pelo exemplo sem alegar execução externa.
+
+O plano visual implementável está em `design/specs/FIRST_LESSON_VISUAL_PLAN.md`: quatro diagramas HTML/SVG nas etapas 1, 2, 7 e 8, com objetivo, composição, rótulos, alt e comportamento no celular. A integração exige componentes próprios; o adaptador atual não renderiza uma imagem apenas por ela ser anexada ao conteúdo.
+
+Este aceite é uma revisão editorial da primeira aula, não teste com alunos, aprovação das onze aulas seguintes ou verificação de imagens na interface. A rubrica continua presente na UI; seus textos foram simplificados, sem afirmar que ficou recolhida. A candidata está disponível em pt-BR/en; esta revisão detalhada se concentrou em pt-BR. Os nove idiomas restantes seguem pendentes para o conteúdo alterado.
