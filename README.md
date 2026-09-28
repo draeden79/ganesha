@@ -8,8 +8,8 @@ Both apps are installed and their dedicated production routing is enabled. Gener
 
 | Surface | Behavior |
 | --- | --- |
-| `#devops` | Mention **@Gdevops** with an infrastructure request. DevOps gathers requirements and prepares a plan, validation steps and rollback. |
-| `#landing-pages` | Mention **@Glandingpage** with the course subject, audience, learning outcome and curriculum. Landing Pages asks for missing facts or publishes a branded demo page and replies in the original thread. |
+| Any workspace channel, including `#management` and `#devops` | Mention **@Gdevops** with an infrastructure request. Explicit `ops` commands execute supported GitHub/Vercel actions and return verified results in the thread. |
+| Any workspace channel, including `#landing-pages` | Mention **@Glandingpage** with the course subject, audience, learning outcome and curriculum. Landing Pages asks for missing facts or publishes a branded demo page and replies in the original thread. |
 | New DM | Message the app whose role you need; its identity selects the agent. |
 | Existing thread | Replies remain with the original agent; another agent needs a new thread. |
 
@@ -22,7 +22,7 @@ Landing Pages uses the approved Ganesha template and illustration. Its model pro
 - Vercel Connect forwards verified events to `/api/webhooks/slack-devops` and `/api/webhooks/slack-landing-pages`. The gateway verifies the production project's OIDC token, workspace, exact app identity, sender, channel, thread assignment and quota before dispatch.
 - Both apps accept mentions in any workspace channel where Slack delivers their events, and in DMs; no application channel allowlist applies. External shared channels are rejected. All verified same-workspace humans and bots may request work; bots must explicitly mention the target on every request and follow-up. Self messages and passive bot messages are ignored.
 - The manifest, connector defaults and runtime token requests specify seven scopes: `app_mentions:read`, `chat:write`, `channels:history`, `channels:read`, `im:history`, `im:read`, `users:read`. Events: `app_mention`, `message.channels`, `message.im`.
-- Gdevops retains the broader 24-scope grant from its original assisted setup, including file, private-channel history and additional messaging permissions. The owner explicitly accepted retaining that grant. Requesting seven scopes does not reduce an already-issued Slack token's permissions; the gateway still restricts processing to the configured channels and DMs. Replacing the existing grant would require revocation and reinstall. Glandingpage was created with exactly the seven approved bot scopes and no user scopes.
+- Gdevops retains the broader 24-scope grant from its original assisted setup, including file, private-channel history and additional messaging permissions. The owner explicitly accepted retaining that grant. Requesting seven scopes does not reduce an already-issued Slack token's permissions. The gateway verifies workspace, app and sender without a channel allowlist. Replacing the existing grant would require revocation and reinstall. Glandingpage was created with exactly the seven approved bot scopes and no user scopes.
 - Both `slack/ganesha` (Gdevops) and `slack/glandingpage` are linked only to this project's **production** environment.
 - Requests pass through Vercel and Redis to the owner's local Codex worker; inference uses OpenAI through the existing ChatGPT login. Common credential patterns are redacted before model use or workflow persistence; this is not a comprehensive secret detector. Never paste secrets into Slack. Content intended for a public page must be suitable for publication.
 - Current local model: GPT-6 Astra with extra-high reasoning. Gateway remains an explicit operator option using `openai/gpt-5-nano`; it is never an automatic fallback. Default workspace quota: 40 requests per UTC day and ten seconds between model requests by one user or bot. Duplicate events and workflow-start retries share the original quota charge. Commands do not consume model quota. Account/model usage limits still apply.
@@ -55,6 +55,9 @@ CI runs the real Redis integration tests against an isolated Redis service. Offl
 Secrets and production state stay out of Git. Source is at [draeden79/ganesha](https://github.com/draeden79/ganesha). The portable module's [brand contract](packages/landing-pages/docs/design-system.md) and [image provenance](packages/landing-pages/docs/image-provenance.md) record the approved design.
 
 ## Verified installation (2026-09-28)
+
+- Cross-channel GitHub execution was verified from `#management`: Gdevops resolved the product commit and created [PR #1](https://github.com/draeden79/ganesha/pull/1), replying in the original thread. A deployment request in `#devops` published classroom commit `2ac2fe859db98687fc4e3acacfbf0c56526452d9`; same-job recovery reused deployment `dpl_AvgdR17fpJvGF1dpWBmPd2xbhaBo` after a CLI response-format fix. Portuguese/Arabic routes and sampled assets returned HTTP 200. The host proxies only `/classroom` paths to the separate service, preserving the existing public course and bot health.
+- Working classroom entry: https://ganesha-devops.vercel.app/classroom. Vercel reports the custom domain configured correctly; this computer's corporate proxy certificate prevented independent HTTPS verification of `iganesha.online`. Incoming-webhook bot identity handling is implemented and tested; a fresh request from Diretor — Produto was requested for live acceptance.
 
 - Both production Slack apps are installed in Ganesha, with verified event forwarding to their own routes: Gdevops in [#devops](https://app.slack.com/client/T0C4LM9QGJK/C0C4M9CAPRD) and Glandingpage in [#landing-pages](https://app.slack.com/client/T0C4LM9QGJK/C0C56E0BEJY).
 - An owner-authorized DevOps request returned a staging plan, validation and rollback in its original thread. Follow-ups work without another mention.

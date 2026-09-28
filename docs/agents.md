@@ -22,6 +22,7 @@ Gdevops now has a deterministic GitHub/Vercel operations worker for **draeden79/
 @Gdevops ops vercel status devops
 @Gdevops ops github pr {"head":"codex/example","base":"main","title":"Describe the change"}
 @Gdevops ops deploy classroom FULL_40_CHARACTER_COMMIT_SHA
+@Gdevops ops retry FULL_64_CHARACTER_JOB_ID
 ```
 
 The first command resolves the commit and checks. PR requests create or reuse a draft PR; they do not merge it. Classroom deployment accepts a full commit SHA reachable from `codex/diretor-integracao`, uploads an isolated snapshot, builds remotely on Vercel and verifies the public classroom routes. Deployment is fixed to `ganesha-classroom`; the host project is `ganesha-devops` in team `manuel-guimaraes-pinto-filhos-projects`. Only `/classroom` and `/classroom/:path*` are proxied. Existing landing, `/api`, assets, Slack services and `/courses` remain on the host.
@@ -29,6 +30,8 @@ The first command resolves the commit and checks. PR requests create or reuse a 
 An accepted request returns a job ID in its original Slack thread. The durable Redis queue retains work while the PC is offline. A separate Windows operations worker uses existing GitHub/Vercel CLI authentication; credentials never enter model input or Slack. Generation remains a separate data-only Codex worker. Results are posted only from verified command/API outcomes. A checkpoint prevents automatic recreation after an ambiguous remote mutation; such uncertainty is reported for operator review. Delivery retries independently and may repeat a result after an interrupted acknowledgement.
 
 Use `help` for syntax, `status` for capabilities and `stop` to stop conversational generation in that thread. **Stop does not cancel an accepted infrastructure operation.** Follow an operation's job receipt/result; do not resubmit a mutation just because it is slow. An operations worker restart recovers unfinished work using the same job and deployment/PR checkpoints.
+
+After a reported failure is resolved, use `ops retry` with the full job ID in the original thread. This resumes the same operation and checkpoints; it refuses running jobs, successful jobs and requests from another thread. Recovery checks existing remote records before creating anything.
 
 No operation purchases resources, upgrades plans, changes credentials, merges a PR or executes arbitrary shell supplied by a message/model. The owner already selected a noncommercial demonstration on the current plan. Do not repeatedly ask the product team to reconfirm that same decision. Classroom application deployment belongs to Gdevops, not Glandingpage.
 
