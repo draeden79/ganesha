@@ -7,9 +7,27 @@
   "pedagogicalStatus": "provisional-prototype",
   "recommendedLessonStatus": "draft",
   "releaseEligible": false,
-  "reason": "A completude estrutural e das traduções foi indevidamente usada como prontidão. A base inicial consiste em consultas pontuais e sínteses; faltam estudo integral aceito, sequência operacional completa e inspeção visual pertinente.",
+  "reason": "A L01 continua protótipo: primeiro quickstart textual integral aceito e método de prompting conferido, mas restam fontes/variantes selecionadas, aplicação completa revisada e inspeção visual pertinente. Cobertura estrutural/tradução não substitui essas lacunas.",
   "reportPath": "content/curriculum/PEDAGOGICAL_AUDIT.md",
-  "acceptedFullStudyRecords": [],
+  "acceptedFullStudyRecords": [
+    {
+      "studyId": "official-claude-desktop-quickstart",
+      "resourceId": "res-claude-desktop-start",
+      "researchCommit": "8af94e4",
+      "educatorReviewPath": "content/curriculum/reviews/OFFICIAL_SUBSET_01.md",
+      "artifactPath": "content/research/studies/local/official-claude-desktop-quickstart.md",
+      "artifactSha256": "7e0fbc28948beca6fa3e042857f07ffccfffe08b9ce0039fee2c66214cf66ac8",
+      "readLines": [
+        [
+          1,
+          140
+        ]
+      ],
+      "scope": "Documento textual integral; afirmações delimitadas de instalação/acesso, contexto, pedido e revisão. Não certifica demonstração visual ou execução no aplicativo.",
+      "executedByEducator": false,
+      "visualDemonstrationAccepted": false
+    }
+  ],
   "acceptedVisualReviewRecords": [],
   "originalResearchBaseline": {
     "resourceRecords": 23,
@@ -90,7 +108,7 @@
     {
       "id": "L01-S01",
       "owner": "Devorador",
-      "status": "requested-refined-not-received",
+      "status": "text-reviewed-bounded-claims-accepted",
       "sourceIds": [
         "res-codex-prompting"
       ],
@@ -106,7 +124,11 @@
         "res-codex-prompting"
       ],
       "priority": "P0",
-      "selectionDecision": "retain"
+      "selectionDecision": "retain",
+      "acceptedStudyIds": [
+        "official-codex-prompting"
+      ],
+      "remainingGap": "Aplicação didática completa ainda interna e não validada; página multimídia continua parcial. Não ensinar ditado nem declarar revisão da animação."
     },
     {
       "id": "L01-S02",
@@ -137,7 +159,7 @@
     {
       "id": "L01-S03",
       "owner": "Devorador",
-      "status": "requested-refined-not-received",
+      "status": "claude-text-accepted-codex-and-visual-pending",
       "sourceIds": [
         "res-claude-desktop-start",
         "res-codex-desktop-start"
@@ -161,7 +183,11 @@
       "selectionDecision": "one-quickstart-per-tool",
       "deferredSourceIds": [
         "res-claude-desktop-reference"
-      ]
+      ],
+      "acceptedStudyIds": [
+        "official-claude-desktop-quickstart"
+      ],
+      "remainingGap": "Quickstart Codex e percurso visual/execução pertinente das duas superfícies; texto não é demonstração observada."
     },
     {
       "id": "L01-S04",
@@ -231,5 +257,38 @@
     "relevantVisualReviewRequired": true,
     "preferredResourcePattern": "one principal complete resource per need; complement only for a material gap or tool variant",
     "stopWhen": "All material objective, example, prerequisite, error, assessment and tool-variant gaps are covered and reviewed; additional inventory remains independent."
+  },
+  "acceptedBoundedStudyRecords": [
+    {
+      "studyId": "official-codex-prompting",
+      "resourceId": "res-codex-prompting",
+      "researchCommit": "8af94e4",
+      "educatorReviewPath": "content/curriculum/reviews/OFFICIAL_SUBSET_01.md",
+      "artifactPath": "content/research/studies/local/codex-prompting.txt",
+      "artifactSha256": "f4a155ddbf7af5bf24f4e117b61bc4b6025a637bf8dcfd51941bed5cd1e1d367",
+      "readLines": [
+        [
+          1,
+          503
+        ]
+      ],
+      "fullTextReadByEducator": true,
+      "fullMultimediaSourceAccepted": false,
+      "scope": "Método textual de objetivo/contexto/limites/refinamento e verificação; exemplos são instruções propostas, não resultados executados.",
+      "pending": [
+        "Animação de ditado não inspecionada; fora do escopo de ensino da L01.",
+        "Exemplo operacional não executado."
+      ]
+    }
+  ],
+  "internalLessonDevelopment": {
+    "path": "content/curriculum/L01_WORKED_EXAMPLE.md",
+    "authorship": "Educador original example",
+    "executionMode": "simulated",
+    "productIntegration": false,
+    "studentCatalogsChanged": false,
+    "locale": "pt-BR",
+    "localizationRequiredBeforeExposure": true,
+    "purpose": "Revisão de coerência: pedido→plano incompleto→comparação→correção→novo plano; preparar avaliações sem alegar execução."
   }
 }

@@ -2,6 +2,8 @@
 
 Data: 2026-09-28. Responsável: Educador. Curso `course.first-site`, versão não publicada `0.1.0`, aula `lesson.first-request`. Solicitação do usuário transmitida pelo Diretor: reavaliar a qualidade de uma aula construída a partir de resumos e exigir estudo integral das fontes pertinentes antes do aceite pedagógico.
 
+Esta auditoria registra o ponto de reclassificação. Novos aceites posteriores são registrados em `maturity.json` e `reviews/`, sem reescrever os limites do pacote original. O primeiro avanço oficial está em `reviews/OFFICIAL_SUBSET_01.md`; a contagem inicial de zero aceites abaixo não deve ser usada como contagem atual da pesquisa.
+
 ## Conclusão e correção de estado
 
 **A L01 atual é um protótipo provisório. Não está pedagogicamente pronta.** A atribuição anterior de `ready` confundiu completude estrutural e localização com maturidade editorial. Esse rótulo foi inadequado e foi retirado. `course.status` continua `preview`, `lesson.status` passa a `draft` e `releasedLessonIds` fica vazio. IDs, versão, textos dos 11 idiomas, respostas corretas e registros de progresso não mudam.

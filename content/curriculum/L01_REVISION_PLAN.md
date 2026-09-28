@@ -1,6 +1,8 @@
 # Revisão planejada da L01 orientada por lacunas
 
-Estado: proposta interna, sem alteração dos textos do aluno, sem novo conteúdo liberado. L01 continua `draft`. Esta proposta usa a auditoria do protótipo e a leitura integral da faixa textual de Tim como insumo limitado; nenhuma ficha integral oficial foi aceita ainda. `RESEARCH_PRIORITIES.md` define os poucos recursos que faltam.
+Estado: proposta interna, sem alteração dos textos do aluno, sem novo conteúdo liberado. L01 continua `draft`. Esta proposta usa a auditoria, a leitura integral da faixa textual de Tim como insumo limitado e o primeiro lote oficial focal: quickstart Claude aceito como documento textual integral e prompting aceito para método textual, com mídia pendente. `reviews/OFFICIAL_SUBSET_01.md` delimita os aceites; `RESEARCH_PRIORITIES.md` define os poucos recursos que faltam.
+
+O aprofundamento já escrito está em `L01_WORKED_EXAMPLE.md`: pedido, resposta simulada incompleta, comparação, correção, nova resposta e limites da evidência. É produção original interna, ainda sem integração ou localização, e não uma execução real atribuída à fonte.
 
 ## Objetivo delimitado
 

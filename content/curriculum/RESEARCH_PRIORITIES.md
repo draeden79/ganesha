@@ -21,7 +21,7 @@ Triagem pode usar título, descrição ou resumo para decidir **o que estudar**.
 
 As fichas integrais já em produção podem ser reaproveitadas; não apagar trabalho nem recomeçar apenas para atender à nova organização. A referência longa e o vídeo Tim ficam disponíveis para contexto, sem impor sua conclusão como bloqueio de uma aula Desktop que tenha evidência adequada em outro recurso.
 
-**Prioridade não equivale a aceite:** os candidatos acima ainda aguardam avaliação das fichas e conteúdos integrais. A presença de uma URL, ficha parcial ou marca de coleta não fecha o pedido. Nesta revisão, `official/manifest.json` ainda não estava disponível no worktree consultado.
+**Prioridade não equivale a aceite:** a presença de uma URL, ficha parcial ou marca de coleta não fecha o pedido. Na abertura da seleção, `official/manifest.json` ainda não estava disponível. No incremento `8af94e4`, o Educador leu os originais completos de prompting e quickstart Claude: aceitou o documento textual Claude para onboarding e o texto de prompting para método, preservando a mídia não revisada. Ver `reviews/OFFICIAL_SUBSET_01.md`. Quickstart Codex e ciclo curto seguem pendentes; a aula não está pronta.
 
 ## Próximas necessidades, em ordem de aprendizagem
 
