@@ -13,10 +13,11 @@ Pedido explícito do usuário em 2026-09-28: criar uma identidade do Diretor no 
 - Integração Slack instalada e conectada; identidade autenticada atual: Lucas. Não usá-la silenciosamente no lugar do bot solicitado.
 - Workspace confirmado: Ganesha, `T0C4LM9QGJK`, `ganeshagrupo.slack.com`.
 - Canal público confirmado: `#management`, `C0C56JD9G20`, https://ganeshagrupo.slack.com/archives/C0C56JD9G20 .
-- Usuário escolheu explicitamente bot/app. Nome do app preparado: “Diretor — Produto”; bot `diretor-produto`, descrito como assistente de IA.
-- Manifesto preparado com apenas `incoming-webhook`; destino será restrito a `#management` na instalação. O Chrome possui sessão autorizada; o navegador interno solicitou login.
-- Revisão automática bloqueou o clique “Create and Install”, exigindo confirmação no momento da concessão de acesso. Confirmação específica solicitada ao usuário; pendente.
-- Nenhuma conta criada, canal acessado ou mensagem publicada até este registro.
+- Usuário confirmou explicitamente criar e instalar “Diretor — Produto” em 2026-09-28. App instalado: `A0C555FGZCZ`; identidade de publicação: `B0C555U2MC1`, apresentada como assistente de IA.
+- Único escopo concedido: `incoming-webhook`, vinculado a `#management`. Instalação confirmada na interface do Slack e no canal (`1790625784.693649`).
+- Primeiro informe publicado e conferido no canal em 2026-09-28 às 13:05:19 America/Los_Angeles: https://ganeshagrupo.slack.com/archives/C0C56JD9G20/p1790625919791749 . O ID do bot que publicou corresponde ao da instalação.
+- Credencial somente no arquivo local ignorado `.env.slack-bot`, permissão 0600. Não copiar seu valor para mensagens, documentação, commits ou logs.
+- A integração publica informes; não possui escopos de leitura nem um serviço autônomo que escute menções. Leituras necessárias de confirmação usam o conector Slack já conectado.
 - A identidade deve se apresentar como assistente de coordenação de Produto. Não assumir que conectar o Slack cria uma identidade independente, nem renomear a conta existente do usuário para esse fim.
 
 ## Critério de publicação
@@ -33,6 +34,10 @@ O usuário rejeitou explicitamente periodicidade horária. A automação `direto
 
 Antes de publicar, conferir o registro local e mensagens recentes do canal para evitar duplicação. Depois, registrar evento, texto, data, identidade, canal, ID/permalink da mensagem e evidências. Em envio com resultado incerto, verificar o canal antes de repetir. Não ler nem escrever outros canais sem necessidade para o pedido.
 
-## Primeiro informe preparado — ainda não enviado
+## Publicação e primeiro informe enviado
 
-Texto completo, com plano e responsabilidades dos cinco agentes, em `slack/INITIAL_UPDATE.md`. O usuário pediu publicação imediata; o envio aguarda somente a configuração autorizada do bot. Não substituir esse informe por um aviso rotineiro de instalação, não marcar pessoas e não usar @channel/@here.
+Texto completo, com plano e responsabilidades dos cinco agentes, em `slack/INITIAL_UPDATE.md`. Publicação confirmada no canal, timestamp `1790625919.791749`; histórico e hash em `slack/publications.jsonl`. A primeira tentativa não chegou ao Slack por restrição de rede do ambiente; a ausência foi conferida antes de uma única nova tentativa com rede autorizada.
+
+Para um novo marco já revisado, usar `python3 coordination/slack/publish.py <evento-unico> <arquivo-de-texto>`. O publicador lê a credencial local, envia como o app próprio e bloqueia repetição do evento/texto. Não cria agendamento. Usar execução com rede autorizada quando o sandbox bloquear o acesso ao Slack.
+
+O recebimento HTTP não substitui a leitura posterior de `#management`: conferir texto e identidade, registrar timestamp/permalink e marcar o registro como `verified`. Se o resultado for incerto, não repetir antes dessa conferência. Somente uma tentativa comprovadamente ausente pode receber `verified_not_delivered`; preservar seu histórico. Não usar a identidade Lucas para contornar problema no bot.
