@@ -26,6 +26,7 @@ O mapa de expansão é planejamento editorial, não catálogo disponível. A int
 - `RESEARCH_PRIORITIES.md`: seleção atual de poucos recursos completos por lacuna, com avanço independente do inventário inteiro.
 - `L01_REVISION_PLAN.md`: proposta de aprofundamento e ajuste de escopo da aula, sem conteúdo novo liberado.
 - `L01_WORKED_EXAMPLE.md`: exemplo original interno de pedido, plano simulado, revisão e conferência; ainda não integra o produto ou os catálogos.
+- `L01_DESKTOP_PRACTICE.md`: percurso externo proposto para Claude e Codex, com pré-requisitos, registro autodeclarado e recuperação; ainda sem execução/validação visual.
 - `reviews/`: pareceres incrementais sobre originais efetivamente lidos, com aceites e limites; não substituem o estado global de maturidade.
 - `LOCALIZATION.md` e `AUDIT.json`: cobertura efetiva e resultado estrutural histórico, sem certificação pedagógica.
 

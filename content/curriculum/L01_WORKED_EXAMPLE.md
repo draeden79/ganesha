@@ -1,6 +1,6 @@
 # Exemplo trabalhado para revisão da L01 — uso editorial interno
 
-**Não é conteúdo liberado ao aluno.** Rascunho em pt-BR para revisão antes da localização nos 11 idiomas. Autoria: Educador. Todas as respostas de ferramenta abaixo são fictícias e identificadas como simulação; Claude e Codex não foram executados para produzi-las. Fonte de método: texto integral de `res-codex-prompting` lido e aceito para afirmações delimitadas em `reviews/OFFICIAL_SUBSET_01.md`. A fonte não contém este exemplo.
+**Não é conteúdo liberado ao aluno.** Rascunho em pt-BR para revisão antes da localização nos 11 idiomas. Autoria: Educador. Todas as respostas de ferramenta abaixo são fictícias e identificadas como simulação; Claude e Codex não foram executados para produzi-las. Fontes de método: texto integral de `res-codex-prompting` e texto/transcrição oficial de `res-claude-plan-build-review`, aceitos com os limites dos pareceres `reviews/OFFICIAL_SUBSET_01.md` e `reviews/OFFICIAL_SUBSET_02.md`. As fontes não contêm este exemplo. O percurso externo proposto está em `L01_DESKTOP_PRACTICE.md`.
 
 ## Objetivo e pré-requisito ensinados
 
@@ -46,11 +46,33 @@ Conferência do texto: canto agora está presente, o contato respeita o limite e
 
 Prática proposta: o aluno escolhe outro serviço fictício, escreve um pedido curto, identifica uma informação relevante ausente em um plano de exemplo e faz um pedido de revisão específico. O professor/conteúdo deve fornecer resultado comparável, não validar apenas por tamanho do texto ou palavra-chave.
 
-**Verificação A — aplicação do limite ao pedido:** diante de uma versão do plano que sugere coletar o telefone do visitante, escolher uma correção que preserve o título e retire a coleta, mantendo a ação originalmente pedida. Feedback explica que adicionar uma preferência de cor não resolve o desvio e que refazer todo o projeto é desnecessário para esse erro. Essa avaliação mede a escolha de correção, não a execução real.
+### Verificação A — aplicação dos critérios à correção
 
-**Verificação B — força da evidência:** diante da segunda resposta simulada, indicar o que está comprovado: o texto do plano atende aos itens comparados; o clique e a publicação ainda não foram testados. Feedback deve distinguir texto revisado, teste planejado e comportamento observado. Marcar “o site funciona” está incorreto porque não existe evidência de execução.
+Enunciado proposto: “O novo plano mantém o título correto, lista violão e piano e propõe pedir o telefone do visitante antes de mostrar o contato. Qual pedido corrige os dois desvios e mantém o que já atende ao objetivo?”
 
-As questões definitivas, alternativas e feedback ainda precisam de revisão, teste e localização. Preservar os IDs atuais só será adequado se o contrato de progresso registrar que a mudança de critério pode exigir nova tentativa. Não conceder aprovação automática a partir da resposta de uma questão antiga.
+| Alternativa | Resposta proposta | Feedback específico |
+| --- | --- | --- |
+| A | “Retire a coleta do telefone e mantenha todo o restante do plano.” | Corrige a coleta, mas canto continua ausente. Compare os três serviços pedidos. |
+| B — correta | “Mantenha o título, inclua canto junto de violão e piano e mostre aulas@example.com sem coletar dados nem enviar mensagem. Atualize as verificações do plano.” | Corrige a omissão e o comportamento de contato, preservando o título. A próxima ação é conferir se a resposta revisada respeita esses critérios. |
+| C | “Inclua canto e teste se o telefone é enviado corretamente.” | Recupera o serviço, mas transforma a coleta/envio em objetivo, contrariando o pedido original. |
+| D | “Aprove esse plano e decida depois se o telefone será necessário.” | Aceita os desvios antes de resolvê-los. O pedido já definiu o limite; compare e corrija agora. |
+
+Mede a aplicação de critérios em uma correção delimitada. Não mede operação de interface ou teste de uma página. Antes da tentativa, o pedido original precisa estar consultável na própria tela; não depender da memória de texto que desapareceu.
+
+### Verificação B — força da evidência
+
+Enunciado proposto: “Você leu a segunda resposta simulada deste exemplo. Nenhuma página foi aberta. Qual conclusão é sustentada pelo que foi mostrado?”
+
+| Alternativa | Resposta proposta | Feedback específico |
+| --- | --- | --- |
+| A | “O contato funciona, porque o plano explica o clique.” | Explicar um comportamento futuro não demonstra que ele foi implementado ou testado. |
+| B | “A escola já pode receber visitantes pela página publicada.” | Não foi mostrado endereço publicado nem visita à página. |
+| C — correta | “O texto revisado inclui os itens comparados e respeita o limite; o funcionamento da futura página continua sem teste.” | Essa conclusão corresponde à evidência disponível: comparação de texto. Clique e publicação exigiriam outras observações. |
+| D | “Não podemos concluir nada sobre o plano sem construir a página.” | Já podemos comparar os serviços e o limite no texto; somente a execução depende da página construída. |
+
+Mede distinguir plano, teste proposto e comportamento observado. Após erro, mostrar o feedback e permitir consultar o exemplo antes de nova tentativa. As questões propostas ainda precisam de revisão editorial, equivalência nos 11 idiomas e validação de uso; não foram aplicadas a alunos.
+
+Preservar os IDs atuais só será adequado se o contrato de progresso registrar que a mudança de critério pode exigir nova tentativa. Não conceder aprovação automática a partir da resposta de uma questão antiga.
 
 ## Recuperação e transferência
 
@@ -61,4 +83,4 @@ As questões definitivas, alternativas e feedback ainda precisam de revisão, te
 
 ## Pendências antes de integração
 
-Revisão da fidelidade às fontes selecionadas, quickstart Codex e ciclo curto; percurso real ou demonstração visual pertinente onde houver instruções de UI; transformação deste exemplo em telas sem excesso de texto; avaliações definitivas e recuperação; 11 idiomas; versão e migração de progresso. O rascunho aprofunda a proposta pedagógica sem promover L01 nem fingir uma execução.
+Os textos selecionados de quickstart Codex e ciclo curto já foram revisados com aceite delimitado. Permanecem revisão editorial deste exemplo e das questões, cobertura audiovisual pertinente, percurso visual/operacional das ferramentas, transformação em telas sem excesso de texto, 11 idiomas e decisão de versão/progresso. O rascunho aprofunda a proposta pedagógica sem promover L01 nem fingir uma execução.

@@ -7,7 +7,7 @@
   "pedagogicalStatus": "provisional-prototype",
   "recommendedLessonStatus": "draft",
   "releaseEligible": false,
-  "reason": "A L01 continua protótipo: primeiro quickstart textual integral aceito e método de prompting conferido, mas restam fontes/variantes selecionadas, aplicação completa revisada e inspeção visual pertinente. Cobertura estrutural/tradução não substitui essas lacunas.",
+  "reason": "A L01 continua protótipo: textos P0 foram revisados com aceites delimitados e duas capturas inspecionadas. Faltam percurso operacional pertinente das duas superfícies, cobertura audiovisual selecionada, revisão da aplicação e avaliações, localização e aceite coordenado.",
   "reportPath": "content/curriculum/PEDAGOGICAL_AUDIT.md",
   "acceptedFullStudyRecords": [
     {
@@ -28,7 +28,28 @@
       "visualDemonstrationAccepted": false
     }
   ],
-  "acceptedVisualReviewRecords": [],
+  "acceptedVisualReviewRecords": [
+    {
+      "studyId": "official-codex-quickstart",
+      "artifactPath": "content/research/studies/local/official-codex-quickstart-selector.png",
+      "artifactSha256": "75d58a03b02fce0f1456a50575c0daca73b5c6d161e2cdc72623af993f4b78db",
+      "educatorReviewPath": "content/curriculum/reviews/OFFICIAL_SUBSET_02.md",
+      "entireImageInspected": true,
+      "kind": "documentation-illustration-screenshot",
+      "observation": "Documentação e ilustração no estado ChatGPT; transição do seletor não observada.",
+      "operationalDemonstrationAccepted": false
+    },
+    {
+      "studyId": "official-claude-workflow",
+      "artifactPath": "content/research/studies/local/official-claude-workflow-plan.png",
+      "artifactSha256": "683e7f9b7d31affc2160174c5b0c1ad6224760aacb112e8914cb790df5028206",
+      "educatorReviewPath": "content/curriculum/reviews/OFFICIAL_SUBSET_02.md",
+      "entireImageInspected": true,
+      "kind": "cli-plan-indicator-screenshot",
+      "observation": "Terminal com plan mode e Shift+Tab; não é demonstração Desktop.",
+      "operationalDemonstrationAccepted": false
+    }
+  ],
   "originalResearchBaseline": {
     "resourceRecords": 23,
     "shortEvidenceRecords": 16,
@@ -133,7 +154,7 @@
     {
       "id": "L01-S02",
       "owner": "Devorador",
-      "status": "requested-refined-not-received",
+      "status": "text-and-one-cli-image-reviewed-audiovisual-pending",
       "sourceIds": [
         "res-claude-plan-build-review"
       ],
@@ -154,15 +175,19 @@
       "deferredSourceIds": [
         "res-claude-agent-basics",
         "res-claude-verify-unattended"
-      ]
+      ],
+      "acceptedStudyIds": [
+        "official-claude-workflow"
+      ],
+      "remainingGap": "Estudo audiovisual da fonte selecionada continua pendente; texto não mostra resultado WebP ou reparo real. Aplicação original de plano elaborada internamente para revisão."
     },
     {
       "id": "L01-S03",
       "owner": "Devorador",
-      "status": "claude-text-accepted-codex-and-visual-pending",
+      "status": "both-quickstart-texts-reviewed-operational-demonstration-pending",
       "sourceIds": [
         "res-claude-desktop-start",
-        "res-codex-desktop-start"
+        "res-codex-desktop-quickstart"
       ],
       "stepIds": [
         "step.first-request.scope",
@@ -185,9 +210,13 @@
         "res-claude-desktop-reference"
       ],
       "acceptedStudyIds": [
-        "official-claude-desktop-quickstart"
+        "official-claude-desktop-quickstart",
+        "official-codex-quickstart"
       ],
-      "remainingGap": "Quickstart Codex e percurso visual/execução pertinente das duas superfícies; texto não é demonstração observada."
+      "remainingGap": "Percurso visual/operacional pertinente de contexto, pedido, resposta e revisão nas duas superfícies; cadastro próprio do quickstart confirmado pelo pesquisador, integração do registro pendente.",
+      "supportingSourceIds": [
+        "res-codex-desktop-start"
+      ]
     },
     {
       "id": "L01-S04",
@@ -279,6 +308,71 @@
         "Animação de ditado não inspecionada; fora do escopo de ensino da L01.",
         "Exemplo operacional não executado."
       ]
+    },
+    {
+      "studyId": "official-codex-quickstart",
+      "resourceId": "res-codex-desktop-quickstart",
+      "sourceUrl": "https://learn.chatgpt.com/docs/quickstart",
+      "researchCommit": "3beec63",
+      "registryStatus": "new resource reported applied by researcher; registry integration commit pending",
+      "educatorReviewPath": "content/curriculum/reviews/OFFICIAL_SUBSET_02.md",
+      "artifactPath": "content/research/studies/local/official-codex-quickstart.md",
+      "artifactSha256": "5c052386e1de596504ce11df740000577d8acc5b6c5693a524b3f711cceabcef",
+      "readLines": [
+        [
+          1,
+          204
+        ]
+      ],
+      "supplementalText": {
+        "artifactPath": "content/research/studies/local/official-codex-quickstart-rendered.txt",
+        "artifactSha256": "874ed2f9b79609da7f3a6c33fec6d5baa67891b82cadd83931d1e71242f6c0a0",
+        "readLines": [
+          [
+            1,
+            98
+          ]
+        ]
+      },
+      "fullTextReadByEducator": true,
+      "fullMultimediaSourceAccepted": false,
+      "scope": "Documento textual integral e captura de uma ilustração. Fundamenta contexto, escolha de produto e primeiro pedido; não certifica todos os estados interativos ou um aplicativo real.",
+      "pending": [
+        "Percurso operacional e estados de interface pertinentes não observados.",
+        "Não há resposta executada, teste de página ou publicação."
+      ]
+    },
+    {
+      "studyId": "official-claude-workflow",
+      "resourceId": "res-claude-plan-build-review",
+      "researchCommit": "3beec63",
+      "educatorReviewPath": "content/curriculum/reviews/OFFICIAL_SUBSET_02.md",
+      "artifactPath": "content/research/studies/local/official-claude-workflow-transcript.txt",
+      "artifactSha256": "03284d5e7dbc15df695ed5c6961a66184f8003f57145038b06b54bdf8f9243b9",
+      "readLines": [
+        [
+          1,
+          79
+        ]
+      ],
+      "supplementalText": {
+        "artifactPath": "content/research/studies/local/official-claude-explore-plan-code-commit.txt",
+        "artifactSha256": "c841cfed33d8ad0bdce440b2d6c4e12a299d7b666dbf5a4f72c7aab417bb4085",
+        "readLines": [
+          [
+            1,
+            145
+          ]
+        ]
+      },
+      "fullTextReadByEducator": true,
+      "fullMultimediaSourceAccepted": false,
+      "fullSpeechCoverageVerifiedByEducator": false,
+      "scope": "Método textual de explorar, planejar, revisar, executar e conferir. Captura confirma CLI; não demonstra operação Desktop nem teste WebP concluído.",
+      "pending": [
+        "Vídeo integral não assistido; transcrição sem timestamps não comparada ao áudio.",
+        "Demais imagens e sequência operacional não inspecionadas."
+      ]
     }
   ],
   "internalLessonDevelopment": {
@@ -289,6 +383,14 @@
     "studentCatalogsChanged": false,
     "locale": "pt-BR",
     "localizationRequiredBeforeExposure": true,
-    "purpose": "Revisão de coerência: pedido→plano incompleto→comparação→correção→novo plano; preparar avaliações sem alegar execução."
+    "purpose": "Sequência simulada de pedido→plano incompleto→comparação→correção→novo plano; duas questões concretas e roteiro externo proposto para revisão.",
+    "desktopPracticePath": "content/curriculum/L01_DESKTOP_PRACTICE.md",
+    "assessmentDrafts": {
+      "count": 2,
+      "alternativesAndFeedbackWritten": true,
+      "editorialAcceptance": false,
+      "studentTested": false,
+      "runtimeChanged": false
+    }
   }
 }

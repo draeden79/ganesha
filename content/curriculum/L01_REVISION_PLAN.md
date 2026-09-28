@@ -2,7 +2,7 @@
 
 Estado: proposta interna, sem alteração dos textos do aluno, sem novo conteúdo liberado. L01 continua `draft`. Esta proposta usa a auditoria, a leitura integral da faixa textual de Tim como insumo limitado e o primeiro lote oficial focal: quickstart Claude aceito como documento textual integral e prompting aceito para método textual, com mídia pendente. `reviews/OFFICIAL_SUBSET_01.md` delimita os aceites; `RESEARCH_PRIORITIES.md` define os poucos recursos que faltam.
 
-O aprofundamento já escrito está em `L01_WORKED_EXAMPLE.md`: pedido, resposta simulada incompleta, comparação, correção, nova resposta e limites da evidência. É produção original interna, ainda sem integração ou localização, e não uma execução real atribuída à fonte.
+O aprofundamento já escrito está em `L01_WORKED_EXAMPLE.md`: pedido, resposta simulada incompleta, comparação, correção, nova resposta e duas questões com alternativas e feedback. `L01_DESKTOP_PRACTICE.md` prepara variantes e recuperação externas. São produções originais internas, ainda sem integração ou localização, e não execuções reais atribuídas às fontes. O complemento P0 textual e duas capturas foram revisados em `reviews/OFFICIAL_SUBSET_02.md`; isso atualiza as pendências abaixo sem fechar a inspeção operacional ou o estudo audiovisual.
 
 ## Objetivo delimitado
 
