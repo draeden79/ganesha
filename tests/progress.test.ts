@@ -1,9 +1,9 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { loadCourse } from "../src/lib/course-loader";
+import { loadDemoCourse } from "../src/lib/course-loader";
 import { completedCount, evaluateCheck, flattenSteps, getStepState, mergeProgress, newProgress, restoreProgressWithStatus, stateKey, storageKey, updateStep } from "../src/lib/progress";
 
-const course = loadCourse("pt-BR");
+const course = loadDemoCourse("pt-BR");
 const flat = flattenSteps(course);
 const check = flat.find(({step}) => step.check)!.step;
 const practice = flat.find(({step}) => step.practice)!.step;

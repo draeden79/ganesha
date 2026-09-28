@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { loadCourse } from "../src/lib/course-loader";
+import { loadDemoCourse } from "../src/lib/course-loader";
 import { locales } from "../src/lib/course-schema";
 import { ui, uiKeys } from "../src/lib/i18n";
 import { labels } from "../src/lib/labels";
@@ -10,9 +10,10 @@ import { adaptCourse } from "../src/lib/course-adapter";
 import source from "../content/curriculum/course.json";
 import catalog from "../content/locales/pt-BR.json";
 import type { Course, LocaleCatalog } from "../contracts/course";
+import { demoConfig } from "../src/lib/demo-config";
 
-test("every released lesson has practice and two separate assessments", () => {
-  const course = loadCourse("pt-BR");
+test("every preview lesson has practice and two separate assessments", () => {
+  const course = loadDemoCourse("pt-BR");
   assert.equal(course.lessons.length,1);
   for (const lesson of course.lessons) {
     assert.ok(lesson.steps.filter(s => s.check && s.isAssessment).length >= 2);
@@ -35,4 +36,17 @@ test("missing or stale pedagogical translations fail explicitly without fallback
   const stale = structuredClone(catalog) as LocaleCatalog;
   stale.messages[source.titleKey].sourceRevision = "old";
   assert.throws(() => adaptCourse(source as Course,stale),/Incomplete translation/);
+});
+test("a draft remains out of released content but is allowed by explicit demo scope", () => {
+  const draft = structuredClone(source) as Course;
+  draft.releasedLessonIds = [];
+  draft.lessons.forEach(lesson => { lesson.status = "draft"; });
+  assert.equal(adaptCourse(draft,catalog as LocaleCatalog).lessons.length,0);
+  const preview = adaptCourse(draft,catalog as LocaleCatalog,{previewLessonIds:demoConfig.lessonIds});
+  assert.deepEqual(preview.lessons.map(lesson=>lesson.id),["lesson.first-request"]);
+  assert.equal(preview.lessons[0].steps.length,7);
+  assert.equal(preview.id,source.id);
+  assert.equal(preview.version,source.version);
+  draft.lessons[0].status = "planned";
+  assert.equal(adaptCourse(draft,catalog as LocaleCatalog,{previewLessonIds:demoConfig.lessonIds}).lessons.length,0);
 });

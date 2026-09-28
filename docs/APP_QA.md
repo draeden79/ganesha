@@ -2,7 +2,7 @@
 
 ## Evidência automatizada
 
-- `node --import tsx --test tests/*.test.ts`: 14 testes passaram.
+- `node --import tsx --test tests/*.test.ts`: 15 testes passaram, incluindo a separação explícita entre prévia navegável e liberação pedagógica.
 - `tsc --noEmit`: passou.
 - `next build`: compilação, TypeScript e geração de rotas passaram.
 - `node --import tsx scripts/check-content.ts`: 11 idiomas com 112/112 mensagens pedagógicas, 45/45 chaves principais de UI e paridade de IDs de etapas, alternativas e rubricas. As 9 mensagens adicionais de objetivos/estados/recuperação são cobertas por teste. Revisadas por humano: 0/112 por idioma.
@@ -10,6 +10,7 @@
 - Smoke HTTP real em produção: `/api/session` retornou 200 com modo demo; `/api/progress?entitlement=ganesha-course&userId=demo` retornou 503 `unconfigured`, sem aceitar autorização inventada na URL.
 - Testes de retomada: JSON inválido, versão incompatível, IDs removidos, opções inválidas, rubric indices inválidos e flags de conclusão inconsistentes são tratados. Checks são recalculados por opção. Práticas exigem autorrelato explícito e critérios completos.
 - Testes de duas abas: união de etapas independentes, rascunho recente preservado, cursor ativo mantido, tentativas unidas em ordem e sem duplicatas, conclusão/feedback consistentes com restauração.
+- Teste de escopo editorial: L01 draft e sem `releasedLessonIds` fica fora do adaptador de liberação e continua navegável apenas quando a lista explícita de demonstração é passada; aula planejada permanece excluída. IDs/versão não mudam. Build e auditoria de preview não certificam liberação pedagógica.
 
 ## Verificação em navegador
 

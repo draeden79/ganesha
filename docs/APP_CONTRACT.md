@@ -16,6 +16,8 @@ O adaptador de cadastro/pagamentos deverá entregar identidade validada no servi
 
 O modo demo persiste respostas, tentativas e progresso somente no navegador por versão de curso. Não há autenticação, progresso remoto, tutor ao vivo ou execução real de Claude/Codex. A futura API de progresso deve usar identidade da sessão, validar IDs/versão, isolar usuários e aplicar CSRF/origem às mutações.
 
+`src/lib/demo-config.ts` explicita apenas `lesson.first-request` no curso `course.first-site` como escopo público de prévia. `loadDemoCourse` usa essa lista para manter o teste de L01 enquanto a liberação pedagógica está suspensa. `adaptCourse` sem a opção de preview continua respeitando `releasedLessonIds`. Essa configuração é de conteúdo demonstrativo, nunca de sessão/entitlement; `/learn` e `/api/progress` continuam fechados. IDs, versão e histórico são preservados quando apenas o estado editorial muda.
+
 ## Localização
 
 Locales obrigatórios: pt-BR, en, es, fr, de, ja, hi, id, ar, ko, zh-CN. Catálogos de UI e conteúdo separados; falta de tradução sinalizada, nunca contabilizada como pronta. Árabe usa `dir=rtl`; código mantém `dir=ltr`. Auditoria testa paridade de chaves, IDs e etapas. Tradução automática/editorial pendente é reportada como rascunho.

@@ -1,7 +1,7 @@
 import type { Course as CanonicalCourse, LocaleCatalog } from "../../contracts/course";
 import type { Course, Locale, Step } from "./course-schema";
 
-export function adaptCourse(source: CanonicalCourse, catalog: LocaleCatalog): Course {
+export function adaptCourse(source: CanonicalCourse, catalog: LocaleCatalog, options: { previewLessonIds?: readonly string[] } = {}): Course {
   if (catalog.courseId !== source.id || catalog.courseVersion !== source.version) throw new Error("Catalog/course version mismatch");
   const t = (key: string) => {
     const message = catalog.messages[key];
@@ -14,7 +14,7 @@ export function adaptCourse(source: CanonicalCourse, catalog: LocaleCatalog): Co
     translationStatus: messages.every(m => m.status === "reviewed") ? "complete" : "draft",
     translationCoverage: { total: messages.length, translated: messages.filter(m => ["translated", "reviewed"].includes(m.status)).length, reviewed: messages.filter(m => m.status === "reviewed").length },
     title: t(source.titleKey), description: t(source.summaryKey),
-    lessons: source.lessons.filter(l => source.releasedLessonIds.includes(l.id) && l.status !== "planned").sort((a, b) => a.order - b.order).map(lesson => ({
+    lessons: source.lessons.filter(l => (options.previewLessonIds ?? source.releasedLessonIds).includes(l.id) && l.status !== "planned").sort((a, b) => a.order - b.order).map(lesson => ({
       id: lesson.id, title: t(lesson.titleKey), summary: t(lesson.summaryKey), durationMinutes: lesson.estimatedMinutes,
       steps: lesson.steps.map(step => {
         const mapped: Step = {
