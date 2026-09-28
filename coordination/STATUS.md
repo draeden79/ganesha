@@ -27,6 +27,7 @@ Atualizado em 2026-09-28. Estado: design baseado no Ganesha Desktop integrado e 
 
 - D011: Ganesha Desktop aberto no Mac é a nova referência visual principal, por pedido explícito do usuário. Artista inspeciona e especifica; Construtor implementa depois.
 - D012: aquisição não equivale a estudo. Auditoria confirmada pelo Devorador: três faixas exportadas, nenhuma transcrição integralmente estudada, nenhum vídeo com demonstração visual revisada e nenhum artigo certificado por ficha integral. Educador deve auditar a sustentação das etapas e manter a maturidade pedagógica de L01 como provisória. Ver `RESEARCH_DIRECTIVE.md`; o preview visual continua em paralelo.
+- D013: usuário redefiniu a prioridade diante do volume: selecionar conteúdos para pessoas comuns construírem sites, aplicativos e automações com IA. A coleta exaustiva de D010 fica em backlog e não bloqueia as aulas. Estudo integral e revisão visual pertinente das fontes selecionadas continuam exigidos. Devorador e Educador reorientados; automação semanal mantém a mesma agenda e passa a seguir curadoria por relevância/lacunas.
 
 ## Dependências externas
 
@@ -63,5 +64,5 @@ Pacote `f42b1b5`: 4.851 IDs YouTube deduplicados, dos quais 4.743 são uploads p
 - Construtor recebeu `eaa70e6` e começou a refazer a interface; enviará commit/preview/testes ao Diretor.
 - Educador audita a sustentação de cada etapa e solicita ao Devorador estudo integral das fontes relevantes; seus 11 catálogos já foram integrados e auditados estruturalmente pelo Diretor.
 - Artista entregou especificação/protótipo baseados na janela real do Ganesha Desktop; revisará a implementação do Construtor. Ver `DESKTOP_DESIGN_DIRECTIVE.md`.
-- Devorador concluiu o lote inicial; o usuário agora priorizou transcrições de todos os vídeos das fontes indicadas, com pesquisa complementar autorizada. Foi instruído a retomar imediatamente e reordenar sua fila; a automação existente foi atualizada e continua na sexta-feira.
+- Devorador prioriza curadoria e estudo integral das fontes úteis a iniciantes que querem construir sites/apps e automações; aquisição do restante do histórico fica em backlog. Pesquisa complementar autorizada e automação semanal preservada.
 - Nenhuma implantação pública ou integração de autenticação/pagamento foi declarada concluída.
