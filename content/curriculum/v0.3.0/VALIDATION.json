@@ -20,6 +20,12 @@
       "present": 1192,
       "humanReview": "pending",
       "sha256": "3552dee8e1a100122db7e35e630b0e38fc5d2d31da022b1e985eb76167f9dec2"
+    },
+    "id": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "4b845d073d5e29eac4356e519ad4f249d6dc04028abe1fd6e275f97709c3de2a"
     }
   },
   "requiredLocales": [
