@@ -89,17 +89,42 @@ if bindings_file.exists():
         for tool in ["claude", "codex"]:
             s["toolVariants"][tool]["evidenceIds"] = bindings["tools"][tool]
 
-(ROOT / "course.json").write_text(json.dumps(course, ensure_ascii=False, indent=2) + "\n")
-destination = ROOT.parent / "locales"
-destination.mkdir(exist_ok=True)
+# Validate the full set before writing a ready lesson. Missing source text is an
+# error, never a reason to reuse another language or leave stale generated data.
+required_keys = set()
+def collect_keys(value):
+    if isinstance(value, dict):
+        for key, child in value.items():
+            if key.endswith("Key") and isinstance(child, str):
+                required_keys.add(child)
+            elif key.endswith("Keys") and isinstance(child, list):
+                required_keys.update(child)
+            else:
+                collect_keys(child)
+    elif isinstance(value, list):
+        for child in value:
+            collect_keys(child)
+collect_keys(course)
+catalogs = {}
 for locale in LOCALES:
     source = ROOT / "messages" / f"{locale}.json"
     if not source.exists():
-        continue
+        raise ValueError(f"Missing locale source: {locale}")
     messages = json.loads(source.read_text())
+    if set(messages) != required_keys:
+        raise ValueError(f"Locale {locale}: missing={required_keys - set(messages)}, extra={set(messages) - required_keys}")
+    if not all(isinstance(value, str) and value.strip() for value in messages.values()):
+        raise ValueError(f"Empty or invalid message in {locale}")
     catalog = {"schemaVersion": "1.0.0", "courseId": COURSE_ID, "courseVersion": VERSION, "locale": locale,
         "direction": "rtl" if locale == "ar" else "ltr", "humanReviewStatus": "pending",
         "translationMethod": "ai-authored",
         "messages": {key: {"value": value, "status": "translated", "sourceRevision": VERSION} for key, value in messages.items()}}
+    catalogs[locale] = catalog
+if not bindings_file.exists():
+    raise ValueError("A ready lesson requires documented evidence bindings")
+(ROOT / "course.json").write_text(json.dumps(course, ensure_ascii=False, indent=2) + "\n")
+destination = ROOT.parent / "locales"
+destination.mkdir(exist_ok=True)
+for locale, catalog in catalogs.items():
     (destination / f"{locale}.json").write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
 print("Built course and available locale catalogs; run coordination/validate_content.py in the integrated checkout to audit coverage.")

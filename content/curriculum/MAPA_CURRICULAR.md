@@ -1,6 +1,6 @@
 # Mapa curricular — proposta inicial
 
-Data: 2026-09-28. Estado: decisões pedagógicas provisórias, aguardando primeiro lote do Devorador e validação de viabilidade pelo Diretor/Construtor. Não é uma afirmação de eficácia pedagógica já medida.
+Data: 2026-09-28. Estado: L01 fundamentada no primeiro lote documentado do Devorador e entregue nos 11 idiomas; sequência de expansão ainda provisória. O Diretor confirmou a prioridade de L01 antes das demais aulas. A sequência é decisão do Educador, não uma afirmação de eficácia pedagógica já medida.
 
 ## Resultado e pré-requisitos
 
@@ -25,7 +25,7 @@ Projeto progressivo: página de um serviço fictício escolhido pelo aluno. Prim
 
 ## Primeira trilha executável proposta
 
-Cinco aulas, 35 telas propostas. A aula de referência é entregue primeiro; as demais só entram na navegação quando completas. Os tempos são estimativas editoriais, não promessa de conclusão.
+Trilha de **sites**: cinco aulas e 35 telas propostas. L01 está entregue; as demais só entram na navegação quando completas. Isso não equivale ao curso completo das três áreas: aplicativos e automações têm expansão própria abaixo. Os tempos são estimativas editoriais, não promessa de conclusão.
 
 | Aula | Telas | Prática e resultado | Verificação 1 | Verificação 2 | Dependência |
 | --- | ---: | --- | --- | --- | --- |
@@ -61,8 +61,8 @@ Rubrica comum de pedido: (1) resultado concreto; (2) contexto suficiente; (3) li
 
 ## Decisões pendentes
 
-1. Primeiro lote de fontes: características atuais de Claude Desktop/Claude Code Desktop e Codex; práticas de contexto, teste e publicação.
-2. Contrato do Construtor: confirmar interações suportadas para prática aberta e avaliação determinística.
+1. Fundamentação das próximas aulas: publicação, persistência, autenticação e testes de acessibilidade ainda precisam de fontes específicas. O lote inicial fundamenta contexto, critérios, revisão e diferenças básicas de execução; ver `L01_REFERENCE.md`.
+2. Validar no aplicativo integrado a interação de prática aberta por autoavaliação, duas verificações determinísticas e restauração de progresso. Contrato canônico acordado em `contracts/course.ts`; o Construtor mantém o adaptador para o renderer.
 3. Serviço de publicação da primeira trilha: escolher uma rota comprovada antes de redigir instruções exatas.
 4. Validação humana de linguagem nos 11 idiomas e teste de renderização RTL.
 5. Validação com ao menos um iniciante: tempo real, clareza das instruções e bloqueios de instalação.

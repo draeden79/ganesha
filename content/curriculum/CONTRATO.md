@@ -1,12 +1,12 @@
-# Contrato editorial proposto v0.1
+# Contrato editorial — notas de aplicação
 
-Estado: proposta do Educador para acordo com Diretor e Construtor. Dados de estrutura não contêm texto de interface. A implementação pode adaptar o formato mantendo estas invariantes.
+O contrato canônico aprovado pelo Diretor é `contracts/course.ts` (schemaVersion 1.0.0). Este arquivo registra decisões editoriais e não define um schema concorrente. As adições de objetivo, ação, resultado, dicas, critérios, modalidade e visual foram incorporadas ao contrato do Diretor no commit `6f6e1e3`. O Construtor mantém a adaptação para a interface.
 
 ## Estrutura
 
-`lesson` tem `id`, `version`, `status`, `competencyIds`, `prerequisiteIds`, `estimatedMinutes`, `titleKey`, `summaryKey` e `steps` ordenadas. Aula planejada sem conteúdo não é aula disponível.
+`Course` tem versão, status, competências, rubricas e `releasedLessonIds`. `Lesson` tem `id`, `order`, `status`, `competencyIds`, `prerequisiteLessonIds`, `estimatedMinutes`, `titleKey`, `summaryKey`, `objectiveKeys` e `steps` ordenadas. Aula planejada sem conteúdo não é aula disponível.
 
-Cada `step` representa exatamente uma tela: `id`, `type`, `isAssessment`, `objectiveKey`, `titleKey`, `bodyKey`, `actionKey`, `expectedResultKey`, `hintKeys` em ordem gradual, `criteriaKeys`, `visual`, `executionMode`, `sourceRefs` e `toolVariantKeys`. Tipos iniciais: `brief`, `prompt-builder`, `single-choice`, `external-task`, `reflection`. O estado da resposta usa IDs neutros, nunca textos traduzidos.
+Cada `Step` representa exatamente uma tela: `id`, `kind`, `isAssessment`, `objectiveKey`, `titleKey`, `blocks`, `actionKey`, `expectedResultKey`, `hintKeys` em ordem gradual, `criteriaKeys`, `visual`, `executionMode`, `evidenceIds` e `toolVariants`. Tipos canônicos: `explain`, `practice`, `check`, `reflect`. `exercise` define prática; `check` define avaliação. O estado da resposta usa IDs neutros, nunca textos traduzidos.
 
 `executionMode`: `guided-simulation`, `external-real-task` ou `concept`. `external-real-task` significa instrução para o aluno executar na própria ferramenta; Ganesha não disparou execução. Resultados dessa modalidade são `self-reported` no MVP. Mostrar o rótulo da modalidade antes da interação.
 
@@ -16,7 +16,7 @@ Questão objetiva inclui alternativas com `id`/`labelKey` e feedback por alterna
 
 Locales obrigatórios: `pt-BR`, `en`, `es`, `fr`, `de`, `ja`, `hi`, `id`, `ar`, `ko`, `zh-CN`. `ar` usa `dir=rtl`; os demais `ltr`. Manter código, URLs e nomes de produto em isolamento bidirecional quando necessário. Figtree para alfabetos cobertos; fontes de fallback adequadas para árabe, devanágari e CJK. Conteúdo expandível, sem altura fixa baseada no português.
 
-Arquivos de locale carregam `locale`, `direction`, `translationStatus`, `humanReviewStatus` e `messages` com chaves idênticas. Não converter textos ausentes em português. Não renderizar IDs como texto. Falta de tradução bloqueia a publicação da aula naquele idioma e deve constar em relatório de cobertura.
+`content/locales/{locale}.json` carrega `schemaVersion`, `courseId`, `courseVersion`, `locale` e `messages`. Cada tradução tem `value`, `status` e `sourceRevision`. Metadados adicionais `direction`, `humanReviewStatus` e `translationMethod` registram a cobertura sem alegar revisão humana. Não converter textos ausentes em português. Não renderizar IDs como texto. Falta de tradução bloqueia a publicação da aula naquele idioma e deve constar em relatório de cobertura.
 
 Toda frase exposta ao aluno é uma chave: objetivo, instrução, exercício, alternativa, feedback, dica, rótulo de campo, exemplo, legenda, texto alternativo, créditos explicativos e variante da ferramenta. Nomes próprios de fontes podem permanecer no idioma original; síntese e explicação são localizadas. IDs de competências e instruções internas para design não são conteúdo do aluno.
 
@@ -26,7 +26,7 @@ Usar diagramas e cartões com texto HTML traduzível; nenhuma captura simulada d
 
 ## Evidências e fontes
 
-`sourceRefs` aponta para ID, seção e síntese curta do fundamento. Diferenciar `product-fact` (documentação de produto) de `instructional-design` (decisão do Educador). Não apresentar uma escolha de sequência como se estivesse comprovada pela documentação técnica. Registrar revisão e data. Nenhuma fonte fica “revisada” apenas porque foi recebida.
+`evidenceIds` aponta para registros com fonte, seção e síntese curta em `content/research/registry.json`. `evidence-bindings.json` explicita os vínculos gerados. `L01_REFERENCE.md` distingue fatos de produto e decisões pedagógicas. Não apresentar uma escolha de sequência como se estivesse comprovada pela documentação técnica. Registrar revisão e data. Nenhuma fonte fica “revisada” apenas porque foi recebida.
 
 ## Conclusão e análise
 
