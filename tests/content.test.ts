@@ -89,3 +89,16 @@ test("adapter preserves content block order and avoids repeating identical feedb
   assert.deepEqual(adapted.lessons[0].steps[0].contentBlocks?.map(block => block.kind), ["paragraph", "code", "callout"]);
   assert.equal(adapted.lessons[0].steps.find(item => item.id === checked.id)?.check?.choices[0].feedback, catalog.messages[checked.check.successFeedbackKey].value);
 });
+
+test("both canonical external-record notices remain visible without an extra automatic disclaimer", () => {
+  for (const key of ["notice.self-report", "notice.external-record"]) {
+    const copy = structuredClone(source), messages = structuredClone(catalog);
+    const step = copy.lessons[0].steps.find(item => item.exercise)!;
+    step.executionMode = "external-real-task";
+    step.blocks = [{ id: "test.execution-notice", kind: "callout", textKey: key }];
+    messages.messages[key] = { value: "External practice is self-reported.", sourceRevision: copy.version, status: "translated" };
+    const adapted = adaptCourse(copy, messages, { previewLessonIds: publicCourseConfig(source.version).demoLessonIds }).lessons[0].steps.find(item => item.id === step.id)!;
+    assert.equal(adapted.hasCanonicalExecutionNotice, true);
+    assert.deepEqual(adapted.contentBlocks, [{ kind: "callout", text: "External practice is self-reported." }]);
+  }
+});

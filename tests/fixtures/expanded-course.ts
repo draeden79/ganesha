@@ -10,7 +10,10 @@ export function expandedFixture() {
   source.version = catalog.courseVersion = "0.3.0";
   for (const message of Object.values(catalog.messages)) message.sourceRevision = "0.3.0";
   const original = source.lessons[0];
-  const explanation = original.steps.find(step => !step.check && !step.exercise)!;
+  const explanation = structuredClone(original.steps.find(step => !step.check && !step.exercise) ?? original.steps[0]);
+  explanation.kind = "explain";
+  delete explanation.check;
+  delete explanation.exercise;
   const practice = original.steps.find(step => step.exercise)!;
   const check = original.steps.find(step => step.check?.kind === "single-choice")!;
   const routes = publicCourseConfig("0.3.0").routes!;
