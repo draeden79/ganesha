@@ -4248,12 +4248,12 @@
       "sourceRevision": "0.3.0"
     },
     "app-delivery.restore-backup.body": {
-      "value": "Save a copy of state C and import antes-de-importar.json through the validated flow. Confirm completed A and pending B after reloading. In the isolated test copy from the previous lesson, simulate failure while saving an import: the earlier list must remain, with a warning that nothing was replaced. Disable the rehearsal and repeat a valid import.",
+      "value": "Save a copy of state C and import antes-de-importar.json through the validated flow. Confirm completed A and pending B after reloading. Update the isolated test copy with the current version that already imports files, keeping ganesha.tasks.test. In that copy, simulate a failure while saving an import: preserve the earlier list and warn that nothing was replaced. Disable the rehearsal and repeat a valid import.",
       "status": "translated",
       "sourceRevision": "0.3.0"
     },
     "app-delivery.restore-backup.prompt": {
-      "value": "In the isolated test copy, simulate a write failure when confirming a valid import. Preserve the previous list and data, show an error and do not claim replacement succeeded. Do not touch the main key. Explain how to remove the rehearsal. I will then test importing the backup, reloading and comparing tasks and completion.",
+      "value": "Update only the isolated test copy with the current app version, including export/import. In that copy, use only ganesha.tasks.test; do not read, write or remove ganesha.tasks.v1. Then simulate a write failure when confirming a valid import. Preserve the previous list and data, show an error and do not claim replacement succeeded. Explain how to remove the rehearsal. I will test importing the backup, reloading and comparing tasks and completion.",
       "status": "translated",
       "sourceRevision": "0.3.0"
     },
@@ -5748,7 +5748,7 @@
       "sourceRevision": "0.3.0"
     },
     "automation-schedule.tool-conditions.body": {
-      "value": "With conditions met, use only this folder’s training task. In Claude Desktop/Code, create the local routine with Manual and use Run now; review folder, instructions and permissions before saving. In Codex, first run the complete request in a regular conversation with the local project. Compare output with 2 records and 30.50. Without access, analyze this rehearsal as simulation without claiming execution.",
+      "value": "With conditions met, use only this folder’s training task. In the Code tab of Claude Desktop, create the local routine with Manual and use Run now; review folder, instructions and permissions before saving. In Codex, first run the complete request in a regular conversation with the local project. Compare output with 2 records and 30.50. Without access, analyze this rehearsal as simulation without claiming execution.",
       "status": "translated",
       "sourceRevision": "0.3.0"
     },
@@ -5758,7 +5758,7 @@
       "sourceRevision": "0.3.0"
     },
     "automation-schedule.tool-conditions.tool.claude": {
-      "value": "In Code → Routines → New routine → Local, select relatorio, check the request and choose Manual for the first rehearsal. Save only the training task and use Run now. Open the result, check the report and respond to specific permissions as needed. If the feature is unavailable, record the obstacle.",
+      "value": "In Claude Desktop, open Code → Routines → New routine → Local, select relatorio, check the request and choose Manual for the first rehearsal. Save only the training task and use Run now. Open the result, check the report and respond to specific permissions as needed. If the feature is unavailable, record the obstacle.",
       "status": "translated",
       "sourceRevision": "0.3.0"
     },

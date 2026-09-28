@@ -4248,12 +4248,12 @@
       "sourceRevision": "0.3.0"
     },
     "app-delivery.restore-backup.body": {
-      "value": "Guarde uma cópia do estado C e importe antes-de-importar.json pelo fluxo validado. Confirme A concluída e B pendente após recarga. Na cópia isolada de teste da aula anterior, simule uma falha ao gravar uma importação: a lista anterior deve permanecer, com aviso de que nada foi substituído. Desligue o ensaio e repita uma importação válida.",
+      "value": "Guarde uma cópia do estado C e importe antes-de-importar.json pelo fluxo validado. Confirme A concluída e B pendente após recarga. Atualize a cópia isolada de teste com a versão atual que já importa arquivos, mantendo ganesha.tasks.test. Nessa cópia, simule falha ao gravar a importação: lista anterior preservada e aviso de que nada foi substituído. Desligue o ensaio e repita uma importação válida.",
       "status": "translated",
       "sourceRevision": "0.3.0"
     },
     "app-delivery.restore-backup.prompt": {
-      "value": "Na cópia isolada de teste, simule falha de gravação ao confirmar uma importação válida. Preserve lista e dados anteriores, mostre erro e não anuncie substituição concluída. Não toque a chave principal. Explique como remover o ensaio. Testarei em seguida importar a cópia de segurança, recarregar e comparar tarefas e conclusão.",
+      "value": "Atualize somente a cópia isolada de teste com a versão atual do app, incluindo exportar/importar. Nela, use exclusivamente ganesha.tasks.test; não leia, grave ou apague ganesha.tasks.v1. Depois simule falha de gravação ao confirmar uma importação válida. Preserve lista e dados anteriores, mostre erro e não anuncie substituição concluída. Explique como remover o ensaio. Testarei importar a cópia de segurança, recarregar e comparar tarefas e conclusão.",
       "status": "translated",
       "sourceRevision": "0.3.0"
     },
@@ -5748,7 +5748,7 @@
       "sourceRevision": "0.3.0"
     },
     "automation-schedule.tool-conditions.body": {
-      "value": "Com as condições aprovadas, use apenas a tarefa de treino desta pasta. No Claude Desktop/Code, crie a rotina local com Manual e use Run now; revise pasta, instruções e permissões antes de salvar. No Codex, execute primeiro o pedido completo em conversa comum com o projeto local. Compare a saída com 2 registros e 30.50. Sem acesso, analise esse ensaio como simulação, sem alegar execução.",
+      "value": "Com as condições aprovadas, use apenas a tarefa de treino desta pasta. Na aba Code do Claude Desktop, crie a rotina local com Manual e use Run now; revise pasta, instruções e permissões antes de salvar. No Codex, execute primeiro o pedido completo em conversa comum com o projeto local. Compare a saída com 2 registros e 30.50. Sem acesso, analise esse ensaio como simulação, sem alegar execução.",
       "status": "translated",
       "sourceRevision": "0.3.0"
     },
@@ -5758,7 +5758,7 @@
       "sourceRevision": "0.3.0"
     },
     "automation-schedule.tool-conditions.tool.claude": {
-      "value": "Em Code → Routines → New routine → Local, selecione a pasta relatorio, confira o pedido e escolha Manual para o primeiro ensaio. Salve somente a tarefa de treino e use Run now. Abra o resultado, confira o relatório e responda a permissões específicas quando necessário. Se a função não estiver disponível, registre o impedimento.",
+      "value": "No Claude Desktop, abra Code → Routines → New routine → Local, selecione a pasta relatorio, confira o pedido e escolha Manual para o primeiro ensaio. Salve somente a tarefa de treino e use Run now. Abra o resultado, confira o relatório e responda a permissões específicas quando necessário. Se a função não estiver disponível, registre o impedimento.",
       "status": "translated",
       "sourceRevision": "0.3.0"
     },

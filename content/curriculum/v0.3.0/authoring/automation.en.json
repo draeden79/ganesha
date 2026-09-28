@@ -539,7 +539,7 @@
           "kind": "practice",
           "mode": "external-real-task",
           "title": "Rehearse before activating the time",
-          "body": "With conditions met, use only this folder’s training task. In Claude Desktop/Code, create the local routine with Manual and use Run now; review folder, instructions and permissions before saving. In Codex, first run the complete request in a regular conversation with the local project. Compare output with 2 records and 30.50. Without access, analyze this rehearsal as simulation without claiming execution.",
+          "body": "With conditions met, use only this folder’s training task. In the Code tab of Claude Desktop, create the local routine with Manual and use Run now; review folder, instructions and permissions before saving. In Codex, first run the complete request in a regular conversation with the local project. Compare output with 2 records and 30.50. Without access, analyze this rehearsal as simulation without claiming execution.",
           "action": "Perform your tool’s rehearsal and record output and permissions, or mark the simulated route.",
           "expected": "A checked manual rehearsal before allowing recurrence, or an explicitly recorded obstacle.",
           "hint": "Do not broaden every permission to avoid a block; check access needed for the folder and command.",
@@ -549,7 +549,7 @@
           ],
           "objective": "Validate the complete request in the selected context before scheduling.",
           "variants": {
-            "claude": "In Code → Routines → New routine → Local, select relatorio, check the request and choose Manual for the first rehearsal. Save only the training task and use Run now. Open the result, check the report and respond to specific permissions as needed. If the feature is unavailable, record the obstacle.",
+            "claude": "In Claude Desktop, open Code → Routines → New routine → Local, select relatorio, check the request and choose Manual for the first rehearsal. Save only the training task and use Run now. Open the result, check the report and respond to specific permissions as needed. If the feature is unavailable, record the obstacle.",
             "codex": "In the local relatorio project, send the complete request in a regular conversation and check report.md. After a passing rehearsal, request a training task with the defined work, time/time zone and destination. Review the displayed configuration before activation. Documentation gathers tasks and results in Scheduled; confirm names available in your version."
           },
           "prompt": "Run once now, without creating a schedule, in the local relatorio folder. Use only the command I already tested on this computer: `python3 report.py vendas.csv report.md` or, on Windows, `py -3 report.py vendas.csv report.md`. Do not install dependencies or change input files or the program. The training input contains exactly id,item,amount; 1,Caderno,10.50; 2,Curso,20.00. Open report.md and check 2 records and total 30.50. If an error occurs, report its diagnosis and preserve the last valid report. Do not send data or publish results."

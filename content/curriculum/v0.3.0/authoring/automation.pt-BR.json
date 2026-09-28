@@ -539,7 +539,7 @@
           "kind": "practice",
           "mode": "external-real-task",
           "title": "Ensaiar antes de ativar o horário",
-          "body": "Com as condições aprovadas, use apenas a tarefa de treino desta pasta. No Claude Desktop/Code, crie a rotina local com Manual e use Run now; revise pasta, instruções e permissões antes de salvar. No Codex, execute primeiro o pedido completo em conversa comum com o projeto local. Compare a saída com 2 registros e 30.50. Sem acesso, analise esse ensaio como simulação, sem alegar execução.",
+          "body": "Com as condições aprovadas, use apenas a tarefa de treino desta pasta. Na aba Code do Claude Desktop, crie a rotina local com Manual e use Run now; revise pasta, instruções e permissões antes de salvar. No Codex, execute primeiro o pedido completo em conversa comum com o projeto local. Compare a saída com 2 registros e 30.50. Sem acesso, analise esse ensaio como simulação, sem alegar execução.",
           "action": "Faça o ensaio da sua ferramenta e registre saída e permissões, ou marque o caminho simulado.",
           "expected": "Ensaio manual conferido antes de permitir recorrência, ou impedimento explicitamente registrado.",
           "hint": "Não amplie todas as permissões para evitar um bloqueio; confira o acesso necessário à pasta e ao comando.",
@@ -549,7 +549,7 @@
           ],
           "objective": "Validar o pedido completo no contexto escolhido antes da agenda.",
           "variants": {
-            "claude": "Em Code → Routines → New routine → Local, selecione a pasta relatorio, confira o pedido e escolha Manual para o primeiro ensaio. Salve somente a tarefa de treino e use Run now. Abra o resultado, confira o relatório e responda a permissões específicas quando necessário. Se a função não estiver disponível, registre o impedimento.",
+            "claude": "No Claude Desktop, abra Code → Routines → New routine → Local, selecione a pasta relatorio, confira o pedido e escolha Manual para o primeiro ensaio. Salve somente a tarefa de treino e use Run now. Abra o resultado, confira o relatório e responda a permissões específicas quando necessário. Se a função não estiver disponível, registre o impedimento.",
             "codex": "No projeto local relatorio, envie o pedido completo em conversa comum e confira report.md. Após o ensaio aprovado, peça uma tarefa de treino com o trabalho, horário/fuso e destino definidos. Revise a configuração exibida antes de ativar. A documentação reúne tarefas e resultados em Scheduled; confirme os nomes disponíveis na sua versão."
           },
           "prompt": "Execute uma vez agora, sem criar agenda, na pasta local relatorio. Use somente o comando que já testei nesta máquina: `python3 report.py vendas.csv report.md` ou, no Windows, `py -3 report.py vendas.csv report.md`. Não instale dependências nem altere os arquivos de entrada ou o programa. A entrada de treino contém exatamente id,item,amount; 1,Caderno,10.50; 2,Curso,20.00. Abra report.md e confira 2 registros e total 30.50. Se houver erro, informe o diagnóstico e preserve o último relatório válido. Não envie dados nem publique resultados."

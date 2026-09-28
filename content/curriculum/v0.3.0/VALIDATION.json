@@ -1,0 +1,46 @@
+{
+  "version": "0.3.0",
+  "structuralPassed": true,
+  "lessons": 12,
+  "steps": 120,
+  "checks": 24,
+  "exercises": 94,
+  "externalSelfReportedPractices": 67,
+  "uniqueMessageKeys": 1192,
+  "estimatedMinutes": 395,
+  "coverage": {
+    "pt-BR": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "b201fd09bcbf49640a85ebb429c758fbc227233fe5a988573e4a33d6a8bb0d42"
+    },
+    "en": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "3552dee8e1a100122db7e35e630b0e38fc5d2d31da022b1e985eb76167f9dec2"
+    }
+  },
+  "requiredLocales": [
+    "pt-BR",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "hi",
+    "id",
+    "ar",
+    "ko",
+    "zh-CN"
+  ],
+  "localizationComplete": false,
+  "literalReviewFindings": [],
+  "active0.2.0Unchanged": true,
+  "courseSha256": "3ef6d85dd87b1b6564ef983d7da689c63735e21b6151386e5611d71a6e1e5667",
+  "canonicalReleaseEligible": false,
+  "humanLanguageReview": "pending",
+  "externalDesktopExecutionValidated": false,
+  "learningEfficacyValidated": false
+}

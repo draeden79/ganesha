@@ -584,7 +584,7 @@
           "kind": "practice",
           "mode": "external-real-task",
           "title": "Restore a backup and test a rejected write",
-          "body": "Save a copy of state C and import antes-de-importar.json through the validated flow. Confirm completed A and pending B after reloading. In the isolated test copy from the previous lesson, simulate failure while saving an import: the earlier list must remain, with a warning that nothing was replaced. Disable the rehearsal and repeat a valid import.",
+          "body": "Save a copy of state C and import antes-de-importar.json through the validated flow. Confirm completed A and pending B after reloading. Update the isolated test copy with the current version that already imports files, keeping ganesha.tasks.test. In that copy, simulate a failure while saving an import: preserve the earlier list and warn that nothing was replaced. Disable the rehearsal and repeat a valid import.",
           "action": "Demonstrate recovery from the copy and behavior during the isolated write failure.",
           "expected": "The copy restores correctly; a rejected import preserves previous data.",
           "hint": "If a copy fails validation, keep it intact and record the error before investigating.",
@@ -593,7 +593,7 @@
             "Failed writing does not replace the list.",
             "Rehearsal removed from delivery."
           ],
-          "prompt": "In the isolated test copy, simulate a write failure when confirming a valid import. Preserve the previous list and data, show an error and do not claim replacement succeeded. Do not touch the main key. Explain how to remove the rehearsal. I will then test importing the backup, reloading and comparing tasks and completion.",
+          "prompt": "Update only the isolated test copy with the current app version, including export/import. In that copy, use only ganesha.tasks.test; do not read, write or remove ganesha.tasks.v1. Then simulate a write failure when confirming a valid import. Preserve the previous list and data, show an error and do not claim replacement succeeded. Explain how to remove the rehearsal. I will test importing the backup, reloading and comparing tasks and completion.",
           "objective": "Demonstrate recovery and preservation on error."
         },
         {

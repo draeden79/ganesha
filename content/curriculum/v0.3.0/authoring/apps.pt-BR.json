@@ -584,7 +584,7 @@
           "kind": "practice",
           "mode": "external-real-task",
           "title": "Recuperar e testar uma gravação recusada",
-          "body": "Guarde uma cópia do estado C e importe antes-de-importar.json pelo fluxo validado. Confirme A concluída e B pendente após recarga. Na cópia isolada de teste da aula anterior, simule uma falha ao gravar uma importação: a lista anterior deve permanecer, com aviso de que nada foi substituído. Desligue o ensaio e repita uma importação válida.",
+          "body": "Guarde uma cópia do estado C e importe antes-de-importar.json pelo fluxo validado. Confirme A concluída e B pendente após recarga. Atualize a cópia isolada de teste com a versão atual que já importa arquivos, mantendo ganesha.tasks.test. Nessa cópia, simule falha ao gravar a importação: lista anterior preservada e aviso de que nada foi substituído. Desligue o ensaio e repita uma importação válida.",
           "action": "Demonstre a recuperação da cópia e o comportamento diante da falha de escrita isolada.",
           "expected": "Cópia recuperada corretamente; importação recusada preserva os dados anteriores.",
           "hint": "Caso uma cópia não passe na validação, mantenha-a intacta e registre o erro antes de investigar.",
@@ -593,7 +593,7 @@
             "Falha de gravação não troca a lista.",
             "Ensaio removido da entrega."
           ],
-          "prompt": "Na cópia isolada de teste, simule falha de gravação ao confirmar uma importação válida. Preserve lista e dados anteriores, mostre erro e não anuncie substituição concluída. Não toque a chave principal. Explique como remover o ensaio. Testarei em seguida importar a cópia de segurança, recarregar e comparar tarefas e conclusão.",
+          "prompt": "Atualize somente a cópia isolada de teste com a versão atual do app, incluindo exportar/importar. Nela, use exclusivamente ganesha.tasks.test; não leia, grave ou apague ganesha.tasks.v1. Depois simule falha de gravação ao confirmar uma importação válida. Preserve lista e dados anteriores, mostre erro e não anuncie substituição concluída. Explique como remover o ensaio. Testarei importar a cópia de segurança, recarregar e comparar tarefas e conclusão.",
           "objective": "Demonstrar recuperação e preservação em erro."
         },
         {
