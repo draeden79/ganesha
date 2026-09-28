@@ -213,7 +213,7 @@
         "official-claude-desktop-quickstart",
         "official-codex-quickstart"
       ],
-      "remainingGap": "Percurso visual/operacional pertinente de contexto, pedido, resposta e revisão nas duas superfícies; cadastro próprio do quickstart confirmado pelo pesquisador, integração do registro pendente.",
+      "remainingGap": "Percurso visual/operacional pertinente de contexto, pedido, resposta e revisão nas duas superfícies. O cadastro próprio do quickstart está commitado e conferido em f3bd174; isso fecha a pendência de proveniência, não a demonstração operacional.",
       "supportingSourceIds": [
         "res-codex-desktop-start"
       ]
@@ -314,7 +314,7 @@
       "resourceId": "res-codex-desktop-quickstart",
       "sourceUrl": "https://learn.chatgpt.com/docs/quickstart",
       "researchCommit": "3beec63",
-      "registryStatus": "new resource reported applied by researcher; registry integration commit pending",
+      "registryStatus": "committed and verified by Educator",
       "educatorReviewPath": "content/curriculum/reviews/OFFICIAL_SUBSET_02.md",
       "artifactPath": "content/research/studies/local/official-codex-quickstart.md",
       "artifactSha256": "5c052386e1de596504ce11df740000577d8acc5b6c5693a524b3f711cceabcef",
@@ -340,7 +340,9 @@
       "pending": [
         "Percurso operacional e estados de interface pertinentes não observados.",
         "Não há resposta executada, teste de página ou publicação."
-      ]
+      ],
+      "registryCommit": "f3bd174",
+      "registryEvidenceId": "ev-codex-desktop-quickstart"
     },
     {
       "studyId": "official-claude-workflow",
