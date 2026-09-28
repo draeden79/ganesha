@@ -91,7 +91,7 @@ def audit(locales):
                 assert [c['labelKey'] for c in rubrics[step['exercise']['rubricId']]['criteria']] == ['criterion.execution-record', 'criterion.compare-record']
     assert checks == 24
     # Exact literals are executable/artifact syntax, not natural-language wording.
-    literal_pattern = re.compile(r'`[^`]+`|https?://[^\s<>]+|(?<![\w/])[\w.-]+\.(?:csv|md|py|html|json|txt)\b|\b(?:30\.50|31\.50|10\.50|20\.00|11\.50)\b')
+    literal_pattern = re.compile(r'`[^`]+`|https?://[^\s<>]+|(?<![\w/])[\w.-]+\.(?:csv|md|py|html|json|txt)\b|\b(?:30\.50|31\.50|10\.50|20\.00|11\.50)\b|ganesha\.tasks\.(?:v1|test)|id,item,amount|aulas@example\.com|\b\d{2}:\d{2}\b')
     findings = []
     coverage = {}
     for locale in locales:
@@ -105,7 +105,7 @@ def audit(locales):
         assert all(m['value'].strip() and m['status'] == 'translated' and m['sourceRevision'] == course['version'] for m in messages.values())
         if locale != 'en':
             for key, text in source.items():
-                tokens = set(literal_pattern.findall(text))
+                tokens = {token.rstrip('.,;!?') if token.startswith(('http://', 'https://')) else token for token in literal_pattern.findall(text)}
                 missing = [token for token in tokens if token not in messages[key]['value']]
                 if missing:
                     findings.append({'locale': locale, 'key': key, 'missingLiteralCandidates': missing})

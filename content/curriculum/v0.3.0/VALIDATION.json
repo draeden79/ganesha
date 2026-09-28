@@ -21,6 +21,18 @@
       "humanReview": "pending",
       "sha256": "3552dee8e1a100122db7e35e630b0e38fc5d2d31da022b1e985eb76167f9dec2"
     },
+    "es": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "69030ed50f82631a5873c66af64df5d3191f140d46f5cbe8a0c29b2fbc16618a"
+    },
+    "hi": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "b7204e98aece8b1d51b8f1f88aebb87e46120aa70c7162abd68aec6da469d8be"
+    },
     "id": {
       "required": 1192,
       "present": 1192,
