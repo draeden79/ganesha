@@ -1,0 +1,20 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-code-101/installing-claude-code",
+  "title": "Installing Claude Code",
+  "observed_at": "2026-09-28T21:22:45.767Z",
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/0kILa02vKuI?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "Installing Claude Code"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=0kILa02vKuI",
+      "title": "Installing Claude Code"
+    }
+  ],
+  "acquired_transcript": "transcripts/local/0kILa02vKuI.academy.txt",
+  "inventory_scope": "Rendered public lesson; acquisition is distinct from reading and audiovisual verification"
+}

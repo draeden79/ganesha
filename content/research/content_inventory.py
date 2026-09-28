@@ -83,7 +83,8 @@ def build(root=ROOT):
         row['full_video_watched'] = video.get('full_video_watched', False)
         row['transcript_status'] = video['status']
         row['status'] = video.get('study_status', 'acquired_not_studied')
-    for study in read(root / 'studies/manifest.json', {'studies': []})['studies']:
+    study_manifest = read(root / 'studies/manifest.json', {'studies': []})
+    for study in study_manifest['studies']:
         if 'sources' in study:
             candidates = [{**source, 'study_path': study['study_path'],
                            'text_read_complete': source.get('full_text_analyzed', False)}
@@ -106,6 +107,11 @@ def build(root=ROOT):
             row['source_fully_analyzed'] |= candidate.get('full_source_analyzed', False)
             row['full_video_watched'] |= candidate.get('full_video_watched', False)
             row['status'] = 'studied_with_declared_scope'
+    for blocked in study_manifest.get('blocked_sources', []):
+        row = add(blocked['url'], [blocked['source_id']], blocked.get('title'))
+        row['access_issue'] = {key: blocked.get(key) for key in ('status', 'reason', 'source_manifest', 'next_action')}
+        row['status'] = blocked['status']
+        # A partial text and a paywall screenshot never certify full reading.
     rows = sorted(items.values(), key=lambda x: x['id'])
     assert len({r['url'] for r in rows}) == len(rows), 'Canonical URL collision'
     coverage = {'generated_at': datetime.now(timezone.utc).isoformat(),

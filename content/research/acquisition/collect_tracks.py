@@ -81,6 +81,59 @@ def validate_json3(data):
     return cues
 
 
+def derive_cue_text(cues):
+    return ("\n".join(f"[{timestamp(start)} --> {timestamp(end) if end is not None else '?'}] {value}"
+                      for start, end, value in cues) + "\n").encode()
+
+
+def evidence_reference(path):
+    data = path.read_bytes()
+    return {"path": str(path.relative_to(ROOT)), "bytes": len(data),
+            "sha256": hashlib.sha256(data).hexdigest()}
+
+
+def capture_batch_baseline(batch_id, scope, exported):
+    """Freeze canonical flags for this batch without replacing earlier baselines."""
+    canonical_path = ROOT / "transcripts" / "manifest.json"
+    data = canonical_path.read_bytes()
+    videos = json.loads(data).get("videos", [])
+    flags = ("full_transcript_read", "full_video_watched", "full_source_analyzed", "full_speech_coverage_verified")
+    baseline = {"recorded_at": now(), "batch_id": batch_id, "scope": scope,
+                "canonical_path": str(canonical_path.relative_to(ROOT)),
+                "canonical_sha256_before": hashlib.sha256(data).hexdigest(),
+                "video_count": len(videos), "baseline_exported_video_ids": sorted(exported),
+                "study_flags_before": {row["video_id"]: {flag: bool(row.get(flag)) for flag in flags} for row in videos}}
+    directory = HERE / "baselines"
+    directory.mkdir(exist_ok=True)
+    path = directory / (batch_id + ".json")
+    if path.exists():
+        raise ValueError("Refusing to replace a previous batch baseline")
+    write_json(path, baseline)
+    return evidence_reference(path)
+
+
+def last_real_attempt(attempts):
+    completed = [row for row in attempts if row.get("started_at") and row.get("finished_at")]
+    return max(completed, key=lambda row: datetime.fromisoformat(row["finished_at"]), default=None)
+
+
+def remaining_pause(attempts, pause_seconds, current_time):
+    previous = last_real_attempt(attempts)
+    if not previous:
+        return 0.0
+    elapsed = (current_time - datetime.fromisoformat(previous["finished_at"])).total_seconds()
+    return max(0.0, max(pause_seconds, 20) - elapsed)
+
+
+def enforce_attempt_pause(pause_seconds):
+    """Re-read durable attempts before each request, including the first of a run."""
+    while True:
+        delay = remaining_pause(read_lines(ATTEMPTS), pause_seconds, datetime.now(timezone.utc))
+        if delay <= 0:
+            return
+        time.sleep(min(delay, 60))
+
+
 def build_queue():
     rows = read_lines(ROOT / "video-inventory" / "videos.jsonl")
     sources = ["riley-brown-youtube", "designcourse-youtube", "openai-learn-codex",
@@ -164,11 +217,17 @@ def prioritize_historical(queue):
 
 def archive_historical_checkpoint(checkpoint):
     """Retain the exact queue and bounded batch before the next run replaces it."""
-    queue_data = (HERE / "historical-queue.json").read_bytes()
+    queue_path = ROOT / checkpoint["queue_snapshot_artifact"]["path"] if checkpoint.get("queue_snapshot_artifact") else HERE / "historical-queue.json"
+    queue_data = queue_path.read_bytes()
     digest = hashlib.sha256(queue_data).hexdigest()
+    expected = checkpoint.get("queue_snapshot_artifact")
+    if expected and (digest != expected["sha256"] or len(queue_data) != expected["bytes"]):
+        raise ValueError("Archived queue changed; refusing to rebind the batch to altered evidence")
     snapshots = HERE / "queue-snapshots"
     snapshots.mkdir(exist_ok=True)
     snapshot = snapshots / (digest + ".json")
+    if snapshot.exists() and snapshot.read_bytes() != queue_data:
+        raise ValueError("Archived queue hash path contains altered evidence")
     if not snapshot.exists():
         snapshot.write_bytes(queue_data)
     batches = HERE / "batches"
@@ -262,8 +321,7 @@ def acquire(row, scope="explicit_curated_selection_only", batch_id=None):
         raw = artifact(ARTIFACTS / f"aq.{row['id']}.{safe_lang}.json3", data, format="youtube_json3", **common)
         # This derived TXT preserves every returned text event, including
         # possible automatic-caption overlaps; JSON3 is the source of truth.
-        text = "\n".join(f"[{timestamp(start)} --> {timestamp(end) if end is not None else '?'}] {value}" for start, end, value in cues) + "\n"
-        readable = artifact(ARTIFACTS / f"aq.{row['id']}.{safe_lang}.txt", text.encode(), format="derived_cue_text", derived_from_sha256=raw["sha256"], **common)
+        readable = artifact(ARTIFACTS / f"aq.{row['id']}.{safe_lang}.txt", derive_cue_text(cues), format="derived_cue_text", derived_from_sha256=raw["sha256"], **common)
         upload = info.get("upload_date")
         published = f"{upload[:4]}-{upload[4:6]}-{upload[6:8]}" if upload and len(upload) == 8 else None
         duration = info.get("duration") or row.get("duration_seconds")
@@ -364,12 +422,16 @@ def main():
                 "selection_total": len(queue), "video_ids": [row["id"] for row in queue]})
     exported = existing_exported()
     latest = {r["video_id"]: r for r in read_lines(ATTEMPTS)}
-    checkpoint = {"batch_id": datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ"),
+    checkpoint = {"batch_id": datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ"),
                   "scope": scope, "started_at": now(), "max_new_attempts": args.max_videos,
                   "pause_seconds": max(args.pause_seconds, 20), "queue_total": len(queue),
                   "baseline_exported_video_ids": sorted(exported), "attempted_video_ids": [],
                   "new_exported_video_ids": [], "new_artifact_count": 0,
                   "queue_index_base": 0, "status": "planned"}
+    checkpoint["baseline_artifact"] = capture_batch_baseline(checkpoint["batch_id"], scope, exported)
+    if args.historical:
+        archived_path = archive_historical_checkpoint(checkpoint)
+        checkpoint["queue_snapshot_artifact"] = json.loads((ROOT / archived_path).read_text())["queue_snapshot_artifact"]
     checkpoint_path = HERE / ("historical-checkpoint.json" if args.historical else "selection-checkpoint.json")
 
     def update_checkpoint(status, position=0, result=None):
@@ -384,6 +446,8 @@ def main():
             if result.get("next_retry_at"):
                 checkpoint["last_next_retry_at"] = result["next_retry_at"]
         write_json(checkpoint_path, checkpoint)
+        if args.historical:
+            archive_historical_checkpoint(checkpoint)
 
     update_checkpoint("planned")
     if args.plan_only:
@@ -403,6 +467,7 @@ def main():
         if count >= args.max_videos:
             next_position = position
             break
+        enforce_attempt_pause(args.pause_seconds)
         result = acquire(row, scope=scope, batch_id=checkpoint["batch_id"])
         count += 1
         next_position = position + 1
@@ -422,8 +487,6 @@ def main():
         write_json(STATE, {"scope": scope, "status": "running", "batch_id": checkpoint["batch_id"], "updated_at": now(), "last_video_id": row["id"], "last_result": result["result"]})
         update_checkpoint("running", next_position, result)
         report()
-        if count < args.max_videos and row is not queue[-1]:
-            time.sleep(max(args.pause_seconds, 20))
     update_checkpoint(stop_status, next_position)
     if args.historical:
         archive_historical_checkpoint(checkpoint)

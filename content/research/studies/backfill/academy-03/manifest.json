@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "studies": [
+    {
+      "id": "academy-the-claude-md-file",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/the-claude-md-file",
+      "video_id": "O0FGCxkHM-U",
+      "title": "The CLAUDE.md file",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-03/claude-md.md",
+      "status": "transcript_analyzed_visual_pending",
+      "text_read_complete": true,
+      "full_transcript_read": true,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac03-claude-md.txt",
+          "bytes": 5514,
+          "sha256": "7b214891e12eea6d70a4c8c19ebda8956803f4add7635d2fcfd7487d0fe223b7",
+          "kind": "text",
+          "line_count": 82,
+          "read_lines": [
+            [
+              1,
+              82
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac03-claude-md-summary.txt",
+          "bytes": 2849,
+          "sha256": "29b96b4a8ebbde32b3dbd00c2e33da727867324b380f4737631a5100241a11fb",
+          "kind": "text",
+          "line_count": 72,
+          "read_lines": [
+            [
+              1,
+              72
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-03/claude-md.md",
+        "bytes": 4909,
+        "sha256": "17f497c175ce8c18d816b3d17d9cafa90685adcdf8cd39dc21c9b0e14b97bacb",
+        "kind": "original_study",
+        "line_count": 36,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac03-claude-md-0.png",
+          "bytes": 54907,
+          "sha256": "fae2bd92299a46b1672ccd9611ec19e219d0b924cd65967b8d59917c28b290e6",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac03-claude-md-1.png",
+          "bytes": 80770,
+          "sha256": "a51909f04cee3d8f43e053ce34a291cfc632e1672440956c1b72f8e9b7bedaf6",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Prática original não executada"
+      ],
+      "rights": "Brutos e capturas internos gitignored, sem licença de republicação presumida."
+    },
+    {
+      "id": "academy-subagents",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/subagents",
+      "video_id": "jKErNxuxPXg",
+      "title": "Subagents",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-03/subagents.md",
+      "status": "transcript_analyzed_visual_pending",
+      "text_read_complete": true,
+      "full_transcript_read": true,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac03-subagents.txt",
+          "bytes": 4449,
+          "sha256": "7817650afbab9668783eeb31ff93dbb20b5f8c6e2f30a5a2b4ce5b189bdd609e",
+          "kind": "text",
+          "line_count": 53,
+          "read_lines": [
+            [
+              1,
+              53
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac03-subagents-summary.txt",
+          "bytes": 2234,
+          "sha256": "7963ba85b061254e824477d7881062f0fba00e2ab61cbd6b4c1083892f08300a",
+          "kind": "text",
+          "line_count": 43,
+          "read_lines": [
+            [
+              1,
+              43
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-03/subagents.md",
+        "bytes": 5118,
+        "sha256": "6712a48eafb4cd245389aa0d39cbc17183529521d201a9c79f4d35e49952b88e",
+        "kind": "original_study",
+        "line_count": 38,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Prática original não executada"
+      ],
+      "rights": "Brutos e capturas internos gitignored, sem licença de republicação presumida.",
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/sub-agents",
+          "method": "web open/find",
+          "read_scope": "Resume subagents; transcript retention paragraphs",
+          "entire_source_read": false,
+          "observed_at": "2026-09-28",
+          "finding": "Separate context does not imply transcript deletion; eligible subagents can resume."
+        }
+      ]
+    }
+  ]
+}

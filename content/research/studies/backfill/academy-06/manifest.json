@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "studies": [
+    {
+      "id": "academy-hooks",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/hooks",
+      "video_id": "IkaPHiMDazM",
+      "title": "Hooks",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-06/hooks.md",
+      "status": "transcript_analyzed_visual_pending",
+      "text_read_complete": true,
+      "full_transcript_read": true,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac06-hooks.txt",
+          "bytes": 5619,
+          "sha256": "2eeda3b6a081937c522b7f1f4d02577ffdb7bd6dbf8815218562f45b30a81880",
+          "kind": "text",
+          "line_count": 78,
+          "read_lines": [
+            [
+              1,
+              78
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac06-hooks-summary.txt",
+          "bytes": 3139,
+          "sha256": "c49bdd3975eb7ed6c5e593b7d91f759546a815755b026f74e444db6e0eb0c87f",
+          "kind": "text",
+          "line_count": 66,
+          "read_lines": [
+            [
+              1,
+              66
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-06/hooks.md",
+        "bytes": 5684,
+        "sha256": "ba6a35c7bcfffd7ae7176eb99848d7d7685b99dbcaf18e9aecd94b7ee712f51d",
+        "kind": "original_study",
+        "line_count": 41,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac06-hooks-0.png",
+          "bytes": 59137,
+          "sha256": "6abf43e44b12766b5b39fc0ffff166573f4c51d827051fe711ce8c100f3d1054",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac06-hooks-1.png",
+          "bytes": 21189,
+          "sha256": "67fb81163421d5a6c2773e6e6c4d94618f7ce88668e385e63abfb2edb8887d5f",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Prática original não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida.",
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/hooks",
+          "read_scope": "Hook lifecycle; exit codes; timeouts; workspace trust",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28",
+          "finding": "Configured event handling does not guarantee successful execution. Command-hook timeout and startup failure need explicit observation."
+        }
+      ]
+    },
+    {
+      "id": "academy-installing-claude-code",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/installing-claude-code",
+      "video_id": "0kILa02vKuI",
+      "title": "Installing Claude Code",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-06/installing.md",
+      "status": "transcript_analyzed_visual_pending",
+      "text_read_complete": true,
+      "full_transcript_read": true,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac06-installing.txt",
+          "bytes": 5701,
+          "sha256": "8813c13503adbb8b1f3357e967705a654047b0e81d896e4d231502b61f8ad5a6",
+          "kind": "text",
+          "line_count": 85,
+          "read_lines": [
+            [
+              1,
+              85
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac06-installing-summary.txt",
+          "bytes": 2931,
+          "sha256": "145e84e33bdd36b773cddddbadeed11848c5ee4cb793405d58a067c46ce98d7d",
+          "kind": "text",
+          "line_count": 71,
+          "read_lines": [
+            [
+              1,
+              71
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-06/installing.md",
+        "bytes": 6245,
+        "sha256": "0d300ca68fc94f7157546ad18d9a2dad6ceeaf15f0f645c7baee0ffec05751ae",
+        "kind": "original_study",
+        "line_count": 46,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac06-installing-0.png",
+          "bytes": 31787,
+          "sha256": "0fe1114ed3372d945a495131a0e07600dc5955c2110f8a35db9619b84fd16b0c",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac06-installing-1.png",
+          "bytes": 50809,
+          "sha256": "5de5f01107fe64843843dc127d54a8d2856d4164fe2b99ccf18506ea1670920e",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac06-installing-2.png",
+          "bytes": 120216,
+          "sha256": "560ac18cfe16724a13029cef36e9c0cacc6c6f01f7a1dcd411127ac7e34037fa",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac06-installing-3.png",
+          "bytes": 98681,
+          "sha256": "0db805a2e87140242a1e06db89ae024fa47a48ae779c29c17eb45d8efc60d141",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac06-installing-4.png",
+          "bytes": 30550,
+          "sha256": "9686dd22b89553358333b549213c5415ada79346b268a03355a23bdd94e9b1e5",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac06-installing-5.png",
+          "bytes": 40809,
+          "sha256": "000d16703f909e75035a17c8dee5fa354c79122b7ec0c5f8951f219c16f6ea11",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Prática original não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida."
+    }
+  ]
+}

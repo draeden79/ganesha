@@ -24,6 +24,24 @@ class ContentInventoryTests(unittest.TestCase):
             self.assertEqual(result['items_with_complete_text_read'], 0)
             self.assertFalse(result['historical_denominator_verified'])
 
+    def test_paywall_evidence_is_pending_and_does_not_count_as_study(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / 'studies').mkdir()
+            (root / 'studies/manifest.json').write_text(json.dumps({'studies': [], 'blocked_sources': [{
+                'url': 'https://creatoreconomy.so/p/paid-example',
+                'source_id': 'peter-yang-newsletter', 'title': 'Paid example',
+                'status': 'blocked_paywall', 'reason': 'Paid subscriber boundary',
+                'text_read_complete': False, 'full_source_analyzed': False
+            }]}))
+            result = build(root)
+            row = json.loads((root / 'content-inventory/items.jsonl').read_text())
+            self.assertEqual(result['access_issues'], 1)
+            self.assertEqual(result['items_with_study'], 0)
+            self.assertEqual(result['items_with_complete_text_read'], 0)
+            self.assertEqual(row['status'], 'blocked_paywall')
+            self.assertEqual(row['source_ids'], ['peter-yang-newsletter'])
+
 
 if __name__ == '__main__':
     unittest.main()

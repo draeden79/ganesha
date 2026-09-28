@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "studies": [
+    {
+      "id": "academy-what-is-claude-code",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/what-is-claude-code",
+      "video_id": "fl1DSmwQKKY",
+      "title": "What is Claude Code?",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-02/what-is-claude-code.md",
+      "status": "transcript_analyzed_visual_pending",
+      "text_read_complete": true,
+      "full_transcript_read": true,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac02-what-is.txt",
+          "bytes": 4955,
+          "sha256": "37fc718cb44283920de6fd71807771230632f22ec17b6bf536fea91e5c9bc38a",
+          "kind": "text",
+          "line_count": 59,
+          "read_lines": [
+            [
+              1,
+              59
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac02-what-is-summary.txt",
+          "bytes": 2779,
+          "sha256": "896c845ad083819959a7fca36e0434efde7dde021933693a3a6efa4ccdfb0254",
+          "kind": "text",
+          "line_count": 45,
+          "read_lines": [
+            [
+              1,
+              45
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-02/what-is-claude-code.md",
+        "bytes": 4373,
+        "sha256": "54d12fb27f576c549eec3e2a198a6cb44f7b6a27ac9910c8e1ed8bb7ec365104",
+        "kind": "original_study",
+        "line_count": 32,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Prática original não executada"
+      ],
+      "rights": "Brutos e capturas internos gitignored, sem licença de republicação presumida."
+    },
+    {
+      "id": "academy-how-claude-code-works",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/how-claude-code-works",
+      "video_id": "6bs5b4FltCU",
+      "title": "How Claude Code works",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-02/how-claude-code-works.md",
+      "status": "transcript_analyzed_visual_pending",
+      "text_read_complete": true,
+      "full_transcript_read": true,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac02-how-works.txt",
+          "bytes": 5085,
+          "sha256": "6c301ef686d1aac0b82c25f1c38821fd4224ad16edba93eb8c607eb44546081b",
+          "kind": "text",
+          "line_count": 64,
+          "read_lines": [
+            [
+              1,
+              64
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/backfill-ac02-how-works-summary.txt",
+          "bytes": 2816,
+          "sha256": "68d944a306d6ac968d08e7a4e98ec5fc35e5b809f0c197a5feaa529089c553be",
+          "kind": "text",
+          "line_count": 54,
+          "read_lines": [
+            [
+              1,
+              54
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-02/how-claude-code-works.md",
+        "bytes": 4964,
+        "sha256": "e1886641cc8f92f43fc3ee808d7a5acc00c1556c02f89d5111066f70a2411653",
+        "kind": "original_study",
+        "line_count": 40,
+        "read_lines": []
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac02-how-works-0.png",
+          "bytes": 22995,
+          "sha256": "b6f83a2e8a532d43e0185c33245306bd0749cdc8bc754efe25402e454635d1b8",
+          "kind": "image",
+          "visually_reviewed": true
+        },
+        {
+          "path": "studies/local/backfill-ac02-how-works-1.png",
+          "bytes": 46858,
+          "sha256": "30dcdbe59dbc17b8db31059de3ba6b39b12c97f42468e163d1e515b4ca1c70d5",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Prática original não executada"
+      ],
+      "rights": "Brutos e capturas internos gitignored, sem licença de republicação presumida."
+    }
+  ]
+}

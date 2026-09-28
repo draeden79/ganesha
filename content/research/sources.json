@@ -167,7 +167,7 @@
       "approved_by_user": true,
       "checked_at": "2026-09-28",
       "access_status": "accessible",
-      "coverage": "313 páginas HTML descobertas; quatro transcrições publicadas adquiridas via aulas renderizadas, três integralmente estudadas. Texto complementar, transcrição e vídeo têm estados distintos. Restam 289 candidatos à inspeção renderizada.",
+      "coverage": "Aulas públicas renderizadas estudadas progressivamente, incluindo transcrições oficiais, texto complementar, imagens e exercícios. Aquisição, leitura e audiovisual têm estados distintos. Contagens atualizadas nos manifestos e fila academy-render-queue.json; histórico integral ainda em aberto.",
       "last_publication_seen": null,
       "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
       "history_complete": false,

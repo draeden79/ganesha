@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "scope": "articles-03: três estudos públicos novos, entregues incrementalmente; impedimentos separados.",
+  "studies": [
+    {
+      "id": "article-builder-tdd-ai-2025",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/test-driven-development-ai",
+      "title": "Test-Driven Development with AI",
+      "author": "Alice Moore",
+      "published_at": "2025-07-29",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/builder-blog.json",
+      "study_path": "studies/backfill/articles-03/builder-tdd-ai.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "scope": "texto integral e duas imagens; quatro animações/vídeos não assistidos",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a03-builder-tdd-ai.txt",
+          "bytes": 11045,
+          "sha256": "8b5b301ff5e9d4c1d9f6bf514f768eced575b70214bf375297545c731d021449",
+          "line_count": 133,
+          "read_lines": [
+            [
+              1,
+              133
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a03-builder-tdd-ai.html",
+          "bytes": 247155,
+          "sha256": "4ff84e7000b1299ba717555d5f59de2cd984362967d5dc5dcc847dd80bcec358",
+          "line_count": 1297,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a03-builder-tdd-ai-media.json",
+          "bytes": 3353,
+          "sha256": "7720d9a409c92fc7c9286626ef6cad7f07f39245daa301457de04f0fb1a3845b",
+          "line_count": 107,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a03-builder-tdd-ai-acquisition.json",
+          "bytes": 279,
+          "sha256": "829241f62ef91737fbe4e811d933fcbc67d6275e20ddeab386118c376e1085bc",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a03-tdd-cycle.png",
+          "bytes": 34602,
+          "sha256": "6ad5fa5624018b67e157e27be62f0d54b9da8c050d7bb8d9e9f78c9cad8c08ee",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "diagrama red/green/refactor",
+          "method": "screenshot da imagem no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a03-tdd-meme.png",
+          "bytes": 36692,
+          "sha256": "2760dd11a7cf97cc0a11142320ce9bb23a315ed64d82dbea87173cd147b91cf8",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "meme de opinião, sem evidência estatística",
+          "method": "screenshot da imagem no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "4 elementos video com posters; sequência de execução não assistida"
+      ],
+      "not_reviewed": [
+        "código, suíte e logs reais",
+        "vídeos da implementação",
+        "produto e dependências atuais"
+      ],
+      "practice_checks": [
+        "regra de capacidade e falha relevante",
+        "jornada visível e regressão após alteração"
+      ],
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida.",
+      "study_artifact": {
+        "path": "studies/backfill/articles-03/builder-tdd-ai.md",
+        "bytes": 8648,
+        "sha256": "4cd76e426dbdbf3e052f54eb5980a52c5d225c209b5d958edf06ee3e5b9d43ad",
+        "line_count": 65,
+        "read_lines": [],
+        "kind": "original_study"
+      }
+    },
+    {
+      "id": "article-builder-figma-live-2026",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/turn-a-figma-landing-page-into-a-live-website",
+      "title": "Turn a Figma Landing Page into a Live Website",
+      "author": "Alice Moore",
+      "published_at": "2026-03-24",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/builder-blog.json",
+      "study_path": "studies/backfill/articles-03/builder-figma-live.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "scope": "todo texto disponível no corpo renderizado; capa conferida; cinco vídeos não assistidos. Prompt de importação anunciado não aparece no texto e não foi reconstruído.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a03-builder-figma-live.txt",
+          "bytes": 7945,
+          "sha256": "4763150361de66018b745e269b49ae2990cff4f890b6aea47408daacb700d890",
+          "line_count": 137,
+          "read_lines": [
+            [
+              1,
+              137
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a03-builder-figma-live.html",
+          "bytes": 230771,
+          "sha256": "498e35e3423805f241dfb3890733a62b611277f953994ae69955f9fccd6d79ff",
+          "line_count": 1320,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a03-builder-figma-live-media.json",
+          "bytes": 2394,
+          "sha256": "7cafc81a17002d5fb12f6fdf56b3739a4e789d477a9c0c2e2085aa01dd714696",
+          "line_count": 100,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a03-builder-figma-live-acquisition.json",
+          "bytes": 317,
+          "sha256": "fafcdaee53bf1c3d702a55db00e9aac0e2910b1612763a3f4db83b13bb2a4754",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a03-figma-live-cover.png",
+          "bytes": 37421,
+          "sha256": "66b16a6f6749ea5b8728bb3ffc5cf861ff5ecd29253a0d4b8115d5e136c6202d",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "capa conceitual de copiar design para página, sem prova operacional",
+          "method": "screenshot no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "5 elementos video sem src/source/poster no estado DOM observado; sequências não assistidas"
+      ],
+      "not_reviewed": [
+        "sequências audiovisuais e prompt de importação fora do texto",
+        "configuração externa de Supabase e Netlify",
+        "aplicação, gravação real no banco e visitante público"
+      ],
+      "practice_checks": [
+        "equivalência visual e uso em duas larguras",
+        "ação/persistência com envio válido e inválido"
+      ],
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida.",
+      "study_artifact": {
+        "path": "studies/backfill/articles-03/builder-figma-live.md",
+        "bytes": 9363,
+        "sha256": "cc795450dc1a1eb0957dc543066962441547b8d4a01f7106e2eced0bd1ef7496",
+        "line_count": 73,
+        "read_lines": [],
+        "kind": "original_study"
+      }
+    },
+    {
+      "id": "article-peter-no-ai-slop-2026",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
+      "title": "Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "author": "Peter Yang",
+      "published_at": "2026-07-22",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/peter-yang-newsletter.json",
+      "study_path": "studies/backfill/articles-03/peter-no-ai-slop.md",
+      "status": "full_source_analyzed",
+      "text_read_complete": true,
+      "full_source_analyzed": true,
+      "scope": "Artigo público integral e oito imagens materiais estáticas; links externos e código da skill fora do escopo. Nenhum vídeo/iframe observado no corpo.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a03-peter-no-ai-slop.txt",
+          "bytes": 5775,
+          "sha256": "d2dbdf79604414158c81601580347bcde51ebee165dbb8d5c4511875752080a2",
+          "line_count": 131,
+          "read_lines": [
+            [
+              1,
+              131
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a03-peter-no-ai-slop.html",
+          "bytes": 249359,
+          "sha256": "aa6a859a1cc509848ae06fae1c8d342029a535f4476818f9aa36e2788be62107",
+          "line_count": 411,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a03-peter-no-ai-slop-media.json",
+          "bytes": 4604,
+          "sha256": "b987583033647f347b1cc9a4c69f9e6963f74f90e95bda0cb1c1863ddbd018b3",
+          "line_count": 100,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a03-peter-no-ai-slop-acquisition.json",
+          "bytes": 333,
+          "sha256": "bf6d032104c6204e63ec8fb7a47d3ee663787b547025f7fe0a8b2f9325c75228",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a03-noslop-01.png",
+          "bytes": 91947,
+          "sha256": "3e3942b4db41bc2a8ca9486bbb670360f337791a4907b5af3744764dd7876b52",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Capa enumera sete padrões e aponta ao repositório; não é demonstração de remoção.",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a03-noslop-02.png",
+          "bytes": 50429,
+          "sha256": "3bc397a128216a2586b1297c90562dfad44a28d447729536144a0a9091f4d7a2",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Peça Linear com issues e pedido de plano; não comprova execução.",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a03-noslop-03.png",
+          "bytes": 85689,
+          "sha256": "44db8ffcf5da18040204a0941869693974b643867326ed6a6f337581e7595ee7",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Comentário de LinkedIn apresentado como sátira; linguagem grandiosa acumulada.",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a03-noslop-04.png",
+          "bytes": 62366,
+          "sha256": "241deed202cd5e0fa39c1d7eb2e73cecb3332aa9a86f9cb31d68269f22fb46cf",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Duas críticas de estilo, sem entrada e versão corrigida integrais.",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a03-noslop-05.png",
+          "bytes": 21733,
+          "sha256": "598c9bd39a43302d511e5a3779267891ec65f07b0c50b41432ec28ffb652be1a",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Resultado Pangram marcado 100% humano; não comprova autoria ou precisão.",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a03-noslop-06.png",
+          "bytes": 36733,
+          "sha256": "9e132deb1c706f67994fbbe631bfc442196ba8916d69df16290deeb1d9df2627",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Meme sobre tentação de abandonar revisão manual.",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a03-noslop-07.png",
+          "bytes": 75119,
+          "sha256": "f5d237c84c41a4d73b1bab86f13beb7f6b1427c50d03a6927b4cfa21191db3eb",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Recorte de publicação rotulado Brian Chesky; invasão e autoria não autenticadas.",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a03-noslop-08.png",
+          "bytes": 138332,
+          "sha256": "34f98266e3fd0963f8e4063b202a56202d833d0feb550bd464e72420fab43034",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "Slide sobre filtrar conteúdo e acrescentar julgamento humano antes de compartilhar.",
+          "method": "screenshot da imagem observada no navegador"
+        }
+      ],
+      "embedded_media_pending": [],
+      "not_reviewed": [
+        "repositório e execução da skill",
+        "links externos, outras skills e vídeo mencionado",
+        "autenticidade de eventos e autoria de posts",
+        "precisão de detectores ou ganhos de produtividade"
+      ],
+      "practice_checks": [
+        "integridade dos três fatos e ausência de promessas novas",
+        "clareza para o destinatário e revisão humana após correção"
+      ],
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida.",
+      "study_artifact": {
+        "path": "studies/backfill/articles-03/peter-no-ai-slop.md",
+        "bytes": 9888,
+        "sha256": "d686ffa42292a1c0f057d24a4dcf16094348dc5fc11e078f809dccbe26ba6804",
+        "line_count": 78,
+        "read_lines": [],
+        "kind": "original_study"
+      }
+    }
+  ],
+  "blocked_sources": [
+    {
+      "id": "blocked-peter-idea-app-2026",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/full-tutorial-from-idea-to-app-with",
+      "title": "Full Tutorial: From Idea to App with Claude Design and Claude Code in 25 Minutes",
+      "published_at": "2026-07-29",
+      "status": "blocked_paywall",
+      "text_read_complete": false,
+      "full_source_analyzed": false,
+      "reason": "Texto público termina na seção 3 antes do prompt inicial; região This post is for paid subscribers. Índice e vídeo público ligado não substituem texto integral.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a03-peter-idea-app-partial.txt",
+          "bytes": 4705,
+          "sha256": "9dbc840698c09cbaea73da635b723293a34a962a156ba1a80a17035400ff6c63",
+          "line_count": 95,
+          "read_lines": [],
+          "kind": "partial_text"
+        },
+        {
+          "path": "studies/local/backfill-a03-peter-idea-app.html",
+          "bytes": 204834,
+          "sha256": "b57738eb3d49ee2df930e813ea90fadb2cb64ee9e93237e9ba041fc1247de797",
+          "line_count": 411,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a03-peter-idea-app-acquisition.json",
+          "bytes": 297,
+          "sha256": "8fc3131aa1422689839f7ba1382b5fd2c5cf7a2aceed744616131d23a0a2b3ac",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a03-peter-idea-app-paywall.png",
+          "bytes": 61092,
+          "sha256": "2d5543112466eb45d4d153ba2bf7628bb6c0c883a84b1b6fd9af59741545015b",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "paywall após começo da seção 3"
+        }
+      ],
+      "related_public_video": "https://www.youtube.com/watch?v=G9o8eoHzpxc",
+      "public_video_studied_in_this_round": false,
+      "next_action": "Manter bloqueio até acesso legítimo; seguir para artigo público /no-ai-slop nesta rodada.",
+      "related_existing_study": {
+        "path": "studies/app/G9o8eoHzpxc.md",
+        "basis": "caminho informado pelo agente coordenador",
+        "reviewed_in_this_round": false,
+        "does_not_replace_blocked_article": true
+      }
+    }
+  ],
+  "round_deliverables_complete": true,
+  "source_audiovisual_completion_claimed": false,
+  "round_summary": {
+    "public_articles_with_complete_text_study": 3,
+    "text_lines_read": 401,
+    "material_static_images_reviewed": 11,
+    "embedded_builder_videos_pending": 9,
+    "blocked_articles": 1,
+    "full_source_analyzed_articles": 1
+  }
+}

@@ -53,11 +53,20 @@ def main():
     study_path = ROOT / 'studies/manifest.json'
     study_manifest = read(study_path)
     studies = {s.get('id') or s['video_id']: s for s in study_manifest['studies']}
+    blocked_sources = {b['url']: b for b in study_manifest.get('blocked_sources', [])}
     backfill = []
     for batch in sorted((ROOT / 'studies/backfill').glob('*/manifest.json')):
-        for study in read(batch, {'studies': []})['studies']:
+        batch_data = read(batch, {'studies': []})
+        for study in batch_data['studies']:
             backfill.append({**study, 'source_manifest': str(batch.relative_to(ROOT))})
+        for blocked in batch_data.get('blocked_sources', []):
+            blocked_sources[blocked['url']] = {**blocked, 'source_manifest': str(batch.relative_to(ROOT))}
     checks = 0
+    for blocked in blocked_sources.values():
+        assert not blocked.get('text_read_complete') and not blocked.get('full_source_analyzed')
+        for artifact in blocked.get('artifacts', []) + blocked.get('visual_artifacts', []):
+            verify(ROOT / artifact['path'], artifact)
+            checks += 1
     for record in jsonl(ROOT / 'acquisition/manifest.jsonl'):
         assert Path(record['artifact_root']) == artifact_root, 'Unexpected artifact root'
         for a in record['artifacts']:
@@ -192,6 +201,7 @@ def main():
     manifest['videos'] = sorted(videos.values(), key=lambda v: v['video_id'])
     manifest['updated_at'] = datetime.now(timezone.utc).isoformat()
     study_manifest['studies'] = list(studies.values())
+    study_manifest['blocked_sources'] = list(blocked_sources.values())
     study_manifest['updated_at'] = manifest['updated_at']
     study_manifest['scope_note'] = 'Text acquisition, complete reading, visual inspection and product execution are distinct. See individual scope and pending fields.'
     write(transcript_path, manifest)

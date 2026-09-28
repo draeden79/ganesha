@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "artifact_path_base": "content/research",
+  "updated_at": "2026-09-28T21:12:12.840948+00:00",
+  "studies": [
+    {
+      "id": "backfill-v02-jQm42x6VpN4",
+      "video_id": "jQm42x6VpN4",
+      "title": "Cursor Landing Page Full Tutorial (No Coding just AI Prompts)",
+      "url": "https://www.youtube.com/watch?v=jQm42x6VpN4",
+      "published_at": "2025-01-10",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-02/jQm42x6VpN4.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-02/jQm42x6VpN4.md",
+        "bytes": 9104,
+        "sha256": "babc92641466952def1bc4c5b51490d538b2eededacafbf6163d6d5ced532ca5"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.jQm42x6VpN4.en.d3c02d2cb33e.txt",
+        "bytes": 14443,
+        "sha256": "d3c02d2cb33e0347d52f53fc6f38bace1935f2fa303727d755c49a53d2347c04",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 210,
+        "first_cue_start_seconds": 0.08,
+        "last_cue_start_seconds": 569.959,
+        "last_cue_end_seconds": 574.04,
+        "track_export_complete": true,
+        "logical_line_count": 210,
+        "sequential_read_ranges": [
+          [
+            1,
+            210
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.jQm42x6VpN4.en.f726628d4c39.json3",
+        "bytes": 164622,
+        "sha256": "f726628d4c396f621842cc24f98e2b9717db1af0f2d89579b7c541ad5ffcc60d"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v02-jQm42x6VpN4-error.png",
+          "bytes": 98814,
+          "sha256": "382a8344fdaa746bd9f6fad93886f57b7b7a5af3840b32de00819e9cd3279ffc",
+          "player_seconds": 203,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Build failure: missing border-border class in app/globals.css; Next version warning also visible, not demonstrated as cause."
+        },
+        {
+          "path": "studies/local/backfill-v02-jQm42x6VpN4-deploy.png",
+          "bytes": 111638,
+          "sha256": "8848a01003f686cb0821247cc13edb4f747502d37aa47e6ca963b1822117e29f",
+          "player_seconds": 493,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Landing page rendered at vercel.app; controls visible but not functionally tested."
+        },
+        {
+          "path": "studies/local/backfill-v02-jQm42x6VpN4-domain-url.png",
+          "bytes": 115416,
+          "sha256": "6322917e7e0d4b5ffcb615be89b174254f760d38545028a6005de893f0284ae8",
+          "player_seconds": 558,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Domain settings show create.inc redirects to www.create.inc, valid configuration and propagation note."
+        },
+        {
+          "path": "studies/local/backfill-v02-jQm42x6VpN4-domain.png",
+          "bytes": 89295,
+          "sha256": "22fa99c23e532af98ce88c5a7fe1b233bd59608064e76a61ffcaf6bd991459a3",
+          "player_seconds": 563,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Page content after narrated custom-domain navigation; URL not visible in this frame."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 572,
+      "duration_seconds_observed_player": 572,
+      "timing_note": "Caption span 0.080–574.040s; tail exceeds duration by 2.040s; speech completeness and caption accuracy unverified.",
+      "source_or_practice_executed": false,
+      "current_interfaces_verified": false,
+      "desktop_cli_parity_assumed": false,
+      "sufficiency": "Concrete template-to-published-page case with compilation recovery; lacks repeat deployment, visitor without session and behavior tests.",
+      "pending": [
+        "Continuous audiovisual review",
+        "Template/install/authentication and commands",
+        "Visitor access, update/regression and current hosting/DNS behavior"
+      ]
+    },
+    {
+      "id": "backfill-v02-GepHGs_CZdk",
+      "video_id": "GepHGs_CZdk",
+      "title": "Claude Code Beginner's Tutorial: Build a Movie App in 15 Minutes (2025)",
+      "url": "https://www.youtube.com/watch?v=GepHGs_CZdk",
+      "published_at": "2025-09-03",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-02/GepHGs_CZdk.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-02/GepHGs_CZdk.md",
+        "bytes": 12333,
+        "sha256": "ecc43301919289d38991c779902771806eb66e852f075d9f51e2fb45ff824f93"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.GepHGs_CZdk.en.9196058f9883.txt",
+        "bytes": 28409,
+        "sha256": "9196058f9883e4f76021fe95e3cced3fc82186b4b691f39b58e25f9ed9aaff6c",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 408,
+        "first_cue_start_seconds": 1.12,
+        "last_cue_start_seconds": 999.759,
+        "last_cue_end_seconds": 1003.68,
+        "track_export_complete": true,
+        "logical_line_count": 408,
+        "sequential_read_ranges": [
+          [
+            1,
+            215
+          ],
+          [
+            216,
+            408
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.GepHGs_CZdk.en.dfbe2a731e17.json3",
+        "bytes": 307379,
+        "sha256": "dfbe2a731e1784e1cbbb15625e956465d95e5dc47a6c959223616f5004fc6c76"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v02-GepHGs_CZdk-fetch-error.png",
+          "bytes": 72373,
+          "sha256": "11347a260351095fdd10cc42578be924742a3b09c895317d196e3190d4ebb75a",
+          "player_seconds": 365,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Local catalog displays unable-to-fetch error before API configuration."
+        },
+        {
+          "path": "studies/local/backfill-v02-GepHGs_CZdk-catalog.png",
+          "bytes": 102734,
+          "sha256": "220944a1cbd6e3b452d3d5448e79b8b7e943412cf2adfd3fa7896c8c595ecad6",
+          "player_seconds": 430,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Catalog displays movie data after narrated credential configuration; credentials not copied."
+        },
+        {
+          "path": "studies/local/backfill-v02-GepHGs_CZdk-plan-overrun.png",
+          "bytes": 133347,
+          "sha256": "f200682fd66d7ae1c583badfa5a5f49f090ea0d755089ea4f5b986b13ff8a130",
+          "player_seconds": 560,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Spec written and agent announces implementation; interrupted by user; footer says accept, so active Plan Mode is not established."
+        },
+        {
+          "path": "studies/local/backfill-v02-GepHGs_CZdk-watchlist.png",
+          "bytes": 93837,
+          "sha256": "fe267929adb6784e7e653cb60df53c9f21d4d09d79dfa0e6cf265dd53b31aafb",
+          "player_seconds": 910,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Watchlist displays four movie cards and saved count; durability after return not proven."
+        },
+        {
+          "path": "studies/local/backfill-v02-GepHGs_CZdk-detail.png",
+          "bytes": 101431,
+          "sha256": "526a98f70d8581e2e0679fdf29f0b6069d29f754e675968168b5323011192e94",
+          "player_seconds": 930,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Mission Impossible detail has filled heart and watchlist count five; single state, not complete interaction sequence."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 1002,
+      "duration_seconds_observed_player": 1002,
+      "timing_note": "Caption span 1.120–1003.680s; end exceeds known duration by 1.680s. Speech completeness/accuracy unverified.",
+      "source_or_practice_executed": false,
+      "current_interfaces_verified": false,
+      "desktop_cli_parity_assumed": false,
+      "sufficiency": "Concrete add/remove feature on an existing app, with API setup recovery; stronger than layout demo, but no storage-return test, full negative testing or publication.",
+      "material_findings": [
+        "Agent announces implementation before planned review; interruption observed, active Plan Mode and earlier code mutations not proven.",
+        "Four-item watchlist and detail count five observed; localStorage remains planned/claimed persistence without durability test.",
+        "Test instructions are not an observed passing suite."
+      ],
+      "pending": [
+        "Continuous audiovisual progression and cue extremities",
+        "Repository/install/account setup and exact tests",
+        "Local storage persistence, duplicate/error cases and deployment"
+      ]
+    },
+    {
+      "id": "backfill-v02-xJ5oz63mIec",
+      "video_id": "xJ5oz63mIec",
+      "title": "How to Deploy Your Claude Automations (3 Methods)",
+      "url": "https://www.youtube.com/watch?v=xJ5oz63mIec",
+      "published_at": "2026-05-15",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-02/xJ5oz63mIec.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-02/xJ5oz63mIec.md",
+        "bytes": 14838,
+        "sha256": "82d4121bbf918140a3fd1a7456bd988ced1cb2fcb4fb3b01f446b6533aa55bbb"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.xJ5oz63mIec.en.f089995063c4.txt",
+        "bytes": 51756,
+        "sha256": "f089995063c468495a2608c65baa5bd90ffa54b5a6051a25518c9efe84c6b78b",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 740,
+        "first_cue_start_seconds": 0.0,
+        "last_cue_start_seconds": 1306.04,
+        "last_cue_end_seconds": 1309.68,
+        "track_export_complete": true,
+        "logical_line_count": 740,
+        "sequential_read_ranges": [
+          [
+            1,
+            250
+          ],
+          [
+            251,
+            500
+          ],
+          [
+            501,
+            740
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.xJ5oz63mIec.en.67c81e282cbf.json3",
+        "bytes": 442965,
+        "sha256": "67c81e282cbf350a3896023dcbb617b7ec52adba50b7fac86bf3cd0fceff5db1"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v02-xJ5oz63mIec-loop.png",
+          "bytes": 87528,
+          "sha256": "8d30821d0710c88b7325aa74e2a251f257917bdfcddd4fe46b0d7d1038ed47c3",
+          "player_seconds": 225,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Same Desktop frame: agent says expiry seven days, Active loops UI says ends in three days; actual expiry not tested."
+        },
+        {
+          "path": "studies/local/backfill-v02-xJ5oz63mIec-clear.png",
+          "bytes": 91612,
+          "sha256": "7fe81fbb8fa60ccb4989b895a4e7833e0818d57d4c6d20d81a2063418ada4978",
+          "player_seconds": 285,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Terminal history displays CronList and scheduled reminder after narrated clear; historical execution, no prolonged review."
+        },
+        {
+          "path": "studies/local/backfill-v02-xJ5oz63mIec-remote.png",
+          "bytes": 97256,
+          "sha256": "a907c5316f3fb97f015fef6c1e6cc054f58b8b1b978e0e2da0b2418a50ddac05",
+          "player_seconds": 620,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Paused environment-diagnostic remote routine with repository and weekly CDT schedule; no fresh execution shown."
+        },
+        {
+          "path": "studies/local/backfill-v02-xJ5oz63mIec-triggers.png",
+          "bytes": 88481,
+          "sha256": "a6fa7cb154885955492e4987603a0baa0f52fb2dc3cbc9498052760759a8659f",
+          "player_seconds": 715,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Schedule/GitHub event/API options and connector warning permitting writes without further permission prompts."
+        },
+        {
+          "path": "studies/local/backfill-v02-xJ5oz63mIec-matrix.png",
+          "bytes": 92473,
+          "sha256": "ced1228352cc67fcef25c20695d07c5ec098108cf9e622cab572cdba30880971",
+          "player_seconds": 905,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Author explanatory matrix compares WAT and machine/session needs; not a real Modal/Trigger deployment."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 1308,
+      "duration_seconds_observed_player": 1307,
+      "timing_note": "Caption span 0–1309.680s exceeds metadata by 1.680s; player differs by one second; speech completeness and accuracy unresolved.",
+      "source_or_practice_executed": false,
+      "current_interfaces_verified": false,
+      "desktop_cli_parity_assumed": false,
+      "sufficiency": "Deployment architecture overview after a first manual automation; not three complete deploy/error/recovery demonstrations.",
+      "material_findings": [
+        "Agent seven-day expiry and UI three-day expiry conflict in one frame.",
+        "CLI versus Desktop clear behavior is historical, not current verified recipe.",
+        "Modal/Trigger and SDK are explained with referrals, not fully deployed and tested in this source.",
+        "SDK billing claim receives later correction about separate monthly credit; no current pricing or entitlement verified.",
+        "Remote routine creation UI explicitly warns connected tools may write without new permission prompts."
+      ],
+      "pending": [
+        "Continuous audiovisual review, historical command sequences and actual expiry",
+        "Current limits/jitter/catch-up/SDK behavior and authentication",
+        "Complete deployment with input/output/error/recovery for any chosen remote route"
+      ]
+    }
+  ],
+  "round_complete": true,
+  "round_completion_meaning": "Three full caption readings and original studies delivered; all audiovisual/full-speech certifications remain false."
+}

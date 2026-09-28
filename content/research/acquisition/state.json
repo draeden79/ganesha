@@ -1,10 +1,10 @@
 {
-  "batch_id": "20260928T204554Z",
+  "batch_id": "20260928T210538962741Z",
   "entire_corpus_complete": false,
-  "finished_at": "2026-09-28T20:56:15.875319+00:00",
+  "finished_at": "2026-09-28T21:16:01.156282+00:00",
   "new_exported_videos": 30,
-  "next_queue_index": 34,
-  "next_video_id": "g328fQNFQYA",
+  "next_queue_index": 64,
+  "next_video_id": "8TcWGk1DJVs",
   "scope": "exhaustive_user_directive_2026_09_28",
   "status": "bounded_batch_finished"
 }
