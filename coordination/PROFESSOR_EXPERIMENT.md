@@ -6,10 +6,12 @@ Pedido de Lucas em 28/09/2026: criar outra sessão chamada Professor para escrev
 
 - Modelo solicitado explicitamente: `gpt-6-astra`.
 - Projeto: Ganesha, em um novo worktree, sem copiar o histórico da tarefa Diretor.
-- Criação aceita pelo aplicativo; identificador provisório: `client-new-thread:26e24552-6553-4773-919b-ad10549434f0`. Não usar esse identificador em APIs que exigem threadId.
+- Sessão criada: Professor, `01a0ea49-c401-76e1-8d55-00ab06ac3677`, host local. Worktree: `/Users/lucasmarques/.codex/worktrees/aa29/Ganesha`. O identificador provisório da criação era `client-new-thread:26e24552-6553-4773-919b-ad10549434f0`.
 - Destino do conteúdo completo: Artista, tarefa `01a0e953-3680-72c0-ba23-20b892fc7a76`, host local.
 - Diretor para confirmação da entrega: `01a0e952-1611-7c60-9b42-115d061cd07a`, host local.
-- Artista avisado para aguardar a entrega do Professor e trabalhar na nova proposta, em artefatos separados da produção.
+- Pacote autoral Astra-PTBR-1.0 concluído em `professor-experiment/`: 12 aulas, 61 etapas e 20 documentos. O Diretor conferiu a existência e contagem dos arquivos; isso não representa aprovação pedagógica.
+- A tentativa de encaminhamento feita pelo Professor foi rejeitada pela revisão automática por falta de autorização comprovada no contexto dele. O Diretor verificou as identidades das tarefas, reapresentou a instrução direta de Lucas e encaminhou o pacote ao Artista com sucesso em 28/09/2026, após 23:23 UTC. Não houve nova solicitação de autorização ao usuário nem envio via Slack.
+- Artista recebeu os caminhos locais, o briefing e a instrução de começar o design e a produção das imagens/gráficos em artefatos separados da produção.
 
 ## Limites do experimento
 

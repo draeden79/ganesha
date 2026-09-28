@@ -2,7 +2,7 @@
 
 ## Professor — nova direção de autoria, 28/09/2026
 
-Lucas pediu uma nova sessão independente, Professor, usando GPT Astra para criar do zero as 12 aulas completas e todas as etapas apenas com o conhecimento do modelo. Criação aceita e em preparação pelo aplicativo; detalhes em `PROFESSOR_EXPERIMENT.md`. O Professor deve entregar o pacote completo diretamente ao Artista para design, imagens e gráficos. O Artista já recebeu essa orientação. A hipótese sobre a fonte dos problemas permanece aberta; nenhuma aprovação pedagógica ou publicação automática foi concedida.
+Lucas pediu uma nova sessão independente, Professor, usando GPT Astra para criar do zero as 12 aulas completas e todas as etapas apenas com o conhecimento do modelo. Sessão `01a0ea49-c401-76e1-8d55-00ab06ac3677`, worktree `aa29`. Pacote Astra-PTBR-1.0 concluído: 12 aulas, 61 etapas, 20 documentos. Após rejeição automática do envio inicial por autorização não comprovada, o Diretor verificou os destinatários e reapresentou a autorização explícita de Lucas; o encaminhamento ao Artista foi aceito. O Artista está instruído a começar o design, imagens e gráficos. Detalhes em `PROFESSOR_EXPERIMENT.md`. A hipótese sobre a fonte dos problemas permanece aberta; nenhuma aprovação pedagógica ou publicação automática foi concedida.
 
 ## Qualidade da primeira aula — 28/09/2026, após 22:58 UTC
 
