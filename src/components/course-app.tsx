@@ -319,7 +319,7 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
                   <fieldset className="review-list"><legend>{t.selfReview}</legend>
                     {step.practice.criteria.map((criterion, index) => <label className="criterion" key={step.practice?.criterionIds?.[index] ?? index}>
                       <input type="checkbox" checked={state.criteria.includes(index)} onChange={event => setProgress(p => updateStep(p, step.id, { criteria: event.target.checked ? [...state.criteria, index] : state.criteria.filter(value => value !== index), complete: false }))} />
-                      <span>{criterion}</span>
+                      <span><InlineCode text={criterion} /></span>
                     </label>)}
                   </fieldset>
                   <button className="button secondary" type="submit" disabled={!ready || !state.draft.trim() || state.criteria.length !== step.practice.criteria.length}>{t.completePractice}<Icon name="check" size={18} /></button>
@@ -328,7 +328,7 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
               ) : <>
                 {step.action && <p className="activity-instruction"><InlineCode text={step.action} /></p>}
                 {step.check && <form onSubmit={event => { event.preventDefault(); submitCheck(); }}>
-                  <fieldset className="check-group"><legend>{step.check.prompt}</legend>
+                  <fieldset className="check-group"><legend><InlineCode text={step.check.prompt} /></legend>
                     {step.check.choices.map(choice => <label className="answer" key={choice.id}>
                       <input type="radio" name={step.id} value={choice.id} checked={state.draft === choice.id} onChange={() => setProgress(p => updateStep(p, step.id, { draft: choice.id }))} /><span><InlineCode text={choice.text} /></span>
                     </label>)}
