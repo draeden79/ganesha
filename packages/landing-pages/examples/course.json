@@ -1,0 +1,31 @@
+{
+  "title": "AI for Everyday Possibilities",
+  "eyebrow": "A NEW PERSPECTIVE ON ARTIFICIAL INTELLIGENCE",
+  "headline": ["Artificial", "intelligence.", "Real potential."],
+  "introduction": "Technology opens doors. You choose the direction. Learn to use AI to create, simplify your day and turn your ideas into possibilities.",
+  "overview": "You don’t need to follow every new trend. Start by understanding what matters and discovering where AI can make a difference in your own life.",
+  "benefits": [
+    { "title": "More room to create", "description": "Move beyond the blank page. Explore ideas, shape your writing and turn references into fresh starting points.", "label": "CREATIVITY" },
+    { "title": "Fewer repetitive tasks", "description": "Organize information and simplify everyday work, leaving more room for the things that need your perspective.", "label": "PRODUCTIVITY" },
+    { "title": "Confidence to explore", "description": "Understand AI’s possibilities and limitations. Ask better questions and learn to evaluate the answers.", "label": "INDEPENDENCE" }
+  ],
+  "journey": "Build your understanding, experiment with tools and connect what you learn to challenges in everyday life.",
+  "modules": [
+    { "label": "UNDERSTAND", "title": "A new world, made approachable", "description": "Discover what generative AI is, where it already appears and how to start using it thoughtfully.", "topics": ["AI fundamentals in plain language", "Possibilities, limitations and responsible use", "Choosing a tool for the task"], "practice": "Identify opportunities to use AI in your own routine." },
+    { "label": "CONVERSE", "title": "Better questions, better starting points", "description": "Learn to provide context, define your goal and refine your requests to get more useful responses.", "topics": ["The elements of a useful prompt", "Context, examples and response formats", "Reviewing and improving the result"], "practice": "Create a set of prompts for a task that matters to you." },
+    { "label": "CREATE", "title": "Your ideas in new forms", "description": "Explore AI as a creative partner, from the first idea to revision, while keeping your own voice.", "topics": ["Brainstorming and organizing ideas", "Text, images and presentations", "Creative judgment, authorship and consistency"], "practice": "Turn an idea into a small creative project." },
+    { "label": "APPLY", "title": "Knowledge that becomes action", "description": "Connect what you’ve learned to a real challenge and build a clearer way of working.", "topics": ["Research, synthesis and information organization", "Workflows supported by AI", "Human review and care with data"], "practice": "Design a workflow that simplifies a part of your day." }
+  ],
+  "audience": [
+    { "title": "For your work", "description": "Professionals who want to rethink daily tasks, organize ideas and find new ways to approach a problem." },
+    { "title": "For your business", "description": "Entrepreneurs curious about using AI in communication, planning and everyday work." },
+    { "title": "For your next idea", "description": "Creative and curious people ready to learn something new and take the first step on a project." }
+  ],
+  "faq": [
+    { "question": "Do I need to know how to code?", "answer": "No. This journey explores AI through natural language: describe what you need, provide context and learn to improve the result." },
+    { "question": "Is this course suitable for beginners?", "answer": "Yes. Start with the fundamentals before moving into prompts, creative work and everyday applications." },
+    { "question": "How can I use AI in everyday life?", "answer": "Explore ideas, create drafts, organize information and plan activities. Connect the exercises to real challenges in your own routine." },
+    { "question": "Where does my creativity fit in?", "answer": "AI offers possibilities. You set the intention, make choices and evaluate the result. Your context and judgment stay central." }
+  ],
+  "closing": "Discover what happens when your potential meets a new way of thinking."
+}

@@ -1,6 +1,6 @@
 import { boundedHistory, cleanInput, HELP, safeReply, STATUS, type Turn } from './policy.ts';
 
-export type Session = { history?: Turn[] };
+export type Session = { agent?: 'devops' | 'landing-pages'; history?: Turn[] };
 export interface Incoming { id: string; text: string; author: { userId: string; isBot: boolean | 'unknown'; isMe: boolean } }
 export interface Conversation {
   state: Promise<Session | null>;
@@ -17,12 +17,12 @@ export interface Dependencies {
 
 export async function respond(thread: Conversation, message: Incoming, skipped: Incoming[], deps: Dependencies) {
   if (message.author.isBot === true || message.author.isMe) return;
-  const text = cleanInput(message.text);
-  const command = text.toLocaleLowerCase('pt-BR');
+  const text = cleanInput(message.text).replace(/^devops\s*:\s*/i, '');
+  const command = text.toLowerCase();
   if (['encerrar', 'stop', 'parar'].includes(command)) {
     await thread.unsubscribe();
-    await thread.setState({ history: [] }, { replace: true });
-    await thread.post('Acompanhamento encerrado e contexto desta thread removido do bot. Mencione-me novamente quando precisar. As mensagens originais continuam no Slack.');
+    await thread.setState({ agent: (await thread.state)?.agent, history: [] }, { replace: true });
+    await thread.post('DevOps · I stopped following this thread and cleared its bot context. Mention me again when needed. Original Slack messages remain in Slack.');
     return;
   }
   if (!text || ['ajuda', 'help', '/help'].includes(command)) { await thread.subscribe(); await thread.post(HELP); return; }
@@ -30,8 +30,8 @@ export async function respond(thread: Conversation, message: Incoming, skipped: 
   const limit = await deps.quota(message.author.userId);
   if (limit !== 'ok') {
     await thread.post(limit === 'daily'
-      ? 'O limite diário de solicitações do bot foi atingido. Ele renova à meia-noite UTC. Um responsável pode revisar o limite na configuração.'
-      : 'Aguarde dez segundos antes de enviar outra solicitação.');
+      ? 'DevOps · The daily request limit has been reached. It resets at midnight UTC. The bot owner can review the configured limit.'
+      : 'DevOps · Please wait ten seconds before sending another request.');
     return;
   }
   await thread.subscribe();
@@ -44,10 +44,10 @@ export async function respond(thread: Conversation, message: Incoming, skipped: 
     const answer = safeReply(await deps.generate(history));
     if (!answer.trim()) throw new Error('empty_response');
     await thread.post(answer);
-    await thread.setState({ history: boundedHistory(history, [{ role: 'assistant', content: answer }]) });
+    await thread.setState({ ...session, history: boundedHistory(history, [{ role: 'assistant', content: answer }]) });
   } catch {
     // Log only a fixed event name, never SDK errors containing message bodies or tokens.
     deps.report('generation_or_delivery_failed');
-    await thread.post('Não consegui concluir a resposta. Nenhuma mudança de infraestrutura foi executada. Tente novamente ou avise o responsável pelo bot.');
+    await thread.post('DevOps · I could not complete the response. No infrastructure changes were executed. Please try again or contact the bot owner.');
   }
 }

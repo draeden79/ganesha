@@ -30,8 +30,8 @@ test('channel allowlist accepts only selected channels and DMs', () => {
   assert.equal(isAllowedChannel('slack:D123', true, 'C123'), true);
 });
 test('secrets removed before persistence and mass mentions suppressed in replies', () => {
-  assert.equal(cleanInput('<@UBOT> secret=hunter2 xoxb-example-token'), 'secret=[SEGREDO REMOVIDO] [TOKEN REMOVIDO]');
-  assert.equal(safeReply('<!channel> @here'), '[menção] @\u200bhere');
+  assert.equal(cleanInput('<@UBOT> secret=hunter2 xoxb-example-token'), 'secret=[SECRET REMOVED] [TOKEN REMOVED]');
+  assert.equal(safeReply('<!channel> @here'), '[mention] @\u200bhere');
 });
 test('help and status work without a model call', async () => {
   const f = fixture();
@@ -42,7 +42,7 @@ test('help and status work without a model call', async () => {
 test('rate limit prevents model usage', async () => {
   const f = fixture(); f.deps.quota = async () => 'daily';
   await respond(f.thread, message('Preciso de infraestrutura'), [], f.deps);
-  assert.equal(f.calls(), 0); assert.match(f.posts[0], /limite diário/);
+  assert.equal(f.calls(), 0); assert.match(f.posts[0], /daily request limit/);
 });
 test('thread history and queued messages reach the model with secrets redacted', async () => {
   const f = fixture();
@@ -67,7 +67,7 @@ test('stop clears conversation state and bots cannot trigger model calls', async
 test('model failure reports a useful error without claiming execution', async () => {
   const f = fixture(); f.deps.generate = async () => { throw new Error('secret SDK payload'); };
   await respond(f.thread, message('deploy'), [], f.deps);
-  assert.match(f.posts[0], /Nenhuma mudança/); assert.doesNotMatch(f.posts[0], /secret SDK/);
+  assert.match(f.posts[0], /No infrastructure changes/); assert.doesNotMatch(f.posts[0], /secret SDK/);
 });
 test('history is bounded and does not carry another conversation implicitly', () => {
   const history = Array.from({ length: 30 }, (_, i) => ({ role: 'user' as const, content: String(i) }));

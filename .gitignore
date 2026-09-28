@@ -11,3 +11,5 @@ coverage/
 .next/
 .vercel/
 *.tsbuildinfo
+
+/.swc

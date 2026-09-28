@@ -1,3 +1,3 @@
 export function GET() {
-  return Response.json({ service: 'Ganesha DevOps', channel: 'Slack', mode: 'infrastructure request planning' });
+  return Response.json({ service: 'Ganesha', channel: 'Slack', mode: 'noncommercial-prototype', agents: ['DevOps', 'Landing Pages'] });
 }

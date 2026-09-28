@@ -1,0 +1,7 @@
+/* Keep the approved brand styling; these rules accommodate course-specific English copy. */
+.hero-copy,.journey-intro,.module-label{min-width:0}
+h1,h2,h3,.module-label strong{overflow-wrap:anywhere}
+.hero-eyebrow,.benefit-tag,.module-label>span{text-transform:uppercase}
+.hero-description,.section-heading>p,.benefit p,.audience-grid p,.faq-list p{overflow-wrap:break-word}
+@media(max-width:1100px) and (min-width:801px){.header-inner{gap:17px}.desktop-nav{gap:18px}.desktop-nav a{font-size:14px}.header-cta{padding-inline:12px;gap:12px}.journey-intro h2{font-size:37px}}
+.prototype-notice { padding: 12px 24px; text-align: center; font-size: 13px; line-height: 1.5; color: #6C3BEE; background: #F5F3FB; border-bottom: 1px solid #e8e3f4; }
