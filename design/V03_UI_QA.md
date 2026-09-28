@@ -7,6 +7,8 @@ Data: 28/09/2026. Responsável: Artista. O trabalho preservou a beta 0.2 e usou 
 - Percurso completo: app `71d9c1d`, conteúdo `b8e4a62`, prévia isolada `http://localhost:3104/classroom/pt-BR`.
 - Retestes e mobile: app `446d5cf`, conteúdo atualizado para `63ade13`, prévia isolada `http://localhost:3105/classroom/pt-BR` e `/en`.
 - Indonésio: mesmo app e conteúdo base, catálogo integral `0f73151`, em `http://localhost:3105/classroom/id`.
+- Espanhol e hindi: catálogos `a74b73a`, no mesmo app e prévia, rotas `/es` e `/hi`.
+- Japonês: catálogo `7db8adb`, no mesmo app e prévia, rota `/ja`.
 - Os registros de prática inseridos declaram explicitamente QA da interface, sem execução externa dos projetos ou das ferramentas de IA.
 
 ## Resultado funcional
@@ -42,4 +44,16 @@ Catálogo integral integrado e verificado na interface móvel (390 × 844): prim
 
 Um registro de prática localizado e um check com resposta errada/correta também passaram pelos controles visíveis. Aviso externo único e bloqueios preservados. Evidências em `qa/v03-id-ui.json` e `qa/v03-id-schedule-mobile.jpg`. Sem P0/P1 encontrado nesta rodada visual/funcional; não equivale a revisão linguística humana integral.
 
-Pendente para fechar a versão multilíngue: integrar os oito catálogos restantes e conferir a interface com amostras longas, especialmente árabe/RTL. Este relatório não certifica tradução humana, execução dos projetos externos ou publicação da 0.3 no domínio público.
+### Rodada de espanhol e hindi — 21:39 UTC
+
+Amostras de CSV, cópia isolada atualizada de Apps e ensaio de agendamento verificadas a 390 × 844 nos dois idiomas. Nenhum estouro horizontal; comandos LTR, CSV literal e aviso externo único preservados. As capturas confirmam títulos, caracteres e parágrafos legíveis, inclusive em hindi. A troca de idioma preserva os registros de QA existentes.
+
+Evidências: `qa/v03-es-hi-ui.json`, `qa/v03-es-schedule-mobile.jpg` e `qa/v03-hi-apps-mobile.jpg`. Sem P0/P1 encontrado nas amostras. Não foi repetido o percurso completo, pois currículo e implementação permanecem iguais.
+
+### Rodada de japonês — 21:40 UTC
+
+As mesmas três amostras longas foram conferidas em japonês no celular: CSV, recuperação de Apps e ensaio de agendamento. Largura 390 sem estouro horizontal, literal CSV e comandos LTR preservados. O texto integrado de Apps inclui atualização da cópia isolada e proteção da chave principal. A captura foi inspecionada para legibilidade dos caracteres e quebras.
+
+Evidências: `qa/v03-ja-ui.json` e `qa/v03-ja-schedule-mobile.jpg`. Sem P0/P1 encontrado nas amostras. A aprovação continua sendo visual/funcional, sem alegar revisão linguística humana integral.
+
+Pendente para fechar a versão multilíngue: integrar francês, alemão, árabe, coreano e chinês e conferir suas amostras, especialmente árabe/RTL. Este relatório não certifica tradução humana, execução dos projetos externos ou publicação da 0.3 no domínio público.
