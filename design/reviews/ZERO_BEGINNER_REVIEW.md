@@ -1,5 +1,7 @@
 # Revisão para iniciante absoluto
 
+**Estado atual: retrabalho necessário.** Em 28/09/2026, após testar a prévia 3107, o usuário relatou que não conseguiu compreender a experiência e enviou uma captura da primeira etapa. A aprovação editorial abaixo é histórica e não autoriza afirmar que a interface ensina de forma compreensível. Aplicar `coordination/LEARNING_QUALITY.md` antes de emitir novo aceite pedagógico.
+
 28/09/2026. Rodada solicitada por Lucas por meio do Diretor, iniciada às 22:44:46 UTC, com alvo de prévia às 22:54:46. Base: currículo 0.3.0 `fc2efa3`. Este recorte avalia compreensão e capacidade de executar as instruções sem conhecimento anterior de IA/programação.
 
 ## Cinco barreiras prioritárias

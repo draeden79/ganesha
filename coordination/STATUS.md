@@ -1,6 +1,10 @@
 # Status das entregas
 
-## Checkpoint atual — 28/09/2026, 22:15 UTC
+## Qualidade da primeira aula — 28/09/2026, após 22:58 UTC
+
+Usuário reprovou a prévia 3107 por falta de compreensão. Candidata isolada `06cca3c` permanece para diagnóstico; a aprovação editorial anterior foi superada por esse feedback e não conta como validação de aprendizagem. Produção não foi alterada. `LEARNING_QUALITY.md` registra os problemas da captura, responsabilidades, revisão da tela implementada e protocolo de observação humana ainda não executado. Educador, Artista e Construtor receberam o feedback: preparar uma atividade-modelo e diagnosticar a interface antes de nova implementação. Quantidade de etapas e testes técnicos não substituem compreensão, prática com feedback e aplicação em outro exemplo.
+
+## Checkpoint de produção — 28/09/2026, 22:15 UTC
 
 Beta0.3 publicada no projeto existente ganesha-classroom: https://ganesha-classroom.vercel.app/classroom . Commit7c7be20a8bb5563f9a94823a18ee91ab782f4ed7, deployment dpl_HMyVPUxGwnyM1J6f2iEdRy5yRBbp, Ready.12 aulas,120 etapas,94 práticas/reflexões,24 verificações e11 idiomas completos,1192 mensagens por idioma.27 testes, build/TypeScript, tracing e QA dos11 idiomas aprovados. Detalhes em PRODUCTION_RELEASE.md e design/V03_UI_QA.md.
 

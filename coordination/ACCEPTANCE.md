@@ -2,6 +2,15 @@
 
 Cada item registra evidência, responsável e resultado em `STATUS.md`. Ausência de evidência significa pendente, não aprovado.
 
+## Qualidade para iniciantes — revisão de 28/09/2026
+
+A primeira aula da prévia 3107 foi reprovada pelo usuário após a revisão dos agentes. O aceite editorial anterior não demonstra compreensão da experiência renderizada. Aplicar [LEARNING_QUALITY.md](LEARNING_QUALITY.md): habilidade observável, atividade útil, demonstração, tentativa diferente, feedback e observação de pessoas do público. Revisar primeiro uma atividade completa antes de ampliar a aula. Quantidades herdadas de etapas e verificações são restrições da implementação atual, não prova nem requisito universal de qualidade pedagógica; ajustar o contrato se a sequência de aprendizagem justificar.
+
+- [ ] A tela implementada ensina antes de pedir a ação e explica o propósito dos controles.
+- [ ] A prática e o feedback demonstram a habilidade pretendida; copiar um texto visível não é certificado de compreensão.
+- [ ] Observação humana registra compreensão, uso e aplicação em outro exemplo, incluindo ajuda necessária e falhas.
+- [ ] O estado da candidata distingue revisão por agentes, validação técnica e evidência humana, com versão e limitações explícitas.
+
 ## Release candidate da primeira aula
 
 - [ ] O mapa completo apresenta pré-requisitos, competências e quantidade de aulas justificada pelo Educador.
