@@ -1,14 +1,18 @@
 # Status das entregas
 
-## Checkpoint atual — 28/09/2026, 21:07 UTC
+## Checkpoint atual — 28/09/2026, 21:40 UTC
 
-Beta 0.2.0 validada e enviada ao GitHub em `2ac2fe8`: quatro aulas, 24 etapas, 12 práticas, oito verificações e 11 idiomas. 20 testes, build/TypeScript e paridade de conteúdo aprovados. Artista aprovou o fluxo completo, celular e ajuste RTL final.
+Beta pública 0.2.0 preservada: quatro aulas, 24 etapas, 12 práticas, oito verificações e 11 idiomas. O operador Manuel confirmou o SHA `2ac2fe859db98687fc4e3acacfbf0c56526452d9` do deployment existente. Lucas autorizou reutilizar a publicação.
 
-Serviço público encontrado e verificado: https://ganesha-classroom.vercel.app/classroom . Encaminhamento verificado em https://ganesha-devops.vercel.app/classroom . Vercel informa domínios válidos; teste direto de iganesha.online limitado por confiança TLS no proxy corporativo. Operador da frente de Manuel publicou o serviço; Lucas autorizou reutilizar. Detalhes, evidências e pendências: `PRODUCTION_RELEASE.md`.
+Serviço: https://ganesha-classroom.vercel.app/classroom . Encaminhamento: https://ganesha-devops.vercel.app/classroom . Os domínios constam válidos na Vercel; o teste direto de iganesha.online neste ambiente continua limitado pela confiança TLS no proxy corporativo. Sem alteração adicional de rotas pelo Diretor.
 
-Slack: bot Diretor — Produto instalado e ativo, publicações somente por marcos. **Proibido enviar qualquer mensagem usando a conta pessoal de Lucas.** Último alinhamento de release publicado pelo bot em `1790629488.257999`.
+Expansão 0.3.0 integrada em área isolada: 12 aulas, 120 etapas, 94 práticas/reflexões e 24 verificações. App compatível com 0.2/0.3, 26 testes aprovados. Artista percorreu as 120 etapas, verificou erro/acerto, quatro fins de rota, retomada e celular; pt/en aprovados, ID aprovado em amostras. Relatório: `design/V03_UI_QA.md`. Prévia de revisão mais recente: http://127.0.0.1:3105/classroom/pt-BR . O pacote canônico ainda é 0.2.
 
-Próximo incremento 0.3.0: Educador escreve 12 aulas/120 etapas, Artista revisa e Construtor prepara compatibilidade sem substituir 0.2; meta 22:00 UTC. Fontes pt/en e primeiras revisões em andamento, localização em paralelo. Devorador continua todo o corpus prioritário por instrução direta mais recente recebida na sua tarefa; relevância ordena a aquisição/estudo, sem declarar cobertura integral. Lote `976042f` ainda não integrado pelo Diretor.
+Localização: seis catálogos compilados (pt-BR/en/es/ja/hi/id), 1.192 chaves cada. FR e AR concluídos e enviados ao Educador para compilação; KO/DE/zh-CN seguem em conclusão. Todos são textos integrais gerados por IA, com revisão humana pendente. Não houve envio ao Google. A ativação depende dos 11 catálogos completos, validação estrutural/literal e amostras de interface, especialmente RTL. Meta de publicação: 22:00 UTC.
+
+Slack: usar exclusivamente Diretor — Produto (`B0C555U2MC1`), nunca a conta pessoal de Lucas. Briefing de conversão enviado ao Glandingpage em `1790630978.642999`, com proposta pública devolvida pelo agente. O Diretor verificou e pediu correção de pt-BR e CTA para a aula na mesma thread; a revisão ainda manteve inglês e links internos, portanto esses requisitos continuam pendentes. Ver `slack/GLANDINGPAGE_BRIEF.md` e `slack/GLANDINGPAGE_BRIEF_REVIEW.md`.
+
+Pesquisa: lote `30355da` integrado como `b6ab11a`; 17 testes do pipeline e oito de aquisição passaram. Checkpoint do Devorador: 45 registros de estudo/44 fichas, 91 vídeos com faixa adquirida, 24 transcrições integralmente lidas, 5.919 URLs conhecidas e nenhuma revisão audiovisual integral certificada. O acervo prioritário continua sendo adquirido/estudado; aquisição não equivale a estudo e cobertura histórica completa não foi declarada.
 
 ## Histórico anterior ao sprint público
 
