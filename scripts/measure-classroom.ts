@@ -1,6 +1,6 @@
 import { gzipSync } from "node:zlib";
 import { performance } from "node:perf_hooks";
-import { loadClassroomCourse } from "../src/lib/course-loader";
+import { loadClassroomCourse } from "../tests/course-fixture";
 import { isLocale } from "../src/lib/course-schema";
 import { flattenSteps, newProgress, restoreProgressWithStatus, updateStep } from "../src/lib/progress";
 

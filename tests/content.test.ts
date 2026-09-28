@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { loadDemoCourse } from "../src/lib/course-loader";
+import { loadDemoCourse } from './course-fixture';
 import { locales } from "../src/lib/course-schema";
 import { ui, uiKeys } from "../src/lib/i18n";
 import { labels } from "../src/lib/labels";

@@ -2,14 +2,17 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import type { Course, LocaleCatalog } from "../../contracts/course";
 import type { Locale } from "./course-schema";
+import { authorizeCourse } from './access';
 import { adaptPublicCourse } from "./public-course";
 
-/** Public demonstration only. Protected content must use its own authorized loader. */
-export function loadDemoCourse(locale: Locale) {
+/** Every loader checks payment access before reading or serializing lesson data. */
+export async function loadDemoCourse(locale: Locale) {
+  if ((await authorizeCourse()).status !== 'authorized') throw new Error('Classroom access required');
   return loadPublicCourse(locale, "demo");
 }
 
-export function loadClassroomCourse(locale: Locale) {
+export async function loadClassroomCourse(locale: Locale) {
+  if ((await authorizeCourse()).status !== 'authorized') throw new Error('Classroom access required');
   return loadPublicCourse(locale, "classroom");
 }
 

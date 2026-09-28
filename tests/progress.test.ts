@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { loadDemoCourse } from "../src/lib/course-loader";
+import { loadDemoCourse } from './course-fixture';
 import { completedCount, evaluateCheck, flattenSteps, getStepState, mergeProgress, newProgress, restoreProgressWithStatus, stateKey, storageKey, updateStep } from "../src/lib/progress";
 
 const course = loadDemoCourse("pt-BR");
