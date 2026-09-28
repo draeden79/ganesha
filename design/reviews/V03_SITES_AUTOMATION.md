@@ -27,7 +27,7 @@ Também foram verificados os quatro domínios pt-BR/en sem revisão textual inte
 
 A leitura dos validadores dos arquivos de exemplo existentes confirmou alinhamento com IDs únicos e valores não negativos com até duas casas decimais. Isso é inspeção de código, não nova execução dos exemplos 0.3.
 
-## Reteste das correções — 28/09, 21:18 UTC
+## Reteste das correções — 28/09, 21:16 UTC
 
 Correções editoriais verificadas em pt-BR e inglês:
 
