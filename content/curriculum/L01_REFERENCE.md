@@ -1,10 +1,12 @@
-# Aula de referência L01
+# Proposta de aula de referência L01 — protótipo provisório
 
-ID: `lesson.first-request`. Versão: `0.1.0`. Estimativa editorial: 25 minutos, além de eventual instalação/acesso. Idiomas: 11. Escopo entregue: preparar, executar um primeiro pedido de planejamento e revisar com critérios. Não afirmar que esta aula sozinha entrega um site publicado.
+**Reclassificação em 28/09/2026:** a sustentação inicial é parcial. Este documento registra a proposta produzida, não uma aula pedagogicamente pronta. A classificação vigente é `draft`, sem aula liberada; ver `PEDAGOGICAL_AUDIT.md`. Nenhuma ficha integral de fonte foi aceita como base desta versão.
+
+ID: `lesson.first-request`. Versão de protótipo: `0.1.0`. Estimativa editorial não validada: 25 minutos, além de eventual instalação/acesso. Idiomas: 11. Escopo proposto: preparar, executar um primeiro pedido de planejamento e revisar com critérios. Não afirmar que o percurso foi validado com iniciantes nem que esta aula sozinha entrega um site publicado.
 
 ## Por que esta primeira aula
 
-Iniciantes precisam distinguir intenção, resposta e resultado antes de delegar mudanças em arquivos. O pedido de planejamento cria uma tarefa real pequena, reduz dependências de ambiente e produz algo comparável aos critérios. O aluno pode ensaiar sem conta; para registrar a prática real como feita, precisa executar na ferramenta escolhida. O curso não certifica essa execução.
+A hipótese pedagógica é que distinguir intenção, resposta e resultado ajuda o iniciante antes de delegar mudanças em arquivos. O pedido de planejamento foi escolhido para propor uma tarefa pequena e comparável a critérios; esse benefício ainda não foi validado. O aluno pode ensaiar sem conta; para registrar a prática real como feita, precisa executar na ferramenta escolhida. O curso não certifica essa execução.
 
 O projeto de serviço fictício foi escolhido pelo Educador para evitar coleta de dados reais e reduzir decisões de domínio. Sete telas separam tarefas que exigem atenção diferente. As duas verificações medem habilidades distintas; não são duas versões da mesma pergunta. Essas escolhas são decisões de design instrucional, ainda sem teste de eficácia com alunos.
 
@@ -24,7 +26,7 @@ Prefixo de IDs de tela: `step.first-request.`. O aluno vê textos localizados, n
 
 ## Fontes e escopo de suporte
 
-Pacote do Devorador lido em 28/09/2026: `EARLY_BATCH.md` e `registry.json`, commit `c531c9e`. O registro foi conferido novamente no pacote `5226254` para a auditoria de referências. Os IDs abaixo preservam o vocabulário dele.
+Pacote de descoberta do Devorador lido em 28/09/2026: `EARLY_BATCH.md` e `registry.json`, commit `c531c9e`. O registro foi conferido novamente no pacote `5226254` para a auditoria de referências. Os IDs abaixo preservam o vocabulário dele. As linhas apontam para seções consultadas e sínteses; não certificam leitura completa nem estudo das demonstrações. A documentação de produto confirma fatos pontuais, não a eficácia da sequência proposta.
 
 | Evidência | Fonte e seção | Uso na aula e limite |
 | --- | --- | --- |

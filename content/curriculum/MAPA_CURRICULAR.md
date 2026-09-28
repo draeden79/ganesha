@@ -1,6 +1,6 @@
 # Mapa curricular — proposta inicial
 
-Data: 2026-09-28. Estado: L01 fundamentada no primeiro lote documentado do Devorador e entregue nos 11 idiomas; sequência de expansão ainda provisória. O Diretor confirmou a prioridade de L01 antes das demais aulas. A sequência é decisão do Educador, não uma afirmação de eficácia pedagógica já medida.
+Data: 2026-09-28. Estado: L01 reclassificada como protótipo provisório (`draft`), com tradução produzida nos 11 idiomas e sustentação parcial por seções/sínteses. Nenhuma aula foi aceita como pedagogicamente pronta após a auditoria de profundidade. L01 aguarda estudo integral das fontes pertinentes e revisão da sequência; expansão permanece planejamento. A sequência é decisão do Educador, não uma afirmação de eficácia pedagógica medida. Ver `PEDAGOGICAL_AUDIT.md`.
 
 ## Resultado e pré-requisitos
 
@@ -25,7 +25,7 @@ Projeto progressivo: página de um serviço fictício escolhido pelo aluno. Prim
 
 ## Primeira trilha executável proposta
 
-Trilha de **sites**: cinco aulas e 35 telas propostas. L01 está entregue; as demais só entram na navegação quando completas. Isso não equivale ao curso completo das três áreas: aplicativos e automações têm expansão própria abaixo. Os tempos são estimativas editoriais, não promessa de conclusão.
+Trilha de **sites**: cinco aulas e 35 telas propostas. L01 existe como protótipo para revisão; nenhuma aula está liberada pedagogicamente. As demais só entram na navegação após estudo integral das fontes relevantes e cumprimento dos critérios de maturidade. Isso não equivale ao curso completo das três áreas: aplicativos e automações têm expansão própria abaixo. Os tempos são estimativas editoriais, não promessa de conclusão.
 
 | Aula | Telas | Prática e resultado | Verificação 1 | Verificação 2 | Dependência |
 | --- | ---: | --- | --- | --- | --- |
@@ -61,7 +61,7 @@ Rubrica comum de pedido: (1) resultado concreto; (2) contexto suficiente; (3) li
 
 ## Decisões pendentes
 
-1. Fundamentação das próximas aulas: publicação, persistência, autenticação e testes de acessibilidade ainda precisam de fontes específicas. O lote inicial fundamenta contexto, critérios, revisão e diferenças básicas de execução; ver `L01_REFERENCE.md`.
+1. Aprofundar a própria L01: estudo integral das fontes de contexto, critérios, revisão e execução; exemplos completos e erros/limites; inspeção visual dos trechos de UI pertinentes. O lote inicial fornece sustentação pontual, não certifica a aula. As próximas aulas também dependem de fontes específicas sobre publicação, persistência, autenticação e acessibilidade.
 2. Validar no aplicativo integrado a interação de prática aberta por autoavaliação, duas verificações determinísticas e restauração de progresso. Contrato canônico acordado em `contracts/course.ts`; o Construtor mantém o adaptador para o renderer.
 3. Serviço de publicação da primeira trilha: escolher uma rota comprovada antes de redigir instruções exatas.
 4. Validação humana de linguagem nos 11 idiomas e teste de renderização RTL.

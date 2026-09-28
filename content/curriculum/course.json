@@ -19,9 +19,7 @@
   ],
   "titleKey": "course.title",
   "summaryKey": "course.summary",
-  "releasedLessonIds": [
-    "lesson.first-request"
-  ],
+  "releasedLessonIds": [],
   "competencies": [
     {
       "id": "competency.scope",
@@ -165,7 +163,7 @@
     {
       "id": "lesson.first-request",
       "order": 1,
-      "status": "ready",
+      "status": "draft",
       "titleKey": "lesson.title",
       "summaryKey": "lesson.summary",
       "objectiveKeys": [

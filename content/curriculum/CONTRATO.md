@@ -2,6 +2,12 @@
 
 O contrato canônico aprovado pelo Diretor é `contracts/course.ts` (schemaVersion 1.0.0). Este arquivo registra decisões editoriais e não define um schema concorrente. As adições de objetivo, ação, resultado, dicas, critérios, modalidade e visual foram incorporadas ao contrato do Diretor no commit `6f6e1e3`. O Construtor mantém a adaptação para a interface.
 
+## Maturidade pedagógica
+
+`ready` não significa apenas JSON completo, tradução produzida ou protótipo renderizado. Por determinação do usuário transmitida pelo Diretor em 28/09/2026, toda aula aceita como pronta exige fontes relevantes integralmente estudadas, evidências localizáveis, sequência completa, exemplos, pré-requisitos, limitações e erros; demonstrações de UI exigem inspeção visual dos trechos pertinentes. O Educador precisa avaliar o pacote integral antes de recomendar prontidão e o Diretor registra a decisão. Resumos, metadados, downloads e leitura automática de legendas não satisfazem esse requisito.
+
+O estado vigente de L01 é `draft`, o curso é `preview` e não há `releasedLessonIds`. Visualização provisória deve ser tratada pelo app como demonstração. As traduções permanecem produzidas; sua presença não eleva maturidade. O gate completo, pendências e evidências aceitas estão em `maturity.json` e `PEDAGOGICAL_AUDIT.md`. Uma versão publicada é imutável; qualquer revisão futura usa nova versão e plano de preservação de progresso.
+
 ## Estrutura
 
 `Course` tem versão, status, competências, rubricas e `releasedLessonIds`. `Lesson` tem `id`, `order`, `status`, `competencyIds`, `prerequisiteLessonIds`, `estimatedMinutes`, `titleKey`, `summaryKey`, `objectiveKeys` e `steps` ordenadas. Aula planejada sem conteúdo não é aula disponível.

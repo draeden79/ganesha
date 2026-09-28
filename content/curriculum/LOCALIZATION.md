@@ -2,6 +2,8 @@
 
 Data: 2026-09-28. Versão `0.1.0`. Cobertura de **conteúdo da aula**, não da interface do aplicativo. O Construtor mantém os catálogos de UI separadamente.
 
+Esta cobertura pertence ao **protótipo pedagógico provisório**, reclassificado como `draft`. A completude dos textos traduzidos não demonstra estudo integral das fontes nem prontidão da aula. Nenhuma revisão de tradução foi realizada nesta reclassificação.
+
 | Locale | Mensagens requeridas/presentes | Direção | Revisão humana |
 | --- | --- | --- | --- |
 | pt-BR | 112/112 | LTR | pendente |
@@ -30,7 +32,7 @@ Os visuais usam texto HTML e as chaves `*.visual` para descrição/legenda. Imag
 
 ## Auditoria e manutenção
 
-`AUDIT.json` contém o resultado do validador canônico do Diretor com os arquivos reais desta entrega e o registro de fontes do Devorador. Os vínculos temporários usados apenas para a auditoria não alteraram outros worktrees.
+`AUDIT.json` preserva o resultado estrutural histórico da entrega `4525851`, anterior à retirada do status `ready`. Seus metadados deixam explícito que não é um aceite pedagógico atual. Os vínculos temporários usados apenas para a auditoria não alteraram outros worktrees. O estado vigente de maturidade está em `maturity.json`.
 
 No checkout integrado:
 
@@ -38,5 +40,7 @@ No checkout integrado:
 python3 content/curriculum/build_course.py
 python3 coordination/validate_content.py
 ```
+
+Após a reclassificação, a segunda chamada deve rejeitar o release por falta de aulas liberadas. Isso não significa perda de traduções. A auditoria pedagógica não modifica o texto dos catálogos.
 
 Editar `messages/{locale}.json`, nunca só o catálogo gerado. Alteração no significado de uma pergunta ou na resposta correta exige rever todos os idiomas e decidir migração de progresso. Revisão humana futura deve ser registrada por idioma/chave e preservada pelo processo editorial; o gerador atual identifica todos como textos produzidos por IA e não inventa nomes de revisores.

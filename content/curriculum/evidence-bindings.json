@@ -2,7 +2,7 @@
   "reviewedAt": "2026-09-28",
   "registryPath": "content/research/registry.json",
   "researchCommit": "c531c9e",
-  "reviewScope": "EARLY_BATCH.md e 14 evidências do registry.json lidas; fontes do Devorador, sem alegar leitura integral de vídeos ou artigos protegidos.",
+  "reviewScope": "Pacote de descoberta EARLY_BATCH.md e 14 sínteses de evidência do registry.json lidos. Leitura do pacote não certifica estudo integral das fontes. Conferência posterior de referências no registro de 23 fichas/16 evidências. Ver PEDAGOGICAL_AUDIT.md.",
   "tools": {
     "claude": [
       "ev-claude-desktop-start",
@@ -39,5 +39,8 @@
       "ev-claude-desktop-start",
       "ev-codex-desktop-start"
     ]
-  }
+  },
+  "pedagogicalStatus": "provisional-prototype",
+  "acceptedFullStudyRecords": [],
+  "auditPath": "content/curriculum/PEDAGOGICAL_AUDIT.md"
 }

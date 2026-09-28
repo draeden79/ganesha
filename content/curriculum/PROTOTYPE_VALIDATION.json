@@ -1,11 +1,19 @@
 {
-  "passed": true,
-  "scope": "canonical-content",
-  "courseId": "course.first-site",
-  "version": "0.1.0",
-  "lessons": 1,
+  "auditDate": "2026-09-28",
+  "scope": "provisional-prototype-correction",
+  "baselineCommit": "55df67b",
+  "courseVersion": "0.1.0",
+  "pedagogicalApproval": false,
+  "prototypeDataIntegrityPassed": true,
+  "releaseGatePassed": false,
+  "expectedReleaseErrors": [
+    "course: no released lesson IDs to audit"
+  ],
+  "readyLessons": 0,
+  "releasedLessons": 0,
   "steps": 7,
   "checks": 2,
+  "exercises": 4,
   "coverage": {
     "pt-BR": {
       "required": 112,
@@ -85,26 +93,14 @@
       "humanReview": "pending"
     }
   },
-  "errors": [],
-  "warnings": [
-    "pt-BR: human language review pending",
-    "en: human language review pending",
-    "es: human language review pending",
-    "fr: human language review pending",
-    "de: human language review pending",
-    "ja: human language review pending",
-    "hi: human language review pending",
-    "id: human language review pending",
-    "ar: human language review pending",
-    "ko: human language review pending",
-    "zh-CN: human language review pending",
-    "course status is preview; this audit does not publish it"
+  "onlyCanonicalChanges": [
+    "releasedLessonIds: [lesson.first-request] -> []",
+    "lesson.first-request.status: ready -> draft"
   ],
-  "auditMethod": "Director canonical validator, real Educador course/locales, Devorador research registry 5226254 via temporary read-only links",
-  "historical": true,
-  "auditedDeliveryCommit": "4525851",
-  "pedagogicalApproval": false,
-  "currentReleaseApproval": false,
-  "applicability": "Resultado estrutural histórico anterior à reclassificação de L01. passed não representa aceite pedagógico nem autorização atual de release.",
-  "supersededForReadinessBy": "content/curriculum/maturity.json"
+  "unchangedLocaleFiles": 22,
+  "idsTextsAnswersVersionPreserved": true,
+  "reproducibleGeneration": true,
+  "publishedWriteRejectedBeforeMutation": true,
+  "validatorPath": "coordination/validate_content.py from Diretor checkout, real prototype catalogs and Devorador registry via temporary read-only links",
+  "uiPreviewVerification": "Construtor reports tests for explicit demo allowlist in 92c4345, reinforced by b9c19c7; no UI test claimed by Educador in this audit"
 }

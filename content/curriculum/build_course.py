@@ -1,4 +1,4 @@
-"""Build canonical curriculum from reviewed structure and locale source messages.
+"""Build the provisional prototype and its locale source messages.
 
 No translation or fallback occurs here. Run from any working directory.
 """
@@ -9,6 +9,12 @@ ROOT = Path(__file__).resolve().parent
 VERSION = "0.1.0"
 LOCALES = ["pt-BR", "en", "es", "fr", "de", "ja", "hi", "id", "ar", "ko", "zh-CN"]
 COURSE_ID = "course.first-site"
+
+# This generator only maintains an unpublished prototype. A structurally valid
+# catalog does not certify source study or pedagogical readiness.
+existing_course = ROOT / "course.json"
+if existing_course.exists() and json.loads(existing_course.read_text()).get("status") == "published":
+    raise ValueError("Published course is immutable; create a reviewed new version instead")
 
 def block(identifier, key, kind="paragraph"):
     return {"id": identifier, "kind": kind, "textKey": key}
@@ -74,13 +80,14 @@ for name, criteria in {"request": ["outcome", "context", "limit", "test"], "exec
         for c in criteria]})
 
 course = {"schemaVersion": "1.0.0", "id": COURSE_ID, "version": VERSION, "status": "preview", "defaultLocale": "pt-BR",
-    "requiredLocales": LOCALES, "titleKey": "course.title", "summaryKey": "course.summary", "releasedLessonIds": ["lesson.first-request"],
+    "requiredLocales": LOCALES, "titleKey": "course.title", "summaryKey": "course.summary", "releasedLessonIds": [],
     "competencies": competencies, "rubrics": rubrics,
-    "lessons": [{"id": "lesson.first-request", "order": 1, "status": "ready", "titleKey": "lesson.title", "summaryKey": "lesson.summary",
+    "lessons": [{"id": "lesson.first-request", "order": 1, "status": "draft", "titleKey": "lesson.title", "summaryKey": "lesson.summary",
         "objectiveKeys": ["competency.context.outcome", "competency.evidence.outcome"], "competencyIds": [c["id"] for c in competencies],
         "prerequisiteLessonIds": [], "estimatedMinutes": 25, "steps": steps}]}
 
-# Product facts are bound only after the documented source batch has been read.
+# These bindings trace the initial, partial research batch. They do not certify
+# full source study; see PEDAGOGICAL_AUDIT.md and maturity.json.
 bindings_file = ROOT / "evidence-bindings.json"
 if bindings_file.exists():
     bindings = json.loads(bindings_file.read_text())
@@ -89,7 +96,7 @@ if bindings_file.exists():
         for tool in ["claude", "codex"]:
             s["toolVariants"][tool]["evidenceIds"] = bindings["tools"][tool]
 
-# Validate the full set before writing a ready lesson. Missing source text is an
+# Validate the full set before writing the prototype. Missing source text is an
 # error, never a reason to reuse another language or leave stale generated data.
 required_keys = set()
 def collect_keys(value):
@@ -121,7 +128,7 @@ for locale in LOCALES:
         "messages": {key: {"value": value, "status": "translated", "sourceRevision": VERSION} for key, value in messages.items()}}
     catalogs[locale] = catalog
 if not bindings_file.exists():
-    raise ValueError("A ready lesson requires documented evidence bindings")
+    raise ValueError("The prototype requires traceable evidence bindings")
 (ROOT / "course.json").write_text(json.dumps(course, ensure_ascii=False, indent=2) + "\n")
 destination = ROOT.parent / "locales"
 destination.mkdir(exist_ok=True)
