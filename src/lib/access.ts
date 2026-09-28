@@ -1,10 +1,6 @@
-/** Server-only boundary. Replace the adapter with the verified identity provider. */
-export type AccessResult =
-  | { status: "authorized"; userId: string; entitlement: "ganesha-course"; expiresAt: string }
-  | { status: "unauthenticated" | "forbidden" | "unconfigured" };
-export interface CourseAccessAdapter { authorize(): Promise<AccessResult> }
-const unconfigured: CourseAccessAdapter = { async authorize() { return { status: "unconfigured" }; } };
-export async function authorizeCourse(): Promise<AccessResult> {
-  // Deliberately fail closed. Demo state, URL parameters, and client IDs never grant access.
-  return unconfigured.authorize();
-}
+import { cookies } from 'next/headers';
+import { cache } from 'react';
+import { classroomCookie, verifyClassroomToken } from './access-client';
+export type { AccessResult } from './access-client';
+// Request-local memoization only; never cache a buyer's authorization across requests.
+export const authorizeCourse = cache(async () => verifyClassroomToken((await cookies()).get(classroomCookie)?.value || ''));

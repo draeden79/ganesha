@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { loadClassroomCourse, loadDemoCourse } from "../src/lib/course-loader";
+import { loadClassroomCourse, loadDemoCourse } from '../tests/course-fixture';
 import { locales } from "../src/lib/course-schema";
 import { ui } from "../src/lib/i18n";
 import { flattenSteps } from "../src/lib/progress";

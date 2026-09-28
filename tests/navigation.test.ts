@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { loadDemoCourse } from "../src/lib/course-loader";
+import { loadDemoCourse } from './course-fixture';
 import { lessonCompletedCount, resumeLessonStep } from "../src/lib/lesson-navigation";
 import { newProgress, storageKey, updateStep } from "../src/lib/progress";
 

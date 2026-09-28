@@ -4,13 +4,16 @@ import type { Course, LocaleCatalog } from "../../contracts/course";
 import type { Locale } from "./course-schema";
 import { adaptCourse } from "./course-adapter";
 import { classroomConfig, demoConfig } from "./demo-config";
+import { authorizeCourse } from './access';
 
-/** Public demonstration only. Protected content must use its own authorized loader. */
-export function loadDemoCourse(locale: Locale) {
+/** Every loader checks payment access before reading or serializing lesson data. */
+export async function loadDemoCourse(locale: Locale) {
+  if ((await authorizeCourse()).status !== 'authorized') throw new Error('Classroom access required');
   return loadPublicCourse(locale, "demo");
 }
 
-export function loadClassroomCourse(locale: Locale) {
+export async function loadClassroomCourse(locale: Locale) {
+  if ((await authorizeCourse()).status !== 'authorized') throw new Error('Classroom access required');
   return loadPublicCourse(locale, "classroom");
 }
 
