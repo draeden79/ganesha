@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "scope": "canonical-content",
+  "courseId": "course.first-site",
+  "version": "0.1.0",
+  "lessons": 1,
+  "steps": 7,
+  "checks": 2,
+  "coverage": {
+    "pt-BR": {
+      "required": 112,
+      "present": 112,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "en": {
+      "required": 112,
+      "present": 112,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "es": {
+      "required": 112,
+      "present": 112,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "fr": {
+      "required": 112,
+      "present": 112,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "de": {
+      "required": 112,
+      "present": 112,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "ja": {
+      "required": 112,
+      "present": 112,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "hi": {
+      "required": 112,
+      "present": 112,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "id": {
+      "required": 112,
+      "present": 112,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "ar": {
+      "required": 112,
+      "present": 112,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "ko": {
+      "required": 112,
+      "present": 112,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    },
+    "zh-CN": {
+      "required": 112,
+      "present": 112,
+      "pending": 0,
+      "stale": 0,
+      "humanReview": "pending"
+    }
+  },
+  "errors": [],
+  "warnings": [
+    "pt-BR: human language review pending",
+    "en: human language review pending",
+    "es: human language review pending",
+    "fr: human language review pending",
+    "de: human language review pending",
+    "ja: human language review pending",
+    "hi: human language review pending",
+    "id: human language review pending",
+    "ar: human language review pending",
+    "ko: human language review pending",
+    "zh-CN: human language review pending",
+    "course status is preview; this audit does not publish it"
+  ]
+}

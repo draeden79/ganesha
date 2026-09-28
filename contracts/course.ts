@@ -136,6 +136,8 @@ export interface LocaleCatalog {
   courseVersion: Version;
   locale: Locale;
   humanReviewStatus?: 'pending' | 'reviewed';
+  translationMethod?: 'ai-authored' | 'human-authored' | 'mixed';
+  direction?: 'ltr' | 'rtl';
   messages: Record<MessageKey, Translation>;
 }
 export interface Attempt {

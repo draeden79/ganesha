@@ -37,3 +37,9 @@ Construtor entrega hash e build estável na porta 3101. Diretor repete percurso 
 - Solicitado teste adicional da união/ordem/deduplicação de tentativas da mesma etapa em duas abas e concordância com a conclusão restaurada. O teste inicial de aba antiga cobria somente rascunho.
 - Artista detectou dicas/critérios ocultos e nomes de etapas ausentes em mobile; Construtor está corrigindo.
 - `127.0.0.1:3100` fica reservado à prévia do usuário. Diretor interrompeu interações nessa origem; repetição funcional será na porta 3101.
+
+## Auditoria canônica dos 11 idiomas
+
+Lote de origem `4525851`, integrado como `708c7c9`, conferido com `python3 coordination/validate_content.py` sobre o registro de 23 fontes/16 evidências: **passou**. Uma aula, sete etapas e duas verificações; 112/112 mensagens em cada um dos 11 locales, nenhuma chave pendente/ausente/desatualizada. Relatório reproduzível em `CONTENT_AUDIT.json`.
+
+Todas as traduções declaram revisão humana pendente; presença e versão das chaves não comprovam qualidade linguística. Aula `ready`, curso `preview` 0.1.0. Renderização/RTL e catálogos da UI serão validados na build do aplicativo.
