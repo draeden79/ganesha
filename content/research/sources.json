@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "owner": "Devorador",
+  "as_of": "2026-09-28",
+  "source_language": "en",
+  "research_language": "pt-BR",
+  "audience": "internal_team",
+  "website_ready": false,
+  "translation_status": {
+    "pt-BR": "internal_notes_only",
+    "en": "pending",
+    "es": "pending",
+    "fr": "pending",
+    "de": "pending",
+    "ja": "pending",
+    "hi": "pending",
+    "id": "pending",
+    "ar": "pending",
+    "ko": "pending",
+    "zh-CN": "pending"
+  },
+  "sources": [
+    {
+      "id": "peter-yang-youtube",
+      "name": "Peter Yang — YouTube",
+      "canonical_url": "https://www.youtube.com/@PeterYangYT",
+      "type": "video_channel",
+      "approved_by_user": true,
+      "checked_at": "2026-09-28T18:43:11Z",
+      "access_status": "metadata_only",
+      "coverage": "Canal retorna só navegação. Vídeo bdMHQLvtVaQ localizado via newsletter oficial; transcrição não acessível.",
+      "last_publication_seen": "2026-08-23",
+      "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
+      "history_complete": false,
+      "discovered_urls": [
+        "https://www.youtube.com/watch?v=bdMHQLvtVaQ"
+      ]
+    },
+    {
+      "id": "peter-yang-newsletter",
+      "name": "Peter Yang — newsletter",
+      "canonical_url": "https://creatoreconomy.so/",
+      "type": "newsletter",
+      "approved_by_user": true,
+      "checked_at": "2026-09-28T18:43:11Z",
+      "access_status": "partial",
+      "coverage": "Home vazia; /archive acessível. Dois artigos lidos apenas na parte pública; assinatura bloqueia o restante.",
+      "last_publication_seen": "2026-09-27",
+      "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
+      "history_complete": false,
+      "discovered_urls": [
+        "https://creatoreconomy.so/archive"
+      ]
+    },
+    {
+      "id": "riley-brown-youtube",
+      "name": "Riley Brown — YouTube",
+      "canonical_url": "https://www.youtube.com/@rileybrownai",
+      "type": "video_channel",
+      "approved_by_user": true,
+      "checked_at": "2026-09-28T18:43:11Z",
+      "access_status": "index_unavailable",
+      "coverage": "Canal retorna só navegação; buscas trouxeram fontes secundárias, não aceitas como evidência de conteúdo.",
+      "last_publication_seen": null,
+      "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
+      "history_complete": false,
+      "discovered_urls": []
+    },
+    {
+      "id": "tech-with-tim-youtube",
+      "name": "Tech With Tim — YouTube",
+      "canonical_url": "https://www.youtube.com/@TechWithTim",
+      "type": "video_channel",
+      "approved_by_user": true,
+      "checked_at": "2026-09-28T18:43:11Z",
+      "access_status": "metadata_only",
+      "coverage": "Título, data, descrição e capítulos obtidos no índice YouTube; página direta não expõe transcrição.",
+      "last_publication_seen": "2026-02-27",
+      "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
+      "history_complete": false,
+      "discovered_urls": [
+        "https://www.youtube.com/watch?v=ntDIxaeo3Wg"
+      ]
+    },
+    {
+      "id": "designcourse-youtube",
+      "name": "DesignCourse — YouTube",
+      "canonical_url": "https://www.youtube.com/@DesignCourse",
+      "type": "video_channel",
+      "approved_by_user": true,
+      "checked_at": "2026-09-28T18:43:11Z",
+      "access_status": "index_unavailable",
+      "coverage": "Canal retorna só navegação. Curso no site do autor e resumos de terceiros localizados, fora da ingestão inicial do canal.",
+      "last_publication_seen": null,
+      "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
+      "history_complete": false,
+      "discovered_urls": []
+    },
+    {
+      "id": "builder-blog",
+      "name": "Builder.io — Blog",
+      "canonical_url": "https://www.builder.io/blog",
+      "type": "blog",
+      "approved_by_user": true,
+      "checked_at": "2026-09-28T18:43:11Z",
+      "access_status": "accessible",
+      "coverage": "Primeira página lista 16 artigos (2026-07-30 a 2026-09-23). Dois artigos lidos; histórico não paginado.",
+      "last_publication_seen": "2026-09-23",
+      "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
+      "history_complete": false,
+      "discovered_urls": [
+        "https://www.builder.io/blog/stop-watching-your-agent-work",
+        "https://www.builder.io/blog/de-slop-ai-generated-codebase"
+      ]
+    },
+    {
+      "id": "nate-herk-youtube",
+      "name": "Nate Herk — YouTube",
+      "canonical_url": "https://www.youtube.com/@nateherk",
+      "type": "video_channel",
+      "approved_by_user": true,
+      "checked_at": "2026-09-28T18:43:11Z",
+      "access_status": "metadata_only",
+      "coverage": "Canal retorna navegação. Um vídeo com título confirmado; outro candidato retorna cache miss. Não há transcrição primária obtida.",
+      "last_publication_seen": null,
+      "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
+      "history_complete": false,
+      "discovered_urls": [
+        "https://www.youtube.com/watch?v=saggDHHnmtQ",
+        "https://www.youtube.com/watch?v=LVAHYV4Xrto"
+      ]
+    },
+    {
+      "id": "claude-academy",
+      "name": "Anthropic — Build with Claude",
+      "canonical_url": "https://academy.claude.com/collections/build-with-claude",
+      "type": "academy",
+      "approved_by_user": true,
+      "checked_at": "2026-09-28T18:43:11Z",
+      "access_status": "accessible",
+      "coverage": "Catálogo, dois programas e três resumos de aulas lidos. Vídeos e quizzes não realizados. Docs oficiais vinculados verificam Desktop e automações.",
+      "last_publication_seen": null,
+      "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
+      "history_complete": false,
+      "discovered_urls": []
+    },
+    {
+      "id": "openai-learn-codex",
+      "name": "OpenAI — Aprenda Codex",
+      "canonical_url": "https://developers.openai.com/learn/codex",
+      "type": "learning_hub",
+      "approved_by_user": true,
+      "checked_at": "2026-09-28T18:43:11Z",
+      "access_status": "accessible",
+      "coverage": "Hub lido; docs oficiais complementares lidos por seções. Links antigos do app redirecionam para learn.chatgpt.com.",
+      "last_publication_seen": null,
+      "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
+      "history_complete": false,
+      "discovered_urls": []
+    }
+  ]
+}

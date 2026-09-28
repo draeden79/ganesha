@@ -1,0 +1,423 @@
+{
+  "schemaVersion": "1.0.0",
+  "sources": [
+    {
+      "id": "res-claude-build-index",
+      "url": "https://academy.claude.com/collections/build-with-claude",
+      "title": "Build with Claude",
+      "publisher": "Anthropic",
+      "kind": "tutorial",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-claude-101-index",
+      "url": "https://academy.claude.com/courses/claude-code-101",
+      "title": "Claude Code 101",
+      "publisher": "Anthropic",
+      "kind": "tutorial",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-claude-action-index",
+      "url": "https://academy.claude.com/courses/claude-code-in-action",
+      "title": "Claude Code in action",
+      "publisher": "Anthropic",
+      "kind": "tutorial",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-claude-agent-basics",
+      "url": "https://academy.claude.com/courses/claude-code-101/what-is-claude-code",
+      "title": "What is Claude Code?",
+      "publisher": "Anthropic",
+      "kind": "tutorial",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-claude-plan-build-review",
+      "url": "https://academy.claude.com/courses/claude-code-101/the-explore-plan-code-commit-workflow",
+      "title": "The explore → plan → code → commit workflow",
+      "publisher": "Anthropic",
+      "kind": "tutorial",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-claude-verify-unattended",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/trust-it-verifying-unsupervised-runs",
+      "title": "Trust it: Verifying unsupervised runs",
+      "publisher": "Anthropic",
+      "kind": "tutorial",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-claude-desktop-start",
+      "url": "https://code.claude.com/docs/en/desktop-quickstart",
+      "title": "Get started with the desktop app",
+      "publisher": "Anthropic",
+      "kind": "official-docs",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-claude-desktop-reference",
+      "url": "https://code.claude.com/docs/en/desktop",
+      "title": "Desktop application",
+      "publisher": "Anthropic",
+      "kind": "official-docs",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-claude-local-schedule",
+      "url": "https://code.claude.com/docs/en/desktop-scheduled-tasks",
+      "title": "Schedule recurring tasks in Claude Code Desktop",
+      "publisher": "Anthropic",
+      "kind": "official-docs",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-codex-learn-index",
+      "url": "https://developers.openai.com/learn/codex",
+      "title": "Codex | OpenAI Developers",
+      "publisher": "OpenAI",
+      "kind": "other",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-codex-desktop-start",
+      "url": "https://learn.chatgpt.com/docs/app",
+      "title": "ChatGPT desktop app",
+      "publisher": "OpenAI",
+      "kind": "official-docs",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-codex-prompting",
+      "url": "https://learn.chatgpt.com/docs/prompting",
+      "title": "Prompting",
+      "publisher": "OpenAI",
+      "kind": "official-docs",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-codex-project-instructions",
+      "url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md",
+      "title": "Custom instructions with AGENTS.md",
+      "publisher": "OpenAI",
+      "kind": "official-docs",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-codex-local-schedule",
+      "url": "https://learn.chatgpt.com/docs/automations",
+      "title": "Scheduled tasks",
+      "publisher": "OpenAI",
+      "kind": "official-docs",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-builder-visual-plan",
+      "url": "https://www.builder.io/blog/stop-watching-your-agent-work",
+      "title": "Stop watching your agent work",
+      "publisher": "Builder.io",
+      "kind": "other",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-builder-behavior-tests",
+      "url": "https://www.builder.io/blog/de-slop-ai-generated-codebase",
+      "title": "How to De-Slop an AI-Generated Codebase",
+      "publisher": "Builder.io",
+      "kind": "other",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-peter-evals-public",
+      "url": "https://creatoreconomy.so/p/how-to-build-better-ai-evals-with-claude-code-shreya-hamel",
+      "title": "How to Build Better AI Evals with Claude Code in 5 Steps | Shreya & Hamel",
+      "publisher": "Peter Yang",
+      "kind": "other",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-peter-workflow-public",
+      "url": "https://creatoreconomy.so/p/my-3-step-system-to-automate-90-of",
+      "title": "My 3-Step System to Automate 90% of My Content Workflow with AI",
+      "publisher": "Peter Yang",
+      "kind": "other",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "verified"
+    },
+    {
+      "id": "res-peter-evals-video",
+      "url": "https://www.youtube.com/watch?v=bdMHQLvtVaQ",
+      "title": "How to Build Better AI Evals with Claude Code in 5 Steps | Shreya & Hamel",
+      "publisher": "Peter Yang",
+      "kind": "other",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "unavailable"
+    },
+    {
+      "id": "res-tim-claude-beginner-video",
+      "url": "https://www.youtube.com/watch?v=ntDIxaeo3Wg",
+      "title": "Claude Code - Full Tutorial for Beginners",
+      "publisher": "Tech With Tim",
+      "kind": "other",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "unavailable"
+    },
+    {
+      "id": "res-nate-claude-beginner-video",
+      "url": "https://www.youtube.com/watch?v=saggDHHnmtQ",
+      "title": "Master 95% of Claude Code in 36 Mins (as a beginner)",
+      "publisher": "Nate Herk",
+      "kind": "other",
+      "language": "en",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "trust": "primary",
+      "availability": "unavailable"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-claude-agent-basics",
+      "sourceId": "res-claude-agent-basics",
+      "locator": "Using Claude Code Effectively, linha 43",
+      "text": "Explica que um agente pode ler arquivos, editar e executar comandos. Contexto, permissões e possibilidade de erros fazem parte do modelo mental inicial.",
+      "textKind": "paraphrase",
+      "claim": "Explica que um agente pode ler arquivos, editar e executar comandos. Contexto, permissões e possibilidade de erros fazem parte do modelo mental inicial.",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "appliesTo": [
+        "claude"
+      ],
+      "caveat": "Seções citadas lidas; nenhum vídeo assistido."
+    },
+    {
+      "id": "ev-claude-plan-build-review",
+      "sourceId": "res-claude-plan-build-review",
+      "locator": "Code, linha 50",
+      "text": "Apresenta exploração, plano, construção e registro das alterações. Pede critérios de sucesso explícitos e testes confiáveis antes de encerrar. O atalho mostrado é da experiência CLI.",
+      "textKind": "paraphrase",
+      "claim": "Apresenta exploração, plano, construção e registro das alterações. Pede critérios de sucesso explícitos e testes confiáveis antes de encerrar. O atalho mostrado é da experiência CLI.",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "appliesTo": [
+        "claude"
+      ],
+      "caveat": "Seções citadas lidas; nenhum vídeo assistido. Adaptar controles ao Desktop. Commit, push e publicação são operações distintas; não copiar a simplificação da aula."
+    },
+    {
+      "id": "ev-claude-verify-unattended",
+      "sourceId": "res-claude-verify-unattended",
+      "locator": "Keep unattended runs in auto mode, linha 27",
+      "text": "A checagem de ações perigosas não comprova correção do código. Recomenda examinar as alterações, confirmar resultados reais de testes e obter revisão independente em trabalho relevante.",
+      "textKind": "paraphrase",
+      "claim": "A checagem de ações perigosas não comprova correção do código. Recomenda examinar as alterações, confirmar resultados reais de testes e obter revisão independente em trabalho relevante.",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "appliesTo": [
+        "claude"
+      ],
+      "caveat": "Seções citadas lidas; nenhum vídeo assistido. Hooks e comandos da aula exigem adaptação e conferência por superfície."
+    },
+    {
+      "id": "ev-claude-desktop-start",
+      "sourceId": "res-claude-desktop-start",
+      "locator": "Install, linha 111",
+      "text": "O início no Desktop passa pela aba Code, ambiente Local e pasta do projeto. A instalação do app inclui Claude Code; Node.js e a CLI não são pré-requisitos da aba. Dependências do projeto podem continuar necessárias.",
+      "textKind": "paraphrase",
+      "claim": "O início no Desktop passa pela aba Code, ambiente Local e pasta do projeto. A instalação do app inclui Claude Code; Node.js e a CLI não são pré-requisitos da aba. Dependências do projeto podem continuar necessárias.",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "appliesTo": [
+        "claude"
+      ],
+      "caveat": "Seções citadas lidas; nenhum vídeo assistido. A página exige assinatura compatível. Confirmar acesso do aluno; não prometer gratuidade. Documentação complementar oficial à fonte aprovada."
+    },
+    {
+      "id": "ev-claude-desktop-reference",
+      "sourceId": "res-claude-desktop-reference",
+      "locator": "CLI flag equivalents, linha 943",
+      "text": "A aba Code oferece revisão visual e prévia do app. Desktop e CLI compartilham instruções CLAUDE.md, mas não têm todos os mesmos comandos e controles; o modo de saída para scripts não existe no Desktop.",
+      "textKind": "paraphrase",
+      "claim": "A aba Code oferece revisão visual e prévia do app. Desktop e CLI compartilham instruções CLAUDE.md, mas não têm todos os mesmos comandos e controles; o modo de saída para scripts não existe no Desktop.",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "appliesTo": [
+        "claude"
+      ],
+      "caveat": "Seções citadas lidas; nenhum vídeo assistido. Não ensinar flags CLI como botões do Desktop. Leitura por seções: introdução, Coming from the CLI, Feature comparison e limitações."
+    },
+    {
+      "id": "ev-claude-local-schedule",
+      "sourceId": "res-claude-local-schedule",
+      "locator": "Introdução, linha 70",
+      "text": "Tarefas locais usam os arquivos e ferramentas do computador e precisam do app aberto e máquina acordada. A página distingue rotinas em nuvem e /loop, e descreve recuperação de uma execução perdida recente.",
+      "textKind": "paraphrase",
+      "claim": "Tarefas locais usam os arquivos e ferramentas do computador e precisam do app aberto e máquina acordada. A página distingue rotinas em nuvem e /loop, e descreve recuperação de uma execução perdida recente.",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "appliesTo": [
+        "claude"
+      ],
+      "caveat": "Seções citadas lidas; nenhum vídeo assistido. Não prometer execução pontual com computador desligado. Data de publicação/atualização não exposta."
+    },
+    {
+      "id": "ev-codex-desktop-start",
+      "sourceId": "res-codex-desktop-start",
+      "locator": "Get started with the desktop app / Send your first message, linha 900",
+      "text": "A URL antiga do app Codex redireciona para a página do aplicativo ChatGPT. O início atual descrito é instalar, entrar na conta, escolher projeto/pasta e selecionar Codex para iniciar uma tarefa.",
+      "textKind": "paraphrase",
+      "claim": "A URL antiga do app Codex redireciona para a página do aplicativo ChatGPT. O início atual descrito é instalar, entrar na conta, escolher projeto/pasta e selecionar Codex para iniciar uma tarefa.",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "appliesTo": [
+        "codex"
+      ],
+      "caveat": "Seções citadas lidas; nenhum vídeo assistido. Deriva de nome/interface em relação a tutoriais do lançamento. Página não informa a versão mínima correspondente."
+    },
+    {
+      "id": "ev-codex-prompting",
+      "sourceId": "res-codex-prompting",
+      "locator": "Prompting overview, linha 848",
+      "text": "Para tarefas maiores, explicitar resultado, contexto, formato e limites relevantes. Anexos e referências devem trazer a informação que muda a resposta; revisar e refinar continua fazendo parte do trabalho.",
+      "textKind": "paraphrase",
+      "claim": "Para tarefas maiores, explicitar resultado, contexto, formato e limites relevantes. Anexos e referências devem trazer a informação que muda a resposta; revisar e refinar continua fazendo parte do trabalho.",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "appliesTo": [
+        "codex"
+      ],
+      "caveat": "Seções citadas lidas; nenhum vídeo assistido."
+    },
+    {
+      "id": "ev-codex-project-instructions",
+      "sourceId": "res-codex-project-instructions",
+      "locator": "Introdução, linha 846",
+      "text": "Codex lê arquivos AGENTS.md para receber instruções do projeto. O caminho e a precedência influenciam as orientações aplicadas, por isso regras recorrentes precisam ficar no local correto.",
+      "textKind": "paraphrase",
+      "claim": "Codex lê arquivos AGENTS.md para receber instruções do projeto. O caminho e a precedência influenciam as orientações aplicadas, por isso regras recorrentes precisam ficar no local correto.",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "appliesTo": [
+        "codex"
+      ],
+      "caveat": "Seções citadas lidas; nenhum vídeo assistido. Leitura por seções de descoberta e orientação do projeto. Não é garantia de cumprimento perfeito."
+    },
+    {
+      "id": "ev-codex-local-schedule",
+      "sourceId": "res-codex-local-schedule",
+      "locator": "Introdução, linha 848",
+      "text": "A documentação distingue tarefas recorrentes ligadas à conversa e tarefas independentes. Trabalho agendado com projeto local exige computador ligado e aplicativo rodando; é possível usar worktree para separar alterações.",
+      "textKind": "paraphrase",
+      "claim": "A documentação distingue tarefas recorrentes ligadas à conversa e tarefas independentes. Trabalho agendado com projeto local exige computador ligado e aplicativo rodando; é possível usar worktree para separar alterações.",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "appliesTo": [
+        "codex"
+      ],
+      "caveat": "Seções citadas lidas; nenhum vídeo assistido. Lido o trecho sobre superfícies, contexto e execução local. Não assumir paridade com eventos disponíveis na web."
+    },
+    {
+      "id": "ev-builder-visual-plan",
+      "sourceId": "res-builder-visual-plan",
+      "locator": "Título de seção, linha 41",
+      "text": "O relato usa planos visuais para discutir estados, controles e telas pequenas antes de implementar, e recapitulações para direcionar a revisão depois. A autora ainda lê e testa o código.",
+      "textKind": "paraphrase",
+      "claim": "O relato usa planos visuais para discutir estados, controles e telas pequenas antes de implementar, e recapitulações para direcionar a revisão depois. A autora ainda lê e testa o código.",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "appliesTo": [
+        "codex"
+      ],
+      "caveat": "Seções citadas lidas; nenhum vídeo assistido. Relato do fornecedor sobre sua própria ferramenta; não é estudo independente de produtividade."
+    },
+    {
+      "id": "ev-builder-behavior-tests",
+      "sourceId": "res-builder-behavior-tests",
+      "locator": "Título de seção, linha 95",
+      "text": "Mostra que remover alertas e passar testes existentes pode deixar um defeito de validação intacto. Recomenda partir de comportamento reproduzível e declarar o que a correção deve garantir.",
+      "textKind": "paraphrase",
+      "claim": "Mostra que remover alertas e passar testes existentes pode deixar um defeito de validação intacto. Recomenda partir de comportamento reproduzível e declarar o que a correção deve garantir.",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "appliesTo": [
+        "claude",
+        "codex"
+      ],
+      "caveat": "Seções citadas lidas; nenhum vídeo assistido. Experimentos locais descritos pela autora; não generalizar frequência de falhas."
+    },
+    {
+      "id": "ev-peter-evals-public",
+      "sourceId": "res-peter-evals-public",
+      "locator": "Índice público de capítulos, 43:19 / linha 45",
+      "text": "A parte pública diferencia regras definidas previamente de falhas descobertas ao comparar resultados com revisões humanas. Recomenda observar vários exemplos para evitar transformar um caso isolado em regra geral.",
+      "textKind": "paraphrase",
+      "claim": "A parte pública diferencia regras definidas previamente de falhas descobertas ao comparar resultados com revisões humanas. Recomenda observar vários exemplos para evitar transformar um caso isolado em regra geral.",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "appliesTo": [
+        "claude",
+        "codex"
+      ],
+      "caveat": "Linhas 6–68, antes de 'This post is for paid subscribers'. Os cinco passos completos e o link da skill estão após a barreira; não foram ingeridos. Capítulos descrevem a pauta do vídeo, não comprovam suas falas."
+    },
+    {
+      "id": "ev-peter-workflow-public",
+      "sourceId": "res-peter-workflow-public",
+      "locator": "Seção 1, linha 57",
+      "text": "A seção pública propõe descrever todas as etapas manuais antes de decidir o que automatizar. Mostra fases de preparação, edição e produção de podcast; os detalhes das skills estão protegidos.",
+      "textKind": "paraphrase",
+      "claim": "A seção pública propõe descrever todas as etapas manuais antes de decidir o que automatizar. Mostra fases de preparação, edição e produção de podcast; os detalhes das skills estão protegidos.",
+      "retrievedAt": "2026-09-28T18:43:11Z",
+      "appliesTo": [
+        "claude",
+        "codex"
+      ],
+      "caveat": "Seção 1 e índice de capítulos, linhas 34–79; interrupção na barreira de assinatura. Percentuais e economia de horas são alegações do autor, não promessa pedagógica nem resultado validado. Passos completos 2 e 3 não ingeridos."
+    }
+  ]
+}
