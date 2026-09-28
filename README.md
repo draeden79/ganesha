@@ -33,6 +33,8 @@ Landing Pages awaits a durable Vercel Workflow start **before acknowledging Slac
 
 ## Deploy and operate
 
+The approved homepage now serves at the domain root. Its US$9.99 checkout is **test mode only**, and remains unavailable until Stripe test credentials, the signed webhook and Resend sender are configured. Unique classroom links require verified payment and are delivered on the confirmation page and by email. The classroom origin and host both enforce access. See [the payment runbook](docs/payments.md) for setup, acceptance and recovery. Future classroom deployments must retain the reviewed payment guards.
+
 1. Use Node.js 24 and the checked-in Next.js/Workflow configuration. Enable Vercel system environment variables and Fluid Compute; Workflow steps need at least 180 seconds (the prototype plan supports 300 seconds).
 2. Provision durable Redis and connect `REDIS_URL`. This prototype uses free Upstash in `iad1`, with automatic upgrades, production pack and eviction disabled.
 3. Configure `.env.example` with verified IDs. Set the two dedicated production trigger paths and enable `SLACK_DEDICATED_IDENTITIES` and `SLACK_ALLOW_WORKSPACE_BOTS`.

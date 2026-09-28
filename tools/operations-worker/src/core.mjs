@@ -2,7 +2,6 @@ import { spawn } from 'node:child_process';
 
 export const REPO = 'draeden79/ganesha';
 export const REPO_URL = 'https://github.com/draeden79/ganesha.git';
-export const RELEASE_BRANCH = 'codex/diretor-integracao';
 export const TEAM_ID = 'team_Mrwau3ah68XjkRlVpY9fldxg';
 export const TEAM_SCOPE = 'manuel-guimaraes-pinto-filhos-projects';
 export const DEVOPS_PROJECT_ID = 'prj_DbGGndK0VJ7S8CKPTP2DLk8JWVu4';

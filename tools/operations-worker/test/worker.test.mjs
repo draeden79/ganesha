@@ -6,8 +6,11 @@ import { join } from 'node:path';
 import { createActions } from '../src/actions.mjs';
 import { executeJob } from '../src/worker.mjs';
 import { validateOperation, validateArchiveTree, childEnvironment, OperationError, TEAM_ID, TEAM_SCOPE } from '../src/core.mjs';
+import { CLASSROOM_RELEASE, CHECKOUT_URL } from '../src/classroom-guard.mjs';
 
-const sha='2ac2fe859db98687fc4e3acacfbf0c56526452d9';
+const sha=CLASSROOM_RELEASE.minimumCommit;
+const guardedTree=Object.entries(CLASSROOM_RELEASE.blobs).map(([path,blob])=>`100644 blob ${blob}\t${path}\0`).join('');
+const gitResult=args=>args.includes('ls-tree')?guardedTree:'';
 const projectId='prj_UXy2A10eweruKwCIBHufQB9glCwa';
 const project={id:projectId,name:'ganesha-classroom'};
 const op={kind:'vercel-deploy',sha,target:'classroom'};
@@ -20,7 +23,7 @@ async function temporary(t) {
 }
 function deployment(job,state='READY') {return {id:'dpl_test123',projectId,url:'ganesha-classroom-test.vercel.app',readyState:state,meta:{ganeshaOperation:job.id,ganeshaSha:sha}};}
 const alias={projectId,deploymentId:'dpl_test123'};
-const healthy=()=>({status:200,text:async()=>'<script src="/classroom/_next/static/test.js"></script>'});
+const healthy=url=>new Response(null,{status:new URL(url).pathname.startsWith('/api/')?401:303,headers:{location:CHECKOUT_URL,'cache-control':'private, no-store'}});
 function context(job,patches=[]) {return {signal:new AbortController().signal,checkpoint:async p=>{patches.push(p);job.checkpoint={...job.checkpoint,...p};}};}
 
 test('only bounded structured operations pass; shell flags and alternate targets fail',()=>{
@@ -70,29 +73,30 @@ test('ambiguous PR creation is not automatically repeated',async t=>{
 });
 test('deployment resumes from checkpoint, verifies project and routes, never redeploys',async t=>{
   const root=await temporary(t);const job=makeJob(op,{phase:'deploy-created',deploymentId:'dpl_test123'});const calls=[];const urls=[];
-  const run=async(exe,args)=>{calls.push(args);if(args[2]?.startsWith('/v9/projects/'))return JSON.stringify(project);if(args[2]?.startsWith('/v13/deployments/'))return JSON.stringify(deployment(job));if(args[2]?.startsWith('/v4/aliases/'))return JSON.stringify(alias);throw Error('Unexpected CLI call');};
-  const result=await createActions(config(root),{run,fetchImpl:async url=>{urls.push(url);return healthy();}})(job,context(job));
-  assert.equal(result.ok,true);assert.equal(calls.some(a=>a.includes('deploy')),false);assert.equal(urls.length,3);assert.equal(job.checkpoint.phase,'deploy-verified');assert.ok(urls.every(url=>url.startsWith('https://ganesha-classroom.vercel.app/')));
+  const run=async(exe,args)=>{calls.push(args);if(exe==='git')return gitResult(args);if(args[2]?.startsWith('/v9/projects/'))return JSON.stringify(project);if(args[2]?.startsWith('/v13/deployments/'))return JSON.stringify(deployment(job));if(args[2]?.startsWith('/v4/aliases/'))return JSON.stringify(alias);throw Error('Unexpected CLI call');};
+  const result=await createActions(config(root),{run,fetchImpl:async url=>{urls.push(url);return healthy(url);}})(job,context(job));
+  assert.equal(result.ok,true);assert.equal(calls.some(a=>a.includes('deploy')),false);assert.equal(urls.length,11);assert.equal(job.checkpoint.phase,'deploy-verified');assert.ok(urls.every(url=>url.startsWith('https://ganesha-classroom.vercel.app/')));
 });
 test('metadata recovers a remotely created deployment before any upload',async t=>{
   const root=await temporary(t);const job=makeJob(op,{phase:'deploy-creating'});let uploads=0;
   const run=async(exe,args)=>{
+    if(exe==='git')return gitResult(args);
     if(args[1]==='list')return JSON.stringify({contextName:'test',deployments:[{url:'ganesha-classroom-test.vercel.app',state:'READY'}],pagination:{}});
     if(args[2]?.startsWith('/v9/projects/'))return JSON.stringify(project);
     if(args[2]?.startsWith('/v13/deployments/')){assert.ok(args[2].endsWith('ganesha-classroom-test.vercel.app'));return JSON.stringify(deployment(job));}
     if(args[2]?.startsWith('/v4/aliases/'))return JSON.stringify(alias);
     uploads++;throw Error('Unexpected upload');
   };
-  const result=await createActions(config(root),{run,fetchImpl:async()=>healthy()})(job,context(job));assert.equal(result.ok,true);assert.equal(uploads,0);
+  const result=await createActions(config(root),{run,fetchImpl:async url=>healthy(url)})(job,context(job));assert.equal(result.ok,true);assert.equal(uploads,0);
 });
 test('ambiguous deployment without matching metadata requires review',async t=>{
   const root=await temporary(t);const job=makeJob(op,{phase:'deploy-creating'});
-  const run=async(exe,args)=>JSON.stringify(args[1]==='list'?{deployments:[]}:project);
+  const run=async(exe,args)=>exe==='git'?gitResult(args):JSON.stringify(args[1]==='list'?{deployments:[]}:project);
   await assert.rejects(createActions(config(root),{run})(job,context(job)),/deployment_creation_unconfirmed/);
 });
 test('a mismatched deployment project cannot be resumed or fetched',async t=>{
   const root=await temporary(t);const job=makeJob(op,{deploymentId:'dpl_test123'});
-  const run=async(exe,args)=>JSON.stringify(args[2]?.startsWith('/v9/projects/')?project:{...deployment(job),projectId:'prj_other'});
+  const run=async(exe,args)=>exe==='git'?gitResult(args):JSON.stringify(args[2]?.startsWith('/v9/projects/')?project:{...deployment(job),projectId:'prj_other'});
   await assert.rejects(createActions(config(root),{run,fetchImpl:async()=>{throw Error('Must not fetch');}})(job,context(job)),/deployment_identity_mismatch/);
 });
 test('worker aborts on a fenced heartbeat without completing a stale action',async()=>{
@@ -102,7 +106,7 @@ test('worker aborts on a fenced heartbeat without completing a stale action',asy
 });
 test('public alias must match the exact deployment before health checks',async t=>{
   const root=await temporary(t);const job=makeJob(op,{deploymentId:'dpl_test123'});
-  const run=async(exe,args)=>JSON.stringify(args[2]?.startsWith('/v9/projects/')?project:args[2]?.startsWith('/v4/aliases/')?{projectId,deploymentId:'dpl_other'}:deployment(job));
+  const run=async(exe,args)=>exe==='git'?gitResult(args):JSON.stringify(args[2]?.startsWith('/v9/projects/')?project:args[2]?.startsWith('/v4/aliases/')?{projectId,deploymentId:'dpl_other'}:deployment(job));
   await assert.rejects(createActions(config(root),{run,sleep:async()=>{},fetchImpl:async()=>{throw Error('Must not fetch');}})(job,context(job)),/production_alias_not_bound/);
 });
 test('commit outside the fixed release branch cannot reach archive or deployment',async t=>{
@@ -126,11 +130,11 @@ test('new deployment uses isolated archive and persists ID before polling health
     if(args[2]?.startsWith('/v9/projects/'))return JSON.stringify(project);
     if(args[2]?.startsWith('/v13/deployments/'))return JSON.stringify(deployment(job));
     if(args[2]?.startsWith('/v4/aliases/'))return JSON.stringify(alias);
-    if(args.includes('ls-tree'))return `100644 blob ${'a'.repeat(40)}\tpackage.json\0`;
+    if(args.includes('ls-tree'))return guardedTree;
     if(args[1]==='deploy'){assert.equal(job.checkpoint.phase,'deploy-creating');uploaded=true;return '';}
     return '';
   };
-  const result=await createActions(config(root),{run,fetchImpl:async()=>{assert.equal(job.checkpoint.deploymentId,'dpl_test123');return healthy();}})(job,context(job,patches));
+  const result=await createActions(config(root),{run,fetchImpl:async url=>{assert.equal(job.checkpoint.deploymentId,'dpl_test123');return healthy(url);}})(job,context(job,patches));
   assert.equal(result.ok,true);
   const upload=calls.find(c=>c.args[1]==='deploy');assert.ok(upload.options.cwd.startsWith(root));assert.ok(upload.args.includes('--prod'));assert.ok(upload.args.includes('--no-wait'));assert.equal(upload.options.env.REDIS_URL,undefined);
   assert.deepEqual(JSON.parse(await readFile(join(upload.options.cwd,'.vercel','project.json'),'utf8')),{orgId:TEAM_ID,projectId});
