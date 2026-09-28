@@ -1,0 +1,58 @@
+Window: "Ganesha", App: Ganesha.
+0 janela padrão Ganesha, Secondary Actions: Raise
+	1 container Ganesha
+		2 container
+			3 Conteúdo HTML Ganesha, URL: file:///Applications/Ganesha.app/Contents/Resources/app.asar/.vite/renderer/main_window/index.html
+				4 container
+					5 container
+						6 botão Voltar
+						7 texto Seu primeiro pedido para a IA
+						8 texto Molde do pedido
+						9 lista de conteúdos Molde do pedido
+							10 container
+								11 botão o que você quer
+								12 texto em construção
+							13 container
+								14 botão para quem é, e para quê
+								15 texto Bloqueada
+							16 container
+								17 botão o que não pode
+								18 texto Bloqueada
+							19 container
+								20 botão como você quer receber
+								21 texto Bloqueada
+						22 botão Abrir as etapas
+						23 container
+							24 cabeçalho Peça a sua viagem de quatro dias, Value: 1
+								25 texto Peça a sua viagem de quatro dias
+							26 container Conteúdo da etapa
+								27 texto Nesta aula você vai escrever pedidos para a IA. Tem gente que chama isso de prompt. É a mesma coisa, tá?
+								28 texto O assunto de hoje é uma viagem de verdade, de quatro dias, para onde você quiser ir. Você vai pedir essa viagem para a IA, conferir se a resposta serve e ajustar o que precisar.
+								29 container
+									30 cabeçalho Este primeiro pedido é para sair ruim., Value: 2
+										31 texto Este primeiro pedido é para sair ruim.
+									32 texto Escreva igual você falaria com uma pessoa, e mande rápido. Daqui a pouco você melhora ele, uma parte por vez.
+								33 imagem Mala fechada ao lado de um mapa dobrado e de um estojo de viagem.
+								34 container
+									35 texto Do seu jeito
+									36 área de entrada de texto (settable) Do seu jeito, Placeholder: Peça aqui a sua viagem de quatro dias, do seu jeito
+									37 texto Seu primeiro pedido
+									38 botão (disabled) Mandar para a IA
+									39 container Quer um começo? Toque numa destas
+										40 botão "alternar" quero planejar uma viagem de quatro dias, Value: 0
+										41 botão "alternar" me ajuda a montar quatro dias de viagem, Value: 0
+										42 botão "alternar" preciso de um roteiro de quatro dias, Value: 0
+							43 botão Role para ver o restante
+							44 botão (disabled) Anterior
+							45 botão (disabled) Continuar
+						46 container Ajuda do Ganesha
+							47 botão Description: Ajuda do Ganesha, Help: Abrir ajuda do Ganesha
+	48 botão fechar
+	49 botão tela cheia Help: este botão também possui uma ação para ampliar ou reduzir a janela, Secondary Actions: ampliar ou reduzir a janela
+	50 botão minimizar
+51 menu bar
+	52 Ganesha
+	53 File
+	54 Edit
+	55 View
+	56 Window

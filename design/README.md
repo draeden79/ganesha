@@ -1,5 +1,7 @@
 # Ganesha — entrega do Artista
 
+**Direção atual: v2, baseada no Ganesha Desktop real.** Leia `specs/NATIVE_REFERENCE.md`. Preview novo: `http://127.0.0.1:4176/native.html`; iniciar com `python3 design/serve-preview.py --port 4176` (o currículo deve estar em `content/`, ou use `--content-dir`). A composição v1 abaixo é histórica.
+
 Direção visual, tokens, asset 3D, protótipo navegável e especificação de telas do curso pós-acesso. Leia primeiro `../DESIGN_SYSTEM.md`, depois `specs/EXPERIENCE.md` e `specs/L01_SCREEN_MAP.md`.
 
 ## Preview
