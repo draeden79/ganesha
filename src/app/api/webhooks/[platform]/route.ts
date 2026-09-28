@@ -3,6 +3,8 @@ import { getBot, getChatState } from "@/lib/bot";
 import { sharedIngress } from '@/lib/shared-ingress-runtime';
 import { normalizeVerifiedSlackRequest } from '@/lib/slack-request';
 import { slackAgentForRoute } from '@/lib/slack-identity';
+import { generationBackend } from '@/lib/generation-runtime';
+import { dispatchLocalDevops } from '@/lib/devops-local';
 
 export const runtime = 'nodejs';
 export const maxDuration = 300;
@@ -24,6 +26,7 @@ async function handleRequest(request: Request, context: Context) {
         return state.isSubscribed(`slack:${threadKey.split(':').slice(1).join(':')}`);
       },
       dispatchDevOps: async (originalRequest) => {
+        if (generationBackend() === 'local-codex') return dispatchLocalDevops(originalRequest);
         let phase = 'normalize';
         try {
           // Authentication and agent routing precede DM normalization.

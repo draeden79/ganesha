@@ -39,6 +39,14 @@ test('help and status work without a model call', async () => {
   await respond(f.thread, message('status'), [], f.deps);
   assert.equal(f.calls(), 0); assert.equal(f.posts.length, 2);
 });
+
+test('Slack SDK display-name mentions preserve quota-free control commands', async () => {
+  const f = fixture();
+  f.deps.quota = async () => { throw Error('Control command must not consume quota'); };
+  await respond(f.thread, message('@Gdevops status'), [], f.deps);
+  await respond(f.thread, message('@ganesha help'), [], f.deps);
+  assert.equal(f.calls(), 0); assert.equal(f.posts.length, 2);
+});
 test('rate limit prevents model usage', async () => {
   const f = fixture(); f.deps.quota = async () => 'daily';
   await respond(f.thread, message('Preciso de infraestrutura'), [], f.deps);

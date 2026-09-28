@@ -2,7 +2,8 @@
 import { createClient } from 'redis';
 import { generateText, Output, jsonSchema } from 'ai';
 import { getToken } from '@vercel/connect';
-import { createRedisLandingStore, generationSchema, instructions, type Generation, type Course } from '@ganesha/landing-pages';
+import { createRedisLandingStore, generationSchema, instructions, GenerationPendingError, type Generation, type Course } from '@ganesha/landing-pages';
+import { generationBackend, localGeneration, generationId } from './generation-runtime';
 import { dedicatedIdentities, slackIdentity, type SlackAgent } from '@/lib/slack-identity';
 import { safeReply } from '@/lib/policy';
 export const slackScopes = ['app_mentions:read', 'chat:write', 'channels:history', 'channels:read', 'im:history', 'im:read', 'users:read'];
@@ -29,7 +30,13 @@ export async function landingStore() {
 
 export const publicOrigin = () => required('PUBLIC_BASE_URL');
 
-export async function generateLandingCopy(input: { brief: string; previousCourse: Course | null }) {
+export async function generateLandingCopy(input: { requestKey: string; brief: string; previousCourse: Course | null }) {
+  if (generationBackend() === 'local-codex') {
+    const result = await localGeneration({ jobId: generationId('landing-pages', input.requestKey), agent: 'landing-pages',
+      system: instructions, input: JSON.stringify({ brief: input.brief, previousCourse: input.previousCourse }), outputSchema: generationSchema });
+    if (!result) throw new GenerationPendingError();
+    return result as Generation;
+  }
   try {
   const result = await generateText({
     model: process.env.LANDING_AI_MODEL || process.env.AI_MODEL || 'openai/gpt-5-nano',

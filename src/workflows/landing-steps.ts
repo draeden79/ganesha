@@ -2,7 +2,7 @@
 import { runLandingJob, deliverLandingNotification } from '@ganesha/landing-pages';
 import { landingStore, generateLandingCopy, sendLandingNotification, publicOrigin } from '@/lib/landing-runtime';
 
-export type LandingInput = { requestKey: string; threadKey: string; text: string; actorId: string; now: number };
+export type LandingInput = { requestKey: string; threadKey: string; text: string; actorId: string; now: number; local?: boolean };
 
 export async function persistLandingRequest(input: LandingInput) {
   'use step';

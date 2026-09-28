@@ -8,7 +8,7 @@ export function redact(text: string): string {
 }
 
 export function cleanInput(text: string): string {
-  return redact(text.replace(/<@[A-Z0-9]+>/g, '').trim()).slice(0, 8000);
+  return redact(text.replace(/<@[A-Z0-9]+>/g, '').trim().replace(/^@(?:Ganesha|Gdevops)\b\s*/i, '')).slice(0, 8000);
 }
 
 export function safeReply(text: string): string {

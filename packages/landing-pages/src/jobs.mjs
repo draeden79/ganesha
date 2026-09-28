@@ -1,4 +1,5 @@
 import { prepareLandingPage } from './index.mjs';
+import { GenerationPendingError } from './generation.mjs';
 
 /** Process one previously persisted request. Durable scheduling belongs to the host. */
 export async function runLandingJob(requestKey, deps) {
@@ -13,7 +14,12 @@ export async function runLandingJob(requestKey, deps) {
     // The store must fence stale claims and atomically persist result + notification.
     const committed = await deps.store.completeJob(claim, { prepared, notification: { threadKey: claim.threadKey, body }, now: now() });
     return { status: committed ? prepared.status : 'superseded' };
-  } catch {
+  } catch (error) {
+    if (error instanceof GenerationPendingError) {
+      const retryAfterMs = error.retryAfterMs;
+      const retained = await deps.store.deferJob(claim, { now: now(), retryAt: now() + retryAfterMs });
+      return { status: retained ? 'pending' : 'superseded', retryAfterMs };
+    }
     // This update must be a no-op if completion already committed or the lease was lost.
     const terminal = claim.attempt >= 3;
     const retained = await deps.store.failJob(claim, {

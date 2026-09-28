@@ -1,0 +1,13 @@
+{
+  "name": "@ganesha/local-codex-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node --test",
+    "start": "node --env-file=.env.local src/cli.mjs",
+    "smoke": "node src/smoke.mjs"
+  }
+}
+

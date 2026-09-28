@@ -20,12 +20,16 @@ if (j.retryAt or 0) > now or (j.leaseUntil or 0) > now then return false end
 local head = redis.call('ZRANGE',KEYS[3],0,0); if head[1] ~= j.id then return false end
 local t = cjson.decode(redis.call('GET',KEYS[2]))
 if t.leaseUntil and t.leaseUntil > now then return false end
+if not j.generationBrief then
+  j.generationBrief = t.brief .. '\\n[Slack ' .. j.actorId .. '] ' .. j.text
+  j.generationCourse = t.course or cjson.null
+end
 j.attempt = j.attempt + 1; j.status = 'running'; j.token = ARGV[3]; j.leaseUntil = now + tonumber(ARGV[2])
 t.token = j.token; t.leaseUntil = j.leaseUntil
 redis.call('SET',KEYS[1],cjson.encode(j)); redis.call('SET',KEYS[2],cjson.encode(t))
 redis.call('ZADD',KEYS[4],j.leaseUntil,j.id)
 return cjson.encode({requestKey=j.requestKey,threadKey=j.threadKey,token=j.token,attempt=j.attempt,
-  brief=t.brief .. '\\n[Slack ' .. j.actorId .. '] ' .. j.text, previousCourse=t.course or cjson.null})`;
+  brief=j.generationBrief, previousCourse=j.generationCourse})`;
 
 const finishScript = `
 local raw = redis.call('GET',KEYS[1]); if not raw then return 0 end
@@ -42,6 +46,8 @@ if r.mode == 'complete' then
   end
   t.brief = t.brief .. '\\n[Slack ' .. j.actorId .. '] ' .. j.text
   j.status = r.prepared.status; j.finishedAt = now
+elseif r.mode == 'pending' then
+  j.status = 'queued'; j.retryAt = r.retryAt; j.attempt = math.max(0, j.attempt - 1)
 elseif r.retryAt ~= cjson.null then
   j.status = 'queued'; j.retryAt = r.retryAt
 else
@@ -114,6 +120,7 @@ export function createRedisLandingStore(client, { namespace = 'ganesha:landing:p
     },
     async completeJob(claim, result) { return finish(claim, { ...result, mode: 'complete' }); },
     async failJob(claim, failure) { return finish(claim, { ...failure, mode: 'fail' }); },
+    async deferJob(claim, pendingGeneration) { return finish(claim, { ...pendingGeneration, mode: 'pending', notification: null }); },
     async pendingJobs({ now, limit }) {
       const ids = await client.zRangeByScore(pending, '-inf', now, { LIMIT: { offset: 0, count: Math.min(limit, 100) } });
       const jobs = await Promise.all(ids.map(id => client.get(jobKey(id))));

@@ -79,6 +79,28 @@ test('Real Redis: deduplication, competing workers, expired leases, atomic revis
   assert.equal(await b.completeJob(clarificationClaim, { prepared: clarification, notification: { threadKey: input.threadKey, body: clarification.reply }, now: 1605 }), true);
   assert.match((await a.readPage(prepared.slug)).html, /Updated after recovery/);
   assert.equal((await a.jobStatus('EvThree')).status, 'needs_information');
+  await a.enqueue({ ...input, requestKey: 'EvPending', text: 'Wait for the local worker.', now: 3000 });
+  await a.enqueue({ ...input, requestKey: 'EvBehindPending', text: 'Later revision.', now: 3001 });
+  let pendingClaim = await a.claimJob('EvPending', { now: 3002, leaseMs: 100 });
+  const snapshot = { brief: pendingClaim.brief, previousCourse: pendingClaim.previousCourse };
+  const firstPendingClaim = pendingClaim;
+  for (let i = 0; i < 8; i++) {
+    const time = 3003 + i * 50;
+    assert.equal(pendingClaim.attempt, 1, 'An offline worker must not consume generation attempts');
+    assert.deepEqual({ brief: pendingClaim.brief, previousCourse: pendingClaim.previousCourse }, snapshot);
+    assert.equal(await a.deferJob(pendingClaim, { now: time, retryAt: time + 40 }), true);
+    assert.equal(await b.claimJob('EvBehindPending', { now: time + 41, leaseMs: 100 }), null, 'Per-thread order survives deferral');
+    assert.equal(await b.notificationStatus('EvPending'), null);
+    pendingClaim = await b.claimJob('EvPending', { now: time + 40, leaseMs: 100 });
+  }
+  assert.equal(await a.deferJob(firstPendingClaim, { now: 3400, retryAt: 3500 }), false, 'A stale worker cannot release a new lease');
+  const localResult = await prepareLandingPage({ ...pendingClaim, publicOrigin: 'https://courses.example' }, {
+    generate: async value => { assert.equal(value.requestKey, 'EvPending'); return { status: 'ready', questions: [], course: revisedCourse }; },
+  });
+  assert.equal(await a.completeJob(pendingClaim, { prepared: localResult, notification: { threadKey: input.threadKey, body: 'Local complete' }, now: 3400 }), true);
+  assert.equal((await b.jobStatus('EvPending')).status, 'ready');
+  assert.equal(localResult.url, revision.url);
+  assert.ok(await b.claimJob('EvBehindPending', { now: 3401, leaseMs: 100 }));
   const unconnectedNamespace = createRedisLandingStore(client, { namespace: namespace + ':other' });
   assert.equal(await unconnectedNamespace.readPage(prepared.slug), null);
   for await (const keys of client.scanIterator({ MATCH: `{${namespace}}:page:*`, COUNT: 100 })) {

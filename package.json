@@ -11,12 +11,13 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "test": "node --test test/*.test.ts packages/landing-pages/tests/*.test.mjs"
+    "test": "node --test test/*.test.ts packages/landing-pages/tests/*.test.mjs packages/local-generation-broker/tests/*.test.mjs tools/local-codex-worker/test/*.test.mjs"
   },
   "dependencies": {
     "@chat-adapter/slack": "4.41.0",
     "@chat-adapter/state-redis": "4.41.0",
     "@ganesha/landing-pages": "file:packages/landing-pages",
+    "@ganesha/local-generation-broker": "file:packages/local-generation-broker",
     "@vercel/connect": "2.3.3",
     "ai": "7.0.119",
     "chat": "4.41.0",

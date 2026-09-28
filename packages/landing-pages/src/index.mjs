@@ -9,6 +9,7 @@ export { runLandingJob, deliverLandingNotification } from './jobs.mjs';
 export { createRedisLandingStore } from './redis-store.mjs';
 export { createSharedIngress } from './ingress.mjs';
 export { createRedisGatewayStore } from './gateway-store.mjs';
+export { GenerationPendingError } from './generation.mjs';
 
 export const pageHeaders = {
   'Content-Type': 'text/html; charset=utf-8',
@@ -30,7 +31,7 @@ export async function prepareLandingPage(input, deps) {
   }
   // Keep the URL stable across revisions, without exposing Slack IDs in public URLs.
   const slug = `course-${createHash('sha256').update(threadKey).digest('hex').slice(0, 24)}`;
-  const result = validateGeneration(await deps.generate({ brief, previousCourse }));
+  const result = validateGeneration(await deps.generate({ requestKey, brief, previousCourse }));
   if (result.status === 'needs_information') {
     return { status: 'needs_information', requestKey, questions: result.questions,
       reply: 'Landing Pages · I need a little more detail before publishing:\n' + result.questions.map(q => `• ${q}`).join('\n') };

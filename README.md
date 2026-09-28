@@ -74,6 +74,18 @@ Each dedicated endpoint requires its exact app ID and processes only its configu
 
 Add Glandingpage to `#landing-pages`, verify both human and explicitly mentioned bot requests, same-thread clarification and stable-URL revision, then update the guide with actual app/user IDs and announce activation in its existing management thread. Neither agent automatically delegates work; outgoing mentions are neutralized.
 
+## Local Codex generation
+
+`GENERATION_BACKEND=local-codex` sends generation to the owner's outbound Windows worker using local Codex and its existing ChatGPT authentication. The worker selects GPT-6 Astra with extra-high reasoning; the model still runs through OpenAI. Prompts pass through Vercel and Redis to that PC. OAuth credentials stay on the PC. `gateway` is a separate explicit operator setting; there is no automatic fallback or API-credit purchase.
+
+The [worker runbook](tools/local-codex-worker/README.md) and [HTTP contract](docs/local-codex-worker-contract.md) describe startup. Set the same random 32-byte `LOCAL_WORKER_TOKEN` as a production Secret and in the worker's ignored `.env.local` alongside `GANESHA_ORIGIN=https://ganesha-devops.vercel.app`. Run `npm start` in the worker directory under the signed-in Windows user. Keep the PC awake for prompt responses; startup is manual. Never commit `.env.local`, `.runtime`, or Codex credentials.
+
+The host authenticates requests before accessing the broker, validates schema and domain constraints before accepting generated JSON, and keeps rendering/publication/replies on Vercel. Local jobs use expiring, renewable leases with fenced completion, bounded execution failures, and no expiration while waiting. Account/authentication/model-access errors preserve pending jobs and stop the worker for operator attention. Durable workflows continue polling while the PC is offline, without holding an HTTP request open. A generation snapshot and request ID remain fixed across retries. No remote shell, browsing, cloud administration or arbitrary code execution is exposed through Slack.
+
+Local DevOps uses an ordered thread queue and a durable reply outbox. It imports existing bounded Chat SDK history on first use. `stop` clears context and cancels pending replies; commands remain available without the local model. Replies are at least once: a crash after Slack accepts a post can repeat it. Keep the backend setting fixed for pending work; operator switching mid-conversation requires reviewing queued jobs and context first.
+
+Acceptance of local generation requires real Slack-to-page and DevOps responses, a stable-URL revision, and a worker stop/restart cycle. Unit and real Redis tests pass; consult the activation notice for the current live status.
+
 ## References
 
 - [Vercel Connect Slack setup](https://vercel.com/kb/guide/build-a-slack-bot-with-vercel-connect)

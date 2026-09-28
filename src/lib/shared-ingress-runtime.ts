@@ -8,6 +8,7 @@ import { landingPageWorkflow } from '@/workflows/landing-pages';
 import { sendSlackNotification, slackScopes } from '@/lib/landing-runtime';
 import { redact } from '@/lib/policy';
 import { slackIdentity, type SlackAgent } from '@/lib/slack-identity';
+import { generationBackend } from './generation-runtime';
 
 const required = (name: string) => { const value = process.env[name]; if (!value) throw new Error(`Missing ${name}`); return value; };
 function createGatewayClient() { return createClient({ url: required('REDIS_URL'), socket: { connectTimeout: 15000 } }); }
@@ -41,7 +42,7 @@ export async function sharedIngress(deps: { dispatchDevOps: (request: Request) =
       const user = { isBot: data.user.is_bot, deleted: data.user.deleted === true };
       await store.cacheUser(userId, user); return user;
     },
-    startLanding: async (input) => { await start(landingPageWorkflow, [{ ...input, text: redact(input.text) }]); },
+    startLanding: async (input) => { await start(landingPageWorkflow, [{ ...input, text: redact(input.text), local: generationBackend() === 'local-codex' }]); },
     send: async (message) => sendSlackNotification({ ...message, notificationId: 'gateway-reply' }, agent),
   });
 }

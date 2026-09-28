@@ -8,6 +8,7 @@ export type Course = {
 export type Generation = { status: 'ready'; questions: []; course: Course } |
   { status: 'needs_information'; questions: string[]; course: null };
 export type Agent = 'devops' | 'landing-pages';
+export class GenerationPendingError extends Error { readonly code: 'generation_pending'; readonly retryAfterMs: number; constructor(retryAfterMs?: number); }
 export type Route = { status: 'ignored' } | { status: 'choose' | 'conflict'; message: string } |
   { status: 'routed'; agent: Agent; text: string };
 export const instructions: string;
@@ -25,7 +26,7 @@ export type PreparedPage = { status: 'needs_information'; requestKey: string; qu
   { status: 'ready'; requestKey: string; slug: string; url: string; course: Course; html: string };
 export function prepareLandingPage(input: { threadKey: string; requestKey: string; brief: string;
   previousCourse?: Course | null; publicOrigin: string },
-  deps: { generate: (input: { brief: string; previousCourse: Course | null }) => Promise<unknown> }): Promise<PreparedPage>;
+  deps: { generate: (input: { requestKey: string; brief: string; previousCourse: Course | null }) => Promise<unknown> }): Promise<PreparedPage>;
 export type Notification = { threadKey: string; body: string };
 export type JobClaim = { requestKey: string; threadKey: string; token: string; attempt: number; brief: string; previousCourse: Course | null };
 export type NotificationClaim = Notification & { id: string; token: string; attempt: number };
@@ -39,6 +40,8 @@ export interface LandingStore {
   completeJob(claim: JobClaim, result: { prepared: PreparedPage; notification: Notification; now: number }): Promise<boolean>;
   /** Leave published state untouched. Retain exhausted jobs and enqueue failure notification atomically. */
   failJob(claim: JobClaim, failure: { code: string; now: number; retryAt: number | null; notification: Notification | null }): Promise<boolean>;
+  /** Release the domain lease while local generation is pending, without spending an attempt or changing its snapshot. */
+  deferJob(claim: JobClaim, pending: { now: number; retryAt: number }): Promise<boolean>;
   /** Include queued/due-retry/expired-lease jobs so the scheduler can recover after a crash. */
   pendingJobs(options: { now: number; limit: number }): Promise<string[]>;
   /** Public data only: committed HTML, never raw brief, actor, threadKey or credentials. */
@@ -48,7 +51,7 @@ export interface LandingStore {
   retryNotification(claim: NotificationClaim, options: { now: number; retryAt: number | null }): Promise<void>;
 }
 export function runLandingJob(requestKey: string, deps: { store: LandingStore; publicOrigin: string; now?: () => number;
-  generate: (input: { brief: string; previousCourse: Course | null }) => Promise<unknown> }): Promise<{ status: string }>;
+  generate: (input: { requestKey: string; brief: string; previousCourse: Course | null }) => Promise<unknown> }): Promise<{ status: string; retryAfterMs?: number }>;
 export function deliverLandingNotification(deps: { store: LandingStore; now?: () => number; requestKey?: string;
   send: (message: Notification & { notificationId: string }) => Promise<void> }): Promise<{ status: string }>;
 export type RedisLandingStore = LandingStore & {

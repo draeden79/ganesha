@@ -8,7 +8,7 @@ export async function landingPageWorkflow(input: LandingInput) {
   // Redis enqueue/claim/commit make duplicate workflow starts harmless to publication.
   await persistLandingRequest(input);
   let complete = false;
-  for (let poll = 0; poll < 480; poll++) {
+  for (let poll = 0; input.local || poll < 480; poll++) {
     if (await advanceLandingRequest(input.requestKey)) { complete = true; break; }
     await sleep('30s');
   }
