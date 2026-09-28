@@ -10,8 +10,10 @@ O primeiro incremento valida uma aula completa: acesso ao ambiente do curso, esc
 
 ## Escopo e integração
 
+- Ganesha tem três frentes, conforme definição explícita do usuário: Growth leva tráfego à landing page; Landing page vende o produto e cuida de login/pagamento; Produto entrega a experiência e as aulas. Esta tarefa coordena Produto.
 - Dentro: experiência após acesso; navegação do curso; conteúdo e variações por ferramenta; prática; avaliação com feedback; progresso; idiomas; acessibilidade; rastreabilidade e versão do curso.
-- Fora: landing page, aquisição, cadastro, cobrança, gestão de assinaturas. Essas áreas pertencem ao colega responsável.
+- Fora: aquisição de tráfego (Growth), landing page, cadastro/login, cobrança e gestão de assinaturas (Landing page). Contratos e dependências entre as frentes são coordenados, sem assumir a implementação delas.
+- Comunicação solicitada: identidade própria de Diretor no workspace Slack Ganesha, canal `#management`, para marcos relevantes do Produto e impactos nas demais frentes. Configuração, critérios e pendências em `SLACK_MANAGEMENT.md`.
 - Não há stack no commit inicial. Base acordada com Construtor e sessão de origem: Next.js, React e TypeScript; adaptar a integração se receber a stack do colega. Evitar backend e dependências desnecessários no protótipo.
 - O contrato de entrada, acesso e progresso está em `contracts/INTEGRATION.md`. Uma demonstração local pode usar acesso de demonstração explícito. Não é autenticação de produção.
 - Exercícios locais ou simulados não executam Claude/Codex real por trás da interface. Não exibir resultado de execução, revisão por IA ou publicação como se uma integração inexistente tivesse ocorrido.
