@@ -110,3 +110,10 @@ pre,code { direction:ltr; unicode-bidi:isolate; text-align:left; font-family:var
 .stage-list button { min-height:44px; }
 @media(max-width:1150px) { .lesson-aside .hint,.lesson-aside .criteria-note { display:block; }.lesson-aside .criteria-note { padding:14px 16px 0; } }
 @media(max-width:600px) { .hero-art { height:230px; }.stage-list button { min-width:40px; min-height:44px; } }
+@media(max-width:1150px) {
+  .lesson-aside { display:contents; }
+  .lesson-aside .stage-list { order:-1; }
+  .lesson-grid .stage { order:0; }
+  .lesson-aside .hint { order:1; margin-top:0; }
+  .lesson-aside .criteria-note { order:2; padding-top:0; }
+}
