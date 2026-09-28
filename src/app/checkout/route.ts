@@ -15,7 +15,7 @@ export async function GET(request: Request) {
     ${url.searchParams.has('canceled') ? '<p>Your checkout was canceled. No classroom access was issued. You can try again below.</p>' : ''}
     <ul><li>Your private classroom link appears after payment is verified.</li><li>A copy is sent to the email you enter at checkout.</li><li>Learning progress is saved in this browser.</li></ul>
     ${!configured ? '<p class="notice">Test checkout is being configured. Classroom access remains protected. Please return when checkout is available.</p>' : ''}
-    <form method="post" action="/api/checkout"><input type="hidden" name="locale" value="${escapeHtml(locale)}"><button type="submit" ${configured ? '' : 'disabled'}>Continue to test payment ↗</button></form><a href="/">Back to the course</a>`, {
+    <form id="checkout-form" method="post" action="/api/checkout"><input type="hidden" name="locale" value="${escapeHtml(locale)}"><button type="submit" ${configured ? '' : 'disabled'}>Continue to test payment ↗</button><p id="checkout-status" role="status" aria-live="polite"></p></form><script src="/checkout.js" defer></script><a href="/">Back to the course</a>`, {
       headers: { 'Set-Cookie': `${checkoutCookie}=${newBrowserToken()}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=86400` },
     });
 }

@@ -3,6 +3,11 @@ import { checkoutCookie, courseOffer, hash, idPattern, normalizeLocale, privateH
 import { paymentConfiguration, paymentStore, paymentsOrigin, startCheckout } from '@/lib/payment-runtime';
 import { paymentPage } from '@/lib/payment-page';
 export const runtime = 'nodejs';
+function checkoutDestination(request: NextRequest, url: string) {
+  return request.headers.get('accept')?.includes('application/json')
+    ? Response.json({ url }, { headers: privateHeaders() })
+    : new Response(null, { status: 303, headers: { ...privateHeaders(), Location: url } });
+}
 export async function POST(request: NextRequest) {
   if (request.headers.get('origin') !== paymentsOrigin() || new URL(request.url).origin !== paymentsOrigin()) return new Response('Invalid request origin', { status: 403, headers: privateHeaders() });
   const browserToken = request.cookies.get(checkoutCookie)?.value || '';
@@ -16,9 +21,9 @@ export async function POST(request: NextRequest) {
     const store = await paymentStore();
     const order = await store.create({ id: hash(browserToken), status: 'pending', courseId: courseOffer.id, locale: normalizeLocale(data.get('locale')), createdAt: Date.now() });
     if (order.status === 'revoked') return paymentPage('This access is unavailable.', '<p>Please contact the course team about this payment.</p>', { status: 403 });
-    if (order.status === 'paid') return Response.redirect(`${paymentsOrigin()}/checkout/confirmation?session_id=${encodeURIComponent(order.sessionId!)}`, 303);
+    if (order.status === 'paid') return checkoutDestination(request, `${paymentsOrigin()}/checkout/confirmation?session_id=${encodeURIComponent(order.sessionId!)}`);
     const url = order.checkoutUrl || await startCheckout(order);
-    return new Response(null, { status: 303, headers: { ...privateHeaders(), Location: url } });
+    return checkoutDestination(request, url);
   } catch (error) {
     // Redact identifiers from provider diagnostics; never log bodies, keys or customer data.
     const failure = error as { type?: string; code?: string; param?: string; message?: string };
