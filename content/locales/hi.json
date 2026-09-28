@@ -1,0 +1,571 @@
+{
+  "schemaVersion": "1.0.0",
+  "courseId": "course.first-site",
+  "courseVersion": "0.1.0",
+  "locale": "hi",
+  "direction": "ltr",
+  "humanReviewStatus": "pending",
+  "translationMethod": "ai-authored",
+  "messages": {
+    "course.title": {
+      "value": "AI के साथ आपका पहला प्रोजेक्ट",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "course.summary": {
+      "value": "एक स्पष्ट अनुरोध से शुरू करें। परिणाम को देखना, जाँचना और सुधारना सीखें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "lesson.title": {
+      "value": "विचार से जाँचने योग्य अनुरोध तक",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "lesson.summary": {
+      "value": "अनुरोध तैयार करें, अपने टूल में आज़माएँ और प्रमाण माँगना सीखें। इस पाठ में अभी वेबसाइट प्रकाशित नहीं होती।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.scope": {
+      "value": "परिणाम का दायरा तय करें",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.scope.outcome": {
+      "value": "तय उपयोगकर्ताओं के लिए एक छोटे काम का परिणाम समझाएँ।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.context": {
+      "value": "संदर्भ दें",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.context.outcome": {
+      "value": "लक्ष्य, संदर्भ, सीमाओं और परीक्षण वाला अनुरोध लिखें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.evidence": {
+      "value": "प्रमाण जाँचें",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.evidence.outcome": {
+      "value": "टूल के जवाब और खुद देखे गए परिणाम में अंतर करें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.repair": {
+      "value": "सुधार का अनुरोध करें",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.repair.outcome": {
+      "value": "समस्या और सुधार जाँचने का तरीका समझाएँ।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.transfer": {
+      "value": "तरीका दूसरे टूल में अपनाएँ",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.transfer.outcome": {
+      "value": "उसी अनुरोध को दूसरे टूल के अनुसार बदलें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "tool.claude": {
+      "value": "Claude डेस्कटॉप में Code टैब खोलें, Local चुनें और प्रोजेक्ट फ़ोल्डर चुनें। Chat टैब का संदर्भ अलग है। ऐप में Claude Code शामिल है; उपयोग के लिए उपयुक्त सदस्यता चाहिए। Code में जवाब और बदलाव जाँचें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "tool.codex": {
+      "value": "डेस्कटॉप ऐप में Codex चुनें और काम का फ़ोल्डर या प्रोजेक्ट जाँचें। उसी संदर्भ में अनुरोध भेजें और जवाब तथा प्रभावित फ़ाइलें देखें। संस्करण के अनुसार स्क्रीन के नाम और व्यवस्था बदल सकते हैं।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "notice.self-report": {
+      "value": "यह अभ्यास Ganesha के बाहर होता है। काम आप अपने टूल में चलाते हैं। आपका रिकॉर्ड स्व-मूल्यांकन है; Ganesha न तो काम के चलने की पुष्टि करता है, न आपके खाते से जुड़ता है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "example.request": {
+      "value": "मुझे शुरुआती लोगों के लिए एक काल्पनिक संगीत कक्षा सेवा का पेज चाहिए। एक शीर्षक, तीन सेवाएँ और संपर्क करने की सुविधा की योजना बनाएँ। केवल काल्पनिक डेटा लें। अभी फ़ाइलें न बदलें और कुछ प्रकाशित न करें। योजना और तीन ऐसे मानदंड दें जिन्हें मैं जाँच सकूँ; एक मानदंड संपर्क सुविधा को जाँचे।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "example.failure": {
+      "value": "अनुकरण वाला उदाहरण: अनुरोध में संपर्क सुविधा चाहिए। पूर्वावलोकन में “मुझसे संपर्क करें” दिखता है, लेकिन क्लिक करने पर कुछ नहीं होता। यहाँ कोई असली टूल नहीं चलाया गया है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.title": {
+      "value": "छोटे परिणाम से शुरुआत करें",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.objective": {
+      "value": "ऐसा परिणाम चुनें जिसे आप जाँच सकें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.body": {
+      "value": "हम एक काल्पनिक सेवा का पेज तैयार करेंगे। पहले योजना माँगें। आगे के प्रस्तावित पाठों में यही अनुरोध जाँचे और प्रकाशित किए गए पेज में बदल सकता है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.action": {
+      "value": "एक काल्पनिक सेवा चुनें और सोचें: यह पेज किसे, क्या करने में मदद करेगा?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.expected": {
+      "value": "तय उपयोगकर्ता और मुख्य क्रिया।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.hint1": {
+      "value": "किसी ऐसे व्यक्ति के बारे में सोचें जो पेज देखेगा।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.hint2": {
+      "value": "उदाहरण: संगीत सीखने वाले नए लोग कक्षाओं के बारे में जानना और संपर्क करना चाहते हैं।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.criterion": {
+      "value": "आप उपयोगकर्ता और मुख्य क्रिया बता सकते हैं।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.visual": {
+      "value": "तीन कार्ड: उपयोगकर्ता, परिणाम और मुख्य क्रिया।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.title": {
+      "value": "उपयोगी अनुरोध बनाएँ",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.objective": {
+      "value": "एक अनुरोध में लक्ष्य, संदर्भ, सीमा और परीक्षण शामिल करें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.body": {
+      "value": "टूल को पता होना चाहिए कि क्या देना है और आप उसे कैसे परखेंगे। उदाहरण की मदद से अपनी सेवा के अनुसार लिखें। यह फ़ील्ड अभ्यास के लिए है; Claude या Codex को कुछ नहीं भेजा जाता।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.action": {
+      "value": "उपयोगकर्ता, ज़रूरी सामग्री, सीमा और देखने योग्य परीक्षण वाला अनुरोध लिखें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.expected": {
+      "value": "सहेजा हुआ अनुरोध जिसे कोई दूसरा व्यक्ति भी जाँच सके।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.hint1": {
+      "value": "“कुछ सुंदर बनाएँ” की जगह बताएँ कि कौन-से तत्व दिखने चाहिए।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.hint2": {
+      "value": "लिखें: अभी केवल योजना; काल्पनिक डेटा; संपर्क सुविधा जाँचने का तरीका।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.criterion": {
+      "value": "अनुरोध में मूल्यांकन सूची के चारों बिंदु हैं।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.visual": {
+      "value": "लक्ष्य, संदर्भ, सीमाओं और परीक्षण में बाँटा गया अनुरोध।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.title": {
+      "value": "जाँच 1: क्या अनुरोध जाँचने योग्य है?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.objective": {
+      "value": "ऐसा मानदंड पहचानें जिसका परीक्षण हो सके।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.body": {
+      "value": "सामान्य पसंद से शैली तय करने में मदद मिलती है। परिणाम जाँचने के लिए ऐसा व्यवहार भी चाहिए जिसे देखा जा सके।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.action": {
+      "value": "संपर्क सुविधा जाँचने का सबसे उपयोगी मानदंड चुनें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.expected": {
+      "value": "एक चुनाव और उस मानदंड का स्पष्टीकरण।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.hint1": {
+      "value": "किस विकल्प में कोई काम करके परिणाम देखा जा सकता है?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.hint2": {
+      "value": "परीक्षण में आगंतुक की क्रिया और अपेक्षित परिणाम दोनों होते हैं।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.criterion": {
+      "value": "चुना हुआ विकल्प देखने योग्य क्रिया और परिणाम बताता है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.visual": {
+      "value": "स्वीकृति मानदंड के तीन विकल्प।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.question": {
+      "value": "कौन-सा मानदंड संपर्क सुविधा जाँच सकता है?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.a": {
+      "value": "पेज बहुत शानदार दिखना चाहिए।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.a.feedback": {
+      "value": "यह पसंद बताता है, लेकिन संपर्क सुविधा जाँचने का तरीका नहीं।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.b": {
+      "value": "संपर्क पर क्लिक करने से अनुरोध में दिया गया काल्पनिक पता दिखे।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.b.feedback": {
+      "value": "आप क्लिक करके दिखने वाले पते की अनुरोध से तुलना कर सकते हैं। क्रिया और परिणाम दोनों देखे जा सकते हैं।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.c": {
+      "value": "टूल को कहना चाहिए कि काम पूरा हो गया।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.c.feedback": {
+      "value": "पूरा होने का संदेश यह नहीं बताता कि संपर्क सुविधा काम करती है या नहीं।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.success": {
+      "value": "आपने जाँचने योग्य व्यवहार चुना। यही तरीका अपने अनुरोध में अपनाएँ।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.retry": {
+      "value": "फिर कोशिश करें: ऐसी क्रिया और परिणाम खोजें जिन्हें आप देख सकें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.title": {
+      "value": "अपने टूल में आज़माएँ",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.objective": {
+      "value": "सही संदर्भ में अनुरोध भेजें और वास्तविक जवाब दर्ज करें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.body": {
+      "value": "अपना चुना हुआ टूल खोलें और नीचे दिए निर्देश देखें। योजना का अनुरोध भेजें। जवाब पढ़कर मानदंडों से तुलना करें। अभी पहुँच नहीं है तो अनुरोध सहेजें और यह अभ्यास बाद में करें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.action": {
+      "value": "कोर्स के बाहर अनुरोध भेजें। निजी डेटा दिए बिना लिखें कि कहाँ काम किया और क्या मिला।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.expected": {
+      "value": "संदर्भ, जवाब और अभी जाँची जाने वाली बात का रिकॉर्ड।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.hint1": {
+      "value": "भेजने से पहले बातचीत या प्रोजेक्ट फ़ोल्डर की पुष्टि करें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.hint2": {
+      "value": "लिखें: मैंने योजना माँगी; ये बातें मिलीं; अभी पेज खोला या जाँचा नहीं है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.criterion": {
+      "value": "रिकॉर्ड में माँगी गई, मिली और जाँची गई बातों का अंतर स्पष्ट है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.visual": {
+      "value": "क्रम: टूल खोलें, संदर्भ जाँचें, अनुरोध भेजें, जवाब देखें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.title": {
+      "value": "जाँच 2: क्या साबित हुआ है?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.objective": {
+      "value": "पहचानें कि कब काम के चलने का प्रमाण नहीं है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.body": {
+      "value": "इस अनुकरण की स्थिति पर सोचें: टूल जवाब देता है “पेज तैयार है”। आपने अभी कोई फ़ाइल, पूर्वावलोकन या सार्वजनिक पता नहीं खोला है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.action": {
+      "value": "उपलब्ध जानकारी से समर्थित निष्कर्ष चुनें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.expected": {
+      "value": "ऐसा निष्कर्ष जो लिखे हुए दावे को प्रमाण न माने।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.hint1": {
+      "value": "अब तक आपने वास्तव में क्या देखा है?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.hint2": {
+      "value": "टूल के दावे की वास्तविक परिणाम से तुलना अभी बाकी है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.criterion": {
+      "value": "जवाब मानता है कि परिणाम खोलकर जाँचना ज़रूरी है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.visual": {
+      "value": "पूरा होने का संदेश और उसके पास खाली प्रमाण क्षेत्र।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.question": {
+      "value": "इस समय आप क्या निष्कर्ष निकाल सकते हैं?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.a": {
+      "value": "साइट प्रकाशित है और सभी उसे खोल सकते हैं।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.a.feedback": {
+      "value": "आपने सार्वजनिक पता नहीं खोला है। संदेश प्रकाशन का प्रमाण नहीं है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.b": {
+      "value": "सभी मानदंड सफलतापूर्वक जाँचे जा चुके हैं।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.b.feedback": {
+      "value": "देखे गए परीक्षणों का कोई रिकॉर्ड नहीं है। अनुरोध पूरा होना हर मानदंड का प्रमाण नहीं है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.c": {
+      "value": "मुझे एक दावा मिला है; परिणाम खोलकर मानदंड जाँचने होंगे।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.c.feedback": {
+      "value": "सही: काम करने का दावा करने से पहले परिणाम देखें और अपनी जाँच दर्ज करें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.success": {
+      "value": "आपने संदेश और प्रमाण में अंतर किया। इससे गलतियाँ जल्दी मिलती हैं।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.retry": {
+      "value": "स्थिति पर लौटें: आपने केवल एक संदेश पढ़ा है। कौन-सी जाँच अभी बाकी है?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.title": {
+      "value": "स्पष्ट सुधार माँगें",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.objective": {
+      "value": "देखी गई समस्या को सुधार के अनुरोध में बदलें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.body": {
+      "value": "नीचे की स्थिति से अभ्यास करें। बताएँ कि क्या हुआ, क्या होना चाहिए और दोबारा कैसे जाँचना है। यह अनुकरण है; आपका प्रोजेक्ट नहीं बदलता।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.action": {
+      "value": "संपर्क सुविधा सुधारने और परीक्षण दोहराने का अनुरोध लिखें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.expected": {
+      "value": "अनुरोध में वास्तविक व्यवहार, अपेक्षित व्यवहार, समस्या दोहराने के चरण और दोबारा परीक्षण हों।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.hint1": {
+      "value": "ऐसे शुरू करें: “मुझसे संपर्क करें” पर क्लिक करने से कुछ नहीं होता।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.hint2": {
+      "value": "फिर अपेक्षित काल्पनिक पता बताएँ और सुधार के बाद दोबारा क्लिक करने को कहें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.criterion": {
+      "value": "अनुरोध से समस्या दोहराई और समाधान जाँचा जा सकता है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.visual": {
+      "value": "चार कार्ड: देखा गया, अपेक्षित, समस्या दोहराना और दोबारा जाँचना।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.title": {
+      "value": "यह तरीका दूसरे टूल में अपनाएँ",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.objective": {
+      "value": "लक्ष्य बनाए रखें और काम करने का संदर्भ बदलें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.body": {
+      "value": "टूल बदलने पर लक्ष्य और मानदंड वही रहते हैं। प्रोजेक्ट खोलने और परिणाम देखने का तरीका बदल सकता है। यह बदलाव लिखने के लिए दूसरा खाता ज़रूरी नहीं है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.action": {
+      "value": "दूसरे टूल के लिए संदर्भ के निर्देश दोबारा लिखें। अपना अनुरोध सहेजें और वास्तविक अभ्यास में बचा काम दर्ज करें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.expected": {
+      "value": "बदला हुआ अनुरोध और अभ्यास का ईमानदार रिकॉर्ड।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.hint1": {
+      "value": "उपयोगकर्ता, सामग्री, सीमाएँ और परीक्षण बनाए रखें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.hint2": {
+      "value": "दूसरे टूल के अनुसार बातचीत या प्रोजेक्ट फ़ोल्डर के निर्देश बदलें।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.criterion": {
+      "value": "बदला अनुरोध अपेक्षित परिणाम बनाए रखता है और दूसरे टूल का संदर्भ पहचानता है।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.visual": {
+      "value": "एक अनुरोध दो संदर्भों से जुड़ा है: Claude और Codex।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.request.outcome": {
+      "value": "मैंने परिणाम और उसकी मुख्य क्रिया तय की।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.request.context": {
+      "value": "मैंने उपयोगकर्ता और ज़रूरी सामग्री बताई।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.request.limit": {
+      "value": "मैंने काल्पनिक डेटा के साथ केवल योजना माँगी, प्रकाशन नहीं।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.request.test": {
+      "value": "मैंने क्रिया और अपेक्षित परिणाम वाला कम-से-कम एक परीक्षण जोड़ा।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.execution.location": {
+      "value": "मैंने टूल का संदर्भ जाँचा और कोर्स के बाहर अनुरोध भेजा।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.execution.record": {
+      "value": "मैंने मिली बातों और अभी न जाँची गई बातों को दर्ज किया।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.repair.observed": {
+      "value": "मैंने बताया कि क्या हुआ।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.repair.expected": {
+      "value": "मैंने बताया कि क्या होना चाहिए।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.repair.reproduce": {
+      "value": "मैंने समस्या दोहराने का तरीका समझाया।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.repair.retest": {
+      "value": "मैंने सुधार के बाद दोबारा परीक्षण माँगा।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.transfer.preserve": {
+      "value": "मैंने लक्ष्य, संदर्भ, सीमाएँ और मानदंड बनाए रखे।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.transfer.adapt": {
+      "value": "मैंने काम करने की जगह और परिणाम जाँचने का तरीका बदला।",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    }
+  }
+}

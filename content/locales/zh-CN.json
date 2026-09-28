@@ -2,568 +2,568 @@
   "schemaVersion": "1.0.0",
   "courseId": "course.first-site",
   "courseVersion": "0.1.0",
-  "locale": "pt-BR",
+  "locale": "zh-CN",
   "direction": "ltr",
   "humanReviewStatus": "pending",
   "translationMethod": "ai-authored",
   "messages": {
     "course.title": {
-      "value": "Seu primeiro projeto com IA",
+      "value": "用 AI 完成你的第一个项目",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "course.summary": {
-      "value": "Comece com um pedido claro. Aprenda a observar, testar e melhorar o resultado.",
+      "value": "从清晰的请求开始，学会观察、测试和改进结果。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "lesson.title": {
-      "value": "Da ideia ao pedido verificável",
+      "value": "把想法变成可验证的请求",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "lesson.summary": {
-      "value": "Prepare um pedido, experimente na sua ferramenta e aprenda a exigir evidências. Esta aula ainda não publica um site.",
+      "value": "准备请求，在自己的工具中尝试，并学会检查证据。本课还不会发布网站。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.scope": {
-      "value": "Delimitar o resultado",
+      "value": "明确结果范围",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.scope.outcome": {
-      "value": "Descrever uma entrega pequena para um público definido.",
+      "value": "为明确的目标用户描述一个小型交付成果。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.context": {
-      "value": "Dar contexto",
+      "value": "提供背景信息",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.context.outcome": {
-      "value": "Escrever um pedido com objetivo, contexto, limites e teste.",
+      "value": "写出包含目标、背景、限制和测试的请求。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.evidence": {
-      "value": "Verificar evidências",
+      "value": "检查证据",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.evidence.outcome": {
-      "value": "Distinguir uma resposta da ferramenta de um resultado observado.",
+      "value": "区分工具的回复和实际观察到的结果。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.repair": {
-      "value": "Pedir uma correção",
+      "value": "提出修改请求",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.repair.outcome": {
-      "value": "Explicar o problema e como conferir a correção.",
+      "value": "说明问题以及如何验证修复。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.transfer": {
-      "value": "Transferir o método",
+      "value": "迁移方法",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.transfer.outcome": {
-      "value": "Adaptar o mesmo pedido à outra ferramenta.",
+      "value": "将同一请求调整为适合另一款工具的版本。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "tool.claude": {
-      "value": "No Claude desktop, abra a aba Code, escolha Local e selecione a pasta do projeto. A conversa da aba Chat é um contexto diferente. O app inclui Claude Code; o acesso depende de uma assinatura compatível. Confira a resposta e as alterações na aba Code.",
+      "value": "在 Claude 桌面应用中打开 Code 标签页，选择 Local，再选择项目文件夹。Chat 标签页属于不同的工作环境。应用包含 Claude Code，但使用需要符合条件的订阅。请在 Code 中检查回复和改动。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "tool.codex": {
-      "value": "No aplicativo desktop, selecione Codex e confira a pasta ou o projeto da tarefa. Envie o pedido nesse contexto e revise a resposta e os arquivos afetados. Os nomes e a organização da interface podem variar conforme a versão.",
+      "value": "在桌面应用中选择 Codex，确认任务所在的文件夹或项目。在该环境中发送请求，并检查回复和受影响的文件。界面名称和布局可能因版本而异。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "notice.self-report": {
-      "value": "Prática fora do Ganesha. Você executa na sua ferramenta. O registro abaixo é uma autoavaliação; o Ganesha não verifica a execução nem se conecta à sua conta.",
+      "value": "这是在 Ganesha 之外进行的练习。你需要在自己的工具中执行。此处的记录属于自我评估；Ganesha 不会验证执行情况，也不会连接你的账户。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "example.request": {
-      "value": "Quero uma página para um serviço fictício de aulas de música, voltada a iniciantes. Planeje um título, três serviços e uma ação de contato. Use apenas dados fictícios. Por enquanto, não altere arquivos nem publique. Liste o plano e três critérios que eu possa testar; um deles deve verificar a ação de contato.",
+      "value": "我想为面向初学者的虚构音乐课程服务制作一个页面。请规划一个标题、三项服务和一个联系操作。只使用虚构数据。暂时不要修改文件或发布。请列出计划和三个我可以测试的标准，其中一个必须检查联系操作。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "example.failure": {
-      "value": "Cenário simulado: o pedido exige uma ação de contato. No preview, você vê o texto “Fale comigo”, mas clicar nele não faz nada. Nenhuma ferramenta real foi executada aqui.",
+      "value": "模拟情境：请求要求提供联系操作。预览中显示“联系我”，但点击后没有任何反应。这里没有运行任何真实工具。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.title": {
-      "value": "Comece com uma entrega pequena",
+      "value": "从小型成果开始",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.objective": {
-      "value": "Escolher um resultado que você consiga conferir.",
+      "value": "选择一个你能检查的结果。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.body": {
-      "value": "Vamos preparar uma página de apresentação de um serviço fictício. Primeiro, você pede um plano. Nas próximas aulas planejadas, esse pedido poderá virar uma página testada e publicada.",
+      "value": "我们将为一项虚构服务准备介绍页面。先请求一个计划。在后续规划中的课程里，这个请求可以逐步变成经过测试并发布的页面。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.action": {
-      "value": "Escolha um serviço fictício e complete mentalmente: a página ajuda quem a fazer o quê?",
+      "value": "选择一项虚构服务，想一想：这个页面帮助谁完成什么事情？",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.expected": {
-      "value": "Um público e uma ação principal definidos.",
+      "value": "明确的目标用户和主要操作。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.hint1": {
-      "value": "Pense em uma pessoa que visitaria a página.",
+      "value": "想象一位会访问页面的人。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.hint2": {
-      "value": "Exemplo: iniciantes em música querem conhecer as aulas e entrar em contato.",
+      "value": "例如：音乐初学者希望了解课程并取得联系。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.criterion": {
-      "value": "Você consegue nomear o público e a ação principal.",
+      "value": "你能说清目标用户和主要操作。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.visual": {
-      "value": "Três cartões: público, resultado e ação principal.",
+      "value": "三张卡片：目标用户、结果和主要操作。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.title": {
-      "value": "Monte um pedido útil",
+      "value": "组织一个有用的请求",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.objective": {
-      "value": "Escrever objetivo, contexto, limite e teste no mesmo pedido.",
+      "value": "在一个请求中包含目标、背景、限制和测试。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.body": {
-      "value": "A ferramenta precisa saber o que entregar e como você decidirá se está bom. Use o exemplo como apoio e adapte o serviço. Este campo é um ensaio: nada será enviado ao Claude ou ao Codex.",
+      "value": "工具需要知道要交付什么，以及你将如何判断结果。参考示例并替换服务内容。这个输入框用于练习，不会向 Claude 或 Codex 发送任何内容。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.action": {
-      "value": "Escreva seu pedido com público, conteúdo desejado, limite e um teste observável.",
+      "value": "写出包含目标用户、所需内容、限制和可观察测试的请求。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.expected": {
-      "value": "Um pedido salvo que outra pessoa consiga conferir.",
+      "value": "保存一份其他人也能检查的请求。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.hint1": {
-      "value": "Troque “faça algo bonito” por elementos que devem aparecer.",
+      "value": "把“做得漂亮一点”换成必须出现的具体元素。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.hint2": {
-      "value": "Inclua: apenas planejar agora; usar dados fictícios; explicar como testar o contato.",
+      "value": "加入这些要求：暂时只做计划；使用虚构数据；说明如何测试联系功能。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.criterion": {
-      "value": "O pedido inclui os quatro itens da rubrica.",
+      "value": "请求包含评估清单中的全部四项。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.visual": {
-      "value": "Pedido separado em objetivo, contexto, limites e teste.",
+      "value": "按目标、背景、限制和测试拆分的请求。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.title": {
-      "value": "Verificação 1: o pedido é verificável?",
+      "value": "检查 1：请求可以验证吗？",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.objective": {
-      "value": "Reconhecer um critério que pode ser testado.",
+      "value": "识别可以测试的标准。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.body": {
-      "value": "Uma impressão geral pode orientar o estilo. Para verificar o resultado, você também precisa de um comportamento observável.",
+      "value": "整体印象可以指导风格。要检查结果，还需要能观察到的行为。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.action": {
-      "value": "Escolha o critério mais útil para testar a ação de contato.",
+      "value": "选择最有助于测试联系操作的标准。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.expected": {
-      "value": "Uma escolha acompanhada da explicação do critério.",
+      "value": "一个选择，以及对该标准的解释。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.hint1": {
-      "value": "Qual opção descreve algo que você pode fazer e observar?",
+      "value": "哪个选项描述了你可以执行并观察的事情？",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.hint2": {
-      "value": "Um teste combina uma ação do visitante com o resultado esperado.",
+      "value": "测试把访问者的操作与预期结果结合起来。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.criterion": {
-      "value": "A alternativa escolhida descreve ação e resultado observáveis.",
+      "value": "所选答案描述了可观察的操作和结果。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.visual": {
-      "value": "Três alternativas de critério de aceitação.",
+      "value": "三个可选的验收标准。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.question": {
-      "value": "Qual critério permite verificar o contato?",
+      "value": "哪个标准可以检查联系功能？",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.a": {
-      "value": "A página deve parecer incrível.",
+      "value": "页面看起来必须很棒。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.a.feedback": {
-      "value": "Isso expressa uma preferência, mas não define como testar o contato.",
+      "value": "这表达了偏好，但没有定义如何测试联系功能。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.b": {
-      "value": "Ao clicar em contato, a página mostra o endereço fictício definido no pedido.",
+      "value": "点击联系后，页面显示请求中指定的虚构地址。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.b.feedback": {
-      "value": "Você pode clicar e comparar o endereço mostrado com o pedido. Há uma ação e um resultado observáveis.",
+      "value": "你可以点击，并将显示的地址与请求比较。操作和结果都能观察到。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.c": {
-      "value": "A ferramenta deve dizer que terminou.",
+      "value": "工具应该说它已经完成了。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.c.feedback": {
-      "value": "A mensagem de conclusão não mostra se a ação de contato funciona.",
+      "value": "完成消息不能证明联系操作是否有效。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.success": {
-      "value": "Você escolheu um comportamento verificável. Use o mesmo princípio no seu pedido.",
+      "value": "你选择了可验证的行为。把同样的原则用于自己的请求。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.retry": {
-      "value": "Tente novamente: procure uma ação e um resultado que você consiga observar.",
+      "value": "再试一次：寻找你能观察到的操作和结果。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.title": {
-      "value": "Experimente na sua ferramenta",
+      "value": "在自己的工具中尝试",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.objective": {
-      "value": "Enviar o pedido no contexto correto e registrar a resposta real.",
+      "value": "在正确的环境中发送请求，并记录真实回复。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.body": {
-      "value": "Abra a ferramenta escolhida e confira as orientações abaixo. Envie seu pedido de planejamento. Leia a resposta e compare com os critérios. Se você ainda não tem acesso, guarde o pedido e retome esta prática depois.",
+      "value": "打开所选工具，查看下方说明。发送你的规划请求，阅读回复并与标准比较。如果暂时无法使用工具，请保存请求，稍后再完成这项练习。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.action": {
-      "value": "Envie o pedido fora do curso. Registre onde trabalhou e o que recebeu, sem incluir dados privados.",
+      "value": "在课程之外发送请求。记录你在哪里操作、收到了什么，不要包含私人数据。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.expected": {
-      "value": "Um registro do contexto, da resposta e de algo que ainda precisa ser conferido.",
+      "value": "记录工作环境、回复，以及仍需确认的事项。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.hint1": {
-      "value": "Antes de enviar, confirme a conversa ou a pasta do projeto.",
+      "value": "发送前，确认对话或项目文件夹。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.hint2": {
-      "value": "Anote: pedi um plano; recebi estes itens; ainda não abri nem testei uma página.",
+      "value": "可以记录：我请求了计划；收到了这些内容；尚未打开或测试页面。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.criterion": {
-      "value": "O registro distingue o que você pediu, recebeu e verificou.",
+      "value": "记录区分了请求的内容、收到的内容和已验证的内容。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.visual": {
-      "value": "Fluxo: abrir ferramenta, conferir contexto, enviar pedido, revisar resposta.",
+      "value": "流程：打开工具、确认环境、发送请求、检查回复。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.title": {
-      "value": "Verificação 2: o que foi comprovado?",
+      "value": "检查 2：什么已经得到证明？",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.objective": {
-      "value": "Reconhecer quando falta evidência de execução.",
+      "value": "识别缺少执行证据的情况。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.body": {
-      "value": "Considere este cenário simulado: a ferramenta responde “A página está pronta”. Você ainda não abriu nenhum arquivo, preview ou endereço público.",
+      "value": "考虑这个模拟情境：工具回复“页面已完成”。你还没有打开任何文件、预览或公开地址。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.action": {
-      "value": "Escolha a conclusão sustentada pelas informações disponíveis.",
+      "value": "选择现有信息能够支持的结论。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.expected": {
-      "value": "Uma conclusão que não confunda texto com comprovação.",
+      "value": "不把文字与证据混为一谈的结论。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.hint1": {
-      "value": "O que você realmente observou até agora?",
+      "value": "到目前为止，你实际观察到了什么？",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.hint2": {
-      "value": "Uma afirmação da ferramenta ainda precisa ser comparada com o resultado.",
+      "value": "工具的说法仍需要与实际结果进行比较。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.criterion": {
-      "value": "A resposta reconhece a necessidade de abrir e testar o resultado.",
+      "value": "答案承认需要打开并测试结果。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.visual": {
-      "value": "Uma mensagem de conclusão ao lado de uma área de evidência ainda vazia.",
+      "value": "一条完成消息，旁边是仍然空白的证据区域。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.question": {
-      "value": "O que você pode concluir nesse momento?",
+      "value": "此时你能得出什么结论？",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.a": {
-      "value": "O site já está publicado e acessível a todos.",
+      "value": "网站已经发布，所有人都可以访问。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.a.feedback": {
-      "value": "Você não abriu um endereço público. A mensagem não comprova publicação.",
+      "value": "你尚未打开公开地址。消息不能证明网站已经发布。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.b": {
-      "value": "Todos os critérios foram testados com sucesso.",
+      "value": "所有标准都已成功通过测试。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.b.feedback": {
-      "value": "Não há registro de testes observados. Concluir o pedido não comprova cada critério.",
+      "value": "没有实际观察测试的记录。请求完成不等于每项标准都得到证明。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.c": {
-      "value": "Recebi uma afirmação; preciso abrir o resultado e testar os critérios.",
+      "value": "我收到了一项说法；需要打开结果并测试各项标准。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.c.feedback": {
-      "value": "Correto: confira o resultado e registre o que observou antes de afirmar que funciona.",
+      "value": "正确：先检查结果并记录观察，再确认它是否有效。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.success": {
-      "value": "Você separou a mensagem da evidência. Isso ajuda a encontrar erros cedo.",
+      "value": "你区分了消息和证据，这有助于尽早发现错误。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.retry": {
-      "value": "Volte ao cenário: você só leu uma mensagem. Que verificação ainda falta?",
+      "value": "回到情境：你只读到了一条消息。还缺少什么检查？",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.title": {
-      "value": "Peça uma correção específica",
+      "value": "提出具体的修改请求",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.objective": {
-      "value": "Transformar um problema observado em um pedido de correção.",
+      "value": "把观察到的问题转化为修改请求。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.body": {
-      "value": "Use o cenário abaixo para praticar. Explique o que aconteceu, o que deveria acontecer e como testar de novo. O exercício é simulado e não altera seu projeto.",
+      "value": "用下方情境练习。说明发生了什么、应该发生什么，以及如何重新测试。本练习是模拟的，不会修改你的项目。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.action": {
-      "value": "Escreva um pedido para corrigir a ação de contato e repetir o teste.",
+      "value": "写一个请求，修复联系操作并重复测试。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.expected": {
-      "value": "Um pedido com observado, esperado, reprodução e reteste.",
+      "value": "请求包含实际行为、预期行为、复现步骤和重新测试。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.hint1": {
-      "value": "Comece por: ao clicar em “Fale comigo”, nada acontece.",
+      "value": "可以这样开始：点击“联系我”后没有任何反应。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.hint2": {
-      "value": "Depois indique o endereço fictício esperado e peça para clicar novamente após a correção.",
+      "value": "然后说明应显示的虚构地址，并要求修复后再次点击测试。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.criterion": {
-      "value": "O pedido permite reproduzir o problema e verificar a solução.",
+      "value": "请求足以让人复现问题并验证解决方案。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.visual": {
-      "value": "Quatro cartões: observado, esperado, reprodução e reteste.",
+      "value": "四张卡片：实际行为、预期行为、复现和重新测试。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.title": {
-      "value": "Leve o método para outra ferramenta",
+      "value": "把方法应用到另一款工具",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.objective": {
-      "value": "Preservar o objetivo e adaptar o contexto de execução.",
+      "value": "保留目标，调整执行环境。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.body": {
-      "value": "O objetivo e os critérios continuam os mesmos ao trocar de ferramenta. O modo de abrir o projeto e inspecionar o resultado pode mudar. Não é preciso ter uma segunda conta para escrever essa adaptação.",
+      "value": "更换工具时，目标和标准保持不变。打开项目和检查结果的方式可能改变。完成这次文字调整不需要第二个账户。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.action": {
-      "value": "Reescreva a orientação de contexto para a outra ferramenta. Guarde seu pedido e registre o que ficou pendente na prática real.",
+      "value": "为另一款工具重写工作环境说明。保存请求，并记录真实练习中尚未完成的部分。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.expected": {
-      "value": "Um pedido adaptado e um registro honesto do que foi praticado.",
+      "value": "一份调整后的请求，以及对练习情况的如实记录。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.hint1": {
-      "value": "Preserve público, conteúdo, limites e teste.",
+      "value": "保留目标用户、内容、限制和测试。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.hint2": {
-      "value": "Mude a orientação sobre conversa ou pasta do projeto conforme a ferramenta de destino.",
+      "value": "根据目标工具，修改有关对话或项目文件夹的说明。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.criterion": {
-      "value": "A adaptação mantém o resultado esperado e identifica o contexto da outra ferramenta.",
+      "value": "调整后的请求保留预期结果，并明确另一款工具的工作环境。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.visual": {
-      "value": "Um mesmo pedido ligado a dois contextos: Claude e Codex.",
+      "value": "同一个请求连接到 Claude 和 Codex 两种环境。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.request.outcome": {
-      "value": "Defini a entrega e sua ação principal.",
+      "value": "我明确了交付成果及其主要操作。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.request.context": {
-      "value": "Informei o público e o conteúdo necessário.",
+      "value": "我说明了目标用户和所需内容。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.request.limit": {
-      "value": "Pedi apenas um plano com dados fictícios, sem publicar.",
+      "value": "我只要求使用虚构数据制定计划，不进行发布。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.request.test": {
-      "value": "Incluí pelo menos um teste com ação e resultado esperado.",
+      "value": "我加入了至少一个包含操作和预期结果的测试。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.execution.location": {
-      "value": "Confirmei o contexto na ferramenta e enviei o pedido fora do curso.",
+      "value": "我确认了工具中的环境，并在课程之外发送了请求。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.execution.record": {
-      "value": "Registrei o que recebi e o que ainda não verifiquei.",
+      "value": "我记录了收到的内容和尚未验证的内容。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.repair.observed": {
-      "value": "Descrevi o que aconteceu.",
+      "value": "我描述了实际发生的情况。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.repair.expected": {
-      "value": "Descrevi o que deveria acontecer.",
+      "value": "我描述了应该发生的情况。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.repair.reproduce": {
-      "value": "Expliquei como reproduzir o problema.",
+      "value": "我说明了如何复现问题。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.repair.retest": {
-      "value": "Pedi para repetir o teste após a correção.",
+      "value": "我要求修复后重复测试。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.transfer.preserve": {
-      "value": "Mantive objetivo, contexto, limites e critérios.",
+      "value": "我保留了目标、背景、限制和标准。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.transfer.adapt": {
-      "value": "Adaptei onde trabalhar e como inspecionar o resultado.",
+      "value": "我调整了工作位置和检查结果的方式。",
       "status": "translated",
       "sourceRevision": "0.1.0"
     }

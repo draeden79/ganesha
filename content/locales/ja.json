@@ -1,0 +1,571 @@
+{
+  "schemaVersion": "1.0.0",
+  "courseId": "course.first-site",
+  "courseVersion": "0.1.0",
+  "locale": "ja",
+  "direction": "ltr",
+  "humanReviewStatus": "pending",
+  "translationMethod": "ai-authored",
+  "messages": {
+    "course.title": {
+      "value": "AIで作る最初のプロジェクト",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "course.summary": {
+      "value": "明確な依頼から始めましょう。結果を観察し、テストし、改善する方法を学びます。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "lesson.title": {
+      "value": "アイデアを検証できる依頼にする",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "lesson.summary": {
+      "value": "依頼を準備して自分のツールで試し、根拠を確認する方法を学びます。このレッスンでは、まだサイトを公開しません。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.scope": {
+      "value": "成果を絞り込む",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.scope.outcome": {
+      "value": "対象者を決め、小さな成果物を説明できる。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.context": {
+      "value": "背景情報を伝える",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.context.outcome": {
+      "value": "目的、背景情報、制約、テストを含む依頼を書ける。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.evidence": {
+      "value": "根拠を確認する",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.evidence.outcome": {
+      "value": "ツールの返答と、自分で観察した結果を区別できる。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.repair": {
+      "value": "修正を依頼する",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.repair.outcome": {
+      "value": "問題と、修正を確認する方法を説明できる。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.transfer": {
+      "value": "方法を応用する",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.transfer.outcome": {
+      "value": "同じ依頼を別のツールに合わせて調整できる。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "tool.claude": {
+      "value": "ClaudeのデスクトップアプリでCodeタブを開き、Localを選んでプロジェクトのフォルダーを指定します。Chatタブは別の作業環境です。アプリにはClaude Codeが含まれますが、利用には対応するサブスクリプションが必要です。Codeで返答と変更内容を確認してください。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "tool.codex": {
+      "value": "デスクトップアプリでCodexを選び、タスクのフォルダーまたはプロジェクトを確認します。その環境で依頼を送り、返答と変更されたファイルを確認してください。画面の名称や配置はバージョンにより異なる場合があります。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "notice.self-report": {
+      "value": "Ganeshaの外で行う実習です。自分のツールで実行してください。ここでの記録は自己評価です。Ganeshaは実行を確認せず、あなたのアカウントにも接続しません。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "example.request": {
+      "value": "初心者向けの架空の音楽教室のページを作りたいです。見出し、3つのサービス、連絡用の操作を計画してください。架空のデータだけを使ってください。今はファイルを変更したり、公開したりしないでください。計画と、私がテストできる3つの基準を挙げてください。そのうち1つは連絡用の操作を確認する基準にしてください。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "example.failure": {
+      "value": "模擬シナリオ：依頼には連絡用の操作が必要です。プレビューには「お問い合わせ」と表示されていますが、クリックしても何も起きません。ここでは実際のツールは実行されていません。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.title": {
+      "value": "小さな成果物から始める",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.objective": {
+      "value": "自分で確認できる成果を選ぶ。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.body": {
+      "value": "架空のサービスを紹介するページを準備します。まずは計画を依頼しましょう。今後予定されているレッスンでは、この依頼をもとにページを作り、テストして公開する流れを学びます。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.action": {
+      "value": "架空のサービスを選び、「このページは、誰が何をするのを助けるか」を考えてください。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.expected": {
+      "value": "対象者と主な操作が決まっている。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.hint1": {
+      "value": "ページを見る人を1人思い浮かべましょう。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.hint2": {
+      "value": "例：音楽初心者がレッスンの内容を知り、問い合わせる。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.criterion": {
+      "value": "対象者と主な操作を説明できる。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.visual": {
+      "value": "対象者、成果、主な操作の3枚のカード。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.title": {
+      "value": "役に立つ依頼を組み立てる",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.objective": {
+      "value": "目的、背景情報、制約、テストを1つの依頼に含める。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.body": {
+      "value": "ツールには、何を作るのか、どのように評価するのかを伝える必要があります。例を参考にサービスを変更してください。この入力欄は練習用で、ClaudeやCodexには送信されません。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.action": {
+      "value": "対象者、必要な内容、制約、観察できるテストを含む依頼を書いてください。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.expected": {
+      "value": "他の人も確認できる依頼が保存されている。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.hint1": {
+      "value": "「きれいにして」を、表示する具体的な要素に置き換えましょう。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.hint2": {
+      "value": "今は計画だけ、架空のデータを使う、連絡機能のテスト方法を説明する、という条件を入れましょう。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.criterion": {
+      "value": "依頼に評価基準の4項目が含まれている。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.visual": {
+      "value": "目的、背景情報、制約、テストに分けた依頼。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.title": {
+      "value": "確認1：その依頼は検証できる？",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.objective": {
+      "value": "テストできる基準を見分ける。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.body": {
+      "value": "全体的な印象はデザインの方向を決める助けになります。結果を確認するには、観察できる動作も必要です。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.action": {
+      "value": "連絡用の操作をテストするのに最も役立つ基準を選んでください。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.expected": {
+      "value": "選んだ基準と、その理由が確認できる。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.hint1": {
+      "value": "実際に操作して観察できるのはどの選択肢ですか？",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.hint2": {
+      "value": "テストは、訪問者の操作と期待する結果を組み合わせます。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.criterion": {
+      "value": "選んだ答えが、観察できる操作と結果を示している。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.visual": {
+      "value": "受け入れ基準の3つの選択肢。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.question": {
+      "value": "連絡機能を確認できる基準はどれですか？",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.a": {
+      "value": "ページの見た目がすばらしいこと。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.a.feedback": {
+      "value": "好みは伝わりますが、連絡機能をどうテストするかは決まっていません。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.b": {
+      "value": "連絡用の操作をクリックすると、依頼で指定した架空のアドレスが表示されること。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.b.feedback": {
+      "value": "クリックして、表示されたアドレスを依頼と比較できます。操作も結果も観察できます。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.c": {
+      "value": "ツールが完了したと言うこと。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.c.feedback": {
+      "value": "完了メッセージだけでは、連絡用の操作が動くかは分かりません。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.success": {
+      "value": "検証できる動作を選べました。自分の依頼にも同じ考え方を使いましょう。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.retry": {
+      "value": "もう一度考えましょう。観察できる操作と結果を探してください。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.title": {
+      "value": "自分のツールで試す",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.objective": {
+      "value": "正しい作業環境で依頼を送り、実際の返答を記録する。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.body": {
+      "value": "選んだツールを開き、下の案内を確認してください。計画の依頼を送り、返答を読んで基準と比較しましょう。まだ利用できない場合は、依頼を保存して後で実習に戻ってください。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.action": {
+      "value": "コースの外で依頼を送ってください。個人情報を含めずに、どこで作業し、何を受け取ったかを記録してください。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.expected": {
+      "value": "作業環境、返答、まだ確認が必要な点が記録されている。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.hint1": {
+      "value": "送信前に、会話またはプロジェクトのフォルダーを確認しましょう。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.hint2": {
+      "value": "「計画を依頼した。この項目を受け取った。まだページは開いておらず、テストもしていない」と記録しましょう。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.criterion": {
+      "value": "依頼したこと、受け取ったこと、確認したことが区別されている。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.visual": {
+      "value": "ツールを開く、環境を確認する、依頼を送る、返答を確認する流れ。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.title": {
+      "value": "確認2：何が確かめられた？",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.objective": {
+      "value": "実行の根拠が足りない場面を見分ける。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.body": {
+      "value": "模擬シナリオです。ツールが「ページができました」と返答しました。あなたはまだファイル、プレビュー、公開URLを開いていません。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.action": {
+      "value": "今ある情報から言える結論を選んでください。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.expected": {
+      "value": "文章と実際の証拠を混同しない結論。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.hint1": {
+      "value": "これまでに自分で観察したのは何ですか？",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.hint2": {
+      "value": "ツールの主張は、実際の結果と照らし合わせる必要があります。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.criterion": {
+      "value": "結果を開いてテストする必要があると認識している。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.visual": {
+      "value": "完了メッセージと、まだ空の証拠欄。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.question": {
+      "value": "この時点で何が言えますか？",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.a": {
+      "value": "サイトは公開され、誰でもアクセスできる。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.a.feedback": {
+      "value": "公開URLを開いていません。メッセージだけでは公開の証明になりません。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.b": {
+      "value": "すべての基準をテストし、合格した。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.b.feedback": {
+      "value": "観察したテストの記録がありません。依頼の完了は、各基準の達成を証明しません。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.c": {
+      "value": "主張を受け取った段階なので、結果を開いて基準をテストする必要がある。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.c.feedback": {
+      "value": "そのとおりです。動くと断言する前に結果を確認し、観察したことを記録しましょう。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.success": {
+      "value": "メッセージと根拠を区別できました。早い段階で誤りを見つける助けになります。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.retry": {
+      "value": "シナリオを振り返りましょう。読んだのはメッセージだけです。まだ何の確認が必要ですか？",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.title": {
+      "value": "具体的な修正を依頼する",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.objective": {
+      "value": "観察した問題を修正依頼に変える。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.body": {
+      "value": "下のシナリオで練習しましょう。何が起きたか、何が起きるべきか、どう再テストするかを説明してください。これは模擬演習で、プロジェクトは変更されません。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.action": {
+      "value": "連絡用の操作を修正し、テストを繰り返すための依頼を書いてください。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.expected": {
+      "value": "実際の動作、期待する動作、再現方法、再テストを含む依頼。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.hint1": {
+      "value": "「『お問い合わせ』をクリックしても何も起きません」から始めましょう。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.hint2": {
+      "value": "表示すべき架空のアドレスを指定し、修正後にもう一度クリックするよう依頼しましょう。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.criterion": {
+      "value": "問題を再現し、解決を確認できる依頼になっている。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.visual": {
+      "value": "実際の動作、期待する動作、再現、再テストの4枚のカード。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.title": {
+      "value": "別のツールでも方法を使う",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.objective": {
+      "value": "目的を保ち、実行する環境に合わせる。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.body": {
+      "value": "ツールを変えても、目的と基準は同じです。プロジェクトの開き方や結果の確認方法は変わる場合があります。この書き換えに、もう1つのアカウントは必要ありません。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.action": {
+      "value": "別のツールに合わせて作業環境の説明を書き換えてください。依頼を保存し、実際の実習で未完了の点を記録しましょう。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.expected": {
+      "value": "調整した依頼と、実習についての正確な記録。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.hint1": {
+      "value": "対象者、内容、制約、テストは保ちましょう。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.hint2": {
+      "value": "移行先のツールに合わせ、会話やプロジェクトのフォルダーに関する案内を変えましょう。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.criterion": {
+      "value": "期待する成果を保ち、別のツールの作業環境を説明している。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.visual": {
+      "value": "同じ依頼がClaudeとCodexの2つの環境につながっている図。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.request.outcome": {
+      "value": "成果物と主な操作を決めた。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.request.context": {
+      "value": "対象者と必要な内容を伝えた。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.request.limit": {
+      "value": "架空のデータで計画だけを作り、公開しないよう依頼した。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.request.test": {
+      "value": "操作と期待する結果を含むテストを1つ以上入れた。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.execution.location": {
+      "value": "ツールの作業環境を確認し、コースの外で依頼を送った。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.execution.record": {
+      "value": "受け取った内容と、まだ確認していない点を記録した。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.repair.observed": {
+      "value": "何が起きたかを説明した。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.repair.expected": {
+      "value": "何が起きるべきかを説明した。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.repair.reproduce": {
+      "value": "問題の再現方法を説明した。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.repair.retest": {
+      "value": "修正後に再テストするよう依頼した。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.transfer.preserve": {
+      "value": "目的、背景情報、制約、基準を保った。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.transfer.adapt": {
+      "value": "作業する場所と結果の確認方法を調整した。",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    }
+  }
+}

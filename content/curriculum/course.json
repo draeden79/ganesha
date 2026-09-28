@@ -165,7 +165,7 @@
     {
       "id": "lesson.first-request",
       "order": 1,
-      "status": "draft",
+      "status": "ready",
       "titleKey": "lesson.title",
       "summaryKey": "lesson.summary",
       "objectiveKeys": [

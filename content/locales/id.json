@@ -2,568 +2,568 @@
   "schemaVersion": "1.0.0",
   "courseId": "course.first-site",
   "courseVersion": "0.1.0",
-  "locale": "pt-BR",
+  "locale": "id",
   "direction": "ltr",
   "humanReviewStatus": "pending",
   "translationMethod": "ai-authored",
   "messages": {
     "course.title": {
-      "value": "Seu primeiro projeto com IA",
+      "value": "Proyek pertamamu dengan AI",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "course.summary": {
-      "value": "Comece com um pedido claro. Aprenda a observar, testar e melhorar o resultado.",
+      "value": "Mulai dengan permintaan yang jelas. Pelajari cara mengamati, menguji, dan memperbaiki hasil.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "lesson.title": {
-      "value": "Da ideia ao pedido verificável",
+      "value": "Dari ide ke permintaan yang bisa diuji",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "lesson.summary": {
-      "value": "Prepare um pedido, experimente na sua ferramenta e aprenda a exigir evidências. Esta aula ainda não publica um site.",
+      "value": "Siapkan permintaan, coba di alat pilihanmu, dan pelajari cara meminta bukti. Pelajaran ini belum menerbitkan situs.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.scope": {
-      "value": "Delimitar o resultado",
+      "value": "Tentukan hasil",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.scope.outcome": {
-      "value": "Descrever uma entrega pequena para um público definido.",
+      "value": "Jelaskan hasil kerja kecil untuk pengguna yang jelas.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.context": {
-      "value": "Dar contexto",
+      "value": "Berikan konteks",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.context.outcome": {
-      "value": "Escrever um pedido com objetivo, contexto, limites e teste.",
+      "value": "Tulis permintaan dengan tujuan, konteks, batasan, dan pengujian.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.evidence": {
-      "value": "Verificar evidências",
+      "value": "Periksa bukti",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.evidence.outcome": {
-      "value": "Distinguir uma resposta da ferramenta de um resultado observado.",
+      "value": "Bedakan jawaban alat dari hasil yang diamati.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.repair": {
-      "value": "Pedir uma correção",
+      "value": "Minta perbaikan",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.repair.outcome": {
-      "value": "Explicar o problema e como conferir a correção.",
+      "value": "Jelaskan masalah dan cara memeriksa perbaikannya.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.transfer": {
-      "value": "Transferir o método",
+      "value": "Terapkan metode di alat lain",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "competency.transfer.outcome": {
-      "value": "Adaptar o mesmo pedido à outra ferramenta.",
+      "value": "Sesuaikan permintaan yang sama untuk alat lain.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "tool.claude": {
-      "value": "No Claude desktop, abra a aba Code, escolha Local e selecione a pasta do projeto. A conversa da aba Chat é um contexto diferente. O app inclui Claude Code; o acesso depende de uma assinatura compatível. Confira a resposta e as alterações na aba Code.",
+      "value": "Di Claude desktop, buka tab Code, pilih Local, lalu pilih folder proyek. Tab Chat memiliki konteks berbeda. Aplikasi ini menyertakan Claude Code; akses memerlukan langganan yang sesuai. Periksa jawaban dan perubahan di Code.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "tool.codex": {
-      "value": "No aplicativo desktop, selecione Codex e confira a pasta ou o projeto da tarefa. Envie o pedido nesse contexto e revise a resposta e os arquivos afetados. Os nomes e a organização da interface podem variar conforme a versão.",
+      "value": "Di aplikasi desktop, pilih Codex dan periksa folder atau proyek tugas. Kirim permintaan dalam konteks itu, lalu periksa jawaban dan berkas yang terpengaruh. Nama dan tata letak antarmuka dapat berbeda menurut versi.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "notice.self-report": {
-      "value": "Prática fora do Ganesha. Você executa na sua ferramenta. O registro abaixo é uma autoavaliação; o Ganesha não verifica a execução nem se conecta à sua conta.",
+      "value": "Latihan di luar Ganesha. Kamu menjalankannya di alatmu sendiri. Catatanmu adalah penilaian mandiri; Ganesha tidak memverifikasi eksekusi atau terhubung ke akunmu.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "example.request": {
-      "value": "Quero uma página para um serviço fictício de aulas de música, voltada a iniciantes. Planeje um título, três serviços e uma ação de contato. Use apenas dados fictícios. Por enquanto, não altere arquivos nem publique. Liste o plano e três critérios que eu possa testar; um deles deve verificar a ação de contato.",
+      "value": "Saya ingin halaman untuk layanan kursus musik fiktif bagi pemula. Rencanakan judul, tiga layanan, dan tindakan untuk menghubungi penyedia. Gunakan data fiktif saja. Untuk saat ini, jangan ubah berkas atau terbitkan apa pun. Tuliskan rencana dan tiga kriteria yang bisa saya uji; salah satunya harus memeriksa tindakan kontak.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "example.failure": {
-      "value": "Cenário simulado: o pedido exige uma ação de contato. No preview, você vê o texto “Fale comigo”, mas clicar nele não faz nada. Nenhuma ferramenta real foi executada aqui.",
+      "value": "Skenario simulasi: permintaan mensyaratkan tindakan kontak. Di pratinjau, terlihat teks “Hubungi saya”, tetapi mengekliknya tidak menghasilkan apa pun. Tidak ada alat nyata yang dijalankan di sini.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.title": {
-      "value": "Comece com uma entrega pequena",
+      "value": "Mulai dengan hasil kerja kecil",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.objective": {
-      "value": "Escolher um resultado que você consiga conferir.",
+      "value": "Pilih hasil yang bisa kamu periksa.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.body": {
-      "value": "Vamos preparar uma página de apresentação de um serviço fictício. Primeiro, você pede um plano. Nas próximas aulas planejadas, esse pedido poderá virar uma página testada e publicada.",
+      "value": "Kita akan menyiapkan halaman untuk layanan fiktif. Minta rencana terlebih dahulu. Dalam pelajaran lanjutan yang direncanakan, permintaan ini dapat menjadi halaman yang diuji dan diterbitkan.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.action": {
-      "value": "Escolha um serviço fictício e complete mentalmente: a página ajuda quem a fazer o quê?",
+      "value": "Pilih layanan fiktif dan pikirkan: halaman ini membantu siapa melakukan apa?",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.expected": {
-      "value": "Um público e uma ação principal definidos.",
+      "value": "Pengguna sasaran dan tindakan utama yang jelas.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.hint1": {
-      "value": "Pense em uma pessoa que visitaria a página.",
+      "value": "Bayangkan seseorang yang akan mengunjungi halaman.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.hint2": {
-      "value": "Exemplo: iniciantes em música querem conhecer as aulas e entrar em contato.",
+      "value": "Contoh: pemula musik ingin mengenal kursus dan menghubungi pengajarnya.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.criterion": {
-      "value": "Você consegue nomear o público e a ação principal.",
+      "value": "Kamu dapat menyebutkan pengguna sasaran dan tindakan utama.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sscope.visual": {
-      "value": "Três cartões: público, resultado e ação principal.",
+      "value": "Tiga kartu: pengguna sasaran, hasil, dan tindakan utama.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.title": {
-      "value": "Monte um pedido útil",
+      "value": "Susun permintaan yang berguna",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.objective": {
-      "value": "Escrever objetivo, contexto, limite e teste no mesmo pedido.",
+      "value": "Gabungkan tujuan, konteks, batasan, dan pengujian dalam satu permintaan.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.body": {
-      "value": "A ferramenta precisa saber o que entregar e como você decidirá se está bom. Use o exemplo como apoio e adapte o serviço. Este campo é um ensaio: nada será enviado ao Claude ou ao Codex.",
+      "value": "Alat perlu tahu apa yang harus dihasilkan dan bagaimana kamu akan menilainya. Gunakan contoh lalu sesuaikan layanannya. Kolom ini untuk latihan: tidak ada yang dikirim ke Claude atau Codex.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.action": {
-      "value": "Escreva seu pedido com público, conteúdo desejado, limite e um teste observável.",
+      "value": "Tulis permintaan dengan pengguna sasaran, konten yang diinginkan, batasan, dan pengujian yang bisa diamati.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.expected": {
-      "value": "Um pedido salvo que outra pessoa consiga conferir.",
+      "value": "Permintaan tersimpan yang dapat diperiksa orang lain.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.hint1": {
-      "value": "Troque “faça algo bonito” por elementos que devem aparecer.",
+      "value": "Ganti “buat sesuatu yang indah” dengan elemen yang harus muncul.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.hint2": {
-      "value": "Inclua: apenas planejar agora; usar dados fictícios; explicar como testar o contato.",
+      "value": "Sertakan: hanya merencanakan dahulu; data fiktif; jelaskan cara menguji kontak.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.criterion": {
-      "value": "O pedido inclui os quatro itens da rubrica.",
+      "value": "Permintaan mencakup keempat unsur rubrik.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sbrief.visual": {
-      "value": "Pedido separado em objetivo, contexto, limites e teste.",
+      "value": "Permintaan dibagi menjadi tujuan, konteks, batasan, dan pengujian.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.title": {
-      "value": "Verificação 1: o pedido é verificável?",
+      "value": "Pemeriksaan 1: apakah permintaan bisa diuji?",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.objective": {
-      "value": "Reconhecer um critério que pode ser testado.",
+      "value": "Kenali kriteria yang dapat diuji.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.body": {
-      "value": "Uma impressão geral pode orientar o estilo. Para verificar o resultado, você também precisa de um comportamento observável.",
+      "value": "Kesan umum dapat membantu menentukan gaya. Untuk memeriksa hasil, kamu juga perlu perilaku yang bisa diamati.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.action": {
-      "value": "Escolha o critério mais útil para testar a ação de contato.",
+      "value": "Pilih kriteria yang paling berguna untuk menguji tindakan kontak.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.expected": {
-      "value": "Uma escolha acompanhada da explicação do critério.",
+      "value": "Pilihan beserta penjelasan kriterianya.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.hint1": {
-      "value": "Qual opção descreve algo que você pode fazer e observar?",
+      "value": "Pilihan mana menggambarkan sesuatu yang bisa kamu lakukan dan amati?",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.hint2": {
-      "value": "Um teste combina uma ação do visitante com o resultado esperado.",
+      "value": "Pengujian menggabungkan tindakan pengunjung dengan hasil yang diharapkan.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.criterion": {
-      "value": "A alternativa escolhida descreve ação e resultado observáveis.",
+      "value": "Pilihan menjelaskan tindakan dan hasil yang bisa diamati.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srequest-check.visual": {
-      "value": "Três alternativas de critério de aceitação.",
+      "value": "Tiga pilihan kriteria penerimaan.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.question": {
-      "value": "Qual critério permite verificar o contato?",
+      "value": "Kriteria mana yang dapat memeriksa kontak?",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.a": {
-      "value": "A página deve parecer incrível.",
+      "value": "Halaman harus terlihat luar biasa.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.a.feedback": {
-      "value": "Isso expressa uma preferência, mas não define como testar o contato.",
+      "value": "Ini menyatakan preferensi, tetapi tidak menjelaskan cara menguji kontak.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.b": {
-      "value": "Ao clicar em contato, a página mostra o endereço fictício definido no pedido.",
+      "value": "Mengeklik kontak menampilkan alamat fiktif yang ditentukan dalam permintaan.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.b.feedback": {
-      "value": "Você pode clicar e comparar o endereço mostrado com o pedido. Há uma ação e um resultado observáveis.",
+      "value": "Kamu bisa mengeklik dan membandingkan alamat yang tampil dengan permintaan. Tindakan dan hasilnya dapat diamati.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.c": {
-      "value": "A ferramenta deve dizer que terminou.",
+      "value": "Alat harus mengatakan bahwa pekerjaan selesai.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.c.feedback": {
-      "value": "A mensagem de conclusão não mostra se a ação de contato funciona.",
+      "value": "Pesan selesai tidak menunjukkan apakah tindakan kontak berfungsi.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.success": {
-      "value": "Você escolheu um comportamento verificável. Use o mesmo princípio no seu pedido.",
+      "value": "Kamu memilih perilaku yang bisa diuji. Gunakan prinsip ini dalam permintaanmu.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.request.retry": {
-      "value": "Tente novamente: procure uma ação e um resultado que você consiga observar.",
+      "value": "Coba lagi: cari tindakan dan hasil yang bisa diamati.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.title": {
-      "value": "Experimente na sua ferramenta",
+      "value": "Coba di alatmu",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.objective": {
-      "value": "Enviar o pedido no contexto correto e registrar a resposta real.",
+      "value": "Kirim permintaan dalam konteks yang benar dan catat jawaban nyata.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.body": {
-      "value": "Abra a ferramenta escolhida e confira as orientações abaixo. Envie seu pedido de planejamento. Leia a resposta e compare com os critérios. Se você ainda não tem acesso, guarde o pedido e retome esta prática depois.",
+      "value": "Buka alat pilihanmu dan periksa petunjuk di bawah. Kirim permintaan perencanaan. Baca jawaban dan bandingkan dengan kriteriamu. Jika belum punya akses, simpan permintaan dan lanjutkan latihan ini nanti.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.action": {
-      "value": "Envie o pedido fora do curso. Registre onde trabalhou e o que recebeu, sem incluir dados privados.",
+      "value": "Kirim permintaan di luar kursus. Catat tempat kamu bekerja dan apa yang diterima, tanpa data pribadi.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.expected": {
-      "value": "Um registro do contexto, da resposta e de algo que ainda precisa ser conferido.",
+      "value": "Catatan konteks, jawaban, dan sesuatu yang masih perlu diperiksa.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.hint1": {
-      "value": "Antes de enviar, confirme a conversa ou a pasta do projeto.",
+      "value": "Sebelum mengirim, pastikan percakapan atau folder proyeknya benar.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.hint2": {
-      "value": "Anote: pedi um plano; recebi estes itens; ainda não abri nem testei uma página.",
+      "value": "Catat: saya meminta rencana; saya menerima hal-hal ini; saya belum membuka atau menguji halaman.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.criterion": {
-      "value": "O registro distingue o que você pediu, recebeu e verificou.",
+      "value": "Catatan membedakan apa yang diminta, diterima, dan diperiksa.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srun.visual": {
-      "value": "Fluxo: abrir ferramenta, conferir contexto, enviar pedido, revisar resposta.",
+      "value": "Alur: buka alat, periksa konteks, kirim permintaan, tinjau jawaban.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.title": {
-      "value": "Verificação 2: o que foi comprovado?",
+      "value": "Pemeriksaan 2: apa yang sudah terbukti?",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.objective": {
-      "value": "Reconhecer quando falta evidência de execução.",
+      "value": "Kenali kapan bukti eksekusi belum tersedia.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.body": {
-      "value": "Considere este cenário simulado: a ferramenta responde “A página está pronta”. Você ainda não abriu nenhum arquivo, preview ou endereço público.",
+      "value": "Bayangkan skenario simulasi ini: alat menjawab “Halaman sudah siap”. Kamu belum membuka berkas, pratinjau, atau alamat publik apa pun.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.action": {
-      "value": "Escolha a conclusão sustentada pelas informações disponíveis.",
+      "value": "Pilih kesimpulan yang didukung informasi yang tersedia.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.expected": {
-      "value": "Uma conclusão que não confunda texto com comprovação.",
+      "value": "Kesimpulan yang membedakan teks dari bukti.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.hint1": {
-      "value": "O que você realmente observou até agora?",
+      "value": "Apa yang benar-benar sudah kamu amati?",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.hint2": {
-      "value": "Uma afirmação da ferramenta ainda precisa ser comparada com o resultado.",
+      "value": "Pernyataan alat masih perlu dibandingkan dengan hasilnya.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.criterion": {
-      "value": "A resposta reconhece a necessidade de abrir e testar o resultado.",
+      "value": "Jawaban mengakui perlunya membuka dan menguji hasil.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "sevidence-check.visual": {
-      "value": "Uma mensagem de conclusão ao lado de uma área de evidência ainda vazia.",
+      "value": "Pesan selesai di samping area bukti yang masih kosong.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.question": {
-      "value": "O que você pode concluir nesse momento?",
+      "value": "Apa yang bisa kamu simpulkan sekarang?",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.a": {
-      "value": "O site já está publicado e acessível a todos.",
+      "value": "Situs sudah diterbitkan dan dapat diakses semua orang.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.a.feedback": {
-      "value": "Você não abriu um endereço público. A mensagem não comprova publicação.",
+      "value": "Kamu belum membuka alamat publik. Pesan tidak membuktikan penerbitan.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.b": {
-      "value": "Todos os critérios foram testados com sucesso.",
+      "value": "Semua kriteria sudah berhasil diuji.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.b.feedback": {
-      "value": "Não há registro de testes observados. Concluir o pedido não comprova cada critério.",
+      "value": "Tidak ada catatan pengujian yang diamati. Menyelesaikan permintaan tidak membuktikan setiap kriteria.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.c": {
-      "value": "Recebi uma afirmação; preciso abrir o resultado e testar os critérios.",
+      "value": "Saya menerima pernyataan; saya perlu membuka hasil dan menguji kriterianya.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.c.feedback": {
-      "value": "Correto: confira o resultado e registre o que observou antes de afirmar que funciona.",
+      "value": "Benar: periksa hasil dan catat pengamatan sebelum menyatakan bahwa hasilnya berfungsi.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.success": {
-      "value": "Você separou a mensagem da evidência. Isso ajuda a encontrar erros cedo.",
+      "value": "Kamu memisahkan pesan dari bukti. Ini membantu menemukan kesalahan sejak awal.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "check.evidence.retry": {
-      "value": "Volte ao cenário: você só leu uma mensagem. Que verificação ainda falta?",
+      "value": "Kembali ke skenario: kamu hanya membaca pesan. Pemeriksaan apa yang masih belum dilakukan?",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.title": {
-      "value": "Peça uma correção específica",
+      "value": "Minta perbaikan yang spesifik",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.objective": {
-      "value": "Transformar um problema observado em um pedido de correção.",
+      "value": "Ubah masalah yang diamati menjadi permintaan perbaikan.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.body": {
-      "value": "Use o cenário abaixo para praticar. Explique o que aconteceu, o que deveria acontecer e como testar de novo. O exercício é simulado e não altera seu projeto.",
+      "value": "Berlatihlah dengan skenario berikut. Jelaskan apa yang terjadi, apa yang seharusnya terjadi, dan cara menguji ulang. Latihan ini adalah simulasi dan tidak mengubah proyekmu.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.action": {
-      "value": "Escreva um pedido para corrigir a ação de contato e repetir o teste.",
+      "value": "Tulis permintaan untuk memperbaiki tindakan kontak dan mengulangi pengujian.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.expected": {
-      "value": "Um pedido com observado, esperado, reprodução e reteste.",
+      "value": "Permintaan dengan hasil yang diamati, hasil yang diharapkan, langkah reproduksi, dan pengujian ulang.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.hint1": {
-      "value": "Comece por: ao clicar em “Fale comigo”, nada acontece.",
+      "value": "Mulai dengan: mengeklik “Hubungi saya” tidak menghasilkan apa pun.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.hint2": {
-      "value": "Depois indique o endereço fictício esperado e peça para clicar novamente após a correção.",
+      "value": "Lalu sebutkan alamat fiktif yang diharapkan dan minta klik ulang setelah perbaikan.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.criterion": {
-      "value": "O pedido permite reproduzir o problema e verificar a solução.",
+      "value": "Permintaan memungkinkan masalah direproduksi dan solusi diperiksa.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "srepair.visual": {
-      "value": "Quatro cartões: observado, esperado, reprodução e reteste.",
+      "value": "Empat kartu: diamati, diharapkan, reproduksi, dan uji ulang.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.title": {
-      "value": "Leve o método para outra ferramenta",
+      "value": "Bawa metode ini ke alat lain",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.objective": {
-      "value": "Preservar o objetivo e adaptar o contexto de execução.",
+      "value": "Pertahankan tujuan dan sesuaikan konteks eksekusi.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.body": {
-      "value": "O objetivo e os critérios continuam os mesmos ao trocar de ferramenta. O modo de abrir o projeto e inspecionar o resultado pode mudar. Não é preciso ter uma segunda conta para escrever essa adaptação.",
+      "value": "Tujuan dan kriteria tetap sama saat berpindah alat. Cara membuka proyek dan memeriksa hasil dapat berubah. Kamu tidak memerlukan akun kedua untuk menulis penyesuaian ini.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.action": {
-      "value": "Reescreva a orientação de contexto para a outra ferramenta. Guarde seu pedido e registre o que ficou pendente na prática real.",
+      "value": "Tulis ulang petunjuk konteks untuk alat lain. Simpan permintaan dan catat bagian latihan nyata yang masih belum selesai.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.expected": {
-      "value": "Um pedido adaptado e um registro honesto do que foi praticado.",
+      "value": "Permintaan yang disesuaikan dan catatan jujur tentang latihanmu.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.hint1": {
-      "value": "Preserve público, conteúdo, limites e teste.",
+      "value": "Pertahankan pengguna sasaran, konten, batasan, dan pengujian.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.hint2": {
-      "value": "Mude a orientação sobre conversa ou pasta do projeto conforme a ferramenta de destino.",
+      "value": "Ubah petunjuk percakapan atau folder proyek sesuai alat tujuan.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.criterion": {
-      "value": "A adaptação mantém o resultado esperado e identifica o contexto da outra ferramenta.",
+      "value": "Penyesuaian mempertahankan hasil yang diharapkan dan mengenali konteks alat lain.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "stransfer.visual": {
-      "value": "Um mesmo pedido ligado a dois contextos: Claude e Codex.",
+      "value": "Permintaan yang sama terhubung ke dua konteks: Claude dan Codex.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.request.outcome": {
-      "value": "Defini a entrega e sua ação principal.",
+      "value": "Saya menentukan hasil kerja dan tindakan utamanya.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.request.context": {
-      "value": "Informei o público e o conteúdo necessário.",
+      "value": "Saya menyebutkan pengguna sasaran dan konten yang diperlukan.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.request.limit": {
-      "value": "Pedi apenas um plano com dados fictícios, sem publicar.",
+      "value": "Saya hanya meminta rencana dengan data fiktif, tanpa penerbitan.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.request.test": {
-      "value": "Incluí pelo menos um teste com ação e resultado esperado.",
+      "value": "Saya menyertakan setidaknya satu pengujian dengan tindakan dan hasil yang diharapkan.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.execution.location": {
-      "value": "Confirmei o contexto na ferramenta e enviei o pedido fora do curso.",
+      "value": "Saya memastikan konteks alat dan mengirim permintaan di luar kursus.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.execution.record": {
-      "value": "Registrei o que recebi e o que ainda não verifiquei.",
+      "value": "Saya mencatat apa yang diterima dan yang belum diperiksa.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.repair.observed": {
-      "value": "Descrevi o que aconteceu.",
+      "value": "Saya menjelaskan apa yang terjadi.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.repair.expected": {
-      "value": "Descrevi o que deveria acontecer.",
+      "value": "Saya menjelaskan apa yang seharusnya terjadi.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.repair.reproduce": {
-      "value": "Expliquei como reproduzir o problema.",
+      "value": "Saya menjelaskan cara mereproduksi masalah.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.repair.retest": {
-      "value": "Pedi para repetir o teste após a correção.",
+      "value": "Saya meminta pengujian diulang setelah perbaikan.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.transfer.preserve": {
-      "value": "Mantive objetivo, contexto, limites e critérios.",
+      "value": "Saya mempertahankan tujuan, konteks, batasan, dan kriteria.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     },
     "rubric.transfer.adapt": {
-      "value": "Adaptei onde trabalhar e como inspecionar o resultado.",
+      "value": "Saya menyesuaikan tempat bekerja dan cara memeriksa hasil.",
       "status": "translated",
       "sourceRevision": "0.1.0"
     }

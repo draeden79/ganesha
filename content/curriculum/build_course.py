@@ -76,7 +76,7 @@ for name, criteria in {"request": ["outcome", "context", "limit", "test"], "exec
 course = {"schemaVersion": "1.0.0", "id": COURSE_ID, "version": VERSION, "status": "preview", "defaultLocale": "pt-BR",
     "requiredLocales": LOCALES, "titleKey": "course.title", "summaryKey": "course.summary", "releasedLessonIds": ["lesson.first-request"],
     "competencies": competencies, "rubrics": rubrics,
-    "lessons": [{"id": "lesson.first-request", "order": 1, "status": "draft", "titleKey": "lesson.title", "summaryKey": "lesson.summary",
+    "lessons": [{"id": "lesson.first-request", "order": 1, "status": "ready", "titleKey": "lesson.title", "summaryKey": "lesson.summary",
         "objectiveKeys": ["competency.context.outcome", "competency.evidence.outcome"], "competencyIds": [c["id"] for c in competencies],
         "prerequisiteLessonIds": [], "estimatedMinutes": 25, "steps": steps}]}
 
@@ -98,6 +98,8 @@ for locale in LOCALES:
         continue
     messages = json.loads(source.read_text())
     catalog = {"schemaVersion": "1.0.0", "courseId": COURSE_ID, "courseVersion": VERSION, "locale": locale,
+        "direction": "rtl" if locale == "ar" else "ltr", "humanReviewStatus": "pending",
+        "translationMethod": "ai-authored",
         "messages": {key: {"value": value, "status": "translated", "sourceRevision": VERSION} for key, value in messages.items()}}
     (destination / f"{locale}.json").write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
-print("Built course and available locale catalogs; run validate_curriculum.py to check coverage.")
+print("Built course and available locale catalogs; run coordination/validate_content.py in the integrated checkout to audit coverage.")
