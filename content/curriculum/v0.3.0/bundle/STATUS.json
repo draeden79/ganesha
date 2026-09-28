@@ -22,7 +22,9 @@
     "ja",
     "hi",
     "id",
-    "ar"
+    "ar",
+    "ko",
+    "zh-CN"
   ],
   "localizationComplete": false,
   "humanReview": "pending",

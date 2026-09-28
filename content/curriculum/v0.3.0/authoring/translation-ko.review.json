@@ -1,0 +1,102 @@
+{
+  "locale": "ko",
+  "catalog_version": "0.3.0",
+  "status": "complete_ai_translation_pending_human_review",
+  "source": {
+    "commit": "b8e4a62ee452db8577d52a10e6669a30f5dbdfb7",
+    "path": "content/curriculum/v0.3.0/source-messages/en.json",
+    "base_file_sha256": "d15887e7b40829f65f35505015aa294826fe1aa66fd9e459ca10d428141d6b63",
+    "effective_source_canonical_sha256": "232d45f82deae01d96642c9e6917733f6ead881685328adeeee66e0814eaae66"
+  },
+  "editorial_delta": {
+    "path": "coordination/localization-v03/TRANSLATION_DELTA.json",
+    "sha256": "b6d44afedc66d96b7686aab1f1abe0996fabbe39ed7e8350efd961d4a6599ea8",
+    "applied_keys": [
+      "automation-schedule.tool-conditions.prompt",
+      "automation-schedule.history-triage.body",
+      "app-delivery.restore-backup.body",
+      "app-delivery.restore-backup.prompt",
+      "automation-schedule.tool-conditions.body",
+      "automation-schedule.tool-conditions.tool.claude"
+    ],
+    "key_count": 6
+  },
+  "output": {
+    "path": "coordination/localization-v03/ko.json",
+    "sha256": "f6937cbf971e2fb644993def902edfcd8dd40e746d5f818b64ed434aea4e42f0",
+    "canonical_sha256": "eeddb47158b5fe043ceb6f2d09db1503d77b5bac02699211bf21e449a51c0111"
+  },
+  "coverage": {
+    "source_keys": 1192,
+    "translated_keys": 1192,
+    "missing_keys": 0,
+    "extra_keys": 0,
+    "english_fallback_keys": 0,
+    "percent": 100
+  },
+  "translation": {
+    "method": "AI translation directly authored in Codex",
+    "external_translation_services_used": false,
+    "human_reviewed": false,
+    "language": "Korean",
+    "audience": "Beginners",
+    "summarization_requested_or_used": false
+  },
+  "validation": {
+    "backtick_contents_and_delimiters": {
+      "passed": true,
+      "issues": []
+    },
+    "urls": {
+      "passed": true,
+      "issues": []
+    },
+    "emails": {
+      "passed": true,
+      "issues": []
+    },
+    "filenames": {
+      "passed": true,
+      "issues": []
+    },
+    "numeric_literals_including_decimals_and_times": {
+      "passed": true,
+      "issues": []
+    },
+    "storage_keys": {
+      "passed": true,
+      "issues": []
+    },
+    "folders_and_paths": {
+      "passed": true,
+      "issues": []
+    },
+    "csv_literals": {
+      "passed": true,
+      "issues": []
+    },
+    "json_fixture": {
+      "passed": true,
+      "issues": []
+    },
+    "key_parity": {
+      "passed": true,
+      "missing": [],
+      "extra": []
+    },
+    "nonempty_strings": {
+      "passed": true
+    },
+    "no_english_fallback": {
+      "passed": true,
+      "identical_values": []
+    }
+  },
+  "limits": [
+    "No human linguistic or domain review has been performed.",
+    "Automated literal and key checks do not certify semantic equivalence or naturalness.",
+    "External execution described in lessons remains self-reported; translated simulations are not execution evidence.",
+    "This artifact translates the frozen catalog plus the six supplied editorial delta values; it does not update official product documentation or certify UI names."
+  ],
+  "completed_at_utc": "2026-09-28T21:41:59.323274+00:00"
+}

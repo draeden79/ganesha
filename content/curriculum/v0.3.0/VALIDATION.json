@@ -55,7 +55,19 @@
       "required": 1192,
       "present": 1192,
       "humanReview": "pending",
-      "sha256": "9a2fd05f2c27bb6c1ed0aa46c1fac773cd216cc187fd4b0ca1ed13a7892b4c25"
+      "sha256": "606a4efe4ec7f9c50a2add51e79eda8a1a0ad8475973fec4f30eca50eacb0f66"
+    },
+    "ko": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "dc6a02217c1464ce3312e6403c4ec32778c3b9d186536bd271a0647aaa6aa7e4"
+    },
+    "zh-CN": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "b632cca8b23b95657685c1678e01a114debd8b00901b1b27e4539a14de68b51f"
     }
   },
   "requiredLocales": [
