@@ -1,0 +1,43 @@
+{
+  "reviewedAt": "2026-09-28",
+  "registryPath": "content/research/registry.json",
+  "researchCommit": "c531c9e",
+  "reviewScope": "EARLY_BATCH.md e 14 evidências do registry.json lidas; fontes do Devorador, sem alegar leitura integral de vídeos ou artigos protegidos.",
+  "tools": {
+    "claude": [
+      "ev-claude-desktop-start",
+      "ev-claude-desktop-reference"
+    ],
+    "codex": [
+      "ev-codex-desktop-start"
+    ]
+  },
+  "steps": {
+    "step.first-request.scope": [
+      "ev-codex-prompting"
+    ],
+    "step.first-request.brief": [
+      "ev-codex-prompting",
+      "ev-claude-plan-build-review"
+    ],
+    "step.first-request.request-check": [
+      "ev-claude-plan-build-review"
+    ],
+    "step.first-request.run": [
+      "ev-claude-agent-basics",
+      "ev-claude-desktop-start",
+      "ev-codex-desktop-start"
+    ],
+    "step.first-request.evidence-check": [
+      "ev-claude-verify-unattended"
+    ],
+    "step.first-request.repair": [
+      "ev-builder-behavior-tests",
+      "ev-codex-prompting"
+    ],
+    "step.first-request.transfer": [
+      "ev-claude-desktop-start",
+      "ev-codex-desktop-start"
+    ]
+  }
+}

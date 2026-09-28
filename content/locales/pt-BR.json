@@ -1,0 +1,568 @@
+{
+  "schemaVersion": "1.0.0",
+  "courseId": "course.first-site",
+  "courseVersion": "0.1.0",
+  "locale": "pt-BR",
+  "messages": {
+    "course.title": {
+      "value": "Seu primeiro projeto com IA",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "course.summary": {
+      "value": "Comece com um pedido claro. Aprenda a observar, testar e melhorar o resultado.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "lesson.title": {
+      "value": "Da ideia ao pedido verificável",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "lesson.summary": {
+      "value": "Prepare um pedido, experimente na sua ferramenta e aprenda a exigir evidências. Esta aula ainda não publica um site.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.scope": {
+      "value": "Delimitar o resultado",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.scope.outcome": {
+      "value": "Descrever uma entrega pequena para um público definido.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.context": {
+      "value": "Dar contexto",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.context.outcome": {
+      "value": "Escrever um pedido com objetivo, contexto, limites e teste.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.evidence": {
+      "value": "Verificar evidências",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.evidence.outcome": {
+      "value": "Distinguir uma resposta da ferramenta de um resultado observado.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.repair": {
+      "value": "Pedir uma correção",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.repair.outcome": {
+      "value": "Explicar o problema e como conferir a correção.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.transfer": {
+      "value": "Transferir o método",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "competency.transfer.outcome": {
+      "value": "Adaptar o mesmo pedido à outra ferramenta.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "tool.claude": {
+      "value": "No Claude desktop, abra a aba Code, escolha Local e selecione a pasta do projeto. A conversa da aba Chat é um contexto diferente. O app inclui Claude Code; o acesso depende de uma assinatura compatível. Confira a resposta e as alterações na aba Code.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "tool.codex": {
+      "value": "No aplicativo desktop, selecione Codex e confira a pasta ou o projeto da tarefa. Envie o pedido nesse contexto e revise a resposta e os arquivos afetados. Os nomes e a organização da interface podem variar conforme a versão.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "notice.self-report": {
+      "value": "Prática fora do Ganesha. Você executa na sua ferramenta. O registro abaixo é uma autoavaliação; o Ganesha não verifica a execução nem se conecta à sua conta.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "example.request": {
+      "value": "Quero uma página para um serviço fictício de aulas de música, voltada a iniciantes. Planeje um título, três serviços e uma ação de contato. Use apenas dados fictícios. Por enquanto, não altere arquivos nem publique. Liste o plano e três critérios que eu possa testar; um deles deve verificar a ação de contato.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "example.failure": {
+      "value": "Cenário simulado: o pedido exige uma ação de contato. No preview, você vê o texto “Fale comigo”, mas clicar nele não faz nada. Nenhuma ferramenta real foi executada aqui.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.title": {
+      "value": "Comece com uma entrega pequena",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.objective": {
+      "value": "Escolher um resultado que você consiga conferir.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.body": {
+      "value": "Vamos preparar uma página de apresentação de um serviço fictício. Primeiro, você pede um plano. Nas próximas aulas planejadas, esse pedido poderá virar uma página testada e publicada.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.action": {
+      "value": "Escolha um serviço fictício e complete mentalmente: a página ajuda quem a fazer o quê?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.expected": {
+      "value": "Um público e uma ação principal definidos.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.hint1": {
+      "value": "Pense em uma pessoa que visitaria a página.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.hint2": {
+      "value": "Exemplo: iniciantes em música querem conhecer as aulas e entrar em contato.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.criterion": {
+      "value": "Você consegue nomear o público e a ação principal.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sscope.visual": {
+      "value": "Três cartões: público, resultado e ação principal.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.title": {
+      "value": "Monte um pedido útil",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.objective": {
+      "value": "Escrever objetivo, contexto, limite e teste no mesmo pedido.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.body": {
+      "value": "A ferramenta precisa saber o que entregar e como você decidirá se está bom. Use o exemplo como apoio e adapte o serviço. Este campo é um ensaio: nada será enviado ao Claude ou ao Codex.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.action": {
+      "value": "Escreva seu pedido com público, conteúdo desejado, limite e um teste observável.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.expected": {
+      "value": "Um pedido salvo que outra pessoa consiga conferir.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.hint1": {
+      "value": "Troque “faça algo bonito” por elementos que devem aparecer.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.hint2": {
+      "value": "Inclua: apenas planejar agora; usar dados fictícios; explicar como testar o contato.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.criterion": {
+      "value": "O pedido inclui os quatro itens da rubrica.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sbrief.visual": {
+      "value": "Pedido separado em objetivo, contexto, limites e teste.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.title": {
+      "value": "Verificação 1: o pedido é verificável?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.objective": {
+      "value": "Reconhecer um critério que pode ser testado.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.body": {
+      "value": "Uma impressão geral pode orientar o estilo. Para verificar o resultado, você também precisa de um comportamento observável.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.action": {
+      "value": "Escolha o critério mais útil para testar a ação de contato.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.expected": {
+      "value": "Uma escolha acompanhada da explicação do critério.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.hint1": {
+      "value": "Qual opção descreve algo que você pode fazer e observar?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.hint2": {
+      "value": "Um teste combina uma ação do visitante com o resultado esperado.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.criterion": {
+      "value": "A alternativa escolhida descreve ação e resultado observáveis.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srequest-check.visual": {
+      "value": "Três alternativas de critério de aceitação.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.question": {
+      "value": "Qual critério permite verificar o contato?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.a": {
+      "value": "A página deve parecer incrível.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.a.feedback": {
+      "value": "Isso expressa uma preferência, mas não define como testar o contato.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.b": {
+      "value": "Ao clicar em contato, a página mostra o endereço fictício definido no pedido.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.b.feedback": {
+      "value": "Você pode clicar e comparar o endereço mostrado com o pedido. Há uma ação e um resultado observáveis.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.c": {
+      "value": "A ferramenta deve dizer que terminou.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.c.feedback": {
+      "value": "A mensagem de conclusão não mostra se a ação de contato funciona.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.success": {
+      "value": "Você escolheu um comportamento verificável. Use o mesmo princípio no seu pedido.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.request.retry": {
+      "value": "Tente novamente: procure uma ação e um resultado que você consiga observar.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.title": {
+      "value": "Experimente na sua ferramenta",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.objective": {
+      "value": "Enviar o pedido no contexto correto e registrar a resposta real.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.body": {
+      "value": "Abra a ferramenta escolhida e confira as orientações abaixo. Envie seu pedido de planejamento. Leia a resposta e compare com os critérios. Se você ainda não tem acesso, guarde o pedido e retome esta prática depois.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.action": {
+      "value": "Envie o pedido fora do curso. Registre onde trabalhou e o que recebeu, sem incluir dados privados.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.expected": {
+      "value": "Um registro do contexto, da resposta e de algo que ainda precisa ser conferido.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.hint1": {
+      "value": "Antes de enviar, confirme a conversa ou a pasta do projeto.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.hint2": {
+      "value": "Anote: pedi um plano; recebi estes itens; ainda não abri nem testei uma página.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.criterion": {
+      "value": "O registro distingue o que você pediu, recebeu e verificou.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srun.visual": {
+      "value": "Fluxo: abrir ferramenta, conferir contexto, enviar pedido, revisar resposta.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.title": {
+      "value": "Verificação 2: o que foi comprovado?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.objective": {
+      "value": "Reconhecer quando falta evidência de execução.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.body": {
+      "value": "Considere este cenário simulado: a ferramenta responde “A página está pronta”. Você ainda não abriu nenhum arquivo, preview ou endereço público.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.action": {
+      "value": "Escolha a conclusão sustentada pelas informações disponíveis.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.expected": {
+      "value": "Uma conclusão que não confunda texto com comprovação.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.hint1": {
+      "value": "O que você realmente observou até agora?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.hint2": {
+      "value": "Uma afirmação da ferramenta ainda precisa ser comparada com o resultado.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.criterion": {
+      "value": "A resposta reconhece a necessidade de abrir e testar o resultado.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "sevidence-check.visual": {
+      "value": "Uma mensagem de conclusão ao lado de uma área de evidência ainda vazia.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.question": {
+      "value": "O que você pode concluir nesse momento?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.a": {
+      "value": "O site já está publicado e acessível a todos.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.a.feedback": {
+      "value": "Você não abriu um endereço público. A mensagem não comprova publicação.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.b": {
+      "value": "Todos os critérios foram testados com sucesso.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.b.feedback": {
+      "value": "Não há registro de testes observados. Concluir o pedido não comprova cada critério.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.c": {
+      "value": "Recebi uma afirmação; preciso abrir o resultado e testar os critérios.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.c.feedback": {
+      "value": "Correto: confira o resultado e registre o que observou antes de afirmar que funciona.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.success": {
+      "value": "Você separou a mensagem da evidência. Isso ajuda a encontrar erros cedo.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "check.evidence.retry": {
+      "value": "Volte ao cenário: você só leu uma mensagem. Que verificação ainda falta?",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.title": {
+      "value": "Peça uma correção específica",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.objective": {
+      "value": "Transformar um problema observado em um pedido de correção.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.body": {
+      "value": "Use o cenário abaixo para praticar. Explique o que aconteceu, o que deveria acontecer e como testar de novo. O exercício é simulado e não altera seu projeto.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.action": {
+      "value": "Escreva um pedido para corrigir a ação de contato e repetir o teste.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.expected": {
+      "value": "Um pedido com observado, esperado, reprodução e reteste.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.hint1": {
+      "value": "Comece por: ao clicar em “Fale comigo”, nada acontece.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.hint2": {
+      "value": "Depois indique o endereço fictício esperado e peça para clicar novamente após a correção.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.criterion": {
+      "value": "O pedido permite reproduzir o problema e verificar a solução.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "srepair.visual": {
+      "value": "Quatro cartões: observado, esperado, reprodução e reteste.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.title": {
+      "value": "Leve o método para outra ferramenta",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.objective": {
+      "value": "Preservar o objetivo e adaptar o contexto de execução.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.body": {
+      "value": "O objetivo e os critérios continuam os mesmos ao trocar de ferramenta. O modo de abrir o projeto e inspecionar o resultado pode mudar. Não é preciso ter uma segunda conta para escrever essa adaptação.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.action": {
+      "value": "Reescreva a orientação de contexto para a outra ferramenta. Guarde seu pedido e registre o que ficou pendente na prática real.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.expected": {
+      "value": "Um pedido adaptado e um registro honesto do que foi praticado.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.hint1": {
+      "value": "Preserve público, conteúdo, limites e teste.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.hint2": {
+      "value": "Mude a orientação sobre conversa ou pasta do projeto conforme a ferramenta de destino.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.criterion": {
+      "value": "A adaptação mantém o resultado esperado e identifica o contexto da outra ferramenta.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "stransfer.visual": {
+      "value": "Um mesmo pedido ligado a dois contextos: Claude e Codex.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.request.outcome": {
+      "value": "Defini a entrega e sua ação principal.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.request.context": {
+      "value": "Informei o público e o conteúdo necessário.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.request.limit": {
+      "value": "Pedi apenas um plano com dados fictícios, sem publicar.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.request.test": {
+      "value": "Incluí pelo menos um teste com ação e resultado esperado.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.execution.location": {
+      "value": "Confirmei o contexto na ferramenta e enviei o pedido fora do curso.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.execution.record": {
+      "value": "Registrei o que recebi e o que ainda não verifiquei.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.repair.observed": {
+      "value": "Descrevi o que aconteceu.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.repair.expected": {
+      "value": "Descrevi o que deveria acontecer.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.repair.reproduce": {
+      "value": "Expliquei como reproduzir o problema.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.repair.retest": {
+      "value": "Pedi para repetir o teste após a correção.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.transfer.preserve": {
+      "value": "Mantive objetivo, contexto, limites e critérios.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    },
+    "rubric.transfer.adapt": {
+      "value": "Adaptei onde trabalhar e como inspecionar o resultado.",
+      "status": "translated",
+      "sourceRevision": "0.1.0"
+    }
+  }
+}
