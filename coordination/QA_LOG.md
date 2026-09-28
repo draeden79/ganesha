@@ -49,3 +49,11 @@ Todas as traduções declaram revisão humana pendente; presença e versão das 
 Aplicativo `f5319e9` integrado como `31b2dd4`, CSS `96a9edb` como `d63c674`. Diretor executou com sucesso os 14 testes, check:content dos 11 idiomas, TypeScript e build Next sobre a base integrada. O build precisou de dependências locais porque Turbopack rejeita node_modules apontando por symlink para outro worktree.
 
 O QA final de navegador começou pela primeira tela, mas foi interrompido pelo novo pedido do usuário: usar o Ganesha Desktop aberto no Mac como referência de design. Não houve nova conclusão ponta a ponta nessa rodada. O Artista inspeciona o desktop e o Construtor refaz a interface depois; ver `DESKTOP_DESIGN_DIRECTIVE.md`.
+
+## Demonstração separada da liberação pedagógica
+
+Commits do Construtor `92c4345` e `b9c19c7` integrados como `d333203` e `ac53253`. A demonstração usa escopo explícito para `lesson.first-request`; o adaptador normal exige simultaneamente ID liberado e estado `ready`. Revisão do Diretor identificou e fez corrigir a aceitação indevida de um rascunho que permanecesse por inconsistência na lista de liberação.
+
+Diretor executou 16 testes, TypeScript, check:content nos 11 idiomas e build Next, todos aprovados. Os testes distinguem rascunho sem liberação, rascunho indevidamente listado, aula pronta e aula planejada; somente o caminho explícito de demonstração admite rascunho. Rotas de acesso protegido continuam fechadas. Aviso de conteúdo e traduções em revisão foi atualizado nos 11 idiomas. IDs, versão e chaves de progresso não mudaram.
+
+Esta verificação é técnica e não certifica estudo das fontes. Auditoria pedagógica do Educador e alteração canônica para rascunho estão sendo coordenadas; a auditoria estrutural histórica acima não comprova maturidade pedagógica atual. Novo QA visual depende da entrega baseada no Ganesha Desktop.
