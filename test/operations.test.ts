@@ -13,3 +13,15 @@ test('PR creation accepts only exact structured arguments', () => {
   assert.deepEqual(parseOperation('ops github pr {"head":"codex/fix","base":"main","title":"Fix deployment"}'), {kind:'github-pr',head:'codex/fix',base:'main',title:'Fix deployment'});
   assert.throws(() => parseOperation('ops github pr {"head":"main","base":"main","title":"x"}'));
 });
+
+test('A natural DNS incident selects only a fixed read-only diagnostic, never arbitrary domain mutation', () => {
+  for (const text of ['ops dns status iganesha.online', 'ops dns check iganesha.online',
+    'you must solve the issue with DNS of iganesha.online - correct the configuration so that it loads the website correctly.',
+    'Verifique o DNS do domínio iganesha.online']) {
+    assert.deepEqual(parseOperation(text), {kind:'dns-check',domain:'iganesha.online'});
+  }
+  assert.equal(parseOperation('Fix DNS for unrelated.example'),null);
+  assert.equal(parseOperation('What is DNS?'),null);
+  assert.throws(()=>parseOperation('ops dns status unrelated.example'));
+  assert.throws(()=>parseOperation('ops dns status iganesha.online; whoami'));
+});

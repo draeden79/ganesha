@@ -119,6 +119,16 @@ test('Real Redis: deduplication, competing workers, expired leases, atomic revis
   await gateway.finish('test-request-1', gateRetry.token);
   assert.equal((await gateway.claim('test-request-1', { userId: 'UONE', charge: true })).status, 'done');
   assert.equal((await gateway.claim('test-request-2', { userId: 'UTWO', charge: true })).limit, 'daily');
+  const burst = createRedisGatewayStore(client, { namespace, dailyLimit: 3 });
+  // The same owner can address two bots/threads seconds apart without dropping the second task.
+  for (const requestKey of ['burst-one', 'burst-two']) {
+    const claim = await burst.claim(requestKey, {userId:'UONE',charge:true});
+    assert.equal(claim.limit, undefined);
+    await burst.finish(requestKey, claim.token);
+    assert.equal((await burst.claim(requestKey, {userId:'UONE',charge:true})).status,'done');
+  }
+  assert.equal((await burst.claim('burst-three', {userId:'UONE',charge:true})).limit,'daily');
+  assert.equal((await burst.claim('dns-operation', {userId:'UONE',charge:false})).limit,undefined);
   await gateway.cacheUser('UONE', { isBot: false, deleted: false });
   assert.deepEqual(await gateway.getUser('UONE'), { isBot: false, deleted: false });
 });

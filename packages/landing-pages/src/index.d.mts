@@ -82,6 +82,7 @@ export function createSharedIngress(config: { teamId: string; appId?: string; bo
   lookupUser: (userId: string) => Promise<SlackUser | null>;
     lookupBot?: (botId: string, appId?: string) => Promise<(SlackUser & { appId?: string; userId?: string }) | null>;
   isDevOpsSubscribed: (threadKey: string) => Promise<boolean>;
+  isDevOpsOperation?: (text: string) => boolean;
   send: (message: Notification) => Promise<unknown>;
   startLanding: (input: LandingInput) => Promise<unknown>;
   dispatchDevOps: (request: Request) => Promise<Response>;

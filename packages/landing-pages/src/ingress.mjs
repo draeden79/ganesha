@@ -71,7 +71,8 @@ export function createSharedIngress(config, deps) {
       const tooLong = event.text.length > 12000;
       const landingHelp = route.status === 'routed' && route.agent === 'landing-pages' && ['', 'help', 'status'].includes(route.text.toLowerCase());
       const devopsControl = route.status === 'routed' && route.agent === 'devops' &&
-        ['', 'help', '/help', 'status', 'stop', 'ajuda', 'encerrar', 'parar'].includes(route.text.toLowerCase());
+        (['', 'help', '/help', 'status', 'stop', 'ajuda', 'encerrar', 'parar'].includes(route.text.toLowerCase()) ||
+          /^ops(?:\s|$)/i.test(route.text) || deps.isDevOpsOperation?.(route.text) === true);
       claim = await deps.store.claim(requestKey, { userId: actorId, charge: route.status === 'routed' && !tooLong && !landingHelp && !devopsControl });
       if (claim.status === 'done') return ok();
       if (claim.status === 'busy') return new Response('Retry event', { status: 503, headers: { 'Retry-After': '1' } });
@@ -80,7 +81,7 @@ export function createSharedIngress(config, deps) {
         const text = landingHelp ? 'Landing Pages · Send the course subject, audience, learning outcome and curriculum. I will create a Ganesha demo page in English and return its URL in this thread. This is a noncommercial prototype without payments.'
           : tooLong ? 'Please shorten this message to 12,000 characters or fewer.'
           : claim.limit === 'daily' ? 'Ganesha has reached its daily request limit. It resets at midnight UTC.'
-          : claim.limit === 'cooldown' ? 'Please wait ten seconds before sending another request.'
+          : claim.limit === 'cooldown' ? 'This earlier request was rejected by a retired cooldown. Send it again; new requests are no longer discarded for arriving close together.'
           : route.message;
         await deps.send({ threadKey, body: text });
       } else if (route.agent === 'landing-pages') {

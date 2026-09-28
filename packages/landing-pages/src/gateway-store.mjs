@@ -6,11 +6,10 @@ if r.status=='done' then return cjson.encode({status='done'}) end
 if r.leaseUntil and r.leaseUntil>now then return cjson.encode({status='busy'}) end
 local limited=r.limit
 if ARGV[3]=='1' and not r.counted and not limited then
-  if redis.call('EXISTS',KEYS[3])==1 then limited='cooldown'
-  elseif tonumber(redis.call('GET',KEYS[2]) or '0')>=tonumber(ARGV[4]) then limited='daily'
+  if tonumber(redis.call('GET',KEYS[2]) or '0')>=tonumber(ARGV[4]) then limited='daily'
   else
     redis.call('INCR',KEYS[2]); redis.call('EXPIRE',KEYS[2],172800)
-    redis.call('SET',KEYS[3],'1','PX',10000); r.counted=true
+    r.counted=true
   end
 end
 r.status='working'; r.token=ARGV[2]; r.leaseUntil=now+30000; r.limit=limited
@@ -36,7 +35,7 @@ export function createRedisGatewayStore(client, { namespace, dailyLimit = 40 }) 
     },
     async claim(requestKey, { userId, charge }) {
       const now = Date.now();
-      const raw = await client.eval(claimScript, { keys: [key(requestKey), prefix + 'quota:' + new Date(now).toISOString().slice(0, 10), prefix + 'cooldown:' + hash(userId)],
+      const raw = await client.eval(claimScript, { keys: [key(requestKey), prefix + 'quota:' + new Date(now).toISOString().slice(0, 10)],
         arguments: [String(now), randomUUID(), charge ? '1' : '0', String(dailyLimit)] });
       return JSON.parse(String(raw));
     },

@@ -25,6 +25,7 @@ export function validateOperation(op) {
   const fields = {
     'github-status': ['kind','ref'], 'github-pr': ['kind','head','base','title'],
     'vercel-deploy': ['kind','sha','target'], 'vercel-status': ['kind','target'],
+    'dns-check': ['kind','domain'],
   }[op.kind];
   requireCondition(fields && Object.keys(op).every(k => fields.includes(k)) && fields.every(k => Object.hasOwn(op,k)));
   if (op.kind === 'github-status') requireCondition(validRef(op.ref));
@@ -34,6 +35,7 @@ export function validateOperation(op) {
   }
   if (op.kind === 'vercel-deploy') requireCondition(SHA.test(op.sha) && op.target === 'classroom');
   if (op.kind === 'vercel-status') requireCondition(['classroom','devops'].includes(op.target));
+  if (op.kind === 'dns-check') requireCondition(op.domain === 'iganesha.online');
   return op;
 }
 export function validateConfig(config) {

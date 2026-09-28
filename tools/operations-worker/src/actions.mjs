@@ -3,6 +3,7 @@ import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
 import { setTimeout as delay } from 'node:timers/promises';
 import { REPO, REPO_URL, RELEASE_BRANCH, DEVOPS_PROJECT_ID, SHA, OperationError, requireCondition, validateOperation, validateConfig, runCommand, parseJson, childEnvironment, safeDeploymentUrl, validateArchiveTree } from './core.mjs';
+import { diagnoseDns } from './dns.mjs';
 
 const githubUrl = url => typeof url === 'string' && /^https:\/\/github\.com\/draeden79\/ganesha\/pull\/\d+$/.test(url);
 const display = value => String(value ?? 'unknown').replace(/[\x00-\x1f<>@]/g,'').slice(0,100);
@@ -163,6 +164,12 @@ export function createActions(config, { run = runCommand, sleep = delay, fetchIm
     if(job.operation.kind==='github-status') return status(job.operation,context.signal);
     if(job.operation.kind==='github-pr') return pullRequest(job,context);
     if(job.operation.kind==='vercel-status') return vercelStatus(job.operation,context.signal);
+    if(job.operation.kind==='dns-check') return diagnoseDns({api,fetchImpl,signal:context.signal,now,
+      externalCheck:async signal=>{
+        const runs=parseJson(await gh(['run','list','--repo',REPO,'--workflow','Public domain diagnostic','--status','completed','--limit','1','--json','conclusion,createdAt,updatedAt,url'],signal));
+        if(!Array.isArray(runs)||!runs.length)throw new OperationError('no_external_diagnostic');
+        return runs[0];
+      }});
     return deploy(job,context);
   };
 }
