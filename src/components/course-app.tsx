@@ -7,9 +7,10 @@ import { interpolate, ui } from "@/lib/i18n";
 import { labels } from "@/lib/labels";
 import { recoveryText } from "@/lib/recovery-i18n";
 import { TeachingVisual } from "./teaching-visual";
+import { nativeUi } from "@/lib/native-i18n";
 
-function Icon({ name, size = 20 }: { name: "grid" | "book" | "arrow" | "check" | "spark" | "globe"; size?: number }) {
-  const paths = { grid: "M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z", book: "M12 5v16M12 5C8 2 4 3 2 4v15c4-2 7-1 10 2 3-3 6-4 10-2V4c-2-1-6-2-10 1Z", arrow: "M5 12h14M13 6l6 6-6 6", check: "m5 12 4 4L19 6", spark: "m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z", globe: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z" };
+function Icon({ name, size = 20 }: { name: "grid" | "book" | "arrow" | "check" | "spark" | "globe" | "info" | "pen" | "page"; size?: number }) {
+  const paths = { info: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 11v6M12 7v.1", pen: "m15 4 5 5-10 10-6 1 1-6zM13 6l5 5", page: "M5 3h10l4 4v14H5zM14 3v5h5M8 12h8M8 16h6", grid: "M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z", book: "M12 5v16M12 5C8 2 4 3 2 4v15c4-2 7-1 10 2 3-3 6-4 10-2V4c-2-1-6-2-10 1Z", arrow: "M5 12h14M13 6l6 6-6 6", check: "m5 12 4 4L19 6", spark: "m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z", globe: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z" };
   return <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d={paths[name]} /></svg>;
 }
 function Arrow() { return <span className="arrow"><Icon name="arrow" size={18} /></span>; }
@@ -17,6 +18,7 @@ function Arrow() { return <span className="arrow"><Icon name="arrow" size={18} /
 export function CourseApp({ course }: { course: Course }) {
   const t = ui[course.locale];
   const l = labels[course.locale];
+  const n = nativeUi[course.locale];
   const number = (n: number) => new Intl.NumberFormat(course.locale).format(n);
   const flat = flattenSteps(course);
   const [progress, setProgress] = useState<Progress>(() => newProgress(course));
@@ -26,11 +28,13 @@ export function CourseApp({ course }: { course: Course }) {
   const [recovered, setRecovered] = useState(false);
   const savingAllowed = useRef(true);
   const heading = useRef<HTMLHeadingElement>(null);
+  const railCards = useRef(new Map<string, HTMLButtonElement>());
+  const dialog = useRef<HTMLDialogElement>(null);
+  const dialogTrigger = useRef<HTMLElement | null>(null);
+  const [dialogKind, setDialogKind] = useState<"help" | "steps" | null>(null);
   const activeIndex = Math.max(0, flat.findIndex(({step}) => step.id === progress.currentStepId));
   const { lesson, step } = flat[activeIndex];
   const state = getStepState(progress, step.id);
-  const done = completedCount(course, progress);
-  const ratio = done / flat.length;
   const lastAttempt = state.attempts.at(-1);
   const feedback = step.check && lastAttempt ? evaluateCheck(step, lastAttempt.answer) : null;
   const typeLabel = step.check ? t.knowledge : step.practice ? t.practice : t.read;
@@ -81,7 +85,9 @@ export function CourseApp({ course }: { course: Course }) {
     window.addEventListener("storage", synchronize);
     return () => window.removeEventListener("storage", synchronize);
   }, [course]);
-  useEffect(() => { if (ready) heading.current?.focus(); }, [view, progress.currentStepId, ready]);
+  useEffect(() => { if (ready && view !== "overview") heading.current?.focus(); }, [view, progress.currentStepId, ready]);
+  useEffect(() => { if (view === "overview") railCards.current.get(progress.currentStepId)?.scrollIntoView({ block: "nearest", inline: "nearest" }); }, [view, progress.currentStepId]);
+  useEffect(() => { if (dialogKind && !dialog.current?.open) dialog.current?.showModal(); }, [dialogKind]);
 
   function showStep(id: string) {
     setProgress(p => ({ ...p, currentStepId: id })); setView("step");
@@ -110,46 +116,200 @@ export function CourseApp({ course }: { course: Course }) {
     setProgress(p => updateStep(p, step.id, { complete: true, attempts: [...getStepState(p, step.id).attempts, { answer: state.draft, passed: true, at: new Date().toISOString(), criteria: state.criteria, evaluator: "self-report" as const }].slice(-50) }));
   }
   const nextEnabled = ready && ((!step.check && !step.practice) || state.complete);
-  return <div className="shell">
-    <a className="skip" href="#main">{t.skip}</a>
-    <aside className="sidebar">
-      <button className="brand" onClick={overview} aria-label="Ganesha"><span className="brandmark"><Icon name="spark" size={31} /></span>ganesha<span className="brand-dot">.</span></button>
-      <div className="nav"><p className="nav-label">{t.courseLabel}</p><button onClick={overview} aria-current={view !== "step" ? "page" : undefined}><Icon name="grid" />{t.overview}</button><button onClick={() => showStep(progress.currentStepId)} aria-current={view === "step" ? "page" : undefined} disabled={!ready}><Icon name="book" />{t.lessons}</button></div>
-      <div className="sidebar-course"><span className="eyebrow">{t.curriculum}</span><p>{course.title}</p><div className="meter" role="progressbar" aria-label={t.progress} aria-valuenow={Math.round(ratio * 100)} aria-valuemin={0} aria-valuemax={100}><span style={{ width: `${ratio * 100}%` }} /></div><p className="small">{new Intl.NumberFormat(course.locale, { style: "percent", maximumFractionDigits: 0 }).format(ratio)}</p></div>
-      <div className="sidebar-foot"><span className="pill purple">{t.demo}</span><p>{t.demoNotice}</p><span className="version" dir="ltr">v{course.version}</span></div>
-    </aside>
-    <div className="workspace">
-      <header className="topbar"><p className="breadcrumb">{t.courseLabel}<span aria-hidden="true">/</span><strong>{view === "step" ? t.lessons : t.overview}</strong></p><label className="language"><Icon name="globe" size={18} /><span className="sr-only">{t.language}</span><select value={course.locale} onChange={event => changeLocale(event.target.value as Locale)}>{locales.map(locale => <option key={locale} value={locale} lang={locale}>{localeNames[locale]}</option>)}</select></label></header>
-      <main id="main" className="main">
-        {recovered && <div className="feedback" role="status">{recoveryText[course.locale]}</div>}
-        <div className="demo-strip"><span className="pill purple">{t.demo}</span><p>{t.demoNotice}</p></div>
-        <div className="tool-row"><div className="tool-picker" role="group" aria-label={t.tool}><span>{t.tool}</span>{(["claude", "codex"] as LearningTool[]).map(tool => <button key={tool} aria-pressed={progress.tool === tool} disabled={!ready} onClick={() => setProgress(p => ({ ...p, tool }))}><span className={`tool-icon ${tool}`} aria-hidden="true">{tool === "claude" ? "✳" : "⌘"}</span><bdi>{tool === "claude" ? "Claude" : "Codex"}</bdi></button>)}</div><p className={saveError ? "save-error" : "save-status"} role="status">{saveError ? t.localError : ready ? t.localSaved : ""}</p></div>
-
-        {view === "overview" && <>
-          <section className="intro"><div><p className="eyebrow">{t.curriculum}</p><h1 ref={heading} tabIndex={-1}>{t.welcome}</h1><p>{t.welcomeBody}</p></div></section>
-          <section className="hero"><div className="hero-copy"><span className="pill purple"><Icon name="spark" size={14} />{t.read}</span><h2>{course.title}</h2><p>{course.description}</p><button className="button primary" disabled={!ready} onClick={() => showStep(progress.currentStepId)}>{done > 0 || Object.keys(progress.states).length > 0 ? t.resume : t.start}<Arrow /></button></div><div className="hero-art"><img src="/images/creative-workshop.png" alt="" width="640" height="480" /></div></section>
-          <div className="dashboard-grid"><section><div className="section-heading"><h2>{t.curriculum}</h2><span className="small">{t.lessons}: {number(course.lessons.length)}</span></div>{course.lessons.map((item, lessonIndex) => <article key={item.id} className="card journey-card"><div className="journey-head"><span className="lesson-number">{number(lessonIndex + 1).padStart(2,"0")}</span><div><h3>{item.title}</h3><p>{item.summary}</p></div><span className="duration">{interpolate(t.minutes,{ n: number(item.durationMinutes) })}</span></div><ol className="journey">{item.steps.map((itemStep, index) => { const complete = getStepState(progress, itemStep.id).complete; const current = progress.currentStepId === itemStep.id; return <li key={itemStep.id} className={complete ? "done" : current ? "current" : ""}><button onClick={() => showStep(itemStep.id)} disabled={!ready}><span className="node">{complete ? <Icon name="check" /> : number(index + 1)}</span><span className="step-label"><strong>{itemStep.title}</strong><span>{itemStep.check ? t.knowledge : itemStep.practice ? t.practice : t.read}</span></span>{complete ? <span className="pill green">{t.completed}</span> : current ? <span className="pill purple">{t.current}</span> : <Arrow />}</button></li>; })}</ol></article>)}</section><aside className="side-stack"><section className="card progress-card"><div className="progress-orbit" style={{ "--progress": `${ratio * 360}deg` } as React.CSSProperties}><span>{new Intl.NumberFormat(course.locale, { style:"percent", maximumFractionDigits:0 }).format(ratio)}</span></div><h3>{t.progress}</h3><p>{interpolate(t.stepOf, { n: number(done), total: number(flat.length) })}</p><p className="small">{t.demoNotice}</p></section><section className="editorial-note"><Icon name="book" /><p>{t.draftNotice}</p></section></aside></div>
-        </>}
-
-        {view === "step" && <>
-          <div className="lesson-top"><button className="button ghost" onClick={overview}><span className="back-arrow"><Arrow /></span>{t.overview}</button><div className="lesson-progress"><p>{interpolate(t.stepOf, { n: number(activeIndex + 1), total: number(flat.length) })}</p><div className="track">{flat.map(({step:item}) => <span key={item.id} className={getStepState(progress,item.id).complete ? "filled" : item.id === step.id ? "active" : ""} />)}</div></div></div>
-          <div className="lesson-grid"><article className="card stage"><span className="eyebrow">{typeLabel}</span><h1 ref={heading} tabIndex={-1}>{step.title}</h1>{step.objective && <p className="objective">{step.objective}</p>}<div className="prose">{step.body.map((p,i) => <p key={i}>{p}</p>)}</div>{step.callouts?.map((p,i) => <blockquote key={i}>{p}</blockquote>)}
-            {step.toolNotes?.[progress.tool] && <details className="tool-note" key={`${step.id}:${progress.tool}`} open={step.executionMode === "external-real-task" || activeIndex === 0}><summary>{t.tool}: <bdi>{progress.tool === "claude" ? "Claude" : "Codex"}</bdi></summary><p>{step.toolNotes[progress.tool]}</p></details>}
-            <TeachingVisual step={step} />
-            {step.action && <section className="action-block"><h2>{l.action}</h2><p>{step.action}</p></section>}
-            {step.practice && <form onSubmit={event => { event.preventDefault(); submitPractice(); }}>
-              <p className="activity-notice">{step.executionMode === "external-real-task" ? t.externalNotice : t.practiceNotice}</p><label htmlFor="practice-answer">{t.answer}</label><textarea id="practice-answer" dir="auto" maxLength={12000} rows={6} value={state.draft} placeholder={step.practice.placeholder} onChange={event => setProgress(p => updateStep(p, step.id, { draft: event.target.value, complete: false }))} />
-              <fieldset className="criteria"><legend>{t.selfReview}</legend>{step.practice.criteria.map((criterion,index) => <label className="criterion" key={step.practice?.criterionIds?.[index] ?? index}><input type="checkbox" checked={state.criteria.includes(index)} onChange={event => setProgress(p => updateStep(p, step.id, { criteria: event.target.checked ? [...state.criteria, index] : state.criteria.filter(n => n !== index), complete: false }))} /><span>{criterion}</span></label>)}</fieldset>
-              <button className="button secondary" type="submit" disabled={!ready || !state.draft.trim() || state.criteria.length !== step.practice.criteria.length}>{t.completePractice}<Icon name="check" size={18} /></button>{state.complete && <div className="feedback good" role="status"><Icon name="check" /><div><strong>{t.completed}</strong><p>{step.practice.feedback}</p><small>{step.executionMode === "external-real-task" ? t.externalNotice : t.practiceNotice}</small></div></div>}
-            </form>}
-            {step.check && <form onSubmit={event => { event.preventDefault(); submitCheck(); }}><fieldset className="choices"><legend>{step.check.prompt}</legend>{step.check.choices.map(choice => <label className="answer" key={choice.id}><input type="radio" name={step.id} value={choice.id} checked={state.draft === choice.id} onChange={() => setProgress(p => updateStep(p, step.id, { draft: choice.id }))} /><span>{choice.text}</span></label>)}</fieldset><button className="button primary" disabled={!state.draft} type="submit">{t.check}<Icon name="check" size={18} /></button>{feedback && <div className={`feedback ${feedback.passed ? "good" : "error"}`} role="status"><Icon name={feedback.passed ? "check" : "spark"} /><div><strong>{feedback.passed ? t.passed : t.tryAgain}</strong><p>{feedback.feedback}</p><small>{interpolate(t.attempts,{ n: number(state.attempts.length) })}</small></div></div>}</form>}
-            {step.expectedResult && !step.practice && <section className="expected"><strong>{l.expected}</strong><p>{step.expectedResult}</p></section>}
-            <footer className="stage-footer"><button className="button ghost" disabled={activeIndex === 0} onClick={() => showStep(flat[activeIndex - 1].step.id)}><span className="back-arrow"><Arrow /></span>{t.back}</button><button className="button primary" disabled={!nextEnabled} onClick={next}>{activeIndex === flat.length - 1 ? t.finish : t.next}<Arrow /></button></footer>
-          </article><aside className="lesson-aside"><section className="card stage-list"><h2>{lesson.title}</h2><nav aria-label={t.lessons}>{flat.map(({step:item},index) => <button key={item.id} onClick={() => showStep(item.id)} aria-label={`${item.title}${getStepState(progress,item.id).complete ? ` — ${t.completed}` : ""}`} aria-current={item.id === step.id ? "step" : undefined}><span className="dot">{getStepState(progress,item.id).complete ? <Icon name="check" size={13} /> : number(index + 1)}</span><span>{item.title}</span></button>)}</nav></section>{step.hints?.length ? <details className="hint"><summary>{l.hints}</summary>{step.hints.map((hint,index) => <p key={index}>{hint}</p>)}</details> : null}{step.criteria?.length ? <section className="criteria-note"><h3>{t.criteria}</h3>{step.criteria.map((criterion,index) => <p key={index}>{criterion}</p>)}</section> : null}</aside></div>
-        </>}
-        {view === "complete" && <section className="card completion"><div className="success-art"><Icon name="check" size={48} /></div><p className="eyebrow">{t.completed}</p><h1 ref={heading} tabIndex={-1}>{t.allDone}</h1><p>{t.allDoneBody}</p><button className="button primary" onClick={() => showStep(flat[0].step.id)}>{t.review}<Arrow /></button></section>}
-        <p className="edition-note">{t.draftNotice} <span dir="ltr">v{course.version}</span></p>
-      </main>
+  const stepPosition = lesson.steps.findIndex(item => item.id === step.id);
+  const progressLabel = interpolate(t.stepOf, { n: number(stepPosition + 1), total: number(lesson.steps.length) });
+  const hasDiagram = Boolean(step.visualDescription && step.id !== "step.first-request.request-check" && (!step.practice || step.executionMode === "external-real-task" || step.id === "step.first-request.transfer"));
+  const showArt = step.id === "step.first-request.scope";
+  const languageSelect = (
+    <select aria-label={t.language} value={course.locale} onChange={event => changeLocale(event.target.value as Locale)}>
+      {locales.map(locale => <option key={locale} value={locale} lang={locale}>{localeNames[locale]}</option>)}
+    </select>
+  );
+  const toolSelect = (
+    <select aria-label={t.tool} value={progress.tool} disabled={!ready} onChange={event => setProgress(p => ({ ...p, tool: event.target.value as LearningTool }))}>
+      <option value="claude">Claude</option><option value="codex">Codex</option>
+    </select>
+  );
+  const demoInfo = (
+    <div className="demo-info">
+      <details className="context-note">
+        <summary><Icon name="info" size={14} />{n.previewReview}</summary>
+        <p>{t.demoNotice}</p><p>{t.draftNotice}</p>
+        <p>{ready && !saveError ? t.localSaved : ""} <span dir="ltr">v{course.version}</span></p>
+      </details>
+      {saveError && <p className="save-error" role="alert">{t.localError}</p>}
     </div>
-  </div>;
+  );
+  const recoveryNotice = recovered && <p className="recovery-notice" role="status">{recoveryText[course.locale]}</p>;
+
+  function selectPreview(id: string, focus = false) {
+    setProgress(p => ({ ...p, currentStepId: id }));
+    if (focus) requestAnimationFrame(() => railCards.current.get(id)?.focus());
+  }
+  function movePreview(direction: number) {
+    const index = Math.max(0, Math.min(lesson.steps.length - 1, stepPosition + direction));
+    selectPreview(lesson.steps[index].id);
+  }
+  function openDialog(kind: "help" | "steps") {
+    dialogTrigger.current = document.activeElement as HTMLElement;
+    setDialogKind(kind);
+  }
+  function closeDialog() { dialog.current?.close(); }
+
+  return <>
+    <a className="skip" href="#main">{t.skip}</a>
+    {view === "overview" ? (
+      <div className="native-home">
+        <aside className="native-sidebar">
+          <button className="native-brand" onClick={overview} aria-label="Ganesha">
+            <img src="/images/native/ganesha-symbol.png" alt="" width="33" height="38" /><span>Ganesha</span>
+          </button>
+          <p className="side-caption">{t.lessons}</p>
+          <nav className="lesson-navigation" aria-label={t.lessons}>
+            {course.lessons.map(item => {
+              const count = item.steps.filter(s => getStepState(progress, s.id).complete).length;
+              return <button key={item.id} className="lesson-nav" aria-current={item.id === lesson.id ? "page" : undefined} disabled={!ready} onClick={() => selectPreview(item.steps[0].id)}>
+                <span className="lesson-symbol"><Icon name="book" size={16} /></span>
+                <span><strong>{item.title}</strong><small>{t.progress}: <bdi dir="ltr">{number(count)} / {number(item.steps.length)}</bdi></small></span>
+              </button>;
+            })}
+          </nav>
+          <div className="side-bottom">
+            <div className="side-controls">
+              <div className="select-row"><Icon name="globe" size={15} />{languageSelect}</div>
+              <div className="select-row"><Icon name="spark" size={15} />{toolSelect}</div>
+            </div>
+            {demoInfo}
+          </div>
+        </aside>
+        <main id="main" className="native-board">
+          {recoveryNotice}
+          <header className="board-header">
+            <h1 ref={heading} tabIndex={-1}>{n.lessonSteps} <span>{lesson.title}</span></h1>
+            <div className="rail-controls">
+              <button className="icon-button" onClick={() => movePreview(-1)} disabled={!ready || stepPosition === 0} aria-label={t.back}><span className="back-arrow"><Arrow /></span></button>
+              <button className="icon-button" onClick={() => movePreview(1)} disabled={!ready || stepPosition === lesson.steps.length - 1} aria-label={t.next}><Arrow /></button>
+            </div>
+          </header>
+          <div className="rail-viewport">
+            <ol className="step-rail" aria-label={n.lessonSteps}>
+              {lesson.steps.map((item, index) => {
+                const complete = getStepState(progress, item.id).complete;
+                const active = item.id === step.id;
+                return <li key={item.id}>
+                  <button
+                    ref={element => { if (element) railCards.current.set(item.id, element); else railCards.current.delete(item.id); }}
+                    className={`step-card${active ? " active" : ""}${complete ? " complete" : ""}`}
+                    aria-label={`${item.title}${complete ? ` — ${t.completed}` : ""}`}
+                    aria-current={active ? "step" : undefined}
+                    disabled={!ready}
+                    onClick={() => selectPreview(item.id)}
+                    onKeyDown={event => {
+                      const forward = course.locale === "ar" ? "ArrowLeft" : "ArrowRight";
+                      const backward = course.locale === "ar" ? "ArrowRight" : "ArrowLeft";
+                      const destination = event.key === "Home" ? 0 : event.key === "End" ? lesson.steps.length - 1 : event.key === forward ? index + 1 : event.key === backward ? index - 1 : null;
+                      if (destination !== null) { event.preventDefault(); selectPreview(lesson.steps[Math.max(0, Math.min(lesson.steps.length - 1, destination))].id, true); }
+                    }}
+                  >
+                    <span className="step-symbol" aria-hidden="true">{complete ? <Icon name="check" size={17} /> : active ? "" : <Icon name={item.check ? "check" : item.practice ? "pen" : "page"} size={16} />}</span>
+                    <strong>{item.title}</strong>
+                    <small>{item.check ? t.knowledge : item.practice ? t.practice : t.read}</small>
+                    {(active || complete) && <span className="state-dot">{complete ? t.completed : t.current}</span>}
+                  </button>
+                </li>;
+              })}
+            </ol>
+          </div>
+          <section className={`stage-preview${stepPosition === 0 ? " merge-start" : ""}`} aria-labelledby="preview-heading">
+            <div className="preview-main">
+              <div className="preview-copy"><h2 id="preview-heading">{step.title}</h2><p>{step.objective}</p><p className="preview-result">{step.expectedResult}</p></div>
+              <img className="preview-figure" src="/images/creative-workshop-transparent.png" alt="" width="300" height="300" />
+            </div>
+            <div className="preview-bottom"><button className="button primary" disabled={!ready} onClick={() => showStep(step.id)}>{state.complete ? t.review : n.startStep}<Arrow /></button></div>
+          </section>
+        </main>
+      </div>
+    ) : (
+      <div className="focus-root">
+        <header className="focusbar">
+          <div className="focus-left"><button className="button ghost" onClick={overview}><span className="back-arrow"><Arrow /></span>{t.back}</button><span>{lesson.title}</span></div>
+          <div className="focus-progress"><span>{typeLabel}</span><div className="progress-dots" aria-hidden="true">{lesson.steps.map(item => <i key={item.id} className={item.id === step.id ? "current" : getStepState(progress, item.id).complete ? "complete" : ""} />)}</div></div>
+          <div className="focus-actions">{languageSelect}<button className="button ghost" onClick={() => openDialog("steps")} aria-label={`${n.lessonSteps}: ${progressLabel}`}><Icon name="book" size={16} /><bdi dir="ltr">{number(stepPosition + 1)} / {number(lesson.steps.length)}</bdi></button></div>
+        </header>
+        <main id="main" className="lesson-sheet">
+          {recoveryNotice}
+          {view === "complete" ? (
+            <section className="sheet-summary">
+              <img src="/images/native/ganesha-help.png" alt="" width="130" height="150" />
+              <h1 ref={heading} tabIndex={-1}>{t.allDone}</h1><p>{t.allDoneBody}</p>
+              <button className="button primary" onClick={overview}>{t.review}<Arrow /></button>
+            </section>
+          ) : <>
+            <h1 ref={heading} tabIndex={-1}>{step.title}</h1>
+            <div className={`lesson-grid${!showArt && !hasDiagram ? " text-only" : ""}`}>
+              <div className="lesson-copy">
+                {step.objective && <p className="objective">{step.objective}</p>}
+                {step.body.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
+                {step.callouts?.map((paragraph, index) => <blockquote className="lesson-callout" key={index}>{paragraph}</blockquote>)}
+              </div>
+              {showArt ? <aside className="art-aside"><img className="lesson-art" src="/images/creative-workshop-transparent.png" alt="" width="230" height="230" /></aside> : hasDiagram ? <aside className="visual-aside"><TeachingVisual step={step} /></aside> : null}
+            </div>
+            <div className="tool-context">
+              <details className="tool-instruction" key={`${step.id}:${progress.tool}`} open={step.executionMode === "external-real-task"}>
+                <summary><Icon name="spark" size={16} />{t.tool}</summary>
+                <p>{step.toolNotes?.[progress.tool]}</p>
+              </details>
+              <div className="inline-tool-select">{toolSelect}</div>
+            </div>
+            <section className="activity">
+              {step.practice ? (
+                <form onSubmit={event => { event.preventDefault(); submitPractice(); }}>
+                  <p className="mode-notice">{step.executionMode === "external-real-task" ? t.externalNotice : t.practiceNotice}</p>
+                  <label className="activity-label" htmlFor="practice-answer">{step.action ?? t.answer}</label>
+                  <textarea id="practice-answer" className="draft" aria-label={t.answer} dir="auto" maxLength={12000} rows={5} value={state.draft} placeholder={step.practice.placeholder} onChange={event => setProgress(p => updateStep(p, step.id, { draft: event.target.value, complete: false }))} />
+                  <fieldset className="review-list"><legend>{t.selfReview}</legend>
+                    {step.practice.criteria.map((criterion, index) => <label className="criterion" key={step.practice?.criterionIds?.[index] ?? index}>
+                      <input type="checkbox" checked={state.criteria.includes(index)} onChange={event => setProgress(p => updateStep(p, step.id, { criteria: event.target.checked ? [...state.criteria, index] : state.criteria.filter(value => value !== index), complete: false }))} />
+                      <span>{criterion}</span>
+                    </label>)}
+                  </fieldset>
+                  <button className="button secondary" type="submit" disabled={!ready || !state.draft.trim() || state.criteria.length !== step.practice.criteria.length}>{t.completePractice}<Icon name="check" size={18} /></button>
+                  {state.complete && <div className="feedback good" role="status"><Icon name="check" /><div><strong>{t.completed}</strong><p>{step.practice.feedback}</p><small>{step.executionMode === "external-real-task" ? t.externalNotice : t.practiceNotice}</small></div></div>}
+                </form>
+              ) : <>
+                {step.action && <p className="activity-instruction">{step.action}</p>}
+                {step.check && <form onSubmit={event => { event.preventDefault(); submitCheck(); }}>
+                  <fieldset className="check-group"><legend>{step.check.prompt}</legend>
+                    {step.check.choices.map(choice => <label className="answer" key={choice.id}>
+                      <input type="radio" name={step.id} value={choice.id} checked={state.draft === choice.id} onChange={() => setProgress(p => updateStep(p, step.id, { draft: choice.id }))} /><span>{choice.text}</span>
+                    </label>)}
+                  </fieldset>
+                  <button className="button secondary" disabled={!state.draft} type="submit">{t.check}<Icon name="check" size={18} /></button>
+                  {feedback && <div className={`feedback ${feedback.passed ? "good" : "error"}`} role="status"><Icon name={feedback.passed ? "check" : "info"} /><div><strong>{feedback.passed ? t.passed : t.tryAgain}</strong><p>{feedback.feedback}</p><small>{interpolate(t.attempts, { n: number(state.attempts.length) })}</small></div></div>}
+                </form>}
+              </>}
+            </section>
+            {step.expectedResult && <p className="expected"><strong>{l.expected}: </strong>{step.expectedResult}</p>}
+            <footer className="lesson-footer">
+              <button className="button ghost" disabled={activeIndex === 0} onClick={() => showStep(flat[activeIndex - 1].step.id)}><span className="back-arrow"><Arrow /></span>{t.back}</button>
+              <button className="button primary" disabled={!nextEnabled} onClick={next}>{activeIndex === flat.length - 1 ? t.finish : t.next}<Arrow /></button>
+            </footer>
+          </>}
+          <div className="sheet-bottom">{demoInfo}{view === "step" && <button className="help-button" onClick={() => openDialog("help")}><img src="/images/native/ganesha-help.png" alt="" width="32" height="42" />{n.help}</button>}</div>
+        </main>
+      </div>
+    )}
+    <dialog ref={dialog} aria-labelledby="course-dialog-title" onClose={() => { setDialogKind(null); dialogTrigger.current?.focus(); }}>
+      <button className="close" onClick={closeDialog} aria-label={n.close}>×</button>
+      <h2 id="course-dialog-title">{dialogKind === "steps" ? n.lessonSteps : l.hints}</h2>
+      {dialogKind === "steps" ? <ol className="modal-steps">{lesson.steps.map((item, index) => <li key={item.id}>
+        <button className={item.id === step.id ? "current" : ""} aria-current={item.id === step.id ? "step" : undefined} onClick={() => { closeDialog(); showStep(item.id); }}>
+          <span>{number(index + 1)}. {item.title}</span>{getStepState(progress, item.id).complete && <span className="modal-state"><Icon name="check" size={16} />{t.completed}</span>}
+        </button>
+      </li>)}</ol> : <>
+        {step.hints?.map((hint, index) => <p key={index}>{hint}</p>)}
+        <h3>{t.criteria}</h3>{step.criteria?.map((criterion, index) => <p key={index}>{criterion}</p>)}
+      </>}
+    </dialog>
+  </>;
 }

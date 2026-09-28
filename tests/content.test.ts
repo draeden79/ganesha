@@ -11,6 +11,7 @@ import source from "../content/curriculum/course.json";
 import catalog from "../content/locales/pt-BR.json";
 import type { Course, LocaleCatalog } from "../contracts/course";
 import { demoConfig } from "../src/lib/demo-config";
+import { nativeUi } from "../src/lib/native-i18n";
 
 test("every preview lesson has practice and two separate assessments", () => {
   const course = loadDemoCourse("pt-BR");
@@ -26,7 +27,7 @@ test("every preview lesson has practice and two separate assessments", () => {
 test("11 UI locales have every visible string including failures and recovery", () => {
   for (const locale of locales) {
     assert.deepEqual(Object.keys(ui[locale]),[...uiKeys]);
-    for (const value of [...Object.values(ui[locale]),...Object.values(labels[locale]),...Object.values(statusUi[locale]),recoveryText[locale]]) assert.ok(value.trim());
+    for (const value of [...Object.values(ui[locale]),...Object.values(labels[locale]),...Object.values(statusUi[locale]),...Object.values(nativeUi[locale]),recoveryText[locale]]) assert.ok(value.trim());
   }
 });
 test("missing or stale pedagogical translations fail explicitly without fallback", () => {

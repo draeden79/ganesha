@@ -2,6 +2,8 @@
 
 Website funcional do curso após acesso. Next.js 16.3.6, React 19.3, TypeScript. A landing page, o cadastro e a cobrança pertencem à outra frente do projeto.
 
+A interface segue a referência real do Ganesha Desktop, registrada pelo Artista em `design/specs/NATIVE_REFERENCE.md`: jornada com lateral e trilha horizontal conectada ao painel selecionado; atividade sem lateral, com formulário amplo, índice e ajuda local em diálogo. O logo e o mascote vêm dos assets autorizados do aplicativo nativo. O motor de progresso e o conteúdo canônico são os mesmos da primeira versão.
+
 ## Executar
 
 Node.js 20.9+ e pnpm 11:
@@ -25,11 +27,11 @@ No ambiente Codex deste hackathon, Node está em `/Users/lucasmarques/.cache/cod
 - `/course/[locale]`: demonstração pública identificada; uma aula com sete telas, quatro práticas e duas verificações independentes. Nenhuma aula planejada aparece como disponível.
 - `src/lib/demo-config.ts` contém a lista explícita de aulas da prévia. Ela permite testar L01 enquanto o conteúdo está em revisão e sem liberação pedagógica. O adaptador canônico, sem essa opção, respeita `releasedLessonIds`; a rota protegida não usa essa configuração. Navegabilidade da prévia não equivale a curso liberado.
 - Conteúdo do Educador em `content/curriculum/course.json` e `content/locales/*.json`, adaptado sem renomear IDs. Objetivos, ações, resultados, dicas, rubricas, feedback e variantes Claude/Codex preservados.
-- 11 idiomas: pt-BR, en, es, fr, de, ja, hi, id, ar, ko, zh-CN. 112 mensagens pedagógicas por idioma, 54 mensagens de interface/estado; tradução produzida, revisão humana pendente. Sem fallback silencioso. `lang`/`dir`, árabe RTL, fontes locais Figtree/Noto Arabic/Devanagari e stacks CJK, números localizados e código LTR.
+- 11 idiomas: pt-BR, en, es, fr, de, ja, hi, id, ar, ko, zh-CN. 112 mensagens pedagógicas por idioma, 59 mensagens de interface/estado; tradução produzida, revisão humana pendente. Sem fallback silencioso. `lang`/`dir`, árabe RTL, fontes locais Figtree/Noto Arabic/Devanagari e stacks CJK, números localizados e código LTR.
 - Progresso e tentativas por versão de curso e ferramenta, somente no navegador. Troca de idioma preserva respostas escritas pelo aluno. Etapas práticas exigem texto e autorrelato da rubrica; quizzes usam IDs, sem busca de palavras em um idioma.
 - Restauração valida IDs/opções/rubricas/tentativas, deriva conclusão e informa recuperação. Dados inválidos são copiados para uma chave `:recovery:<timestamp>` antes de sobrescrita. Falha de backup bloqueia a sobrescrita; falha de armazenamento aparece na interface.
 - Abas sincronizam via evento `storage`; rascunho mais recente por etapa vence e tentativas são unidas, ordenadas e deduplicadas (máximo 50 por etapa/ferramenta). Cursor da aba ativa é preservado. Não é edição colaborativa.
-- Layout responsivo, dicas preservadas no mobile, formulários nativos, foco visível/programático, atalhos de teclado nativos, figuras com legenda traduzida e imagem decorativa sem texto.
+- Layout responsivo, trilho horizontal com scroll contido, setas e Home/End, formulários nativos, foco visível/programático, diálogos nativos com Escape/retorno de foco, figuras com legenda traduzida e imagem decorativa sem texto. Ajuda contém dicas locais do currículo; não representa um tutor conectado.
 
 ## Fronteira de acesso
 
