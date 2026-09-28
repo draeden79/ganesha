@@ -1,0 +1,31 @@
+{
+  "artifact_bytes": 5777116,
+  "artifact_count": 36,
+  "attempt_results": {
+    "exported_track": 18,
+    "metadata_collected": 13,
+    "network_dns_failure_recovered": 1,
+    "no_accessible_original_track": 1
+  },
+  "curated_videos_pending_acquisition": [],
+  "curated_videos_selected_for_study": 9,
+  "curated_videos_with_exported_track": 9,
+  "exported_videos": 18,
+  "full_source_analyzed": 0,
+  "general_historical_queue_active": false,
+  "generated_at": "2026-09-28T19:52:06.481362+00:00",
+  "known_video_duration_seconds": 18221,
+  "queue_snapshot_generated_at": "2026-09-28T19:52:06.476309+00:00",
+  "queue_snapshot_total": 4853,
+  "scope_note": "Acquisition evidence only. The active scope is explicit curation; the historical inventory is preserved for discovery, not an active download target.",
+  "source_counts": {
+    "designcourse-youtube": 2,
+    "nate-herk-youtube": 3,
+    "openai-learn-codex": 9,
+    "peter-yang-newsletter": 1,
+    "peter-yang-youtube": 1,
+    "riley-brown-youtube": 2,
+    "tech-with-tim-youtube": 1
+  },
+  "speech_coverage_verified": 0
+}

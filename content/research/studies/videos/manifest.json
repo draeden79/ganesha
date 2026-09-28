@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "scope": "video_studies_only",
+  "study_date": "2026-09-28",
+  "updated_at": "2026-09-28T19:44:46.940260+00:00",
+  "raw_artifacts_in_git": false,
+  "full_source_policy": "Reading a complete caption track and inspecting isolated frames do not certify full audiovisual or speech coverage.",
+  "videos": [
+    {
+      "video_id": "bdMHQLvtVaQ",
+      "source_id": "peter-yang-youtube",
+      "url": "https://www.youtube.com/watch?v=bdMHQLvtVaQ",
+      "title": "How to Build Better AI Evals with Claude Code in 5 Steps | Shreya & Hamel",
+      "published_at": "2026-08-23",
+      "duration_seconds": 3232,
+      "metadata_provenance": "transcripts/manifest.json; player duration visually corroborated during study",
+      "study_status": "transcript_analyzed_visual_pending",
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "full_source_analyzed": false,
+      "caption_artifact": {
+        "path": "content/research/transcripts/local/bdMHQLvtVaQ.export.txt",
+        "bytes": 65541,
+        "sha256": "8d5feebcdd4ef8ec0245e744dbd7a2a788972ed78a1ee6b18aeddb8fad383849",
+        "language": "en",
+        "caption_origin": "automatic",
+        "cue_count": 1503,
+        "logical_line_count": 1508,
+        "sequential_read_ranges": [
+          [
+            1,
+            650
+          ],
+          [
+            651,
+            1120
+          ],
+          [
+            1121,
+            1507
+          ],
+          [
+            1508,
+            1508
+          ]
+        ],
+        "first_cue_start_seconds": 0,
+        "last_cue_start_seconds": 3230,
+        "last_cue_end_seconds": null,
+        "timing_note": "TXT has cue starts only and no final newline; wc -l reports 1507, splitlines reports 1508."
+      },
+      "study_artifact": {
+        "path": "bdMHQLvtVaQ.md",
+        "sha256": "eb04d8cdb512cc37149ae36234284656a3a5aa08a614525b72aecdc662e99f5d"
+      },
+      "visual_review": {
+        "status": "partial_selected_frames",
+        "inspected_player_seconds": [
+          1459,
+          1559,
+          2064,
+          2159
+        ],
+        "continuous_intervals_reviewed": [],
+        "captures": [
+          {
+            "path": "local/bdMHQLvtVaQ-24m19.png",
+            "bytes": 138176,
+            "sha256": "84dacc44577afaa134b68ddc15c0b93e382c0f6c65877e4520ba806de6276d4f",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/bdMHQLvtVaQ-25m59.png",
+            "bytes": 149776,
+            "sha256": "8d52c4a24ade647a1cc6d8ffc5e5c2851eaf336f8c4ff20e1f14dd7c88a3dbfe",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/bdMHQLvtVaQ-34m24.png",
+            "bytes": 138845,
+            "sha256": "fe33ff03fbcc82d14cc8a76f7fb766ad683011d8a8f828c17c07ddfade7adc77",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/bdMHQLvtVaQ-35m59.png",
+            "bytes": 131918,
+            "sha256": "19e912d32bc83faf8d0b3a01be305268397fd83b5687b5b8d5c334de62b1100e",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          }
+        ],
+        "material_finding": "34:24 terminal recognizes noisy staccato rule and attempts reduction; 35:59 human acceptance makes agent retain annotations. This is absent from narrated transcript."
+      },
+      "pending": [
+        "Full audiovisual review including speech accuracy, opening and ending",
+        "Continuous UI transitions around annotation, overgeneration recovery and acceptance",
+        "Final skill derivation and independent evaluator validation not demonstrated",
+        "Referenced skill repository and benchmark article not studied in this fiche",
+        "Current product/interface/price/model claims not verified"
+      ],
+      "selection": {
+        "role": "advanced_optional_support",
+        "beginner_required": false,
+        "reason": "Useful for evaluating existing outputs; assumes data, domain judgment and coding-agent setup. Not a first-build tutorial."
+      }
+    },
+    {
+      "video_id": "saggDHHnmtQ",
+      "source_id": "nate-herk-youtube",
+      "url": "https://www.youtube.com/watch?v=saggDHHnmtQ",
+      "title": "Master 95% of Claude Code in 36 Mins (as a beginner)",
+      "published_at": "2026-01-21",
+      "duration_seconds": 2217,
+      "metadata_provenance": "transcripts/manifest.json; player duration visually corroborated during study",
+      "study_status": "transcript_analyzed_visual_pending",
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "full_source_analyzed": false,
+      "selection": {
+        "role": "intermediate_automation_support",
+        "beginner_required": false,
+        "reason": "Useful local output-test-fix sequence; credentials/setup gaps and failed remote YouTube run prevent treating as a complete autonomous beginner path. Setup overlaps Tim; VS Code extension does not establish Desktop parity."
+      },
+      "caption_artifact": {
+        "path": "content/research/transcripts/local/saggDHHnmtQ.export.txt",
+        "bytes": 58541,
+        "sha256": "03564bbd7456890ce0a92122d91fcfe7954f87bc0689c10ff6421df8c818f977",
+        "language": "en",
+        "caption_origin": "automatic",
+        "cue_count": 1269,
+        "logical_line_count": 1274,
+        "sequential_read_ranges": [
+          [
+            1,
+            450
+          ],
+          [
+            451,
+            900
+          ],
+          [
+            901,
+            1274
+          ]
+        ],
+        "first_cue_start_seconds": 0,
+        "last_cue_start_seconds": 2215,
+        "last_cue_end_seconds": null,
+        "timing_note": "TXT has cue starts only. Manifested JSON3 ends at 2218.16, 1.16 seconds beyond player duration; JSON3 not fully read in this study."
+      },
+      "study_artifact": {
+        "path": "saggDHHnmtQ.md",
+        "sha256": "3b6499e8e5143628bc8ba618ef41d80da4c5896949a8cdfd15a29ff63988e37a"
+      },
+      "visual_review": {
+        "status": "partial_selected_frames",
+        "inspected_player_seconds": [
+          1011,
+          1651,
+          1706,
+          1976,
+          1981,
+          2091
+        ],
+        "continuous_intervals_reviewed": [],
+        "captures": [
+          {
+            "path": "local/saggDHHnmtQ-16m51.png",
+            "bytes": 128608,
+            "sha256": "7f2d0f428d7b09e7be8de3d1dd95486584a0efa4848e93f06239d4f629cbcd26",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/saggDHHnmtQ-27m31.png",
+            "bytes": 116614,
+            "sha256": "89541e558ea849794cc562c0cf310f624ee9b807f243ad69310e91483a5ea433",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/saggDHHnmtQ-28m26.png",
+            "bytes": 120924,
+            "sha256": "8a72154a718ac945ed462b744c056cbc4635249aafebbb551847ca9e78ba692f",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/saggDHHnmtQ-32m56.png",
+            "bytes": 128582,
+            "sha256": "4b57ee0ab0d6a2daa86933efd53c7cade4db563ecf5d0995b8c22314531f293e",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/saggDHHnmtQ-33m01.png",
+            "bytes": 146817,
+            "sha256": "6777487781d8788b759749cbf8cfd2206f6e5d264695972e350fe984287ac134",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/saggDHHnmtQ-34m51.png",
+            "bytes": 132985,
+            "sha256": "6d1ea5b8038f8e02ba266b8a821b48445ada720617de18907d795ff0f2203694",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          }
+        ],
+        "material_finding": "PDF preview changes from 2/2 to 3/9; remote YouTube run visibly fails with HTTP 403 quotaExceeded. Later webhook success is a different project."
+      },
+      "pending": [
+        "Full audiovisual review and caption accuracy/opening/ending",
+        "Complete credential and skill setup not shown",
+        "PDF implementation and all pages not fully inspected",
+        "Security review corrections not fully demonstrated",
+        "Remote YouTube quota recovery and successful retest omitted from source",
+        "Second webhook workflow was prebuilt; construction not shown",
+        "Current interface/prices/credits/API quota not verified"
+      ]
+    }
+  ]
+}

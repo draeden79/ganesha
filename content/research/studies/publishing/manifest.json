@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "purpose": "beginner_manual_static_publishing_research",
+  "updated_at": "2026-09-28T19:51:48.878901+00:00",
+  "sources": [
+    {
+      "source_id": "netlify-drop",
+      "role": "primary",
+      "title": "Netlify Drop Quickstart",
+      "url": "https://docs.netlify.com/start/quickstarts/netlify-drop-quickstart/",
+      "publisher": "Netlify",
+      "language": "en",
+      "study_date": "2026-09-28",
+      "document_updated_at": "2026-07-28",
+      "updated_date_provenance": "Rendered official page footer (web reader; principal additionally Browser DOM)",
+      "artifact": {
+        "path": "local/publishing-netlify-drop.md",
+        "bytes": 7829,
+        "sha256": "631f0cc805e5e64c9a99cf3480282a79b504d7fa34e94f3ceb2448110fc1fc4d",
+        "collected_at": "2026-09-28T19:46:48.488694+00:00",
+        "format": "official_markdown",
+        "retrieved_from": "https://docs.netlify.com/start/quickstarts/netlify-drop-quickstart.md",
+        "logical_line_count": 86,
+        "sequential_read_ranges": [
+          [
+            1,
+            86
+          ]
+        ]
+      },
+      "full_text_analyzed": true,
+      "full_source_analyzed": false,
+      "study_status": "partial",
+      "analysis_scope": "Entire Markdown page including alternatives, limitations and linked-reference context; linked pages not implicitly studied",
+      "procedure_executed": false,
+      "visual_review": {
+        "static_figures_reviewed": 2,
+        "animated_figures_sampled": 2,
+        "animation_frame_coverage": "not_exhaustive",
+        "captures": [
+          {
+            "path": "local/publishing-netlify-url.png",
+            "bytes": 45655,
+            "sha256": "e8c22b6024ff7df2683af29741ac14b175918c37c90785210d3fcc98aa6fc0e1",
+            "collected_at": "2026-09-28T19:47:49.181551+00:00",
+            "source_asset_url": "https://docs.netlify.com/images/drag-and-drop-preview-url.png",
+            "observation": "Complete static figure inspected; project URL highlighted and lock icon visible.",
+            "internal_only": true
+          },
+          {
+            "path": "local/publishing-netlify-update.png",
+            "bytes": 50778,
+            "sha256": "fd185390e9a41d0a1c53b7a3195cea83c29fdaf989d4fa9ab80c5b14984db939",
+            "collected_at": "2026-09-28T19:48:05.184191+00:00",
+            "source_asset_url": "https://docs.netlify.com/images/drag-and-drop-from-project-overview.png",
+            "observation": "Complete static figure inspected; Production deploys drop area and Published state; embedded November 2025 date.",
+            "internal_only": true
+          },
+          {
+            "path": "local/publishing-netlify-first-upload-start.png",
+            "bytes": 28424,
+            "sha256": "b68640accdc4362e2264fe16298fc858945e22fc5a5963d159822d41368fcd29",
+            "collected_at": "2026-09-28T19:48:43.938826+00:00",
+            "source_asset_url": "https://docs.netlify.com/images/how-to-drag-and-drop-new-project.gif",
+            "observation": "Selected frame: Projects list and drop area.",
+            "internal_only": true
+          },
+          {
+            "path": "local/publishing-netlify-first-upload.png",
+            "bytes": 29666,
+            "sha256": "0728384e197cd5ac67511c72c4644e3f15d524cc83e169a5797abaf05d76b980",
+            "collected_at": "2026-09-28T19:48:35.726708+00:00",
+            "source_asset_url": "https://docs.netlify.com/images/how-to-drag-and-drop-new-project.gif",
+            "observation": "Selected later frame: resulting example planning page, not observed live deployment.",
+            "internal_only": true
+          },
+          {
+            "path": "local/publishing-netlify-update-animation-start.png",
+            "bytes": 51823,
+            "sha256": "91480d93f1efe430274f6fbf04f4f32729c9d79d9478f8f54e0936312ae876fa",
+            "collected_at": "2026-09-28T19:49:22.252957+00:00",
+            "source_asset_url": "https://docs.netlify.com/images/show-how-to-drag-and-drop-to-update-project.gif",
+            "observation": "Selected frame: existing project and Production deploys drop area, timestamp 10:54 AM.",
+            "internal_only": true
+          },
+          {
+            "path": "local/publishing-netlify-update-animation-later.png",
+            "bytes": 52591,
+            "sha256": "e49a73bfea5cf2e5ec4edef73ae44242320f6c273ae93ebd5bde76ff479c7127",
+            "collected_at": "2026-09-28T19:50:55.166318+00:00",
+            "source_asset_url": "https://docs.netlify.com/images/show-how-to-drag-and-drop-to-update-project.gif",
+            "observation": "Selected later frame: same project/URL and Published timestamp 10:55 AM; intermediate steps not continuously observed.",
+            "internal_only": true
+          }
+        ]
+      },
+      "pending_source_review": [
+        "Animated figures inspected at selected states, not continuously or frame by frame."
+      ]
+    },
+    {
+      "source_id": "netlify-visibility",
+      "role": "sole_complement",
+      "title": "Project visibility",
+      "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility/",
+      "publisher": "Netlify",
+      "language": "en",
+      "study_date": "2026-09-28",
+      "document_updated_at": "2026-08-19",
+      "updated_date_provenance": "Rendered official page footer (web reader; principal additionally Browser DOM)",
+      "artifact": {
+        "path": "local/publishing-netlify-visibility.md",
+        "bytes": 8198,
+        "sha256": "03e6fc8fa9e6e67dee726653cadd27a968b8e1c3a320dc598317794d20d65fdb",
+        "collected_at": "2026-09-28T19:46:48.552343+00:00",
+        "format": "official_markdown",
+        "retrieved_from": "https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility.md",
+        "logical_line_count": 112,
+        "sequential_read_ranges": [
+          [
+            1,
+            112
+          ]
+        ]
+      },
+      "full_text_analyzed": true,
+      "full_source_analyzed": true,
+      "study_status": "full_source_analyzed",
+      "analysis_scope": "Entire Markdown page including alternatives, limitations and linked-reference context; linked pages not implicitly studied",
+      "procedure_executed": false,
+      "visual_review": {
+        "material_figures_present": false,
+        "text_navigation_and_roles_read": true
+      }
+    }
+  ],
+  "study_artifact": {
+    "path": "publishing/netlify-manual-static.md",
+    "bytes": 8359,
+    "sha256": "76393d9941b3c6ee388739f1eab42a3e889ef2d3af280e6d09f8b94719795a2f",
+    "collected_at": "2026-09-28T19:50:40.307775+00:00"
+  },
+  "raw_artifacts_in_git": false,
+  "source_count": 2,
+  "source_selection": {
+    "primary": "One-page official manual-upload quickstart with update and troubleshooting",
+    "complement_gap": "Public visibility, role permissions and visitor behavior",
+    "audience": "Person with a working static HTML page and basic folder skills",
+    "duplication": "Adds publication/republication to local-result examples; avoids repeating CLI/editor tutorials",
+    "currentness": "Official pages updated July/August 2026; account UI not executed",
+    "no_cli_or_git_required_for_selected_exercise": true
+  },
+  "operational_validation": {
+    "status": "not_executed",
+    "account_created": false,
+    "logged_in": false,
+    "uploaded": false,
+    "deployed": false,
+    "visibility_changed": false,
+    "visitor_test_executed": false,
+    "republication_executed": false,
+    "pending": [
+      "Account and team role/permissions in selected environment",
+      "Current UI fields for initial drop and same-project update",
+      "Real successful first deployment",
+      "Public access from a visitor without owner session",
+      "Image/link behavior and visible version after republication",
+      "Diagnosis and recovery of a real or controlled error"
+    ]
+  },
+  "curricular_proposal": {
+    "status": "proposed_not_approved",
+    "exercise": "Static one-page folder, initial public visitor check, one visible change, republication and regression check",
+    "checks": [
+      "Unauthenticated visitor can access the intended page",
+      "Image/link behavior and visible version match expected output",
+      "Previous behavior still works after update"
+    ]
+  }
+}

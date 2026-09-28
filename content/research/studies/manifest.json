@@ -26,6 +26,1011 @@
       "visual_review_complete": false,
       "study_path": "studies/ntDIxaeo3Wg.md",
       "basis": "All exported caption entries read in sequence; original analysis records prerequisites, full progression, examples, errors, boundaries and curriculum implications."
+    },
+    {
+      "video_id": "bdMHQLvtVaQ",
+      "source_id": "peter-yang-youtube",
+      "url": "https://www.youtube.com/watch?v=bdMHQLvtVaQ",
+      "title": "How to Build Better AI Evals with Claude Code in 5 Steps | Shreya & Hamel",
+      "published_at": "2026-08-23",
+      "duration_seconds": 3232,
+      "metadata_provenance": "transcripts/manifest.json; player duration visually corroborated during study",
+      "study_status": "transcript_analyzed_visual_pending",
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "full_source_analyzed": false,
+      "caption_artifact": {
+        "path": "content/research/transcripts/local/bdMHQLvtVaQ.export.txt",
+        "bytes": 65541,
+        "sha256": "8d5feebcdd4ef8ec0245e744dbd7a2a788972ed78a1ee6b18aeddb8fad383849",
+        "language": "en",
+        "caption_origin": "automatic",
+        "cue_count": 1503,
+        "logical_line_count": 1508,
+        "sequential_read_ranges": [
+          [
+            1,
+            650
+          ],
+          [
+            651,
+            1120
+          ],
+          [
+            1121,
+            1507
+          ],
+          [
+            1508,
+            1508
+          ]
+        ],
+        "first_cue_start_seconds": 0,
+        "last_cue_start_seconds": 3230,
+        "last_cue_end_seconds": null,
+        "timing_note": "TXT has cue starts only and no final newline; wc -l reports 1507, splitlines reports 1508."
+      },
+      "study_artifact": {
+        "path": "bdMHQLvtVaQ.md",
+        "sha256": "eb04d8cdb512cc37149ae36234284656a3a5aa08a614525b72aecdc662e99f5d"
+      },
+      "visual_review": {
+        "status": "partial_selected_frames",
+        "inspected_player_seconds": [
+          1459,
+          1559,
+          2064,
+          2159
+        ],
+        "continuous_intervals_reviewed": [],
+        "captures": [
+          {
+            "path": "local/bdMHQLvtVaQ-24m19.png",
+            "bytes": 138176,
+            "sha256": "84dacc44577afaa134b68ddc15c0b93e382c0f6c65877e4520ba806de6276d4f",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/bdMHQLvtVaQ-25m59.png",
+            "bytes": 149776,
+            "sha256": "8d52c4a24ade647a1cc6d8ffc5e5c2851eaf336f8c4ff20e1f14dd7c88a3dbfe",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/bdMHQLvtVaQ-34m24.png",
+            "bytes": 138845,
+            "sha256": "fe33ff03fbcc82d14cc8a76f7fb766ad683011d8a8f828c17c07ddfade7adc77",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/bdMHQLvtVaQ-35m59.png",
+            "bytes": 131918,
+            "sha256": "19e912d32bc83faf8d0b3a01be305268397fd83b5687b5b8d5c334de62b1100e",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          }
+        ],
+        "material_finding": "34:24 terminal recognizes noisy staccato rule and attempts reduction; 35:59 human acceptance makes agent retain annotations. This is absent from narrated transcript."
+      },
+      "pending": [
+        "Full audiovisual review including speech accuracy, opening and ending",
+        "Continuous UI transitions around annotation, overgeneration recovery and acceptance",
+        "Final skill derivation and independent evaluator validation not demonstrated",
+        "Referenced skill repository and benchmark article not studied in this fiche",
+        "Current product/interface/price/model claims not verified"
+      ],
+      "selection": {
+        "role": "advanced_optional_support",
+        "beginner_required": false,
+        "reason": "Useful for evaluating existing outputs; assumes data, domain judgment and coding-agent setup. Not a first-build tutorial."
+      },
+      "study_path": "studies/videos/bdMHQLvtVaQ.md",
+      "all_exported_text_read": true
+    },
+    {
+      "video_id": "saggDHHnmtQ",
+      "source_id": "nate-herk-youtube",
+      "url": "https://www.youtube.com/watch?v=saggDHHnmtQ",
+      "title": "Master 95% of Claude Code in 36 Mins (as a beginner)",
+      "published_at": "2026-01-21",
+      "duration_seconds": 2217,
+      "metadata_provenance": "transcripts/manifest.json; player duration visually corroborated during study",
+      "study_status": "transcript_analyzed_visual_pending",
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "full_source_analyzed": false,
+      "selection": {
+        "role": "intermediate_automation_support",
+        "beginner_required": false,
+        "reason": "Useful local output-test-fix sequence; credentials/setup gaps and failed remote YouTube run prevent treating as a complete autonomous beginner path. Setup overlaps Tim; VS Code extension does not establish Desktop parity."
+      },
+      "caption_artifact": {
+        "path": "content/research/transcripts/local/saggDHHnmtQ.export.txt",
+        "bytes": 58541,
+        "sha256": "03564bbd7456890ce0a92122d91fcfe7954f87bc0689c10ff6421df8c818f977",
+        "language": "en",
+        "caption_origin": "automatic",
+        "cue_count": 1269,
+        "logical_line_count": 1274,
+        "sequential_read_ranges": [
+          [
+            1,
+            450
+          ],
+          [
+            451,
+            900
+          ],
+          [
+            901,
+            1274
+          ]
+        ],
+        "first_cue_start_seconds": 0,
+        "last_cue_start_seconds": 2215,
+        "last_cue_end_seconds": null,
+        "timing_note": "TXT has cue starts only. Manifested JSON3 ends at 2218.16, 1.16 seconds beyond player duration; JSON3 not fully read in this study."
+      },
+      "study_artifact": {
+        "path": "saggDHHnmtQ.md",
+        "sha256": "3b6499e8e5143628bc8ba618ef41d80da4c5896949a8cdfd15a29ff63988e37a"
+      },
+      "visual_review": {
+        "status": "partial_selected_frames",
+        "inspected_player_seconds": [
+          1011,
+          1651,
+          1706,
+          1976,
+          1981,
+          2091
+        ],
+        "continuous_intervals_reviewed": [],
+        "captures": [
+          {
+            "path": "local/saggDHHnmtQ-16m51.png",
+            "bytes": 128608,
+            "sha256": "7f2d0f428d7b09e7be8de3d1dd95486584a0efa4848e93f06239d4f629cbcd26",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/saggDHHnmtQ-27m31.png",
+            "bytes": 116614,
+            "sha256": "89541e558ea849794cc562c0cf310f624ee9b807f243ad69310e91483a5ea433",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/saggDHHnmtQ-28m26.png",
+            "bytes": 120924,
+            "sha256": "8a72154a718ac945ed462b744c056cbc4635249aafebbb551847ca9e78ba692f",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/saggDHHnmtQ-32m56.png",
+            "bytes": 128582,
+            "sha256": "4b57ee0ab0d6a2daa86933efd53c7cade4db563ecf5d0995b8c22314531f293e",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/saggDHHnmtQ-33m01.png",
+            "bytes": 146817,
+            "sha256": "6777487781d8788b759749cbf8cfd2206f6e5d264695972e350fe984287ac134",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          },
+          {
+            "path": "local/saggDHHnmtQ-34m51.png",
+            "bytes": 132985,
+            "sha256": "6d1ea5b8038f8e02ba266b8a821b48445ada720617de18907d795ff0f2203694",
+            "coverage": "single_frame_not_interval",
+            "internal_only": true
+          }
+        ],
+        "material_finding": "PDF preview changes from 2/2 to 3/9; remote YouTube run visibly fails with HTTP 403 quotaExceeded. Later webhook success is a different project."
+      },
+      "pending": [
+        "Full audiovisual review and caption accuracy/opening/ending",
+        "Complete credential and skill setup not shown",
+        "PDF implementation and all pages not fully inspected",
+        "Security review corrections not fully demonstrated",
+        "Remote YouTube quota recovery and successful retest omitted from source",
+        "Second webhook workflow was prebuilt; construction not shown",
+        "Current interface/prices/credits/API quota not verified"
+      ],
+      "study_path": "studies/videos/saggDHHnmtQ.md",
+      "all_exported_text_read": true
+    },
+    {
+      "id": "official-codex-prompting",
+      "resource_id": "res-codex-prompting",
+      "source_id": "openai-learn-codex",
+      "url": "https://learn.chatgpt.com/docs/prompting",
+      "title": "Prompting",
+      "priority": "P0",
+      "study_path": "studies/official/codex-prompting.md",
+      "status": "partial",
+      "text_read_complete": true,
+      "text_analysis_complete": true,
+      "full_source_analyzed": false,
+      "visual_review_complete": false,
+      "pending": [
+        "Animação de ditado não assistida; fluxos Codex textuais integralmente analisados.",
+        "Exemplos não executados em aplicativo."
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/codex-prompting.txt",
+          "sha256": "f4a155ddbf7af5bf24f4e117b61bc4b6025a637bf8dcfd51941bed5cd1e1d367",
+          "bytes": 20088,
+          "line_count": 503,
+          "read_lines": [
+            [
+              1,
+              503
+            ]
+          ],
+          "collection_method": "Browser main.innerText coletado pelo coordenador; relido integralmente por este agente",
+          "collected_at": "2026-09-28T19:29:14.832691+00:00"
+        }
+      ],
+      "read_sections": [
+        "Overview",
+        "Goal/context/boundaries/output",
+        "Follow-ups/steering/queuing",
+        "Combined example",
+        "Voice dictation (texto)",
+        "Chat examples",
+        "ChatGPT Work",
+        "All 9 Codex workflows"
+      ],
+      "curricular_fit": "L01: formular pedido contextualizado e verificar mudança; retirar extensões cloud/PR da primeira prática.",
+      "prerequisites": [
+        "Pasta de treino",
+        "Identificar arquivo/rota",
+        "Distinguir aparência e persistência"
+      ],
+      "freshness": "Documento vivo, observado 2026-09-28; UI não executada.",
+      "duplication": "Complementa quickstarts; sobrepõe workflow em planejamento/revisão.",
+      "curricular_gaps": [
+        "Não mostra resposta real nem execução de testes; prática original necessária."
+      ],
+      "language": "en",
+      "studied_at": "2026-09-28T19:41:22.926607+00:00",
+      "analysis_locale": "pt-BR",
+      "originals_gitignored": true,
+      "republication_license_assumed": false
+    },
+    {
+      "id": "official-claude-desktop-quickstart",
+      "resource_id": "res-claude-desktop-start",
+      "source_id": "claude-academy",
+      "url": "https://code.claude.com/docs/en/desktop-quickstart",
+      "title": "Get started with the desktop app",
+      "priority": "P0",
+      "study_path": "studies/official/claude-desktop-quickstart.md",
+      "status": "full_source_analyzed",
+      "text_read_complete": true,
+      "text_analysis_complete": true,
+      "full_source_analyzed": true,
+      "full_source_scope": "Documento quickstart textual; não é certificação de uso real do aplicativo.",
+      "visual_review_complete": true,
+      "visual_basis": "Nenhuma imagem substantiva em main; corpo textual nativo integral.",
+      "pending": [
+        "Fluxo ainda não executado na conta/interface real."
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/official-claude-desktop-quickstart.md",
+          "sha256": "7e0fbc28948beca6fa3e042857f07ffccfffe08b9ce0039fee2c66214cf66ac8",
+          "bytes": 11008,
+          "line_count": 140,
+          "read_lines": [
+            [
+              1,
+              140
+            ]
+          ],
+          "collection_method": "WebMCP read_page oficial, sem truncamento",
+          "collected_at": "2026-09-28T19:33:58.288326+00:00"
+        }
+      ],
+      "read_sections": [
+        "Introdução e requisitos",
+        "Downloads e superfícies",
+        "Install",
+        "Start your first session",
+        "Now what?",
+        "What's next"
+      ],
+      "curricular_fit": "L01: instalação/acesso, Code, Local/pasta, pedido e revisão em Manual.",
+      "prerequisites": [
+        "Assinatura mencionada no documento",
+        "Conta Anthropic",
+        "Pasta de treino"
+      ],
+      "freshness": "Documento vivo, observado 2026-09-28; banner Academy indica renomeação Cowork em rollout.",
+      "duplication": "É a rota Desktop; substitui passos de instalação terminal para iniciantes.",
+      "curricular_gaps": [
+        "Não executa um exemplo ponta a ponta",
+        "Dependências do projeto devem ser preparadas pelo curso"
+      ],
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/desktop",
+          "status": "partial",
+          "artifact": {
+            "path": "studies/local/official-claude-desktop-rendered.txt",
+            "sha256": "a828ef46c9220646c20e8cfb04ecb9dc3bc4538979f48cb03e983fe0730806d5",
+            "bytes": 72400,
+            "line_count": 740,
+            "read_lines": [
+              [
+                110,
+                142
+              ],
+              [
+                210,
+                238
+              ],
+              [
+                619,
+                733
+              ]
+            ],
+            "collection_method": "Browser: corpo renderizado",
+            "collected_at": "2026-09-28T19:36:22.142721+00:00"
+          },
+          "purpose": "Atalhos, comparação CLI/Desktop e diagnóstico de entrada",
+          "entire_source_read": false
+        }
+      ],
+      "language": "en",
+      "studied_at": "2026-09-28T19:41:22.926607+00:00",
+      "analysis_locale": "pt-BR",
+      "originals_gitignored": true,
+      "republication_license_assumed": false
+    },
+    {
+      "id": "official-builder-behavior-tests",
+      "resource_id": "res-builder-behavior-tests",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/de-slop-ai-generated-codebase",
+      "title": "How to De-Slop an AI-Generated Codebase",
+      "author": "Alice Moore",
+      "published_at": "2026-09-16",
+      "priority": "P1",
+      "study_path": "studies/official/builder-behavior-tests.md",
+      "status": "partial",
+      "text_read_complete": true,
+      "text_analysis_complete": true,
+      "full_source_analyzed": false,
+      "visual_review_complete": false,
+      "pending": [
+        "Diagrama de triagem ainda não inspecionado; abstração e integração vistos.",
+        "Experimento não reproduzido."
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/official-builder-de-slop.txt",
+          "sha256": "3b6cff23253daef1ad69270201450aef0e275d24d3a26131352f52f7733746f5",
+          "bytes": 17291,
+          "line_count": 291,
+          "read_lines": [
+            [
+              1,
+              291
+            ]
+          ],
+          "collection_method": "Browser: corpo renderizado",
+          "collected_at": "2026-09-28T19:33:58.288915+00:00"
+        }
+      ],
+      "read_sections": [
+        "What is AI slop",
+        "Missing context/locality",
+        "Rules and findings",
+        "Introducing rules",
+        "Repair acceptance conditions",
+        "Refactor/deletion test",
+        "Run behavior",
+        "Mocks",
+        "Add checks",
+        "Failure feedback",
+        "Conclusion",
+        "Ads/footer"
+      ],
+      "curricular_fit": "P1: aula de correção/validação; não bloqueia L01.",
+      "prerequisites": [
+        "Conceito de comportamento observável; detalhes tipos/lint são avançados e opcionais"
+      ],
+      "freshness": "Artigo publicado 2026-09-16, coletado 2026-09-28.",
+      "duplication": "Aprofunda verificação já introduzida no workflow; não repetir como outra abertura.",
+      "curricular_gaps": [
+        "Não produz logs auditados de aplicação em produto real; prática é proposta original."
+      ],
+      "language": "en",
+      "studied_at": "2026-09-28T19:41:22.926607+00:00",
+      "analysis_locale": "pt-BR",
+      "originals_gitignored": true,
+      "republication_license_assumed": false,
+      "visual_artifacts": [
+        {
+          "path": "studies/local/official-builder-abstraction.png",
+          "sha256": "5531c83cd7227938d1097ba711621f54a9773e4d2ecd401b9fe1cb2906fad9e8",
+          "bytes": 85652,
+          "collection_method": "Browser screenshot de diagrama; visto",
+          "collected_at": "2026-09-28T19:37:42.864011+00:00"
+        },
+        {
+          "path": "studies/local/official-builder-integration.png",
+          "sha256": "5320dbfb25b4771005a6b698dfffde13cb6bc75031ac70ba8a62bc5e5f9b854d",
+          "bytes": 95609,
+          "collection_method": "Browser screenshot de diagrama; visto",
+          "collected_at": "2026-09-28T19:38:01.871684+00:00"
+        }
+      ]
+    },
+    {
+      "id": "official-codex-app",
+      "resource_id": "res-codex-desktop-start",
+      "source_id": "openai-learn-codex",
+      "url": "https://learn.chatgpt.com/docs/app",
+      "title": "ChatGPT desktop app",
+      "priority": "supporting",
+      "study_path": "studies/official/codex-app.md",
+      "status": "partial",
+      "text_read_complete": true,
+      "text_analysis_complete": true,
+      "full_source_analyzed": false,
+      "visual_review_complete": false,
+      "pending": [
+        "Cinco players de casos de uso não assistidos; quickstart textual integralmente estudado.",
+        "Fluxo não executado no app real."
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/official-codex-app.txt",
+          "sha256": "703c1cb41e6938d304ff81c0ca2a6e8990ba31d49bfd9864343f79a2e86846b8",
+          "bytes": 3093,
+          "collection_method": "Browser corpo renderizado",
+          "collected_at": "2026-09-28T19:33:58.288674+00:00",
+          "line_count": 143,
+          "read_lines": [
+            [
+              1,
+              143
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/official-codex-app.dom.txt",
+          "sha256": "aaf6e663404252ed0f02176b4bbf0ac6b24d21c2e8b3cbd5de9c3794179f93d8",
+          "bytes": 15664,
+          "collection_method": "Browser DOM snapshot",
+          "collected_at": "2026-09-28T19:34:37.348773+00:00",
+          "line_count": 410,
+          "read_lines": [
+            [
+              1,
+              410
+            ]
+          ]
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/official-codex-app.png",
+          "sha256": "2711e582f21a6b2f7b1678bf7e7e904a54029baf41918cabed65b76c4a8c300d",
+          "bytes": 69453,
+          "collection_method": "Browser screenshot; vista pelo agente",
+          "collected_at": "2026-09-28T19:34:37.378844+00:00"
+        },
+        {
+          "path": "studies/local/official-codex-app-ui.png",
+          "sha256": "7f1b3dd5c08e1b5bdf9e07938f0d256dcc3f6c6b29faa6ea997eade89e8ab573",
+          "bytes": 81965,
+          "collection_method": "Browser screenshot; vista pelo agente",
+          "collected_at": "2026-09-28T19:35:31.213106+00:00"
+        }
+      ],
+      "read_sections": [
+        "Hero/advantages",
+        "Quickstart completo",
+        "Next steps",
+        "Casos de uso (texto)",
+        "Quando usar",
+        "Outras superfícies"
+      ],
+      "curricular_fit": "L01: contexto/pasta, escolha Codex, pedido, resposta e revisão.",
+      "prerequisites": [
+        "Conta ChatGPT",
+        "Pasta de treino",
+        "Git apenas se usar painel de revisão"
+      ],
+      "freshness": "Documento vivo observado 2026-09-28; nome atual ChatGPT desktop app.",
+      "duplication": "Reutilizar exercício de prompting; não adicionar nova introdução.",
+      "curricular_gaps": [
+        "A página de entrada não demonstra resposta/revisão executada; complementos documentais e prática original suprem conteúdo."
+      ],
+      "complements": [
+        {
+          "url": "https://learn.chatgpt.com/docs/code-review",
+          "status": "partial",
+          "text_read_complete": true,
+          "entire_source_read": false,
+          "artifact": {
+            "path": "studies/local/official-codex-review.md",
+            "sha256": "e2175b02db0e2599d09f07fb9060fcfe55d5e304d8d25476fe160504e360e38c",
+            "bytes": 9238,
+            "collection_method": "WebMCP lookup_page oficial",
+            "collected_at": "2026-09-28T19:36:22.142951+00:00",
+            "line_count": 247,
+            "read_lines": [
+              [
+                1,
+                247
+              ]
+            ]
+          },
+          "purpose": "Ciclo de revisão no app; imagem do complemento não inspecionada"
+        },
+        {
+          "url": "https://learn.chatgpt.com/docs/reference/troubleshooting",
+          "status": "full_source_analyzed",
+          "text_read_complete": true,
+          "entire_source_read": true,
+          "artifact": {
+            "path": "studies/local/official-codex-troubleshooting.md",
+            "sha256": "b3437047face39fb2edeed82ffc7966479453f3c7c08fd9532bff819aa5e1b06",
+            "bytes": 5762,
+            "collection_method": "WebMCP lookup_page oficial",
+            "collected_at": "2026-09-28T19:36:22.143117+00:00",
+            "line_count": 145,
+            "read_lines": [
+              [
+                1,
+                145
+              ]
+            ]
+          },
+          "purpose": "Diagnóstico da primeira tarefa e diferenças de versões"
+        }
+      ],
+      "language": "en",
+      "analysis_locale": "pt-BR",
+      "studied_at": "2026-09-28T19:45:19.413859+00:00",
+      "originals_gitignored": true,
+      "republication_license_assumed": false,
+      "role": "surface_identity_review_troubleshooting_complement"
+    },
+    {
+      "id": "official-claude-workflow",
+      "resource_id": "res-claude-plan-build-review",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/the-explore-plan-code-commit-workflow",
+      "title": "The explore → plan → code → commit workflow",
+      "priority": "P0",
+      "study_path": "studies/official/claude-explore-plan-code-commit.md",
+      "status": "transcript_analyzed_visual_pending",
+      "text_read_complete": true,
+      "text_analysis_complete": true,
+      "full_source_analyzed": false,
+      "visual_review_complete": false,
+      "video_id": "xJQuF02NAK8",
+      "video_watched": false,
+      "full_speech_coverage_verified": false,
+      "pending": [
+        "Vídeo não assistido; transcrição oficial sem timestamps, ainda sem comparação com áudio.",
+        "Imagens além do indicador Plan Mode não revisadas."
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/official-claude-explore-plan-code-commit.txt",
+          "sha256": "c841cfed33d8ad0bdce440b2d6c4e12a299d7b666dbf5a4f72c7aab417bb4085",
+          "bytes": 4572,
+          "collection_method": "Browser corpo renderizado",
+          "collected_at": "2026-09-28T19:34:19.124093+00:00",
+          "line_count": 145,
+          "read_lines": [
+            [
+              1,
+              145
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/official-claude-workflow-transcript.txt",
+          "sha256": "03284d5e7dbc15df695ed5c6961a66184f8003f57145038b06b54bdf8f9243b9",
+          "bytes": 6334,
+          "collection_method": "Browser: radio Transcript → article.innerText; fala integral disponível e texto auxiliar repetido",
+          "collected_at": "2026-09-28T19:34:48.934916+00:00",
+          "line_count": 79,
+          "read_lines": [
+            [
+              1,
+              79
+            ]
+          ]
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/official-claude-workflow-plan.png",
+          "sha256": "683e7f9b7d31affc2160174c5b0c1ad6224760aacb112e8914cb790df5028206",
+          "bytes": 40615,
+          "collection_method": "Browser imagem ampliada e screenshot; vista pelo agente",
+          "collected_at": "2026-09-28T19:41:49.061184+00:00"
+        }
+      ],
+      "read_sections": [
+        "Abertura",
+        "Explorar/planejar",
+        "Aprovar/executar",
+        "Critérios/ferramentas/testes",
+        "Teste humano/revisor/commit",
+        "Recap/entorno"
+      ],
+      "curricular_fit": "P0: sequência curta planejar–executar–verificar; adaptar controles para Desktop.",
+      "prerequisites": [
+        "Projeto de treino",
+        "Resultado observável; detalhes WebP/Git/subagentes não necessários em L01"
+      ],
+      "freshness": "Fonte viva observada 2026-09-28; imagem de terminal sem versão.",
+      "duplication": "Consolida prompting e quickstart em um único exercício.",
+      "curricular_gaps": [
+        "Vídeo material pendente; não certifica demonstração inteira.",
+        "Não há logs auditáveis de sucesso na transcrição."
+      ],
+      "language": "en",
+      "analysis_locale": "pt-BR",
+      "studied_at": "2026-09-28T19:45:19.413859+00:00",
+      "originals_gitignored": true,
+      "republication_license_assumed": false
+    },
+    {
+      "id": "official-claude-verification",
+      "resource_id": "res-claude-verify-unattended",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/trust-it-verifying-unsupervised-runs",
+      "title": "Trust it: Verifying unsupervised runs",
+      "priority": "P1",
+      "study_path": "studies/official/claude-verifying-unsupervised.md",
+      "status": "partial",
+      "text_read_complete": true,
+      "text_analysis_complete": true,
+      "full_source_analyzed": false,
+      "visual_review_complete": false,
+      "video_id": "sXonYL7kAoc",
+      "video_watched": false,
+      "transcript_read": false,
+      "pending": [
+        "Texto é auxiliar, sem seletor Transcript observado; vídeo não assistido.",
+        "Hooks e headless não executados."
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/official-claude-verifying-unsupervised.txt",
+          "sha256": "c22cc400a6f9c42a7d0e546fdfc4c496b5a1ea3d19da65de8902e7735047339d",
+          "bytes": 4400,
+          "collection_method": "Browser corpo renderizado",
+          "collected_at": "2026-09-28T19:34:19.124311+00:00",
+          "line_count": 134,
+          "read_lines": [
+            [
+              1,
+              134
+            ]
+          ]
+        }
+      ],
+      "read_sections": [
+        "Introdução",
+        "Auto/correção",
+        "Diff",
+        "Testes/hooks",
+        "Revisor independente",
+        "Fechamento",
+        "Navegação/entorno"
+      ],
+      "curricular_fit": "P1: autonomia/revisão; não bloqueia L01.",
+      "prerequisites": [
+        "Diferença entre relato, mudança e efeito; hooks/CI ficam para depois"
+      ],
+      "freshness": "Texto vivo observado 2026-09-28; vídeo sem data confirmada.",
+      "duplication": "Aprofunda o fechamento do workflow; evitar duplicar abertura.",
+      "curricular_gaps": [
+        "Sem configuração completa de hook nem demonstração auditada de execução."
+      ],
+      "language": "en",
+      "analysis_locale": "pt-BR",
+      "studied_at": "2026-09-28T19:45:19.413859+00:00",
+      "originals_gitignored": true,
+      "republication_license_assumed": false
+    },
+    {
+      "id": "official-codex-quickstart",
+      "resource_id": null,
+      "related_resource_ids": [
+        "res-codex-desktop-start"
+      ],
+      "source_id": "openai-learn-codex",
+      "url": "https://learn.chatgpt.com/docs/quickstart",
+      "title": "Quickstart",
+      "priority": "P0",
+      "role": "primary_desktop_onboarding",
+      "study_path": "studies/official/codex-quickstart.md",
+      "status": "full_source_analyzed",
+      "text_read_complete": true,
+      "text_analysis_complete": true,
+      "full_source_analyzed": true,
+      "full_source_scope": "Documento textual integral (Desktop/Web e seis exemplos) e ilustração necessária à orientação Desktop. Não certifica execução do produto ou todos os comportamentos interativos do site.",
+      "visual_review_complete": true,
+      "visual_basis": "Ilustração Desktop e passos de acesso/pasta/produto inspecionados. Conteúdo dos exemplos recuperado pelo Markdown nativo e DOM.",
+      "execution_verified": false,
+      "pending": [
+        "Instalação/conta/tarefa/revisão não operadas no app real.",
+        "Seletor de exemplo não confirmou mudança de estado no site; não presume funcionamento.",
+        "Nenhuma cota/preço específica inferida."
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/official-codex-quickstart.md",
+          "sha256": "5c052386e1de596504ce11df740000577d8acc5b6c5693a524b3f711cceabcef",
+          "bytes": 7562,
+          "collection_method": "WebMCP lookup_page oficial; Markdown integral incluindo variantes e prompts",
+          "collected_at": "2026-09-28T19:45:19.341856+00:00",
+          "line_count": 204,
+          "read_lines": [
+            [
+              1,
+              204
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/official-codex-quickstart-rendered.txt",
+          "sha256": "874ed2f9b79609da7f3a6c33fec6d5baa67891b82cadd83931d1e71242f6c0a0",
+          "bytes": 2914,
+          "collection_method": "Browser main.innerText; complemento de renderização Desktop",
+          "collected_at": "2026-09-28T19:46:06.606926+00:00",
+          "line_count": 98,
+          "read_lines": [
+            [
+              1,
+              98
+            ]
+          ]
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/official-codex-quickstart-selector.png",
+          "sha256": "75d58a03b02fce0f1456a50575c0daca73b5c6d161e2cdc72623af993f4b78db",
+          "bytes": 97948,
+          "collection_method": "Browser screenshot; visto pelo agente",
+          "collected_at": "2026-09-28T19:45:52.436070+00:00"
+        }
+      ],
+      "read_sections": [
+        "Where to use ChatGPT",
+        "Setup Desktop — cinco passos",
+        "Três exemplos Desktop",
+        "Setup Web — quatro passos",
+        "Três exemplos Web",
+        "Next steps"
+      ],
+      "curricular_fit": "P0 principal para entrar no Desktop e selecionar Codex; substitui landing app como onboarding.",
+      "prerequisites": [
+        "Conta ou alternativa API key mencionada pela fonte",
+        "Pasta e projeto didático preparados"
+      ],
+      "freshness": "Documento vivo observado 2026-09-28; rótulos de ilustração não confirmam UI de toda conta.",
+      "duplication": "Sobrepõe onboarding da landing app; app fica complemento. Reutilizar prática de prompting.",
+      "curricular_gaps": [
+        "Fonte termina no pedido; resposta e revisão são prática original apoiada por Prompting e Code review."
+      ],
+      "language": "en",
+      "analysis_locale": "pt-BR",
+      "studied_at": "2026-09-28T19:48:24.621232+00:00",
+      "originals_gitignored": true,
+      "republication_license_assumed": false
+    },
+    {
+      "schema_version": 1,
+      "purpose": "beginner_manual_static_publishing_research",
+      "updated_at": "2026-09-28T19:51:48.878901+00:00",
+      "sources": [
+        {
+          "source_id": "netlify-drop",
+          "role": "primary",
+          "title": "Netlify Drop Quickstart",
+          "url": "https://docs.netlify.com/start/quickstarts/netlify-drop-quickstart/",
+          "publisher": "Netlify",
+          "language": "en",
+          "study_date": "2026-09-28",
+          "document_updated_at": "2026-07-28",
+          "updated_date_provenance": "Rendered official page footer (web reader; principal additionally Browser DOM)",
+          "artifact": {
+            "path": "local/publishing-netlify-drop.md",
+            "bytes": 7829,
+            "sha256": "631f0cc805e5e64c9a99cf3480282a79b504d7fa34e94f3ceb2448110fc1fc4d",
+            "collected_at": "2026-09-28T19:46:48.488694+00:00",
+            "format": "official_markdown",
+            "retrieved_from": "https://docs.netlify.com/start/quickstarts/netlify-drop-quickstart.md",
+            "logical_line_count": 86,
+            "sequential_read_ranges": [
+              [
+                1,
+                86
+              ]
+            ]
+          },
+          "full_text_analyzed": true,
+          "full_source_analyzed": false,
+          "study_status": "partial",
+          "analysis_scope": "Entire Markdown page including alternatives, limitations and linked-reference context; linked pages not implicitly studied",
+          "procedure_executed": false,
+          "visual_review": {
+            "static_figures_reviewed": 2,
+            "animated_figures_sampled": 2,
+            "animation_frame_coverage": "not_exhaustive",
+            "captures": [
+              {
+                "path": "local/publishing-netlify-url.png",
+                "bytes": 45655,
+                "sha256": "e8c22b6024ff7df2683af29741ac14b175918c37c90785210d3fcc98aa6fc0e1",
+                "collected_at": "2026-09-28T19:47:49.181551+00:00",
+                "source_asset_url": "https://docs.netlify.com/images/drag-and-drop-preview-url.png",
+                "observation": "Complete static figure inspected; project URL highlighted and lock icon visible.",
+                "internal_only": true
+              },
+              {
+                "path": "local/publishing-netlify-update.png",
+                "bytes": 50778,
+                "sha256": "fd185390e9a41d0a1c53b7a3195cea83c29fdaf989d4fa9ab80c5b14984db939",
+                "collected_at": "2026-09-28T19:48:05.184191+00:00",
+                "source_asset_url": "https://docs.netlify.com/images/drag-and-drop-from-project-overview.png",
+                "observation": "Complete static figure inspected; Production deploys drop area and Published state; embedded November 2025 date.",
+                "internal_only": true
+              },
+              {
+                "path": "local/publishing-netlify-first-upload-start.png",
+                "bytes": 28424,
+                "sha256": "b68640accdc4362e2264fe16298fc858945e22fc5a5963d159822d41368fcd29",
+                "collected_at": "2026-09-28T19:48:43.938826+00:00",
+                "source_asset_url": "https://docs.netlify.com/images/how-to-drag-and-drop-new-project.gif",
+                "observation": "Selected frame: Projects list and drop area.",
+                "internal_only": true
+              },
+              {
+                "path": "local/publishing-netlify-first-upload.png",
+                "bytes": 29666,
+                "sha256": "0728384e197cd5ac67511c72c4644e3f15d524cc83e169a5797abaf05d76b980",
+                "collected_at": "2026-09-28T19:48:35.726708+00:00",
+                "source_asset_url": "https://docs.netlify.com/images/how-to-drag-and-drop-new-project.gif",
+                "observation": "Selected later frame: resulting example planning page, not observed live deployment.",
+                "internal_only": true
+              },
+              {
+                "path": "local/publishing-netlify-update-animation-start.png",
+                "bytes": 51823,
+                "sha256": "91480d93f1efe430274f6fbf04f4f32729c9d79d9478f8f54e0936312ae876fa",
+                "collected_at": "2026-09-28T19:49:22.252957+00:00",
+                "source_asset_url": "https://docs.netlify.com/images/show-how-to-drag-and-drop-to-update-project.gif",
+                "observation": "Selected frame: existing project and Production deploys drop area, timestamp 10:54 AM.",
+                "internal_only": true
+              },
+              {
+                "path": "local/publishing-netlify-update-animation-later.png",
+                "bytes": 52591,
+                "sha256": "e49a73bfea5cf2e5ec4edef73ae44242320f6c273ae93ebd5bde76ff479c7127",
+                "collected_at": "2026-09-28T19:50:55.166318+00:00",
+                "source_asset_url": "https://docs.netlify.com/images/show-how-to-drag-and-drop-to-update-project.gif",
+                "observation": "Selected later frame: same project/URL and Published timestamp 10:55 AM; intermediate steps not continuously observed.",
+                "internal_only": true
+              }
+            ]
+          },
+          "pending_source_review": [
+            "Animated figures inspected at selected states, not continuously or frame by frame."
+          ]
+        },
+        {
+          "source_id": "netlify-visibility",
+          "role": "sole_complement",
+          "title": "Project visibility",
+          "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility/",
+          "publisher": "Netlify",
+          "language": "en",
+          "study_date": "2026-09-28",
+          "document_updated_at": "2026-08-19",
+          "updated_date_provenance": "Rendered official page footer (web reader; principal additionally Browser DOM)",
+          "artifact": {
+            "path": "local/publishing-netlify-visibility.md",
+            "bytes": 8198,
+            "sha256": "03e6fc8fa9e6e67dee726653cadd27a968b8e1c3a320dc598317794d20d65fdb",
+            "collected_at": "2026-09-28T19:46:48.552343+00:00",
+            "format": "official_markdown",
+            "retrieved_from": "https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility.md",
+            "logical_line_count": 112,
+            "sequential_read_ranges": [
+              [
+                1,
+                112
+              ]
+            ]
+          },
+          "full_text_analyzed": true,
+          "full_source_analyzed": true,
+          "study_status": "full_source_analyzed",
+          "analysis_scope": "Entire Markdown page including alternatives, limitations and linked-reference context; linked pages not implicitly studied",
+          "procedure_executed": false,
+          "visual_review": {
+            "material_figures_present": false,
+            "text_navigation_and_roles_read": true
+          }
+        }
+      ],
+      "study_artifact": {
+        "path": "publishing/netlify-manual-static.md",
+        "bytes": 8359,
+        "sha256": "76393d9941b3c6ee388739f1eab42a3e889ef2d3af280e6d09f8b94719795a2f",
+        "collected_at": "2026-09-28T19:50:40.307775+00:00"
+      },
+      "raw_artifacts_in_git": false,
+      "source_count": 2,
+      "source_selection": {
+        "primary": "One-page official manual-upload quickstart with update and troubleshooting",
+        "complement_gap": "Public visibility, role permissions and visitor behavior",
+        "audience": "Person with a working static HTML page and basic folder skills",
+        "duplication": "Adds publication/republication to local-result examples; avoids repeating CLI/editor tutorials",
+        "currentness": "Official pages updated July/August 2026; account UI not executed",
+        "no_cli_or_git_required_for_selected_exercise": true
+      },
+      "operational_validation": {
+        "status": "not_executed",
+        "account_created": false,
+        "logged_in": false,
+        "uploaded": false,
+        "deployed": false,
+        "visibility_changed": false,
+        "visitor_test_executed": false,
+        "republication_executed": false,
+        "pending": [
+          "Account and team role/permissions in selected environment",
+          "Current UI fields for initial drop and same-project update",
+          "Real successful first deployment",
+          "Public access from a visitor without owner session",
+          "Image/link behavior and visible version after republication",
+          "Diagnosis and recovery of a real or controlled error"
+        ]
+      },
+      "curricular_proposal": {
+        "status": "proposed_not_approved",
+        "exercise": "Static one-page folder, initial public visitor check, one visible change, republication and regression check",
+        "checks": [
+          "Unauthenticated visitor can access the intended page",
+          "Image/link behavior and visible version match expected output",
+          "Previous behavior still works after update"
+        ]
+      },
+      "id": "publishing-netlify-static",
+      "study_path": "studies/publishing/netlify-manual-static.md",
+      "status": "text_analyzed_operational_validation_pending",
+      "full_source_analyzed": false,
+      "source_manifest": "studies/publishing/manifest.json",
+      "artifact_path_base": "studies/"
     }
-  ]
+  ],
+  "updated_at": "2026-09-28T19:53:54.434682+00:00",
+  "scope_note": "Text acquisition, complete reading, visual inspection and product execution are distinct. See individual scope and pending fields."
 }

@@ -2,21 +2,20 @@
 
 Diretriz posterior do usuário em 2026-09-28: não há tempo para consumir todo o histórico antes de criar o curso. Priorizar pessoas comuns usando IA para construir sites, apps simples e automações. O inventário amplo permanece como backlog; coleta exaustiva não bloqueia as aulas. Ver `CURATION_PLAN.md` e `curation.json`. Triagem pode usar metadados; conteúdo que sustenta aula exige estudo integral do recurso selecionado e revisão visual pertinente. As orientações históricas abaixo só valem quando compatíveis com esta prioridade.
 
-# Diretriz vigente
+# Entrega incremental ao Educador
 
-O encerramento abaixo foi substituído pela orientação explícita de 2026-09-28: retomar a coleta de transcrições de todos os vídeos das fontes prioritárias. Fontes complementares estão autorizadas. Ver `TRANSCRIPTION_PLAN.md`, `video-inventory/coverage.json` e `TRANSCRIPT_BATCH-2026-09-28.md`.
+Entrada P0: `studies/official/P0_MAP.md`. Sete fichas oficiais cobrem prompting, um quickstart por ferramenta e o ciclo curto de planejamento/revisão; `/docs/app` é complemento do quickstart Codex. O Educador leu os originais de prompting e Claude quickstart, conferiu hashes e aceitou afirmações textuais delimitadas em `9f6a634`. As práticas propostas não foram executadas nas ferramentas.
 
-# Encerramento do ciclo inicial
+P1 publicação: `studies/publishing/netlify-manual-static.md` estuda dois documentos oficiais integrais e distingue upload, acesso público, teste do visitante e atualização. Nenhuma publicação foi executada. As animações foram inspecionadas parcialmente, como declara o manifesto.
 
-Em 28/09/2026, o Diretor confirmou a integração de `52262547c382358a8e155953649b8520420b9178` como `0da1615`, repetiu os nove testes e aceitou o lote com suas lacunas documentadas. O pacote contém 23 recursos e 16 evidências. O histórico completo segue pendente.
+Os casos selecionados de site, app e rotina são entregues separadamente em `studies/site/`, `studies/app/` e `studies/automation/` conforme terminam; a ausência de ficha final significa estudo pendente. A fila segue P0 primeiro resultado, P1 site/publicação e P2 app/automação. Não promover um vídeo a tutorial completo porque o título o anuncia.
 
-A próxima pesquisa fica fora do caminho crítico. Por orientação do Diretor, a fila passa a priorizar:
+`studies/manifest.json` agrega estudos; `transcripts/manifest.json` agrega faixas adquiridas. `integrate_studies.py` verifica identidade dos arquivos e cobertura da leitura declarada antes de atualizar os índices. Isso não prova que a legenda cobre toda a fala nem que o pesquisador executou o procedimento. O inventário completo e o registro da aquisição permanecem auditáveis em `video-inventory/` e `acquisition/`; a fila histórica está inativa.
 
-1. `q-publish-project` — fontes primárias para publicar uma página pública, com verificação de acesso pelo visitante.
-2. `q-first-automation-manual` — fontes primárias para a primeira automação, testada manualmente antes de configurar a agenda.
+Originais de leitura e capturas ficam no worktree, ignorados pelo Git. Um commit transporta as fichas e os manifestos, não esses originais; os outros agentes locais devem consultá-los nesta raiz e conferir o hash. Republicação dos originais não é presumida.
 
-Ambos estão como P0, com ordem explícita para o próximo ciclo. A fila agora tem 14 itens; o relatório de ingestão preserva a contagem de 13 existente no fechamento anterior. As demais pendências continuam registradas.
+O lote inicial `52262547` foi integrado pelo Diretor como `0da1615`. O histórico de expansão e os primeiros três arquivos de legenda foram entregues em `f42b1b5`; a primeira curadoria e três fichas oficiais em `8af94e4`. Esses snapshots não descrevem a cobertura atual, que deve ser lida nos manifestos.
 
-Esta revisão é apenas de coordenação: nenhum recurso foi acrescentado ao corpus e nenhuma aula foi alterada. Propostas de impacto continuam sujeitas à decisão do Diretor e Educador. A automação semanal existente assume a continuidade, seguindo `WEEKLY_RUNBOOK.md`; não foi criada outra rotina.
+Nenhuma aula foi alterada pelo Devorador. Aprovação curricular cabe ao Educador e integração ao Diretor. A automação semanal existente deve seguir `WEEKLY_RUNBOOK.md` e a prioridade atual; não foi criada outra rotina.
 
 Entrega: branch `codex/devorador-research`, diretório `/Users/lucasmarques/.codex/worktrees/81be/Ganesha/content/research/`. Preservar o worktree ou atualizar o destino da automação existente se ele for removido.

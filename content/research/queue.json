@@ -10,7 +10,7 @@
     "plan": "CURATION_PLAN.md",
     "selection_ledger": "curation.json",
     "done_when": "Cada competência necessária tem fonte apropriada estudada, exemplos completos, prática e verificações sustentáveis; lacunas explícitas. Tamanho do corpus conforme suficiência, não meta arbitrária de downloads.",
-    "scope_note": "Primeiro atender lacunas pertinentes L01-S01..04 e depois cobrir as demais trilhas; inventário histórico preservado como backlog."
+    "scope_note": "P0: pedido e quickstarts com ciclo curto. P1: site local/testar/corrigir e publicação. P2: app simples e CSV fictício para relatório. Inventário histórico é backlog."
   },
   {
     "id": "q-all-priority-video-transcripts",
@@ -30,62 +30,67 @@
   {
     "id": "q-youtube-riley-index",
     "source_id": "riley-brown-youtube",
-    "priority": "P1",
-    "status": "public_uploads_inventoried",
+    "priority": "P2",
+    "status": "backlog_preserved",
     "url": "https://www.youtube.com/@rileybrownai/videos",
     "task": "Reconciliar playlists/podcasts e links externos com os uploads públicos já paginados.",
     "done_when": "Todos os itens acessíveis reconciliados; privado/removido/bloqueado com motivo e próxima ação.",
     "created_at": "2026-09-28T18:51:32Z",
     "owner": "Devorador",
-    "history_total_known": false
+    "history_total_known": false,
+    "priority_note": "Uploads públicos inventariados; reconciliação histórica não bloqueia corpus curado."
   },
   {
     "id": "q-youtube-designcourse-index",
     "source_id": "designcourse-youtube",
-    "priority": "P1",
-    "status": "public_uploads_inventoried",
+    "priority": "P2",
+    "status": "backlog_preserved",
     "url": "https://www.youtube.com/@DesignCourse/videos",
     "task": "Reconciliar playlists/podcasts e links externos com os uploads públicos já paginados.",
     "done_when": "Todos os itens acessíveis reconciliados; privado/removido/bloqueado com motivo e próxima ação.",
     "created_at": "2026-09-28T18:51:32Z",
     "owner": "Devorador",
-    "history_total_known": false
+    "history_total_known": false,
+    "priority_note": "Uploads públicos inventariados; reconciliação histórica não bloqueia corpus curado."
   },
   {
     "id": "q-youtube-tim-transcript",
     "source_id": "tech-with-tim-youtube",
-    "priority": "P1",
-    "status": "exported_track_pending_verification",
+    "priority": "P2",
+    "status": "transcript_analyzed_visual_pending",
     "url": "https://www.youtube.com/watch?v=ntDIxaeo3Wg",
-    "task": "Revisar a faixa exportada e conferir cobertura de fala; manifesto em transcripts/manifest.json.",
+    "task": "Faixa textual integralmente estudada; preservar limitações documentadas e revisar audiovisual somente se necessário para uma lacuna curricular.",
     "done_when": "Registrar idioma e intervalos efetivamente lidos; conferir interface atual.",
     "created_at": "2026-09-28T18:51:32Z",
     "owner": "Devorador",
-    "history_total_known": false
+    "history_total_known": false,
+    "priority_note": "Fontes de apoio; não substituir os quickstarts Desktop e casos iniciais acessíveis."
   },
   {
     "id": "q-youtube-peter-transcript",
     "source_id": "peter-yang-youtube",
-    "priority": "P1",
-    "status": "exported_track_pending_verification",
+    "priority": "P2",
+    "status": "transcript_analyzed_visual_pending",
     "url": "https://www.youtube.com/watch?v=bdMHQLvtVaQ",
-    "task": "Revisar a faixa exportada e conferir cobertura de fala; manifesto em transcripts/manifest.json.",
+    "task": "Faixa textual integralmente estudada; preservar limitações documentadas e revisar audiovisual somente se necessário para uma lacuna curricular.",
     "done_when": "Não usar sumário do artigo como se fosse transcrição.",
     "created_at": "2026-09-28T18:51:32Z",
     "owner": "Devorador",
-    "history_total_known": false
+    "history_total_known": false,
+    "priority_note": "Fontes de apoio; não substituir os quickstarts Desktop e casos iniciais acessíveis."
   },
   {
     "id": "q-youtube-nate-author",
     "source_id": "nate-herk-youtube",
-    "priority": "P1",
-    "status": "authorship_pending",
+    "priority": "P2",
+    "status": "transcript_analyzed_visual_pending",
     "url": "https://www.youtube.com/watch?v=saggDHHnmtQ",
-    "task": "Reconfirmar autoria/data primárias e obter transcrição; candidato veio de referência secundária.",
-    "done_when": "Não ingerir até autoria e texto serem confirmados.",
+    "task": "Faixa textual integralmente estudada; preservar limitações documentadas e revisar audiovisual somente se necessário para uma lacuna curricular.",
+    "done_when": "Autoria, data e exportação primária confirmadas no manifesto; estudo textual entregue, audiovisual completo pendente.",
     "created_at": "2026-09-28T18:51:32Z",
     "owner": "Devorador",
-    "history_total_known": false
+    "history_total_known": false,
+    "priority_note": "Fontes de apoio; não substituir os quickstarts Desktop e casos iniciais acessíveis."
   },
   {
     "id": "q-youtube-nate-new",
@@ -150,12 +155,12 @@
   {
     "id": "q-publish-project",
     "source_id": "openai-learn-codex",
-    "priority": "P0",
+    "priority": "P1",
     "next_cycle_order": 1,
-    "priority_reason": "Diretor priorizou publicação de página pública após aceitar o lote inicial em 28/09/2026.",
-    "status": "topic_gap",
+    "priority_reason": "Sequência atual do Educador: P0 primeiro pedido; P1 site e publicação; P2 app e automação.",
+    "status": "integral_study_in_progress",
     "url": "https://learn.chatgpt.com/docs/app",
-    "task": "Buscar guia primário de publicar um site construído em projeto local, além de Artifacts.",
+    "task": "Concluir fontes oficiais Netlify Drop + visibilidade para publicação manual de site estático e atualização.",
     "done_when": "Conferir URL pública, acesso visitante e relação entre projeto local e hospedagem.",
     "created_at": "2026-09-28T18:51:32Z",
     "owner": "Devorador",
@@ -168,7 +173,7 @@
     "related_source_ids": [
       "claude-academy"
     ],
-    "priority": "P0",
+    "priority": "P2",
     "next_cycle_order": 2,
     "status": "topic_gap",
     "url": "https://learn.chatgpt.com/docs/automations",
@@ -181,7 +186,7 @@
     "created_at": "2026-09-28",
     "owner": "Devorador",
     "history_total_known": false,
-    "priority_note": "Lacunas diretamente ligadas ao propósito: automação útil e publicação de site simples."
+    "priority_note": "Sequência atual do Educador; dados fictícios para relatório manual antes de agenda. Casos n8n não bloqueiam essa rota."
   },
   {
     "id": "q-claude-desktop-drift",

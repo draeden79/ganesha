@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "scope": "Subset incremental para auditoria do Educador; aquisição, texto, visual e execução separados.",
-  "updated_at": "2026-09-28T19:41:22.926607+00:00",
+  "scope": "Corpus pertinente e suficiente para P0 de L01; fontes P1 preservadas separadamente. Sem exigir consumo de histórico ou vídeos promocionais fora da lacuna.",
+  "updated_at": "2026-09-28T19:48:24.621232+00:00",
   "studies": [
     {
       "id": "official-codex-prompting",
@@ -215,7 +215,389 @@
       "studied_at": "2026-09-28T19:41:22.926607+00:00",
       "analysis_locale": "pt-BR",
       "originals_gitignored": true,
+      "republication_license_assumed": false,
+      "visual_artifacts": [
+        {
+          "path": "studies/local/official-builder-abstraction.png",
+          "sha256": "5531c83cd7227938d1097ba711621f54a9773e4d2ecd401b9fe1cb2906fad9e8",
+          "bytes": 85652,
+          "collection_method": "Browser screenshot de diagrama; visto",
+          "collected_at": "2026-09-28T19:37:42.864011+00:00"
+        },
+        {
+          "path": "studies/local/official-builder-integration.png",
+          "sha256": "5320dbfb25b4771005a6b698dfffde13cb6bc75031ac70ba8a62bc5e5f9b854d",
+          "bytes": 95609,
+          "collection_method": "Browser screenshot de diagrama; visto",
+          "collected_at": "2026-09-28T19:38:01.871684+00:00"
+        }
+      ]
+    },
+    {
+      "id": "official-codex-app",
+      "resource_id": "res-codex-desktop-start",
+      "source_id": "openai-learn-codex",
+      "url": "https://learn.chatgpt.com/docs/app",
+      "title": "ChatGPT desktop app",
+      "priority": "supporting",
+      "study_path": "studies/official/codex-app.md",
+      "status": "partial",
+      "text_read_complete": true,
+      "text_analysis_complete": true,
+      "full_source_analyzed": false,
+      "visual_review_complete": false,
+      "pending": [
+        "Cinco players de casos de uso não assistidos; quickstart textual integralmente estudado.",
+        "Fluxo não executado no app real."
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/official-codex-app.txt",
+          "sha256": "703c1cb41e6938d304ff81c0ca2a6e8990ba31d49bfd9864343f79a2e86846b8",
+          "bytes": 3093,
+          "collection_method": "Browser corpo renderizado",
+          "collected_at": "2026-09-28T19:33:58.288674+00:00",
+          "line_count": 143,
+          "read_lines": [
+            [
+              1,
+              143
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/official-codex-app.dom.txt",
+          "sha256": "aaf6e663404252ed0f02176b4bbf0ac6b24d21c2e8b3cbd5de9c3794179f93d8",
+          "bytes": 15664,
+          "collection_method": "Browser DOM snapshot",
+          "collected_at": "2026-09-28T19:34:37.348773+00:00",
+          "line_count": 410,
+          "read_lines": [
+            [
+              1,
+              410
+            ]
+          ]
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/official-codex-app.png",
+          "sha256": "2711e582f21a6b2f7b1678bf7e7e904a54029baf41918cabed65b76c4a8c300d",
+          "bytes": 69453,
+          "collection_method": "Browser screenshot; vista pelo agente",
+          "collected_at": "2026-09-28T19:34:37.378844+00:00"
+        },
+        {
+          "path": "studies/local/official-codex-app-ui.png",
+          "sha256": "7f1b3dd5c08e1b5bdf9e07938f0d256dcc3f6c6b29faa6ea997eade89e8ab573",
+          "bytes": 81965,
+          "collection_method": "Browser screenshot; vista pelo agente",
+          "collected_at": "2026-09-28T19:35:31.213106+00:00"
+        }
+      ],
+      "read_sections": [
+        "Hero/advantages",
+        "Quickstart completo",
+        "Next steps",
+        "Casos de uso (texto)",
+        "Quando usar",
+        "Outras superfícies"
+      ],
+      "curricular_fit": "L01: contexto/pasta, escolha Codex, pedido, resposta e revisão.",
+      "prerequisites": [
+        "Conta ChatGPT",
+        "Pasta de treino",
+        "Git apenas se usar painel de revisão"
+      ],
+      "freshness": "Documento vivo observado 2026-09-28; nome atual ChatGPT desktop app.",
+      "duplication": "Reutilizar exercício de prompting; não adicionar nova introdução.",
+      "curricular_gaps": [
+        "A página de entrada não demonstra resposta/revisão executada; complementos documentais e prática original suprem conteúdo."
+      ],
+      "complements": [
+        {
+          "url": "https://learn.chatgpt.com/docs/code-review",
+          "status": "partial",
+          "text_read_complete": true,
+          "entire_source_read": false,
+          "artifact": {
+            "path": "studies/local/official-codex-review.md",
+            "sha256": "e2175b02db0e2599d09f07fb9060fcfe55d5e304d8d25476fe160504e360e38c",
+            "bytes": 9238,
+            "collection_method": "WebMCP lookup_page oficial",
+            "collected_at": "2026-09-28T19:36:22.142951+00:00",
+            "line_count": 247,
+            "read_lines": [
+              [
+                1,
+                247
+              ]
+            ]
+          },
+          "purpose": "Ciclo de revisão no app; imagem do complemento não inspecionada"
+        },
+        {
+          "url": "https://learn.chatgpt.com/docs/reference/troubleshooting",
+          "status": "full_source_analyzed",
+          "text_read_complete": true,
+          "entire_source_read": true,
+          "artifact": {
+            "path": "studies/local/official-codex-troubleshooting.md",
+            "sha256": "b3437047face39fb2edeed82ffc7966479453f3c7c08fd9532bff819aa5e1b06",
+            "bytes": 5762,
+            "collection_method": "WebMCP lookup_page oficial",
+            "collected_at": "2026-09-28T19:36:22.143117+00:00",
+            "line_count": 145,
+            "read_lines": [
+              [
+                1,
+                145
+              ]
+            ]
+          },
+          "purpose": "Diagnóstico da primeira tarefa e diferenças de versões"
+        }
+      ],
+      "language": "en",
+      "analysis_locale": "pt-BR",
+      "studied_at": "2026-09-28T19:45:19.413859+00:00",
+      "originals_gitignored": true,
+      "republication_license_assumed": false,
+      "role": "surface_identity_review_troubleshooting_complement"
+    },
+    {
+      "id": "official-claude-workflow",
+      "resource_id": "res-claude-plan-build-review",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/the-explore-plan-code-commit-workflow",
+      "title": "The explore → plan → code → commit workflow",
+      "priority": "P0",
+      "study_path": "studies/official/claude-explore-plan-code-commit.md",
+      "status": "transcript_analyzed_visual_pending",
+      "text_read_complete": true,
+      "text_analysis_complete": true,
+      "full_source_analyzed": false,
+      "visual_review_complete": false,
+      "video_id": "xJQuF02NAK8",
+      "video_watched": false,
+      "full_speech_coverage_verified": false,
+      "pending": [
+        "Vídeo não assistido; transcrição oficial sem timestamps, ainda sem comparação com áudio.",
+        "Imagens além do indicador Plan Mode não revisadas."
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/official-claude-explore-plan-code-commit.txt",
+          "sha256": "c841cfed33d8ad0bdce440b2d6c4e12a299d7b666dbf5a4f72c7aab417bb4085",
+          "bytes": 4572,
+          "collection_method": "Browser corpo renderizado",
+          "collected_at": "2026-09-28T19:34:19.124093+00:00",
+          "line_count": 145,
+          "read_lines": [
+            [
+              1,
+              145
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/official-claude-workflow-transcript.txt",
+          "sha256": "03284d5e7dbc15df695ed5c6961a66184f8003f57145038b06b54bdf8f9243b9",
+          "bytes": 6334,
+          "collection_method": "Browser: radio Transcript → article.innerText; fala integral disponível e texto auxiliar repetido",
+          "collected_at": "2026-09-28T19:34:48.934916+00:00",
+          "line_count": 79,
+          "read_lines": [
+            [
+              1,
+              79
+            ]
+          ]
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/official-claude-workflow-plan.png",
+          "sha256": "683e7f9b7d31affc2160174c5b0c1ad6224760aacb112e8914cb790df5028206",
+          "bytes": 40615,
+          "collection_method": "Browser imagem ampliada e screenshot; vista pelo agente",
+          "collected_at": "2026-09-28T19:41:49.061184+00:00"
+        }
+      ],
+      "read_sections": [
+        "Abertura",
+        "Explorar/planejar",
+        "Aprovar/executar",
+        "Critérios/ferramentas/testes",
+        "Teste humano/revisor/commit",
+        "Recap/entorno"
+      ],
+      "curricular_fit": "P0: sequência curta planejar–executar–verificar; adaptar controles para Desktop.",
+      "prerequisites": [
+        "Projeto de treino",
+        "Resultado observável; detalhes WebP/Git/subagentes não necessários em L01"
+      ],
+      "freshness": "Fonte viva observada 2026-09-28; imagem de terminal sem versão.",
+      "duplication": "Consolida prompting e quickstart em um único exercício.",
+      "curricular_gaps": [
+        "Vídeo material pendente; não certifica demonstração inteira.",
+        "Não há logs auditáveis de sucesso na transcrição."
+      ],
+      "language": "en",
+      "analysis_locale": "pt-BR",
+      "studied_at": "2026-09-28T19:45:19.413859+00:00",
+      "originals_gitignored": true,
+      "republication_license_assumed": false
+    },
+    {
+      "id": "official-claude-verification",
+      "resource_id": "res-claude-verify-unattended",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/trust-it-verifying-unsupervised-runs",
+      "title": "Trust it: Verifying unsupervised runs",
+      "priority": "P1",
+      "study_path": "studies/official/claude-verifying-unsupervised.md",
+      "status": "partial",
+      "text_read_complete": true,
+      "text_analysis_complete": true,
+      "full_source_analyzed": false,
+      "visual_review_complete": false,
+      "video_id": "sXonYL7kAoc",
+      "video_watched": false,
+      "transcript_read": false,
+      "pending": [
+        "Texto é auxiliar, sem seletor Transcript observado; vídeo não assistido.",
+        "Hooks e headless não executados."
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/official-claude-verifying-unsupervised.txt",
+          "sha256": "c22cc400a6f9c42a7d0e546fdfc4c496b5a1ea3d19da65de8902e7735047339d",
+          "bytes": 4400,
+          "collection_method": "Browser corpo renderizado",
+          "collected_at": "2026-09-28T19:34:19.124311+00:00",
+          "line_count": 134,
+          "read_lines": [
+            [
+              1,
+              134
+            ]
+          ]
+        }
+      ],
+      "read_sections": [
+        "Introdução",
+        "Auto/correção",
+        "Diff",
+        "Testes/hooks",
+        "Revisor independente",
+        "Fechamento",
+        "Navegação/entorno"
+      ],
+      "curricular_fit": "P1: autonomia/revisão; não bloqueia L01.",
+      "prerequisites": [
+        "Diferença entre relato, mudança e efeito; hooks/CI ficam para depois"
+      ],
+      "freshness": "Texto vivo observado 2026-09-28; vídeo sem data confirmada.",
+      "duplication": "Aprofunda o fechamento do workflow; evitar duplicar abertura.",
+      "curricular_gaps": [
+        "Sem configuração completa de hook nem demonstração auditada de execução."
+      ],
+      "language": "en",
+      "analysis_locale": "pt-BR",
+      "studied_at": "2026-09-28T19:45:19.413859+00:00",
+      "originals_gitignored": true,
+      "republication_license_assumed": false
+    },
+    {
+      "id": "official-codex-quickstart",
+      "resource_id": null,
+      "related_resource_ids": [
+        "res-codex-desktop-start"
+      ],
+      "source_id": "openai-learn-codex",
+      "url": "https://learn.chatgpt.com/docs/quickstart",
+      "title": "Quickstart",
+      "priority": "P0",
+      "role": "primary_desktop_onboarding",
+      "study_path": "studies/official/codex-quickstart.md",
+      "status": "full_source_analyzed",
+      "text_read_complete": true,
+      "text_analysis_complete": true,
+      "full_source_analyzed": true,
+      "full_source_scope": "Documento textual integral (Desktop/Web e seis exemplos) e ilustração necessária à orientação Desktop. Não certifica execução do produto ou todos os comportamentos interativos do site.",
+      "visual_review_complete": true,
+      "visual_basis": "Ilustração Desktop e passos de acesso/pasta/produto inspecionados. Conteúdo dos exemplos recuperado pelo Markdown nativo e DOM.",
+      "execution_verified": false,
+      "pending": [
+        "Instalação/conta/tarefa/revisão não operadas no app real.",
+        "Seletor de exemplo não confirmou mudança de estado no site; não presume funcionamento.",
+        "Nenhuma cota/preço específica inferida."
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/official-codex-quickstart.md",
+          "sha256": "5c052386e1de596504ce11df740000577d8acc5b6c5693a524b3f711cceabcef",
+          "bytes": 7562,
+          "collection_method": "WebMCP lookup_page oficial; Markdown integral incluindo variantes e prompts",
+          "collected_at": "2026-09-28T19:45:19.341856+00:00",
+          "line_count": 204,
+          "read_lines": [
+            [
+              1,
+              204
+            ]
+          ]
+        },
+        {
+          "path": "studies/local/official-codex-quickstart-rendered.txt",
+          "sha256": "874ed2f9b79609da7f3a6c33fec6d5baa67891b82cadd83931d1e71242f6c0a0",
+          "bytes": 2914,
+          "collection_method": "Browser main.innerText; complemento de renderização Desktop",
+          "collected_at": "2026-09-28T19:46:06.606926+00:00",
+          "line_count": 98,
+          "read_lines": [
+            [
+              1,
+              98
+            ]
+          ]
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/official-codex-quickstart-selector.png",
+          "sha256": "75d58a03b02fce0f1456a50575c0daca73b5c6d161e2cdc72623af993f4b78db",
+          "bytes": 97948,
+          "collection_method": "Browser screenshot; visto pelo agente",
+          "collected_at": "2026-09-28T19:45:52.436070+00:00"
+        }
+      ],
+      "read_sections": [
+        "Where to use ChatGPT",
+        "Setup Desktop — cinco passos",
+        "Três exemplos Desktop",
+        "Setup Web — quatro passos",
+        "Três exemplos Web",
+        "Next steps"
+      ],
+      "curricular_fit": "P0 principal para entrar no Desktop e selecionar Codex; substitui landing app como onboarding.",
+      "prerequisites": [
+        "Conta ou alternativa API key mencionada pela fonte",
+        "Pasta e projeto didático preparados"
+      ],
+      "freshness": "Documento vivo observado 2026-09-28; rótulos de ilustração não confirmam UI de toda conta.",
+      "duplication": "Sobrepõe onboarding da landing app; app fica complemento. Reutilizar prática de prompting.",
+      "curricular_gaps": [
+        "Fonte termina no pedido; resposta e revisão são prática original apoiada por Prompting e Code review."
+      ],
+      "language": "en",
+      "analysis_locale": "pt-BR",
+      "studied_at": "2026-09-28T19:48:24.621232+00:00",
+      "originals_gitignored": true,
       "republication_license_assumed": false
     }
-  ]
+  ],
+  "p0_map": "studies/official/P0_MAP.md"
 }

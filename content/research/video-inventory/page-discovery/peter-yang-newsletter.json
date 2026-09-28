@@ -1,0 +1,5216 @@
+{
+  "source_id": "peter-yang-newsletter",
+  "started_at": "2026-09-28T19:35:53.438593+00:00",
+  "method": "anonymous public HTML links and media elements",
+  "source_inventory_complete": false,
+  "browser_reconciliation_pending": true,
+  "pages": {
+    "https://creatoreconomy.so/p/sponsorships": {
+      "url": "https://creatoreconomy.so/p/sponsorships",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:35:54.084405+00:00",
+      "title": "Reach 300,000+ Tech Professionals by Sponsoring Behind the Craft",
+      "video_links": [
+        "https://www.youtube.com/@peteryangyt"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/sponsorships"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/grok-bot-team-14-best-bots-peng-zheng-lauren-tan": {
+      "url": "https://creatoreconomy.so/p/grok-bot-team-14-best-bots-peng-zheng-lauren-tan",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:35:54.685867+00:00",
+      "title": "We Built Grok Bot. Here Are Our 14 Best Bots | Peng Zheng & Lauren Tan",
+      "video_links": [
+        "https://www.youtube.com/watch?v=xZ5TEaleUdg",
+        "https://www.youtube.com/watch?v=xZ5TEaleUdg&t=1079s",
+        "https://www.youtube.com/watch?v=xZ5TEaleUdg&t=1287s",
+        "https://www.youtube.com/watch?v=xZ5TEaleUdg&t=1522s",
+        "https://www.youtube.com/watch?v=xZ5TEaleUdg&t=2339s",
+        "https://www.youtube.com/watch?v=xZ5TEaleUdg&t=391s",
+        "https://www.youtube.com/watch?v=xZ5TEaleUdg&t=607s",
+        "https://www.youtube.com/watch?v=xZ5TEaleUdg&t=83s",
+        "https://www.youtube.com/watch?v=xZ5TEaleUdg&t=856s",
+        "https://youtu.be/xZ5TEaleUdg"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/xZ5TEaleUdg?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-to-save-money-now-with-chatgpt-finances-ethan-boch",
+        "https://creatoreconomy.so/p/stop-building-ai-agents-build-ai-employees-instead-pedro-franceschi-brex"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-personal-ai-course-is-live-now": {
+      "url": "https://creatoreconomy.so/p/my-personal-ai-course-is-live-now",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:35:55.297363+00:00",
+      "title": "My Personal AI Course Is Live! Copy My AI System to Take Work Off Your Plate",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-personal-ai-course-is-live-now/comment/345839593"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-to-save-money-now-with-chatgpt-finances-ethan-boch": {
+      "url": "https://creatoreconomy.so/p/how-to-save-money-now-with-chatgpt-finances-ethan-boch",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:35:56.144371+00:00",
+      "title": "How to Save Money Now with ChatGPT Finances (6 Real Use Cases) | Ethan Bloch",
+      "video_links": [
+        "https://www.youtube.com/watch?v=fbzlqxkJrCU",
+        "https://www.youtube.com/watch?v=fbzlqxkJrCU&t=1083s",
+        "https://www.youtube.com/watch?v=fbzlqxkJrCU&t=1498s",
+        "https://www.youtube.com/watch?v=fbzlqxkJrCU&t=1580s",
+        "https://www.youtube.com/watch?v=fbzlqxkJrCU&t=1700s",
+        "https://www.youtube.com/watch?v=fbzlqxkJrCU&t=1865s",
+        "https://www.youtube.com/watch?v=fbzlqxkJrCU&t=2040s",
+        "https://www.youtube.com/watch?v=fbzlqxkJrCU&t=217s",
+        "https://www.youtube.com/watch?v=fbzlqxkJrCU&t=2218s",
+        "https://www.youtube.com/watch?v=fbzlqxkJrCU&t=577s"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/fbzlqxkJrCU?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/grok-bot-team-14-best-bots-peng-zheng-lauren-tan",
+        "https://creatoreconomy.so/p/stop-building-ai-agents-build-ai-employees-instead-pedro-franceschi-brex"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-3-step-system-to-automate-90-of": {
+      "url": "https://creatoreconomy.so/p/my-3-step-system-to-automate-90-of",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:35:56.807266+00:00",
+      "title": "My 3-Step System to Automate 90% of My Content Workflow with AI",
+      "video_links": [
+        "https://www.youtube.com/watch?v=PZHBW6yld5U",
+        "https://www.youtube.com/watch?v=PZHBW6yld5U&t=1028s",
+        "https://www.youtube.com/watch?v=PZHBW6yld5U&t=208s",
+        "https://www.youtube.com/watch?v=PZHBW6yld5U&t=573s",
+        "https://www.youtube.com/watch?v=PZHBW6yld5U&t=789s",
+        "https://www.youtube.com/watch?v=PZHBW6yld5U&t=865s",
+        "https://www.youtube.com/watch?v=PZHBW6yld5U&t=94s"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/PZHBW6yld5U?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/stop-building-ai-agents-build-ai-employees-instead-pedro-franceschi-brex": {
+      "url": "https://creatoreconomy.so/p/stop-building-ai-agents-build-ai-employees-instead-pedro-franceschi-brex",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:35:57.580222+00:00",
+      "title": "Stop Building AI Agents. Start Building AI Employees (Live Demo) | Pedro Franceschi",
+      "video_links": [
+        "https://www.youtube.com/watch?v=LE0LNULrsEM",
+        "https://www.youtube.com/watch?v=LE0LNULrsEM&t=1284s",
+        "https://www.youtube.com/watch?v=LE0LNULrsEM&t=1353s",
+        "https://www.youtube.com/watch?v=LE0LNULrsEM&t=1650s",
+        "https://www.youtube.com/watch?v=LE0LNULrsEM&t=2445s",
+        "https://www.youtube.com/watch?v=LE0LNULrsEM&t=323s",
+        "https://www.youtube.com/watch?v=LE0LNULrsEM&t=752s",
+        "https://youtu.be/LE0LNULrsEM"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/LE0LNULrsEM?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/grok-bot-team-14-best-bots-peng-zheng-lauren-tan",
+        "https://creatoreconomy.so/p/how-to-save-money-now-with-chatgpt-finances-ethan-boch"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and": {
+      "url": "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:35:58.333044+00:00",
+      "title": "GPT-6 Astra Is Both Incredible and Frustrating",
+      "video_links": [
+        "https://youtu.be/iDrEXFOvFUc"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/iDrEXFOvFUc?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and/comment/333820873",
+        "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and/comment/338978286"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-ai-can-help-kids-think-for-themselves-sue-khim": {
+      "url": "https://creatoreconomy.so/p/how-ai-can-help-kids-think-for-themselves-sue-khim",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:35:59.070685+00:00",
+      "title": "How AI Can Help Kids Think for Themselves | Sue Khim",
+      "video_links": [
+        "https://www.youtube.com/watch?v=NsVayi42I0I",
+        "https://www.youtube.com/watch?v=NsVayi42I0I&t=1085s",
+        "https://www.youtube.com/watch?v=NsVayi42I0I&t=1345s",
+        "https://www.youtube.com/watch?v=NsVayi42I0I&t=1770s",
+        "https://www.youtube.com/watch?v=NsVayi42I0I&t=1930s",
+        "https://www.youtube.com/watch?v=NsVayi42I0I&t=2079s",
+        "https://www.youtube.com/watch?v=NsVayi42I0I&t=2350s",
+        "https://www.youtube.com/watch?v=NsVayi42I0I&t=581s",
+        "https://www.youtube.com/watch?v=NsVayi42I0I&t=94s",
+        "https://youtu.be/NsVayi42I0I"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/NsVayi42I0I?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust": {
+      "url": "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:35:59.882830+00:00",
+      "title": "Can You Trust AI Personal Agents With Your Data?",
+      "video_links": [
+        "https://www.youtube.com/watch?v=6Yeo6M8-W_8",
+        "https://www.youtube.com/watch?v=6Yeo6M8-W_8&t=1004s",
+        "https://www.youtube.com/watch?v=6Yeo6M8-W_8&t=109s",
+        "https://www.youtube.com/watch?v=6Yeo6M8-W_8&t=1117s",
+        "https://www.youtube.com/watch?v=6Yeo6M8-W_8&t=1242s",
+        "https://www.youtube.com/watch?v=6Yeo6M8-W_8&t=1332s",
+        "https://www.youtube.com/watch?v=6Yeo6M8-W_8&t=539s",
+        "https://www.youtube.com/watch?v=6Yeo6M8-W_8&t=66s",
+        "https://www.youtube.com/watch?v=6Yeo6M8-W_8&t=843s",
+        "https://youtu.be/6Yeo6M8-W_8"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/6Yeo6M8-W_8?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust/comment/328456984",
+        "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust/comment/333358083"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-non-coders-are-vibe-coding-100k-businesses-with-ai-amol-jain-replit": {
+      "url": "https://creatoreconomy.so/p/how-non-coders-are-vibe-coding-100k-businesses-with-ai-amol-jain-replit",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:00.632179+00:00",
+      "title": "How Non-Coders Are Vibe Coding $100K+ Businesses With AI | Amol Jain",
+      "video_links": [
+        "https://www.youtube.com/watch?v=JAh8Wv1lQrw",
+        "https://www.youtube.com/watch?v=JAh8Wv1lQrw&t=1070s",
+        "https://www.youtube.com/watch?v=JAh8Wv1lQrw&t=128s",
+        "https://www.youtube.com/watch?v=JAh8Wv1lQrw&t=1295s",
+        "https://www.youtube.com/watch?v=JAh8Wv1lQrw&t=1702s",
+        "https://www.youtube.com/watch?v=JAh8Wv1lQrw&t=1862s",
+        "https://www.youtube.com/watch?v=JAh8Wv1lQrw&t=484s",
+        "https://www.youtube.com/watch?v=JAh8Wv1lQrw&t=751s",
+        "https://www.youtube.com/watch?v=JAh8Wv1lQrw&t=839s",
+        "https://youtu.be/JAh8Wv1lQrw"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/JAh8Wv1lQrw?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/chatgpt-vs-claude-vs-grok-vs-gemini-best-ai-model-2026": {
+      "url": "https://creatoreconomy.so/p/chatgpt-vs-claude-vs-grok-vs-gemini-best-ai-model-2026",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:01.480119+00:00",
+      "title": "ChatGPT vs. Claude vs. Grok vs. Gemini: The Best AI Across 10 Real Use Cases",
+      "video_links": [
+        "https://www.youtube.com/watch?v=nAhQs8Fd_9g",
+        "https://www.youtube.com/watch?v=nAhQs8Fd_9g&t=1351s",
+        "https://www.youtube.com/watch?v=nAhQs8Fd_9g&t=1435s",
+        "https://www.youtube.com/watch?v=nAhQs8Fd_9g&t=1552s",
+        "https://www.youtube.com/watch?v=nAhQs8Fd_9g&t=32s",
+        "https://www.youtube.com/watch?v=nAhQs8Fd_9g&t=454s",
+        "https://www.youtube.com/watch?v=nAhQs8Fd_9g&t=598s",
+        "https://www.youtube.com/watch?v=nAhQs8Fd_9g&t=726s",
+        "https://www.youtube.com/watch?v=nAhQs8Fd_9g&t=961s",
+        "https://youtu.be/nAhQs8Fd_9g"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/nAhQs8Fd_9g?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-to-build-better-ai-evals-with-claude-code-shreya-hamel": {
+      "url": "https://creatoreconomy.so/p/how-to-build-better-ai-evals-with-claude-code-shreya-hamel",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:02.167136+00:00",
+      "title": "How to Build Better AI Evals with Claude Code in 5 Steps | Shreya & Hamel",
+      "video_links": [
+        "https://www.youtube.com/watch?v=bdMHQLvtVaQ",
+        "https://www.youtube.com/watch?v=bdMHQLvtVaQ&t=0s",
+        "https://www.youtube.com/watch?v=bdMHQLvtVaQ&t=1426s",
+        "https://www.youtube.com/watch?v=bdMHQLvtVaQ&t=150s",
+        "https://www.youtube.com/watch?v=bdMHQLvtVaQ&t=2077s",
+        "https://www.youtube.com/watch?v=bdMHQLvtVaQ&t=2599s",
+        "https://www.youtube.com/watch?v=bdMHQLvtVaQ&t=314s",
+        "https://www.youtube.com/watch?v=bdMHQLvtVaQ&t=496s",
+        "https://www.youtube.com/watch?v=bdMHQLvtVaQ&t=872s"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/bdMHQLvtVaQ?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:02.860370+00:00",
+      "title": "My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318154919",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318172155",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-i-run-my-content-business-with-codex-riley-brown": {
+      "url": "https://creatoreconomy.so/p/how-i-run-my-content-business-with-codex-riley-brown",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:03.518957+00:00",
+      "title": "How I Run My 1.5M+ Follower Content Business With Codex | Riley Brown",
+      "video_links": [
+        "https://www.youtube.com/watch?v=N34zz1-RSGw",
+        "https://www.youtube.com/watch?v=N34zz1-RSGw&t=1044s",
+        "https://www.youtube.com/watch?v=N34zz1-RSGw&t=1321s",
+        "https://www.youtube.com/watch?v=N34zz1-RSGw&t=1541s",
+        "https://www.youtube.com/watch?v=N34zz1-RSGw&t=196s",
+        "https://www.youtube.com/watch?v=N34zz1-RSGw&t=2101s",
+        "https://www.youtube.com/watch?v=N34zz1-RSGw&t=448s",
+        "https://www.youtube.com/watch?v=N34zz1-RSGw&t=804s",
+        "https://youtu.be/N34zz1-RSGw"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/N34zz1-RSGw?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai": {
+      "url": "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:04.389215+00:00",
+      "title": "How We Use Computers Is About to Change Forever",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314301082",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314516202",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/5-rules-for-building-ai-agents-in-production-linear-nan-jacob": {
+      "url": "https://creatoreconomy.so/p/5-rules-for-building-ai-agents-in-production-linear-nan-jacob",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:05.039636+00:00",
+      "title": "5 Rules for Building AI Agents That Work in Production | Nan Yu & Jacob Shumway",
+      "video_links": [
+        "https://www.youtube.com/watch?v=4mKtJzfGj0U",
+        "https://www.youtube.com/watch?v=4mKtJzfGj0U&t=1021s",
+        "https://www.youtube.com/watch?v=4mKtJzfGj0U&t=1442s",
+        "https://www.youtube.com/watch?v=4mKtJzfGj0U&t=180s",
+        "https://www.youtube.com/watch?v=4mKtJzfGj0U&t=2047s",
+        "https://www.youtube.com/watch?v=4mKtJzfGj0U&t=51s",
+        "https://www.youtube.com/watch?v=4mKtJzfGj0U&t=590s",
+        "https://www.youtube.com/watch?v=4mKtJzfGj0U&t=689s",
+        "https://youtu.be/4mKtJzfGj0U"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/4mKtJzfGj0U?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually": {
+      "url": "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:05.746665+00:00",
+      "title": "Use My /Human-Review Skill to Edit HTML and Markdown Files like A Google Doc",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/309050287",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/311409172",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/hermes-co-founder-on-building-an-ai-agent-that-improves-itself-karan-malhotra": {
+      "url": "https://creatoreconomy.so/p/hermes-co-founder-on-building-an-ai-agent-that-improves-itself-karan-malhotra",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:06.653556+00:00",
+      "title": "Hermes Co-Founder on Building an AI Agent That Improves Itself | Karan Malhotra",
+      "video_links": [
+        "https://www.youtube.com/watch?v=UWjh5Z4s8jY",
+        "https://www.youtube.com/watch?v=UWjh5Z4s8jY&t=1000s",
+        "https://www.youtube.com/watch?v=UWjh5Z4s8jY&t=140s",
+        "https://www.youtube.com/watch?v=UWjh5Z4s8jY&t=1420s",
+        "https://www.youtube.com/watch?v=UWjh5Z4s8jY&t=1605s",
+        "https://www.youtube.com/watch?v=UWjh5Z4s8jY&t=2167s",
+        "https://www.youtube.com/watch?v=UWjh5Z4s8jY&t=2560s",
+        "https://www.youtube.com/watch?v=UWjh5Z4s8jY&t=676s",
+        "https://www.youtube.com/watch?v=UWjh5Z4s8jY&t=916s",
+        "https://youtu.be/UWjh5Z4s8jY"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/UWjh5Z4s8jY?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-to-build-production-ready-apps-with-ai-colin-matthews": {
+      "url": "https://creatoreconomy.so/p/how-to-build-production-ready-apps-with-ai-colin-matthews",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:07.323219+00:00",
+      "title": "How to Build Production-Ready Apps with AI | Colin Matthews",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/ai-native-design-with-cursor-figma",
+        "https://creatoreconomy.so/p/lesson-codex-personal-os-deep-dive"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/full-tutorial-from-idea-to-app-with": {
+      "url": "https://creatoreconomy.so/p/full-tutorial-from-idea-to-app-with",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:08.142617+00:00",
+      "title": "Full Tutorial: From Idea to App with Claude Design and Claude Code in 25 Minutes",
+      "video_links": [
+        "https://www.youtube.com/watch?v=G9o8eoHzpxc",
+        "https://www.youtube.com/watch?v=G9o8eoHzpxc&t=1022s",
+        "https://www.youtube.com/watch?v=G9o8eoHzpxc&t=1242s",
+        "https://www.youtube.com/watch?v=G9o8eoHzpxc&t=1387s",
+        "https://www.youtube.com/watch?v=G9o8eoHzpxc&t=145s",
+        "https://www.youtube.com/watch?v=G9o8eoHzpxc&t=300s",
+        "https://www.youtube.com/watch?v=G9o8eoHzpxc&t=50s",
+        "https://www.youtube.com/watch?v=G9o8eoHzpxc&t=779s",
+        "https://youtu.be/G9o8eoHzpxc"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/G9o8eoHzpxc?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-to-use-codex-for-work-my-complete-system-at-openai-jason-liu": {
+      "url": "https://creatoreconomy.so/p/how-to-use-codex-for-work-my-complete-system-at-openai-jason-liu",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:08.747418+00:00",
+      "title": "How to Use Codex for Work: My Complete System at OpenAI | Jason Liu",
+      "video_links": [
+        "https://www.youtube.com/watch?v=ydTeb_I0b94",
+        "https://www.youtube.com/watch?v=ydTeb_I0b94&t=1201s",
+        "https://www.youtube.com/watch?v=ydTeb_I0b94&t=1463s",
+        "https://www.youtube.com/watch?v=ydTeb_I0b94&t=1559s",
+        "https://www.youtube.com/watch?v=ydTeb_I0b94&t=160s",
+        "https://www.youtube.com/watch?v=ydTeb_I0b94&t=2032s",
+        "https://www.youtube.com/watch?v=ydTeb_I0b94&t=350s",
+        "https://www.youtube.com/watch?v=ydTeb_I0b94&t=612s",
+        "https://www.youtube.com/watch?v=ydTeb_I0b94&t=813s",
+        "https://youtu.be/ydTeb_I0b94"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/ydTeb_I0b94?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:09.362451+00:00",
+      "title": "Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [
+        "https://www.youtube.com/watch?v=uT3EQPVIEb0&t=1064s"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/gpt-vs-claude-fable-i-tested-6-real-use-cases",
+        "https://creatoreconomy.so/p/how-this-ex-meta-l8-engineer-ships-40-prs-a-day-with-ai-kun-chen",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299810191",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299835309",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/ai-native-design-with-cursor-figma": {
+      "url": "https://creatoreconomy.so/p/ai-native-design-with-cursor-figma",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:10.051650+00:00",
+      "title": "AI Native Design with Cursor, Figma, and Code | Julie Xu",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-to-build-production-ready-apps-with-ai-colin-matthews",
+        "https://creatoreconomy.so/p/lesson-codex-personal-os-deep-dive"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-i-plan-build-and-run-loops-with-claude-code-thariq-shihipar": {
+      "url": "https://creatoreconomy.so/p/how-i-plan-build-and-run-loops-with-claude-code-thariq-shihipar",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:10.645899+00:00",
+      "title": "How I Plan, Build, and Run Loops with Claude Code in 40 Minutes | Thariq Shihipar",
+      "video_links": [
+        "https://www.youtube.com/watch?v=aVO6E181cNU",
+        "https://www.youtube.com/watch?v=aVO6E181cNU&t=1115s",
+        "https://www.youtube.com/watch?v=aVO6E181cNU&t=1654s",
+        "https://www.youtube.com/watch?v=aVO6E181cNU&t=1868s",
+        "https://www.youtube.com/watch?v=aVO6E181cNU&t=2047s",
+        "https://www.youtube.com/watch?v=aVO6E181cNU&t=2221s",
+        "https://www.youtube.com/watch?v=aVO6E181cNU&t=288s",
+        "https://www.youtube.com/watch?v=aVO6E181cNU&t=497s",
+        "https://www.youtube.com/watch?v=aVO6E181cNU&t=872s",
+        "https://youtu.be/aVO6E181cNU"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/aVO6E181cNU?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-i-use-chatgpt-work-and-gpt-5-6-for-everything-tutorial": {
+      "url": "https://creatoreconomy.so/p/how-i-use-chatgpt-work-and-gpt-5-6-for-everything-tutorial",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:11.346986+00:00",
+      "title": "How I Use ChatGPT Work and GPT-5.6 for (Almost) Everything ",
+      "video_links": [
+        "https://www.youtube.com/@PeterYangYT",
+        "https://www.youtube.com/watch?v=WLg9qWOf6zw",
+        "https://www.youtube.com/watch?v=WLg9qWOf6zw&t=1039s",
+        "https://www.youtube.com/watch?v=WLg9qWOf6zw&t=1163s",
+        "https://www.youtube.com/watch?v=WLg9qWOf6zw&t=1261s",
+        "https://www.youtube.com/watch?v=WLg9qWOf6zw&t=142s",
+        "https://www.youtube.com/watch?v=WLg9qWOf6zw&t=198s",
+        "https://www.youtube.com/watch?v=WLg9qWOf6zw&t=383s",
+        "https://www.youtube.com/watch?v=WLg9qWOf6zw&t=570s",
+        "https://www.youtube.com/watch?v=WLg9qWOf6zw&t=64s",
+        "https://www.youtube.com/watch?v=WLg9qWOf6zw&t=827s",
+        "https://youtu.be/WLg9qWOf6zw"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/WLg9qWOf6zw?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/archive": {
+      "url": "https://creatoreconomy.so/archive",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:12.246698+00:00",
+      "title": "Archive - Behind the Craft",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/chatgpt-vs-claude-vs-grok-vs-gemini-best-ai-model-2026",
+        "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and",
+        "https://creatoreconomy.so/p/grok-bot-team-14-best-bots-peng-zheng-lauren-tan",
+        "https://creatoreconomy.so/p/how-ai-can-help-kids-think-for-themselves-sue-khim",
+        "https://creatoreconomy.so/p/how-non-coders-are-vibe-coding-100k-businesses-with-ai-amol-jain-replit",
+        "https://creatoreconomy.so/p/how-to-build-better-ai-evals-with-claude-code-shreya-hamel",
+        "https://creatoreconomy.so/p/how-to-save-money-now-with-chatgpt-finances-ethan-boch",
+        "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust",
+        "https://creatoreconomy.so/p/my-3-step-system-to-automate-90-of",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three",
+        "https://creatoreconomy.so/p/my-personal-ai-course-is-live-now",
+        "https://creatoreconomy.so/p/sponsorships",
+        "https://creatoreconomy.so/p/stop-building-ai-agents-build-ai-employees-instead-pedro-franceschi-brex"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-personal-ai-course-is-live-now/comment/345839593": {
+      "url": "https://creatoreconomy.so/p/my-personal-ai-course-is-live-now/comment/345839593",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:13.061707+00:00",
+      "title": "Comments - My Personal AI Course Is Live! Copy My AI System to Take Work Off Your Plate",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-personal-ai-course-is-live-now/comment/345839593",
+        "https://creatoreconomy.so/p/my-personal-ai-course-is-live-now/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and/comment/333820873": {
+      "url": "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and/comment/333820873",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:13.833696+00:00",
+      "title": "Comments - GPT-6 Astra Is Both Incredible and Frustrating",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and/comment/333820873",
+        "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and/comment/338978286": {
+      "url": "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and/comment/338978286",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:14.595226+00:00",
+      "title": "Comments - GPT-6 Astra Is Both Incredible and Frustrating",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and/comment/338978286",
+        "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust/comment/328456984": {
+      "url": "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust/comment/328456984",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:15.376404+00:00",
+      "title": "Comments - Can You Trust AI Personal Agents With Your Data?",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust/comment/328456984",
+        "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust/comment/333358083": {
+      "url": "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust/comment/333358083",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:16.157724+00:00",
+      "title": "Comments - Can You Trust AI Personal Agents With Your Data?",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust/comment/333358083",
+        "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:17.197529+00:00",
+      "title": "I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [
+        "https://www.youtube.com/watch?v=T4pvKvAE_SA",
+        "https://www.youtube.com/watch?v=T4pvKvAE_SA&t=224s",
+        "https://www.youtube.com/watch?v=T4pvKvAE_SA&t=23s",
+        "https://www.youtube.com/watch?v=T4pvKvAE_SA&t=335s",
+        "https://www.youtube.com/watch?v=T4pvKvAE_SA&t=513s",
+        "https://www.youtube.com/watch?v=T4pvKvAE_SA&t=611s",
+        "https://www.youtube.com/watch?v=T4pvKvAE_SA&t=837s",
+        "https://youtu.be/T4pvKvAE_SA"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/T4pvKvAE_SA?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/community-led-product",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273871449",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273874357",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments",
+        "https://creatoreconomy.so/p/lessons-about-creator-economy",
+        "https://creatoreconomy.so/p/understand-identify-and-execute"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318154919": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318154919",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:18.015663+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318154919",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318172155": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318172155",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:18.812649+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318172155",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:19.825814+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318029776",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318065833",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318085458",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318102335",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318109281",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318115605",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318154919",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318172155",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318245606",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318308115",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318387146",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318677780",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318763937",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/319590371",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/320599050",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/324361746",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/324950468"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314301082": {
+      "url": "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314301082",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:20.732416+00:00",
+      "title": "Comments - How We Use Computers Is About to Change Forever",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314301082",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314399244",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314516202": {
+      "url": "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314516202",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:21.601173+00:00",
+      "title": "Comments - How We Use Computers Is About to Change Forever",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314516202",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comments": {
+      "url": "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comments",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:22.580609+00:00",
+      "title": "Comments - How We Use Computers Is About to Change Forever",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313277367",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313293157",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313332388",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313802943",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313901310",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314301082",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314399244",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314516202",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314755285",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/328123360"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/309050287": {
+      "url": "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/309050287",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:23.558605+00:00",
+      "title": "Comments - Use My /Human-Review Skill to Edit HTML and Markdown Files like A Google Doc",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/309050287",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/311409172": {
+      "url": "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/311409172",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:24.381410+00:00",
+      "title": "Comments - Use My /Human-Review Skill to Edit HTML and Markdown Files like A Google Doc",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/311409172",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/311473365",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comments": {
+      "url": "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comments",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:25.142192+00:00",
+      "title": "Comments - Use My /Human-Review Skill to Edit HTML and Markdown Files like A Google Doc",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/309050287",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/309259116",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/311409172",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/311473365",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/311660220",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/318081865"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/lesson-codex-personal-os-deep-dive": {
+      "url": "https://creatoreconomy.so/p/lesson-codex-personal-os-deep-dive",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:25.888089+00:00",
+      "title": "Codex Personal OS Walkthrough | Peter Yang - by Peter Yang",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/ai-native-design-with-cursor-figma",
+        "https://creatoreconomy.so/p/how-to-build-production-ready-apps-with-ai-colin-matthews"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/gpt-vs-claude-fable-i-tested-6-real-use-cases": {
+      "url": "https://creatoreconomy.so/p/gpt-vs-claude-fable-i-tested-6-real-use-cases",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:26.680701+00:00",
+      "title": "GPT 5.6 vs Claude Fable 5: The Best AI Model Across 6 Practical Use Cases",
+      "video_links": [
+        "https://www.youtube.com/watch?v=8mY9wx_iMSU",
+        "https://www.youtube.com/watch?v=8mY9wx_iMSU&t=105s",
+        "https://www.youtube.com/watch?v=8mY9wx_iMSU&t=1174s",
+        "https://www.youtube.com/watch?v=8mY9wx_iMSU&t=1337s",
+        "https://www.youtube.com/watch?v=8mY9wx_iMSU&t=1477s",
+        "https://www.youtube.com/watch?v=8mY9wx_iMSU&t=344s",
+        "https://www.youtube.com/watch?v=8mY9wx_iMSU&t=579s",
+        "https://www.youtube.com/watch?v=8mY9wx_iMSU&t=910s"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/8mY9wx_iMSU?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-this-ex-meta-l8-engineer-ships-40-prs-a-day-with-ai-kun-chen": {
+      "url": "https://creatoreconomy.so/p/how-this-ex-meta-l8-engineer-ships-40-prs-a-day-with-ai-kun-chen",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:27.378067+00:00",
+      "title": "Agentic Engineering, Clearly Explained in 60 Min by an Ex-Meta L8 Engineer | Kun Chen",
+      "video_links": [
+        "https://www.youtube.com/watch?v=88B6DimMD2g",
+        "https://www.youtube.com/watch?v=88B6DimMD2g&t=1193s",
+        "https://www.youtube.com/watch?v=88B6DimMD2g&t=1401s",
+        "https://www.youtube.com/watch?v=88B6DimMD2g&t=1924s",
+        "https://www.youtube.com/watch?v=88B6DimMD2g&t=2719s",
+        "https://www.youtube.com/watch?v=88B6DimMD2g&t=3018s",
+        "https://www.youtube.com/watch?v=88B6DimMD2g&t=382s",
+        "https://www.youtube.com/watch?v=88B6DimMD2g&t=520s",
+        "https://www.youtube.com/watch?v=88B6DimMD2g&t=64s",
+        "https://youtu.be/88B6DimMD2g"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/88B6DimMD2g?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299810191": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299810191",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:28.114768+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299810191",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299835309": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299835309",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:28.880255+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299835309",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:29.917708+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299630778",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299633619",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299775722",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299810191",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299835309",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299877192",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300005862",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300005955",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300062136",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300773820",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300864931",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/301687734",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/301688514",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/301704375",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/303415294",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/315153480",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/330774367",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/336856272"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-personal-ai-course-is-live-now/comments": {
+      "url": "https://creatoreconomy.so/p/my-personal-ai-course-is-live-now/comments",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:30.703821+00:00",
+      "title": "Comments - My Personal AI Course Is Live! Copy My AI System to Take Work Off Your Plate",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-personal-ai-course-is-live-now",
+        "https://creatoreconomy.so/p/my-personal-ai-course-is-live-now/comment/345839593"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and/comments": {
+      "url": "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and/comments",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:31.489056+00:00",
+      "title": "Comments - GPT-6 Astra Is Both Incredible and Frustrating",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and",
+        "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and/comment/333820873",
+        "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and/comment/338978286"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust/comments": {
+      "url": "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust/comments",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:32.301702+00:00",
+      "title": "Comments - Can You Trust AI Personal Agents With Your Data?",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust",
+        "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust/comment/328456984",
+        "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust/comment/333358083"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/community-led-product": {
+      "url": "https://creatoreconomy.so/p/community-led-product",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:33.102355+00:00",
+      "title": "Why Community-Led Product Development Wins - by Peter Yang",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/community-led-product/comment/2188066",
+        "https://creatoreconomy.so/p/community-led-product/comment/40894247",
+        "https://creatoreconomy.so/p/community-led-product/comments",
+        "https://creatoreconomy.so/p/sponsorships-and-cross-promotions"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273871449": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273871449",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:33.925688+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273871449",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273874357": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273874357",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:34.708304+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273874357",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:35.640337+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273863667",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273868282",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273871449",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273874357",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273878131",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273885084",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273917189",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273926806",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273931467",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273973254",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274309084",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274334346",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274758722",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274873856",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/275180450",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/277561236",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/282695330",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/342179134"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/lessons-about-creator-economy": {
+      "url": "https://creatoreconomy.so/p/lessons-about-creator-economy",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:36.342649+00:00",
+      "title": "Lessons about the Creator Economy from Twitch and Substack",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/understand-identify-and-execute": {
+      "url": "https://creatoreconomy.so/p/understand-identify-and-execute",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:37.183964+00:00",
+      "title": "Understand, Identify, and Execute - by Peter Yang",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-product-management-is-evolving",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills",
+        "https://creatoreconomy.so/p/understand-identify-and-execute/comment/42881771"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318029776": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318029776",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:37.980847+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318029776",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318065833": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318065833",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:38.754771+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318065833",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318085458": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318085458",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:39.509564+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318085458",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318102335": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318102335",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:40.292923+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318102335",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318109281": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318109281",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:41.106718+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318109281",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318115605": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318115605",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:41.848970+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318115605",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318245606": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318245606",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:42.637415+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318245606",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318308115": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318308115",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:43.396156+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318308115",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318387146": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318387146",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:44.142830+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318387146",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318677780": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318677780",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:44.915906+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318677780",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318763937": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318763937",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:45.685707+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/318763937",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/319590371": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/319590371",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:46.444161+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/319590371",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/320599050": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/320599050",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:47.216137+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/320599050",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/324361746": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/324361746",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:48.034418+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/324361746",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/324950468",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/324950468": {
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/324950468",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:48.779687+00:00",
+      "title": "Comments - My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comment/324950468",
+        "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314399244": {
+      "url": "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314399244",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:49.583088+00:00",
+      "title": "Comments - How We Use Computers Is About to Change Forever",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314399244",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313277367": {
+      "url": "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313277367",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:50.370190+00:00",
+      "title": "Comments - How We Use Computers Is About to Change Forever",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313277367",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313293157": {
+      "url": "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313293157",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:51.139456+00:00",
+      "title": "Comments - How We Use Computers Is About to Change Forever",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313293157",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313332388": {
+      "url": "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313332388",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:51.893159+00:00",
+      "title": "Comments - How We Use Computers Is About to Change Forever",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313332388",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313802943": {
+      "url": "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313802943",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:52.659275+00:00",
+      "title": "Comments - How We Use Computers Is About to Change Forever",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313802943",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313901310": {
+      "url": "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313901310",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:53.502886+00:00",
+      "title": "Comments - How We Use Computers Is About to Change Forever",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/313901310",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314755285": {
+      "url": "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314755285",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:54.370744+00:00",
+      "title": "Comments - How We Use Computers Is About to Change Forever",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/314755285",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/328123360": {
+      "url": "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/328123360",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:55.201853+00:00",
+      "title": "Comments - How We Use Computers Is About to Change Forever",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comment/328123360",
+        "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/311473365": {
+      "url": "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/311473365",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:56.030057+00:00",
+      "title": "Comments - Use My /Human-Review Skill to Edit HTML and Markdown Files like A Google Doc",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/311473365",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/309259116": {
+      "url": "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/309259116",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:56.852175+00:00",
+      "title": "Comments - Use My /Human-Review Skill to Edit HTML and Markdown Files like A Google Doc",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/309259116",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/311660220": {
+      "url": "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/311660220",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:57.591904+00:00",
+      "title": "Comments - Use My /Human-Review Skill to Edit HTML and Markdown Files like A Google Doc",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/311660220",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/318081865": {
+      "url": "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/318081865",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:58.324460+00:00",
+      "title": "Comments - Use My /Human-Review Skill to Edit HTML and Markdown Files like A Google Doc",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comment/318081865",
+        "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed": {
+      "url": "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:59.005830+00:00",
+      "title": "18 Hot Takes On Where AI is Headed Next - by Peter Yang",
+      "video_links": [
+        "https://www.youtube.com/@PeterYangYT",
+        "https://www.youtube.com/watch?v=2ZacwCbiLjg&feature=youtu.be",
+        "https://youtu.be/2ZacwCbiLjg"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286159406",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/293582261",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comments",
+        "https://creatoreconomy.so/p/how-openclaws-creator-uses-ai-peter-steinberger"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299630778": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299630778",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:36:59.752953+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299630778",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299633619": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299633619",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:00.529239+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299633619",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/301688514",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299775722": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299775722",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:01.356586+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299775722",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300005955",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299877192": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299877192",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:02.126215+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/299877192",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300005862",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300005862": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300005862",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:02.883770+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300005862",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300005955": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300005955",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:03.665476+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300005955",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300062136": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300062136",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:04.556096+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300062136",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300773820": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300773820",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:05.434416+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300773820",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300864931": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300864931",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:06.249009+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/300864931",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/301687734": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/301687734",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:07.109524+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/301687734",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/301688514": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/301688514",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:07.940746+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/301688514",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/301704375": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/301704375",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:08.769808+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/301704375",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/303415294": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/303415294",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:09.621104+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/303415294",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/315153480": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/315153480",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:10.475015+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/315153480",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/330774367": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/330774367",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:11.282235+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/330774367",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/336856272": {
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/336856272",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:12.206509+00:00",
+      "title": "Comments - Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comment/336856272",
+        "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/community-led-product/comment/2188066": {
+      "url": "https://creatoreconomy.so/p/community-led-product/comment/2188066",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:13.040168+00:00",
+      "title": "Comments - Why Community-Led Product Development Wins",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/community-led-product/comment/2188066",
+        "https://creatoreconomy.so/p/community-led-product/comment/2212675",
+        "https://creatoreconomy.so/p/community-led-product/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/community-led-product/comment/40894247": {
+      "url": "https://creatoreconomy.so/p/community-led-product/comment/40894247",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:13.825091+00:00",
+      "title": "Comments - Why Community-Led Product Development Wins",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/community-led-product/comment/40894247",
+        "https://creatoreconomy.so/p/community-led-product/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/community-led-product/comments": {
+      "url": "https://creatoreconomy.so/p/community-led-product/comments",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:14.654265+00:00",
+      "title": "Comments - Why Community-Led Product Development Wins",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/community-led-product",
+        "https://creatoreconomy.so/p/community-led-product/comment/2188066",
+        "https://creatoreconomy.so/p/community-led-product/comment/2212675",
+        "https://creatoreconomy.so/p/community-led-product/comment/40894247",
+        "https://creatoreconomy.so/p/community-led-product/comment/4848574"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273863667": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273863667",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:16.440345+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273863667",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273868282",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273868282": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273868282",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:17.207223+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273868282",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273878131": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273878131",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:18.020885+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273878131",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273885084": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273885084",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:18.769311+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273885084",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273917189": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273917189",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:19.516050+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273917189",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273926806": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273926806",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:20.323197+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273926806",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273931467": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273931467",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:21.096789+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273931467",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273973254": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273973254",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:21.890532+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/273973254",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274309084": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274309084",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:22.736049+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274309084",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274334346": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274334346",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:23.515444+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274334346",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274758722",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274758722": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274758722",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:24.298490+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274758722",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274873856": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274873856",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:25.096240+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/274873856",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/275180450": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/275180450",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:25.851907+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/275180450",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/277561236": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/277561236",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:26.626213+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/277561236",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/282695330": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/282695330",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:27.367254+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/282695330",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/342179134": {
+      "url": "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/342179134",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:28.725406+00:00",
+      "title": "Comments - I Quit My High-Paying Product Job to Bet on Myself",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comment/342179134",
+        "https://creatoreconomy.so/p/i-quit-my-high-paying-product-job-to-bet-on-myself/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-product-management-is-evolving": {
+      "url": "https://creatoreconomy.so/p/how-product-management-is-evolving",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:29.558883+00:00",
+      "title": "How the PM Role is Evolving and What You Can Do About It",
+      "video_links": [
+        "https://www.youtube.com/@therealsanchan"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-to-write-cold-emails-and-dms"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/replace-product-sense-with-skills": {
+      "url": "https://creatoreconomy.so/p/replace-product-sense-with-skills",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:30.682787+00:00",
+      "title": "Let's Replace \"Product Sense\" With the Skills That Actually Matter",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/community-led-product",
+        "https://creatoreconomy.so/p/growing-from-product-manager-to-product",
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather",
+        "https://creatoreconomy.so/p/jackie-bavaro-how-to-crack-product-strategy",
+        "https://creatoreconomy.so/p/kaz-coo-shopify-craft-and-no-meetings",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39393939",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39495449",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comments",
+        "https://creatoreconomy.so/p/rituals-of-great-product-teams",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/understand-identify-and-execute/comment/42881771": {
+      "url": "https://creatoreconomy.so/p/understand-identify-and-execute/comment/42881771",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:31.474139+00:00",
+      "title": "Comments - Understand, Identify, and Execute",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/understand-identify-and-execute/comment/42881771",
+        "https://creatoreconomy.so/p/understand-identify-and-execute/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286159406": {
+      "url": "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286159406",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:32.311853+00:00",
+      "title": "Comments - 18 Hot Takes On Where AI is Headed Next",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286159406",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/293582261": {
+      "url": "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/293582261",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:33.161273+00:00",
+      "title": "Comments - 18 Hot Takes On Where AI is Headed Next",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/293582261",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comments": {
+      "url": "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comments",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:34.212868+00:00",
+      "title": "Comments - 18 Hot Takes On Where AI is Headed Next",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286157321",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286159406",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286335204",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286763736",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286994835",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/287017545",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/287224525",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/293582261"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-openclaws-creator-uses-ai-peter-steinberger": {
+      "url": "https://creatoreconomy.so/p/how-openclaws-creator-uses-ai-peter-steinberger",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:34.819872+00:00",
+      "title": "How OpenClaw's Creator Uses AI to Run His Life (Full Demo) | Peter Steinberger",
+      "video_links": [
+        "https://www.youtube.com/watch?v=AcwK1Uuwc0U",
+        "https://www.youtube.com/watch?v=AcwK1Uuwc0U&t=1182s",
+        "https://www.youtube.com/watch?v=AcwK1Uuwc0U&t=1371s",
+        "https://www.youtube.com/watch?v=AcwK1Uuwc0U&t=1782s",
+        "https://www.youtube.com/watch?v=AcwK1Uuwc0U&t=2216s",
+        "https://www.youtube.com/watch?v=AcwK1Uuwc0U&t=232s",
+        "https://www.youtube.com/watch?v=AcwK1Uuwc0U&t=906s",
+        "https://www.youtube.com/watch?v=AcwK1Uuwc0U&t=975s",
+        "https://youtu.be/AcwK1Uuwc0U"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/AcwK1Uuwc0U?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/community-led-product/comment/2212675": {
+      "url": "https://creatoreconomy.so/p/community-led-product/comment/2212675",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:35.592673+00:00",
+      "title": "Comments - Why Community-Led Product Development Wins",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/community-led-product/comment/2212675",
+        "https://creatoreconomy.so/p/community-led-product/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/community-led-product/comment/4848574": {
+      "url": "https://creatoreconomy.so/p/community-led-product/comment/4848574",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:36.324227+00:00",
+      "title": "Comments - Why Community-Led Product Development Wins",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/community-led-product/comment/4848574",
+        "https://creatoreconomy.so/p/community-led-product/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-to-write-cold-emails-and-dms": {
+      "url": "https://creatoreconomy.so/p/how-to-write-cold-emails-and-dms",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:37.087884+00:00",
+      "title": "How to Write Cold Emails and DMs That Actually Get Replies",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/growing-from-product-manager-to-product": {
+      "url": "https://creatoreconomy.so/p/growing-from-product-manager-to-product",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:37.801757+00:00",
+      "title": "Ethan Evans (Ex-VP Amazon): Growing from Product Manager to Product Leader",
+      "video_links": [
+        "https://www.youtube.com/ethanevansvp"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/sponsorships-and-cross-promotions"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather": {
+      "url": "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:38.781052+00:00",
+      "title": "How to Talk to Customers to Gather Useful Insights",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/community-led-product",
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/12033433",
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/13023647",
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comments",
+        "https://creatoreconomy.so/p/sponsorships-and-cross-promotions"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/jackie-bavaro-how-to-crack-product-strategy": {
+      "url": "https://creatoreconomy.so/p/jackie-bavaro-how-to-crack-product-strategy",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:39.667279+00:00",
+      "title": "Jackie Bavaro: How to Crack Your Product Strategy",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/kaz-coo-shopify-craft-and-no-meetings": {
+      "url": "https://creatoreconomy.so/p/kaz-coo-shopify-craft-and-no-meetings",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:40.590531+00:00",
+      "title": "Why Shopify Elevated the IC Career Path and Ditched Meetings | Kaz Nejatian",
+      "video_links": [
+        "https://www.youtube.com/watch?v=FO16_cJPNcA"
+      ],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/FO16_cJPNcA?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39393939": {
+      "url": "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39393939",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:41.373260+00:00",
+      "title": "Comments - Let's Replace \"Product Sense\" With the Skills That Actually Matter",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39393939",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39495449": {
+      "url": "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39495449",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:42.184811+00:00",
+      "title": "Comments - Let's Replace \"Product Sense\" With the Skills That Actually Matter",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39495449",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39498137",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/replace-product-sense-with-skills/comments": {
+      "url": "https://creatoreconomy.so/p/replace-product-sense-with-skills/comments",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:43.039171+00:00",
+      "title": "Comments - Let's Replace \"Product Sense\" With the Skills That Actually Matter",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39322603",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39393939",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39419988",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39446570",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39495449",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39498137",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/40124023"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/rituals-of-great-product-teams": {
+      "url": "https://creatoreconomy.so/p/rituals-of-great-product-teams",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:43.875560+00:00",
+      "title": "Lane Shackleton (CPO Coda): 5 Proven Rituals to Level Up Your Product Team",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises": {
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:44.842420+00:00",
+      "title": "The Day You Stopped Making Compromises on Product Quality",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "iframe",
+          "src": "https://www.youtube-nocookie.com/embed/P4VBqTViEx4?rel=0&autoplay=0&showinfo=0&enablejsapi=0"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/community-led-product",
+        "https://creatoreconomy.so/p/four-product-principles-that-drove",
+        "https://creatoreconomy.so/p/sponsorships-and-cross-promotions",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14651829",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/52678454",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/understand-identify-and-execute/comments": {
+      "url": "https://creatoreconomy.so/p/understand-identify-and-execute/comments",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:45.651383+00:00",
+      "title": "Comments - Understand, Identify, and Execute",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/understand-identify-and-execute",
+        "https://creatoreconomy.so/p/understand-identify-and-execute/comment/42881771"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286157321": {
+      "url": "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286157321",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:46.442153+00:00",
+      "title": "Comments - 18 Hot Takes On Where AI is Headed Next",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286157321",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286335204": {
+      "url": "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286335204",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:47.278556+00:00",
+      "title": "Comments - 18 Hot Takes On Where AI is Headed Next",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286335204",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286763736": {
+      "url": "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286763736",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:48.067602+00:00",
+      "title": "Comments - 18 Hot Takes On Where AI is Headed Next",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286763736",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286994835": {
+      "url": "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286994835",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:48.821227+00:00",
+      "title": "Comments - 18 Hot Takes On Where AI is Headed Next",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/286994835",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/287017545": {
+      "url": "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/287017545",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:49.567389+00:00",
+      "title": "Comments - 18 Hot Takes On Where AI is Headed Next",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/287017545",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/287224525": {
+      "url": "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/287224525",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:50.342932+00:00",
+      "title": "Comments - 18 Hot Takes On Where AI is Headed Next",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comment/287224525",
+        "https://creatoreconomy.so/p/18-hot-takes-on-where-ai-is-headed/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/12033433": {
+      "url": "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/12033433",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:51.114837+00:00",
+      "title": "Comments - How to Talk to Customers to Gather Useful Insights",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/12033433",
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/12054759",
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/13023647": {
+      "url": "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/13023647",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:51.889965+00:00",
+      "title": "Comments - How to Talk to Customers to Gather Useful Insights",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/13023647",
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comments": {
+      "url": "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comments",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:52.671461+00:00",
+      "title": "Comments - How to Talk to Customers to Gather Useful Insights",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather",
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/12033433",
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/12054759",
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/13023647"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39498137": {
+      "url": "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39498137",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:53.398567+00:00",
+      "title": "Comments - Let's Replace \"Product Sense\" With the Skills That Actually Matter",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39498137",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39322603": {
+      "url": "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39322603",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:54.158662+00:00",
+      "title": "Comments - Let's Replace \"Product Sense\" With the Skills That Actually Matter",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39322603",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39446570",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39419988": {
+      "url": "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39419988",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:54.905400+00:00",
+      "title": "Comments - Let's Replace \"Product Sense\" With the Skills That Actually Matter",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39419988",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39446570": {
+      "url": "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39446570",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:55.671193+00:00",
+      "title": "Comments - Let's Replace \"Product Sense\" With the Skills That Actually Matter",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/39446570",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/40124023": {
+      "url": "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/40124023",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:56.452610+00:00",
+      "title": "Comments - Let's Replace \"Product Sense\" With the Skills That Actually Matter",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comment/40124023",
+        "https://creatoreconomy.so/p/replace-product-sense-with-skills/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/four-product-principles-that-drove": {
+      "url": "https://creatoreconomy.so/p/four-product-principles-that-drove",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:57.272997+00:00",
+      "title": "Four Product Principles that Drove Instagram's Success",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14651829": {
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14651829",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:58.073448+00:00",
+      "title": "Comments - The Day You Stopped Making Compromises on Product Quality",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14651829",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/52678454": {
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/52678454",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:58.808791+00:00",
+      "title": "Comments - The Day You Stopped Making Compromises on Product Quality",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/52678454",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments": {
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:37:59.660147+00:00",
+      "title": "Comments - The Day You Stopped Making Compromises on Product Quality",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14550797",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14566229",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14568057",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14581486",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14583593",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14585163",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14592386",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14607900",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14651829",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/15132805",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/15132864",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/52678454"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/12054759": {
+      "url": "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/12054759",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:38:00.413138+00:00",
+      "title": "Comments - How to Talk to Customers to Gather Useful Insights",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comment/12054759",
+        "https://creatoreconomy.so/p/how-to-talk-to-customers-to-gather/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14550797": {
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14550797",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:38:01.356028+00:00",
+      "title": "Comments - The Day You Stopped Making Compromises on Product Quality",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14550797",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14566229": {
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14566229",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:38:02.098767+00:00",
+      "title": "Comments - The Day You Stopped Making Compromises on Product Quality",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14566229",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14568057": {
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14568057",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:38:02.863794+00:00",
+      "title": "Comments - The Day You Stopped Making Compromises on Product Quality",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14568057",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14581486": {
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14581486",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:38:03.610564+00:00",
+      "title": "Comments - The Day You Stopped Making Compromises on Product Quality",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14581486",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/15132805",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14583593": {
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14583593",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:38:04.382508+00:00",
+      "title": "Comments - The Day You Stopped Making Compromises on Product Quality",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14583593",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14585163",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14607900",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14585163": {
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14585163",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:38:05.169699+00:00",
+      "title": "Comments - The Day You Stopped Making Compromises on Product Quality",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14585163",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14607900",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14592386": {
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14592386",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:38:05.928506+00:00",
+      "title": "Comments - The Day You Stopped Making Compromises on Product Quality",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14592386",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14607900": {
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14607900",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:38:06.707034+00:00",
+      "title": "Comments - The Day You Stopped Making Compromises on Product Quality",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/14607900",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/15132805": {
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/15132805",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:38:07.482632+00:00",
+      "title": "Comments - The Day You Stopped Making Compromises on Product Quality",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/15132805",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments"
+      ],
+      "video_absence_confirmed": false
+    },
+    "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/15132864": {
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/15132864",
+      "http_status": 200,
+      "observed_at": "2026-09-28T19:38:08.234352+00:00",
+      "title": "Comments - The Day You Stopped Making Compromises on Product Quality",
+      "video_links": [],
+      "media_elements": [
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        },
+        {
+          "tag": "source"
+        }
+      ],
+      "linked_pages": [
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comment/15132864",
+        "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises/comments"
+      ],
+      "video_absence_confirmed": false
+    }
+  },
+  "pending": [],
+  "blocked": {
+    "https://creatoreconomy.so/p/sponsorships-and-cross-promotions": {
+      "attempted_at": "2026-09-28T19:37:15.651852+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "next_action": "Inspect visible public page in browser; do not infer absence."
+    }
+  },
+  "updated_at": "2026-09-28T19:38:08.234379+00:00",
+  "html_link_queue_exhausted": true
+}

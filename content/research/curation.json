@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "directive": "Relevant, sufficient, deeply studied corpus; exhaustive inventory preserved as secondary backlog.",
-  "updated_at": "2026-09-28T19:41:13.060527+00:00",
+  "updated_at": "2026-09-28T19:52:16.725482+00:00",
   "triage_is_not_evidence": true,
   "curriculum_acceptance_owner": "Educador",
   "selected_or_supporting_resources": [
@@ -24,7 +24,12 @@
       },
       "overlap": "Complementa cada quickstart; não duplicar exemplos avançados na L01.",
       "full_study_manifest": "studies/official/manifest.json",
-      "next_action": "Educador: ler ficha integral e artefato; aceitar somente afirmações delimitadas. Fluxo no app não foi executado; visual pendente onde indicado."
+      "next_action": "Educador: ler ficha integral e artefato; aceitar somente afirmações delimitadas. Fluxo no app não foi executado; visual pendente onde indicado.",
+      "educator_review": {
+        "review_commit": "9f6a634",
+        "result": "accepted_for_bounded_textual_claims",
+        "scope": "Educador leu originais integrais e conferiu hashes; sem certificação de execução ou audiovisual."
+      }
     },
     {
       "id": "cur-claude-desktop-start",
@@ -45,17 +50,22 @@
       },
       "overlap": "Fonte principal da superfície Claude; referência longa apenas por lacuna concreta.",
       "full_study_manifest": "studies/official/manifest.json",
-      "next_action": "Educador: ler ficha integral e artefato; aceitar somente afirmações delimitadas. Fluxo no app não foi executado; visual pendente onde indicado."
+      "next_action": "Educador: ler ficha integral e artefato; aceitar somente afirmações delimitadas. Fluxo no app não foi executado; visual pendente onde indicado.",
+      "educator_review": {
+        "review_commit": "9f6a634",
+        "result": "accepted_for_bounded_textual_claims",
+        "scope": "Educador leu originais integrais e conferiu hashes; sem certificação de execução ou audiovisual."
+      }
     },
     {
       "id": "cur-codex-desktop-start",
       "source_id": "openai-learn-codex",
-      "url": "https://learn.chatgpt.com/docs/app",
+      "url": "https://learn.chatgpt.com/docs/quickstart",
       "priority": "P0",
       "theme": "primeiro-resultado-codex",
       "audience": "Pessoas comuns iniciantes; classificação pode indicar uso apenas de bastidor",
-      "status": "selected_for_full_study",
-      "selection_reason": "Fluxo atual oficial com distinções Chat/Work/Codex; evitar roteiro antigo de interface.",
+      "status": "ready_for_bounded_claim_review",
+      "selection_reason": "Quickstart oficial integral de cinco passos e ilustração pertinente; /docs/app fica como complemento de superfície e revisão.",
       "prerequisites": [
         "App e conta; pasta de projeto para contexto local"
       ],
@@ -64,9 +74,10 @@
         "checked_on": "2026-09-28",
         "version_policy": "Store artifact hash; recheck UI/model/pricing claims before teaching"
       },
-      "overlap": "Fonte principal da superfície Codex; diferenças em relação a Claude devem ser explícitas.",
+      "overlap": "Uma entrada principal Codex; /app e referências de revisão apenas cobrem lacunas concretas.",
       "full_study_manifest": "studies/official/manifest.json",
-      "next_action": "Validate complete study and relevant visual evidence; Educador decides bounded curriculum use."
+      "next_action": "Educador: revisar original e ficha; execução no aplicativo ainda não testada.",
+      "study_path": "studies/official/codex-quickstart.md"
     },
     {
       "id": "cur-claude-plan-workflow",
@@ -75,8 +86,8 @@
       "priority": "P0",
       "theme": "planejar-executar-verificar",
       "audience": "Pessoas comuns iniciantes; classificação pode indicar uso apenas de bastidor",
-      "status": "selected_for_full_study",
-      "selection_reason": "Candidato principal curto para sequência de trabalho. Estudo precisa distinguir procedimento, narração, interface CLI e resultado realmente demonstrado.",
+      "status": "transcript_analyzed_visual_pending",
+      "selection_reason": "Transcrição oficial e texto auxiliar integralmente lidos; sustenta procedimento de planejamento e verificação. Fonte usa CLI, sem log completo de um defeito resolvido.",
       "prerequisites": [
         "Familiaridade com pasta/projeto; fonte usa terminal, adaptação Desktop necessária"
       ],
@@ -87,7 +98,8 @@
       },
       "overlap": "Uma fonte principal; Trust só complementa uma lacuna real.",
       "full_study_manifest": "studies/official/manifest.json",
-      "next_action": "Validate complete study and relevant visual evidence; Educador decides bounded curriculum use."
+      "next_action": "Educador: aceitar somente procedimento textual delimitado; não atribuir demonstração audiovisual integral ou atalhos CLI ao Desktop.",
+      "study_path": "studies/official/claude-explore-plan-code-commit.md"
     },
     {
       "id": "cur-builder-correction",
@@ -179,15 +191,16 @@
       "theme": "site-simples",
       "priority": "P1",
       "gap": "Ciclo local completo: construir, testar, diagnosticar, corrigir e retestar.",
-      "selection_status": "candidate_search",
-      "next_action": "Preferir demonstração acessível e reproduzível; verificar resultado e falhas, evitando fonte apenas promocional."
+      "selection_status": "integral_study_in_progress",
+      "next_action": "Concluir ficha e visuais do Riley; distinguir boas correções demonstradas de setup antigo e expansões avançadas.",
+      "candidate_url": "https://www.youtube.com/watch?v=SKBDC3QugZw"
     },
     {
       "theme": "publicacao-site-estatico",
       "priority": "P1",
       "gap": "URL externa acessível por visitante + atualização verificada.",
-      "selection_status": "candidate_search",
-      "next_action": "Selecionar tutorial completo e documentação primária de hospedagem; não confundir repositório/localhost com deploy."
+      "selection_status": "integral_study_in_progress",
+      "next_action": "Concluir ficha oficial Netlify Drop e visibilidade; distinguir URL de acesso público e atualização em produção."
     },
     {
       "theme": "app-simples",
@@ -212,5 +225,6 @@
     "advanced setup",
     "obsolete surface instructions",
     "redundant coverage"
-  ]
+  ],
+  "video_triage_ledger": "acquisition/curation.json"
 }
