@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "studies": [
+    {
+      "id": "academy-action-hooks",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/hooks",
+      "video_id": "1m0huCacWPs",
+      "title": "Hooks",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-10/hooks.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac10-hooks.txt",
+          "bytes": 5884,
+          "sha256": "ab1cd36206f7dece84ea25446607f8a3e43434b324c06d6ad62a21045bf091a5",
+          "kind": "text",
+          "line_count": 87,
+          "read_lines": [
+            [
+              1,
+              87
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-10/hooks.md",
+        "bytes": 4857,
+        "sha256": "b9617e82f0c1d58e8c1ab08974214fa3d90364f4921d97a9cda2b4b8866dd742",
+        "kind": "original_study",
+        "line_count": 39,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/hooks#pretooluse-decision-control",
+          "read_scope": "PreToolUse updatedInput and decision control",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida."
+    },
+    {
+      "id": "academy-action-routines-and-headless",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless",
+      "video_id": "7u366zBuUTM",
+      "title": "Routines and headless",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-10/routines-and-headless.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac10-routines.txt",
+          "bytes": 6316,
+          "sha256": "d2096e5e44c331a6cc0941cb3365fb29f3c3d390da94f845630af840d6195dd1",
+          "kind": "text",
+          "line_count": 114,
+          "read_lines": [
+            [
+              1,
+              114
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-10/routines-and-headless.md",
+        "bytes": 5362,
+        "sha256": "ec2b9579a8d63614821f20dc39cb35e6dadd453e931e3fb93374d14d1477d921",
+        "kind": "original_study",
+        "line_count": 39,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/headless#start-faster-with-bare-mode",
+          "read_scope": "Difference between -p and --bare, authentication and startup discovery",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/cli-reference",
+          "read_scope": "--bare and --print flag descriptions",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida."
+    }
+  ]
+}

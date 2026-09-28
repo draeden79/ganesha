@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "artifact_path_base": "content/research",
+  "updated_at": "2026-09-28T21:36:40.588952+00:00",
+  "studies": [
+    {
+      "id": "backfill-v04-uUEa6K-FLB8",
+      "video_id": "uUEa6K-FLB8",
+      "title": "I Will Never Fix Another n8n Workflow (Claude Code)",
+      "url": "https://www.youtube.com/watch?v=uUEa6K-FLB8",
+      "published_at": "2026-01-22",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-04/uUEa6K-FLB8.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-04/uUEa6K-FLB8.md",
+        "bytes": 10291,
+        "sha256": "06c4d63e3fec11a4ae0ddb9c1025941afe96ed7771ca7abfd022723fb80addee"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.uUEa6K-FLB8.en.d5af9e07a7bb.txt",
+        "bytes": 31537,
+        "sha256": "d5af9e07a7bbd490fd93b5bbcbecbad9f77c5dcf2eb0c43e8ac1b5e6f3cea4c8",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 448,
+        "first_cue_start_seconds": 0.0,
+        "last_cue_start_seconds": 797.839,
+        "last_cue_end_seconds": 800.399,
+        "track_export_complete": true,
+        "logical_line_count": 448,
+        "sequential_read_ranges": [
+          [
+            1,
+            230
+          ],
+          [
+            231,
+            448
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.uUEa6K-FLB8.en.5e8ab1f4c9de.json3",
+        "bytes": 343521,
+        "sha256": "5e8ab1f4c9de1dd74806a8b67e84f6499c2a184f8996f8a717db3582e8804086"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v04-uUEa6K-FLB8-order-fix.png",
+          "bytes": 97890,
+          "sha256": "9a9ac6fe81cf86f2562e7fa44a5ed98f6861a4635bb418655a34d22ee664dcf8",
+          "player_seconds": 50,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Repair report notes array-to-items fix plus preexisting Slack/webhook validation issues."
+        },
+        {
+          "path": "studies/local/backfill-v04-uUEa6K-FLB8-order-retest.png",
+          "bytes": 107589,
+          "sha256": "862ba12f7158f4a13d17fc58f95be4ff513cfd9af3ce58749f254d2d9b3ea231",
+          "player_seconds": 100,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "New Succeeded execution, upper branch green; lower model/Slack branch not exercised."
+        },
+        {
+          "path": "studies/local/backfill-v04-uUEa6K-FLB8-parser-retest.png",
+          "bytes": 81125,
+          "sha256": "f1a56db1ab752cc96f88f6663c265facc17b412f8843c47eddf66c1366271f24",
+          "player_seconds": 475,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Email workflow executing; not yet success."
+        },
+        {
+          "path": "studies/local/backfill-v04-uUEa6K-FLB8-parser-finished.png",
+          "bytes": 85960,
+          "sha256": "c273c336da82d6983e2b88840cbb91f5a85b23664bbcb2413975608b3e62e334",
+          "player_seconds": 480,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Parser, agent and Gmail send green with one item; delivery/content not independently checked."
+        },
+        {
+          "path": "studies/local/backfill-v04-uUEa6K-FLB8-quoted-retest.png",
+          "bytes": 88112,
+          "sha256": "df4105461e4d1f284dfe4ff7ff35564792e15d7682b8951c5f3362bedfa4b147",
+          "player_seconds": 585,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Succeeded research workflow run after narrated quoted-input test."
+        },
+        {
+          "path": "studies/local/backfill-v04-uUEa6K-FLB8-quoted-input.png",
+          "bytes": 74527,
+          "sha256": "f0bedc196e599ec5f38f15b605bcf4ec22d809eaa568eb134301ffeea4dc4537",
+          "player_seconds": 590,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Form output contains double quote before apple."
+        },
+        {
+          "path": "studies/local/backfill-v04-uUEa6K-FLB8-human-action.png",
+          "bytes": 98701,
+          "sha256": "930889ab5d6fc1d3605cc4e42b34ee91317d54fc1d5fcb1a7275bc36f94f29ca",
+          "player_seconds": 645,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Authorization failure requires user credential action and future test; no successful retest shown."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 800,
+      "duration_seconds_observed_player": 799,
+      "timing_note": "Automatic captions span 0–800.399s, 0.399s beyond acquired duration; speech coverage and name accuracy unverified.",
+      "source_or_practice_executed": false,
+      "current_interfaces_verified": false,
+      "desktop_cli_parity_assumed": false,
+      "sufficiency": "Prepared deliberate-failure repair demonstrations with retests and auth escalation; not complete bridge installation or production reliability proof.",
+      "pending": [
+        "Continuous audiovisual review",
+        "Bridge code, auth, MCP/skills setup and current interfaces",
+        "Destination effects, duplicate prevention, other branches, rollback and restart behavior"
+      ]
+    },
+    {
+      "id": "backfill-v04-COh_cjrDOzc",
+      "video_id": "COh_cjrDOzc",
+      "title": "Build Amazing Websites with Claude (Full Guide)",
+      "url": "https://www.youtube.com/watch?v=COh_cjrDOzc",
+      "published_at": "2026-07-06",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-04/COh_cjrDOzc.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-04/COh_cjrDOzc.md",
+        "bytes": 10808,
+        "sha256": "235025519c59570013bea66f543184ec69a74983e752d743f17c6576d856a080"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.COh_cjrDOzc.en.49880ddeee89.txt",
+        "bytes": 41679,
+        "sha256": "49880ddeee8964362aee0221b14123407492a50651aa002ce21f9b3bb5a130ae",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 595,
+        "first_cue_start_seconds": 0.24,
+        "last_cue_start_seconds": 1437.52,
+        "last_cue_end_seconds": 1440.0,
+        "track_export_complete": true,
+        "logical_line_count": 595,
+        "sequential_read_ranges": [
+          [
+            1,
+            200
+          ],
+          [
+            201,
+            400
+          ],
+          [
+            401,
+            595
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.COh_cjrDOzc.en.052a7b5d83bc.json3",
+        "bytes": 459469,
+        "sha256": "052a7b5d83bc098d5bf062928cf3352d0615fccdf6c5ed7198bb5887a49549af"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v04-COh_cjrDOzc-connection.png",
+          "bytes": 81548,
+          "sha256": "3563558c6022be8bd43f702d344ead1e22239b17fe06ae548a9c25e52beceff5",
+          "player_seconds": 240,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Hello graphic in Paper and agent tool use; Fable 5 label visible as historical UI, not current product verification."
+        },
+        {
+          "path": "studies/local/backfill-v04-COh_cjrDOzc-thumbnail-variants.png",
+          "bytes": 135388,
+          "sha256": "983998145f860ada80b3f3c057d55f8c69b33de88131b7abfc8b62e2fb78b331",
+          "player_seconds": 575,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Twelve-reference panel and generated thumbnails with dark backgrounds. Captured after buffer settled; ranking not audited."
+        },
+        {
+          "path": "studies/local/backfill-v04-COh_cjrDOzc-editable-text.png",
+          "bytes": 123630,
+          "sha256": "127b4240512894c3087041fe37b74e6a13d4b02f39f29c9df6a626203a0954d9",
+          "player_seconds": 975,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Text selected in Paper with typography controls; agent notes separate text pieces to retain colors."
+        },
+        {
+          "path": "studies/local/backfill-v04-COh_cjrDOzc-deck-feedback.png",
+          "bytes": 106665,
+          "sha256": "ff5d56663054db5448433440b145cbe3373a749ca298631041849e91b2b00ecb",
+          "player_seconds": 1180,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Title overlaps portrait on first slide during work in progress; author requests correction."
+        },
+        {
+          "path": "studies/local/backfill-v04-COh_cjrDOzc-published.png",
+          "bytes": 92970,
+          "sha256": "f50baf4b6e2a0575d09e131c27627dcfc4d84bfe6812be4cfd9f28ba8fdddb62",
+          "player_seconds": 1330,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "riley-sponsor-site.vercel.app renders hero and first slide with navigation controls, title/portrait separated."
+        },
+        {
+          "path": "studies/local/backfill-v04-COh_cjrDOzc-slide-state.png",
+          "bytes": 94660,
+          "sha256": "a5437a1d0bbe52aa0a975bb70a92ab271866d0f2cb303b6e45b336001fb5ce1c",
+          "player_seconds": 1345,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Same site displays a different slide; sampled states, not every click or mobile/keyboard test."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 1438,
+      "duration_seconds_observed_player": 1438,
+      "timing_note": "Automatic captions span 0.240–1440.000s, 2s beyond duration; complete speech/accuracy unverified.",
+      "source_or_practice_executed": false,
+      "current_interfaces_verified": false,
+      "desktop_cli_parity_assumed": false,
+      "sufficiency": "Design iteration and published deck with differing slide states; installation/deploy setup omitted, no mobile/visitor/update tests.",
+      "pending": [
+        "Continuous audiovisual and all-slide review",
+        "Current client/MCP/skill/API setup and access",
+        "Mobile, keyboard, visitor without session and republishing"
+      ]
+    }
+  ],
+  "round_complete": false
+}

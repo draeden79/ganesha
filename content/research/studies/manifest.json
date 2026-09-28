@@ -4591,9 +4591,1452 @@
         "Session-independent visitor, functional regression and recovery test"
       ],
       "source_manifest": "studies/backfill/videos-03/manifest.json"
+    },
+    {
+      "id": "article-builder-full-stack-2025",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/create-full-stack-app-ai",
+      "title": "Create a full-stack app with AI",
+      "author": "Alice Moore",
+      "published_at": "2025-10-09",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/builder-blog.json",
+      "study_path": "studies/backfill/articles-04/builder-full-stack.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "scope": "Texto integral e duas imagens; três vídeos com posters pendentes.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a04-builder-full-stack.txt",
+          "bytes": 9479,
+          "sha256": "8d051e2c73b6e353db0b6c5fc5a56499d9f01372a699b9cbfe5915c0bcfa9845",
+          "line_count": 174,
+          "read_lines": [
+            [
+              1,
+              174
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a04-builder-full-stack.html",
+          "bytes": 244062,
+          "sha256": "639a62727e55e1306cef362dd5930ab5d76f832e49051dd6ca240f4a99ccdf69",
+          "line_count": 1352,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a04-builder-full-stack-media.json",
+          "bytes": 2920,
+          "sha256": "88b039e0ffede74a55a7c506e34d2fadde97ec53b457ea6d56c643998158c6ca",
+          "line_count": 93,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a04-builder-full-stack-acquisition.json",
+          "bytes": 275,
+          "sha256": "e7edf4e1ad72fd26b7fa03309ade739863d2c3c535e731ef987ea067553cbcaf",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a04-full-stack-cover.png",
+          "bytes": 25069,
+          "sha256": "8e6a696362724a764897f0e685a09ba6164e6ed58bf395f03b8cee6da1cf275f",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "esquema dos serviços",
+          "method": "screenshot de imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a04-full-stack-mcp.png",
+          "bytes": 33591,
+          "sha256": "6405b110499586c037c530c5fa9d787f9ab609169d5ccf27fadcf43b7519b084",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "área MCP Servers e controles de conexão; não comprova conexão ativa",
+          "method": "screenshot de imagem observada no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "3 elementos video com posters, sem src/source observado; demonstrações não acompanhadas"
+      ],
+      "not_reviewed": [
+        "vídeos",
+        "projeto final e serviços atuais",
+        "políticas de acesso e schema",
+        "deploy e domínio personalizado"
+      ],
+      "practice_checks": [
+        "filtragem definida por versão e reteste",
+        "persistência e integridade do voto na UI e no destino"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-04/builder-full-stack.md",
+        "bytes": 8632,
+        "sha256": "7316cc5dbd9fe06b4cd3dbf367c5e08d8adcb65566e908a69e04a931d9bccc9b",
+        "line_count": 66,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida.",
+      "source_manifest": "studies/backfill/articles-04/manifest.json"
+    },
+    {
+      "id": "article-peter-product-quality-2023",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises",
+      "title": "The Day You Stopped Making Compromises on Product Quality",
+      "author": "Peter Yang",
+      "published_at": "2023-04-12",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/peter-yang-newsletter.json",
+      "study_path": "studies/backfill/articles-04/peter-product-quality.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "scope": "Texto integral e duas imagens materiais; citação incorporada lida como exibida; um vídeo não acompanhado.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a04-peter-quality.txt",
+          "bytes": 5989,
+          "sha256": "017283909f2bc14168480343fb16fa0312811563794f485271a50856301e8981",
+          "line_count": 141,
+          "read_lines": [
+            [
+              1,
+              141
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a04-peter-quality.html",
+          "bytes": 215996,
+          "sha256": "534fa85c50b504ddfe983ec107395cf28477ac25ab706de6e37d099023633092",
+          "line_count": 504,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a04-peter-quality-media.json",
+          "bytes": 3252,
+          "sha256": "8b20c3cedd82084d720e1f847a4ac4e26cc2fc084af06e904a05ef06134d1f38",
+          "line_count": 72,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a04-peter-quality-acquisition.json",
+          "bytes": 303,
+          "sha256": "e176623a8265aa856ee50d1f8b9a1c98cec91b221daaf7b9b768a3cf9b588a2c",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a04-quality-01.png",
+          "bytes": 41846,
+          "sha256": "5fcea979cf1bce98162dd736672c4eaf03c83a3b45946050ae24eb53eba9b6c6",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "capa com título",
+          "method": "screenshot de imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a04-quality-02.png",
+          "bytes": 55169,
+          "sha256": "e22ab43fa5b299abb80163eec4f79b0a15754af6e0eed9e228f5f54b0bebd735",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "reflexão atribuída a Steve Jobs/2007, sem autenticação independente",
+          "method": "screenshot de imagem observada no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        {
+          "video_id": "P4VBqTViEx4",
+          "url": "https://www.youtube-nocookie.com/embed/P4VBqTViEx4?rel=0&autoplay=0&showinfo=0&enablejsapi=0",
+          "status": "not_watched"
+        }
+      ],
+      "not_reviewed": [
+        "vídeo",
+        "links externos e origem das citações",
+        "situação atual das marcas e preços",
+        "prática ou pesquisa com usuários"
+      ],
+      "practice_checks": [
+        "percurso de inscrição e compreensão da confirmação",
+        "erro obrigatório, recuperação e reteste"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-04/peter-product-quality.md",
+        "bytes": 8734,
+        "sha256": "a03cd8f680c7a90e7170b3a6797e61e124e3a0cb2733c277525bc4cd47d40583",
+        "line_count": 68,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida.",
+      "source_manifest": "studies/backfill/articles-04/manifest.json"
+    },
+    {
+      "id": "backfill-v03--zFd1nPn6U0",
+      "video_id": "-zFd1nPn6U0",
+      "title": "Beginner's Guide to Workflow Evaluation in n8n (Stop Guessing!)",
+      "url": "https://www.youtube.com/watch?v=-zFd1nPn6U0",
+      "published_at": "2025-09-03",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-03/-zFd1nPn6U0.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-03/-zFd1nPn6U0.md",
+        "bytes": 12664,
+        "sha256": "007228a6c64cf33f7e4c323a96ec5817225bf8bf332f1320dc7fa0e47d97906e"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.-zFd1nPn6U0.en.d6239811422d.txt",
+        "bytes": 39000,
+        "sha256": "d6239811422d56454cf2d2abe65d540c85c6e6e166b1d571e99cd10095bc682a",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 555,
+        "first_cue_start_seconds": 0.16,
+        "last_cue_start_seconds": 1043.839,
+        "last_cue_end_seconds": 1047.039,
+        "track_export_complete": true,
+        "logical_line_count": 555,
+        "sequential_read_ranges": [
+          [
+            1,
+            200
+          ],
+          [
+            201,
+            400
+          ],
+          [
+            401,
+            555
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.-zFd1nPn6U0.en.00f0996e2828.json3",
+        "bytes": 420708,
+        "sha256": "00f0996e28286b80ac337538c939a2b6b5c1b1a5e555642c4ecb29bd0661fbe6"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v03--zFd1nPn6U0-dataset.png",
+          "bytes": 99090,
+          "sha256": "fc3f929982d9bbf8cfc39200fd406acf80f3bd632732c214b340e5ba4c68d940",
+          "player_seconds": 550,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Six expected category/priority pairs; first actual output Billing Issue differs from Billing. Bodies truncated, not fully read."
+        },
+        {
+          "path": "studies/local/backfill-v03--zFd1nPn6U0-baseline.png",
+          "bytes": 84407,
+          "sha256": "0c391dc7c1a05b298f5d1c79e0ab26aea6e828ad40a7bc9c7c90cdd4e96952bc",
+          "player_seconds": 610,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Completed baseline: priority 0.67 and category 0.00; historical failed runs also visible."
+        },
+        {
+          "path": "studies/local/backfill-v03--zFd1nPn6U0-retest.png",
+          "bytes": 88610,
+          "sha256": "19abdf89ddc4c5ff0911eba870bbaacfecd283eedd931cfbf08439733ec2e125",
+          "player_seconds": 675,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "New completed run: category 1.00 and priority still 0.67, versus preceding 0.00/0.67."
+        },
+        {
+          "path": "studies/local/backfill-v03--zFd1nPn6U0-metric-error.png",
+          "bytes": 94562,
+          "sha256": "74962785bdf1a13bf54e5facf2b02aff4c0c01c61c9d6f1cc1a213acd8fe7f2c",
+          "player_seconds": 815,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Historical Set Metrics error messages truncated in table; complete configuration-error claim comes from narration, root cause unverified."
+        },
+        {
+          "path": "studies/local/backfill-v03--zFd1nPn6U0-judge-workaround.png",
+          "bytes": 115807,
+          "sha256": "de9beca7cefb7c745264aecba2d18e1ca77725186c92135ff7bb30121cab144f",
+          "player_seconds": 835,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "RAG flow: Supabase retrieval, separate judging agent with parser, Score, and disconnected evaluation node; Gmail send on normal branch not executed in this frame."
+        },
+        {
+          "path": "studies/local/backfill-v03--zFd1nPn6U0-model-compare.png",
+          "bytes": 93817,
+          "sha256": "3427f66b7e199e2ff878696ce1675c84d54c2a49958e7bf12842d89519a6bfde",
+          "player_seconds": 955,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Runs 13 and 14 show score 3.50→4.30 and executionTime 30676.10→13604.00 without visible unit. Tokens rise 3287.50→3708.60; no monetary cost shown."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 1045,
+      "duration_seconds_observed_player": 1045,
+      "timing_note": "Caption span 0.160–1047.039s exceeds known duration by 2.039s; accuracy/speech completeness unverified.",
+      "source_or_practice_executed": false,
+      "current_interfaces_verified": false,
+      "desktop_cli_parity_assumed": false,
+      "sufficiency": "Concrete category correction/retest and model comparison on prepared evaluation workflows; not setup from zero or proof of production reliability.",
+      "material_findings": [
+        "Exact category correction succeeds on reused six cases while priority stays 0.67",
+        "Judge workaround shown but original node bug/root cause and equivalence unverified",
+        "3.50→4.30 is judge score, not percentage accuracy; no reserved set or independent replication",
+        "Lower time visible; lower cost claimed without monetary accounting"
+      ],
+      "pending": [
+        "Continuous audiovisual review and complete datasets/node expressions",
+        "Current n8n interfaces/access and original metric-node correction",
+        "Independent judge calibration, held-out examples, repeatability and end-to-end setup"
+      ],
+      "source_manifest": "studies/backfill/videos-03/manifest.json"
+    },
+    {
+      "id": "academy-action-permission-modes",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/permission-modes",
+      "video_id": "IS6larFJBK8",
+      "title": "Permission modes",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-08/permission-modes.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac08-permission.txt",
+          "bytes": 4015,
+          "sha256": "c3e8cb7815fba864cbf66286fb95cf6c70aaf21b84a5c219028b7980b85550d1",
+          "kind": "text",
+          "line_count": 65,
+          "read_lines": [
+            [
+              1,
+              65
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-08/permission-modes.md",
+        "bytes": 5108,
+        "sha256": "a811e560129d0671d2722874bff58a56a92bec694450a3c5cbcf6a77a5dc4d65",
+        "kind": "original_study",
+        "line_count": 37,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática original não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida.",
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/permission-modes",
+          "read_scope": "Available modes; surface-specific controls; auto mode limits; dontAsk",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28",
+          "finding": "Modes layer on additional rules; auto is not unconditional approval or functional verification."
+        }
+      ],
+      "source_manifest": "studies/backfill/academy-08/manifest.json"
+    },
+    {
+      "id": "academy-action-verification-skills",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/verification-skills",
+      "video_id": "rJOmCMeYTuo",
+      "title": "Verification skills",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-08/verification-skills.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac08-verification.txt",
+          "bytes": 3751,
+          "sha256": "ba9912d8061c35cffe77c333c0dbb9094adf212f1b0b0ea6cfbf6544d5c0584c",
+          "kind": "text",
+          "line_count": 49,
+          "read_lines": [
+            [
+              1,
+              49
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-08/verification-skills.md",
+        "bytes": 4915,
+        "sha256": "74d9cc05b81fcc9f2fc3643be2153706ae8dea3b8c017256d91c66839cafd17d",
+        "kind": "original_study",
+        "line_count": 35,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática original não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida.",
+      "source_manifest": "studies/backfill/academy-08/manifest.json"
+    },
+    {
+      "id": "academy-action-steering-long-sessions",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/steering-long-sessions",
+      "video_id": "RWH3Z0ROCVc",
+      "title": "Steering long sessions",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-09/steering-long-sessions.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac09-steering.txt",
+          "bytes": 4912,
+          "sha256": "3489fad70e3d293fd3eae559fc7820fb2626b6aee1b650023a6663265c6bb67c",
+          "kind": "text",
+          "line_count": 91,
+          "read_lines": [
+            [
+              1,
+              91
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-09/steering-long-sessions.md",
+        "bytes": 5464,
+        "sha256": "43a779d0e7d95ced08ac295b55efdd6b8afc78e39fab8fcea47537dac07709a0",
+        "kind": "original_study",
+        "line_count": 39,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/checkpointing",
+          "read_scope": "Checkpoint creation, summarize and recovery limitations",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida.",
+      "source_manifest": "studies/backfill/academy-09/manifest.json"
+    },
+    {
+      "id": "academy-action-a-claude-md-that-follows",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows",
+      "video_id": "o9-NIQF9tNw",
+      "title": "A CLAUDE.md that follows",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-09/a-claude-md-that-follows.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac09-follows.txt",
+          "bytes": 5532,
+          "sha256": "a28186f7d9f7d71f2ef6057147fcbe7e0ccb0834552edf61e77a0ba2cad787bf",
+          "kind": "text",
+          "line_count": 92,
+          "read_lines": [
+            [
+              1,
+              92
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-09/a-claude-md-that-follows.md",
+        "bytes": 5312,
+        "sha256": "204edcd69e04566e9adcd8e16a9e5c74e1e28b51f3f7dbb0185e95c648399cae",
+        "kind": "original_study",
+        "line_count": 39,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/memory",
+          "read_scope": "Instruction locations, imports and load hierarchy",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida.",
+      "source_manifest": "studies/backfill/academy-09/manifest.json"
+    },
+    {
+      "id": "academy-action-hooks",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/hooks",
+      "video_id": "1m0huCacWPs",
+      "title": "Hooks",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-10/hooks.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac10-hooks.txt",
+          "bytes": 5884,
+          "sha256": "ab1cd36206f7dece84ea25446607f8a3e43434b324c06d6ad62a21045bf091a5",
+          "kind": "text",
+          "line_count": 87,
+          "read_lines": [
+            [
+              1,
+              87
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-10/hooks.md",
+        "bytes": 4857,
+        "sha256": "b9617e82f0c1d58e8c1ab08974214fa3d90364f4921d97a9cda2b4b8866dd742",
+        "kind": "original_study",
+        "line_count": 39,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/hooks#pretooluse-decision-control",
+          "read_scope": "PreToolUse updatedInput and decision control",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida.",
+      "source_manifest": "studies/backfill/academy-10/manifest.json"
+    },
+    {
+      "id": "academy-action-routines-and-headless",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless",
+      "video_id": "7u366zBuUTM",
+      "title": "Routines and headless",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-10/routines-and-headless.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac10-routines.txt",
+          "bytes": 6316,
+          "sha256": "d2096e5e44c331a6cc0941cb3365fb29f3c3d390da94f845630af840d6195dd1",
+          "kind": "text",
+          "line_count": 114,
+          "read_lines": [
+            [
+              1,
+              114
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-10/routines-and-headless.md",
+        "bytes": 5362,
+        "sha256": "ec2b9579a8d63614821f20dc39cb35e6dadd453e931e3fb93374d14d1477d921",
+        "kind": "original_study",
+        "line_count": 39,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/headless#start-faster-with-bare-mode",
+          "read_scope": "Difference between -p and --bare, authentication and startup discovery",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/cli-reference",
+          "read_scope": "--bare and --print flag descriptions",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida.",
+      "source_manifest": "studies/backfill/academy-10/manifest.json"
+    },
+    {
+      "id": "article-builder-ai-website-2024",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/ai-generated-website",
+      "title": "I Built A Website That Is AI-Generated As You Browse It",
+      "inventory_title": "Building an AI Generated Website",
+      "author": "Steve Sewell",
+      "published_at": "2024-09-11",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/builder-blog.json",
+      "study_path": "studies/backfill/articles-05/builder-ai-website.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "scope": "Texto integral e sete imagens materiais; um vídeo não acompanhado.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a05-builder-ai-website.txt",
+          "bytes": 9340,
+          "sha256": "8c02843250b13cf73316b2e840075749f2b2344f2e1f67dd48e291de501ba9ad",
+          "line_count": 125,
+          "read_lines": [
+            [
+              1,
+              125
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a05-builder-ai-website.html",
+          "bytes": 260048,
+          "sha256": "9831c8b43cc44e0b699213f5b2e1382192fce21b18b48ce35f0c51a34ee8dff8",
+          "line_count": 1352,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a05-builder-ai-website-media.json",
+          "bytes": 3744,
+          "sha256": "df2eef66e70aac13e2025812e3a355f7b89d1ba8f5b642d8798f569a91b481e1",
+          "line_count": 121,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a05-builder-ai-website-acquisition.json",
+          "bytes": 267,
+          "sha256": "92670d193d4c243130eec0234edb10f5a27c316261fb1ab6bef0baf424cc3e56",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a05-website-0.png",
+          "bytes": 40053,
+          "sha256": "abd216098fcb13346e6a6fc0f2a98ec02f7f07b3d0dfec4159ef54a3851fdf83",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "capa comparativa",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a05-website-2.png",
+          "bytes": 44966,
+          "sha256": "56e4cd49e23366cc089657d2ba34e5e93834b59ede638f3ff5028b3f17162f3b",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "geração condicional e cache",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a05-website-3.png",
+          "bytes": 50458,
+          "sha256": "0ee1f81d1d830c82a0ce0f210fdb2b23abecb3746e735864464f388856497c14",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "comparação conceitual de UI e chat",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a05-website-4.png",
+          "bytes": 37408,
+          "sha256": "01c2a39b2b64332b0ce48803c6c2b89fe63691bce595bfa8fe08d0ce1dd2c8cc",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "visão do autor sobre qualidade, descoberta e feedback",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a05-website-5.png",
+          "bytes": 26027,
+          "sha256": "8f503b6b9d2c447d0e395c35dcc693325dda5b5b0d00f5a09cf449ac7ef8d34c",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "orientação humana e debugging",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a05-website-6.png",
+          "bytes": 54680,
+          "sha256": "ccf97c8e3ef259642ac4b0d1f40828df671a06177c5f37e7e047a9d216dfc9b4",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "meme",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a05-website-7.png",
+          "bytes": 29525,
+          "sha256": "308f75fb48b54b5bcebbda7ea56c1d0e5095cb83bd6757f51adb9325c60cd211",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "gráfico US$ 3.601,38 em 11 de setembro; inclui API+Console, sem atribuição exclusiva ao site",
+          "method": "screenshot da imagem observada no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "1 elemento video sem src/source observado; conteúdo não acompanhado"
+      ],
+      "not_reviewed": [
+        "vídeo",
+        "aplicativo e código externos",
+        "cache e políticas de atualização reais",
+        "origem dos custos, precisão e desempenho"
+      ],
+      "practice_checks": [
+        "fidelidade a fichas e reconhecimento de dado ausente",
+        "reutilização e atualização do conteúdo armazenado"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-05/builder-ai-website.md",
+        "bytes": 7952,
+        "sha256": "064faa1257a1c31bfbe2c801345eae05f5d52a6c66a7fa800071707df73dd60a",
+        "line_count": 67,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida.",
+      "source_manifest": "studies/backfill/articles-05/manifest.json"
+    },
+    {
+      "id": "article-builder-supabase-mcp-2025",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/supabase-mcp",
+      "title": "Five things to try with the Supabase MCP server",
+      "author": "Alice Moore",
+      "published_at": "2025-09-30",
+      "source_updated_at": "2025-10-21",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/builder-blog.json",
+      "study_path": "studies/backfill/articles-05/builder-supabase-mcp.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "scope": "Todo texto renderizado e cinco imagens; cinco vídeos e prompts anunciados fora do texto pendentes.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a05-builder-supabase.txt",
+          "bytes": 10078,
+          "sha256": "77cf57802295a33dff1fec3170c08f456caef308418a505ea15fd49bf0169ff3",
+          "line_count": 160,
+          "read_lines": [
+            [
+              1,
+              160
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a05-builder-supabase.html",
+          "bytes": 262092,
+          "sha256": "174e7443c7dba0ec46cd60b6bd7d97a8d5c3d3b0bf64313f99a861fd77a1d415",
+          "line_count": 1294,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a05-builder-supabase-media.json",
+          "bytes": 4683,
+          "sha256": "4c92356f135d7f6d5ada004e59780c25335615a034c624b75fd14474d422bf2a",
+          "line_count": 128,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a05-builder-supabase-acquisition.json",
+          "bytes": 251,
+          "sha256": "e56b9191adbbdbd9a960c7cea55bd4ed7407b8fca1d6973d36dc1478b2cd80f0",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a05-supabase-0.png",
+          "bytes": 27847,
+          "sha256": "5aa56a58ed746dba00801498c38cf67b75589415f30cdfac8511c42a73098334",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "capa de integração",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a05-supabase-1.png",
+          "bytes": 26469,
+          "sha256": "6414c54ace0aff7b2acdb9a85710ea4fab26839efd82c3112bcb342662f4454b",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "cliente MCP, servidor e serviço",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a05-supabase-2.png",
+          "bytes": 33827,
+          "sha256": "0c94120a07bfecc51388c1ea19e56860b391076a7d7e0da21ac3aca135ee140a",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "integrações disponíveis na tela histórica",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a05-supabase-3.png",
+          "bytes": 45946,
+          "sha256": "0a114021be70c31a668db06187109416a3f9fb1d9116cc7bb187b99349221906",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "autorização ampla de organização e todos os projetos",
+          "method": "screenshot da imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a05-supabase-4.png",
+          "bytes": 43510,
+          "sha256": "135fe3f860aaf36b73b5aa9370006fc05bcdd6e99d01d9d77ef8af5be527daa2",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "variáveis exemplificativas de projeto e chave anon",
+          "method": "screenshot da imagem observada no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "5 vídeos com posters; fontes de reprodução ausentes no estado DOM observado; conteúdo não acompanhado"
+      ],
+      "not_reviewed": [
+        "sequências audiovisuais e prompts não expostos no texto",
+        "execução dos cinco casos",
+        "configuração atual de serviços e permissões",
+        "código, políticas, funções e segredos reais"
+      ],
+      "practice_checks": [
+        "circuito UI/destino e persistência sem duplicação",
+        "escrita permitida e negada em sessões de ensaio, com reteste"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-05/builder-supabase-mcp.md",
+        "bytes": 8698,
+        "sha256": "4c70ecca9a0ad3636054496b132172e4abe9f0b99f0a484f7d09a5c345fd1f0b",
+        "line_count": 70,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida.",
+      "source_manifest": "studies/backfill/articles-05/manifest.json"
+    },
+    {
+      "id": "article-builder-ui-prompting-2025",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/prompting-tips",
+      "title": "11 Prompting Tips for Building UIs That Don’t Suck",
+      "author": "Steve Sewell",
+      "published_at": "2025-07-02",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/builder-blog.json",
+      "study_path": "studies/backfill/articles-05/builder-ui-prompting.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "scope": "Texto integral das onze dicas e fechamento; capa material inspecionada; seis vídeos nativos e um YouTube pendentes.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a05-builder-prompting.txt",
+          "bytes": 17080,
+          "sha256": "12ece75a6fc0b644bc08dd57db74f1ebf2135c207a29771d514cf27ba748ea6f",
+          "line_count": 186,
+          "read_lines": [
+            [
+              1,
+              186
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a05-builder-prompting.html",
+          "bytes": 258440,
+          "sha256": "9ed9cad194cfb8334eaf06b4b3352d1464d466292c4b4648dfa9a569263262f6",
+          "line_count": 1299,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a05-builder-prompting-media.json",
+          "bytes": 2653,
+          "sha256": "a3034576f02a1e37cad71f6b198175f8bc0a43668cda41b13a23ad24fadbf31d",
+          "line_count": 114,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a05-builder-prompting-acquisition.json",
+          "bytes": 255,
+          "sha256": "0d21b2a31c40ffaeb524b532f2b137d1ae593c3fa6b9a7fea96163e435319a51",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a05-prompting-cover.png",
+          "bytes": 29699,
+          "sha256": "6270a5eb7ce2ee5bd12a8a82e47e22cc72edad299ab1fc009abc181762fbc32b",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "meme de ciclista e culpa atribuída à IA; recurso retórico, não dado de eficácia",
+          "method": "screenshot da imagem observada no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "6 elementos video sem src/source observado; não acompanhados",
+        {
+          "video_id": "RFpc_JsMIDU",
+          "url": "https://www.youtube.com/embed/RFpc_JsMIDU?rel=0",
+          "status": "not_watched"
+        }
+      ],
+      "not_reviewed": [
+        "sete vídeos",
+        "capacidades atuais de ferramentas e atalho",
+        "fluxos de repositório e PR reais",
+        "taxa de merge e comparação de eficácia"
+      ],
+      "practice_checks": [
+        "detalhes corretos de dois cartões e retorno à lista",
+        "preservação visual/conteúdo em duas larguras e reteste"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-05/builder-ui-prompting.md",
+        "bytes": 9254,
+        "sha256": "94dc99b66a389ac8f431dbaffb21b569ca52ab025f7057d915ec30d786afc08c",
+        "line_count": 76,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e captura locais gitignored; sem licença de republicação presumida.",
+      "source_manifest": "studies/backfill/articles-05/manifest.json"
+    },
+    {
+      "id": "backfill-v04-uUEa6K-FLB8",
+      "video_id": "uUEa6K-FLB8",
+      "title": "I Will Never Fix Another n8n Workflow (Claude Code)",
+      "url": "https://www.youtube.com/watch?v=uUEa6K-FLB8",
+      "published_at": "2026-01-22",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-04/uUEa6K-FLB8.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-04/uUEa6K-FLB8.md",
+        "bytes": 10291,
+        "sha256": "06c4d63e3fec11a4ae0ddb9c1025941afe96ed7771ca7abfd022723fb80addee"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.uUEa6K-FLB8.en.d5af9e07a7bb.txt",
+        "bytes": 31537,
+        "sha256": "d5af9e07a7bbd490fd93b5bbcbecbad9f77c5dcf2eb0c43e8ac1b5e6f3cea4c8",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 448,
+        "first_cue_start_seconds": 0.0,
+        "last_cue_start_seconds": 797.839,
+        "last_cue_end_seconds": 800.399,
+        "track_export_complete": true,
+        "logical_line_count": 448,
+        "sequential_read_ranges": [
+          [
+            1,
+            230
+          ],
+          [
+            231,
+            448
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.uUEa6K-FLB8.en.5e8ab1f4c9de.json3",
+        "bytes": 343521,
+        "sha256": "5e8ab1f4c9de1dd74806a8b67e84f6499c2a184f8996f8a717db3582e8804086"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v04-uUEa6K-FLB8-order-fix.png",
+          "bytes": 97890,
+          "sha256": "9a9ac6fe81cf86f2562e7fa44a5ed98f6861a4635bb418655a34d22ee664dcf8",
+          "player_seconds": 50,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Repair report notes array-to-items fix plus preexisting Slack/webhook validation issues."
+        },
+        {
+          "path": "studies/local/backfill-v04-uUEa6K-FLB8-order-retest.png",
+          "bytes": 107589,
+          "sha256": "862ba12f7158f4a13d17fc58f95be4ff513cfd9af3ce58749f254d2d9b3ea231",
+          "player_seconds": 100,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "New Succeeded execution, upper branch green; lower model/Slack branch not exercised."
+        },
+        {
+          "path": "studies/local/backfill-v04-uUEa6K-FLB8-parser-retest.png",
+          "bytes": 81125,
+          "sha256": "f1a56db1ab752cc96f88f6663c265facc17b412f8843c47eddf66c1366271f24",
+          "player_seconds": 475,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Email workflow executing; not yet success."
+        },
+        {
+          "path": "studies/local/backfill-v04-uUEa6K-FLB8-parser-finished.png",
+          "bytes": 85960,
+          "sha256": "c273c336da82d6983e2b88840cbb91f5a85b23664bbcb2413975608b3e62e334",
+          "player_seconds": 480,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Parser, agent and Gmail send green with one item; delivery/content not independently checked."
+        },
+        {
+          "path": "studies/local/backfill-v04-uUEa6K-FLB8-quoted-retest.png",
+          "bytes": 88112,
+          "sha256": "df4105461e4d1f284dfe4ff7ff35564792e15d7682b8951c5f3362bedfa4b147",
+          "player_seconds": 585,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Succeeded research workflow run after narrated quoted-input test."
+        },
+        {
+          "path": "studies/local/backfill-v04-uUEa6K-FLB8-quoted-input.png",
+          "bytes": 74527,
+          "sha256": "f0bedc196e599ec5f38f15b605bcf4ec22d809eaa568eb134301ffeea4dc4537",
+          "player_seconds": 590,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Form output contains double quote before apple."
+        },
+        {
+          "path": "studies/local/backfill-v04-uUEa6K-FLB8-human-action.png",
+          "bytes": 98701,
+          "sha256": "930889ab5d6fc1d3605cc4e42b34ee91317d54fc1d5fcb1a7275bc36f94f29ca",
+          "player_seconds": 645,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Authorization failure requires user credential action and future test; no successful retest shown."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 800,
+      "duration_seconds_observed_player": 799,
+      "timing_note": "Automatic captions span 0–800.399s, 0.399s beyond acquired duration; speech coverage and name accuracy unverified.",
+      "source_or_practice_executed": false,
+      "current_interfaces_verified": false,
+      "desktop_cli_parity_assumed": false,
+      "sufficiency": "Prepared deliberate-failure repair demonstrations with retests and auth escalation; not complete bridge installation or production reliability proof.",
+      "pending": [
+        "Continuous audiovisual review",
+        "Bridge code, auth, MCP/skills setup and current interfaces",
+        "Destination effects, duplicate prevention, other branches, rollback and restart behavior"
+      ],
+      "source_manifest": "studies/backfill/videos-04/manifest.json"
+    },
+    {
+      "id": "backfill-v04-COh_cjrDOzc",
+      "video_id": "COh_cjrDOzc",
+      "title": "Build Amazing Websites with Claude (Full Guide)",
+      "url": "https://www.youtube.com/watch?v=COh_cjrDOzc",
+      "published_at": "2026-07-06",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-04/COh_cjrDOzc.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-04/COh_cjrDOzc.md",
+        "bytes": 10808,
+        "sha256": "235025519c59570013bea66f543184ec69a74983e752d743f17c6576d856a080"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.COh_cjrDOzc.en.49880ddeee89.txt",
+        "bytes": 41679,
+        "sha256": "49880ddeee8964362aee0221b14123407492a50651aa002ce21f9b3bb5a130ae",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 595,
+        "first_cue_start_seconds": 0.24,
+        "last_cue_start_seconds": 1437.52,
+        "last_cue_end_seconds": 1440.0,
+        "track_export_complete": true,
+        "logical_line_count": 595,
+        "sequential_read_ranges": [
+          [
+            1,
+            200
+          ],
+          [
+            201,
+            400
+          ],
+          [
+            401,
+            595
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.COh_cjrDOzc.en.052a7b5d83bc.json3",
+        "bytes": 459469,
+        "sha256": "052a7b5d83bc098d5bf062928cf3352d0615fccdf6c5ed7198bb5887a49549af"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v04-COh_cjrDOzc-connection.png",
+          "bytes": 81548,
+          "sha256": "3563558c6022be8bd43f702d344ead1e22239b17fe06ae548a9c25e52beceff5",
+          "player_seconds": 240,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Hello graphic in Paper and agent tool use; Fable 5 label visible as historical UI, not current product verification."
+        },
+        {
+          "path": "studies/local/backfill-v04-COh_cjrDOzc-thumbnail-variants.png",
+          "bytes": 135388,
+          "sha256": "983998145f860ada80b3f3c057d55f8c69b33de88131b7abfc8b62e2fb78b331",
+          "player_seconds": 575,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Twelve-reference panel and generated thumbnails with dark backgrounds. Captured after buffer settled; ranking not audited."
+        },
+        {
+          "path": "studies/local/backfill-v04-COh_cjrDOzc-editable-text.png",
+          "bytes": 123630,
+          "sha256": "127b4240512894c3087041fe37b74e6a13d4b02f39f29c9df6a626203a0954d9",
+          "player_seconds": 975,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Text selected in Paper with typography controls; agent notes separate text pieces to retain colors."
+        },
+        {
+          "path": "studies/local/backfill-v04-COh_cjrDOzc-deck-feedback.png",
+          "bytes": 106665,
+          "sha256": "ff5d56663054db5448433440b145cbe3373a749ca298631041849e91b2b00ecb",
+          "player_seconds": 1180,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Title overlaps portrait on first slide during work in progress; author requests correction."
+        },
+        {
+          "path": "studies/local/backfill-v04-COh_cjrDOzc-published.png",
+          "bytes": 92970,
+          "sha256": "f50baf4b6e2a0575d09e131c27627dcfc4d84bfe6812be4cfd9f28ba8fdddb62",
+          "player_seconds": 1330,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "riley-sponsor-site.vercel.app renders hero and first slide with navigation controls, title/portrait separated."
+        },
+        {
+          "path": "studies/local/backfill-v04-COh_cjrDOzc-slide-state.png",
+          "bytes": 94660,
+          "sha256": "a5437a1d0bbe52aa0a975bb70a92ab271866d0f2cb303b6e45b336001fb5ce1c",
+          "player_seconds": 1345,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Same site displays a different slide; sampled states, not every click or mobile/keyboard test."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 1438,
+      "duration_seconds_observed_player": 1438,
+      "timing_note": "Automatic captions span 0.240–1440.000s, 2s beyond duration; complete speech/accuracy unverified.",
+      "source_or_practice_executed": false,
+      "current_interfaces_verified": false,
+      "desktop_cli_parity_assumed": false,
+      "sufficiency": "Design iteration and published deck with differing slide states; installation/deploy setup omitted, no mobile/visitor/update tests.",
+      "pending": [
+        "Continuous audiovisual and all-slide review",
+        "Current client/MCP/skill/API setup and access",
+        "Mobile, keyboard, visitor without session and republishing"
+      ],
+      "source_manifest": "studies/backfill/videos-04/manifest.json"
+    },
+    {
+      "id": "official-codex-projects-2026",
+      "source_id": "openai-learn-codex",
+      "url": "https://learn.chatgpt.com/docs/projects",
+      "title": "Projects and chats",
+      "author": "OpenAI",
+      "published_at": null,
+      "source_updated_at": null,
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "resources.jsonl",
+      "discovery_context": "Referência da página /docs/app já estudada, preservada em studies/local/official-codex-app.dom.txt; busca oficial confirmou URL.",
+      "study_path": "studies/backfill/articles-06/codex-projects.md",
+      "status": "full_source_analyzed",
+      "text_read_complete": true,
+      "full_source_analyzed": true,
+      "scope": "Página oficial completa nas quatro variantes visíveis Desktop/web/CLI/IDE, com ilustração material conferida; referências externas excluídas.",
+      "surfaces_read": [
+        "ChatGPT desktop app",
+        "ChatGPT web",
+        "Codex CLI",
+        "Codex IDE extension"
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a06-projects-app.txt",
+          "bytes": 5054,
+          "sha256": "e97a4b38b27df1378555f103ba29e5307d0e75f2e803b967a7c52f16186e76e9",
+          "line_count": 89,
+          "read_lines": [
+            [
+              1,
+              89
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a06-projects-web.txt",
+          "bytes": 3226,
+          "sha256": "b47f4375cb7fe0ec6576890a9c69b354573f497295673446373556d8ed7cc6f4",
+          "line_count": 57,
+          "read_lines": [
+            [
+              1,
+              57
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a06-projects-cli.txt",
+          "bytes": 1376,
+          "sha256": "32606ed6e9fca4129d1ac7c2f9be91043a91845340a3ba33d6c6750b9e6f97c4",
+          "line_count": 28,
+          "read_lines": [
+            [
+              1,
+              28
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a06-projects-ide.txt",
+          "bytes": 1333,
+          "sha256": "5b2a5fc6b9ba70e9a19ae81ed139db1686616b21beae810f5bb78b4a3292a1a4",
+          "line_count": 27,
+          "read_lines": [
+            [
+              1,
+              27
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a06-projects.html",
+          "bytes": 519021,
+          "sha256": "1642adc0f03c196eb3250f95bd1d99680d732408024164a183a46fecb997e822",
+          "line_count": 5921,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a06-projects-media.json",
+          "bytes": 1124,
+          "sha256": "ac0a4ce37746aab1799f471e4bad5e595848c1255328a1b8b1a063487df50197",
+          "line_count": 58,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a06-projects-acquisition.json",
+          "bytes": 249,
+          "sha256": "72744688d426aaeaa599b58ed9a6e03d705ecfedadde23ef8a709ad3102217f5",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a06-projects-figure.png",
+          "bytes": 93951,
+          "sha256": "52711ac8b4b3da1d1861ab60d49989d61a3fb03ffa799caaaa112c2187d1c8ee",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "ilustração oficial de tarefas, fixação e pastas na seção Projects; sem operação do app do usuário",
+          "method": "screenshot da figura renderizada na documentação"
+        }
+      ],
+      "embedded_media_pending": [],
+      "not_reviewed": [
+        "links externos",
+        "produto operado nas quatro superfícies",
+        "Codex cloud como produto independente",
+        "contas e configurações do usuário"
+      ],
+      "practice_checks": [
+        "referência correta e sua origem",
+        "destino do plano, retomada e revisão sem alegar implementação"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-06/codex-projects.md",
+        "bytes": 6979,
+        "sha256": "c7cf1892263076aa5f071b777237b00d4316983fe71f0db1ebd123fb6912f4aa",
+        "line_count": 58,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e captura locais gitignored; sem licença de republicação presumida.",
+      "source_manifest": "studies/backfill/articles-06/manifest.json"
     }
   ],
-  "updated_at": "2026-09-28T21:25:17.946123+00:00",
+  "updated_at": "2026-09-28T21:44:00.455468+00:00",
   "scope_note": "Text acquisition, complete reading, visual inspection and product execution are distinct. See individual scope and pending fields.",
   "blocked_sources": [
     {
@@ -4764,6 +6207,172 @@
       "public_video_studied_in_this_round": false,
       "next_action": "Obter acesso legítimo ao artigo; vídeo público exige estudo independente, sem substituir texto pago.",
       "source_manifest": "studies/backfill/articles-04/manifest.json"
+    },
+    {
+      "id": "blocked-academy-code101-course-quiz",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/course-quiz",
+      "title": "Course quiz",
+      "status": "blocked_authentication",
+      "text_read_complete": false,
+      "full_source_analyzed": false,
+      "observed_at": "2026-09-28",
+      "reason": "Página pública exige login; o conteúdo avaliado e o progresso pertencem à conta. Apenas mensagem de acesso e navegação foram observadas.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac07-quiz-gate.txt",
+          "bytes": 679,
+          "sha256": "4ba804d3de84820aa0c305a967f6872d64df93a5c1257e81b67273a396481e63",
+          "kind": "access_gate_text",
+          "line_count": 46,
+          "read_lines": []
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac07-quiz-gate.png",
+          "bytes": 49854,
+          "sha256": "bc2f84ad9b5f7cedc9b2946395abff406a7540ec6d2b2eff0c1204400cd8d2af",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "next_action": "Acesso legítimo autenticado é necessário para examinar o conteúdo da avaliação. Não houve login, resposta de prova ou obtenção de badge.",
+      "source_manifest": "studies/backfill/academy-07/manifest.json"
+    },
+    {
+      "id": "blocked-academy-code101-badge",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/badge",
+      "title": "Completion badge",
+      "status": "blocked_authentication",
+      "text_read_complete": false,
+      "full_source_analyzed": false,
+      "observed_at": "2026-09-28",
+      "reason": "Página pública exige login; o conteúdo avaliado e o progresso pertencem à conta. Apenas mensagem de acesso e navegação foram observadas.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac07-badge-gate.txt",
+          "bytes": 562,
+          "sha256": "bbad506b6733334e205ceaf1a34f6165b08a195048b5cab86a0eb69521a5265e",
+          "kind": "access_gate_text",
+          "line_count": 33,
+          "read_lines": []
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac07-badge-gate.png",
+          "bytes": 60846,
+          "sha256": "e3dfc5f124247b57f82323523b090cb81bd12b50dff0feb4f3863a597a544e3c",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "next_action": "Acesso legítimo autenticado é necessário para examinar o conteúdo da avaliação. Não houve login, resposta de prova ou obtenção de badge.",
+      "source_manifest": "studies/backfill/academy-07/manifest.json"
+    },
+    {
+      "id": "blocked-peter-evals-2026",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/how-to-build-better-ai-evals-with-claude-code-shreya-hamel",
+      "title": "How to Build Better AI Evals with Claude Code in 5 Steps | Shreya & Hamel",
+      "published_at": "2026-08-23",
+      "accessed_at": "2026-09-28",
+      "status": "blocked_paywall",
+      "text_read_complete": false,
+      "full_source_analyzed": false,
+      "reason": "Paywall após introdução do walkthrough; cinco etapas completas e link anunciado não disponíveis no corpo público.",
+      "evidence": "Região Paywall e mensagem de assinatura paga observadas no DOM renderizado; incluídas no texto parcial.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a05-peter-evals-partial.txt",
+          "bytes": 3297,
+          "sha256": "6b5ce18aef77cf0d458a75f68674b7612a09c14c4f46f773332b2842e19750c9",
+          "line_count": 68,
+          "read_lines": [
+            [
+              1,
+              68
+            ]
+          ],
+          "kind": "partial_text"
+        },
+        {
+          "path": "studies/local/backfill-a05-peter-evals.html",
+          "bytes": 164081,
+          "sha256": "1d06ed8d311d8ca939ca202d6ac8910f1b57256bf4525afe3e209789a87d00a2",
+          "line_count": 411,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a05-peter-evals-acquisition.json",
+          "bytes": 343,
+          "sha256": "38691c73b81e8ca8ba6d7bdd7dbba305154f817d4ac4132d3b3357b226f3a83b",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [],
+      "next_action": "Manter impedido até acesso legítimo; não tratar títulos ou material relacionado como texto integral.",
+      "related_public_video": "https://www.youtube.com/watch?v=bdMHQLvtVaQ",
+      "public_video_studied_in_this_round": false,
+      "related_existing_study": {
+        "path": "studies/videos/bdMHQLvtVaQ.md",
+        "basis": "caminho conferido no manifesto existente",
+        "reviewed_in_this_round": false,
+        "does_not_replace_blocked_article": true
+      },
+      "source_manifest": "studies/backfill/articles-05/manifest.json"
+    },
+    {
+      "id": "blocked-peter-instagram-2020",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/four-product-principles-that-drove",
+      "title": "Four Product Principles that Drove Instagram's Success",
+      "published_at": "2020-08-25",
+      "accessed_at": "2026-09-28",
+      "status": "blocked_paywall",
+      "text_read_complete": false,
+      "full_source_analyzed": false,
+      "reason": "Paywall após seção 1 e título da seção 2; princípios 2–4 não expostos integralmente.",
+      "evidence": "Região Paywall e mensagem de assinatura paga observadas no DOM renderizado; incluídas no texto parcial.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a05-peter-instagram-partial.txt",
+          "bytes": 2831,
+          "sha256": "eb41cb0e670c476a101aa8f61317bac36378afef2602d6df0899381534351291",
+          "line_count": 56,
+          "read_lines": [
+            [
+              1,
+              56
+            ]
+          ],
+          "kind": "partial_text"
+        },
+        {
+          "path": "studies/local/backfill-a05-peter-instagram.html",
+          "bytes": 136789,
+          "sha256": "f77a23143cead3b872309dd4eef8da6908837008b34ea2c2a3dc17e3cea0a67e",
+          "line_count": 411,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a05-peter-instagram-acquisition.json",
+          "bytes": 295,
+          "sha256": "13a9514704a37d7fe33570ff8c1ee30ee1c1aa3a2005693833746a0ceb7771ec",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [],
+      "next_action": "Manter impedido até acesso legítimo; não tratar títulos ou material relacionado como texto integral.",
+      "source_manifest": "studies/backfill/articles-05/manifest.json"
     }
   ]
 }

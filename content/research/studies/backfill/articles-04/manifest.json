@@ -112,6 +112,210 @@
         "kind": "original_study"
       },
       "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida."
+    },
+    {
+      "id": "article-builder-full-stack-2025",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/create-full-stack-app-ai",
+      "title": "Create a full-stack app with AI",
+      "author": "Alice Moore",
+      "published_at": "2025-10-09",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/builder-blog.json",
+      "study_path": "studies/backfill/articles-04/builder-full-stack.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "scope": "Texto integral e duas imagens; três vídeos com posters pendentes.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a04-builder-full-stack.txt",
+          "bytes": 9479,
+          "sha256": "8d051e2c73b6e353db0b6c5fc5a56499d9f01372a699b9cbfe5915c0bcfa9845",
+          "line_count": 174,
+          "read_lines": [
+            [
+              1,
+              174
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a04-builder-full-stack.html",
+          "bytes": 244062,
+          "sha256": "639a62727e55e1306cef362dd5930ab5d76f832e49051dd6ca240f4a99ccdf69",
+          "line_count": 1352,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a04-builder-full-stack-media.json",
+          "bytes": 2920,
+          "sha256": "88b039e0ffede74a55a7c506e34d2fadde97ec53b457ea6d56c643998158c6ca",
+          "line_count": 93,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a04-builder-full-stack-acquisition.json",
+          "bytes": 275,
+          "sha256": "e7edf4e1ad72fd26b7fa03309ade739863d2c3c535e731ef987ea067553cbcaf",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a04-full-stack-cover.png",
+          "bytes": 25069,
+          "sha256": "8e6a696362724a764897f0e685a09ba6164e6ed58bf395f03b8cee6da1cf275f",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "esquema dos serviços",
+          "method": "screenshot de imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a04-full-stack-mcp.png",
+          "bytes": 33591,
+          "sha256": "6405b110499586c037c530c5fa9d787f9ab609169d5ccf27fadcf43b7519b084",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "área MCP Servers e controles de conexão; não comprova conexão ativa",
+          "method": "screenshot de imagem observada no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        "3 elementos video com posters, sem src/source observado; demonstrações não acompanhadas"
+      ],
+      "not_reviewed": [
+        "vídeos",
+        "projeto final e serviços atuais",
+        "políticas de acesso e schema",
+        "deploy e domínio personalizado"
+      ],
+      "practice_checks": [
+        "filtragem definida por versão e reteste",
+        "persistência e integridade do voto na UI e no destino"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-04/builder-full-stack.md",
+        "bytes": 8632,
+        "sha256": "7316cc5dbd9fe06b4cd3dbf367c5e08d8adcb65566e908a69e04a931d9bccc9b",
+        "line_count": 66,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida."
+    },
+    {
+      "id": "article-peter-product-quality-2023",
+      "source_id": "peter-yang-newsletter",
+      "url": "https://creatoreconomy.so/p/the-day-you-stopped-making-compromises",
+      "title": "The Day You Stopped Making Compromises on Product Quality",
+      "author": "Peter Yang",
+      "published_at": "2023-04-12",
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "video-inventory/page-discovery/peter-yang-newsletter.json",
+      "study_path": "studies/backfill/articles-04/peter-product-quality.md",
+      "status": "text_analyzed_embedded_media_pending",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "scope": "Texto integral e duas imagens materiais; citação incorporada lida como exibida; um vídeo não acompanhado.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a04-peter-quality.txt",
+          "bytes": 5989,
+          "sha256": "017283909f2bc14168480343fb16fa0312811563794f485271a50856301e8981",
+          "line_count": 141,
+          "read_lines": [
+            [
+              1,
+              141
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a04-peter-quality.html",
+          "bytes": 215996,
+          "sha256": "534fa85c50b504ddfe983ec107395cf28477ac25ab706de6e37d099023633092",
+          "line_count": 504,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a04-peter-quality-media.json",
+          "bytes": 3252,
+          "sha256": "8b20c3cedd82084d720e1f847a4ac4e26cc2fc084af06e904a05ef06134d1f38",
+          "line_count": 72,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a04-peter-quality-acquisition.json",
+          "bytes": 303,
+          "sha256": "e176623a8265aa856ee50d1f8b9a1c98cec91b221daaf7b9b768a3cf9b588a2c",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a04-quality-01.png",
+          "bytes": 41846,
+          "sha256": "5fcea979cf1bce98162dd736672c4eaf03c83a3b45946050ae24eb53eba9b6c6",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "capa com título",
+          "method": "screenshot de imagem observada no navegador"
+        },
+        {
+          "path": "studies/local/backfill-a04-quality-02.png",
+          "bytes": 55169,
+          "sha256": "e22ab43fa5b299abb80163eec4f79b0a15754af6e0eed9e228f5f54b0bebd735",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "reflexão atribuída a Steve Jobs/2007, sem autenticação independente",
+          "method": "screenshot de imagem observada no navegador"
+        }
+      ],
+      "embedded_media_pending": [
+        {
+          "video_id": "P4VBqTViEx4",
+          "url": "https://www.youtube-nocookie.com/embed/P4VBqTViEx4?rel=0&autoplay=0&showinfo=0&enablejsapi=0",
+          "status": "not_watched"
+        }
+      ],
+      "not_reviewed": [
+        "vídeo",
+        "links externos e origem das citações",
+        "situação atual das marcas e preços",
+        "prática ou pesquisa com usuários"
+      ],
+      "practice_checks": [
+        "percurso de inscrição e compreensão da confirmação",
+        "erro obrigatório, recuperação e reteste"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-04/peter-product-quality.md",
+        "bytes": 8734,
+        "sha256": "a03cd8f680c7a90e7170b3a6797e61e124e3a0cb2733c277525bc4cd47d40583",
+        "line_count": 68,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e capturas locais gitignored; sem licença de republicação presumida."
     }
   ],
   "blocked_sources": [
@@ -174,6 +378,14 @@
       "next_action": "Obter acesso legítimo ao artigo; vídeo público exige estudo independente, sem substituir texto pago."
     }
   ],
-  "round_deliverables_complete": false,
-  "source_audiovisual_completion_claimed": false
+  "round_deliverables_complete": true,
+  "source_audiovisual_completion_claimed": false,
+  "round_summary": {
+    "public_articles_with_complete_text_study": 3,
+    "text_lines_read": 450,
+    "material_static_images_reviewed": 7,
+    "embedded_videos_pending": 9,
+    "blocked_articles": 1,
+    "full_source_analyzed_articles": 0
+  }
 }

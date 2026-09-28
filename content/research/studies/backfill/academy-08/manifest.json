@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "studies": [
+    {
+      "id": "academy-action-permission-modes",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/permission-modes",
+      "video_id": "IS6larFJBK8",
+      "title": "Permission modes",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-08/permission-modes.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac08-permission.txt",
+          "bytes": 4015,
+          "sha256": "c3e8cb7815fba864cbf66286fb95cf6c70aaf21b84a5c219028b7980b85550d1",
+          "kind": "text",
+          "line_count": 65,
+          "read_lines": [
+            [
+              1,
+              65
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-08/permission-modes.md",
+        "bytes": 5108,
+        "sha256": "a811e560129d0671d2722874bff58a56a92bec694450a3c5cbcf6a77a5dc4d65",
+        "kind": "original_study",
+        "line_count": 37,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática original não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida.",
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/permission-modes",
+          "read_scope": "Available modes; surface-specific controls; auto mode limits; dontAsk",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28",
+          "finding": "Modes layer on additional rules; auto is not unconditional approval or functional verification."
+        }
+      ]
+    },
+    {
+      "id": "academy-action-verification-skills",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/verification-skills",
+      "video_id": "rJOmCMeYTuo",
+      "title": "Verification skills",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-08/verification-skills.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac08-verification.txt",
+          "bytes": 3751,
+          "sha256": "ba9912d8061c35cffe77c333c0dbb9094adf212f1b0b0ea6cfbf6544d5c0584c",
+          "kind": "text",
+          "line_count": 49,
+          "read_lines": [
+            [
+              1,
+              49
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-08/verification-skills.md",
+        "bytes": 4915,
+        "sha256": "74d9cc05b81fcc9f2fc3643be2153706ae8dea3b8c017256d91c66839cafd17d",
+        "kind": "original_study",
+        "line_count": 35,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática original não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida."
+    }
+  ]
+}

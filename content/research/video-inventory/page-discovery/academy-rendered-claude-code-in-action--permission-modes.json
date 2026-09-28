@@ -1,0 +1,46 @@
+{
+  "source_id": "claude-academy",
+  "page_url": "https://academy.claude.com/courses/claude-code-in-action/permission-modes",
+  "title": "Permission modes",
+  "observed_at": "2026-09-28T21:30:23.410Z",
+  "method": "Browser rendered public article, text read separately",
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/IS6larFJBK8?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "Permission modes"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=IS6larFJBK8",
+      "title": "Watch on YouTube\n"
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/permission-modes#the-six-permission-modes",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/permission-modes#cycling-with-shift-tab",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/permission-modes#how-auto-mode-works",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/permission-modes#what-the-classifier-cant-do",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/permission-modes#dont-ask-for-unattended-runs",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/permission-modes#match-the-mode-to-the-job",
+      "title": ""
+    }
+  ],
+  "artifact_path": "studies/local/backfill-ac08-permission.txt",
+  "transcript_label_observed": false,
+  "url": "https://academy.claude.com/courses/claude-code-in-action/permission-modes"
+}

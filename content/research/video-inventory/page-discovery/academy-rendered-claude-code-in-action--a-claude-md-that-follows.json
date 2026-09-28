@@ -1,0 +1,58 @@
+{
+  "source_id": "claude-academy",
+  "page_url": "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows",
+  "title": "A CLAUDE.md that follows",
+  "observed_at": "2026-09-28T21:33:28.545Z",
+  "method": "Browser rendered public article, text read separately",
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/o9-NIQF9tNw?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "A CLAUDE.md that follows"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=o9-NIQF9tNw",
+      "title": "Watch on YouTube\n"
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows#first-ask-if-claudemd-is-even-the-right-tool",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows#the-four-locations",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows#split-up-a-big-file-with-imports",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows#phrasing-is-what-makes-rules-stick",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows#be-specific-and-checkable",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows#name-the-replacement-dont-just-ban-something",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows#emphasis-is-a-budget",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows#keep-the-file-under-revision",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows#the-bottom-line",
+      "title": ""
+    }
+  ],
+  "artifact_path": "studies/local/backfill-ac09-follows.txt",
+  "transcript_label_observed": false,
+  "url": "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows"
+}

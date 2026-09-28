@@ -1,0 +1,649 @@
+{
+  "baseline_exported_video_ids": [
+    "-Cx66fGexN0",
+    "-Emf7un0Wt4",
+    "-FRBotBLc1o",
+    "-SenpOqT6Nk",
+    "-zFd1nPn6U0",
+    "06Beyp_iDL0",
+    "0kILa02vKuI",
+    "1BAZsQBteDs",
+    "1XkVsE9-ZK4",
+    "1b-R6TxZMEk",
+    "1ve4Atbqmoo",
+    "2HK9Th7GDiU",
+    "2osMpXOe5fA",
+    "35BFOsQ_tZw",
+    "3KAI__5dUn0",
+    "3Pim6uCASSE",
+    "3qmOFLBhfD8",
+    "47SlwClRJYE",
+    "522lUI2GVJA",
+    "5Kqyhu_eIcw",
+    "5WxczXi82ig",
+    "68BnH29qvAA",
+    "6LA6J4iKNRE",
+    "6VDpkO9RWqs",
+    "6bs5b4FltCU",
+    "70ush8Vknx8",
+    "7R-CfL21zIY",
+    "8AWEPx5cHWQ",
+    "8gNrZ4lAnAw",
+    "AGi3U79zMIM",
+    "COh_cjrDOzc",
+    "Ccf5yhlT2UU",
+    "CtjuzlIuoO0",
+    "E2UgYp2vh5U",
+    "EZ-Q30WL5L4",
+    "G9o8eoHzpxc",
+    "GUgxx6fMiR8",
+    "GepHGs_CZdk",
+    "Gr41tYOzE20",
+    "HFM3se4lNiw",
+    "HN0oWxbF2bM",
+    "HwbSWVg5Ln4",
+    "IkaPHiMDazM",
+    "KFwFDZpEzXY",
+    "Ke4iqmdD5iI",
+    "Mkkq9Ays4lo",
+    "MvvrxdePk5Y",
+    "NnYLzGMk8Tg",
+    "O0FGCxkHM-U",
+    "SBbAcXlmfe0",
+    "SKBDC3QugZw",
+    "TcFeSjwTo7g",
+    "Vy4pVvgJxIE",
+    "YFBRVJPhDGY",
+    "alvy1hFow2E",
+    "bTF3tACqPRU",
+    "bdMHQLvtVaQ",
+    "c-QsfbznSXI",
+    "eW3oTyfeWZ0",
+    "eoEsVQJruow",
+    "fK_bm84N7bs",
+    "fl1DSmwQKKY",
+    "g328fQNFQYA",
+    "gbetp6D7J_Q",
+    "hhdpnbfH6NU",
+    "i-5bFCDvk-Q",
+    "ip8FEYOQob0",
+    "iqNzfK4_meQ",
+    "jKErNxuxPXg",
+    "jQm42x6VpN4",
+    "jWlAvdR8HG0",
+    "jlZfuNoBBCY",
+    "kkBFmwkDzdo",
+    "lHhhze3_i00",
+    "luMxg_Dt5Mk",
+    "ly0hAtV7EBg",
+    "ntDIxaeo3Wg",
+    "nxqA3VHKE-s",
+    "oS53by4Hwvo",
+    "pZpoACNOPAw",
+    "qTdwUpQRptc",
+    "qYqIhX9hTQk",
+    "s50dOsodoVQ",
+    "saggDHHnmtQ",
+    "t15BZZ1giGo",
+    "uAI5NLoojso",
+    "uUEa6K-FLB8",
+    "vFepZE_wrfg",
+    "xJ5oz63mIec",
+    "xJQuF02NAK8",
+    "zpS6JGJNaGg"
+  ],
+  "batch_id": "20260928T212706416534Z",
+  "canonical_path": "transcripts/manifest.json",
+  "canonical_sha256_before": "dd5dffe8aa427af407d6de206f779d3743674e5bdd1a7d3ce56992d621101f4c",
+  "recorded_at": "2026-09-28T21:27:06.417654+00:00",
+  "scope": "exhaustive_user_directive_2026_09_28",
+  "study_flags_before": {
+    "-Cx66fGexN0": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "-Emf7un0Wt4": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "-FRBotBLc1o": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "-SenpOqT6Nk": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "-zFd1nPn6U0": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "06Beyp_iDL0": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "0kILa02vKuI": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "1BAZsQBteDs": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "1XkVsE9-ZK4": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "1b-R6TxZMEk": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "1ve4Atbqmoo": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "2HK9Th7GDiU": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "2osMpXOe5fA": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "35BFOsQ_tZw": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "3KAI__5dUn0": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "3Pim6uCASSE": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "3qmOFLBhfD8": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "47SlwClRJYE": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "522lUI2GVJA": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "5Kqyhu_eIcw": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "5WxczXi82ig": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "68BnH29qvAA": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "6LA6J4iKNRE": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "6VDpkO9RWqs": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "6bs5b4FltCU": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "70ush8Vknx8": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "7R-CfL21zIY": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "8AWEPx5cHWQ": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "8gNrZ4lAnAw": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "AGi3U79zMIM": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "COh_cjrDOzc": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "Ccf5yhlT2UU": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "CtjuzlIuoO0": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "E2UgYp2vh5U": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "EZ-Q30WL5L4": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "G9o8eoHzpxc": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "GUgxx6fMiR8": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "GepHGs_CZdk": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "Gr41tYOzE20": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "HFM3se4lNiw": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "HN0oWxbF2bM": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "HwbSWVg5Ln4": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "IkaPHiMDazM": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "KFwFDZpEzXY": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "Ke4iqmdD5iI": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "Mkkq9Ays4lo": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "MvvrxdePk5Y": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "NnYLzGMk8Tg": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "O0FGCxkHM-U": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "SBbAcXlmfe0": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "SKBDC3QugZw": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "TcFeSjwTo7g": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "Vy4pVvgJxIE": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "YFBRVJPhDGY": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "alvy1hFow2E": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "bTF3tACqPRU": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "bdMHQLvtVaQ": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "c-QsfbznSXI": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "eW3oTyfeWZ0": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "eoEsVQJruow": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "fK_bm84N7bs": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "fl1DSmwQKKY": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "g328fQNFQYA": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "gbetp6D7J_Q": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "hhdpnbfH6NU": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "i-5bFCDvk-Q": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "ip8FEYOQob0": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "iqNzfK4_meQ": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "jKErNxuxPXg": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "jQm42x6VpN4": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "jWlAvdR8HG0": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "jlZfuNoBBCY": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "kkBFmwkDzdo": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "lHhhze3_i00": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "luMxg_Dt5Mk": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "ly0hAtV7EBg": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "ntDIxaeo3Wg": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "nxqA3VHKE-s": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "oS53by4Hwvo": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "pZpoACNOPAw": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "qTdwUpQRptc": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "qYqIhX9hTQk": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "s50dOsodoVQ": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "saggDHHnmtQ": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "t15BZZ1giGo": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "uAI5NLoojso": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "uUEa6K-FLB8": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "vFepZE_wrfg": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    },
+    "xJ5oz63mIec": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "xJQuF02NAK8": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": true,
+      "full_video_watched": false
+    },
+    "zpS6JGJNaGg": {
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "full_transcript_read": false,
+      "full_video_watched": false
+    }
+  },
+  "video_count": 91
+}

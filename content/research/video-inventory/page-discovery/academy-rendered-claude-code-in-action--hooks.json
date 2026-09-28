@@ -1,0 +1,45 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-code-in-action/hooks",
+  "title": "Hooks",
+  "observed_at": "2026-09-28T21:36:31.007Z",
+  "method": "Browser rendered public article, text read separately",
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/1m0huCacWPs?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "Hooks"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=1m0huCacWPs",
+      "title": "Watch on YouTube\n"
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/hooks#the-hook-events",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/hooks#pretooluse-returning-a-decision-as-json",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/hooks#exit-codes-for-hooks-that-dont-return-json",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/hooks#a-real-guardrail-redact-instead-of-block",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/hooks#preserving-state-across-a-compact",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/hooks#wrapping-up",
+      "title": ""
+    }
+  ],
+  "artifact_path": "studies/local/backfill-ac10-hooks.txt",
+  "transcript_label_observed": false
+}

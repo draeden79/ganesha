@@ -1,15 +1,9 @@
 {
   "source_id": "claude-academy",
   "pending": [
-    "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows",
     "https://academy.claude.com/courses/claude-code-in-action/github-actions-and-code-review",
-    "https://academy.claude.com/courses/claude-code-in-action/hooks",
-    "https://academy.claude.com/courses/claude-code-in-action/permission-modes",
     "https://academy.claude.com/courses/claude-code-in-action/plugins",
-    "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless",
-    "https://academy.claude.com/courses/claude-code-in-action/steering-long-sessions",
     "https://academy.claude.com/courses/claude-code-in-action/trust-it-verifying-unsupervised-runs",
-    "https://academy.claude.com/courses/claude-code-in-action/verification-skills",
     "https://academy.claude.com/courses/claude-platform-101/building-with-claude-code",
     "https://academy.claude.com/courses/claude-platform-101/building-your-first-managed-agent",
     "https://academy.claude.com/courses/claude-platform-101/built-in-tools",
@@ -295,9 +289,26 @@
     "https://academy.claude.com/courses/claude-code-101/mcp",
     "https://academy.claude.com/courses/claude-code-101/skills",
     "https://academy.claude.com/courses/claude-code-101/hooks",
-    "https://academy.claude.com/courses/claude-code-101/installing-claude-code"
+    "https://academy.claude.com/courses/claude-code-101/installing-claude-code",
+    "https://academy.claude.com/courses/claude-code-in-action/permission-modes",
+    "https://academy.claude.com/courses/claude-code-in-action/verification-skills",
+    "https://academy.claude.com/courses/claude-code-in-action/steering-long-sessions",
+    "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows",
+    "https://academy.claude.com/courses/claude-code-in-action/hooks",
+    "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless"
   ],
-  "blocked": [],
+  "blocked": [
+    {
+      "url": "https://academy.claude.com/courses/claude-code-101/course-quiz",
+      "status": "blocked_authentication",
+      "evidence_manifest": "studies/backfill/academy-07/manifest.json"
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-101/badge",
+      "status": "blocked_authentication",
+      "evidence_manifest": "studies/backfill/academy-07/manifest.json"
+    }
+  ],
   "scope_note": "Public rendered lessons queued for complete corpus; acquisition does not prove reading or audiovisual coverage.",
   "status": "active_exhaustive_user_directive_2026_09_28"
 }

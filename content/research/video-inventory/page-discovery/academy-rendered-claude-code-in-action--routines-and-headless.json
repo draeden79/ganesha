@@ -1,0 +1,57 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless",
+  "title": "Routines and headless",
+  "observed_at": "2026-09-28T21:36:41.649Z",
+  "method": "Browser rendered public article, text read separately",
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/7u366zBuUTM?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "Routines and headless"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=7u366zBuUTM",
+      "title": "Watch on YouTube\n"
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless#routines-a-saved-prompt-that-runs-in-the-cloud",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless#two-ways-to-create-one",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless#three-things-to-know-before-you-rely-on-routines",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless#headless-mode-when-you-need-your-own-environment",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless#getting-structured-output-back",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless#multi-step-automation-with-sessions",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless#deterministic-runs-for-ci",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless#the-agent-sdk-claude-code-inside-your-own-app",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/routines-and-headless#which-one-should-you-reach-for",
+      "title": ""
+    }
+  ],
+  "artifact_path": "studies/local/backfill-ac10-routines.txt",
+  "transcript_label_observed": false
+}

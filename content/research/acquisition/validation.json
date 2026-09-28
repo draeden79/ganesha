@@ -1,10 +1,10 @@
 {
-  "caption_artifacts_checked": 156,
-  "derived_pairs_checked": 78,
+  "caption_artifacts_checked": 216,
+  "derived_pairs_checked": 108,
   "errors": [],
   "metadata_artifacts_checked": 13,
-  "snapshot_references_checked": 3,
-  "validated_at": "2026-09-28T21:16:17.167006+00:00",
+  "snapshot_references_checked": 5,
+  "validated_at": "2026-09-28T21:37:35.765810+00:00",
   "validation_scope": "Existence, byte count, SHA-256, JSON3 cue count, full TXT derivation and archived queue/baseline hashes; no speech or audiovisual verification.",
-  "videos_checked": 78
+  "videos_checked": 108
 }

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "studies": [],
+  "blocked_sources": [
+    {
+      "id": "blocked-academy-code101-course-quiz",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/course-quiz",
+      "title": "Course quiz",
+      "status": "blocked_authentication",
+      "text_read_complete": false,
+      "full_source_analyzed": false,
+      "observed_at": "2026-09-28",
+      "reason": "Página pública exige login; o conteúdo avaliado e o progresso pertencem à conta. Apenas mensagem de acesso e navegação foram observadas.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac07-quiz-gate.txt",
+          "bytes": 679,
+          "sha256": "4ba804d3de84820aa0c305a967f6872d64df93a5c1257e81b67273a396481e63",
+          "kind": "access_gate_text",
+          "line_count": 46,
+          "read_lines": []
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac07-quiz-gate.png",
+          "bytes": 49854,
+          "sha256": "bc2f84ad9b5f7cedc9b2946395abff406a7540ec6d2b2eff0c1204400cd8d2af",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "next_action": "Acesso legítimo autenticado é necessário para examinar o conteúdo da avaliação. Não houve login, resposta de prova ou obtenção de badge."
+    },
+    {
+      "id": "blocked-academy-code101-badge",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/badge",
+      "title": "Completion badge",
+      "status": "blocked_authentication",
+      "text_read_complete": false,
+      "full_source_analyzed": false,
+      "observed_at": "2026-09-28",
+      "reason": "Página pública exige login; o conteúdo avaliado e o progresso pertencem à conta. Apenas mensagem de acesso e navegação foram observadas.",
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac07-badge-gate.txt",
+          "bytes": 562,
+          "sha256": "bbad506b6733334e205ceaf1a34f6165b08a195048b5cab86a0eb69521a5265e",
+          "kind": "access_gate_text",
+          "line_count": 33,
+          "read_lines": []
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-ac07-badge-gate.png",
+          "bytes": 60846,
+          "sha256": "e3dfc5f124247b57f82323523b090cb81bd12b50dff0feb4f3863a597a544e3c",
+          "kind": "image",
+          "visually_reviewed": true
+        }
+      ],
+      "next_action": "Acesso legítimo autenticado é necessário para examinar o conteúdo da avaliação. Não houve login, resposta de prova ou obtenção de badge."
+    }
+  ]
+}

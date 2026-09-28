@@ -1,0 +1,49 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-code-in-action/plugins",
+  "title": "Plugins",
+  "observed_at": "2026-09-28T21:43:25.159Z",
+  "method": "Browser rendered public article, text read separately",
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/DJNaTOFIQPs?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "Plugins"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=DJNaTOFIQPs",
+      "title": "Watch on YouTube\n"
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/plugins#what-a-plugin-is",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/plugins#adding-a-marketplace-for-your-team",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/plugins#read-before-you-install",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/plugins#components-run-alongside-yours",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/plugins#packaging-your-own-plugin",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/plugins#the-manifest",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/plugins#the-takeaway",
+      "title": ""
+    }
+  ],
+  "artifact_path": "studies/local/backfill-ac11-plugins.txt",
+  "transcript_label_observed": false
+}

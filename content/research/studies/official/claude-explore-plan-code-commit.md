@@ -22,9 +22,9 @@ Imagem `official-claude-workflow-plan.png` vista: terminal com indicador de plan
 
 Aula e quickstart compartilham planejamento/revisão. Pertinência P0 como sequência curta; evitar repetir toda a instalação. Atualidade: texto vivo coletado em setembro/2026; imagem não expõe versão e contém controles de terminal. Lacuna: não fornece resposta real inteira, diff final e resultados do exemplo WebP. Por isso a atividade a seguir é criação pedagógica, não reprodução certificada da demonstração.
 
-## Prática original adequada a L01
+## Prática original: planejamento em L01, implementação em etapa posterior
 
-Competência: formular, revisar um plano pequeno, executar e conferir evidência. Referência `res-claude-plan-build-review`; sem novo ID curricular formal.
+Competência: formular e revisar um plano pequeno; nas etapas posteriores, executar e conferir evidência. **A entrega da L01 termina no plano revisado, sem editar arquivos.** As fases Executar e Verificar abaixo são propostas para a sequência posterior do curso, sem criar novas aulas automaticamente. Referência `res-claude-plan-build-review`; sem novo ID curricular formal.
 
 Projeto: página simples de uma feira de bairro, já fornecida pelo curso. Resultado desejado: acrescentar seção com horário, endereço e um botão que desça até o formulário. O aluno possui os dados e consegue reconhecer sucesso sem interpretar toda a implementação.
 

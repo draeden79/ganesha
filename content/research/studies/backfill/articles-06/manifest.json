@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "scope": "articles-06: três páginas oficiais inéditas; entrega incremental.",
+  "skill_applied": "/Users/lucasmarques/.codex/skills/.system/openai-docs/SKILL.md",
+  "studies": [
+    {
+      "id": "official-codex-projects-2026",
+      "source_id": "openai-learn-codex",
+      "url": "https://learn.chatgpt.com/docs/projects",
+      "title": "Projects and chats",
+      "author": "OpenAI",
+      "published_at": null,
+      "source_updated_at": null,
+      "accessed_at": "2026-09-28",
+      "inventory_provenance": "resources.jsonl",
+      "discovery_context": "Referência da página /docs/app já estudada, preservada em studies/local/official-codex-app.dom.txt; busca oficial confirmou URL.",
+      "study_path": "studies/backfill/articles-06/codex-projects.md",
+      "status": "full_source_analyzed",
+      "text_read_complete": true,
+      "full_source_analyzed": true,
+      "scope": "Página oficial completa nas quatro variantes visíveis Desktop/web/CLI/IDE, com ilustração material conferida; referências externas excluídas.",
+      "surfaces_read": [
+        "ChatGPT desktop app",
+        "ChatGPT web",
+        "Codex CLI",
+        "Codex IDE extension"
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-a06-projects-app.txt",
+          "bytes": 5054,
+          "sha256": "e97a4b38b27df1378555f103ba29e5307d0e75f2e803b967a7c52f16186e76e9",
+          "line_count": 89,
+          "read_lines": [
+            [
+              1,
+              89
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a06-projects-web.txt",
+          "bytes": 3226,
+          "sha256": "b47f4375cb7fe0ec6576890a9c69b354573f497295673446373556d8ed7cc6f4",
+          "line_count": 57,
+          "read_lines": [
+            [
+              1,
+              57
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a06-projects-cli.txt",
+          "bytes": 1376,
+          "sha256": "32606ed6e9fca4129d1ac7c2f9be91043a91845340a3ba33d6c6750b9e6f97c4",
+          "line_count": 28,
+          "read_lines": [
+            [
+              1,
+              28
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a06-projects-ide.txt",
+          "bytes": 1333,
+          "sha256": "5b2a5fc6b9ba70e9a19ae81ed139db1686616b21beae810f5bb78b4a3292a1a4",
+          "line_count": 27,
+          "read_lines": [
+            [
+              1,
+              27
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "path": "studies/local/backfill-a06-projects.html",
+          "bytes": 519021,
+          "sha256": "1642adc0f03c196eb3250f95bd1d99680d732408024164a183a46fecb997e822",
+          "line_count": 5921,
+          "read_lines": [],
+          "kind": "raw_html"
+        },
+        {
+          "path": "studies/local/backfill-a06-projects-media.json",
+          "bytes": 1124,
+          "sha256": "ac0a4ce37746aab1799f471e4bad5e595848c1255328a1b8b1a063487df50197",
+          "line_count": 58,
+          "read_lines": [],
+          "kind": "media_inventory"
+        },
+        {
+          "path": "studies/local/backfill-a06-projects-acquisition.json",
+          "bytes": 249,
+          "sha256": "72744688d426aaeaa599b58ed9a6e03d705ecfedadde23ef8a709ad3102217f5",
+          "line_count": 8,
+          "read_lines": [],
+          "kind": "acquisition_record"
+        }
+      ],
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-a06-projects-figure.png",
+          "bytes": 93951,
+          "sha256": "52711ac8b4b3da1d1861ab60d49989d61a3fb03ffa799caaaa112c2187d1c8ee",
+          "line_count": null,
+          "read_lines": [],
+          "kind": "image",
+          "visually_reviewed": true,
+          "observation": "ilustração oficial de tarefas, fixação e pastas na seção Projects; sem operação do app do usuário",
+          "method": "screenshot da figura renderizada na documentação"
+        }
+      ],
+      "embedded_media_pending": [],
+      "not_reviewed": [
+        "links externos",
+        "produto operado nas quatro superfícies",
+        "Codex cloud como produto independente",
+        "contas e configurações do usuário"
+      ],
+      "practice_checks": [
+        "referência correta e sua origem",
+        "destino do plano, retomada e revisão sem alegar implementação"
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/articles-06/codex-projects.md",
+        "bytes": 6979,
+        "sha256": "c7cf1892263076aa5f071b777237b00d4316983fe71f0db1ebd123fb6912f4aa",
+        "line_count": 58,
+        "read_lines": [],
+        "kind": "original_study"
+      },
+      "rights": "Originais e captura locais gitignored; sem licença de republicação presumida."
+    }
+  ],
+  "blocked_sources": [],
+  "round_deliverables_complete": false
+}

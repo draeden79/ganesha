@@ -1,10 +1,10 @@
 {
-  "acquired_unique_videos_across_own_and_canonical": 88,
+  "acquired_unique_videos_across_own_and_canonical": 121,
   "active_scope": "exhaustive_user_directive_2026_09_28",
-  "artifact_bytes": 42435438,
-  "artifact_count": 156,
+  "artifact_bytes": 53530524,
+  "artifact_count": 216,
   "attempt_results": {
-    "exported_track": 78,
+    "exported_track": 108,
     "metadata_collected": 13,
     "network_dns_failure_recovered": 1,
     "no_accessible_original_track": 1
@@ -12,22 +12,22 @@
   "curated_videos_pending_acquisition": [],
   "curated_videos_selected_for_study": 9,
   "curated_videos_with_exported_track": 9,
-  "exported_videos": 78,
+  "exported_videos": 108,
   "full_source_analyzed": 0,
   "general_historical_queue_active": true,
-  "generated_at": "2026-09-28T21:16:01.160834+00:00",
-  "known_video_duration_seconds": 131425,
-  "queue_snapshot_generated_at": "2026-09-28T21:05:38.879545+00:00",
-  "queue_snapshot_total": 4856,
+  "generated_at": "2026-09-28T21:37:26.184250+00:00",
+  "known_video_duration_seconds": 174001,
+  "queue_snapshot_generated_at": "2026-09-28T21:27:06.335637+00:00",
+  "queue_snapshot_total": 4862,
   "scope_note": "Acquisition evidence only; canonical reading/study flags are never rewritten. Exhaustive user scope is ordered by course relevance; this bounded batch does not establish full corpus coverage.",
   "source_counts": {
-    "designcourse-youtube": 10,
-    "nate-herk-youtube": 12,
+    "designcourse-youtube": 15,
+    "nate-herk-youtube": 16,
     "openai-learn-codex": 9,
     "peter-yang-newsletter": 1,
     "peter-yang-youtube": 7,
-    "riley-brown-youtube": 24,
-    "tech-with-tim-youtube": 16
+    "riley-brown-youtube": 26,
+    "tech-with-tim-youtube": 35
   },
   "speech_coverage_verified": 0
 }

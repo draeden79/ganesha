@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "content/research",
+  "studies": [
+    {
+      "id": "academy-action-steering-long-sessions",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/steering-long-sessions",
+      "video_id": "RWH3Z0ROCVc",
+      "title": "Steering long sessions",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-09/steering-long-sessions.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac09-steering.txt",
+          "bytes": 4912,
+          "sha256": "3489fad70e3d293fd3eae559fc7820fb2626b6aee1b650023a6663265c6bb67c",
+          "kind": "text",
+          "line_count": 91,
+          "read_lines": [
+            [
+              1,
+              91
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-09/steering-long-sessions.md",
+        "bytes": 5464,
+        "sha256": "43a779d0e7d95ced08ac295b55efdd6b8afc78e39fab8fcea47537dac07709a0",
+        "kind": "original_study",
+        "line_count": 39,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/checkpointing",
+          "read_scope": "Checkpoint creation, summarize and recovery limitations",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida."
+    },
+    {
+      "id": "academy-action-a-claude-md-that-follows",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-in-action/a-claude-md-that-follows",
+      "video_id": "o9-NIQF9tNw",
+      "title": "A CLAUDE.md that follows",
+      "accessed_at": "2026-09-28",
+      "published_at": null,
+      "study_path": "studies/backfill/academy-09/a-claude-md-that-follows.md",
+      "status": "text_analyzed_video_pending",
+      "text_read_complete": true,
+      "full_transcript_read": false,
+      "full_source_analyzed": false,
+      "full_video_watched": false,
+      "full_speech_coverage_verified": false,
+      "transcript_label_observed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/backfill-ac09-follows.txt",
+          "bytes": 5532,
+          "sha256": "a28186f7d9f7d71f2ef6057147fcbe7e0ccb0834552edf61e77a0ba2cad787bf",
+          "kind": "text",
+          "line_count": 92,
+          "read_lines": [
+            [
+              1,
+              92
+            ]
+          ]
+        }
+      ],
+      "study_artifact": {
+        "path": "studies/backfill/academy-09/a-claude-md-that-follows.md",
+        "bytes": 5312,
+        "sha256": "204edcd69e04566e9adcd8e16a9e5c74e1e28b51f3f7dbb0185e95c648399cae",
+        "kind": "original_study",
+        "line_count": 39,
+        "read_lines": []
+      },
+      "visual_artifacts": [],
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/memory",
+          "read_scope": "Instruction locations, imports and load hierarchy",
+          "entire_source_read": false,
+          "method": "web open/find",
+          "observed_at": "2026-09-28"
+        }
+      ],
+      "pending": [
+        "Vídeo contínuo e cobertura de fala",
+        "Transcrição identificada não observada",
+        "Prática não executada"
+      ],
+      "rights": "Brutos internos gitignored; sem licença de republicação presumida."
+    }
+  ]
+}

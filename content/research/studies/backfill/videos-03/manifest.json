@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "artifact_path_base": "content/research",
-  "updated_at": "2026-09-28T21:22:38.559152+00:00",
+  "updated_at": "2026-09-28T21:27:28.791861+00:00",
   "studies": [
     {
       "id": "backfill-v03--Emf7un0Wt4",
@@ -210,7 +210,134 @@
         "Current authentication/client/hosting interfaces",
         "Session-independent visitor, functional regression and recovery test"
       ]
+    },
+    {
+      "id": "backfill-v03--zFd1nPn6U0",
+      "video_id": "-zFd1nPn6U0",
+      "title": "Beginner's Guide to Workflow Evaluation in n8n (Stop Guessing!)",
+      "url": "https://www.youtube.com/watch?v=-zFd1nPn6U0",
+      "published_at": "2025-09-03",
+      "studied_at": "2026-09-28",
+      "prior_canonical_study_status": "not_started",
+      "study_path": "studies/backfill/videos-03/-zFd1nPn6U0.md",
+      "study_artifact": {
+        "path": "studies/backfill/videos-03/-zFd1nPn6U0.md",
+        "bytes": 12664,
+        "sha256": "007228a6c64cf33f7e4c323a96ec5817225bf8bf332f1320dc7fa0e47d97906e"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.-zFd1nPn6U0.en.d6239811422d.txt",
+        "bytes": 39000,
+        "sha256": "d6239811422d56454cf2d2abe65d540c85c6e6e166b1d571e99cd10095bc682a",
+        "caption_origin": "automatic",
+        "language": "en",
+        "cue_count": 555,
+        "first_cue_start_seconds": 0.16,
+        "last_cue_start_seconds": 1043.839,
+        "last_cue_end_seconds": 1047.039,
+        "track_export_complete": true,
+        "logical_line_count": 555,
+        "sequential_read_ranges": [
+          [
+            1,
+            200
+          ],
+          [
+            201,
+            400
+          ],
+          [
+            401,
+            555
+          ]
+        ]
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.-zFd1nPn6U0.en.00f0996e2828.json3",
+        "bytes": 420708,
+        "sha256": "00f0996e28286b80ac337538c939a2b6b5c1b1a5e555642c4ecb29bd0661fbe6"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/backfill-v03--zFd1nPn6U0-dataset.png",
+          "bytes": 99090,
+          "sha256": "fc3f929982d9bbf8cfc39200fd406acf80f3bd632732c214b340e5ba4c68d940",
+          "player_seconds": 550,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Six expected category/priority pairs; first actual output Billing Issue differs from Billing. Bodies truncated, not fully read."
+        },
+        {
+          "path": "studies/local/backfill-v03--zFd1nPn6U0-baseline.png",
+          "bytes": 84407,
+          "sha256": "0c391dc7c1a05b298f5d1c79e0ab26aea6e828ad40a7bc9c7c90cdd4e96952bc",
+          "player_seconds": 610,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Completed baseline: priority 0.67 and category 0.00; historical failed runs also visible."
+        },
+        {
+          "path": "studies/local/backfill-v03--zFd1nPn6U0-retest.png",
+          "bytes": 88610,
+          "sha256": "19abdf89ddc4c5ff0911eba870bbaacfecd283eedd931cfbf08439733ec2e125",
+          "player_seconds": 675,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "New completed run: category 1.00 and priority still 0.67, versus preceding 0.00/0.67."
+        },
+        {
+          "path": "studies/local/backfill-v03--zFd1nPn6U0-metric-error.png",
+          "bytes": 94562,
+          "sha256": "74962785bdf1a13bf54e5facf2b02aff4c0c01c61c9d6f1cc1a213acd8fe7f2c",
+          "player_seconds": 815,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Historical Set Metrics error messages truncated in table; complete configuration-error claim comes from narration, root cause unverified."
+        },
+        {
+          "path": "studies/local/backfill-v03--zFd1nPn6U0-judge-workaround.png",
+          "bytes": 115807,
+          "sha256": "de9beca7cefb7c745264aecba2d18e1ca77725186c92135ff7bb30121cab144f",
+          "player_seconds": 835,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "RAG flow: Supabase retrieval, separate judging agent with parser, Score, and disconnected evaluation node; Gmail send on normal branch not executed in this frame."
+        },
+        {
+          "path": "studies/local/backfill-v03--zFd1nPn6U0-model-compare.png",
+          "bytes": 93817,
+          "sha256": "3427f66b7e199e2ff878696ce1675c84d54c2a49958e7bf12842d89519a6bfde",
+          "player_seconds": 955,
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Runs 13 and 14 show score 3.50→4.30 and executionTime 30676.10→13604.00 without visible unit. Tokens rise 3287.50→3708.60; no monetary cost shown."
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "duration_seconds_metadata": 1045,
+      "duration_seconds_observed_player": 1045,
+      "timing_note": "Caption span 0.160–1047.039s exceeds known duration by 2.039s; accuracy/speech completeness unverified.",
+      "source_or_practice_executed": false,
+      "current_interfaces_verified": false,
+      "desktop_cli_parity_assumed": false,
+      "sufficiency": "Concrete category correction/retest and model comparison on prepared evaluation workflows; not setup from zero or proof of production reliability.",
+      "material_findings": [
+        "Exact category correction succeeds on reused six cases while priority stays 0.67",
+        "Judge workaround shown but original node bug/root cause and equivalence unverified",
+        "3.50→4.30 is judge score, not percentage accuracy; no reserved set or independent replication",
+        "Lower time visible; lower cost claimed without monetary accounting"
+      ],
+      "pending": [
+        "Continuous audiovisual review and complete datasets/node expressions",
+        "Current n8n interfaces/access and original metric-node correction",
+        "Independent judge calibration, held-out examples, repeatability and end-to-end setup"
+      ]
     }
   ],
-  "round_complete": false
+  "round_complete": true,
+  "round_completion_meaning": "Three full caption readings and original studies delivered; all audiovisual/full-speech certifications remain false."
 }

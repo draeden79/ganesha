@@ -1,0 +1,49 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-code-in-action/github-actions-and-code-review",
+  "title": "GitHub Actions and Code Review",
+  "observed_at": "2026-09-28T21:43:01.727Z",
+  "method": "Browser rendered public article, text read separately",
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/nVGcWczH8fk?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "GitHub Actions and Code Review"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=nVGcWczH8fk",
+      "title": "Watch on YouTube\n"
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/github-actions-and-code-review#the-managed-path-code-review",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/github-actions-and-code-review#what-code-review-will-and-wont-do",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/github-actions-and-code-review#the-do-it-yourself-path-the-github-action",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/github-actions-and-code-review#a-workflow-that-responds-to-claude",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/github-actions-and-code-review#a-workflow-that-runs-on-a-schedule",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/github-actions-and-code-review#tuning-the-run-with-claudeargs",
+      "title": ""
+    },
+    {
+      "url": "https://academy.claude.com/courses/claude-code-in-action/github-actions-and-code-review#which-one-should-you-use",
+      "title": ""
+    }
+  ],
+  "artifact_path": "studies/local/backfill-ac11-github.txt",
+  "transcript_label_observed": false
+}
