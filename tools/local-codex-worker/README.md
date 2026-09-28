@@ -1,6 +1,7 @@
 # Ganesha local Codex worker
 
-Runs the model-generation portion of Ganesha on the owner's Windows computer.
+Runs Ganesha's Codex worker on the owner's Windows computer. Model inference
+uses OpenAI's service through the locally authenticated Codex CLI.
 Vercel retains Slack authentication, request history, deterministic page
 rendering/publication and delivery. The worker polls outbound HTTPS and has no
 listening port. One job runs at a time using local Codex with ChatGPT sign-in.
@@ -53,11 +54,15 @@ fake providers and never consume model usage.
   served by Vercel. Keep the PC awake while accepting local generation work.
 - Ctrl+C stops the current run and releases it for recovery when the host is
   reachable. Restart with `npm start`. A PID lock prevents ordinary duplicate
-  launches. Startup is manual until the end-to-end deployment is verified.
+  launches. Startup is manual; Windows login/reboot autostart is not configured.
 - Logs contain event names, opaque job IDs and selected model only. Per-job schema
   and result files are removed after the run; `.runtime/` is ignored by Git.
 
 The API and ownership agreement are in `../../docs/local-codex-worker-contract.md`.
-This package is not activated merely by passing the smoke test. Activation also
-requires host integration, a real Slack brief producing a verified public page
-and same-thread reply, a revision, and offline/restart recovery verification.
+Production activation was verified on 2026-09-28: both Slack roles completed
+through GPT-6 Astra, a human brief produced a public demonstration page and an
+original-thread reply, and a revision queued while the worker was stopped
+completed at the same URL after restart. The active PC instance runs from
+`C:\Users\manue\Documents\ChatGPT\Ganesha\review\local-codex-worker`.
+Do not start the versioned copy under `ganesha/tools` alongside that instance;
+the PID lock applies to one runtime directory.
