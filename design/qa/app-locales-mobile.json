@@ -1,0 +1,116 @@
+{
+  "build": "96a9edb",
+  "viewport": "390x844",
+  "results": [
+    {
+      "dir": "ltr",
+      "feedback": "Vamos tentar de novoIsso expressa uma preferência, mas não define como testar o contato. Tente novamente: procure uma ação e um resultado que você consiga observar.1 tentativa(s)",
+      "font": "\"Figtree Variable\", system-ui, sans-serif",
+      "heading": "Verificação 1: o pedido é verificável?",
+      "headingTracking": "-1.16px",
+      "lang": "pt-BR",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "feedback": "Let's try againThis expresses a preference, but does not define how to test contact. Try again: look for an action and a result you can observe.1 attempt(s)",
+      "font": "\"Figtree Variable\", system-ui, sans-serif",
+      "heading": "Check 1: can the request be tested?",
+      "headingTracking": "-1.16px",
+      "lang": "en",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "feedback": "Intentémoslo de nuevoExpresa una preferencia, pero no define cómo probar el contacto. Inténtalo de nuevo: busca una acción y un resultado que puedas observar.1 intento(s)",
+      "font": "\"Figtree Variable\", system-ui, sans-serif",
+      "heading": "Verificación 1: ¿se puede comprobar la petición?",
+      "headingTracking": "-1.16px",
+      "lang": "es",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "feedback": "RéessayonsCela exprime une préférence, mais ne définit pas comment tester le contact. Réessayez : cherchez une action et un résultat observables.1 tentative(s)",
+      "font": "\"Figtree Variable\", system-ui, sans-serif",
+      "heading": "Vérification 1 : la demande est-elle testable ?",
+      "headingTracking": "-1.16px",
+      "lang": "fr",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "feedback": "Versuchen wir es erneutDas ist eine Vorliebe, legt aber keinen Test für den Kontakt fest. Versuche es erneut: Suche eine Aktion und ein Ergebnis, die du beobachten kannst.1 Versuch(e)",
+      "font": "\"Figtree Variable\", system-ui, sans-serif",
+      "heading": "Prüfung 1: Ist der Auftrag überprüfbar?",
+      "headingTracking": "-1.16px",
+      "lang": "de",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "feedback": "もう一度挑戦しましょう好みは伝わりますが、連絡機能をどうテストするかは決まっていません。 もう一度考えましょう。観察できる操作と結果を探してください。試行回数：1",
+      "font": "\"Hiragino Kaku Gothic ProN\", \"Yu Gothic\", Meiryo, sans-serif",
+      "heading": "確認1：その依頼は検証できる？",
+      "headingTracking": "normal",
+      "lang": "ja",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "feedback": "फिर से कोशिश करेंयह पसंद बताता है, लेकिन संपर्क सुविधा जाँचने का तरीका नहीं। फिर कोशिश करें: ऐसी क्रिया और परिणाम खोजें जिन्हें आप देख सकें।1 प्रयास",
+      "font": "\"Noto Sans Devanagari Variable\", \"Nirmala UI\", sans-serif",
+      "heading": "जाँच 1: क्या अनुरोध जाँचने योग्य है?",
+      "headingTracking": "-1.16px",
+      "lang": "hi",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "feedback": "Mari coba lagiIni menyatakan preferensi, tetapi tidak menjelaskan cara menguji kontak. Coba lagi: cari tindakan dan hasil yang bisa diamati.1 percobaan",
+      "font": "\"Figtree Variable\", system-ui, sans-serif",
+      "heading": "Pemeriksaan 1: apakah permintaan bisa diuji?",
+      "headingTracking": "-1.16px",
+      "lang": "id",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "dir": "rtl",
+      "feedback": "لنحاول مرة أخرىهذا تفضيل، لكنه لا يحدد كيفية اختبار التواصل. حاول مرة أخرى: ابحث عن فعل ونتيجة يمكنك ملاحظتهما.1 محاولة",
+      "font": "\"Noto Sans Arabic Variable\", Tahoma, sans-serif",
+      "heading": "التحقق ١: هل يمكن اختبار الطلب؟",
+      "headingTracking": "normal",
+      "lang": "ar",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "feedback": "다시 해 볼까요선호는 표현하지만 연락 기능을 테스트하는 방법은 정하지 않았습니다. 다시 시도하세요. 관찰할 수 있는 동작과 결과를 찾아보세요.1회 시도",
+      "font": "\"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "heading": "확인 1: 요청을 검증할 수 있나요?",
+      "headingTracking": "normal",
+      "lang": "ko",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "dir": "ltr",
+      "feedback": "再试一次这表达了偏好，但没有定义如何测试联系功能。 再试一次：寻找你能观察到的操作和结果。尝试 1 次",
+      "font": "\"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "heading": "检查 1：请求可以验证吗？",
+      "headingTracking": "normal",
+      "lang": "zh-CN",
+      "scrollWidth": 390,
+      "width": 390
+    }
+  ]
+}

@@ -51,3 +51,38 @@ As capturas são do estado e viewport indicados pelo nome. Screenshots de viewpo
 - `qa/prototype-ar-mobile.png`: jornada em árabe, 390px.
 - `qa/prototype-ar-practice.png`: prática em árabe, 390px.
 - `qa/app-mobile-step-hints.png`: app após correção de dicas/índice.
+
+## Adendo — app estável em localhost:3101
+
+Currículo `course.first-site@0.1.0`, Educador `4525851`; implementação final `96a9edb` (reteste do bundle final registrado abaixo). Origem exclusiva de QA: `localhost:3101`, sem alterar dados da origem do usuário.
+
+| Cenário | Evidência observada |
+| --- | --- |
+| Árabe mobile, 390×844 | `html dir=rtl`; Noto Sans Arabic Variable; jornada, formulário e verificação sem overflow; `qa/app-ar-mobile.png`, `qa/app-ar-practice.png` |
+| Árabe desktop, 1280×900 | Sidebar à direita (x=1056px); conteúdo começa em x=0; largura do documento1280px; `qa/app-ar-desktop-check.png` |
+| Campo de texto RTL/LTR | `textarea dir=auto` permite texto próprio de qualquer direção; nomes de ferramentas isolados por bdi |
+| Rubricas mobile | Alturas56–76px em árabe, labels completos e sem truncamento; cartões de prática legíveis |
+| Erro em árabe | Seleção preservada, feedback localizado em role=status, foco permanece no botão de verificar; Continuar permanece desabilitado; `qa/app-ar-feedback.png` |
+| Troca de idioma | Os11locales mantiveram a etapa3, a seleção e a tentativa; título, opções, feedback, dicas e rótulos mudaram para o locale escolhido |
+| Overflow dos11locales | Verificação com feedback incorreto: `clientWidth=scrollWidth=390` em cada idioma; relatório `qa/app-locales-mobile.json` |
+| Hindi | Noto Sans Devanagari Variable; captura inspecionada sem glifos ausentes ou corte; `qa/app-hi-mobile-check.png` |
+| Japonês | Stack Hiragino/Yu Gothic/Meiryo; captura inspecionada; `qa/app-ja-mobile-check.png` |
+| Coreano | Stack Apple SD Gothic Neo/Malgun Gothic; captura inspecionada; `qa/app-ko-mobile-check.png` |
+| Chinês simplificado | Stack PingFang SC/Microsoft YaHei; `qa/app-zh-mobile-check.png`; idioma zh-CN conforme escopo |
+
+Revisão **visual**, não revisão linguística humana. A renderização foi verificada no navegador do macOS disponível; compatibilidade de fallback CJK em Linux/Android/Windows ainda depende dos testes da distribuição. Não certificamos fluência das traduções nem comportamento em leitor de tela real.
+
+Ajustes finais solicitados e recebidos no código pelo Construtor: isolar wordmark em LTR para preservar posição do ponto; remover diagrama em sequência da verificação de alternativas (as próprias opções são os cartões comparáveis); retirar tracking latino de títulos/eyebrows árabes e CJK. Recomendação de ordem mobile: índice compacto antes do artigo; título/objetivo antes das dicas/critérios. O conteúdo de apoio deve permanecer acessível.
+
+### Reteste final — commit `96a9edb`
+
+Servidor3101 reiniciado após o build. Reload confirmou Figtree/Noto novamente carregadas; uma perda transitória de CSS durante a troca do build foi resolvida pelo reinício e não permaneceu no candidato final.
+
+- Wordmark com `direction:ltr` no árabe; ponto e identidade preservados.
+- Headings árabes com `letter-spacing:normal`; verificação de alternativas sem figura de sequência redundante.
+- Índice compacto acima do artigo; dicas/critérios depois do artigo no mobile. Título observado em y≈552px e dicas em y≈1677px na tela árabe390px, em vez de ocupar a área anterior ao título.
+- Os11locales foram retestados em390×844 após reinício: nenhum overflow horizontal. `qa/app-locales-mobile.json` identifica o hash final. Capturas hi/ja/ko/zh substituídas pelas do build final.
+- Desktop1280×900: jornada sem overflow e imagem com object-fit:contain; `qa/app-desktop-journey.png`. RTL desktop em `qa/app-ar-desktop-check.png`; mobile final em `qa/app-ar-final.png`.
+- Capturas `app-ar-mobile`, `app-ar-practice`, `app-ar-feedback` registram os fluxos verificados antes das últimas correções cosméticas; não devem ser confundidas com o layout final.
+
+**Conclusão do Artista:** sem defeito visual bloqueador encontrado no escopo revisado. Dicas, critérios, duas verificações e prática de transferência preservados. Revisão nativa das traduções, leitor de tela real e testes multiplataforma permanecem pendentes. A aprovação funcional/de publicação pertence ao Diretor.
