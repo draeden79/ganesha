@@ -1,0 +1,33 @@
+name: Public domain diagnostic
+on:
+  workflow_dispatch:
+  push:
+    branches: [codex/gdevops-dns]
+    paths: [.github/workflows/domain-diagnostic.yml]
+permissions:
+  contents: read
+jobs:
+  public-https:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify public DNS and HTTPS without local proxy or TLS bypass
+        shell: bash
+        run: |
+          failed=0
+          for host in iganesha.online www.iganesha.online; do
+            echo "DNS $host"
+            dig +short "$host" A
+            for path in / /classroom/pt-BR /classroom/ar; do
+              url="https://$host$path"
+              echo "Checking $url"
+              if curl --fail --silent --show-error --location --max-redirs 5 --max-time 25 --proto '=https' --proto-redir '=https' --dump-header /tmp/domain-headers --output /tmp/domain-body --write-out 'status=%{http_code} effective=%{url_effective} tls_verify=%{ssl_verify_result}\n' "$url"; then
+                head -c 180 /tmp/domain-body
+                echo
+                grep -iE '^(HTTP/|location:|content-type:|server:)' /tmp/domain-headers || true
+              else
+                failed=1
+              fi
+            done
+          done
+          exit "$failed"
