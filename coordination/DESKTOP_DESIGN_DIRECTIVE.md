@@ -34,3 +34,9 @@ Artista identificou via Computer Use a janela `Ganesha`, aplicativo `Ganesha`, 1
 Elementos observados e aceitos como direção: fundo lavanda muito claro, lateral branca de cerca de 250px, marca com elefante, painel principal branco, trilha horizontal de cartões estreitos/altos, cartão selecionado ligado visualmente ao painel lavanda inferior, ilustração à direita e uma ação principal no canto inferior direito. A referência apresenta muito menos avisos e superfícies concorrentes que o primeiro web.
 
 Adaptação acordada: controles discretos de idioma/ferramenta e um aviso de demonstração; retirar hero e anel de progresso redundantes da composição anterior. A quantidade de aulas e o nome do perfil da captura não são dados de produto a copiar. O web mantém o currículo canônico disponível e os IDs existentes. Artista ainda inspeciona a etapa nativa antes de fechar formulários e avaliações; Construtor aguarda essa entrega concreta.
+
+## Entrega do link ao usuário
+
+O usuário pediu receber o link nesta tarefa assim que a nova versão estiver disponível para teste. Artista e Construtor foram avisados; Construtor enviará URL exata, commit e status da prévia ao Diretor e manterá o servidor ativo. O Diretor verificará que o link abre a interface refeita e o enviará aqui, sem aguardar uma liberação de produção.
+
+Um acompanhamento desta tarefa foi configurado a cada dez minutos, silencioso enquanto não houver resultado acionável, para garantir o envio mesmo após encerrar este turno. Depois que o link novo for enviado, o acompanhamento será desativado sem arquivar a tarefa nem repetir o aviso. Não confundir a prévia antiga com a nova interface.
