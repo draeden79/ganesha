@@ -10,7 +10,7 @@ Limites: progresso local por versão, práticas externas autodeclaradas, traduç
 
 Slack: exclusivamente bot Diretor — Produto; nunca a conta pessoal de Lucas. Briefing ao Glandingpage em1790630978.642999; proposta gerada, mas pt-BR e CTA de acesso ainda pendentes na página. Marco de produção preparado em slack/V03_RELEASE.md; confirmação de envio no ledger. O fluxo de mensagens permanece por marcos, sem agenda horária.
 
-Devorador continua pesquisa. Lote30355da integrado e aprovado em17 testes de pipeline+8 de aquisição; novo98e0d10 recebido, ainda pendente de integração neste checkout. Aquisição não equivale a estudo; não foi declarada cobertura audiovisual integral.
+Devorador continua pesquisa. Lotes `98e0d10` e `373192b` integrados como `9b99b3b` e `a00449b`; 17 testes do pipeline e 14 de aquisição passaram. Checkpoint: 149 vídeos com texto adquirido, 30 transcrições integralmente lidas e 76 registros/75 fichas distintas. Aquisição de rede no YouTube suspensa até 29/09/2026 22:06:47 UTC após aviso de bloqueio; estudo local e artigos continuam. O incidente de oito aquisições após aviso foi auditado e o coletor corrigido para parar imediatamente. Aquisição não equivale a estudo; nenhuma cobertura audiovisual integral foi declarada. Esses lotes não alteram a versão publicada.
 
 ## Histórico anterior ao sprint público
 
