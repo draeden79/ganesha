@@ -1,0 +1,1162 @@
+{
+  "scope": "Source structural/editorial check; no app execution",
+  "checkedAt": "2026-09-28T21:15:53.223400+00:00",
+  "sourceHashes": {
+    "authoring/foundations.pt-BR.json": "b66f3c6d47a345798e82570ff7e260d1272fd5dfa0ed50c707f5bad7e615544b",
+    "authoring/foundations.en.json": "7bd8bc9839fc1b2902b1703ad1a5485a808f7f19178c6570807c0cdb4f0687a5",
+    "authoring/sites.pt-BR.json": "c835ca04f05b03734725097420565e0b018fbd07206303be4cc630bc1c5d1d1c",
+    "authoring/sites.en.json": "4db11b5a3939bff82a3b77ae1030a1a477819d1d12c01c7acbaf3e513f3f6c55",
+    "authoring/apps.pt-BR.json": "79f1e244a4417c6be3f87230d4fec329cab881b765b8d09a9bf942d6dcfbf2d8",
+    "authoring/apps.en.json": "62dadd88c88106ac9a5debbfa166906133ebcf3e433f13afff2572999262a2f4",
+    "authoring/automation.pt-BR.json": "394a2ba7cc7e612eff2a571d20150d5c6d22591747f793bb1f1500483f072d98",
+    "authoring/automation.en.json": "7211b77fe13b79e06c300b61281ffe3cad552159478e303d06500f879536cb74"
+  },
+  "domains": {
+    "foundations": {
+      "lessons": 3,
+      "steps": 30,
+      "kinds": {
+        "practice": 21,
+        "check": 6,
+        "reflect": 3
+      },
+      "bodyRange": [
+        17,
+        77
+      ],
+      "rows": [
+        {
+          "lesson": "workspace",
+          "step": "access",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 65,
+          "titleChars": 43,
+          "criteria": 1
+        },
+        {
+          "lesson": "workspace",
+          "step": "folder",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 74,
+          "titleChars": 35,
+          "criteria": 1
+        },
+        {
+          "lesson": "workspace",
+          "step": "fictional-brief",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 72,
+          "titleChars": 36,
+          "criteria": 1
+        },
+        {
+          "lesson": "workspace",
+          "step": "context-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 20,
+          "titleChars": 26,
+          "criteria": 1
+        },
+        {
+          "lesson": "workspace",
+          "step": "select-context",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 77,
+          "titleChars": 37,
+          "criteria": 1
+        },
+        {
+          "lesson": "workspace",
+          "step": "read-only-request",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 71,
+          "titleChars": 32,
+          "criteria": 1
+        },
+        {
+          "lesson": "workspace",
+          "step": "compare-context",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 64,
+          "titleChars": 31,
+          "criteria": 1
+        },
+        {
+          "lesson": "workspace",
+          "step": "access-recovery",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 59,
+          "titleChars": 38,
+          "criteria": 1
+        },
+        {
+          "lesson": "workspace",
+          "step": "access-evidence",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 19,
+          "titleChars": 31,
+          "criteria": 1
+        },
+        {
+          "lesson": "workspace",
+          "step": "workspace-record",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "bodyWords": 48,
+          "titleChars": 39,
+          "criteria": 1
+        },
+        {
+          "lesson": "requests",
+          "step": "desired-result",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 54,
+          "titleChars": 37,
+          "criteria": 1
+        },
+        {
+          "lesson": "requests",
+          "step": "relevant-context",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 51,
+          "titleChars": 40,
+          "criteria": 1
+        },
+        {
+          "lesson": "requests",
+          "step": "complete-request",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 54,
+          "titleChars": 38,
+          "criteria": 3
+        },
+        {
+          "lesson": "requests",
+          "step": "scope-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 26,
+          "titleChars": 30,
+          "criteria": 1
+        },
+        {
+          "lesson": "requests",
+          "step": "worked-plan",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 56,
+          "titleChars": 35,
+          "criteria": 1
+        },
+        {
+          "lesson": "requests",
+          "step": "clarification",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 55,
+          "titleChars": 34,
+          "criteria": 1
+        },
+        {
+          "lesson": "requests",
+          "step": "targeted-revision",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 60,
+          "titleChars": 41,
+          "criteria": 1
+        },
+        {
+          "lesson": "requests",
+          "step": "send-and-review",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 58,
+          "titleChars": 39,
+          "criteria": 1
+        },
+        {
+          "lesson": "requests",
+          "step": "plan-evidence",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 25,
+          "titleChars": 27,
+          "criteria": 1
+        },
+        {
+          "lesson": "requests",
+          "step": "portable-request",
+          "kind": "reflect",
+          "mode": "guided-simulation",
+          "bodyWords": 58,
+          "titleChars": 47,
+          "criteria": 1
+        },
+        {
+          "lesson": "verification",
+          "step": "evidence-types",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 55,
+          "titleChars": 45,
+          "criteria": 1
+        },
+        {
+          "lesson": "verification",
+          "step": "success-criteria",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 58,
+          "titleChars": 43,
+          "criteria": 1
+        },
+        {
+          "lesson": "verification",
+          "step": "baseline",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 45,
+          "titleChars": 26,
+          "criteria": 1
+        },
+        {
+          "lesson": "verification",
+          "step": "diagnosis-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 17,
+          "titleChars": 39,
+          "criteria": 1
+        },
+        {
+          "lesson": "verification",
+          "step": "reproduction",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 54,
+          "titleChars": 36,
+          "criteria": 1
+        },
+        {
+          "lesson": "verification",
+          "step": "repair-request",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 50,
+          "titleChars": 30,
+          "criteria": 1
+        },
+        {
+          "lesson": "verification",
+          "step": "retest",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 51,
+          "titleChars": 50,
+          "criteria": 3
+        },
+        {
+          "lesson": "verification",
+          "step": "real-small-change",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 54,
+          "titleChars": 31,
+          "criteria": 1
+        },
+        {
+          "lesson": "verification",
+          "step": "verification-limit",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 18,
+          "titleChars": 38,
+          "criteria": 1
+        },
+        {
+          "lesson": "verification",
+          "step": "verification-record",
+          "kind": "reflect",
+          "mode": "guided-simulation",
+          "bodyWords": 58,
+          "titleChars": 48,
+          "criteria": 3
+        }
+      ]
+    },
+    "sites": {
+      "lessons": 3,
+      "steps": 30,
+      "kinds": {
+        "explain": 2,
+        "practice": 20,
+        "check": 6,
+        "reflect": 2
+      },
+      "bodyRange": [
+        45,
+        78
+      ],
+      "rows": [
+        {
+          "lesson": "site-build",
+          "step": "page-contract",
+          "kind": "explain",
+          "mode": "concept",
+          "bodyWords": 65,
+          "titleChars": 31,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-build",
+          "step": "project-folder",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 63,
+          "titleChars": 23,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-build",
+          "step": "plan-page",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 59,
+          "titleChars": 24,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-build",
+          "step": "scope-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 47,
+          "titleChars": 25,
+          "criteria": 1
+        },
+        {
+          "lesson": "site-build",
+          "step": "create-html",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 57,
+          "titleChars": 30,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-build",
+          "step": "open-local-page",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 62,
+          "titleChars": 28,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-build",
+          "step": "verify-content",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 57,
+          "titleChars": 34,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-build",
+          "step": "first-contact-test",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 57,
+          "titleChars": 24,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-build",
+          "step": "evidence-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 47,
+          "titleChars": 31,
+          "criteria": 1
+        },
+        {
+          "lesson": "site-build",
+          "step": "local-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "bodyWords": 62,
+          "titleChars": 40,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-quality",
+          "step": "quality-criteria",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 59,
+          "titleChars": 28,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-quality",
+          "step": "read-as-visitor",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 63,
+          "titleChars": 26,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-quality",
+          "step": "contact-behavior",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 61,
+          "titleChars": 29,
+          "criteria": 3
+        },
+        {
+          "lesson": "site-quality",
+          "step": "behavior-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 50,
+          "titleChars": 34,
+          "criteria": 1
+        },
+        {
+          "lesson": "site-quality",
+          "step": "keyboard-path",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 63,
+          "titleChars": 24,
+          "criteria": 3
+        },
+        {
+          "lesson": "site-quality",
+          "step": "narrow-layout",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 65,
+          "titleChars": 37,
+          "criteria": 3
+        },
+        {
+          "lesson": "site-quality",
+          "step": "targeted-repair",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 59,
+          "titleChars": 29,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-quality",
+          "step": "regression-pass",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 62,
+          "titleChars": 41,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-quality",
+          "step": "regression-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 45,
+          "titleChars": 31,
+          "criteria": 1
+        },
+        {
+          "lesson": "site-quality",
+          "step": "quality-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "bodyWords": 58,
+          "titleChars": 38,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-publish",
+          "step": "local-versus-hosted",
+          "kind": "explain",
+          "mode": "concept",
+          "bodyWords": 64,
+          "titleChars": 39,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-publish",
+          "step": "publish-package",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 78,
+          "titleChars": 29,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-publish",
+          "step": "hosting-account",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 61,
+          "titleChars": 34,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-publish",
+          "step": "package-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 51,
+          "titleChars": 25,
+          "criteria": 1
+        },
+        {
+          "lesson": "site-publish",
+          "step": "first-upload",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 64,
+          "titleChars": 24,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-publish",
+          "step": "visitor-permission",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 68,
+          "titleChars": 33,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-publish",
+          "step": "visitor-test",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 67,
+          "titleChars": 33,
+          "criteria": 3
+        },
+        {
+          "lesson": "site-publish",
+          "step": "publish-update",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 64,
+          "titleChars": 33,
+          "criteria": 2
+        },
+        {
+          "lesson": "site-publish",
+          "step": "public-access-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 52,
+          "titleChars": 42,
+          "criteria": 1
+        },
+        {
+          "lesson": "site-publish",
+          "step": "delivery-record",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 65,
+          "titleChars": 41,
+          "criteria": 3
+        }
+      ]
+    },
+    "apps": {
+      "lessons": 3,
+      "steps": 30,
+      "kinds": {
+        "practice": 21,
+        "check": 6,
+        "reflect": 3
+      },
+      "bodyRange": [
+        46,
+        63
+      ],
+      "rows": [
+        {
+          "lesson": "app-state",
+          "step": "state-model",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 60,
+          "titleChars": 26,
+          "criteria": 2
+        },
+        {
+          "lesson": "app-state",
+          "step": "request-state",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 56,
+          "titleChars": 34,
+          "criteria": 2
+        },
+        {
+          "lesson": "app-state",
+          "step": "serve-local",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 60,
+          "titleChars": 27,
+          "criteria": 3
+        },
+        {
+          "lesson": "app-state",
+          "step": "check-empty",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 46,
+          "titleChars": 29,
+          "criteria": 1
+        },
+        {
+          "lesson": "app-state",
+          "step": "add-two",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 54,
+          "titleChars": 31,
+          "criteria": 2
+        },
+        {
+          "lesson": "app-state",
+          "step": "toggle-one",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 51,
+          "titleChars": 33,
+          "criteria": 3
+        },
+        {
+          "lesson": "app-state",
+          "step": "remove-target",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 53,
+          "titleChars": 26,
+          "criteria": 2
+        },
+        {
+          "lesson": "app-state",
+          "step": "input-keyboard",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 53,
+          "titleChars": 24,
+          "criteria": 3
+        },
+        {
+          "lesson": "app-state",
+          "step": "check-regression",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 47,
+          "titleChars": 31,
+          "criteria": 1
+        },
+        {
+          "lesson": "app-state",
+          "step": "state-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "bodyWords": 51,
+          "titleChars": 27,
+          "criteria": 2
+        },
+        {
+          "lesson": "app-storage",
+          "step": "memory-storage",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 58,
+          "titleChars": 37,
+          "criteria": 2
+        },
+        {
+          "lesson": "app-storage",
+          "step": "request-storage",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 56,
+          "titleChars": 35,
+          "criteria": 3
+        },
+        {
+          "lesson": "app-storage",
+          "step": "reload-state",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 52,
+          "titleChars": 31,
+          "criteria": 3
+        },
+        {
+          "lesson": "app-storage",
+          "step": "check-origin",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 51,
+          "titleChars": 33,
+          "criteria": 1
+        },
+        {
+          "lesson": "app-storage",
+          "step": "reopen-limit",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 57,
+          "titleChars": 39,
+          "criteria": 2
+        },
+        {
+          "lesson": "app-storage",
+          "step": "invalid-storage",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 58,
+          "titleChars": 35,
+          "criteria": 3
+        },
+        {
+          "lesson": "app-storage",
+          "step": "failed-write",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 57,
+          "titleChars": 38,
+          "criteria": 3
+        },
+        {
+          "lesson": "app-storage",
+          "step": "repair-persistence",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 57,
+          "titleChars": 38,
+          "criteria": 2
+        },
+        {
+          "lesson": "app-storage",
+          "step": "check-save-claim",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 50,
+          "titleChars": 40,
+          "criteria": 1
+        },
+        {
+          "lesson": "app-storage",
+          "step": "storage-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "bodyWords": 56,
+          "titleChars": 30,
+          "criteria": 3
+        },
+        {
+          "lesson": "app-delivery",
+          "step": "files-and-data",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 57,
+          "titleChars": 36,
+          "criteria": 2
+        },
+        {
+          "lesson": "app-delivery",
+          "step": "request-portable",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 63,
+          "titleChars": 30,
+          "criteria": 3
+        },
+        {
+          "lesson": "app-delivery",
+          "step": "export-inspect",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 55,
+          "titleChars": 27,
+          "criteria": 3
+        },
+        {
+          "lesson": "app-delivery",
+          "step": "check-contract",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 46,
+          "titleChars": 29,
+          "criteria": 1
+        },
+        {
+          "lesson": "app-delivery",
+          "step": "preview-cancel-import",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 54,
+          "titleChars": 28,
+          "criteria": 3
+        },
+        {
+          "lesson": "app-delivery",
+          "step": "reject-bad-import",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 61,
+          "titleChars": 36,
+          "criteria": 3
+        },
+        {
+          "lesson": "app-delivery",
+          "step": "restore-backup",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 55,
+          "titleChars": 40,
+          "criteria": 3
+        },
+        {
+          "lesson": "app-delivery",
+          "step": "package-handoff",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 55,
+          "titleChars": 33,
+          "criteria": 3
+        },
+        {
+          "lesson": "app-delivery",
+          "step": "check-delivery",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 56,
+          "titleChars": 40,
+          "criteria": 2
+        },
+        {
+          "lesson": "app-delivery",
+          "step": "maintain-version",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "bodyWords": 57,
+          "titleChars": 45,
+          "criteria": 3
+        }
+      ]
+    },
+    "automation": {
+      "lessons": 3,
+      "steps": 30,
+      "kinds": {
+        "practice": 21,
+        "check": 6,
+        "reflect": 3
+      },
+      "bodyRange": [
+        51,
+        80
+      ],
+      "rows": [
+        {
+          "lesson": "automation-input",
+          "step": "pipeline",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 53,
+          "titleChars": 30,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-input",
+          "step": "create-csv",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 59,
+          "titleChars": 24,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-input",
+          "step": "data-contract",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 63,
+          "titleChars": 29,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-input",
+          "step": "decimal-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 52,
+          "titleChars": 33,
+          "criteria": 1
+        },
+        {
+          "lesson": "automation-input",
+          "step": "reference-total",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 53,
+          "titleChars": 28,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-input",
+          "step": "failure-fixtures",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 51,
+          "titleChars": 32,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-input",
+          "step": "review-validation",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 56,
+          "titleChars": 34,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-input",
+          "step": "prepare-recovery",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 55,
+          "titleChars": 35,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-input",
+          "step": "duplicate-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 51,
+          "titleChars": 37,
+          "criteria": 1
+        },
+        {
+          "lesson": "automation-input",
+          "step": "handoff-input",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "bodyWords": 60,
+          "titleChars": 39,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-report",
+          "step": "execution-paths",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 61,
+          "titleChars": 38,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-report",
+          "step": "environment",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 58,
+          "titleChars": 29,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-report",
+          "step": "build-transform",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 62,
+          "titleChars": 35,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-report",
+          "step": "path-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 53,
+          "titleChars": 36,
+          "criteria": 1
+        },
+        {
+          "lesson": "automation-report",
+          "step": "normal-run",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 59,
+          "titleChars": 24,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-report",
+          "step": "repeat-run",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 59,
+          "titleChars": 32,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-report",
+          "step": "error-run",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 58,
+          "titleChars": 37,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-report",
+          "step": "recover-retest",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 57,
+          "titleChars": 34,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-report",
+          "step": "download-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 52,
+          "titleChars": 33,
+          "criteria": 1
+        },
+        {
+          "lesson": "automation-report",
+          "step": "deliver-report",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "bodyWords": 57,
+          "titleChars": 44,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-schedule",
+          "step": "schedule-boundary",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 58,
+          "titleChars": 29,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-schedule",
+          "step": "manual-gate",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 58,
+          "titleChars": 33,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-schedule",
+          "step": "durable-instructions",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "bodyWords": 59,
+          "titleChars": 45,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-schedule",
+          "step": "availability-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 56,
+          "titleChars": 37,
+          "criteria": 1
+        },
+        {
+          "lesson": "automation-schedule",
+          "step": "schedule-fields",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 58,
+          "titleChars": 31,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-schedule",
+          "step": "tool-conditions",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 65,
+          "titleChars": 33,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-schedule",
+          "step": "history-triage",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 80,
+          "titleChars": 27,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-schedule",
+          "step": "pause-rehearsal",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "bodyWords": 65,
+          "titleChars": 25,
+          "criteria": 2
+        },
+        {
+          "lesson": "automation-schedule",
+          "step": "change-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "bodyWords": 55,
+          "titleChars": 31,
+          "criteria": 1
+        },
+        {
+          "lesson": "automation-schedule",
+          "step": "schedule-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "bodyWords": 60,
+          "titleChars": 29,
+          "criteria": 2
+        }
+      ]
+    }
+  },
+  "issues": [],
+  "compiledExternalRecordCheck": {
+    "steps": 67,
+    "bundleSha256": "3ef6d85dd87b1b6564ef983d7da689c63735e21b6151386e5611d71a6e1e5667"
+  }
+}
