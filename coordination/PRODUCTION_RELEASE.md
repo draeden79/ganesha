@@ -15,7 +15,7 @@ Commit validado e enviado ao GitHub: `2ac2fe859db98687fc4e3acacfbf0c56526452d9`,
 
 ## Coordenação e procedência
 
-A sessão de Manuel informou no Slack #devops às 20:49 UTC que assumiu deployment e GitHub. Às 21:04 UTC o Diretor encontrou o serviço publicado e enviou pelo bot próprio a confirmação do commit aprovado e os resultados de QA, solicitando a correspondência exata do SHA e coordenação das rotas. A página da Vercel indica origem CLI, sem SHA visível; a correspondência exata do deployment ao commit permanece pendente de confirmação do operador.
+A sessão de Manuel informou no Slack #devops às 20:49 UTC que assumiu deployment e GitHub. Às 21:04 UTC o Diretor encontrou o serviço publicado e enviou pelo bot próprio a confirmação do commit aprovado e os resultados de QA. Às 21:07 UTC Manuel confirmou no #management que `dpl_9hWCwktMbyqtRUWbhLicQJFUQVVc` usou exatamente `2ac2fe859db98687fc4e3acacfbf0c56526452d9` e que o deployment hospedeiro `dpl_B9Lfh9H6aioGkmXuemdpHkcBxAkE` está Ready, encaminhando apenas `/classroom` e seus descendentes. A correspondência do SHA é declaração do operador; a página Vercel/CLI não expõe esse SHA. Evidência: https://ganeshagrupo.slack.com/archives/C0C56JD9G20/p1790629647887779 . O operador também verificou português, árabe, assets, página de curso existente e saúde dos bots.
 
 Lucas autorizou expressamente aproveitar a publicação existente. O Diretor não alterou rotas, domínios ou o deployment de `ganesha-devops`.
 
