@@ -1,0 +1,35 @@
+/* Ganesha — tokens derivados integralmente de DESIGN_SYSTEM.md */
+:root {
+  color-scheme: light;
+  --g-bg: #FDFDFC;
+  --g-cream: #FBFAF8;
+  --g-lavender: #F5F3FB;
+  --g-white: #FFFFFF;
+  --g-ink: #17151F;
+  --g-muted: #686473;
+  --g-subtle: #807B8C;
+  --g-purple: #6C3BEE;
+  --g-purple-hover: #592BCF;
+  --g-purple-soft: #EDE6FD;
+  --g-line: #E7E3ED;
+  --g-control-line: #918B9D;
+  --g-success: #246548;
+  --g-success-bg: #EEF7F1;
+  --g-error: #A23837;
+  --g-error-bg: #FCEFEF;
+  --g-focus: #442194;
+  --g-font: 'Figtree', system-ui, sans-serif;
+  --g-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+  --g-space-1: 4px; --g-space-2: 8px; --g-space-3: 12px;
+  --g-space-4: 16px; --g-space-5: 20px; --g-space-6: 24px;
+  --g-space-8: 32px; --g-space-10: 40px; --g-space-12: 48px;
+  --g-radius-sm: 10px; --g-radius: 18px; --g-radius-lg: 28px;
+  --g-shadow: 0 8px 32px #17151F06;
+  --g-shadow-active: 0 5px 0 #DAD0F4;
+  --g-duration: 160ms;
+}
+:lang(ja) { --g-font: 'Noto Sans JP', system-ui, sans-serif; }
+:lang(hi) { --g-font: 'Noto Sans Devanagari', system-ui, sans-serif; }
+:lang(ar) { --g-font: 'Noto Sans Arabic', system-ui, sans-serif; }
+:lang(ko) { --g-font: 'Noto Sans KR', system-ui, sans-serif; }
+:lang(zh-CN) { --g-font: 'Noto Sans SC', system-ui, sans-serif; }
