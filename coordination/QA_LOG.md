@@ -59,3 +59,9 @@ Diretor executou 16 testes, TypeScript, check:content nos 11 idiomas e build Nex
 Esta verificação é técnica e não certifica estudo das fontes. Auditoria pedagógica do Educador e alteração canônica para rascunho estão sendo coordenadas; a auditoria estrutural histórica acima não comprova maturidade pedagógica atual. Novo QA visual depende da entrega baseada no Ganesha Desktop.
 
 Atualização após integração de `f51ae82` como `d881c25`: L01 agora está em `draft` e a lista de liberação está vazia. Os 16 testes e a cobertura dos 11 idiomas passaram novamente com esses dados. O relatório atual `CONTENT_AUDIT.json` falha somente por `course: no released lesson IDs to audit`, conforme esperado; nenhuma pendência de chave/versão foi encontrada. O preview explícito permanece navegável no modelo, sem promover o conteúdo a liberado.
+
+## Novo aplicativo baseado no desktop
+
+Aplicativo `ba992e7` e correção `ea16987` integrados como `d8a2c12` e `e3d859f`. Diretor conferiu DOM e screenshot da jornada real na porta 3101 e entregou o link ao usuário. Executou novamente 16 testes, cobertura 11×112/IDs e build Next com TypeScript, todos aprovados. Não alterou respostas nem concluiu atividades na origem entregue ao usuário.
+
+Artista entregou QA independente `3d86110`, integrado como `bc2909d`: desktop, prática/jornada nos 11 idiomas em 390×844, RTL, sete telas, quatro rubricas, ajuda/índice e erro/acerto nas duas verificações. Aviso externo duplicado foi removido sem retirar o callout curricular e retestado em pt-BR/árabe. Evidências em `design/NATIVE_QA.md` e `design/qa/app-native-*`. Sem achado visual pendente reportado. Não equivale a revisão linguística nativa nem nova regressão completa de todos os caminhos pelo Diretor.

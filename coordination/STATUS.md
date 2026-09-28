@@ -1,6 +1,6 @@
 # Status das entregas
 
-Atualizado em 2026-09-28. Estado: design baseado no Ganesha Desktop integrado e Construtor implementando o novo visual. L01 reclassificada como rascunho após auditoria pedagógica; demonstração explicitamente habilitada nos 11 idiomas. Pesquisa avançando da aquisição para estudo integral, com estados separados.
+Atualizado em 2026-09-28. Estado: novo aplicativo baseado no Ganesha Desktop integrado, revisado visualmente e link de teste entregue ao usuário. L01 permanece rascunho; demonstração explicitamente habilitada nos 11 idiomas. Pesquisa focal e primeiros estudos textuais aceitos com escopo delimitado. Bot Slack preparado; instalação aguarda confirmação exigida pela revisão automática.
 
 ## Registro de frentes
 
@@ -28,6 +28,15 @@ Atualizado em 2026-09-28. Estado: design baseado no Ganesha Desktop integrado e 
 - D011: Ganesha Desktop aberto no Mac é a nova referência visual principal, por pedido explícito do usuário. Artista inspeciona e especifica; Construtor implementa depois.
 - D012: aquisição não equivale a estudo. Auditoria confirmada pelo Devorador: três faixas exportadas, nenhuma transcrição integralmente estudada, nenhum vídeo com demonstração visual revisada e nenhum artigo certificado por ficha integral. Educador deve auditar a sustentação das etapas e manter a maturidade pedagógica de L01 como provisória. Ver `RESEARCH_DIRECTIVE.md`; o preview visual continua em paralelo.
 - D013: usuário redefiniu a prioridade diante do volume: selecionar conteúdos para pessoas comuns construírem sites, aplicativos e automações com IA. A coleta exaustiva de D010 fica em backlog e não bloqueia as aulas. Estudo integral e revisão visual pertinente das fontes selecionadas continuam exigidos. Devorador e Educador reorientados; automação semanal mantém a mesma agenda e passa a seguir curadoria por relevância/lacunas.
+- D014: Growth cuida de tráfego; Landing page de venda/login/pagamento; Produto das aulas. Usuário autorizou bot/app próprio no Slack Ganesha, `#management`, e informes somente por marcos relevantes. A rotina horária criada pausada foi excluída por correção explícita do usuário. Ver `SLACK_MANAGEMENT.md`; primeiro informe está pronto, ainda não enviado.
+
+## Última integração e entrega de preview
+
+App: origens `ba992e7`, `ea16987` integradas como `d8a2c12`, `e3d859f`. Artista: `9d3f936`, `9f5a5a5`, `3d86110` integrados como `385f851`, `474086b`, `bc2909d`. Pesquisa focal `8af94e4` como `0cd4524`; pareceres e aprofundamento do Educador `fb1bd22`, `f07681b`, `9f6a634` como `25c9352`, `aa1fe22`, `093a998`.
+
+Diretor executou 16 testes, cobertura dos 11 idiomas e build/TypeScript na nova integração, todos aprovados. Conferiu a página real em `http://127.0.0.1:3101/course/pt-BR` e enviou o link ao usuário. O acompanhamento de aviso de nova versão foi desativado para evitar duplicação. Construtor mantém essa prévia local estável; ainda não é URL pública para os demais times.
+
+Educador aceitou um documento textual integral para afirmações delimitadas de onboarding e a leitura integral de prompting apenas para método textual, com mídia pendente; nenhuma demonstração de UI aceita. Diretor conferiu tamanho/hash de quatro artefatos originais desse lote. O exemplo completo de L01 é elaboração original interna e simulada, ainda sem alteração dos 11 catálogos ou das avaliações vigentes. L01 continua `draft` e `releaseEligible=false`.
 
 ## Dependências externas
 
