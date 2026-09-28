@@ -1,18 +1,16 @@
 # Status das entregas
 
-## Checkpoint atual — 28/09/2026, 21:40 UTC
+## Checkpoint atual — 28/09/2026, 22:15 UTC
 
-Beta pública 0.2.0 preservada: quatro aulas, 24 etapas, 12 práticas, oito verificações e 11 idiomas. O operador Manuel confirmou o SHA `2ac2fe859db98687fc4e3acacfbf0c56526452d9` do deployment existente. Lucas autorizou reutilizar a publicação.
+Beta0.3 publicada no projeto existente ganesha-classroom: https://ganesha-classroom.vercel.app/classroom . Commit7c7be20a8bb5563f9a94823a18ee91ab782f4ed7, deployment dpl_HMyVPUxGwnyM1J6f2iEdRy5yRBbp, Ready.12 aulas,120 etapas,94 práticas/reflexões,24 verificações e11 idiomas completos,1192 mensagens por idioma.27 testes, build/TypeScript, tracing e QA dos11 idiomas aprovados. Detalhes em PRODUCTION_RELEASE.md e design/V03_UI_QA.md.
 
-Serviço: https://ganesha-classroom.vercel.app/classroom . Encaminhamento: https://ganesha-devops.vercel.app/classroom . Os domínios constam válidos na Vercel; o teste direto de iganesha.online neste ambiente continua limitado pela confiança TLS no proxy corporativo. Sem alteração adicional de rotas pelo Diretor.
+Navegação e atividade verificadas na produção, inclusive troca para árabe e proxy ganesha-devops.vercel.app/classroom. Teste direto de iganesha.online segue limitado por certificado do proxy corporativo. Nenhuma alteração no projeto/rotas da landing. Meta22:00 ultrapassada; publicação aproximadamente22:13 após aceite visual22:01 e recuperação de falha temporária de conexão.
 
-Expansão 0.3.0 integrada em área isolada: 12 aulas, 120 etapas, 94 práticas/reflexões e 24 verificações. App compatível com 0.2/0.3, 26 testes aprovados. Artista percorreu as 120 etapas, verificou erro/acerto, quatro fins de rota, retomada e celular; pt/en aprovados, ID aprovado em amostras. Relatório: `design/V03_UI_QA.md`. Prévia de revisão mais recente: http://127.0.0.1:3105/classroom/pt-BR . O pacote canônico ainda é 0.2.
+Limites: progresso local por versão, práticas externas autodeclaradas, traduções por IA sem revisão humana. Login/pagamento/sincronização em conta não integrados. P2 decorativo de conectores RTL continua não bloqueante.
 
-Localização: seis catálogos compilados (pt-BR/en/es/ja/hi/id), 1.192 chaves cada. FR e AR concluídos e enviados ao Educador para compilação; KO/DE/zh-CN seguem em conclusão. Todos são textos integrais gerados por IA, com revisão humana pendente. Não houve envio ao Google. A ativação depende dos 11 catálogos completos, validação estrutural/literal e amostras de interface, especialmente RTL. Meta de publicação: 22:00 UTC.
+Slack: exclusivamente bot Diretor — Produto; nunca a conta pessoal de Lucas. Briefing ao Glandingpage em1790630978.642999; proposta gerada, mas pt-BR e CTA de acesso ainda pendentes na página. Marco de produção preparado em slack/V03_RELEASE.md; confirmação de envio no ledger. O fluxo de mensagens permanece por marcos, sem agenda horária.
 
-Slack: usar exclusivamente Diretor — Produto (`B0C555U2MC1`), nunca a conta pessoal de Lucas. Briefing de conversão enviado ao Glandingpage em `1790630978.642999`, com proposta pública devolvida pelo agente. O Diretor verificou e pediu correção de pt-BR e CTA para a aula na mesma thread; a revisão ainda manteve inglês e links internos, portanto esses requisitos continuam pendentes. Ver `slack/GLANDINGPAGE_BRIEF.md` e `slack/GLANDINGPAGE_BRIEF_REVIEW.md`.
-
-Pesquisa: lote `30355da` integrado como `b6ab11a`; 17 testes do pipeline e oito de aquisição passaram. Checkpoint do Devorador: 45 registros de estudo/44 fichas, 91 vídeos com faixa adquirida, 24 transcrições integralmente lidas, 5.919 URLs conhecidas e nenhuma revisão audiovisual integral certificada. O acervo prioritário continua sendo adquirido/estudado; aquisição não equivale a estudo e cobertura histórica completa não foi declarada.
+Devorador continua pesquisa. Lote30355da integrado e aprovado em17 testes de pipeline+8 de aquisição; novo98e0d10 recebido, ainda pendente de integração neste checkout. Aquisição não equivale a estudo; não foi declarada cobertura audiovisual integral.
 
 ## Histórico anterior ao sprint público
 

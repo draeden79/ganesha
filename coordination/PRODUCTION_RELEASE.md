@@ -1,4 +1,16 @@
-# Publicação da beta 0.2.0 — 28/09/2026
+# Publicação da beta 0.3.0 — 28/09/2026
+
+Versão ampliada publicada e verificada em https://ganesha-classroom.vercel.app/classroom . Commit de produção: `7c7be20a8bb5563f9a94823a18ee91ab782f4ed7`, enviado previamente ao GitHub. Deployment: `dpl_HMyVPUxGwnyM1J6f2iEdRy5yRBbp`, Ready, URL imutável https://ganesha-classroom-7gnpha2ws.vercel.app . A CLI associou o domínio do projeto ao deployment após build e TypeScript aprovados. Metadados: classroomVersion=0.3.0 e sourceCommit acima.
+
+Conteúdo: 12 aulas, 120 etapas, 94 práticas/reflexões, 24 verificações obrigatórias e 11 idiomas com 1.192 mensagens cada. Pacote original do Educador `fc2efa3`, runtime final `d101d2f`/`d46956c`. Validação estrutural e de literais sem divergências antes da cópia canônica; 27 testes aprovados; currículo e 11 catálogos confirmados no tracing de produção. QA visual/funcional dos 11 idiomas aceito às22:01 UTC, sem P0/P1. Permanece um P2 decorativo: conectores da trilha não espelhados em RTL.
+
+Verificação em produção às22:14–22:15 UTC: navegação das12 aulas/120 etapas, abertura da primeira prática com controles ativos, bloqueio correto de registro vazio e troca para árabe com lang=ar/dir=rtl. O proxy https://ganesha-devops.vercel.app/classroom também abriu a atividade do novo curso. O acesso direto a https://iganesha.online/classroom continua limitado neste ambiente por ERR_CERT_AUTHORITY_INVALID; não houve bypass de TLS nem alteração de DNS/rotas. O projeto ganesha-devops e os serviços da landing foram preservados.
+
+A meta22:00 UTC não foi cumprida: o aceite visual terminou22:01 e a conexão local com GitHub/Vercel ficou indisponível durante o envio. A tentativa de usar o conector GitHub parou no primeiro blob por timeout da revisão automática de permissão, sem branch/ref alterada. Quando a rede voltou, o push original e o deploy CLI foram concluídos. O pacote foi publicado aproximadamente22:13 UTC.
+
+Limites da beta: progresso neste navegador; prática externa autodeclarada; traduções por IA com revisão humana pendente; sem login/pagamento/progresso em conta integrados. Não há declaração de aprendizagem comprovada ou execução dos projetos externos. Versões antigas de progresso permanecem armazenadas separadamente. Ponto anterior observado de produção: `dpl_AvgdR17fpJvGF1dpWBmPd2xbhaBo`.
+
+## Histórico da beta 0.2.0
 
 Commit validado e enviado ao GitHub: `2ac2fe859db98687fc4e3acacfbf0c56526452d9`, branch `codex/diretor-integracao`, repositório `draeden79/ganesha`.
 
