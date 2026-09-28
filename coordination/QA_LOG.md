@@ -29,3 +29,11 @@ Origem: `http://127.0.0.1:3100/course/pt-BR`, aplicativo ainda sem commit final,
 ## Próxima rodada
 
 Construtor entrega hash e build estável na porta 3101. Diretor repete percurso inteiro, troca de ferramenta/locale e bloqueio de conclusão sem duas verificações. Artista verifica visual, mobile e RTL; Construtor testa persistência, recuperação, acesso e build. A auditoria dos 11 catálogos depende do lote final do Educador.
+
+## Atualização antes da build estável
+
+- Construtor informou 13/13 testes unitários e checagem de tipos aprovados; ainda sem commit de aplicativo integrado no Diretor.
+- Diretor leu os testes de acesso, conteúdo e progresso. Incluem acesso fechado, ausência de fallback, duas avaliações, recuperação de dados inválidos, validação de rubrica e separação por versão/ferramenta.
+- Solicitado teste adicional da união/ordem/deduplicação de tentativas da mesma etapa em duas abas e concordância com a conclusão restaurada. O teste inicial de aba antiga cobria somente rascunho.
+- Artista detectou dicas/critérios ocultos e nomes de etapas ausentes em mobile; Construtor está corrigindo.
+- `127.0.0.1:3100` fica reservado à prévia do usuário. Diretor interrompeu interações nessa origem; repetição funcional será na porta 3101.
