@@ -1,16 +1,16 @@
 # Status das entregas
 
-Atualizado em 2026-09-28. Estado: aplicativo, pesquisa, design e primeira aula nos 11 idiomas integrados. Nova prioridade: Artista inspeciona Ganesha Desktop e Construtor refaz o visual após a entrega.
+Atualizado em 2026-09-28. Estado: design baseado no Ganesha Desktop integrado e Construtor implementando o novo visual. L01 reclassificada como rascunho após auditoria pedagógica; demonstração explicitamente habilitada nos 11 idiomas. Pesquisa avançando da aquisição para estudo integral, com estados separados.
 
 ## Registro de frentes
 
 | Frente | Task ID | Worktree | Branch | Commit integrado | Próxima ação |
 | --- | --- | --- | --- | --- | --- |
 | Diretor | `01a0e952-1611-7c60-9b42-115d061cd07a` | `/Users/lucasmarques/.codex/worktrees/2ae2/Ganesha` | `codex/diretor-integracao` | `6f6e1e3`, `eb13ea5`, `f51b56c` | Integrar L01 e aplicativo; revisar fluxo real |
-| Devorador | `01a0e952-8940-75d0-b32e-52078719adc0` | `/Users/lucasmarques/.codex/worktrees/81be/Ganesha` | `codex/devorador-research` | `5415072`, `0da1615`, `52032bf` (origens `c531c9e`, `52262547`, `11881fb`) | Retomar transcrições integrais de todos os vídeos prioritários; ampliar fontes quando útil |
-| Educador | `01a0e952-e209-7551-a613-65cca61cee14` | `/Users/lucasmarques/.codex/worktrees/30b2/Ganesha` | `codex/educador-curriculo` | `6764c41`, `d3c52af`, `708c7c9` (origens `0183dee`, `153c4d8`, `4525851`) | Fechar documentação; conteúdo integrado e auditado |
-| Artista | `01a0e953-3680-72c0-ba23-20b892fc7a76` | `/Users/lucasmarques/.codex/worktrees/e20b/Ganesha` | `codex/artista-experiencia` | `aeaf86e`, `25f0e5c` (origens `e915746`, `a74bac4`) | Inspecionar app Ganesha Desktop e especificar novo web |
-| Construtor | `01a0e953-a4c9-7e91-a92a-bf6d3f379944` | `/Users/lucasmarques/.codex/worktrees/dbf4/Ganesha` | `codex/construtor-app` | `31b2dd4`, `d63c674` (origens `f5319e9`, `96a9edb`) | Reimplementar visual após referência do Artista |
+| Devorador | `01a0e952-8940-75d0-b32e-52078719adc0` | `/Users/lucasmarques/.codex/worktrees/81be/Ganesha` | `codex/devorador-research` | Último `2469bf8` (origem `f42b1b5`) | Continuar aquisição de todo o histórico e estudo integral; entregar pedidos L01-S01..04 |
+| Educador | `01a0e952-e209-7551-a613-65cca61cee14` | `/Users/lucasmarques/.codex/worktrees/30b2/Ganesha` | `codex/educador-curriculo` | Último `d881c25` (origem `f51ae82`) | Avaliar fichas integrais e aprofundar sequência, exemplos, recuperação e avaliações |
+| Artista | `01a0e953-3680-72c0-ba23-20b892fc7a76` | `/Users/lucasmarques/.codex/worktrees/e20b/Ganesha` | `codex/artista-experiencia` | Último `afb56af` (origem `eaa70e6`) | Corrigir captura mobile do protótipo; revisar novo aplicativo quando disponível |
+| Construtor | `01a0e953-a4c9-7e91-a92a-bf6d3f379944` | `/Users/lucasmarques/.codex/worktrees/dbf4/Ganesha` | `codex/construtor-app` | Últimos `d333203`, `ac53253` (origens `92c4345`, `b9c19c7`) | Implementar design entregue e enviar URL/hash da nova versão testável |
 
 ## Decisões
 
@@ -38,7 +38,11 @@ Atualizado em 2026-09-28. Estado: aplicativo, pesquisa, design e primeira aula n
 
 ## Cobertura de idiomas
 
-L01 integrada e auditada estruturalmente nos 11 locales: 112/112 chaves presentes em cada um, sem mensagens pendentes/ausentes ou revisão de origem desatualizada. Revisão linguística humana: pendente em todos os idiomas; traduções produzidas por IA. Campo técnico da aula `ready`, curso `preview` 0.1.0; isso não certifica maturidade pedagógica, que permanece provisória até a auditoria D012. Catálogos da UI também passaram na auditoria do app; renderização será reavaliada após o novo design. Evidência: `CONTENT_AUDIT.json`.
+L01 integrada e auditada estruturalmente nos 11 locales: 112/112 chaves presentes em cada um, sem mensagens pendentes/ausentes ou revisão de origem desatualizada. Revisão linguística humana: pendente em todos os idiomas; traduções produzidas por IA. Aula `draft`, curso `preview` 0.1.0, lista de liberação vazia. `CONTENT_AUDIT.json` registra a única falha esperada: nenhuma aula liberada. Testes do app e cobertura de preview continuam passando; renderização será reavaliada após o novo design.
+
+## Checkpoint de estudo integral
+
+Pacote `f42b1b5`: 4.851 IDs YouTube deduplicados, dos quais 4.743 são uploads públicos dos cinco canais; inventário completo por fonte ainda não certificado. Três faixas exportadas (seis artefatos), uma faixa integralmente lida/analisada, nenhum audiovisual integralmente estudado e nenhuma cobertura de toda a fala verificada. Os 11 testes da pesquisa e os seis hashes locais passaram na integração. Ver `content/research/TRANSCRIPT_BATCH-2026-09-28.md`. O Educador ainda não aceitou fichas integrais como sustentação de L01.
 
 ## Evidências de validação
 
@@ -56,8 +60,8 @@ L01 integrada e auditada estruturalmente nos 11 locales: 112/112 chaves presente
 
 ## Encaminhamento do próximo ciclo
 
-- Construtor aguarda entrega do Artista baseada no Ganesha Desktop; depois refaz a interface e envia commit/preview/testes ao Diretor.
+- Construtor recebeu `eaa70e6` e começou a refazer a interface; enviará commit/preview/testes ao Diretor.
 - Educador audita a sustentação de cada etapa e solicita ao Devorador estudo integral das fontes relevantes; seus 11 catálogos já foram integrados e auditados estruturalmente pelo Diretor.
-- Artista inspeciona a janela real do Ganesha Desktop, registra referências e entrega especificação/protótipo web mais clean antes da implementação. Ver `DESKTOP_DESIGN_DIRECTIVE.md`.
+- Artista entregou especificação/protótipo baseados na janela real do Ganesha Desktop; revisará a implementação do Construtor. Ver `DESKTOP_DESIGN_DIRECTIVE.md`.
 - Devorador concluiu o lote inicial; o usuário agora priorizou transcrições de todos os vídeos das fontes indicadas, com pesquisa complementar autorizada. Foi instruído a retomar imediatamente e reordenar sua fila; a automação existente foi atualizada e continua na sexta-feira.
 - Nenhuma implantação pública ou integração de autenticação/pagamento foi declarada concluída.

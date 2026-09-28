@@ -1,5 +1,5 @@
 {
-  "passed": true,
+  "passed": false,
   "scope": "canonical-content",
   "courseId": "course.first-site",
   "version": "0.1.0",
@@ -85,7 +85,9 @@
       "humanReview": "pending"
     }
   },
-  "errors": [],
+  "errors": [
+    "course: no released lesson IDs to audit"
+  ],
   "warnings": [
     "pt-BR: human language review pending",
     "en: human language review pending",
