@@ -1,0 +1,79 @@
+[
+  {
+    "dir": "ltr",
+    "lang": "pt-BR",
+    "scrollWidth": 1280,
+    "title": "Uma ideia. Seu próximo passo.",
+    "width": 1280
+  },
+  {
+    "dir": "ltr",
+    "lang": "en",
+    "scrollWidth": 1280,
+    "title": "One idea. Your next step.",
+    "width": 1280
+  },
+  {
+    "dir": "ltr",
+    "lang": "es",
+    "scrollWidth": 1280,
+    "title": "Una idea. Tu próximo paso.",
+    "width": 1280
+  },
+  {
+    "dir": "ltr",
+    "lang": "fr",
+    "scrollWidth": 1280,
+    "title": "Une idée. Votre prochain pas.",
+    "width": 1280
+  },
+  {
+    "dir": "ltr",
+    "lang": "de",
+    "scrollWidth": 1280,
+    "title": "Eine Idee. Dein nächster Schritt.",
+    "width": 1280
+  },
+  {
+    "dir": "ltr",
+    "lang": "ja",
+    "scrollWidth": 1280,
+    "title": "ひとつのアイデア。次の一歩。",
+    "width": 1280
+  },
+  {
+    "dir": "ltr",
+    "lang": "hi",
+    "scrollWidth": 1280,
+    "title": "एक विचार। आपका अगला कदम।",
+    "width": 1280
+  },
+  {
+    "dir": "ltr",
+    "lang": "id",
+    "scrollWidth": 1280,
+    "title": "Satu ide. Langkah berikutnya.",
+    "width": 1280
+  },
+  {
+    "dir": "rtl",
+    "lang": "ar",
+    "scrollWidth": 1280,
+    "title": "فكرة واحدة. خطوتك التالية.",
+    "width": 1280
+  },
+  {
+    "dir": "ltr",
+    "lang": "ko",
+    "scrollWidth": 1280,
+    "title": "하나의 아이디어. 다음 한 걸음.",
+    "width": 1280
+  },
+  {
+    "dir": "ltr",
+    "lang": "zh-CN",
+    "scrollWidth": 1280,
+    "title": "一个想法。下一步行动。",
+    "width": 1280
+  }
+]
