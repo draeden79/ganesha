@@ -1,0 +1,116 @@
+{
+  "build": "ba992e7",
+  "viewport": "390x844",
+  "results": [
+    {
+      "brandDir": "ltr",
+      "clippedCards": [],
+      "lang": "pt-BR",
+      "notices": 1,
+      "railScroll": 984,
+      "railWidth": 330,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "brandDir": "ltr",
+      "clippedCards": [],
+      "lang": "en",
+      "notices": 1,
+      "railScroll": 984,
+      "railWidth": 330,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "brandDir": "ltr",
+      "clippedCards": [],
+      "lang": "es",
+      "notices": 1,
+      "railScroll": 984,
+      "railWidth": 330,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "brandDir": "ltr",
+      "clippedCards": [],
+      "lang": "fr",
+      "notices": 1,
+      "railScroll": 984,
+      "railWidth": 330,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "brandDir": "ltr",
+      "clippedCards": [],
+      "lang": "de",
+      "notices": 1,
+      "railScroll": 984,
+      "railWidth": 330,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "brandDir": "ltr",
+      "clippedCards": [],
+      "lang": "ja",
+      "notices": 1,
+      "railScroll": 984,
+      "railWidth": 330,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "brandDir": "ltr",
+      "clippedCards": [],
+      "lang": "hi",
+      "notices": 1,
+      "railScroll": 984,
+      "railWidth": 330,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "brandDir": "ltr",
+      "clippedCards": [],
+      "lang": "id",
+      "notices": 1,
+      "railScroll": 984,
+      "railWidth": 330,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "brandDir": "ltr",
+      "clippedCards": [],
+      "lang": "ko",
+      "notices": 1,
+      "railScroll": 984,
+      "railWidth": 330,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "brandDir": "ltr",
+      "clippedCards": [],
+      "lang": "zh-CN",
+      "notices": 1,
+      "railScroll": 984,
+      "railWidth": 330,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "brandDir": "ltr",
+      "clippedCards": [],
+      "lang": "ar",
+      "notices": 1,
+      "railScroll": 984,
+      "railWidth": 330,
+      "scroll": 390,
+      "width": 390
+    }
+  ]
+}
