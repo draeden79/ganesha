@@ -27,6 +27,12 @@
       "humanReview": "pending",
       "sha256": "69030ed50f82631a5873c66af64df5d3191f140d46f5cbe8a0c29b2fbc16618a"
     },
+    "ja": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "60d2c40139404a4521e995d300a4ce613a51dc22661d1561809ee6e5b4e8e92a"
+    },
     "hi": {
       "required": 1192,
       "present": 1192,
