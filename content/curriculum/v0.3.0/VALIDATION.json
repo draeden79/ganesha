@@ -33,6 +33,12 @@
       "humanReview": "pending",
       "sha256": "edd63731ef20e2fc45ed1ff2ab654a759f2bbf8b0f309a50a2d049c4f1b7fd7f"
     },
+    "de": {
+      "required": 1192,
+      "present": 1192,
+      "humanReview": "pending",
+      "sha256": "b77200262be3356a828aadba9de2152cb3a4d74e880994c407f607ba5804fe38"
+    },
     "ja": {
       "required": 1192,
       "present": 1192,
@@ -83,7 +89,7 @@
     "ko",
     "zh-CN"
   ],
-  "localizationComplete": false,
+  "localizationComplete": true,
   "literalReviewFindings": [],
   "active0.2.0Unchanged": true,
   "courseSha256": "3ef6d85dd87b1b6564ef983d7da689c63735e21b6151386e5611d71a6e1e5667",

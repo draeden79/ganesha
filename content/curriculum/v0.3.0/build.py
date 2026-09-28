@@ -10,7 +10,6 @@ LOCALES=['pt-BR','en','es','fr','de','ja','hi','id','ar','ko','zh-CN']
 DOMAINS=['foundations','sites','apps','automation']
 SLUGS=['workspace','requests','verification','site-build','site-quality','site-publish','app-state','app-storage','app-delivery','automation-input','automation-report','automation-schedule']
 REGISTRY=ROOT.parents[1]/'research'/'registry.json'
-FALLBACK_REGISTRY=Path('/Users/lucasmarques/.codex/worktrees/81be/Ganesha/content/research/registry.json')
 
 def read(p):return json.loads(p.read_text())
 def write(p,x):
@@ -33,9 +32,13 @@ def prepare():
     if step['kind']=='check':
      c=step['check'];assert [o['id'] for o in c['options']]==['a','b','c']
      assert c['correct'] in ['a','b','c']
- registry=read(REGISTRY if REGISTRY.exists() else FALLBACK_REGISTRY)
  evidence={}
- for e in registry['evidence']:evidence.setdefault(e['sourceId'],[]).append(e['id'])
+ frozen_bindings=None
+ if REGISTRY.exists():
+  for e in read(REGISTRY)['evidence']:evidence.setdefault(e['sourceId'],[]).append(e['id'])
+ else:
+  # The isolated package carries the reviewed bindings used for its snapshot.
+  frozen_bindings=read(ROOT/'SOURCE_BINDINGS.json')['lessons']
  messages={'pt-BR':{},'en':{}}
  intern={}
  def message(key,pt,en):
@@ -57,8 +60,15 @@ def prepare():
   slug=lp['slug'];cid=f'competency.{slug}.v3'
   def lm(field):return message(f'{slug}.{field}',lp[field],le[field])
   lesson={'id':f'lesson.{slug}','order':index+1,'status':'draft','titleKey':lm('title'),'summaryKey':lm('summary'),'objectiveKeys':[lm('outcome')],'competencyIds':[cid],'prerequisiteLessonIds':[f'lesson.{p}' for p in lp['prerequisites']],'estimatedMinutes':lp['minutes'],'steps':[]}
-  ev=list(dict.fromkeys(x for ref in lp['sourceRefs'] for x in evidence.get(ref,[])))
-  refs[slug]={'sourceRefs':lp['sourceRefs'],'evidenceIds':ev,'unmappedReferences':[ref for ref in lp['sourceRefs'] if ref not in evidence]}
+  if frozen_bindings is None:
+   ev=list(dict.fromkeys(x for ref in lp['sourceRefs'] for x in evidence.get(ref,[])))
+   unmapped=[ref for ref in lp['sourceRefs'] if ref not in evidence]
+  else:
+   binding=frozen_bindings[slug]
+   assert binding['sourceRefs']==lp['sourceRefs'],(slug,'Changed source references require the research registry')
+   ev=binding['evidenceIds']
+   unmapped=binding['unmappedReferences']
+  refs[slug]={'sourceRefs':lp['sourceRefs'],'evidenceIds':ev,'unmappedReferences':unmapped}
   course['competencies'].append({'id':cid,'titleKey':lesson['titleKey'],'outcomeKey':lesson['objectiveKeys'][0],'prerequisiteIds':[f'competency.{p}.v3' for p in lp['prerequisites']],'evidenceIds':ev})
   for sp,se in zip(lp['steps'],le['steps']):
    for k in ['slug','kind','mode']:
@@ -100,7 +110,7 @@ def prepare():
  write(ROOT/'course.template.json',course)
  write(ROOT/'SOURCE_BINDINGS.json',{'version':VERSION,'scope':'Sources support the stated concepts or procedures; original examples are not represented as source executions.','lessons':refs})
  for lang,msg in messages.items():write(ROOT/'source-messages'/f'{lang}.json',msg)
- write(ROOT/'AUTHORING_MANIFEST.json',{'version':VERSION,'sourceFiles':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((ROOT/'authoring').glob('*.json'))},'messageCount':len(messages['en']),'sourceEnglishSha256':hashlib.sha256((ROOT/'source-messages/en.json').read_bytes()).hexdigest(),'lessons':SLUGS})
+ write(ROOT/'AUTHORING_MANIFEST.json',{'version':VERSION,'sourceFiles':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(ROOT/'authoring'/f'{domain}.{lang}.json' for domain in DOMAINS for lang in ['pt-BR','en'])},'messageCount':len(messages['en']),'sourceEnglishSha256':hashlib.sha256((ROOT/'source-messages/en.json').read_bytes()).hexdigest(),'lessons':SLUGS})
  print(f'Prepared12lessons/120steps; {len(messages["en"])} message keys; {sum(len(v.split()) for v in messages["en"].values())} English words.')
 
 def compile_locales(locales):

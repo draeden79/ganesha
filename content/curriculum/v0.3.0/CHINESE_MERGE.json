@@ -1,0 +1,20 @@
+{
+  "version": "0.3.0",
+  "keyCount": 1192,
+  "parts": {
+    "zh-CN.part-root": {
+      "keys": 562,
+      "sha256": "0fbf6e3610ca60748481043d29ed23e09c8a64b61ccf5a4a4104265c4e9a7958"
+    },
+    "zh-CN.part-asia": {
+      "keys": 324,
+      "sha256": "d0359d6f0faab63158d5c0cb7e3dae66df6fe1ede204e47bcb50f968c5bb1d5c"
+    },
+    "zh-CN.part-global": {
+      "keys": 306,
+      "sha256": "3a48a0919aa1bdaa3e3510cdfd7a904e3112d28e924be9b5a1b463aac69155c3"
+    }
+  },
+  "method": "disjoint key sets, direct translations, no fallback",
+  "retainedFragments": "authoring/fragments/"
+}

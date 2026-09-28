@@ -1,6 +1,6 @@
 # Ganesha — currículo 0.3.0
 
-Pacote isolado para integração pelo Diretor e revisão de experiência pelo Artista. O currículo ativo 0.2.0 permanece intacto. A versão ampliada tem 12 aulas, exatamente 10 etapas por aula, 24 avaliações determinísticas obrigatórias e 94 exercícios com rubrica. Das práticas, 67 são externas e autodeclaradas. Estimativa editorial de duração: 395 minutos; não foi medida com alunos.
+Pacote isolado para integração pelo Diretor e revisão de experiência pelo Artista. O currículo ativo 0.2.0 permanece intacto neste worktree. O pacote final contém os 11 idiomas completos: português, inglês, espanhol, francês, alemão, japonês, hindi, indonésio, árabe, coreano e chinês simplificado. A versão ampliada tem 12 aulas, exatamente 10 etapas por aula, 24 avaliações determinísticas obrigatórias e 94 exercícios com rubrica. Das práticas, 67 são externas e autodeclaradas. Estimativa editorial de duração: 395 minutos; não foi medida com alunos.
 
 ## Percurso
 
@@ -53,3 +53,7 @@ O Educador leu as 120 etapas em português, conferiu a paridade das fontes pt/en
 Práticas externas permitem registrar execução real, impedimento ou análise simulada. A rubrica avalia a honestidade desse registro e sua comparação com os critérios visíveis. Ela não certifica que um arquivo externo, publicação ou agenda foi executado. Os 24 checks continuam obrigatórios e determinísticos. Simulações originais são identificadas. Ativação de agenda pelo aluno é opcional e depende de testes manuais aprovados, Python e acesso; uma configuração salva não prova disparo. O autor não operou agendas.
 
 Os catálogos adicionais são traduções por agentes de IA. Revisão humana de idioma, piloto com iniciantes, duração medida e execução ponta a ponta nas contas das duas ferramentas continuam pendentes. Os recibos de domínio delimitam as fontes textuais lidas; vídeos, imagens e links não inspecionados não recebem aceite integral. No material de automação, seis testes da referência Python foram executados em arquivos temporários; isso não comprova execução em Claude Desktop ou Codex Desktop.
+
+O preparo usa o registro de pesquisa do repositório quando disponível. Em uma cópia isolada sem esse registro, reutiliza os vínculos revisados de `SOURCE_BINDINGS.json` e exige que as referências das aulas continuem iguais. Não depende do caminho pessoal de outro worktree. Alterar referências exige o registro de pesquisa correspondente.
+
+Estado final da auditoria: 12 aulas, 120 etapas, 24 avaliações, 1.192 mensagens por idioma nos 11 catálogos, nenhuma referência de texto ausente, nenhum fallback inglês e zero divergências de literais. A compilação foi repetida sem mudar os arquivos de entrega. `LOCALIZATION_MANIFEST.json` contém os hashes finais. Fragmentos completos usados nas uniões foram preservados em `authoring/fragments/`; somente os 11 catálogos inteiros ficam em `source-messages/`.

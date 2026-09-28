@@ -1,0 +1,200 @@
+{
+  "version": "0.3.0",
+  "courseStatus": "preview",
+  "lessonStatus": "draft",
+  "releasedLessonIds": [],
+  "editorialReview": {
+    "educatorPortugueseStepsRead": 120,
+    "artistPortugueseStepsRead": 120,
+    "openP0": 0,
+    "openP1": 0,
+    "reviewKind": "AI editorial review; no human pilot claimed"
+  },
+  "lessons": [
+    {
+      "id": "lesson.workspace",
+      "stepCount": 10,
+      "assessmentCount": 2,
+      "editorialDecision": "accepted-for-expanded-beta",
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "registryMappingPending": []
+    },
+    {
+      "id": "lesson.requests",
+      "stepCount": 10,
+      "assessmentCount": 2,
+      "editorialDecision": "accepted-for-expanded-beta",
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "registryMappingPending": []
+    },
+    {
+      "id": "lesson.verification",
+      "stepCount": 10,
+      "assessmentCount": 2,
+      "editorialDecision": "accepted-for-expanded-beta",
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "registryMappingPending": []
+    },
+    {
+      "id": "lesson.site-build",
+      "stepCount": 10,
+      "assessmentCount": 2,
+      "editorialDecision": "accepted-for-expanded-beta",
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "registryMappingPending": []
+    },
+    {
+      "id": "lesson.site-quality",
+      "stepCount": 10,
+      "assessmentCount": 2,
+      "editorialDecision": "accepted-for-expanded-beta",
+      "sourceRefs": [
+        "res-codex-prompting"
+      ],
+      "registryMappingPending": []
+    },
+    {
+      "id": "lesson.site-publish",
+      "stepCount": 10,
+      "assessmentCount": 2,
+      "editorialDecision": "accepted-for-expanded-beta",
+      "sourceRefs": [
+        "res-netlify-drop-static",
+        "res-netlify-project-visibility"
+      ],
+      "registryMappingPending": []
+    },
+    {
+      "id": "lesson.app-state",
+      "stepCount": 10,
+      "assessmentCount": 2,
+      "editorialDecision": "accepted-for-expanded-beta",
+      "sourceRefs": [
+        "https://developer.mozilla.org/en-US/docs/Glossary/DOM",
+        "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/set_up_a_local_testing_server",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "registryMappingPending": [
+        "https://developer.mozilla.org/en-US/docs/Glossary/DOM",
+        "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/set_up_a_local_testing_server"
+      ]
+    },
+    {
+      "id": "lesson.app-storage",
+      "stepCount": 10,
+      "assessmentCount": 2,
+      "editorialDecision": "accepted-for-expanded-beta",
+      "sourceRefs": [
+        "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "https://developer.mozilla.org/en-US/docs/Glossary/Origin",
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+      ],
+      "registryMappingPending": [
+        "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "https://developer.mozilla.org/en-US/docs/Glossary/Origin",
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+      ]
+    },
+    {
+      "id": "lesson.app-delivery",
+      "stepCount": 10,
+      "assessmentCount": 2,
+      "editorialDecision": "accepted-for-expanded-beta",
+      "sourceRefs": [
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Blob/text",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "https://docs.netlify.com/start/quickstarts/netlify-drop-quickstart/",
+        "https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility/"
+      ],
+      "registryMappingPending": [
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Blob/text",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "https://docs.netlify.com/start/quickstarts/netlify-drop-quickstart/",
+        "https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility/"
+      ]
+    },
+    {
+      "id": "lesson.automation-input",
+      "stepCount": 10,
+      "assessmentCount": 2,
+      "editorialDecision": "accepted-for-expanded-beta",
+      "sourceRefs": [],
+      "registryMappingPending": []
+    },
+    {
+      "id": "lesson.automation-report",
+      "stepCount": 10,
+      "assessmentCount": 2,
+      "editorialDecision": "accepted-for-expanded-beta",
+      "sourceRefs": [
+        "res-codex-prompting"
+      ],
+      "registryMappingPending": []
+    },
+    {
+      "id": "lesson.automation-schedule",
+      "stepCount": 10,
+      "assessmentCount": 2,
+      "editorialDecision": "accepted-for-expanded-beta",
+      "sourceRefs": [
+        "res-claude-local-schedule",
+        "res-codex-local-schedule"
+      ],
+      "registryMappingPending": []
+    }
+  ],
+  "localization": {
+    "required": [
+      "pt-BR",
+      "en",
+      "es",
+      "fr",
+      "de",
+      "ja",
+      "hi",
+      "id",
+      "ar",
+      "ko",
+      "zh-CN"
+    ],
+    "humanReviewStatus": "pending",
+    "coverageReceipt": "VALIDATION.json",
+    "method": "Direct authoring and translation by AI agents; no curriculum sent to an external translation service.",
+    "complete": true,
+    "messageCountPerLocale": 1192,
+    "totalMessages": 13112
+  },
+  "executionEvidence": {
+    "desktopStudentWorkflows": "not executed by the curriculum author",
+    "pythonReference": "six cases executed in temporary files; see authoring/automation.review.md",
+    "scheduledTaskCreatedByAuthor": false,
+    "publicationPerformedByAuthor": false,
+    "externalPractice": "student self-report with explicit actual/simulated/blocked distinction"
+  },
+  "releaseGatesStillOpen": [
+    "Human language review",
+    "Beginner pilot and measured lesson duration",
+    "End-to-end student workflows in both Desktop tools",
+    "Unmapped source references linked to reviewed registry evidence where relevant"
+  ],
+  "scope": "Editorial acceptance does not upgrade partial source study, simulated examples or self-reported practice to demonstrated execution."
+}

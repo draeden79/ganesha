@@ -19,6 +19,7 @@
     "en",
     "es",
     "fr",
+    "de",
     "ja",
     "hi",
     "id",
@@ -26,7 +27,7 @@
     "ko",
     "zh-CN"
   ],
-  "localizationComplete": false,
+  "localizationComplete": true,
   "humanReview": "pending",
   "lessonCount": 12,
   "stepCount": 120,
