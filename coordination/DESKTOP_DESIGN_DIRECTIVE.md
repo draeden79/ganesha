@@ -1,0 +1,28 @@
+# Nova referência visual: Ganesha Desktop
+
+Pedido explícito do usuário em 2026-09-28: inspecionar o Ganesha Desktop aberto no Mac, reproduzir no web o mesmo design mais clean e, depois da entrega do Artista, pedir ao Construtor que refaça a interface.
+
+## Sequência acordada
+
+1. **Artista:** localizar a janela real do Ganesha Desktop usando Computer Use; registrar capturas e observações verificadas de hierarquia, densidade, tipografia, cores, espaçamento, navegação e controles. Não inferir o desktop a partir do web anterior.
+2. **Artista:** entregar especificação e referência web concreta em `design/`, começando pela tela principal e uma etapa de aula. Mapear componentes atuais, tokens e comportamento responsivo/RTL. O desktop passa a ser a referência visual principal; registrar divergências com o design system existente.
+3. **Construtor:** refazer a interface após receber a entrega de design, preservando o conteúdo, os 11 idiomas, as avaliações, o acesso fechado e a persistência de progresso.
+4. **Diretor:** integrar os commits e revisar fidelidade à referência, clareza, mobile/RTL e regressões do percurso.
+
+A inspeção do app e a implementação da revisão estão autorizadas. A leitura do aplicativo não autoriza alterar dados pessoais nem executar ações externas. Se a janela não puder ser acessada, o Artista deve informar o bloqueio concreto.
+
+## Base preservada
+
+Aplicativo de origem `f5319e9` + `96a9edb`, integrado como `31b2dd4` + `d63c674`. No checkout do Diretor passaram 14 testes, checagem de tipos, auditoria dos 11 catálogos e build Next. A primeira tentativa de build com dependências via symlink externo falhou por limite do Turbopack; com cópia local das dependências, o build passou. Não foi defeito atribuído ao aplicativo.
+
+O percurso final de QA foi interrompido antes das práticas para atender à nova direção visual. Evidências anteriores permanecem registradas como baseline; não aprovam o novo design. A prévia do usuário continua em `127.0.0.1:3100`; revisão técnica usa origem/porta separadas.
+
+## Critérios da revisão
+
+- Design comparável ao desktop realmente observado, com menos ruído e repetição na interface.
+- Título, instrução e ação principal claros; detalhes auxiliares acessíveis quando necessários.
+- Uma tela por etapa; prática e duas verificações distintas preservadas por aula.
+- Os 11 idiomas e RTL continuam funcionando; nenhum texto educacional é incorporado a imagens.
+- A mudança de apresentação não apaga respostas, tentativas nem progresso existente da mesma versão de curso.
+
+Propriedade permanece: Artista em `design/`, Construtor no aplicativo, Diretor em `coordination/` e contratos.

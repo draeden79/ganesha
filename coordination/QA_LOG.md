@@ -43,3 +43,9 @@ Construtor entrega hash e build estável na porta 3101. Diretor repete percurso 
 Lote de origem `4525851`, integrado como `708c7c9`, conferido com `python3 coordination/validate_content.py` sobre o registro de 23 fontes/16 evidências: **passou**. Uma aula, sete etapas e duas verificações; 112/112 mensagens em cada um dos 11 locales, nenhuma chave pendente/ausente/desatualizada. Relatório reproduzível em `CONTENT_AUDIT.json`.
 
 Todas as traduções declaram revisão humana pendente; presença e versão das chaves não comprovam qualidade linguística. Aula `ready`, curso `preview` 0.1.0. Renderização/RTL e catálogos da UI serão validados na build do aplicativo.
+
+## Baseline integrado e nova direção visual
+
+Aplicativo `f5319e9` integrado como `31b2dd4`, CSS `96a9edb` como `d63c674`. Diretor executou com sucesso os 14 testes, check:content dos 11 idiomas, TypeScript e build Next sobre a base integrada. O build precisou de dependências locais porque Turbopack rejeita node_modules apontando por symlink para outro worktree.
+
+O QA final de navegador começou pela primeira tela, mas foi interrompido pelo novo pedido do usuário: usar o Ganesha Desktop aberto no Mac como referência de design. Não houve nova conclusão ponta a ponta nessa rodada. O Artista inspeciona o desktop e o Construtor refaz a interface depois; ver `DESKTOP_DESIGN_DIRECTIVE.md`.
