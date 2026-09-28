@@ -1,9 +1,21 @@
 [
   {
-    "id": "q-all-priority-video-transcripts",
+    "id": "q-curated-deep-study",
     "priority": "P0",
     "priority_order": 1,
     "status": "in_progress",
+    "owner": "Devorador",
+    "created_at": "2026-09-28",
+    "task": "Selecionar fontes relevantes para iniciantes construírem sites, apps e automações; estudar integralmente cada recurso selecionado e conferir demonstrações materiais antes de fundamentar aulas.",
+    "plan": "CURATION_PLAN.md",
+    "selection_ledger": "curation.json",
+    "done_when": "Cada competência necessária tem fonte apropriada estudada, exemplos completos, prática e verificações sustentáveis; lacunas explícitas. Tamanho do corpus conforme suficiência, não meta arbitrária de downloads.",
+    "scope_note": "Primeiro atender lacunas pertinentes L01-S01..04 e depois cobrir as demais trilhas; inventário histórico preservado como backlog."
+  },
+  {
+    "id": "q-all-priority-video-transcripts",
+    "priority": "P2",
+    "status": "backlog_preserved",
     "owner": "Devorador",
     "created_at": "2026-09-28",
     "scope": "Todos os vídeos históricos das cinco fontes de canal e vídeos incorporados às quatro fontes de páginas; prioridade não exclusiva.",
@@ -12,7 +24,8 @@
     "coverage": "video-inventory/coverage.json",
     "plan": "TRANSCRIPTION_PLAN.md",
     "done_when": "Denominadores conhecidos por escopo; cada vídeo tem transcrição integral verificada ou impedimento específico com próxima tentativa. Não encerrar por amostra.",
-    "history_total_known": false
+    "history_total_known": false,
+    "priority_note": "Diretriz posterior do usuário: acervo exaustivo deixa de bloquear aulas; priorizar corpus relevante e profundo."
   },
   {
     "id": "q-youtube-riley-index",
@@ -137,7 +150,7 @@
   {
     "id": "q-publish-project",
     "source_id": "openai-learn-codex",
-    "priority": "P1",
+    "priority": "P0",
     "next_cycle_order": 1,
     "priority_reason": "Diretor priorizou publicação de página pública após aceitar o lote inicial em 28/09/2026.",
     "status": "topic_gap",
@@ -147,7 +160,7 @@
     "created_at": "2026-09-28T18:51:32Z",
     "owner": "Devorador",
     "history_total_known": false,
-    "priority_note": "Subordinada à diretriz explícita de transcrever todo o histórico em 2026-09-28."
+    "priority_note": "Lacunas diretamente ligadas ao propósito: automação útil e publicação de site simples."
   },
   {
     "id": "q-first-automation-manual",
@@ -155,7 +168,7 @@
     "related_source_ids": [
       "claude-academy"
     ],
-    "priority": "P1",
+    "priority": "P0",
     "next_cycle_order": 2,
     "status": "topic_gap",
     "url": "https://learn.chatgpt.com/docs/automations",
@@ -168,7 +181,7 @@
     "created_at": "2026-09-28",
     "owner": "Devorador",
     "history_total_known": false,
-    "priority_note": "Subordinada à diretriz explícita de transcrever todo o histórico em 2026-09-28."
+    "priority_note": "Lacunas diretamente ligadas ao propósito: automação útil e publicação de site simples."
   },
   {
     "id": "q-claude-desktop-drift",

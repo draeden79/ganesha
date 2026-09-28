@@ -1,3 +1,7 @@
+# Prioridade atual: curadoria relevante e estudo profundo
+
+Diretriz posterior do usuário em 2026-09-28: não há tempo para consumir todo o histórico antes de criar o curso. Priorizar pessoas comuns usando IA para construir sites, apps simples e automações. O inventário amplo permanece como backlog; coleta exaustiva não bloqueia as aulas. Ver `CURATION_PLAN.md` e `curation.json`. Triagem pode usar metadados; conteúdo que sustenta aula exige estudo integral do recurso selecionado e revisão visual pertinente. As orientações históricas abaixo só valem quando compatíveis com esta prioridade.
+
 # Varredura semanal e expansão histórica
 
 Automação informada pela sessão de origem: `devorador-atualiza-o-semanal-das-fontes`, ACTIVE, sexta-feira 09:00, America/Los_Angeles, anexada à tarefa Devorador `01a0e952-8940-75d0-b32e-52078719adc0`. Não criar outra. Este arquivo descreve o procedimento; não é uma segunda automação.

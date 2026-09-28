@@ -1,3 +1,7 @@
+# Prioridade atual: curadoria relevante e estudo profundo
+
+Diretriz posterior do usuário em 2026-09-28: não há tempo para consumir todo o histórico antes de criar o curso. Priorizar pessoas comuns usando IA para construir sites, apps simples e automações. O inventário amplo permanece como backlog; coleta exaustiva não bloqueia as aulas. Ver `CURATION_PLAN.md` e `curation.json`. Triagem pode usar metadados; conteúdo que sustenta aula exige estudo integral do recurso selecionado e revisão visual pertinente. As orientações históricas abaixo só valem quando compatíveis com esta prioridade.
+
 # Inventário e transcrições de todo o histórico
 
 Diretriz explícita recebida em 2026-09-28, após o ciclo inicial: cobrir todos os vídeos das nove fontes prioritárias. Prioritárias não significa exclusivas; outras fontes são permitidas para complementar e verificar. Esta diretriz substitui o encerramento anterior e a prioridade de publicação/automação.

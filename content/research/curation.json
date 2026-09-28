@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "directive": "Relevant, sufficient, deeply studied corpus; exhaustive inventory preserved as secondary backlog.",
+  "updated_at": "2026-09-28T19:41:13.060527+00:00",
+  "triage_is_not_evidence": true,
+  "curriculum_acceptance_owner": "Educador",
+  "selected_or_supporting_resources": [
+    {
+      "id": "cur-codex-prompting",
+      "source_id": "openai-learn-codex",
+      "url": "https://learn.chatgpt.com/docs/prompting",
+      "priority": "P0",
+      "theme": "primeiro-pedido",
+      "audience": "Pessoas comuns iniciantes; classificação pode indicar uso apenas de bastidor",
+      "status": "ready_for_bounded_claim_review",
+      "selection_reason": "Procedimento oficial e exemplos de objetivos, contexto, limites e verificação. Não é registro de execução dos prompts.",
+      "prerequisites": [
+        "Conta/superfície adequada; arquivos pertinentes quando usados"
+      ],
+      "prerequisite_certainty": "based_on_accessed_source_or_study; validate in final ficha",
+      "freshness": {
+        "checked_on": "2026-09-28",
+        "version_policy": "Store artifact hash; recheck UI/model/pricing claims before teaching"
+      },
+      "overlap": "Complementa cada quickstart; não duplicar exemplos avançados na L01.",
+      "full_study_manifest": "studies/official/manifest.json",
+      "next_action": "Educador: ler ficha integral e artefato; aceitar somente afirmações delimitadas. Fluxo no app não foi executado; visual pendente onde indicado."
+    },
+    {
+      "id": "cur-claude-desktop-start",
+      "source_id": "claude-academy",
+      "url": "https://code.claude.com/docs/en/desktop-quickstart",
+      "priority": "P0",
+      "theme": "primeiro-resultado-claude",
+      "audience": "Pessoas comuns iniciantes; classificação pode indicar uso apenas de bastidor",
+      "status": "ready_for_bounded_claim_review",
+      "selection_reason": "Fluxo oficial Desktop: acesso, Code, Local/pasta, pedido, modos e revisão.",
+      "prerequisites": [
+        "Plano compatível; app; pasta local; ferramentas próprias do projeto se necessárias"
+      ],
+      "prerequisite_certainty": "based_on_accessed_source_or_study; validate in final ficha",
+      "freshness": {
+        "checked_on": "2026-09-28",
+        "version_policy": "Store artifact hash; recheck UI/model/pricing claims before teaching"
+      },
+      "overlap": "Fonte principal da superfície Claude; referência longa apenas por lacuna concreta.",
+      "full_study_manifest": "studies/official/manifest.json",
+      "next_action": "Educador: ler ficha integral e artefato; aceitar somente afirmações delimitadas. Fluxo no app não foi executado; visual pendente onde indicado."
+    },
+    {
+      "id": "cur-codex-desktop-start",
+      "source_id": "openai-learn-codex",
+      "url": "https://learn.chatgpt.com/docs/app",
+      "priority": "P0",
+      "theme": "primeiro-resultado-codex",
+      "audience": "Pessoas comuns iniciantes; classificação pode indicar uso apenas de bastidor",
+      "status": "selected_for_full_study",
+      "selection_reason": "Fluxo atual oficial com distinções Chat/Work/Codex; evitar roteiro antigo de interface.",
+      "prerequisites": [
+        "App e conta; pasta de projeto para contexto local"
+      ],
+      "prerequisite_certainty": "based_on_accessed_source_or_study; validate in final ficha",
+      "freshness": {
+        "checked_on": "2026-09-28",
+        "version_policy": "Store artifact hash; recheck UI/model/pricing claims before teaching"
+      },
+      "overlap": "Fonte principal da superfície Codex; diferenças em relação a Claude devem ser explícitas.",
+      "full_study_manifest": "studies/official/manifest.json",
+      "next_action": "Validate complete study and relevant visual evidence; Educador decides bounded curriculum use."
+    },
+    {
+      "id": "cur-claude-plan-workflow",
+      "source_id": "claude-academy",
+      "url": "https://academy.claude.com/courses/claude-code-101/the-explore-plan-code-commit-workflow",
+      "priority": "P0",
+      "theme": "planejar-executar-verificar",
+      "audience": "Pessoas comuns iniciantes; classificação pode indicar uso apenas de bastidor",
+      "status": "selected_for_full_study",
+      "selection_reason": "Candidato principal curto para sequência de trabalho. Estudo precisa distinguir procedimento, narração, interface CLI e resultado realmente demonstrado.",
+      "prerequisites": [
+        "Familiaridade com pasta/projeto; fonte usa terminal, adaptação Desktop necessária"
+      ],
+      "prerequisite_certainty": "based_on_accessed_source_or_study; validate in final ficha",
+      "freshness": {
+        "checked_on": "2026-09-28",
+        "version_policy": "Store artifact hash; recheck UI/model/pricing claims before teaching"
+      },
+      "overlap": "Uma fonte principal; Trust só complementa uma lacuna real.",
+      "full_study_manifest": "studies/official/manifest.json",
+      "next_action": "Validate complete study and relevant visual evidence; Educador decides bounded curriculum use."
+    },
+    {
+      "id": "cur-builder-correction",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/de-slop-ai-generated-codebase",
+      "priority": "P1",
+      "theme": "testar-corrigir-retestar",
+      "audience": "Pessoas comuns iniciantes; classificação pode indicar uso apenas de bastidor",
+      "status": "ready_for_bounded_claim_review",
+      "selection_reason": "Distingue checks verdes e validação de comportamento. Relato controlado, não taxa geral de falhas nem tutorial completo para não técnicos.",
+      "prerequisites": [
+        "Leitura técnica de tipos/testes; exemplo pedagógico terá adaptação"
+      ],
+      "prerequisite_certainty": "based_on_accessed_source_or_study; validate in final ficha",
+      "freshness": {
+        "checked_on": "2026-09-28",
+        "version_policy": "Store artifact hash; recheck UI/model/pricing claims before teaching"
+      },
+      "overlap": "Apoio para critérios de correção; não bloqueia L01 de pedido.",
+      "full_study_manifest": "studies/official/manifest.json",
+      "next_action": "Educador: ler ficha integral e artefato; aceitar somente afirmações delimitadas. Fluxo no app não foi executado; visual pendente onde indicado."
+    },
+    {
+      "id": "cur-tim-complement",
+      "source_id": "tech-with-tim-youtube",
+      "url": "https://www.youtube.com/watch?v=ntDIxaeo3Wg",
+      "priority": "P2",
+      "theme": "primeiro-resultado",
+      "audience": "Pessoas comuns iniciantes; classificação pode indicar uso apenas de bastidor",
+      "status": "studied_with_gaps",
+      "selection_reason": "Faixa inteira lida; Educador aceitou insumo textual limitado. CLI/editor predominam. Power-ups não são implementados/retestados; falha de abertura não explica causa/solução.",
+      "prerequisites": [
+        "Terminal, editor, Git/GitHub na demonstração; não requisitos universais de Desktop"
+      ],
+      "prerequisite_certainty": "based_on_accessed_source_or_study; validate in final ficha",
+      "freshness": {
+        "checked_on": "2026-09-28",
+        "version_policy": "Store artifact hash; recheck UI/model/pricing claims before teaching"
+      },
+      "overlap": "Sobrepõe quickstarts oficiais; manter contexto, não priorizar certificação Desktop.",
+      "full_study_manifest": "studies/manifest.json",
+      "next_action": "Validate complete study and relevant visual evidence; Educador decides bounded curriculum use."
+    },
+    {
+      "id": "cur-peter-evals",
+      "source_id": "peter-yang-youtube",
+      "url": "https://www.youtube.com/watch?v=bdMHQLvtVaQ",
+      "priority": "P2",
+      "theme": "verificacao-avancada",
+      "audience": "Pessoas comuns iniciantes; classificação pode indicar uso apenas de bastidor",
+      "status": "advanced_support",
+      "selection_reason": "Estudo integral da faixa concluído pelo agente; insumos úteis sobre limites de julgamentos automáticos. Detalhe de evals é avançado para primeiro resultado.",
+      "prerequisites": [
+        "Skills/evals e fluxo técnico; pendente validação final da ficha pelo Devorador"
+      ],
+      "prerequisite_certainty": "based_on_accessed_source_or_study; validate in final ficha",
+      "freshness": {
+        "checked_on": "2026-09-28",
+        "version_policy": "Store artifact hash; recheck UI/model/pricing claims before teaching"
+      },
+      "overlap": "Apoio de bastidor, não pré-requisito do iniciante.",
+      "full_study_manifest": "studies/videos/manifest.json",
+      "next_action": "Validate complete study and relevant visual evidence; Educador decides bounded curriculum use."
+    },
+    {
+      "id": "cur-nate-workflow",
+      "source_id": "nate-herk-youtube",
+      "url": "https://www.youtube.com/watch?v=saggDHHnmtQ",
+      "priority": "P2",
+      "theme": "automacoes",
+      "audience": "Pessoas comuns iniciantes; classificação pode indicar uso apenas de bastidor",
+      "status": "studied_with_gaps",
+      "selection_reason": "Faixa inteira lida pelo agente; caso intermediário. Falha de cota no fluxo YouTube não é retestada; sucesso final pertence a outro workflow.",
+      "prerequisites": [
+        "VS Code, credenciais, serviços e implantação; pendente revisão final da ficha"
+      ],
+      "prerequisite_certainty": "based_on_accessed_source_or_study; validate in final ficha",
+      "freshness": {
+        "checked_on": "2026-09-28",
+        "version_policy": "Store artifact hash; recheck UI/model/pricing claims before teaching"
+      },
+      "overlap": "Não serve sozinho como primeira automação completa; preservar erros e limites.",
+      "full_study_manifest": "studies/videos/manifest.json",
+      "next_action": "Validate complete study and relevant visual evidence; Educador decides bounded curriculum use."
+    }
+  ],
+  "pedagogical_gaps": [
+    {
+      "theme": "site-simples",
+      "priority": "P1",
+      "gap": "Ciclo local completo: construir, testar, diagnosticar, corrigir e retestar.",
+      "selection_status": "candidate_search",
+      "next_action": "Preferir demonstração acessível e reproduzível; verificar resultado e falhas, evitando fonte apenas promocional."
+    },
+    {
+      "theme": "publicacao-site-estatico",
+      "priority": "P1",
+      "gap": "URL externa acessível por visitante + atualização verificada.",
+      "selection_status": "candidate_search",
+      "next_action": "Selecionar tutorial completo e documentação primária de hospedagem; não confundir repositório/localhost com deploy."
+    },
+    {
+      "theme": "app-simples",
+      "priority": "P2",
+      "gap": "Entrada, estado, validação e persistência quando prometida.",
+      "selection_status": "candidate_search",
+      "next_action": "Selecionar um caso pequeno, completo e testável."
+    },
+    {
+      "theme": "automacao-csv-relatorio",
+      "priority": "P2",
+      "gap": "Dados fictícios → relatório; gatilho, erro, repetição e manutenção.",
+      "selection_status": "candidate_search",
+      "next_action": "Priorizar processo manual observável antes de agendar; demonstrar falha e recuperação no mesmo fluxo."
+    }
+  ],
+  "historical_inventory": "video-inventory/videos.jsonl",
+  "excluded_from_immediate_priority": [
+    "unrelated programming topics",
+    "hype/news",
+    "fragmented Shorts",
+    "advanced setup",
+    "obsolete surface instructions",
+    "redundant coverage"
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "scope": "Subset incremental para auditoria do Educador; aquisição, texto, visual e execução separados.",
+  "updated_at": "2026-09-28T19:41:22.926607+00:00",
+  "studies": [
+    {
+      "id": "official-codex-prompting",
+      "resource_id": "res-codex-prompting",
+      "source_id": "openai-learn-codex",
+      "url": "https://learn.chatgpt.com/docs/prompting",
+      "title": "Prompting",
+      "priority": "P0",
+      "study_path": "studies/official/codex-prompting.md",
+      "status": "partial",
+      "text_read_complete": true,
+      "text_analysis_complete": true,
+      "full_source_analyzed": false,
+      "visual_review_complete": false,
+      "pending": [
+        "Animação de ditado não assistida; fluxos Codex textuais integralmente analisados.",
+        "Exemplos não executados em aplicativo."
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/codex-prompting.txt",
+          "sha256": "f4a155ddbf7af5bf24f4e117b61bc4b6025a637bf8dcfd51941bed5cd1e1d367",
+          "bytes": 20088,
+          "line_count": 503,
+          "read_lines": [
+            [
+              1,
+              503
+            ]
+          ],
+          "collection_method": "Browser main.innerText coletado pelo coordenador; relido integralmente por este agente",
+          "collected_at": "2026-09-28T19:29:14.832691+00:00"
+        }
+      ],
+      "read_sections": [
+        "Overview",
+        "Goal/context/boundaries/output",
+        "Follow-ups/steering/queuing",
+        "Combined example",
+        "Voice dictation (texto)",
+        "Chat examples",
+        "ChatGPT Work",
+        "All 9 Codex workflows"
+      ],
+      "curricular_fit": "L01: formular pedido contextualizado e verificar mudança; retirar extensões cloud/PR da primeira prática.",
+      "prerequisites": [
+        "Pasta de treino",
+        "Identificar arquivo/rota",
+        "Distinguir aparência e persistência"
+      ],
+      "freshness": "Documento vivo, observado 2026-09-28; UI não executada.",
+      "duplication": "Complementa quickstarts; sobrepõe workflow em planejamento/revisão.",
+      "curricular_gaps": [
+        "Não mostra resposta real nem execução de testes; prática original necessária."
+      ],
+      "language": "en",
+      "studied_at": "2026-09-28T19:41:22.926607+00:00",
+      "analysis_locale": "pt-BR",
+      "originals_gitignored": true,
+      "republication_license_assumed": false
+    },
+    {
+      "id": "official-claude-desktop-quickstart",
+      "resource_id": "res-claude-desktop-start",
+      "source_id": "claude-academy",
+      "url": "https://code.claude.com/docs/en/desktop-quickstart",
+      "title": "Get started with the desktop app",
+      "priority": "P0",
+      "study_path": "studies/official/claude-desktop-quickstart.md",
+      "status": "full_source_analyzed",
+      "text_read_complete": true,
+      "text_analysis_complete": true,
+      "full_source_analyzed": true,
+      "full_source_scope": "Documento quickstart textual; não é certificação de uso real do aplicativo.",
+      "visual_review_complete": true,
+      "visual_basis": "Nenhuma imagem substantiva em main; corpo textual nativo integral.",
+      "pending": [
+        "Fluxo ainda não executado na conta/interface real."
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/official-claude-desktop-quickstart.md",
+          "sha256": "7e0fbc28948beca6fa3e042857f07ffccfffe08b9ce0039fee2c66214cf66ac8",
+          "bytes": 11008,
+          "line_count": 140,
+          "read_lines": [
+            [
+              1,
+              140
+            ]
+          ],
+          "collection_method": "WebMCP read_page oficial, sem truncamento",
+          "collected_at": "2026-09-28T19:33:58.288326+00:00"
+        }
+      ],
+      "read_sections": [
+        "Introdução e requisitos",
+        "Downloads e superfícies",
+        "Install",
+        "Start your first session",
+        "Now what?",
+        "What's next"
+      ],
+      "curricular_fit": "L01: instalação/acesso, Code, Local/pasta, pedido e revisão em Manual.",
+      "prerequisites": [
+        "Assinatura mencionada no documento",
+        "Conta Anthropic",
+        "Pasta de treino"
+      ],
+      "freshness": "Documento vivo, observado 2026-09-28; banner Academy indica renomeação Cowork em rollout.",
+      "duplication": "É a rota Desktop; substitui passos de instalação terminal para iniciantes.",
+      "curricular_gaps": [
+        "Não executa um exemplo ponta a ponta",
+        "Dependências do projeto devem ser preparadas pelo curso"
+      ],
+      "complements": [
+        {
+          "url": "https://code.claude.com/docs/en/desktop",
+          "status": "partial",
+          "artifact": {
+            "path": "studies/local/official-claude-desktop-rendered.txt",
+            "sha256": "a828ef46c9220646c20e8cfb04ecb9dc3bc4538979f48cb03e983fe0730806d5",
+            "bytes": 72400,
+            "line_count": 740,
+            "read_lines": [
+              [
+                110,
+                142
+              ],
+              [
+                210,
+                238
+              ],
+              [
+                619,
+                733
+              ]
+            ],
+            "collection_method": "Browser: corpo renderizado",
+            "collected_at": "2026-09-28T19:36:22.142721+00:00"
+          },
+          "purpose": "Atalhos, comparação CLI/Desktop e diagnóstico de entrada",
+          "entire_source_read": false
+        }
+      ],
+      "language": "en",
+      "studied_at": "2026-09-28T19:41:22.926607+00:00",
+      "analysis_locale": "pt-BR",
+      "originals_gitignored": true,
+      "republication_license_assumed": false
+    },
+    {
+      "id": "official-builder-behavior-tests",
+      "resource_id": "res-builder-behavior-tests",
+      "source_id": "builder-blog",
+      "url": "https://www.builder.io/blog/de-slop-ai-generated-codebase",
+      "title": "How to De-Slop an AI-Generated Codebase",
+      "author": "Alice Moore",
+      "published_at": "2026-09-16",
+      "priority": "P1",
+      "study_path": "studies/official/builder-behavior-tests.md",
+      "status": "partial",
+      "text_read_complete": true,
+      "text_analysis_complete": true,
+      "full_source_analyzed": false,
+      "visual_review_complete": false,
+      "pending": [
+        "Diagrama de triagem ainda não inspecionado; abstração e integração vistos.",
+        "Experimento não reproduzido."
+      ],
+      "artifacts": [
+        {
+          "path": "studies/local/official-builder-de-slop.txt",
+          "sha256": "3b6cff23253daef1ad69270201450aef0e275d24d3a26131352f52f7733746f5",
+          "bytes": 17291,
+          "line_count": 291,
+          "read_lines": [
+            [
+              1,
+              291
+            ]
+          ],
+          "collection_method": "Browser: corpo renderizado",
+          "collected_at": "2026-09-28T19:33:58.288915+00:00"
+        }
+      ],
+      "read_sections": [
+        "What is AI slop",
+        "Missing context/locality",
+        "Rules and findings",
+        "Introducing rules",
+        "Repair acceptance conditions",
+        "Refactor/deletion test",
+        "Run behavior",
+        "Mocks",
+        "Add checks",
+        "Failure feedback",
+        "Conclusion",
+        "Ads/footer"
+      ],
+      "curricular_fit": "P1: aula de correção/validação; não bloqueia L01.",
+      "prerequisites": [
+        "Conceito de comportamento observável; detalhes tipos/lint são avançados e opcionais"
+      ],
+      "freshness": "Artigo publicado 2026-09-16, coletado 2026-09-28.",
+      "duplication": "Aprofunda verificação já introduzida no workflow; não repetir como outra abertura.",
+      "curricular_gaps": [
+        "Não produz logs auditados de aplicação em produto real; prática é proposta original."
+      ],
+      "language": "en",
+      "studied_at": "2026-09-28T19:41:22.926607+00:00",
+      "analysis_locale": "pt-BR",
+      "originals_gitignored": true,
+      "republication_license_assumed": false
+    }
+  ]
+}
