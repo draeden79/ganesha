@@ -22,6 +22,7 @@ h1:focus { outline:none; }
 .lesson-code { padding:20px; border-radius:12px; background:var(--n-ground); overflow:auto; max-width:100%; font-size:14px; white-space:pre-wrap; overflow-wrap:anywhere; }
 .example-files { font-size:13px; line-height:1.7; margin-bottom:18px; }
 .example-files a { text-underline-offset:3px; display:inline-block; padding-block:7px; }
+.inline-code { direction:ltr; unicode-bidi:isolate; display:inline-block; max-width:100%; overflow-wrap:anywhere; white-space:pre-wrap; text-align:left; vertical-align:baseline; font:0.9em ui-monospace,SFMono-Regular,Menlo,monospace; background:var(--n-ground); border-radius:4px; padding-inline:4px; }
 .lesson-nav:not([aria-current]) { background:transparent; }
 .lesson-nav:not([aria-current]) .lesson-symbol { color:var(--n-purple); background:var(--n-ground); box-shadow:none; }
 .preview-result { margin-top:10px; }

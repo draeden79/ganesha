@@ -10,6 +10,11 @@ import { TeachingVisual } from "./teaching-visual";
 import { nativeUi } from "@/lib/native-i18n";
 import { classroomUi } from "@/lib/classroom-i18n";
 import { lessonCompletedCount, resumeLessonStep } from "@/lib/lesson-navigation";
+import { inlineCodeParts } from "@/lib/inline-code";
+
+function InlineCode({ text }: { text: string }) {
+  return <>{inlineCodeParts(text).map((part, index) => part.code ? <code className="inline-code" dir="ltr" key={index}>{part.text}</code> : part.text)}</>;
+}
 
 function Icon({ name, size = 20 }: { name: "grid" | "book" | "arrow" | "check" | "spark" | "globe" | "info" | "pen" | "page"; size?: number }) {
   const paths = { info: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0M12 11v6M12 7v.1", pen: "m15 4 5 5-10 10-6 1 1-6zM13 6l5 5", page: "M5 3h10l4 4v14H5zM14 3v5h5M8 12h8M8 16h6", grid: "M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z", book: "M12 5v16M12 5C8 2 4 3 2 4v15c4-2 7-1 10 2 3-3 6-4 10-2V4c-2-1-6-2-10 1Z", arrow: "M5 12h14M13 6l6 6-6 6", check: "m5 12 4 4L19 6", spark: "m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z", globe: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z" };
@@ -270,15 +275,15 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
                 {step.objective && <p className="objective">{step.objective}</p>}
                 {step.contentBlocks ? step.contentBlocks.map((block, index) => block.kind === "code"
                   ? <pre className="lesson-code" key={index} dir="ltr"><code>{block.text}</code></pre>
-                  : block.kind === "callout" ? <blockquote className="lesson-callout" key={index}>{block.text}</blockquote>
-                  : <p key={index}>{block.text}</p>) : <>{step.body.map((paragraph, index) => <p key={index}>{paragraph}</p>)}{step.callouts?.map((paragraph, index) => <blockquote className="lesson-callout" key={index}>{paragraph}</blockquote>)}</>}
+                  : block.kind === "callout" ? <blockquote className="lesson-callout" key={index}><InlineCode text={block.text} /></blockquote>
+                  : <p key={index}><InlineCode text={block.text} /></p>) : <>{step.body.map((paragraph, index) => <p key={index}><InlineCode text={paragraph} /></p>)}{step.callouts?.map((paragraph, index) => <blockquote className="lesson-callout" key={index}><InlineCode text={paragraph} /></blockquote>)}</>}
               </div>
               {showArt ? <aside className="art-aside"><img className="lesson-art" src="/classroom/images/creative-workshop-transparent.png" alt="" width="230" height="230" /></aside> : hasDiagram ? <aside className="visual-aside"><TeachingVisual step={step} /></aside> : null}
             </div>
             <div className="tool-context">
               <details className="tool-instruction" key={`${step.id}:${progress.tool}`} open={step.executionMode === "external-real-task"}>
                 <summary><Icon name="spark" size={16} />{t.tool}</summary>
-                <p>{step.toolNotes?.[progress.tool]}</p>
+                <p><InlineCode text={step.toolNotes?.[progress.tool] ?? ""} /></p>
               </details>
               <div className="inline-tool-select">{toolSelect}</div>
             </div>
@@ -296,18 +301,18 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
                     </label>)}
                   </fieldset>
                   <button className="button secondary" type="submit" disabled={!ready || !state.draft.trim() || state.criteria.length !== step.practice.criteria.length}>{t.completePractice}<Icon name="check" size={18} /></button>
-                  {state.complete && <div className="feedback good" role="status"><Icon name="check" /><div><strong>{t.completed}</strong><p>{step.practice.feedback}</p>{practiceNotice && <small>{practiceNotice}</small>}</div></div>}
+                  {state.complete && <div className="feedback good" role="status"><Icon name="check" /><div><strong>{t.completed}</strong><p><InlineCode text={step.practice.feedback} /></p>{practiceNotice && <small>{practiceNotice}</small>}</div></div>}
                 </form>
               ) : <>
-                {step.action && <p className="activity-instruction">{step.action}</p>}
+                {step.action && <p className="activity-instruction"><InlineCode text={step.action} /></p>}
                 {step.check && <form onSubmit={event => { event.preventDefault(); submitCheck(); }}>
                   <fieldset className="check-group"><legend>{step.check.prompt}</legend>
                     {step.check.choices.map(choice => <label className="answer" key={choice.id}>
-                      <input type="radio" name={step.id} value={choice.id} checked={state.draft === choice.id} onChange={() => setProgress(p => updateStep(p, step.id, { draft: choice.id }))} /><span>{choice.text}</span>
+                      <input type="radio" name={step.id} value={choice.id} checked={state.draft === choice.id} onChange={() => setProgress(p => updateStep(p, step.id, { draft: choice.id }))} /><span><InlineCode text={choice.text} /></span>
                     </label>)}
                   </fieldset>
                   <button className="button secondary" disabled={!state.draft} type="submit">{t.check}<Icon name="check" size={18} /></button>
-                  {feedback && <div className={`feedback ${feedback.passed ? "good" : "error"}`} role="status"><Icon name={feedback.passed ? "check" : "info"} /><div><strong>{feedback.passed ? t.passed : t.tryAgain}</strong><p>{feedback.feedback}</p><small>{interpolate(t.attempts, { n: number(state.attempts.length) })}</small></div></div>}
+                  {feedback && <div className={`feedback ${feedback.passed ? "good" : "error"}`} role="status"><Icon name={feedback.passed ? "check" : "info"} /><div><strong>{feedback.passed ? t.passed : t.tryAgain}</strong><p><InlineCode text={feedback.feedback} /></p><small>{interpolate(t.attempts, { n: number(state.attempts.length) })}</small></div></div>}
                 </form>}
               </>}
             </section>
@@ -329,8 +334,8 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
           <span>{number(index + 1)}. {item.title}</span>{getStepState(progress, item.id).complete && <span className="modal-state"><Icon name="check" size={16} />{t.completed}</span>}
         </button>
       </li>)}</ol> : <>
-        {step.hints?.map((hint, index) => <p key={index}>{hint}</p>)}
-        <h3>{t.criteria}</h3>{step.criteria?.map((criterion, index) => <p key={index}>{criterion}</p>)}
+        {step.hints?.map((hint, index) => <p key={index}><InlineCode text={hint} /></p>)}
+        <h3>{t.criteria}</h3>{step.criteria?.map((criterion, index) => <p key={index}><InlineCode text={criterion} /></p>)}
       </>}
     </dialog>
   </>;
