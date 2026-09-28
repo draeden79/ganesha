@@ -120,6 +120,9 @@ export function CourseApp({ course }: { course: Course }) {
   const progressLabel = interpolate(t.stepOf, { n: number(stepPosition + 1), total: number(lesson.steps.length) });
   const hasDiagram = Boolean(step.visualDescription && step.id !== "step.first-request.request-check" && (!step.practice || step.executionMode === "external-real-task" || step.id === "step.first-request.transfer"));
   const showArt = step.id === "step.first-request.scope";
+  const practiceNotice = step.executionMode === "external-real-task"
+    ? (step.hasCanonicalExecutionNotice ? null : t.externalNotice)
+    : t.practiceNotice;
   const languageSelect = (
     <select aria-label={t.language} value={course.locale} onChange={event => changeLocale(event.target.value as Locale)}>
       {locales.map(locale => <option key={locale} value={locale} lang={locale}>{localeNames[locale]}</option>)}
@@ -264,7 +267,7 @@ export function CourseApp({ course }: { course: Course }) {
             <section className="activity">
               {step.practice ? (
                 <form onSubmit={event => { event.preventDefault(); submitPractice(); }}>
-                  <p className="mode-notice">{step.executionMode === "external-real-task" ? t.externalNotice : t.practiceNotice}</p>
+                  {practiceNotice && <p className="mode-notice">{practiceNotice}</p>}
                   <label className="activity-label" htmlFor="practice-answer">{step.action ?? t.answer}</label>
                   <textarea id="practice-answer" className="draft" aria-label={t.answer} dir="auto" maxLength={12000} rows={5} value={state.draft} placeholder={step.practice.placeholder} onChange={event => setProgress(p => updateStep(p, step.id, { draft: event.target.value, complete: false }))} />
                   <fieldset className="review-list"><legend>{t.selfReview}</legend>
@@ -274,7 +277,7 @@ export function CourseApp({ course }: { course: Course }) {
                     </label>)}
                   </fieldset>
                   <button className="button secondary" type="submit" disabled={!ready || !state.draft.trim() || state.criteria.length !== step.practice.criteria.length}>{t.completePractice}<Icon name="check" size={18} /></button>
-                  {state.complete && <div className="feedback good" role="status"><Icon name="check" /><div><strong>{t.completed}</strong><p>{step.practice.feedback}</p><small>{step.executionMode === "external-real-task" ? t.externalNotice : t.practiceNotice}</small></div></div>}
+                  {state.complete && <div className="feedback good" role="status"><Icon name="check" /><div><strong>{t.completed}</strong><p>{step.practice.feedback}</p>{practiceNotice && <small>{practiceNotice}</small>}</div></div>}
                 </form>
               ) : <>
                 {step.action && <p className="activity-instruction">{step.action}</p>}

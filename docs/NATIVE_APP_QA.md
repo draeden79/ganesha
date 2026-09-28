@@ -8,6 +8,7 @@ Referência: pacote `eaa70e6` do Artista; evidências e especificação em `desi
 - Etapa: lateral removida, cabeçalho compacto, superfície branca ampla, corpo maior, campo/rubrica leves e feedback próximo à ação. Dicas e índice em `dialog` nativo, com foco contido, Escape e devolução de foco.
 - Idioma e ferramenta discretos, aviso editorial único por tela. Simulação e atividade externa continuam identificadas junto ao exercício. Não há botão que afirme enviar para IA.
 - Cinco novos rótulos de UI traduzidos nos 11 locales; as 112 mensagens do currículo e todos os IDs foram mantidos. Fontes locais e RTL preservados; contagens em fração isoladas para não inverter em árabe.
+- Na execução externa, o callout canônico `notice.self-report` é exibido integralmente. Quando presente, suprime o aviso UI duplicado junto ao campo/feedback; etapas externas sem esse callout continuam recebendo o aviso UI. A detecção usa a chave estável, sem inspecionar palavras traduzidas.
 
 ## Evidências verificadas no app real
 

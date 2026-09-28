@@ -29,6 +29,7 @@ export function adaptCourse(source: CanonicalCourse, catalog: LocaleCatalog, opt
           expectedResult: step.expectedResultKey ? t(step.expectedResultKey) : undefined,
           hints: step.hintKeys?.map(t), criteria: step.criteriaKeys?.map(t),
           isAssessment: step.isAssessment, executionMode: step.executionMode,
+          hasCanonicalExecutionNotice: step.blocks.some(block => block.kind === "callout" && block.textKey === "notice.self-report"),
           evidenceIds: [...new Set([...step.evidenceIds, ...step.toolVariants.claude.evidenceIds, ...step.toolVariants.codex.evidenceIds])],
           visualDescription: step.visual?.altKey ? t(step.visual.altKey) : undefined,
           toolNotes: {

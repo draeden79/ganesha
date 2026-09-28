@@ -17,6 +17,7 @@ export interface Step {
   criteria?: string[];
   evidenceIds?: string[];
   executionMode?: "concept" | "guided-simulation" | "external-real-task";
+  hasCanonicalExecutionNotice?: boolean;
   isAssessment?: boolean;
   callouts?: string[];
   visualDescription?: string;
