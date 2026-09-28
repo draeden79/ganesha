@@ -1,0 +1,83 @@
+{
+  "build": "2ea8f98",
+  "screen": "app.execute",
+  "results": [
+    {
+      "criteria": 2,
+      "lang": "pt-BR",
+      "scroll": 390,
+      "titleY": 90,
+      "width": 390
+    },
+    {
+      "criteria": 2,
+      "lang": "en",
+      "scroll": 390,
+      "titleY": 90,
+      "width": 390
+    },
+    {
+      "criteria": 2,
+      "lang": "es",
+      "scroll": 390,
+      "titleY": 90,
+      "width": 390
+    },
+    {
+      "criteria": 2,
+      "lang": "fr",
+      "scroll": 390,
+      "titleY": 90,
+      "width": 390
+    },
+    {
+      "criteria": 2,
+      "lang": "de",
+      "scroll": 390,
+      "titleY": 90,
+      "width": 390
+    },
+    {
+      "criteria": 2,
+      "lang": "ja",
+      "scroll": 390,
+      "titleY": 90,
+      "width": 390
+    },
+    {
+      "criteria": 2,
+      "lang": "hi",
+      "scroll": 390,
+      "titleY": 90,
+      "width": 390
+    },
+    {
+      "criteria": 2,
+      "lang": "id",
+      "scroll": 390,
+      "titleY": 90,
+      "width": 390
+    },
+    {
+      "criteria": 2,
+      "lang": "ko",
+      "scroll": 390,
+      "titleY": 90,
+      "width": 390
+    },
+    {
+      "criteria": 2,
+      "lang": "zh-CN",
+      "scroll": 390,
+      "titleY": 90,
+      "width": 390
+    },
+    {
+      "criteria": 2,
+      "lang": "ar",
+      "scroll": 390,
+      "titleY": 90,
+      "width": 390
+    }
+  ]
+}

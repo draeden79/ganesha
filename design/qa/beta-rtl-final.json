@@ -1,0 +1,34 @@
+{
+  "commands": [
+    {
+      "bidi": "isolate",
+      "dir": "ltr",
+      "text": "python3 --version",
+      "width": 164.59375
+    },
+    {
+      "bidi": "isolate",
+      "dir": "ltr",
+      "text": "py -3 --version",
+      "width": 146.171875
+    },
+    {
+      "bidi": "isolate",
+      "dir": "ltr",
+      "text": "python3 report.py vendas.csv report.md",
+      "width": 330
+    },
+    {
+      "bidi": "isolate",
+      "dir": "ltr",
+      "text": "py -3 report.py vendas.csv report.md",
+      "width": 330
+    }
+  ],
+  "lang": "ar",
+  "scroll": 390,
+  "viewport": [
+    390,
+    844
+  ]
+}

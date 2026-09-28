@@ -14,7 +14,7 @@ Sprint de 28/09/2026. Complementa `NATIVE_REFERENCE.md`; mantém o design deskto
 
 ## Percurso confirmado pelo Educador
 
-Snapshot recebido às 20:23 UTC: `course.first-site`, versão `0.2.0`; aulas `lesson.foundations`, `lesson.site`, `lesson.app`, `lesson.automation`. Títulos: Fundamentos → Seu primeiro site → Um app de tarefas → Uma automação útil. Cada aula tem seis telas: aprender, preparar, verificação 1, executar, verificação 2, entregar.
+Snapshot confirmado pelo Educador: `course.first-site`, versão `0.2.0`; aulas `lesson.foundations`, `lesson.site`, `lesson.app`, `lesson.automation`. Títulos: Fundamentos → Seu primeiro site → Um app de tarefas → Uma automação útil. Cada aula tem seis telas: aprender, preparar, verificação 1, executar, verificação 2, entregar.
 
 Site, App e Automação dependem somente de Fundamentos. A sugestão “Próxima aula” pode seguir a ordem editorial, mas a interface não deve exigir concluir Site antes de permitir Automação. Cada aula mantém dois checks obrigatórios e prática externa autodeclarada. O pacote é beta/rascunho, sem afirmação de liberação editorial plena. Conteúdo final e IDs de etapas devem ser lidos do pacote canônico, não deste snapshot.
 

@@ -1,0 +1,139 @@
+{
+  "build": "2ea8f98",
+  "screen": "automation.execute",
+  "viewport": "390x844",
+  "results": [
+    {
+      "bodyFont": "\"Figtree Variable\", system-ui, sans-serif",
+      "criteria": 2,
+      "dir": "ltr",
+      "lang": "pt-BR",
+      "links": 3,
+      "notice": 1,
+      "scroll": 390,
+      "titleY": 90,
+      "url": "http://localhost:3103/classroom/pt-BR#step.automation.execute",
+      "width": 390
+    },
+    {
+      "bodyFont": "\"Figtree Variable\", system-ui, sans-serif",
+      "criteria": 2,
+      "dir": "ltr",
+      "lang": "en",
+      "links": 3,
+      "notice": 1,
+      "scroll": 390,
+      "titleY": 90,
+      "url": "http://localhost:3103/classroom/en#step.automation.execute",
+      "width": 390
+    },
+    {
+      "bodyFont": "\"Figtree Variable\", system-ui, sans-serif",
+      "criteria": 2,
+      "dir": "ltr",
+      "lang": "es",
+      "links": 3,
+      "notice": 1,
+      "scroll": 390,
+      "titleY": 90,
+      "url": "http://localhost:3103/classroom/es#step.automation.execute",
+      "width": 390
+    },
+    {
+      "bodyFont": "\"Figtree Variable\", system-ui, sans-serif",
+      "criteria": 2,
+      "dir": "ltr",
+      "lang": "fr",
+      "links": 3,
+      "notice": 1,
+      "scroll": 390,
+      "titleY": 90,
+      "url": "http://localhost:3103/classroom/fr#step.automation.execute",
+      "width": 390
+    },
+    {
+      "bodyFont": "\"Figtree Variable\", system-ui, sans-serif",
+      "criteria": 2,
+      "dir": "ltr",
+      "lang": "de",
+      "links": 3,
+      "notice": 1,
+      "scroll": 390,
+      "titleY": 90,
+      "url": "http://localhost:3103/classroom/de#step.automation.execute",
+      "width": 390
+    },
+    {
+      "bodyFont": "\"Hiragino Kaku Gothic ProN\", \"Yu Gothic\", Meiryo, sans-serif",
+      "criteria": 2,
+      "dir": "ltr",
+      "lang": "ja",
+      "links": 3,
+      "notice": 1,
+      "scroll": 390,
+      "titleY": 90,
+      "url": "http://localhost:3103/classroom/ja#step.automation.execute",
+      "width": 390
+    },
+    {
+      "bodyFont": "\"Noto Sans Devanagari Variable\", \"Devanagari Sangam MN\", sans-serif",
+      "criteria": 2,
+      "dir": "ltr",
+      "lang": "hi",
+      "links": 3,
+      "notice": 1,
+      "scroll": 390,
+      "titleY": 90,
+      "url": "http://localhost:3103/classroom/hi#step.automation.execute",
+      "width": 390
+    },
+    {
+      "bodyFont": "\"Figtree Variable\", system-ui, sans-serif",
+      "criteria": 2,
+      "dir": "ltr",
+      "lang": "id",
+      "links": 3,
+      "notice": 1,
+      "scroll": 390,
+      "titleY": 90,
+      "url": "http://localhost:3103/classroom/id#step.automation.execute",
+      "width": 390
+    },
+    {
+      "bodyFont": "\"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "criteria": 2,
+      "dir": "ltr",
+      "lang": "ko",
+      "links": 3,
+      "notice": 1,
+      "scroll": 390,
+      "titleY": 90,
+      "url": "http://localhost:3103/classroom/ko#step.automation.execute",
+      "width": 390
+    },
+    {
+      "bodyFont": "\"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "criteria": 2,
+      "dir": "ltr",
+      "lang": "zh-CN",
+      "links": 3,
+      "notice": 1,
+      "scroll": 390,
+      "titleY": 90,
+      "url": "http://localhost:3103/classroom/zh-CN#step.automation.execute",
+      "width": 390
+    },
+    {
+      "bodyFont": "\"Noto Sans Arabic Variable\", \"Geeza Pro\", Tahoma, sans-serif",
+      "criteria": 2,
+      "dir": "rtl",
+      "lang": "ar",
+      "links": 3,
+      "notice": 1,
+      "scroll": 390,
+      "titleY": 90,
+      "url": "http://localhost:3103/classroom/ar#step.automation.execute",
+      "width": 390
+    }
+  ]
+}

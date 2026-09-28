@@ -1,0 +1,9 @@
+- heading "CSV de treino para relatório" [level=1]
+- paragraph: Exemplo original e local. Cole CSV simples com as colunas id,item,amount. Use ponto decimal. Este exercício não aceita aspas nem vírgulas dentro do nome do item. Os dados ficam nesta página; nada é enviado pela rede.
+- text: Conteúdo do CSV
+- textbox "Conteúdo do CSV": id,item P01,Caderno P02,Caneta
+- button "Gerar relatório" [active]
+- link "Baixar report.md":
+  - /url: blob:http://localhost:3103/38287737-6037-4c0d-9845-65275d1d265a
+- status: "Erro: Cabeçalho esperado: id,item,amount. O último relatório válido foi preservado."
+- generic "Último relatório válido": "# Relatório de treino Registros: 2 Total: 30.50 | id | item | amount | | --- | --- | ---: | | P01 | Caderno | 20.00 | | P02 | Caneta | 10.50 |"
