@@ -5,7 +5,7 @@ Atualizado em 28/09/2026. Objetivo: primeiro resultado local que uma pessoa comu
 | Necessidade | Principal | Cobertura pronta | Limite material |
 |---|---|---|---|
 | Pedido contextualizado → refinamento → conferência | `codex-prompting.md` / `res-codex-prompting` | Texto integral, nove fluxos, exemplos e critérios; proposta original com dois checks independentes | Não demonstra respostas executadas; animação de ditado fora da lacuna |
-| Primeiro uso Codex Desktop | `codex-quickstart.md`, relacionado a `res-codex-desktop-start` | Quickstart integral de cinco passos e ilustração de seleção; proposta completa de prática | Execução real e acesso da conta do aluno ainda não testados |
+| Primeiro uso Codex Desktop | `codex-quickstart.md` / `res-codex-desktop-quickstart` | Quickstart integral de cinco passos e ilustração de seleção; proposta completa de prática | Execução real e acesso da conta do aluno ainda não testados |
 | Primeiro uso Claude Desktop | `claude-desktop-quickstart.md` / `res-claude-desktop-start` | Documento integral; acesso, Code, Local/pasta, modos e revisão; diagnóstico de entrada | UI e tarefas reais não operadas; não transferir atalhos CLI |
 | Planejar → executar → verificar | `claude-explore-plan-code-commit.md` / `res-claude-plan-build-review` | Texto auxiliar e transcrição oficial integral; exemplo WebP; adaptação original para página simples | Audiovisual material pendente; não certificar vídeo integral |
 
@@ -20,3 +20,5 @@ Atualizado em 28/09/2026. Objetivo: primeiro resultado local que uma pessoa comu
 - Verificação mínima em L01: observar o comportamento no resultado e conferir que a mudança respeita o escopo. Uma mensagem de sucesso do agente não satisfaz ambos.
 
 O manifesto registra aquisição, hashes, linhas lidas, análise textual, inspeção visual, pertinência, pré-requisitos, atualidade, duplicação e lacunas separadamente. O coordenador decide se a fonte curta precisa de conferência audiovisual antes de liberar uma atribuição de demonstração; o texto já sustenta o princípio de trabalho dentro do escopo declarado.
+
+Decisão curricular posterior: a L01 do Educador termina com plano revisado. Propostas de editar uma página nestas fichas não substituem essa decisão; aplicação e revisão de comportamento pertencem à etapa apropriada.

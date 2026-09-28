@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-28T20:03:28.074959+00:00",
+  "artifact_paths_relative_to": "content/research",
+  "scope": "One selected automation video; no new acquisitions.",
+  "studies": [
+    {
+      "id": "study-automation-68BnH29qvAA",
+      "video_id": "68BnH29qvAA",
+      "url": "https://www.youtube.com/watch?v=68BnH29qvAA",
+      "title": "NEW Claude Feature - Setting up your First Routine",
+      "source_id": "designcourse-youtube",
+      "published_at": "2026-04-16",
+      "studied_at": "2026-09-28T20:03:28.074612+00:00",
+      "language": "en",
+      "caption_origin": "automatic",
+      "video_duration_seconds": 317,
+      "study_path": "studies/automation/68BnH29qvAA.md",
+      "study_artifact": {
+        "path": "studies/automation/68BnH29qvAA.md",
+        "bytes": 12303,
+        "sha256": "f1b408f37769a176e5b88c6d0f1bb8f48d83888937a7fa5c8c3e1e8e851ec517"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.68BnH29qvAA.en.57896b75ac92.txt",
+        "bytes": 10054,
+        "sha256": "57896b75ac92b811eca21df92adda06c5bfcdcc6640d8cee9d79c76d3b541330",
+        "logical_line_count": 143,
+        "sequential_read_ranges": [
+          [
+            1,
+            143
+          ]
+        ],
+        "format": "derived_cue_text",
+        "read_method_notes": [
+          "Entire file emitted and sequentially read without truncation; reread with line numbers."
+        ]
+      },
+      "original_caption_artifact": {
+        "path": "transcripts/local/aq.68BnH29qvAA.en.6663a0a36468.json3",
+        "bytes": 87266,
+        "sha256": "6663a0a364682514af986301685213a3875e4097351d67899d82befda58c96d5",
+        "format": "youtube_json3",
+        "cue_count": 143,
+        "first_cue_start_seconds": 0,
+        "last_cue_start_seconds": 315.88,
+        "last_cue_end_seconds": 318.76
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/automation-68BnH29qvAA-148-create-form.png",
+          "bytes": 52344,
+          "sha256": "6b2185baa49a579d6db80c8741ff1deedb877d9ad4f58dd82517bf17744fa594",
+          "evidence_id": "V1",
+          "video_time_seconds": 148.56,
+          "observation": "Formulário de criação e opções de gatilho visíveis; nenhuma execução comprovada.",
+          "capture_scope": "Selected video frame; not continuous playback"
+        },
+        {
+          "path": "studies/local/automation-68BnH29qvAA-168-prompt.png",
+          "bytes": 102820,
+          "sha256": "d8b14a1bb1e9adf06694c6242dbbd88d4e3e2ce9aac9ae7790cbf3caa19a25f9",
+          "evidence_id": "V2",
+          "video_time_seconds": 168.56,
+          "observation": "Critérios de relevância e resumo; entrega via API Twilio no pedido. Nenhum resultado de avaliação contra exemplos conhecidos.",
+          "capture_scope": "Selected video frame; not continuous playback"
+        },
+        {
+          "path": "studies/local/automation-68BnH29qvAA-190-schedule.png",
+          "bytes": 66041,
+          "sha256": "b0896cf391cb005f40dd05e0decf85d38184f3f00ef58db7b7747f4791a6ab6d",
+          "evidence_id": "V3",
+          "video_time_seconds": 190.272,
+          "observation": "Expressão 0 */4 * * * e texto de frequência a cada quatro horas em UTC; aviso de pequenos deslocamentos de execução.",
+          "capture_scope": "Selected video frame; not continuous playback"
+        },
+        {
+          "path": "studies/local/automation-68BnH29qvAA-195-routine-controls.png",
+          "bytes": 68135,
+          "sha256": "c66772c4a6a6106405fe3a89e1684ab15e0ca43d38fe82795e0a60708af6d6b4",
+          "evidence_id": "V4",
+          "video_time_seconds": 195.272,
+          "observation": "Frequência adicionada ao formulário; não há passagem de quatro horas observada.",
+          "capture_scope": "Selected video frame; not continuous playback"
+        },
+        {
+          "path": "studies/local/automation-68BnH29qvAA-200-edit-controls.png",
+          "bytes": 84473,
+          "sha256": "63b77daf5051aaedd55284d28773c7f60814b9e898ea7900876793e35b5fd028",
+          "evidence_id": "V5",
+          "video_time_seconds": 200.272,
+          "observation": "Pedido detalha formato, limites e caso sem resultados; indicação de execução manual ao fundo. Nenhuma pausa executada confirmada.",
+          "capture_scope": "Selected video frame; not continuous playback"
+        },
+        {
+          "path": "studies/local/automation-68BnH29qvAA-205-environment.png",
+          "bytes": 60937,
+          "sha256": "bda10372794c435f23ae67942d0e555ba8917f418abeaf7b8117d726fe700f5c",
+          "evidence_id": "V6",
+          "video_time_seconds": 205.272,
+          "observation": "Formulário de ambiente avisa que variáveis são visíveis a quem usa o ambiente e que não se devem adicionar segredos/credenciais. Conflita com orientação verbal no contexto das APIs.",
+          "capture_scope": "Selected video frame; not continuous playback"
+        },
+        {
+          "path": "studies/local/automation-68BnH29qvAA-215-manual-run.png",
+          "bytes": 70662,
+          "sha256": "8211c616a632e99dc9060949be0621b472e3adab5e7519e0da65afdeb9089641",
+          "evidence_id": "V7",
+          "video_time_seconds": 215.272,
+          "observation": "Sessão confirma presença de variáveis e prepara execução; pedido requer OAuth de Zoho. Nenhum SMS entregue comprovado.",
+          "capture_scope": "Selected video frame; not continuous playback"
+        },
+        {
+          "path": "studies/local/automation-68BnH29qvAA-241-email-result.png",
+          "bytes": 33399,
+          "sha256": "0ef14b906ea2573346431a757591f8b06d599a7b3a8da884979ee4821bba22aa",
+          "evidence_id": "V8",
+          "video_time_seconds": 241.983999,
+          "observation": "Resumo por email apresentado pelo autor; não confrontado com todo o conjunto de mensagens de origem.",
+          "capture_scope": "Selected video frame; not continuous playback"
+        }
+      ],
+      "visual_observation_artifact": {
+        "path": "studies/local/automation-68BnH29qvAA-visual-observations.json",
+        "bytes": 3700,
+        "sha256": "e00cb93a798f7f9f1fd641eb2b1b111f08eecd8979b29403fdd77c75d41dab98"
+      },
+      "visual_review": {
+        "method": "Eight paused frames inspected in Chrome using supported browser skill; public video only. No routine or external account was operated.",
+        "continuous_video_review": false,
+        "source_interfaces_not_operated": true,
+        "remaining_limits": [
+          "Full audiovisual timeline not watched; selected images are not continuous playback.",
+          "Entire source email set and implementation were not examined.",
+          "SMS delivery, scheduled recurrence, pause and maintenance are not demonstrated by the evidence inspected."
+        ]
+      },
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "full_source_analyzed_false_reason": "Full caption read and selected material frames examined; continuous audiovisual review and complete visual coverage are not established. Source demonstrations also leave operational gaps.",
+      "curricular_disposition": "optional_later_case; insufficient_for_first_csv_automation",
+      "curriculum_approved": false,
+      "first_csv_automation_supported": false,
+      "original_practice_proposed": true,
+      "original_practice_executed": false,
+      "prerequisites_observed": [
+        "Access to Claude routines",
+        "CLI used to prepare instructions",
+        "Zoho OAuth and mail API",
+        "Twilio API and external approval for SMS",
+        "Environment configuration and network policy"
+      ],
+      "material_conflict": "At 205.272s the environment UI warns against adding secrets/credentials while narration directs the API-dependent workflow variables to that section. No secret values were read, copied or disclosed; no workaround is advised.",
+      "next_action": "Use only as optional later evidence of setup cost and incomplete outcome; first CSV exercise and current scheduling references are handled separately in studies/scheduling. No further acquisition or curriculum mutation."
+    }
+  ]
+}

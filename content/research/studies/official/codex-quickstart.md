@@ -1,6 +1,6 @@
 # Estudo — Quickstart oficial para Codex no Desktop
 
-Fonte complementar selecionada como principal de entrada P0: [Quickstart](https://learn.chatgpt.com/docs/quickstart), OpenAI, inglês, observado em 28/09/2026. Não possui ID próprio no registro existente; relacionado a `res-codex-desktop-start`. A inclusão/alteração de ID cabe ao coordenador, não foi feita nesta ficha.
+Fonte complementar selecionada como principal de entrada P0: [Quickstart](https://learn.chatgpt.com/docs/quickstart), OpenAI, inglês, observado em 28/09/2026. Recurso canônico `res-codex-desktop-quickstart`; `/docs/app` preserva sua identidade `res-codex-desktop-start` como complemento.
 
 Artefato original `studies/local/official-codex-quickstart.md`, SHA-256 `5c052386e1de596504ce11df740000577d8acc5b6c5693a524b3f711cceabcef`, linhas 1–204 integralmente lidas via `lookup_page` oficial. Inclui ambas as variantes Desktop/Web e o texto completo dos seis exemplos configurados no componente. Não há truncamento. Corpo Desktop também conferido renderizado, e ilustração vista em `official-codex-quickstart-selector.png`, SHA-256 `75d58a03b02fce0f1456a50575c0daca73b5c6d161e2cdc72623af993f4b78db`.
 
@@ -22,7 +22,7 @@ Pertinência: alta para primeira entrada Desktop. Pré-requisitos didáticos: pa
 
 ## Prática original: primeiro resultado revisável
 
-Competência: escolher local/produto, formular pedido limitado, confrontar resposta com mudança e refinar. Exercício vinculado a `res-codex-desktop-start`; proposta editorial, sem simular resultado já obtido.
+Competência: escolher local/produto, formular pedido limitado, confrontar resposta com mudança e refinar. Exercício proposto vinculado a `res-codex-desktop-quickstart`; proposta editorial, sem simular resultado já obtido.
 
 1. Abrir o app, entrar na conta, selecionar Codex e pasta de treino. Anotar o arquivo que a atividade pretende alterar e o resultado inicial exibido. Se o acesso impedir a etapa, registrar mensagem e parar a execução dependente.
 2. Pedir: “Na página desta pasta, mude o título para ‘Oficina de ideias’ e mantenha o restante. Diga qual arquivo mudou e como conferir. Se faltar algo para abrir a página, explique antes de afirmar que verificou.”
@@ -36,3 +36,5 @@ Entregável mínimo: pedido, resposta, evidência da página e um registro da re
 ## Limites de estudo
 
 Não instalados aplicativo/dependências; nenhuma conta, pasta do aluno, geração, revisão, teste ou publicação foi operada. O seletor ilustrativo não altera configurações reais. Links de pricing/Linux/importação e casos de uso não foram integralmente estudados; preços, sistemas específicos e esses fluxos permanecem fora da ficha.
+
+Nota de integração do Educador: a L01 continua produzindo um plano revisado. A prática de edição descrita nesta ficha é proposta de pesquisa para etapa posterior e não substitui esse resultado curricular.

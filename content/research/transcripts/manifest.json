@@ -1323,7 +1323,7 @@
       "duration_seconds": 317,
       "full_source_analyzed": false,
       "full_speech_coverage_verified": false,
-      "full_transcript_read": false,
+      "full_transcript_read": true,
       "full_video_watched": false,
       "next_action": "Read full track and verify material audiovisual demonstrations and speech coverage.",
       "pending_reason": "speech_completeness_and_caption_accuracy_not_yet_verified",
@@ -1333,11 +1333,12 @@
         "designcourse-youtube"
       ],
       "status": "exported_track",
-      "study_status": "not_started",
+      "study_status": "transcript_analyzed_visual_pending",
       "title": "NEW Claude Feature - Setting up your First Routine",
       "url": "https://www.youtube.com/watch?v=68BnH29qvAA",
       "video_id": "68BnH29qvAA",
-      "source_id": "designcourse-youtube"
+      "source_id": "designcourse-youtube",
+      "study_path": "studies/automation/68BnH29qvAA.md"
     },
     {
       "artifact_root": "/Users/lucasmarques/.codex/worktrees/81be/Ganesha/content/research/transcripts/local",
@@ -2015,7 +2016,7 @@
       "duration_seconds": 1527,
       "full_source_analyzed": false,
       "full_speech_coverage_verified": false,
-      "full_transcript_read": false,
+      "full_transcript_read": true,
       "full_video_watched": false,
       "next_action": "Read full track and verify material audiovisual demonstrations and speech coverage.",
       "pending_reason": "speech_completeness_and_caption_accuracy_not_yet_verified",
@@ -2026,11 +2027,12 @@
         "peter-yang-youtube"
       ],
       "status": "exported_track",
-      "study_status": "not_started",
+      "study_status": "transcript_analyzed_visual_pending",
       "title": "Full Tutorial: From Idea to App with Claude Design and Claude Code in 25 Minutes",
       "url": "https://www.youtube.com/watch?v=G9o8eoHzpxc",
       "video_id": "G9o8eoHzpxc",
-      "source_id": "peter-yang-newsletter"
+      "source_id": "peter-yang-newsletter",
+      "study_path": "studies/app/G9o8eoHzpxc.md"
     },
     {
       "artifact_root": "/Users/lucasmarques/.codex/worktrees/81be/Ganesha/content/research/transcripts/local",
@@ -2970,7 +2972,7 @@
       "duration_seconds": 2212,
       "full_source_analyzed": false,
       "full_speech_coverage_verified": false,
-      "full_transcript_read": false,
+      "full_transcript_read": true,
       "full_video_watched": false,
       "next_action": "Read full track and verify material audiovisual demonstrations and speech coverage.",
       "pending_reason": "speech_completeness_and_caption_accuracy_not_yet_verified",
@@ -2980,11 +2982,12 @@
         "riley-brown-youtube"
       ],
       "status": "exported_track",
-      "study_status": "not_started",
+      "study_status": "transcript_analyzed_visual_pending",
       "title": "I Built an Entire Website with Claude Code… Here’s How",
       "url": "https://www.youtube.com/watch?v=SKBDC3QugZw",
       "video_id": "SKBDC3QugZw",
-      "source_id": "riley-brown-youtube"
+      "source_id": "riley-brown-youtube",
+      "study_path": "studies/site/SKBDC3QugZw.md"
     },
     {
       "artifact_root": "/Users/lucasmarques/.codex/worktrees/81be/Ganesha/content/research/transcripts/local",
@@ -4108,5 +4111,5 @@
       "study_scope": "Complete publisher transcript and written lesson; audiovisual pending"
     }
   ],
-  "updated_at": "2026-09-28T19:53:54.434682+00:00"
+  "updated_at": "2026-09-28T20:04:06.410449+00:00"
 }

@@ -512,7 +512,7 @@
     },
     {
       "id": "official-codex-quickstart",
-      "resource_id": null,
+      "resource_id": "res-codex-desktop-quickstart",
       "related_resource_ids": [
         "res-codex-desktop-start"
       ],

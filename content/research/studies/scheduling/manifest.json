@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-28T19:59:11.836636+00:00",
+  "studies": [
+    {
+      "id": "scheduling-claude-manual-first",
+      "source_id": "claude-academy",
+      "url": "https://code.claude.com/docs/en/desktop-scheduled-tasks",
+      "study_path": "studies/scheduling/local-manual-first.md",
+      "status": "full_source_analyzed",
+      "text_read_complete": true,
+      "full_source_analyzed": true,
+      "procedure_executed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/schedule-claude.txt",
+          "bytes": 9078,
+          "sha256": "eccbfc17ff5df9863ab547fe6df56386196c82bb9b939bec60d6f407113f0e7a",
+          "line_count": 90,
+          "read_lines": [
+            [
+              1,
+              90
+            ]
+          ],
+          "capture": "Browser main.innerText; full rendered Desktop body"
+        }
+      ],
+      "scope": "Complete textual document",
+      "pending": [
+        "Execute original CSV/report practice; validate scheduling and recovery on actual surface"
+      ],
+      "curriculum_status": "proposed_for_educator_review"
+    },
+    {
+      "id": "scheduling-codex-manual-first",
+      "source_id": "openai-learn-codex",
+      "url": "https://learn.chatgpt.com/docs/automations",
+      "study_path": "studies/scheduling/local-manual-first.md",
+      "status": "partial",
+      "text_read_complete": true,
+      "full_source_analyzed": false,
+      "procedure_executed": false,
+      "artifacts": [
+        {
+          "path": "studies/local/schedule-codex-desktop.txt",
+          "bytes": 13373,
+          "sha256": "cfaed4e71ba8928e069dad5b350d770c8c51200738188be2ceb02ede1e9b0c36",
+          "line_count": 220,
+          "read_lines": [
+            [
+              1,
+              220
+            ]
+          ],
+          "capture": "Browser main.innerText; full rendered Desktop body"
+        }
+      ],
+      "scope": "Complete text of rendered Desktop variant; embedded video, illustrations and other surface variants not fully studied",
+      "pending": [
+        "Execute original CSV/report practice; validate scheduling and recovery on actual surface"
+      ],
+      "curriculum_status": "proposed_for_educator_review"
+    }
+  ]
+}

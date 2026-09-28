@@ -102,7 +102,9 @@ def main():
         studies[study['video_id']] = {**study, 'study_path': v['study_path'],
                                      'all_exported_text_read': study['full_transcript_read']}
         checks += 2
-    for study in read(ROOT / 'studies/official/manifest.json', {'studies': []})['studies']:
+    document_studies = read(ROOT / 'studies/official/manifest.json', {'studies': []})['studies']
+    document_studies += read(ROOT / 'studies/scheduling/manifest.json', {'studies': []})['studies']
+    for study in document_studies:
         assert (ROOT / study['study_path']).is_file()
         read_texts = []
         for a in study['artifacts']:

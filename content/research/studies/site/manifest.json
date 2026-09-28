@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "schema_description": "Estudos com proveniência do texto, leitura sequencial, amostras visuais e limites separados. Paths relativos a content/research.",
+  "generated_at": "2026-09-28T20:01:56.266051+00:00",
+  "studies": [
+    {
+      "id": "site-riley-SKBDC3QugZw",
+      "video_id": "SKBDC3QugZw",
+      "source_id": "riley-brown-youtube",
+      "source_url": "https://www.youtube.com/watch?v=SKBDC3QugZw",
+      "title": "I Built an Entire Website with Claude Code… Here’s How",
+      "author": "Riley Brown",
+      "publication_date": "2025-08-07",
+      "duration_seconds": 2212,
+      "metadata_provenance": "metadados públicos de watch adquiridos por yt-dlp, registrados no manifesto de transcrições; título/canal corroborados no player",
+      "caption_acquired_at": "2026-09-28T19:48:58.280351+00:00",
+      "study_date": "2026-09-28",
+      "status": "transcript_analyzed_visual_pending",
+      "scope": "leitura sequencial de toda a faixa automática adquirida, análise da sequência inteira e seis checkpoints visuais; audiovisual contínuo não revisado",
+      "caption_artifact": {
+        "path": "transcripts/local/aq.SKBDC3QugZw.en.361ce70fd598.txt",
+        "bytes": 55232,
+        "sha256": "361ce70fd598c95c28ccad28e35bb431b66c432e714c4d6036ceadc4cdc08c5a",
+        "logical_line_count": 789,
+        "sequential_read_ranges": [
+          [
+            1,
+            275
+          ],
+          [
+            276,
+            540
+          ],
+          [
+            541,
+            789
+          ]
+        ],
+        "language": "en",
+        "track_kind": "automatic",
+        "first_cue_start_seconds": 0.08,
+        "last_cue_end_seconds": 2211.359
+      },
+      "caption_original_artifact": {
+        "path": "transcripts/local/aq.SKBDC3QugZw.en.4c9d53a93d65.json3",
+        "bytes": 619887,
+        "sha256": "4c9d53a93d651110cc473365bdd085ac7e89b6423e777dca1b66c7557a1d98e5"
+      },
+      "visual_artifacts": [
+        {
+          "path": "studies/local/site-SKBDC3QugZw-0546.png",
+          "bytes": 184370,
+          "sha256": "a07603e0075fccb38d6a4e37ab357fa958799e59f50762c264ef9a6fd1903995",
+          "source_timestamp_seconds": 346,
+          "timestamp_basis": "tempo efetivo mostrado no player e DOM após estabilizar navegação",
+          "capture_date": "2026-09-28",
+          "method": "screenshot do player no navegador, sem download da mídia",
+          "visually_reviewed": true,
+          "observation": "Prompt no terminal do Cursor referencia plan.md, tecnologia, execução local e ativos. Não contém plano completo.",
+          "scope": "quadro selecionado, não intervalo contínuo"
+        },
+        {
+          "path": "studies/local/site-SKBDC3QugZw-2021.png",
+          "bytes": 148258,
+          "sha256": "0cd458628c0a2bff59d28335d0f8db74f415fb3ed372fb6151cef90cbaa72b9e",
+          "source_timestamp_seconds": 1221,
+          "timestamp_basis": "tempo efetivo mostrado no player e DOM após estabilizar navegação",
+          "capture_date": "2026-09-28",
+          "method": "screenshot do player no navegador, sem download da mídia",
+          "visually_reviewed": true,
+          "observation": "Chat mostra mensagem de falha de conexão. Causa técnica não identificada pelo quadro.",
+          "scope": "quadro selecionado, não intervalo contínuo"
+        },
+        {
+          "path": "studies/local/site-SKBDC3QugZw-2024.png",
+          "bytes": 169997,
+          "sha256": "5edf6a5cc8466882f58db4331fb6209e6a8e365b6b3d697eef00f9823cf2c000",
+          "source_timestamp_seconds": 1224,
+          "timestamp_basis": "tempo efetivo mostrado no player e DOM após estabilizar navegação",
+          "capture_date": "2026-09-28",
+          "method": "screenshot do player no navegador, sem download da mídia",
+          "visually_reviewed": true,
+          "observation": "Relato do agente menciona VITE_ANTHROPIC_API_KEY e painel lateral relata reinício em localhost:5173. Código não auditado.",
+          "scope": "quadro selecionado, não intervalo contínuo"
+        },
+        {
+          "path": "studies/local/site-SKBDC3QugZw-2146.png",
+          "bytes": 145244,
+          "sha256": "f5e0c366505506c9a0089b7ac34c1ce588905cf96bce4b6ee2d0480a5876df1e",
+          "source_timestamp_seconds": 1306,
+          "timestamp_basis": "tempo efetivo mostrado no player e DOM após estabilizar navegação",
+          "capture_date": "2026-09-28",
+          "method": "screenshot do player no navegador, sem download da mídia",
+          "visually_reviewed": true,
+          "observation": "Resposta do chat sobre autor/podcast após correção. Não certifica veracidade ou segurança.",
+          "scope": "quadro selecionado, não intervalo contínuo"
+        },
+        {
+          "path": "studies/local/site-SKBDC3QugZw-3550.png",
+          "bytes": 160673,
+          "sha256": "f7cb577923eb4fd58d9b4fd9da9fd652c4c591db72573ce7a57ad2c5059f734d",
+          "source_timestamp_seconds": 2150,
+          "timestamp_basis": "tempo efetivo mostrado no player e DOM após estabilizar navegação",
+          "capture_date": "2026-09-28",
+          "method": "screenshot do player no navegador, sem download da mídia",
+          "visually_reviewed": true,
+          "observation": "Terminal relata build funcionando e prepara commit de correções TypeScript; log completo e diff não revisados.",
+          "scope": "quadro selecionado, não intervalo contínuo"
+        },
+        {
+          "path": "studies/local/site-SKBDC3QugZw-3555.png",
+          "bytes": 144514,
+          "sha256": "cfaaaf6900efd4c00772715a079946c547f850491f9ea9cef44ae4b6821d587e",
+          "source_timestamp_seconds": 2155,
+          "timestamp_basis": "tempo efetivo mostrado no player e DOM após estabilizar navegação",
+          "capture_date": "2026-09-28",
+          "method": "screenshot do player no navegador, sem download da mídia",
+          "visually_reviewed": true,
+          "observation": "Painel de implantação com prévia e sobreposição parcial. Sem teste independente da URL como visitante.",
+          "scope": "quadro selecionado, não intervalo contínuo"
+        }
+      ],
+      "study_path": "studies/site/SKBDC3QugZw.md",
+      "study_artifact": {
+        "path": "studies/site/SKBDC3QugZw.md",
+        "bytes": 21992,
+        "sha256": "ea13c0c19115d29fbf0d2678c01cf91aec74021768d8381b3a326d31df4fa25f"
+      },
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "curricular_fit": {
+        "standalone_beginner_tutorial": false,
+        "use": "estudo de caso acompanhado de pedido, prévia, erro, correção e reteste; referência de plano em L01",
+        "L01_deliverable": "plano revisado apenas",
+        "implementation_and_publication": "etapas posteriores, com quickstart e publicação oficiais atuais",
+        "main_limits": [
+          "CLI no Cursor, não Claude Desktop",
+          "instalação já existente e fluxo de contas incompleto",
+          "recomendação de aceitar permissões sem ler excluída da prática",
+          "escopo cresce para várias ferramentas e APIs",
+          "publicação e segurança não verificadas como visitante"
+        ]
+      },
+      "additional_reference_consulted": [
+        {
+          "source_url": "https://vite.dev/guide/env-and-mode#env-variables",
+          "publisher": "Vite",
+          "access_date": "2026-09-28",
+          "scope": "consulta pontual às seções Env Variables e Protecting secrets, linhas web 92–116",
+          "purpose": "interpretar sinal VITE_ANTHROPIC_API_KEY visível em 20:24, sem afirmar vazamento real",
+          "full_document_study": false
+        }
+      ],
+      "not_reviewed": [
+        "audiovisual integral e precisão integral das legendas",
+        "código/repositório do autor e pacote de produção",
+        "todos os prompts visíveis e músicas completas",
+        "teste independente do site público e revisão de segredos",
+        "causas técnicas e retestes não explicitados pelo autor"
+      ],
+      "rights": {
+        "originals_local_only": true,
+        "raw_and_captures_gitignored": true,
+        "redistribution_license_assumed": false
+      }
+    }
+  ]
+}

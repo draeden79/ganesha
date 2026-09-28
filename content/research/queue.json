@@ -3,14 +3,16 @@
     "id": "q-curated-deep-study",
     "priority": "P0",
     "priority_order": 1,
-    "status": "in_progress",
+    "status": "batch_delivered_gaps_explicit",
     "owner": "Devorador",
     "created_at": "2026-09-28",
     "task": "Selecionar fontes relevantes para iniciantes construírem sites, apps e automações; estudar integralmente cada recurso selecionado e conferir demonstrações materiais antes de fundamentar aulas.",
     "plan": "CURATION_PLAN.md",
     "selection_ledger": "curation.json",
     "done_when": "Cada competência necessária tem fonte apropriada estudada, exemplos completos, prática e verificações sustentáveis; lacunas explícitas. Tamanho do corpus conforme suficiência, não meta arbitrária de downloads.",
-    "scope_note": "P0: pedido e quickstarts com ciclo curto. P1: site local/testar/corrigir e publicação. P2: app simples e CSV fictício para relatório. Inventário histórico é backlog."
+    "scope_note": "P0: pedido e quickstarts com ciclo curto. P1: site local/testar/corrigir e publicação. P2: app simples e CSV fictício para relatório. Inventário histórico é backlog.",
+    "handoff": "DELIVERY_STATUS.md",
+    "next_action": "Aguardar validação didática por competência e preencher lacuna concreta; não retomar histórico amplo."
   },
   {
     "id": "q-all-priority-video-transcripts",
@@ -158,14 +160,15 @@
     "priority": "P1",
     "next_cycle_order": 1,
     "priority_reason": "Sequência atual do Educador: P0 primeiro pedido; P1 site e publicação; P2 app e automação.",
-    "status": "integral_study_in_progress",
+    "status": "documentation_studied_execution_pending",
     "url": "https://learn.chatgpt.com/docs/app",
     "task": "Concluir fontes oficiais Netlify Drop + visibilidade para publicação manual de site estático e atualização.",
     "done_when": "Conferir URL pública, acesso visitante e relação entre projeto local e hospedagem.",
     "created_at": "2026-09-28T18:51:32Z",
     "owner": "Devorador",
     "history_total_known": false,
-    "priority_note": "Lacunas diretamente ligadas ao propósito: automação útil e publicação de site simples."
+    "priority_note": "Lacunas diretamente ligadas ao propósito: automação útil e publicação de site simples.",
+    "study_path": "studies/publishing/netlify-manual-static.md"
   },
   {
     "id": "q-first-automation-manual",
@@ -175,7 +178,7 @@
     ],
     "priority": "P2",
     "next_cycle_order": 2,
-    "status": "topic_gap",
+    "status": "documentation_and_proposal_ready_execution_pending",
     "url": "https://learn.chatgpt.com/docs/automations",
     "related_resource_ids": [
       "res-codex-local-schedule",
@@ -186,7 +189,8 @@
     "created_at": "2026-09-28",
     "owner": "Devorador",
     "history_total_known": false,
-    "priority_note": "Sequência atual do Educador; dados fictícios para relatório manual antes de agenda. Casos n8n não bloqueiam essa rota."
+    "priority_note": "Sequência atual do Educador; dados fictícios para relatório manual antes de agenda. Casos n8n não bloqueiam essa rota.",
+    "study_path": "studies/scheduling/local-manual-first.md"
   },
   {
     "id": "q-claude-desktop-drift",

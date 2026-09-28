@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "artifact_path_base": "content/research",
+  "updated_at": "2026-09-28T20:02:29.083559+00:00",
+  "scope": "Estudo de um candidato de app; sem execução do app, expansão de catálogo ou certificação audiovisual integral.",
+  "studies": [
+    {
+      "id": "peter-tastemaker-app-G9o8eoHzpxc",
+      "video_id": "G9o8eoHzpxc",
+      "url": "https://www.youtube.com/watch?v=G9o8eoHzpxc",
+      "title": "Full Tutorial: From Idea to App with Claude Design and Claude Code in 25 Minutes",
+      "author": "Peter Yang",
+      "published_at": "2026-07-29",
+      "studied_at": "2026-09-28",
+      "metadata_provenance": "acquisition/manifest.jsonl; public yt-dlp metadata acquired by parent workflow",
+      "duration_seconds_metadata": 1527,
+      "duration_seconds_observed_player": 1526,
+      "study_path": "studies/app/G9o8eoHzpxc.md",
+      "study_artifact": {
+        "path": "studies/app/G9o8eoHzpxc.md",
+        "bytes": 16297,
+        "sha256": "e7b1124018df7f3fb29e985e6f89304096ef5070637fb525a380186177f2e3a2"
+      },
+      "caption_artifact": {
+        "path": "transcripts/local/aq.G9o8eoHzpxc.en.ab703bbf7113.txt",
+        "bytes": 49333,
+        "sha256": "ab703bbf7113d5fe9b6c3f1beaf3733623475cad57b3f4cb9d8613a9f8d8a6e2",
+        "logical_line_count": 754,
+        "sequential_read_ranges": [
+          [
+            1,
+            380
+          ],
+          [
+            381,
+            754
+          ]
+        ],
+        "cue_count": 754,
+        "language": "en",
+        "caption_origin": "automatic",
+        "format": "derived_cue_text",
+        "track_export_complete": true,
+        "first_cue_start_seconds": 0.96,
+        "last_cue_start_seconds": 1525.72,
+        "last_cue_end_seconds": 1528.24
+      },
+      "caption_origin_artifact": {
+        "path": "transcripts/local/aq.G9o8eoHzpxc.en.e782deb704d9.json3",
+        "bytes": 412639,
+        "sha256": "e782deb704d9f32f93a60d9bc2e129500e6e12bb984f413c3e17448f4597883d"
+      },
+      "caption_origin_artifact_review": "Timing, count and hash verified by script; not a second sequential full reading.",
+      "visual_artifacts": [
+        {
+          "path": "studies/local/app-G9o8eoHzpxc-15m43.png",
+          "bytes": 98657,
+          "sha256": "ae98b75520eec6ef1bb07b5d103fbd042678b38c085216d1cd31eaee5b7ee9f5",
+          "player_seconds": 943,
+          "player_timestamp": "15:43",
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Spec técnica com entidades, permissões, marcador de implementação e catálogo pré-carregado como alternativa de desenvolvimento sem credenciais. Documento, não teste do banco.",
+          "public_republication_authorized": false
+        },
+        {
+          "path": "studies/local/app-G9o8eoHzpxc-18m13.png",
+          "bytes": 83948,
+          "sha256": "9b15bd3bcc5febf16c7a20832bfd1d46fafc81cb77017f544dabed6c5d53e778",
+          "player_seconds": 1093,
+          "player_timestamp": "18:13",
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Canvas de Claude Design com estado vazio da página do criador. Mockup, não teste de conta real sem dados.",
+          "public_republication_authorized": false
+        },
+        {
+          "path": "studies/local/app-G9o8eoHzpxc-18m48.png",
+          "bytes": 86089,
+          "sha256": "dd3b5ea149d10a6cfc5c00a9610d7a7c6b6bb6d8e398ad0054c79a22e1fd6b4d",
+          "player_seconds": 1128,
+          "player_timestamp": "18:48",
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Canvas de onboarding com identificador disponível e seleção parcial de favoritos. Validação e busca reais não demonstradas neste quadro.",
+          "public_republication_authorized": false
+        },
+        {
+          "path": "studies/local/app-G9o8eoHzpxc-21m18.png",
+          "bytes": 98766,
+          "sha256": "8ea6bae403b91ed91229954d8184cd7b29fbd3d1df7a173ff5c41a5a748a5f8f",
+          "player_seconds": 1278,
+          "player_timestamp": "21:18",
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Resposta do agente aponta localhost e sugere testes de tema, dono/visitante, edição, salvar e filtros; não fornece resultados desses testes.",
+          "public_republication_authorized": false
+        },
+        {
+          "path": "studies/local/app-G9o8eoHzpxc-21m33.png",
+          "bytes": 105589,
+          "sha256": "b10ce6404455564c5988642101845ed7922edc06bc3993e99ae04662aa3f992b",
+          "player_seconds": 1293,
+          "player_timestamp": "21:33",
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Feedback pede resenhas ausentes, correções de texto/hover, remoções e bloqueio de salvar sem login. Reteste não observado.",
+          "public_republication_authorized": false
+        },
+        {
+          "path": "studies/local/app-G9o8eoHzpxc-result-initial.png",
+          "bytes": 91189,
+          "sha256": "751f88954cf09115d02eecb1521536e93621ea969c32effcf80f013d81869558",
+          "player_seconds": 1353,
+          "player_timestamp": "22:33",
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Perfil final preenchido com Add, Share, edição, filtros, favoritos e resenha. Nenhuma entrada nova submetida. Nome do arquivo não indica horário.",
+          "public_republication_authorized": false
+        },
+        {
+          "path": "studies/local/app-G9o8eoHzpxc-22m38.png",
+          "bytes": 112289,
+          "sha256": "cf61af11008cc639437b6ac4a2dd9a2fd6c7aeb2f56f171f75ddd93e7c34c30e",
+          "player_seconds": 1358,
+          "player_timestamp": "22:38",
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Perfil rolado com resenhas, controles de edição e região Saved vazia. Nenhum formulário enviado.",
+          "public_republication_authorized": false
+        },
+        {
+          "path": "studies/local/app-G9o8eoHzpxc-22m43.png",
+          "bytes": 83959,
+          "sha256": "eb8c8c49695c3ab578510e181ee25c507fc5cbb6bd61c098d817ece49ea150de",
+          "player_seconds": 1363,
+          "player_timestamp": "22:43",
+          "review_type": "single_frame",
+          "visually_inspected": true,
+          "observation": "Perfil e navegação de resenhas. Fala sobre ordenar não comprova mudança de ordem no quadro.",
+          "public_republication_authorized": false
+        }
+      ],
+      "full_transcript_read": true,
+      "full_video_watched": false,
+      "full_source_analyzed": false,
+      "full_speech_coverage_verified": false,
+      "study_status": "transcript_analyzed_visual_pending",
+      "visual_coverage": "Eight inspected single frames. No complete audiovisual interval certified. Intervening states, actions and transitions remain unverified.",
+      "timing_note": "Automatic captions span 0.960–1528.240s; last end exceeds 1527s metadata by 1.240s. Player shows 25:26. Timing discrepancies and first/last speech were not resolved; bounds do not prove complete speech.",
+      "sufficiency": {
+        "beginner_functional_app_primary": false,
+        "optional_design_and_state_planning_support": true,
+        "reason": "Detailed design/specification process with abbreviated implementation and final demo; no reproducible input-validation-write-reload-recovery sequence.",
+        "prerequisites": [
+          "Claude Code environment",
+          "Claude Design access",
+          "ZIP/HTML/Markdown handling",
+          "Database/authentication and deployment work omitted from operational sequence"
+        ],
+        "material_findings": [
+          "15:43 specification already labels schema/authentication/persistence implemented while narration later says build has not started; chronology inference only.",
+          "15:43 seeded catalog fallback means filled interface does not prove connected data services.",
+          "21:33 feedback requests preventing save without login; retest not observed.",
+          "22:46 onward narrator acknowledges hours of work and offscreen Supabase/authentication setup."
+        ],
+        "current_interfaces_verified": false,
+        "cli_desktop_feature_parity_assumed": false,
+        "duplication_and_fit": "Overlaps visual prompting and iteration; adds explicit app states/schema. Optional after a smaller functional experience."
+      },
+      "proposed_practice": {
+        "title": "Minha lista de leituras",
+        "status": "editorial_proposal_not_executed",
+        "checks": [
+          "Empty title rejects without item creation; valid title creates exact item/state/count.",
+          "Save unique title and changed state, reload and close/reopen, confirm persistence within declared environment.",
+          "Edit/delete back to empty state; controlled storage failure must not report false success or silently discard input."
+        ],
+        "storage_boundary": "A first local-browser practice must state its limits and must not claim cross-device synchronization."
+      },
+      "execution": {
+        "source_app_opened_or_tested": false,
+        "practice_executed": false,
+        "accounts_created": false,
+        "deployment_performed": false,
+        "video_or_audio_downloaded": false
+      },
+      "pending_study": [
+        "Continuous audiovisual review including actions and transitions",
+        "Caption accuracy and uncertain proper nouns",
+        "First/last speech and duration discrepancies"
+      ],
+      "tutorial_gaps": [
+        "Operational database/authentication/deployment setup",
+        "New input submission and validation rejection",
+        "Write then reload/relogin retrieval",
+        "Operational failure recovery with retest",
+        "Retest of logged-out save restriction and separation between users"
+      ],
+      "rights_note": "Caption originals and screenshots are internal ignored artifacts; original editorial study does not republish the transcript."
+    }
+  ]
+}

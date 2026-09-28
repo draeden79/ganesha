@@ -1,0 +1,10 @@
+{
+  "validated_at": "2026-09-28T20:03:28.075609+00:00",
+  "study_count": 1,
+  "caption_lines": 143,
+  "covered_caption_lines": 143,
+  "visual_artifact_count": 8,
+  "hashed_artifacts_checked": 12,
+  "errors": [],
+  "validation_scope": "Artifact paths, bytes, SHA-256 and declared sequential line coverage; not a certification of speech or complete audiovisual coverage."
+}

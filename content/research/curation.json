@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "directive": "Relevant, sufficient, deeply studied corpus; exhaustive inventory preserved as secondary backlog.",
-  "updated_at": "2026-09-28T19:52:16.725482+00:00",
+  "updated_at": "2026-09-28T20:03:01.046668+00:00",
   "triage_is_not_evidence": true,
   "curriculum_acceptance_owner": "Educador",
   "selected_or_supporting_resources": [
@@ -77,7 +77,8 @@
       "overlap": "Uma entrada principal Codex; /app e referências de revisão apenas cobrem lacunas concretas.",
       "full_study_manifest": "studies/official/manifest.json",
       "next_action": "Educador: revisar original e ficha; execução no aplicativo ainda não testada.",
-      "study_path": "studies/official/codex-quickstart.md"
+      "study_path": "studies/official/codex-quickstart.md",
+      "resource_id": "res-codex-desktop-quickstart"
     },
     {
       "id": "cur-claude-plan-workflow",
@@ -184,6 +185,66 @@
       "overlap": "Não serve sozinho como primeira automação completa; preservar erros e limites.",
       "full_study_manifest": "studies/videos/manifest.json",
       "next_action": "Validate complete study and relevant visual evidence; Educador decides bounded curriculum use."
+    },
+    {
+      "id": "cur-riley-site",
+      "source_id": "riley-brown-youtube",
+      "video_id": "SKBDC3QugZw",
+      "url": "https://www.youtube.com/watch?v=SKBDC3QugZw",
+      "priority": "P1",
+      "theme": "site-simples",
+      "status": "case_support_only",
+      "study_path": "studies/site/SKBDC3QugZw.md",
+      "selection_reason": "Faixa inteira e seis checkpoints estudados. Bons ciclos de correção, mas CLI/serviços e escopo crescentes. Sem publicação visitante ou revisão de segredos demonstrada.",
+      "audience": "Pessoas comuns; caso de apoio não se confunde com roteiro autossuficiente",
+      "freshness": {
+        "checked_on": "2026-09-28",
+        "source_date": "2025-08-07",
+        "operational_steps_verified_in_current_app": false
+      },
+      "full_source_analyzed": false,
+      "curriculum_approved": false,
+      "next_action": "Usar como caso de iteração; exercício inicial reduzido deve ser executado e testado separadamente."
+    },
+    {
+      "id": "cur-peter-app",
+      "source_id": "peter-yang-newsletter",
+      "video_id": "G9o8eoHzpxc",
+      "url": "https://www.youtube.com/watch?v=G9o8eoHzpxc",
+      "priority": "P2",
+      "theme": "app-simples",
+      "status": "insufficient_as_primary_functional_tutorial",
+      "study_path": "studies/app/G9o8eoHzpxc.md",
+      "selection_reason": "Processo detalha design e especificação; implementação, banco e autenticação são em grande parte omitidos. Persistência e validação negativa não comprovadas.",
+      "audience": "Pessoas comuns; caso de apoio não se confunde com roteiro autossuficiente",
+      "freshness": {
+        "checked_on": "2026-09-28",
+        "source_date": "2026-07-29",
+        "operational_steps_verified_in_current_app": false
+      },
+      "full_source_analyzed": false,
+      "curriculum_approved": false,
+      "next_action": "Manter como apoio de estados/design. Validar prática pequena de lista pessoal com entrada, erro, alteração e persistência antes de liberar aula operacional."
+    },
+    {
+      "id": "cur-claude-routine-video",
+      "source_id": "designcourse-youtube",
+      "video_id": "68BnH29qvAA",
+      "url": "https://www.youtube.com/watch?v=68BnH29qvAA",
+      "priority": "P2",
+      "theme": "automacoes",
+      "status": "later_case_only",
+      "study_path": "studies/automation/68BnH29qvAA.md",
+      "selection_reason": "Caso Zoho/Twilio usa serviços/credenciais e muda de SMS bloqueado para email. Não fecha a primeira automação local CSV.",
+      "audience": "Pessoas comuns; caso de apoio não se confunde com roteiro autossuficiente",
+      "freshness": {
+        "checked_on": "2026-09-28",
+        "source_date": "2026-04-16",
+        "operational_steps_verified_in_current_app": false
+      },
+      "full_source_analyzed": false,
+      "curriculum_approved": false,
+      "next_action": "Usar docs locais atuais e proposta manual de CSV em studies/scheduling; preservar vídeo como caso posterior com limitações."
     }
   ],
   "pedagogical_gaps": [
@@ -191,30 +252,33 @@
       "theme": "site-simples",
       "priority": "P1",
       "gap": "Ciclo local completo: construir, testar, diagnosticar, corrigir e retestar.",
-      "selection_status": "integral_study_in_progress",
-      "next_action": "Concluir ficha e visuais do Riley; distinguir boas correções demonstradas de setup antigo e expansões avançadas.",
+      "selection_status": "case_studied_with_limits",
+      "next_action": "Educador pode usar ciclo comentado; executar e validar exercício reduzido na superfície Desktop. Fonte vídeo não comprova todo o percurso inicial.",
       "candidate_url": "https://www.youtube.com/watch?v=SKBDC3QugZw"
     },
     {
       "theme": "publicacao-site-estatico",
       "priority": "P1",
       "gap": "URL externa acessível por visitante + atualização verificada.",
-      "selection_status": "integral_study_in_progress",
-      "next_action": "Concluir ficha oficial Netlify Drop e visibilidade; distinguir URL de acesso público e atualização em produção."
+      "selection_status": "documentation_studied_execution_pending",
+      "next_action": "Conferir upload, visitante e atualização com página de treino; documentação integral e PNGs não equivalem a deploy real.",
+      "study_path": "studies/publishing/netlify-manual-static.md"
     },
     {
       "theme": "app-simples",
       "priority": "P2",
       "gap": "Entrada, estado, validação e persistência quando prometida.",
-      "selection_status": "candidate_search",
-      "next_action": "Selecionar um caso pequeno, completo e testável."
+      "selection_status": "candidate_studied_insufficient",
+      "next_action": "Executar/validar uma prática menor de lista com armazenamento local ou obter evidência completa específica; não ampliar histórico indiscriminadamente.",
+      "study_path": "studies/app/G9o8eoHzpxc.md"
     },
     {
       "theme": "automacao-csv-relatorio",
       "priority": "P2",
       "gap": "Dados fictícios → relatório; gatilho, erro, repetição e manutenção.",
-      "selection_status": "candidate_search",
-      "next_action": "Priorizar processo manual observável antes de agendar; demonstrar falha e recuperação no mesmo fluxo."
+      "selection_status": "documentation_and_original_practice_ready_execution_pending",
+      "next_action": "Executar exemplo fictício nas duas ferramentas, checar totais, repetição e falha antes de agendar.",
+      "study_path": "studies/scheduling/local-manual-first.md"
     }
   ],
   "historical_inventory": "video-inventory/videos.jsonl",
