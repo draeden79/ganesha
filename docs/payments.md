@@ -5,7 +5,7 @@ The owner approved a **US$9.99 one-time test payment**, with a unique classroom 
 ## Buyer flow
 
 1. The approved homepage links to `/checkout`.
-2. The server creates Stripe Checkout for the fixed `course.first-site` offer: 999 cents, USD, quantity one, card payment, no discount or adaptive pricing. A Slack brief and browser input cannot change the price or grant.
+2. The server creates Stripe Checkout for the fixed `course.first-site` offer: 999 cents, USD, quantity one, card payment, no discount or adaptive pricing. Managed Payments is explicitly disabled for this test session because the account default conflicts with these settings. A Slack brief and browser input cannot change the price or grant.
 3. A signed Stripe webhook retrieves the current Checkout Session, line item, PaymentIntent and charge. The server checks the expected order, course, amount, currency, test mode and successful payment before fulfillment. The confirmation page also checks the browser's private checkout cookie and retrieves payment status server-side.
 4. Redis atomically records the entitlement and pending email. Duplicate or concurrent events produce the same entitlement. The URL is `/classroom/g_<43 opaque characters>`; it reveals no Stripe identifier. The application stores its hash. Keep `CLASSROOM_ACCESS_KEY` stable so existing emailed links remain valid.
 5. Opening the link verifies its active entitlement, sets a Secure/HttpOnly/SameSite cookie and redirects to `/classroom/<locale>`. The access link is a bearer credential: anyone with it can enter. It can be reopened in another browser; learning progress remains browser-local.
@@ -20,7 +20,7 @@ Configure these in **ganesha-devops → Settings → Environment Variables → P
 | Variable | Value |
 | --- | --- |
 | `PAYMENTS_MODE` | `test` |
-| `PAYMENTS_PUBLIC_ORIGIN` | `https://www.iganesha.online` |
+| `PAYMENTS_PUBLIC_ORIGIN` | Currently `https://ganesha-devops.vercel.app` for test acceptance; the custom domain remains supported |
 | `STRIPE_SECRET_KEY` | A Stripe sandbox/test secret starting `sk_test_` |
 | `STRIPE_WEBHOOK_SECRET` | Signing secret for the exact test endpoint below |
 | `RESEND_API_KEY` | Resend sending key |

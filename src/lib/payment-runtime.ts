@@ -32,6 +32,7 @@ export async function startCheckout(order: Order) {
     client_reference_id: order.id, metadata: { orderId: order.id, courseId: courseOffer.id, integration: 'ganesha-test-v1' },
     line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: 999, product_data: { name: courseOffer.title } } }],
     allow_promotion_codes: false, automatic_tax: { enabled: false }, adaptive_pricing: { enabled: false },
+    managed_payments: { enabled: false },
     success_url: `${paymentsOrigin()}/checkout/confirmation?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${paymentsOrigin()}/checkout?canceled=1&lang=${encodeURIComponent(order.locale)}`,
     custom_text: { submit: { message: 'Test mode only. No real payment. Your classroom link appears after confirmation and is emailed to you.' } },
