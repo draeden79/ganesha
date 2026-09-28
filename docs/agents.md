@@ -1,6 +1,6 @@
 # Ganesha agent behavior and communication guide
 
-Version 1.4 — 2026-09-28
+Version 1.5 — 2026-09-28
 
 ## Where to request work
 
@@ -17,7 +17,7 @@ Keep one agent/task per thread. Existing thread assignments and histories stay w
 Gdevops now has a deterministic GitHub/Vercel operations worker for **draeden79/ganesha**. These explicit commands execute work; ordinary conversational replies provide guidance and do not silently deploy:
 
 ```text
-@Gdevops ops github status codex/diretor-integracao
+@Gdevops ops github status codex/classroom-paywall
 @Gdevops ops vercel status classroom
 @Gdevops ops vercel status devops
 @Gdevops ops dns status iganesha.online
@@ -26,7 +26,7 @@ Gdevops now has a deterministic GitHub/Vercel operations worker for **draeden79/
 @Gdevops ops retry FULL_64_CHARACTER_JOB_ID
 ```
 
-The first command resolves the commit and checks. PR requests create or reuse a draft PR; they do not merge it. Classroom deployment accepts a full commit SHA reachable from `codex/diretor-integracao`, uploads an isolated snapshot, builds remotely on Vercel and verifies the public classroom routes. Deployment is fixed to `ganesha-classroom`; the host project is `ganesha-devops` in team `manuel-guimaraes-pinto-filhos-projects`. Only `/classroom` and `/classroom/:path*` are proxied. Existing landing, `/api`, assets, Slack services and `/courses` remain on the host.
+The first command resolves the commit and checks. PR requests create or reuse a draft PR; they do not merge it. Classroom deployment accepts a full commit SHA reachable from the protected release branch `codex/classroom-paywall`, verifies the reviewed server access guards, uploads an isolated snapshot, builds remotely on Vercel and checks that anonymous classroom requests go to checkout. The earlier public `codex/diretor-integracao` release path must incorporate those guards before it can be promoted. Deployment is fixed to `ganesha-classroom`; the host project is `ganesha-devops` in team `manuel-guimaraes-pinto-filhos-projects`. Only `/classroom` and `/classroom/:path*` are proxied. Existing landing, `/api`, assets, Slack services and `/courses` remain on the host.
 
 An accepted request returns a job ID in its original Slack thread. The durable Redis queue retains work while the PC is offline. A separate Windows operations worker uses existing GitHub/Vercel CLI authentication; credentials never enter model input or Slack. Generation remains a separate data-only Codex worker. Results are posted only from verified command/API outcomes. A checkpoint prevents automatic recreation after an ambiguous remote mutation; such uncertainty is reported for operator review. Delivery retries independently and may repeat a result after an interrupted acknowledgement.
 
@@ -45,6 +45,12 @@ Provide course subject/title, audience, learning outcome and actual curriculum. 
 The complete set publishes together in the approved Ganesha template, then the agent returns its public URL in the original thread. A same-thread revision preserves its URL; a failed or incomplete translation preserves the previous complete publication. Existing English-only pages are upgraded on their next revision. The URL format is `/courses/<slug>/?lang=pt-BR` (English omits `lang`); supported codes are `en`, `pt-BR`, `es`, `fr`, `de`, `ja`, `hi`, `id`, `ar`, `ko`, `zh-CN`. Facts such as prices, dates, instructors, credentials and testimonials must come from the brief and remain consistent across languages. Translations are AI-generated and still benefit from native-speaker review before commercial use.
 
 The brand uses Figtree, soft white/cream/lavender, purple #6C3BEE, dark text, whitespace, subtle borders and approved illustration. It publishes demonstration pages, not application code, payments, enrollment or infrastructure. It cannot deploy the classroom application.
+
+## Test payment and classroom boundary
+
+The owner approved a US$9.99 one-time Stripe **test** checkout for the existing `course.first-site` classroom, with access links on the confirmation page and by Resend email. This is a separate deterministic host service, not a model capability. A course brief cannot set a checkout price, mark a payment successful or issue classroom access. Other generated demo pages need an explicit offer/classroom mapping before adding checkout.
+
+The classroom now requires a server-verified entitlement, including on its direct origin, legacy course routes and exercise downloads. Opening `/classroom/<opaque-token>` establishes the buyer's private browser session. Refund/dispute notifications revoke access. Existing public classroom URLs should no longer be advertised as free previews. Payment activation requires the owner's test Stripe and Resend configuration and a verified test transaction; see [the payment runbook](payments.md). Real sales remain disabled.
 
 ## Runtime and communication
 
