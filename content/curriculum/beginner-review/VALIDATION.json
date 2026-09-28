@@ -28,7 +28,7 @@
   "addedKeyCount": 7,
   "removedKeyCount": 13,
   "visualReview": "Visual plan reviewed; rendered UI and implemented illustrations pending",
-  "learnerTest": "not performed",
+  "learnerTest": "User usability attempt rejected; formal comprehension and transfer evaluation not performed",
   "files": {
     "bundle/content/curriculum/course.json": "06cca3c55848eee62eb5ee94f05de021e560bc5ae2bd60a69bc684afbeabe15f",
     "bundle/content/locales/en.json": "63d4c664ff38bae5665362583ad40d113d3db7cc272627debaded59abc748993",
@@ -36,8 +36,14 @@
   },
   "didacticReview": {
     "reviewer": "Artista",
-    "status": "accepted-for-isolated-preview",
+    "status": "superseded-by-user-rejection",
     "scope": "First lesson only; no P0 in editorial review",
     "receivedAtUtc": "2026-09-28T22:53:45Z"
+  },
+  "experienceAcceptance": {
+    "status": "rejected-by-user",
+    "reason": "User could not understand the preview; copying a provided word did not demonstrate learning.",
+    "supersedes": "Editorial approval as a basis for experience acceptance",
+    "nextStep": "Test ACTIVITY_MODEL.md before further course expansion"
   }
 }

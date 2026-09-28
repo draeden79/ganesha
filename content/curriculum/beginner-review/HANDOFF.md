@@ -1,3 +1,9 @@
+# Situação atual: candidata reprovada pelo usuário
+
+O usuário testou a prévia e relatou não conseguir entendê-la. Esse resultado supera o aceite editorial anterior para uso da experiência. A estrutura válida e a leitura dos autores não demonstraram compreensão ou aprendizagem. A tarefa de copiar “Olá” não é evidência de aprendizagem. Não promover esta candidata com base no aceite anterior.
+
+Próxima decisão: testar a atividade-modelo de `ACTIVITY_MODEL.md` com objetivo observável, tentativa diferente do exemplo e feedback específico. Nenhuma alteração foi feita na prévia ou no pacote compilado nesta rodada. O registro abaixo permanece como histórico da entrega, não como recomendação de aprovação.
+
 # Entrega ao Diretor e ao Artista
 
 Candidata entregue em 28/09/2026 às 22:53:01 UTC, antes do alvo 22:54:46 UTC. Conteúdo no commit f34e7c7. Diretor recebeu pacote e hashes; Artista aprovou a didática da primeira aula, sem P0 editorial, às 22:53:45 UTC.
