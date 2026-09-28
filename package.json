@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "test": "node --test test/*.test.ts packages/landing-pages/tests/*.test.mjs packages/local-generation-broker/tests/*.test.mjs tools/local-codex-worker/test/*.test.mjs"
+    "test": "node --test test/*.test.ts packages/landing-pages/tests/*.test.mjs packages/local-generation-broker/tests/*.test.mjs tools/local-codex-worker/test/*.test.mjs tools/operations-worker/test/*.test.mjs"
   },
   "dependencies": {
     "@chat-adapter/slack": "4.41.0",

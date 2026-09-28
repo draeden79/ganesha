@@ -1,0 +1,50 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { randomUUID } from 'node:crypto';
+import { createClient } from 'redis';
+import { createOperationsStore } from '../src/lib/operations-store.mjs';
+const url = process.env.REDIS_TEST_URL || (process.env.GANESHA_RUN_REDIS_TESTS === '1' ? process.env.REDIS_URL : undefined);
+test('Redis operations survive offline/restart, fence stale workers, and retry only delivery after execution', {skip:!url}, async () => {
+  const client=createClient({url}); client.on('error',()=>{}); await client.connect();
+  const namespace=`ganesha:test:operations:${randomUUID()}`;
+  const store=createOperationsStore(client,{namespace,leaseMs:100});
+  try {
+    const input={requestKey:'T:C:1.1',threadKey:'T:C:1.1',actorId:'BPRODUCT',operation:{kind:'github-status' as const,ref:'main'}};
+    const queued=await store.enqueue(input,1000);
+    assert.equal(queued.created,true); assert.equal((await store.enqueue(input,1001)).created,false);
+    assert.equal((await store.status(queued.id))?.status,'pending');
+    const first=await store.claim('one',1002); assert.ok(first);
+    assert.equal(await store.claim('two',1003),null);
+    assert.equal(await store.checkpoint(first.id,first.leaseToken,{deploymentId:'dpl_existing'},1004),true);
+    const restart=createOperationsStore(client,{namespace,leaseMs:100});
+    const second=await restart.claim('two',1103); assert.ok(second);
+    assert.equal(second.checkpoint.deploymentId,'dpl_existing');
+    assert.equal(await store.complete(first.id,first.leaseToken,{ok:true,body:'stale'},1104),false);
+    assert.equal(await restart.heartbeat(second.id,second.leaseToken,1105),true);
+    assert.equal(await restart.complete(second.id,second.leaseToken,{ok:true,body:'Verified deployment'},1106),true);
+    assert.equal(await restart.claim('three',1200),null);
+    const notice=await store.claimDelivery(second.id,1200); assert.ok(notice);
+    assert.equal(await store.finishDelivery(second.id,notice.deliveryToken,false,1201),true);
+    assert.equal(await store.claimDelivery(second.id,1202),null);
+    const retry=await store.claimDelivery(second.id,30000); assert.ok(retry);
+    assert.equal(await store.finishDelivery(second.id,notice.deliveryToken,true,30001),false);
+    assert.equal(await store.finishDelivery(second.id,retry.deliveryToken,true,30001),true);
+    assert.equal((await store.status(second.id))?.status,'delivered');
+    assert.equal(await store.claim('four',40000),null);
+    assert.equal(await store.retry(second.id,input.threadKey,40001),false);
+    const failed=await store.enqueue({...input,requestKey:'T:C:2.1'},50000);
+    const failing=await store.claim('retry-worker',50001); assert.ok(failing);
+    await store.checkpoint(failing.id,failing.leaseToken,{deploymentId:'dpl_recover'},50002);
+    await store.complete(failing.id,failing.leaseToken,{ok:false,body:'Verification failed'},50003);
+    assert.equal(await store.retry(failed.id,input.threadKey,50004),false);
+    const failureNotice=await store.claimDelivery(failed.id,50004); assert.ok(failureNotice);
+    await store.finishDelivery(failed.id,failureNotice.deliveryToken,true,50005);
+    assert.equal(await store.retry(failed.id,'T:C:other-thread',50006),false);
+    assert.equal(await store.retry(failed.id,input.threadKey,50007),true);
+    assert.equal(await store.retry(failed.id,input.threadKey,50008),false);
+    const recovered=await store.claim('retry-worker',50009); assert.ok(recovered);
+    assert.equal(recovered.id,failed.id); assert.equal(recovered.checkpoint.deploymentId,'dpl_recover');
+  } finally {
+    await client.del([`{${namespace}}:jobs`,`{${namespace}}:queue`]); await client.quit();
+  }
+});

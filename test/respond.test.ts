@@ -24,9 +24,10 @@ test('workspace boundary rejects wrong teams and externally shared channels', ()
     assert.equal(acceptEnvelope(payload, 'T123'), false);
   }
 });
-test('channel allowlist accepts only selected channels and DMs', () => {
+test('workspace channel IDs are accepted without an allowlist', () => {
   assert.equal(isAllowedChannel('slack:C123', false, 'C123,C456'), true);
-  assert.equal(isAllowedChannel('slack:C789', false, 'C123,C456'), false);
+  assert.equal(isAllowedChannel('slack:C789', false, 'C123,C456'), true);
+  assert.equal(isAllowedChannel('slack:GPRIVATE', false, 'C123'), true);
   assert.equal(isAllowedChannel('slack:D123', true, 'C123'), true);
 });
 test('secrets removed before persistence and mass mentions suppressed in replies', () => {

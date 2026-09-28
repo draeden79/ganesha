@@ -65,8 +65,6 @@ export async function sendSlackNotification(message: { threadKey: string; body: 
   if (team !== required('SLACK_TEAM_ID') || extra || !/^[CDG][A-Z0-9]+$/.test(channel) || !/^\d+\.\d+$/.test(timestamp)) {
     throw new Error('Invalid Slack delivery target');
   }
-  const expectedChannel = agent === 'devops' ? process.env.SLACK_DEVOPS_CHANNEL_ID : agent === 'landing-pages' ? process.env.SLACK_LANDING_PAGES_CHANNEL_ID : undefined;
-  if (expectedChannel && channel.startsWith('C') && channel !== expectedChannel) throw new Error('Wrong agent delivery channel');
   const token = await getToken(slackIdentity(agent).connector, { subject: { type: 'app' }, scopes: slackScopes });
   const response = await fetch('https://slack.com/api/chat.postMessage', {
     method: 'POST', signal: AbortSignal.timeout(25000),

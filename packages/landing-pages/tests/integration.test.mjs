@@ -14,7 +14,7 @@ test('Channel routing prevents a landing-page brief from reaching DevOps', () =>
   assert.deepEqual(routeAgent(base, config), { status: 'routed', agent: 'landing-pages', text: 'Create a course page.' });
   assert.equal(routeAgent({ ...base, channelId: 'slack:CDEVOPS' }, config).agent, 'devops');
   assert.equal(routeAgent({ ...base, text: 'devops: change infrastructure' }, config).status, 'conflict');
-  assert.equal(routeAgent({ ...base, channelId: 'CGENERAL' }, config).status, 'ignored');
+  assert.equal(routeAgent({ ...base, channelId: 'CGENERAL' }, config).status, 'choose');
 });
 
 test('DM selection is explicit and an existing thread cannot switch agents', () => {
@@ -23,7 +23,7 @@ test('DM selection is explicit and an existing thread cannot switch agents', () 
   assert.equal(routeAgent({ ...dm, text: 'DevOps: help with DNS' }, config).agent, 'devops');
   assert.equal(routeAgent({ ...dm, assignedAgent: 'landing-pages' }, config).agent, 'landing-pages');
   assert.equal(routeAgent({ ...dm, assignedAgent: 'landing-pages', text: 'devops: help' }, config).status, 'conflict');
-  assert.throws(() => routeAgent(base, { ...config, devopsChannelId: config.landingPagesChannelId }));
+  assert.equal(routeAgent({...base,channelId:'CMANAGEMENT'}, {...config,agent:'devops'}).agent,'devops');
 });
 
 test('Self, unapproved bots and unknown identities cannot trigger work; approved bots require a mention', () => {
