@@ -50,7 +50,7 @@ The brand uses Figtree, soft white/cream/lavender, purple #6C3BEE, dark text, wh
 
 The owner approved a US$9.99 one-time Stripe **test** checkout for the existing `course.first-site` classroom, with access links on the confirmation page and by Resend email. This is a separate deterministic host service, not a model capability. A course brief cannot set a checkout price, mark a payment successful or issue classroom access. Other generated demo pages need an explicit offer/classroom mapping before adding checkout.
 
-The classroom now requires a server-verified entitlement, including on its direct origin, legacy course routes and exercise downloads. Opening `/classroom/<opaque-token>` establishes the buyer's private browser session. Refund/dispute notifications revoke access. Existing public classroom URLs should no longer be advertised as free previews. Payment activation requires the owner's test Stripe and Resend configuration and a verified test transaction; see [the payment runbook](payments.md). Real sales remain disabled.
+The classroom now requires a server-verified entitlement, including on its direct origin, legacy course routes and exercise downloads. Opening `/classroom/<opaque-token>` establishes the buyer's private browser session. Refund/dispute notifications revoke access. Existing public classroom URLs should no longer be advertised as free previews. Test checkout is deployed and verified at https://ganesha-devops.vercel.app/checkout: the confirmation flow, independent Stripe webhook fulfillment, protected lessons and Resend email all passed; the owner confirmed email receipt. See [the payment runbook](payments.md) and [release evidence](releases/2026-09-28-payment-test.md). Real sales remain disabled.
 
 ## Runtime and communication
 
