@@ -13,6 +13,19 @@ Supported inputs are validated again locally:
   bounded title. Existing matching PRs are reused; no branch push or merge.
 - `vercel-status`: read recent deployments for the fixed `classroom` or `devops`
   project.
+- `dns-check`: diagnose only `iganesha.online` and its `www` hostname. Compare
+  Vercel configuration/records/assignments and scoped certificate metadata with
+  Google/Cloudflare DNS-over-HTTPS. Partial failures are
+  explicit. It neither changes DNS nor disables TLS validation. A successful
+  diagnostic result means observations were collected, not that DNS was repaired
+  or the website is reachable. Known certificate IDs can change on renewal;
+  stored metadata is not proof of the certificate currently served. The latest
+  completed repository workflow named `Public domain diagnostic` is linked as
+  historical external evidence when available.
+  Local domain DNS, HTTP, TLS and Wi-Fi probes are disabled in production at
+  the owner's request. Unit-tested local probe helpers are dormant; enabling
+  them requires a separate authorized code change. No OS DNS, hosts, TLS trust
+  or Gateway policy changes are performed.
 - `vercel-deploy`: deploy a full SHA reachable from `codex/diretor-integracao`
   to the fixed `ganesha-classroom` production project. Git fetch/archive occurs
   in this package's ignored runtime, never in the host checkout. Symlinks,

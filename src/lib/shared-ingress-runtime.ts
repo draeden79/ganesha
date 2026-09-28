@@ -9,6 +9,7 @@ import { sendSlackNotification, slackScopes } from '@/lib/landing-runtime';
 import { redact } from '@/lib/policy';
 import { slackIdentity, type SlackAgent } from '@/lib/slack-identity';
 import { generationBackend } from './generation-runtime';
+import { parseOperation } from './operations.mjs';
 
 const required = (name: string) => { const value = process.env[name]; if (!value) throw new Error(`Missing ${name}`); return value; };
 function createGatewayClient() { return createClient({ url: required('REDIS_URL'), socket: { connectTimeout: 15000 } }); }
@@ -31,6 +32,7 @@ export async function sharedIngress(deps: { dispatchDevOps: (request: Request) =
     landingPagesChannelId: process.env.SLACK_LANDING_PAGES_CHANNEL_ID || '', devopsChannelId: process.env.SLACK_DEVOPS_CHANNEL_ID || '',
     allowedAgentUserIds: (process.env.SLACK_ALLOWED_AGENT_USER_IDS || '').split(',').map(id => id.trim()).filter(Boolean) }, {
     store, verify: async (request, body) => (await managed.webhookVerifier(request, body)) === true, ...deps,
+    isDevOpsOperation: (text) => { try { return parseOperation(text) !== null; } catch { return false; } },
     lookupBot: async (botId, appId) => {
       const token = await getToken(connector, { subject: { type: 'app' }, scopes: slackScopes });
       const url = new URL('https://slack.com/api/bots.info'); url.searchParams.set('bot', botId);

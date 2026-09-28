@@ -54,9 +54,10 @@ export async function dispatchLocalDevops(request: Request) {
     await state.subscribe(sdkThreadId);
     const session = await state.get<Session>(`thread-state:${sdkThreadId}`);
     const input = { requestKey, threadKey, actorId: (event.user || event.bot_id) as string, text };
-    await store.enqueue(input, boundedHistory(session?.history || [], []));
+    const created = await store.enqueue(input, boundedHistory(session?.history || [], []));
     // Await durable workflow start. A failed start leaves the Slack event retryable.
     await start(devopsWorkflow, [input]);
+    if (created) await send('DevOps · Your request is queued for a response in this thread. It remains queued if the local worker is offline; do not resend it.');
   }
   return new Response('ok');
 }

@@ -157,3 +157,14 @@ test('DevOps stop and help remain usable when model request quota is exhausted',
   await f.handle(request(event({ channel: 'CDEVOPS', text: '<@UBOT> Plan a database', ts: '1700000002.000001' })));
   assert.equal(f.dispatched.length, 2); assert.match(f.replies[0].body, /daily request limit/);
 });
+
+test('Executable and natural DNS diagnostics bypass model quota while ordinary generation still consumes it', async () => {
+  const f = fixture({ isDevOpsOperation: text => text === 'Fix DNS for iganesha.online' });
+  f.store.claim = async (_key, { charge }) => ({ status: 'claimed', token: 'lease', ...(charge ? { limit: 'daily' } : {}) });
+  for (const text of ['ops dns status iganesha.online', 'ops github status main', 'Fix DNS for iganesha.online']) {
+    await f.handle(request(event({ channel: 'CDEVOPS', text: '<@UBOT> ' + text })));
+  }
+  assert.equal(f.dispatched.length, 3); assert.equal(f.replies.length, 0);
+  await f.handle(request(event({ channel: 'CDEVOPS', text: '<@UBOT> Explain DNS' })));
+  assert.equal(f.dispatched.length, 3); assert.match(f.replies[0].body, /daily request limit/);
+});

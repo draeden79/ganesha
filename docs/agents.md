@@ -1,6 +1,6 @@
 # Ganesha agent behavior and communication guide
 
-Version 1.2 — 2026-09-28
+Version 1.3 — 2026-09-28
 
 ## Where to request work
 
@@ -20,6 +20,7 @@ Gdevops now has a deterministic GitHub/Vercel operations worker for **draeden79/
 @Gdevops ops github status codex/diretor-integracao
 @Gdevops ops vercel status classroom
 @Gdevops ops vercel status devops
+@Gdevops ops dns status iganesha.online
 @Gdevops ops github pr {"head":"codex/example","base":"main","title":"Describe the change"}
 @Gdevops ops deploy classroom FULL_40_CHARACTER_COMMIT_SHA
 @Gdevops ops retry FULL_64_CHARACTER_JOB_ID
@@ -28,6 +29,8 @@ Gdevops now has a deterministic GitHub/Vercel operations worker for **draeden79/
 The first command resolves the commit and checks. PR requests create or reuse a draft PR; they do not merge it. Classroom deployment accepts a full commit SHA reachable from `codex/diretor-integracao`, uploads an isolated snapshot, builds remotely on Vercel and verifies the public classroom routes. Deployment is fixed to `ganesha-classroom`; the host project is `ganesha-devops` in team `manuel-guimaraes-pinto-filhos-projects`. Only `/classroom` and `/classroom/:path*` are proxied. Existing landing, `/api`, assets, Slack services and `/courses` remain on the host.
 
 An accepted request returns a job ID in its original Slack thread. The durable Redis queue retains work while the PC is offline. A separate Windows operations worker uses existing GitHub/Vercel CLI authentication; credentials never enter model input or Slack. Generation remains a separate data-only Codex worker. Results are posted only from verified command/API outcomes. A checkpoint prevents automatic recreation after an ambiguous remote mutation; such uncertainty is reported for operator review. Delivery retries independently and may repeat a result after an interrupted acknowledgement.
+
+Requests such as “fix the DNS of iganesha.online” automatically queue a fixed read-only DNS diagnostic. It checks Vercel configuration and public DNS and links timestamped independent HTTPS evidence. Local network diagnostics are disabled at the owner's request. Diagnosis does not itself change DNS, certificate trust or network policy. Other natural-language DevOps requests receive a queued acknowledgement before generation.
 
 Use `help` for syntax, `status` for capabilities and `stop` to stop conversational generation in that thread. **Stop does not cancel an accepted infrastructure operation.** Follow an operation's job receipt/result; do not resubmit a mutation just because it is slow. An operations worker restart recovers unfinished work using the same job and deployment/PR checkpoints.
 
@@ -45,7 +48,7 @@ The brand uses Figtree, soft white/cream/lavender, purple #6C3BEE, dark text, wh
 
 English is the default. Generation uses local Codex with ChatGPT authentication, GPT-6 Astra and extra-high reasoning. Both local workers require this Windows PC to remain awake and authenticated; startup is currently manual. Accepted work persists offline; there is no automatic paid API fallback. Public pages remain on Vercel while workers are offline.
 
-Keep requests concise and never paste secrets. The model quota is 40 requests per UTC day shared by both agents, with a ten-second per-caller cooldown; help/status/stop remain usable without model generation. Slack retries of one message are deduplicated. A new message is a new request even if it repeats a textual request_id.
+Keep requests concise and never paste secrets. The model quota is 40 requests per UTC day shared by both agents. The ten-second cooldown was removed because it discarded legitimate requests across threads. Deterministic operations, DNS diagnostics and help/status/stop do not consume model quota. Slack retries of one message are deduplicated. A new message is a new request even if it repeats a textual request_id.
 
 Bot/API callers must observe the original thread for questions, acceptance and final results. An incoming webhook that can only post needs its coordinator to read the thread through an authorized Slack interface. Do not infer that the requesting bot received a reply merely because Gdevops posted one.
 
