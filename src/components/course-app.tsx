@@ -14,7 +14,7 @@ import { inlineCodeParts } from "@/lib/inline-code";
 import { routeUi } from "@/lib/route-i18n";
 import { saveLocalProgress } from "@/lib/progress-storage";
 
-function InlineCode({ text }: { text: string }) {
+export function InlineCode({ text }: { text: string }) {
   return <>{inlineCodeParts(text).map((part, index) => part.code ? <code className="inline-code" dir="ltr" key={index}>{part.text}</code> : part.text)}</>;
 }
 
