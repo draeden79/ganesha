@@ -21,6 +21,8 @@ Os 11 idiomas permanecem. Beta pública deve identificar revisão humana de trad
 
 O domínio foi transferido para nameservers Vercel; a tarefa de infraestrutura ainda não certificou HTTPS. O repositório original contém outro Next (`ganesha-devops`) com serviços Slack. A estratégia em avaliação é projeto separado de classroom com proxy apenas de `/classroom` e seus recursos, preservando o restante do domínio. Nenhum segredo do bot Diretor pode integrar o pacote de deploy.
 
+Às 20:33 UTC, Gdevops confirmou em resposta no Slack que atua somente como orientador e não pode publicar nem alterar rotas. Acesso à Vercel/operador continua necessário. Em 20:36, o usuário proibiu explicitamente qualquer publicação com sua conta Slack; todas as próximas escritas do Diretor devem usar exclusivamente seu bot próprio, sem exceção por urgência.
+
 ## Verificação mínima de entrega
 
 Build e testes relevantes; quatro aulas com conteúdo e verificações; cobertura dos 11 idiomas; jornada desktop/mobile; avaliação incorreta impede conclusão e correta permite; reload restaura progresso; URL HTTPS e arquivos JS/CSS/imagens do domínio real funcionam. Registrar falhas honestamente e resolver as impeditivas antes de declarar entrega.
