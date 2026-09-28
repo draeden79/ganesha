@@ -4,7 +4,7 @@ O arquivo `course.ts` é a referência estrutural sem dependência de framework.
 
 Arquivos esperados:
 
-- `content/research/sources.json`: `ResearchRegistry` (Devorador).
+- `content/research/registry.json`: `ResearchRegistry` (Devorador); `sources.json` mantém o inventário editorial de fontes escolhidas.
 - `content/curriculum/course.json`: `Course` (Educador).
 - `content/locales/{locale}.json`: `LocaleCatalog` (Educador).
 - Catálogos da UI no aplicativo: mesma política de chaves e cobertura (Construtor).
@@ -33,3 +33,7 @@ IDs usam ASCII estável, por exemplo `source.openai.codex.desktop`, `evidence.co
 ## Atualização semanal
 
 Uma `UpdateProposal` referencia fontes anteriores/novas, evidências alteradas, aulas e etapas afetadas, impacto, traduções e recomendação de versão. Proposta não altera automaticamente conteúdo publicado. A cadeia é: detecção → proposta → revisão pedagógica/técnica → tradução → testes → aprovação de release → publicação versionada.
+
+## Auditoria executável
+
+`python3 coordination/validate_content.py` verifica IDs, referências, pré-requisitos, prática, duas verificações, chaves e revisão de origem nos 11 locales. `--research-only` permite conferir o registro antes da chegada do currículo. O relatório diferencia tradução presente de revisão humana; não certifica qualidade linguística, pedagogia nem comportamento da UI. Testes do aplicativo e revisão visual continuam necessários.
