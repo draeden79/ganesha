@@ -1,5 +1,9 @@
 # Status das entregas
 
+## Professor — nova direção de autoria, 28/09/2026
+
+Lucas pediu uma nova sessão independente, Professor, usando GPT Astra para criar do zero as 12 aulas completas e todas as etapas apenas com o conhecimento do modelo. Criação aceita e em preparação pelo aplicativo; detalhes em `PROFESSOR_EXPERIMENT.md`. O Professor deve entregar o pacote completo diretamente ao Artista para design, imagens e gráficos. O Artista já recebeu essa orientação. A hipótese sobre a fonte dos problemas permanece aberta; nenhuma aprovação pedagógica ou publicação automática foi concedida.
+
 ## Qualidade da primeira aula — 28/09/2026, após 22:58 UTC
 
 Usuário reprovou a prévia 3107 por falta de compreensão. Candidata isolada `06cca3c` permanece para diagnóstico; a aprovação editorial anterior foi superada por esse feedback e não conta como validação de aprendizagem. Produção não foi alterada. `LEARNING_QUALITY.md` registra os problemas da captura, responsabilidades, revisão da tela implementada e protocolo de observação humana ainda não executado. Educador, Artista e Construtor receberam o feedback: preparar uma atividade-modelo e diagnosticar a interface antes de nova implementação. Quantidade de etapas e testes técnicos não substituem compreensão, prática com feedback e aplicação em outro exemplo.
