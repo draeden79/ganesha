@@ -1,7 +1,7 @@
 import { boundedHistory, cleanInput, HELP, safeReply, STATUS, type Turn } from './policy.ts';
 
 export type Session = { agent?: 'devops' | 'landing-pages'; history?: Turn[] };
-export interface Incoming { id: string; text: string; author: { userId: string; isBot: boolean | 'unknown'; isMe: boolean } }
+export interface Incoming { id: string; text: string; isMention?: boolean; author: { userId: string; isBot: boolean | 'unknown'; isMe: boolean } }
 export interface Conversation {
   state: Promise<Session | null>;
   post: (text: string) => Promise<unknown>;
@@ -13,10 +13,13 @@ export interface Dependencies {
   quota: (userId: string) => Promise<'ok' | 'daily' | 'cooldown'>;
   generate: (messages: Turn[]) => Promise<string>;
   report: (event: string) => void;
+  allowBot?: (message: Incoming) => boolean;
 }
 
 export async function respond(thread: Conversation, message: Incoming, skipped: Incoming[], deps: Dependencies) {
-  if (message.author.isBot === true || message.author.isMe) return;
+  const accepted = (m: Incoming) => !m.author.isMe && (m.author.isBot === false ||
+    (m.author.isBot === true && deps.allowBot?.(m) === true));
+  if (!accepted(message)) return;
   const text = cleanInput(message.text).replace(/^devops\s*:\s*/i, '');
   const command = text.toLowerCase();
   if (['encerrar', 'stop', 'parar'].includes(command)) {
@@ -37,7 +40,7 @@ export async function respond(thread: Conversation, message: Incoming, skipped: 
   await thread.subscribe();
   const session = await thread.state;
   const inputs: Turn[] = [...skipped, message]
-    .filter((m) => m.author.isBot !== true && !m.author.isMe)
+    .filter(accepted)
     .map((m) => ({ role: 'user', content: `[Slack ${m.author.userId}] ${cleanInput(m.text)}` }));
   const history = boundedHistory(session?.history ?? [], inputs);
   try {

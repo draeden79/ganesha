@@ -3,6 +3,7 @@ import { routeAgent } from './router.mjs';
 const ok = () => new Response('ok');
 export function createSharedIngress(config, deps) {
   if (!/^T[A-Z0-9]+$/.test(config.teamId)) throw new Error('Invalid Slack workspace configuration');
+  if (config.agent !== undefined && !['devops', 'landing-pages'].includes(config.agent)) throw new Error('Invalid dedicated agent');
   return async function ingress(request) {
     let body;
     try {
@@ -27,9 +28,12 @@ export function createSharedIngress(config, deps) {
         ? Response.json({ challenge: envelope.challenge }) : new Response('Invalid challenge', { status: 400 });
     }
     if (!/^[UW][A-Z0-9]+$/.test(config.botUserId) || !/^C[A-Z0-9]+$/.test(config.landingPagesChannelId) ||
-      !/^C[A-Z0-9]+$/.test(config.devopsChannelId) || config.landingPagesChannelId === config.devopsChannelId) {
+      !/^C[A-Z0-9]+$/.test(config.devopsChannelId) || config.landingPagesChannelId === config.devopsChannelId ||
+      (config.agent && !/^A[A-Z0-9]+$/.test(config.appId ?? ''))) {
       return new Response('Ganesha routing setup required', { status: 503 });
     }
+    // Dedicated identities must not accept a missing or another application's identity.
+    if (config.agent && envelope.api_app_id !== config.appId) return new Response('Forbidden', { status: 403 });
     if (envelope.team_id !== config.teamId || envelope.is_ext_shared_channel === true) return new Response('Forbidden', { status: 403 });
     const event = envelope.event;
     if (envelope.type !== 'event_callback' || !event || !['app_mention', 'message'].includes(event.type) ||
@@ -39,6 +43,7 @@ export function createSharedIngress(config, deps) {
       typeof event.text !== 'string' || event.user === config.botUserId) return ok();
     const isDM = event.channel.startsWith('D');
     if (!isDM && ![config.landingPagesChannelId, config.devopsChannelId].includes(event.channel)) return ok();
+    if (!isDM && config.agent && event.channel !== (config.agent === 'devops' ? config.devopsChannelId : config.landingPagesChannelId)) return ok();
     const mentioned = event.text.includes(`<@${config.botUserId}>`);
     const threadKey = `${config.teamId}:${event.channel}:${event.thread_ts ?? event.ts}`;
     const requestKey = `${config.teamId}:${event.channel}:${event.ts}`;
@@ -53,8 +58,8 @@ export function createSharedIngress(config, deps) {
         author: { userId: event.user, isBot: author.isBot, isMe: false } };
       let route = routeAgent(input, config);
       if (route.status === 'ignored') return ok();
-      // Approved external agents may submit course briefs, never infrastructure requests.
-      if (author.isBot && (route.status !== 'routed' || route.agent !== 'landing-pages')) return ok();
+      // Legacy allowlists grant Landing Pages only; the explicit workspace policy enables both roles.
+      if (author.isBot && (route.status !== 'routed' || (route.agent !== 'landing-pages' && config.allowWorkspaceBots !== true))) return ok();
       if (route.status === 'routed') {
         assignedAgent = await deps.store.bind(threadKey, route.agent);
         route = routeAgent({ ...input, assignedAgent }, config);

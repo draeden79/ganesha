@@ -2,6 +2,8 @@
 
 One Slack app, two agents, hosted in the existing Vercel project `ganesha-devops`. English is the default for replies and pages. The owner selected a **noncommercial prototype** on Vercel Hobby. Commercial operation requires a suitable hosting plan; no upgrade or paid resource purchase is authorized by this configuration.
 
+The owner requested separate **Gdevops** and **Glandingpage** Slack identities. The implementation is prepared behind `SLACK_DEDICATED_IDENTITIES`; installation and live acceptance are pending. The [agent behavior guide](docs/agents.md) states the communication contract and activation status. Its migration-pending version is [published in #management](https://ganeshagrupo.slack.com/archives/C0C56JD9G20/p1790625234632229).
+
 ## Using the agents
 
 | Surface | Behavior |
@@ -59,7 +61,18 @@ Secrets and production state stay out of Git. Source is at [draeden79/ganesha](h
 - An incomplete course brief received clarification questions. Its completed brief published [AI Basics for Everyday Work](https://ganesha-devops.vercel.app/courses/course-7e0d08ef76670b2fffbf2458/), and a subsequent title revision preserved that URL and returned a second same-thread publication reply.
 - Desktop/mobile layout, mobile navigation, curriculum accordion, public assets and security headers were checked. Redis tests cover duplicate intake, expired leases, stale writes, restart recovery and notification retries. Live workflow persistence, generation retry and Slack delivery also completed.
 - External agent bot submissions remain disabled until specific bot user IDs are approved and configured. No live acceptance claim is made for that optional path. DevOps remains advisory; pages remain noncommercial demonstrations.
+- The owner subsequently approved requests from all verified humans and bot users in the same workspace. Enable this with `SLACK_ALLOW_WORKSPACE_BOTS=true` during the dedicated-identity rollout; every bot request and follow-up must mention its target. The previous production policy above remains until that rollout is verified.
 - Temporary installation diagnostics and their production environment secret were removed. `/api/setup-check` returns 404.
+
+## Separate identity rollout
+
+Reuse the existing `slack/ganesha` app as **Gdevops**. Create **Glandingpage** using [the seven-scope manifest](docs/glandingpage-manifest.json); Vercel Connect supplies its OAuth redirects and event request URL. Attach only to `ganesha-devops` production. Do not authorize broader scopes for the new app.
+
+Configure `SLACK_LANDING_PAGES_CONNECTOR`, `SLACK_LANDING_PAGES_APP_ID` and `SLACK_LANDING_PAGES_BOT_USER_ID` from the new installation, then deploy with `SLACK_DEDICATED_IDENTITIES=true` and `SLACK_ALLOW_WORKSPACE_BOTS=true`. DevOps can retain the legacy `SLACK_CONNECTOR`, `SLACK_APP_ID` and `SLACK_BOT_USER_ID`; the optional `SLACK_DEVOPS_*` variables override them. Set the two Connect production triggers to `/api/webhooks/slack-devops` and `/api/webhooks/slack-landing-pages` respectively.
+
+Each dedicated endpoint requires its exact app ID and processes only its configured public channel and its own DMs. New DMs default to the app's role. The legacy `/api/webhooks/slack` endpoint becomes DevOps-only after activation. Existing Redis namespaces, public thread assignments and course URLs stay unchanged. An old shared-app DM pinned to Landing Pages remains pinned and directs the user to Glandingpage instead of silently changing roles.
+
+Add Glandingpage to `#landing-pages`, verify both human and explicitly mentioned bot requests, same-thread clarification and stable-URL revision, then update the guide with actual app/user IDs and announce activation in its existing management thread. Neither agent automatically delegates work; outgoing mentions are neutralized.
 
 ## References
 

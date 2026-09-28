@@ -3,6 +3,8 @@ import { createClient } from 'redis';
 import { generateText, Output, jsonSchema } from 'ai';
 import { getToken } from '@vercel/connect';
 import { createRedisLandingStore, generationSchema, instructions, type Generation, type Course } from '@ganesha/landing-pages';
+import { dedicatedIdentities, slackIdentity, type SlackAgent } from '@/lib/slack-identity';
+import { safeReply } from '@/lib/policy';
 export const slackScopes = ['app_mentions:read', 'chat:write', 'channels:history', 'channels:read', 'im:history', 'im:read', 'users:read'];
 
 function required(name: string) {
@@ -48,15 +50,21 @@ export async function generateLandingCopy(input: { brief: string; previousCourse
 }
 
 export async function sendLandingNotification(message: { threadKey: string; body: string; notificationId: string }) {
+  return sendSlackNotification(message, dedicatedIdentities() ? 'landing-pages' : undefined);
+}
+
+export async function sendSlackNotification(message: { threadKey: string; body: string; notificationId: string }, agent?: SlackAgent) {
   const [team, channel, timestamp, extra] = message.threadKey.split(':');
   if (team !== required('SLACK_TEAM_ID') || extra || !/^[CDG][A-Z0-9]+$/.test(channel) || !/^\d+\.\d+$/.test(timestamp)) {
     throw new Error('Invalid Slack delivery target');
   }
-  const token = await getToken(required('SLACK_CONNECTOR'), { subject: { type: 'app' }, scopes: slackScopes });
+  const expectedChannel = agent === 'devops' ? process.env.SLACK_DEVOPS_CHANNEL_ID : agent === 'landing-pages' ? process.env.SLACK_LANDING_PAGES_CHANNEL_ID : undefined;
+  if (expectedChannel && channel.startsWith('C') && channel !== expectedChannel) throw new Error('Wrong agent delivery channel');
+  const token = await getToken(slackIdentity(agent).connector, { subject: { type: 'app' }, scopes: slackScopes });
   const response = await fetch('https://slack.com/api/chat.postMessage', {
     method: 'POST', signal: AbortSignal.timeout(25000),
     headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ channel, thread_ts: timestamp, text: message.body,
+    body: JSON.stringify({ channel, thread_ts: timestamp, text: safeReply(message.body),
       mrkdwn: false, parse: 'none', unfurl_links: false, unfurl_media: false }),
   });
   if (!response.ok) throw new Error('Slack delivery unavailable');

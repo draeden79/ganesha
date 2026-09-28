@@ -74,3 +74,22 @@ test('history is bounded and does not carry another conversation implicitly', ()
   assert.equal(boundedHistory(history, []).length, 12);
   assert.deepEqual(boundedHistory([], []), []);
 });
+
+test('verified bot policy requires an explicit mention for each current and queued message', async () => {
+  const f = fixture();
+  f.deps.allowBot = m => m.isMention === true;
+  const bot = (text: string, isMention: boolean, isMe = false) => ({ ...message(text), isMention,
+    author: { userId: 'UOTHERBOT', isBot: true as const, isMe } });
+  await respond(f.thread, bot('passive reply', false), [], f.deps);
+  await respond(f.thread, bot('self echo', true, true), [], f.deps);
+  assert.equal(f.calls(), 0);
+  f.deps.generate = async turns => {
+    assert.equal(turns.length, 2);
+    assert.match(turns[0].content, /queued request/);
+    assert.match(turns[1].content, /current request/);
+    assert.doesNotMatch(JSON.stringify(turns), /passive|self echo/);
+    return 'DevOps · proposed plan';
+  };
+  await respond(f.thread, bot('current request', true), [bot('passive', false), bot('queued request', true)], f.deps);
+  assert.equal(f.posts.length, 1);
+});

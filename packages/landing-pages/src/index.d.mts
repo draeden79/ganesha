@@ -19,7 +19,8 @@ export function validateCourse(course: unknown): Course;
 export function renderCourse(course: Course): string;
 export function routeAgent(input: { channelId: string; isDM: boolean; text: string; assignedAgent?: Agent;
   mentioned?: boolean; author: { userId: string; isBot: boolean | 'unknown'; isMe: boolean } },
-  config: { landingPagesChannelId: string; devopsChannelId: string; allowedAgentUserIds?: string[] }): Route;
+  config: { landingPagesChannelId: string; devopsChannelId: string; allowedAgentUserIds?: string[];
+    agent?: Agent; allowWorkspaceBots?: boolean }): Route;
 export type PreparedPage = { status: 'needs_information'; requestKey: string; questions: string[]; reply: string } |
   { status: 'ready'; requestKey: string; slug: string; url: string; course: Course; html: string };
 export function prepareLandingPage(input: { threadKey: string; requestKey: string; brief: string;
@@ -72,7 +73,8 @@ export interface GatewayStore {
 }
 export type LandingInput = { requestKey: string; threadKey: string; text: string; actorId: string; now: number };
 export function createSharedIngress(config: { teamId: string; appId?: string; botUserId: string;
-  landingPagesChannelId: string; devopsChannelId: string; allowedAgentUserIds?: string[] }, deps: {
+  landingPagesChannelId: string; devopsChannelId: string; allowedAgentUserIds?: string[];
+  agent?: Agent; allowWorkspaceBots?: boolean }, deps: {
   store: GatewayStore; verify: (request: Request, body: string) => Promise<boolean>;
   lookupUser: (userId: string) => Promise<SlackUser | null>;
   isDevOpsSubscribed: (threadKey: string) => Promise<boolean>;

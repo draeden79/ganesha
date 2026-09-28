@@ -6,6 +6,7 @@ import { generateText } from "ai";
 import { acceptEnvelope, isAllowedChannel, SYSTEM } from "./policy";
 import { respond, type Session } from "./respond";
 import { slackScopes } from './landing-runtime';
+import { dedicatedIdentities, slackIdentity } from './slack-identity';
 
 const requireEnv = (name: string): string => {
   const value = process.env[name];
@@ -18,25 +19,33 @@ const requireEnv = (name: string): string => {
 function createBot() {
   const teamId = requireEnv('SLACK_TEAM_ID');
   if (!/^T[A-Z0-9]+$/.test(teamId)) throw new Error('Invalid SLACK_TEAM_ID');
-  const managed = connectSlackAdapter(requireEnv('SLACK_CONNECTOR'), { scopes: slackScopes });
+  const identity = slackIdentity(dedicatedIdentities() ? 'devops' : undefined);
+  const managed = connectSlackAdapter(identity.connector, { scopes: slackScopes });
   const adapters = { slack: createSlackAdapter({
     ...managed,
+    botUserId: identity.botUserId || undefined,
     webhookVerifier: async (request, body) => {
       if (!await managed.webhookVerifier(request, body)) return false;
-      try { return acceptEnvelope(JSON.parse(body), teamId); } catch { return false; }
+      try {
+        const envelope = JSON.parse(body);
+        return acceptEnvelope(envelope, teamId) && (!identity.agent || envelope.api_app_id === identity.appId);
+      } catch { return false; }
     },
   }) };
   const state = getChatState();
   const bot = new Chat<typeof adapters, Session>({
-    userName: process.env.BOT_USERNAME || 'Ganesha', adapters, state,
+    userName: identity.userName, adapters, state,
     logger: 'silent', dedupeTtlMs: 86400000,
     concurrency: { strategy: 'queue', maxQueueSize: 5, queueEntryTtlMs: 90000, maxLockLifetimeMs: 250000 },
   });
   const handle = async (thread: Thread<Session>, message: Message, context?: MessageContext) => {
-    if (!isAllowedChannel(thread.channelId, thread.isDM, process.env.SLACK_ALLOWED_CHANNEL_IDS)) return;
+    if (!isAllowedChannel(thread.channelId, thread.isDM, process.env.SLACK_DEVOPS_CHANNEL_ID)) return;
     await respond(thread, message, context?.skipped || [], {
       // The verified shared ingress applies the workspace quota once per message.
       quota: async () => 'ok',
+      // Every message reaching Chat SDK has passed workspace/user/app checks in
+      // the shared ingress. The mention requirement also applies to queued bots.
+      allowBot: (incoming) => process.env.SLACK_ALLOW_WORKSPACE_BOTS === 'true' && incoming.isMention === true,
       generate: async (messages) => {
         const result = await generateText({
           model: process.env.AI_MODEL || 'openai/gpt-5-nano',

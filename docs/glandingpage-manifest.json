@@ -1,0 +1,24 @@
+{
+  "display_information": {
+    "name": "Glandingpage",
+    "description": "Create and revise Ganesha course demonstration pages from a Slack brief.",
+    "background_color": "#6C3BEE"
+  },
+  "features": {
+    "bot_user": { "display_name": "Glandingpage", "always_online": false },
+    "app_home": { "home_tab_enabled": false, "messages_tab_enabled": true, "messages_tab_read_only_enabled": false }
+  },
+  "oauth_config": {
+    "scopes": {
+      "bot": ["app_mentions:read", "chat:write", "channels:history", "channels:read", "im:history", "im:read", "users:read"]
+    }
+  },
+  "settings": {
+    "event_subscriptions": {
+      "bot_events": ["app_mention", "message.channels", "message.im"]
+    },
+    "org_deploy_enabled": false,
+    "socket_mode_enabled": false,
+    "token_rotation_enabled": false
+  }
+}

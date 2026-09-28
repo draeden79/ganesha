@@ -4,7 +4,7 @@ import { createSharedIngress } from '../src/index.mjs';
 const config = { teamId: 'TGANESHA', appId: 'AAPP', botUserId: 'UBOT', landingPagesChannelId: 'CLANDING', devopsChannelId: 'CDEVOPS', allowedAgentUserIds: ['UWRITER'] };
 const event = (changes = {}) => ({ type: 'event_callback', team_id: config.teamId, api_app_id: 'AAPP', event_id: 'Ev1', event: { type: 'app_mention', user: 'UOWNER', channel: 'CLANDING', text: '<@UBOT> AI course for beginners: fundamentals and prompts.', ts: '1700000000.000001', ...changes } });
 const request = body => new Request('https://example.test/api/webhooks/slack', { method: 'POST', body: JSON.stringify(body) });
-function fixture(overrides = {}) {
+function fixture(overrides = {}, configuration = {}) {
   const bindings = new Map(), seen = new Map(), starts = [], replies = [], dispatched = [];
   const store = {
     getBinding: async key => bindings.get(key),
@@ -15,8 +15,41 @@ function fixture(overrides = {}) {
   const deps = { store, verify: async () => true, lookupUser: async user => ({ isBot: user === 'UWRITER', deleted: false }),
     isDevOpsSubscribed: async () => true, send: async msg => replies.push(msg),
     startLanding: async input => starts.push(input), dispatchDevOps: async req => { dispatched.push(await req.json()); return new Response('ok'); }, ...overrides };
-  return { handle: createSharedIngress(config, deps), starts, replies, dispatched, bindings, store };
+  return { handle: createSharedIngress({ ...config, ...configuration }, deps), starts, replies, dispatched, bindings, store };
 }
+
+test('Dedicated identities require the matching app, default DMs to their own role, and ignore the other channel', async () => {
+  const f = fixture({}, { agent: 'devops' });
+  await f.handle(request(event()));
+  assert.equal(f.starts.length, 0); assert.equal(f.bindings.size, 0);
+  assert.equal((await f.handle(request({ ...event({ channel: 'CDEVOPS' }), api_app_id: 'AOTHER' }))).status, 403);
+  assert.equal((await f.handle(request({ ...event({ channel: 'CDEVOPS' }), api_app_id: undefined }))).status, 403);
+  assert.equal(f.bindings.size, 0);
+  await f.handle(request(event({ channel: 'DDIRECT', text: 'Plan staging' })));
+  assert.equal(f.dispatched.length, 1); assert.equal(f.replies.length, 0);
+  await f.handle(request(event({ channel: 'DDIRECT', text: 'landing-pages: publish this', thread_ts: '1700000000.000001', ts: '1700000001.000001' })));
+  assert.equal(f.starts.length, 0); assert.match(f.replies[0].body, /another Ganesha agent/);
+  const landing = fixture({}, { agent: 'landing-pages' });
+  await landing.handle(request(event({ channel: 'DDIRECT', text: 'An AI course' })));
+  assert.equal(landing.starts.length, 1); assert.equal(landing.dispatched.length, 0);
+});
+
+test('Workspace bot access requires verified identity and an explicit mention on every request for either role', async () => {
+  const f = fixture({ lookupUser: async user => user === 'UUNKNOWN' ? null : { isBot: true, deleted: user === 'UDELETED' } },
+    { allowWorkspaceBots: true, allowedAgentUserIds: [] });
+  await f.handle(request(event({ user: 'UANYBOT', channel: 'CDEVOPS' })));
+  await f.handle(request(event({ user: 'UANYBOT' })));
+  assert.equal(f.dispatched.length, 1); assert.equal(f.starts.length, 1);
+  for (const changes of [
+    { user: 'UANYBOT', text: 'Unmentioned followup', thread_ts: '1700000000.000001' },
+    { user: 'UANYBOT', channel: 'CDEVOPS', text: 'Unmentioned followup', thread_ts: '1700000000.000001' },
+    { user: 'UUNKNOWN' }, { user: 'UDELETED' }, { user: 'UBOT' },
+    { user: 'UANYBOT', channel: 'DDIRECT', text: 'landing-pages: Unmentioned bot DM' },
+  ]) await f.handle(request(event({ ...changes, ts: '1700000001.000001' })));
+  assert.equal(f.dispatched.length, 1); assert.equal(f.starts.length, 1);
+  await f.handle(request(event({ user: 'UANYBOT', text: '<@UBOT> Clarification answer', thread_ts: '1700000000.000001', ts: '1700000002.000001' })));
+  assert.equal(f.starts.length, 2);
+});
 
 test('OIDC/team verification precedes every state, user lookup or send; signed challenge is allowed without team', async () => {
   const blocked = fixture({ verify: async () => false, store: new Proxy({}, { get: () => assert.fail('State access before verification') }), lookupUser: () => assert.fail('Unexpected lookup') });
