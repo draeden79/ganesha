@@ -1,21 +1,13 @@
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, mkdtemp, writeFile } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
 import { setTimeout as delay } from 'node:timers/promises';
-import { REPO, REPO_URL, RELEASE_BRANCH, DEVOPS_PROJECT_ID, SHA, OperationError, requireCondition, validateOperation, validateConfig, runCommand, parseJson, childEnvironment, safeDeploymentUrl, validateArchiveTree } from './core.mjs';
+import { REPO, REPO_URL, DEVOPS_PROJECT_ID, SHA, OperationError, requireCondition, validateOperation, validateConfig, runCommand, parseJson, childEnvironment, safeDeploymentUrl, validateArchiveTree } from './core.mjs';
 import { diagnoseDns } from './dns.mjs';
+import { CLASSROOM_RELEASE, validateClassroomGuard, verifyAnonymousClassroom } from './classroom-guard.mjs';
 
 const githubUrl = url => typeof url === 'string' && /^https:\/\/github\.com\/draeden79\/ganesha\/pull\/\d+$/.test(url);
 const display = value => String(value ?? 'unknown').replace(/[\x00-\x1f<>@]/g,'').slice(0,100);
-
-async function boundedHtml(response) {
-  if(!response.body?.getReader) return response.text ? response.text() : '';
-  const reader=response.body.getReader();const parts=[];let bytes=0;
-  try {
-    for(;;) {const {done,value}=await reader.read();if(done)break;bytes+=value.length;requireCondition(bytes<=2*1024*1024,'health_response_too_large');parts.push(value);}
-  } finally {await reader.cancel().catch(()=>{});}
-  return Buffer.concat(parts).toString('utf8');
-}
 
 export function createActions(config, { run = runCommand, sleep = delay, fetchImpl = fetch, now = Date.now } = {}) {
   validateConfig(config);
@@ -63,17 +55,24 @@ export function createActions(config, { run = runCommand, sleep = delay, fetchIm
     await checkpoint({pullRequestUrl:pr.url,phase:'pr-created'});
     return {ok:true,body:`Draft pull request: ${pr.url}\nHead: ${op.head} (${headSha})\nBase: ${op.base}. No merge performed.`};
   }
-  async function prepareArchive(job,signal) {
+  async function verifyCandidate(job,signal) {
     const directory = join(config.runtimeRoot,'jobs',createHash('sha256').update(job.id).digest('hex'));
-    const repository = join(directory,'repo.git'); const source = join(directory,'source');
+    const repository = join(directory,'repo.git');
     await mkdir(directory,{recursive:true});
     await git(['init','--bare',repository],directory,signal);
-    await git(['--git-dir',repository,'fetch','--no-tags','--force',REPO_URL,`+refs/heads/${RELEASE_BRANCH}:refs/heads/release`],directory,signal);
+    await git(['--git-dir',repository,'fetch','--no-tags','--force',REPO_URL,`+refs/heads/${CLASSROOM_RELEASE.releaseBranch}:refs/heads/release`],directory,signal);
     try { await git(['--git-dir',repository,'merge-base','--is-ancestor',job.operation.sha,'refs/heads/release'],directory,signal); }
     catch { throw new OperationError('commit_outside_release_branch'); }
+    try { await git(['--git-dir',repository,'merge-base','--is-ancestor',CLASSROOM_RELEASE.minimumCommit,job.operation.sha],directory,signal); }
+    catch { throw new OperationError('commit_predates_classroom_guard'); }
     const tree = await git(['--git-dir',repository,'ls-tree','-r','-z',job.operation.sha],directory,signal);
     validateArchiveTree(tree);
-    await mkdir(source,{recursive:true});
+    validateClassroomGuard(tree);
+    return {directory,repository};
+  }
+  async function prepareArchive(job,{directory,repository},signal) {
+    // Fresh extraction prevents files removed in a retry's tree surviving an older archive.
+    const source = await mkdtemp(join(directory,'source-'));
     const archive = join(directory,'source.tar');
     await git(['--git-dir',repository,'archive','--format=tar','--output',archive,job.operation.sha],directory,signal);
     await run(config.tar || 'tar',['-xf',archive,'-C',source],{cwd:directory,env,signal});
@@ -103,10 +102,12 @@ export function createActions(config, { run = runCommand, sleep = delay, fetchIm
   async function deploy(job,{signal,checkpoint}) {
     const project = await api(`/v9/projects/${config.projectId}`,signal);
     requireCondition(project.id===config.projectId && project.name==='ganesha-classroom','project_identity_mismatch');
+    // Check even resumed jobs; an old checkpoint cannot grandfather an unguarded release.
+    const candidate = await verifyCandidate(job,signal);
     let deployment = job.checkpoint?.deploymentId ? await deploymentRecord(job.checkpoint.deploymentId,job,signal) : await findDeployment(job,signal);
     if(!deployment) {
       if(job.checkpoint?.phase==='deploy-creating') throw new OperationError('deployment_creation_unconfirmed');
-      const source = await prepareArchive(job,signal);
+      const source = await prepareArchive(job,candidate,signal);
       await checkpoint({phase:'deploy-creating',sha:job.operation.sha,projectId:config.projectId});
       // Upload and build remotely; never run repository package scripts on this PC.
       try { await vc(['deploy','--prod','--yes','--no-wait','--meta',`ganeshaOperation=${job.id}`,'--meta',`ganeshaSha=${job.operation.sha}`],signal,{cwd:source,timeoutMs:300000,env:{...env,VERCEL_PROJECT_ID:config.projectId,VERCEL_ORG_ID:config.teamId}}); }
@@ -135,22 +136,9 @@ export function createActions(config, { run = runCommand, sleep = delay, fetchIm
       if(attempt<11)await sleep(5000,undefined,{signal});
     }
     requireCondition(bound,'production_alias_not_bound');
-    const assets=new Set();
-    for(const path of ['/classroom/pt-BR','/classroom/ar']) {
-      const response=await fetchImpl(publicUrl+path,{redirect:'manual',signal:AbortSignal.any([signal || new AbortController().signal,AbortSignal.timeout(20000)])});
-      if(response.status!==200) {await response.body?.cancel();throw new OperationError('deployment_health_failed');}
-      const html=await boundedHtml(response);
-      for(const match of html.matchAll(/(?:src|href)=["']([^"']+)["']/g)) {
-        try {const asset=new URL(match[1],publicUrl);if(asset.origin===publicUrl && /^\/(?:classroom\/)?(?:_next\/static\/|assets\/|images\/)/.test(asset.pathname) && /\.(?:css|js|png|svg|webp)$/.test(asset.pathname))assets.add(asset.href);} catch {}
-      }
-    }
-    requireCondition(assets.size>0,'deployment_assets_missing');
-    for(const asset of [...assets].slice(0,6)) {
-      const response=await fetchImpl(asset,{redirect:'manual',signal:AbortSignal.any([signal || new AbortController().signal,AbortSignal.timeout(20000)])});
-      await response.body?.cancel();requireCondition(response.status===200,'deployment_asset_failed');
-    }
+    const checks = await verifyAnonymousClassroom(fetchImpl,publicUrl,signal);
     await checkpoint({phase:'deploy-verified',deploymentId:id,deploymentUrl:url,publicUrl});
-    return {ok:true,body:`Classroom production deployment verified.\nCommit: ${job.operation.sha}\nDeployment: ${id}\n${publicUrl}/classroom/pt-BR\n${publicUrl}/classroom/ar\nThe public alias points to this deployment; both routes and sampled assets returned HTTP 200.`};
+    return {ok:true,body:`Classroom production deployment verified.\nCommit: ${job.operation.sha}\nDeployment: ${id}\n${publicUrl}/classroom/pt-BR\n${publicUrl}/classroom/ar\nThe public alias points to this deployment. Reviewed access-control code is intact; ${checks} anonymous page, RSC, exercise and API checks block lesson access (303 to checkout; API 401). Authenticated purchase/access remains a separate check.`};
   }
   async function vercelStatus(op,signal) {
     const projectId=op.target==='classroom'?config.projectId:DEVOPS_PROJECT_ID;

@@ -26,14 +26,45 @@ Supported inputs are validated again locally:
   the owner's request. Unit-tested local probe helpers are dormant; enabling
   them requires a separate authorized code change. No OS DNS, hosts, TLS trust
   or Gateway policy changes are performed.
-- `vercel-deploy`: deploy a full SHA reachable from `codex/diretor-integracao`
+- `vercel-deploy`: deploy a full SHA reachable from `codex/classroom-paywall`
   to the fixed `ganesha-classroom` production project. Git fetch/archive occurs
   in this package's ignored runtime, never in the host checkout. Symlinks,
   submodules, unsafe Windows paths and environment files are rejected. The
-  Vercel build runs remotely. Successful deployment requires both classroom
-  language routes and sampled assets to return HTTP 200. The public production
-  alias must be bound to this exact project and deployment ID; unique-URL SSO
-  protection remains enabled.
+  Vercel build runs remotely. Before an upload or a resumed job proceeds, the
+  candidate must descend from secure commit
+  `3264654366b63eab6b73720c44e9326f8d1f2a33` and match the reviewed code/config
+  blob hashes in `src/classroom-release.json`. The manifest lives in this worker;
+  candidate repositories cannot update their own approval. This pins the origin
+  proxy, token verifier, authorized course loaders, route entry points, build
+  configuration and their executable dependencies. Missing, modified or additional
+  executable paths and archive attribute files fail closed. Content-only updates
+  remain possible. Each upload extracts into a fresh directory to prevent stale
+  files from previous attempts surviving.
+  The public production alias must be bound to this exact project and deployment
+  ID. Eleven anonymous checks require pages, legacy routes, RSC and exercises to
+  return HTTP 303 to exactly `https://www.iganesha.online/checkout`, and APIs to
+  return 401; all must use `Cache-Control: no-store`. Redirects are not followed.
+  Public lesson HTML, Vercel SSO and incorrect checkout destinations fail the
+  health check. This verifies anonymous access protection; authenticated purchase,
+  lesson access and email delivery are separate checks. Unique-URL SSO protection
+  remains enabled.
+
+### Updating the classroom release policy
+
+The secure release baseline was reviewed in the coordinated deployment chat.
+Keep content changes on `codex/classroom-paywall`. When executable classroom code
+or build settings change, review the resulting access controls and rerun origin
+authorization tests before updating this worker's pinned blob manifest. Do not
+relax the hashes or return to anonymous HTTP 200 merely to make an older product
+branch deploy. An old deployment checkpoint must pass the same policy again.
+
+Refresh the running worker only after all package tests pass and a read-only
+Redis check confirms both zero running operations and an empty operations queue.
+Verify the PID against `.runtime/worker.lock` and its exact command line, recheck
+idle state immediately before stopping that PID, then restart from this package
+with the same environment files. Verify the new PID lock/start log. Do not stop
+the independent generation worker, delete Redis jobs or clear checkpoints. If
+work is active or Redis cannot be checked, wait rather than restarting blindly.
 
 ## Setup
 

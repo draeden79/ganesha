@@ -5,6 +5,7 @@ import { createClient } from 'redis';
 import { createActions } from './actions.mjs';
 import { runWorker } from './worker.mjs';
 import { OperationError, requireCondition, TEAM_ID, TEAM_SCOPE } from './core.mjs';
+import { CLASSROOM_RELEASE } from './classroom-guard.mjs';
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const runtimeRoot=join(root,'.runtime'); const lockPath=join(runtimeRoot,'worker.lock');
@@ -37,7 +38,7 @@ try {
   requireCondition(typeof process.env.REDIS_URL==='string' && /^rediss?:\/\//.test(process.env.REDIS_URL),'missing_redis_url');
   client=createClient({url:process.env.REDIS_URL});client.on('error',()=>log({event:'redis_connection_error'}));await client.connect();
   const store=createOperationsStore(client,{namespace:'ganesha:operations:production',leaseMs:180000});
-  log({event:'operations_worker_started'});
+  log({event:'operations_worker_started',pid:process.pid,classroomGuardCommit:CLASSROOM_RELEASE.minimumCommit});
   await runWorker({store,actions,workerId:process.env.OPERATIONS_WORKER_ID || 'ganesha-operations-windows-1',signal:controller.signal,once:process.argv.includes('--once'),log});
 } catch(error) { if(!controller.signal.aborted) {log({event:'operations_worker_stopped',code:error instanceof OperationError?error.code:'startup_or_store_failure'});process.exitCode=1;} }
 finally { if(client?.isOpen) await client.quit().catch(()=>client.destroy());if(lock){await lock.close();await unlink(lockPath).catch(()=>{});} }
