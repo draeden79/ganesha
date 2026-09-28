@@ -1,0 +1,111 @@
+{
+  "locale": "ar",
+  "catalog_version": "0.3.0",
+  "status": "complete_ai_translation_pending_human_review",
+  "source": {
+    "commit": "b8e4a62ee452db8577d52a10e6669a30f5dbdfb7",
+    "path": "content/curriculum/v0.3.0/source-messages/en.json",
+    "file_sha256": "d15887e7b40829f65f35505015aa294826fe1aa66fd9e459ca10d428141d6b63",
+    "key_count": 1192,
+    "word_count_whitespace": 17858
+  },
+  "editorial_delta": {
+    "path": "coordination/localization-v03/TRANSLATION_DELTA.json",
+    "file_sha256": "b6d44afedc66d96b7686aab1f1abe0996fabbe39ed7e8350efd961d4a6599ea8",
+    "applied": true,
+    "keys": [
+      "automation-schedule.tool-conditions.prompt",
+      "automation-schedule.history-triage.body",
+      "app-delivery.restore-backup.body",
+      "app-delivery.restore-backup.prompt",
+      "automation-schedule.tool-conditions.body",
+      "automation-schedule.tool-conditions.tool.claude"
+    ],
+    "key_count": 6,
+    "changed_from_base_key_count": 4
+  },
+  "effective_source_sha256_canonical_sorted_json": "232d45f82deae01d96642c9e6917733f6ead881685328adeeee66e0814eaae66",
+  "output": {
+    "path": "coordination/localization-v03/ar.json",
+    "file_sha256": "89906164013fd371cc1ae63d30563921c9d060dd6f02127667a20e93c63a14f2",
+    "key_count": 1192,
+    "word_count_whitespace": 15358,
+    "bytes": 222123
+  },
+  "coverage": {
+    "expected": 1192,
+    "translated": 1192,
+    "percent": 100,
+    "missing_keys": [],
+    "extra_keys": [],
+    "empty_values": [],
+    "english_fallback_keys": [],
+    "unchanged_english_values": [],
+    "all_values_contain_arabic": true,
+    "source_key_order_preserved": true
+  },
+  "validation": {
+    "backtick_literals": {
+      "passed": true,
+      "source_occurrences": 8,
+      "mismatches": []
+    },
+    "urls": {
+      "passed": true,
+      "source_occurrences": 8,
+      "mismatches": []
+    },
+    "emails": {
+      "passed": true,
+      "source_occurrences": 13,
+      "mismatches": []
+    },
+    "numeric_tokens": {
+      "passed": true,
+      "source_occurrences": 154,
+      "mismatches": []
+    },
+    "filenames": {
+      "passed": true,
+      "source_occurrences": 108,
+      "mismatches": []
+    },
+    "csv_literals": {
+      "passed": true,
+      "source_occurrences": 12,
+      "mismatches": []
+    },
+    "storage_keys": {
+      "passed": true,
+      "source_occurrences": 8,
+      "mismatches": []
+    },
+    "paths_and_folders": {
+      "passed": true,
+      "source_occurrences": 55,
+      "mismatches": []
+    },
+    "json_schema_example": {
+      "passed": true,
+      "source_occurrences": 1,
+      "mismatches": []
+    },
+    "csv_multiline_payload": {
+      "passed": true,
+      "description": "Exact blank-line and three-line CSV suffix preserved."
+    }
+  },
+  "translation_method": {
+    "translator": "Codex AI",
+    "external_translation_services_used": false,
+    "translation_scope": "All source values translated in full, including examples, practice boundaries, self-reported execution, limitations and prompts. Technical literals retained.",
+    "human_reviewed": false
+  },
+  "limits": [
+    "AI translation has not received human linguistic review.",
+    "Automated parity verifies keys and specified literal classes; it does not certify semantic or pedagogical accuracy.",
+    "No browser rendering or RTL layout test was performed by this translator; technical literals remain unchanged in logical text order.",
+    "No external practice, tool availability, scheduling or publication claims were independently verified."
+  ],
+  "completed_at_utc": "2026-09-28T21:38:44.532605+00:00"
+}
