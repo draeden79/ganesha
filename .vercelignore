@@ -1,0 +1,14 @@
+.git
+.next
+node_modules
+.pnpm-store
+.env*
+!.env.example
+.agents
+.codex
+coordination
+content/research
+design/reference
+test-results
+artifacts
+*.tsbuildinfo
