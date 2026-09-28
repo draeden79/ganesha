@@ -1,0 +1,193 @@
+{
+  "source_id": "peter-yang-youtube",
+  "surface": "videos",
+  "url": "https://www.youtube.com/@PeterYangYT/videos",
+  "observed_at": "2026-09-28T19:07:21.534Z",
+  "round": 1,
+  "dom_count": 30,
+  "unique_seen": 30,
+  "first": "https://www.youtube.com/watch?v=MLnsMIbibZY",
+  "last": "https://www.youtube.com/watch?v=iqb5Rd6KKr8",
+  "items": [
+    {
+      "context": "Sonnet 5.5 is Here! It's Insane at Making Videos (7 Incredible Examples)\n999\nhá 1 h",
+      "label": "Sonnet 5.5 is Here! It's Insane at Making Videos (7 Incredible Examples) 22 minutos",
+      "title": "Sonnet 5.5 is Here! It's Insane at Making Videos (7 Incredible Examples)",
+      "url": "https://www.youtube.com/watch?v=MLnsMIbibZY"
+    },
+    {
+      "context": "We Built Grok Bot. Here Are Our 14 Best Bots | Peng Zheng & Lauren Tan\n28 mil\nhá 1 dia",
+      "label": "We Built Grok Bot. Here Are Our 14 Best Bots | Peng Zheng & Lauren Tan 45 minutos",
+      "title": "We Built Grok Bot. Here Are Our 14 Best Bots | Peng Zheng & Lauren Tan",
+      "url": "https://www.youtube.com/watch?v=xZ5TEaleUdg"
+    },
+    {
+      "context": "Claude Opus 5.5 is Here! Is Claude Finally Back? (5 Use Cases Tested)\n60 mil\nhá 6 dias",
+      "label": "Claude Opus 5.5 is Here! Is Claude Finally Back? (5 Use Cases Tested) 16 minutos",
+      "title": "Claude Opus 5.5 is Here! Is Claude Finally Back? (5 Use Cases Tested)",
+      "url": "https://www.youtube.com/watch?v=UhBqorWNwlU&pp=0gcJCS8MAYcqIYzv"
+    },
+    {
+      "context": "How to Save Money Now with ChatGPT Finances (6 Real Use Cases) | Ethan Bloch\n8,2 mil\nhá 8 dias",
+      "label": "How to Save Money Now with ChatGPT Finances (6 Real Use Cases) | Ethan Bloch 45 minutos",
+      "title": "How to Save Money Now with ChatGPT Finances (6 Real Use Cases) | Ethan Bloch",
+      "url": "https://www.youtube.com/watch?v=fbzlqxkJrCU"
+    },
+    {
+      "context": "Meta’s Muse AI Agent Saved Me $800+ a Year on My Bills (10 Real Use Cases)\n79 mil\nhá 9 dias",
+      "label": "Meta’s Muse AI Agent Saved Me $800+ a Year on My Bills (10 Real Use Cases) 17 minutos",
+      "title": "Meta’s Muse AI Agent Saved Me $800+ a Year on My Bills (10 Real Use Cases)",
+      "url": "https://www.youtube.com/watch?v=eU1ICyI9bCs"
+    },
+    {
+      "context": "How I Automated 90% of My Workflow (ChatGPT + Riverside)\n7 mil\nhá 12 dias",
+      "label": "How I Automated 90% of My Workflow (ChatGPT + Riverside) 19 minutos",
+      "title": "How I Automated 90% of My Workflow (ChatGPT + Riverside)",
+      "url": "https://www.youtube.com/watch?v=PZHBW6yld5U"
+    },
+    {
+      "context": "11 Grok Bots I Use Every Day (After 100+ Hours)\n29 mil\nhá 2 sem.",
+      "label": "11 Grok Bots I Use Every Day (After 100+ Hours) 20 minutos",
+      "title": "11 Grok Bots I Use Every Day (After 100+ Hours)",
+      "url": "https://www.youtube.com/watch?v=l6cr7gy5l9E"
+    },
+    {
+      "context": "Stop Building AI Agents. Build AI Employees Instead (Live Demo) | Pedro Franceschi\n14 mil\nhá 2 sem.",
+      "label": "Stop Building AI Agents. Build AI Employees Instead (Live Demo) | Pedro Franceschi 47 minutos",
+      "title": "Stop Building AI Agents. Build AI Employees Instead (Live Demo) | Pedro Franceschi",
+      "url": "https://www.youtube.com/watch?v=LE0LNULrsEM"
+    },
+    {
+      "context": "AI Makes Cheating Easy. Here’s How It Can Make Kids Smarter Instead | Sue Khim\n6,3 mil\nhá 3 sem.",
+      "label": "AI Makes Cheating Easy. Here’s How It Can Make Kids Smarter Instead | Sue Khim 45 minutos",
+      "title": "AI Makes Cheating Easy. Here’s How It Can Make Kids Smarter Instead | Sue Khim",
+      "url": "https://www.youtube.com/watch?v=NsVayi42I0I"
+    },
+    {
+      "context": "GPT 6 Astra is the Best Model for Building Games (4 Real Examples)\n65 mil\nhá 3 sem.",
+      "label": "GPT 6 Astra is the Best Model for Building Games (4 Real Examples) 23 minutos",
+      "title": "GPT 6 Astra is the Best Model for Building Games (4 Real Examples)",
+      "url": "https://www.youtube.com/watch?v=iDrEXFOvFUc"
+    },
+    {
+      "context": "Instinct vs Grok Bot vs ChatGPT vs Hermes: Which AI Agent Can You Trust?\n47 mil\nhá 3 sem.",
+      "label": "Instinct vs Grok Bot vs ChatGPT vs Hermes: Which AI Agent Can You Trust? 24 minutos",
+      "title": "Instinct vs Grok Bot vs ChatGPT vs Hermes: Which AI Agent Can You Trust?",
+      "url": "https://www.youtube.com/watch?v=6Yeo6M8-W_8"
+    },
+    {
+      "context": "How Non-Coders Are Vibe Coding $100K+ Businesses with AI | Amol Jain\n12 mil\nhá 4 sem.",
+      "label": "How Non-Coders Are Vibe Coding $100K+ Businesses with AI | Amol Jain 36 minutos",
+      "title": "How Non-Coders Are Vibe Coding $100K+ Businesses with AI | Amol Jain",
+      "url": "https://www.youtube.com/watch?v=JAh8Wv1lQrw"
+    },
+    {
+      "context": "ChatGPT vs Claude vs Grok vs Gemini: The Best AI for 10 Use Cases (August 2026)\n25 mil\nhá 1 mês",
+      "label": "ChatGPT vs Claude vs Grok vs Gemini: The Best AI for 10 Use Cases (August 2026) 26 minutos",
+      "title": "ChatGPT vs Claude vs Grok vs Gemini: The Best AI for 10 Use Cases (August 2026)",
+      "url": "https://www.youtube.com/watch?v=nAhQs8Fd_9g&pp=0gcJCS8MAYcqIYzv"
+    },
+    {
+      "context": "How to Build Better AI Evals with Claude Code in 5 Steps | Shreya & Hamel\n12 mil\nhá 1 mês",
+      "label": "How to Build Better AI Evals with Claude Code in 5 Steps | Shreya & Hamel 53 minutos",
+      "title": "How to Build Better AI Evals with Claude Code in 5 Steps | Shreya & Hamel",
+      "url": "https://www.youtube.com/watch?v=bdMHQLvtVaQ"
+    },
+    {
+      "context": "Grok Bot: 5 Must-Try Use Cases for Work and Life (Full Tutorial)\n32 mil\nhá 1 mês",
+      "label": "Grok Bot: 5 Must-Try Use Cases for Work and Life (Full Tutorial) 22 minutos",
+      "title": "Grok Bot: 5 Must-Try Use Cases for Work and Life (Full Tutorial)",
+      "url": "https://www.youtube.com/watch?v=MkVcHbviYOw"
+    },
+    {
+      "context": "How I Run My 1.5M+ Follower Content Business With Codex | Riley Brown\n31 mil\nhá 1 mês",
+      "label": "How I Run My 1.5M+ Follower Content Business With Codex | Riley Brown 41 minutos",
+      "title": "How I Run My 1.5M+ Follower Content Business With Codex | Riley Brown",
+      "url": "https://www.youtube.com/watch?v=N34zz1-RSGw"
+    },
+    {
+      "context": "5 Rules for Building AI Agents That Work in Production | Nan Yu & Jacob Shumway\n6,5 mil\nhá 1 mês",
+      "label": "5 Rules for Building AI Agents That Work in Production | Nan Yu & Jacob Shumway 38 minutos",
+      "title": "5 Rules for Building AI Agents That Work in Production | Nan Yu & Jacob Shumway",
+      "url": "https://www.youtube.com/watch?v=4mKtJzfGj0U&pp=0gcJCS8MAYcqIYzv"
+    },
+    {
+      "context": "Hermes Co-Founder on Building an AI Agent That Improves Itself | Karan Malhotra\n40 mil\nhá 1 mês",
+      "label": "Hermes Co-Founder on Building an AI Agent That Improves Itself | Karan Malhotra 46 minutos",
+      "title": "Hermes Co-Founder on Building an AI Agent That Improves Itself | Karan Malhotra",
+      "url": "https://www.youtube.com/watch?v=UWjh5Z4s8jY"
+    },
+    {
+      "context": "Full Tutorial: From Idea to App with Claude Design and Claude Code in 25 Minutes\n26 mil\nhá 1 mês",
+      "label": "Full Tutorial: From Idea to App with Claude Design and Claude Code in 25 Minutes 25 minutos",
+      "title": "Full Tutorial: From Idea to App with Claude Design and Claude Code in 25 Minutes",
+      "url": "https://www.youtube.com/watch?v=G9o8eoHzpxc&pp=0gcJCS8MAYcqIYzv"
+    },
+    {
+      "context": "ChatGPT Work + Codex Tutorial: My Complete System at OpenAI | Jason Liu\n37 mil\nhá 2 meses",
+      "label": "ChatGPT Work + Codex Tutorial: My Complete System at OpenAI | Jason Liu 34 minutos",
+      "title": "ChatGPT Work + Codex Tutorial: My Complete System at OpenAI | Jason Liu",
+      "url": "https://www.youtube.com/watch?v=ydTeb_I0b94"
+    },
+    {
+      "context": "How I Plan, Build, and Run Loops with Claude Code in 40 Minutes | Thariq Shihipar\n33 mil\nhá 2 meses",
+      "label": "How I Plan, Build, and Run Loops with Claude Code in 40 Minutes | Thariq Shihipar 41 minutos",
+      "title": "How I Plan, Build, and Run Loops with Claude Code in 40 Minutes | Thariq Shihipar",
+      "url": "https://www.youtube.com/watch?v=aVO6E181cNU"
+    },
+    {
+      "context": "How I Use ChatGPT Work and GPT-5.6 to Do Everything (Beginner Tutorial)\n92 mil\nhá 2 meses",
+      "label": "How I Use ChatGPT Work and GPT-5.6 to Do Everything (Beginner Tutorial) 28 minutos",
+      "title": "How I Use ChatGPT Work and GPT-5.6 to Do Everything (Beginner Tutorial)",
+      "url": "https://www.youtube.com/watch?v=WLg9qWOf6zw"
+    },
+    {
+      "context": "How to Build AI Agents That Check Their Own Work | Jared Zoneraich\n6,6 mil\nhá 2 meses",
+      "label": "How to Build AI Agents That Check Their Own Work | Jared Zoneraich 47 minutos",
+      "title": "How to Build AI Agents That Check Their Own Work | Jared Zoneraich",
+      "url": "https://www.youtube.com/watch?v=0YeeJHYy-Vc&pp=0gcJCS8MAYcqIYzv"
+    },
+    {
+      "context": "GPT-5.6 vs Claude Fable 5: I Tested 6 Real Use Cases (Here’s the Winner)\n65 mil\nhá 2 meses",
+      "label": "GPT-5.6 vs Claude Fable 5: I Tested 6 Real Use Cases (Here’s the Winner) 28 minutos",
+      "title": "GPT-5.6 vs Claude Fable 5: I Tested 6 Real Use Cases (Here’s the Winner)",
+      "url": "https://www.youtube.com/watch?v=8mY9wx_iMSU&pp=0gcJCS8MAYcqIYzv"
+    },
+    {
+      "context": "Inside How OpenAI Uses Codex to Do Product Work | Rohan Varma\n14 mil\nhá 2 meses",
+      "label": "Inside How OpenAI Uses Codex to Do Product Work | Rohan Varma 39 minutos",
+      "title": "Inside How OpenAI Uses Codex to Do Product Work | Rohan Varma",
+      "url": "https://www.youtube.com/watch?v=fAdFE7y6K2o"
+    },
+    {
+      "context": "I Tested Gemini Spark: What Google’s AI Agent Can Actually Do in 21 Minutes\n9,4 mil\nhá 2 meses",
+      "label": "I Tested Gemini Spark: What Google’s AI Agent Can Actually Do in 21 Minutes 21 minutos",
+      "title": "I Tested Gemini Spark: What Google’s AI Agent Can Actually Do in 21 Minutes",
+      "url": "https://www.youtube.com/watch?v=NDTWK6vIgmM"
+    },
+    {
+      "context": "Claude Fable 5 Is Finally Back: 5 Must-Try Use Cases Before July 12\n59 mil\nhá 2 meses",
+      "label": "Claude Fable 5 Is Finally Back: 5 Must-Try Use Cases Before July 12 21 minutos",
+      "title": "Claude Fable 5 Is Finally Back: 5 Must-Try Use Cases Before July 12",
+      "url": "https://www.youtube.com/watch?v=5CBnWGP5vIs"
+    },
+    {
+      "context": "Inside Anthropic’s Bet on Claude Agents that Work While You Sleep | Jess Yan\n12 mil\nhá 3 meses",
+      "label": "Inside Anthropic’s Bet on Claude Agents that Work While You Sleep | Jess Yan 40 minutos",
+      "title": "Inside Anthropic’s Bet on Claude Agents that Work While You Sleep | Jess Yan",
+      "url": "https://www.youtube.com/watch?v=Xu5gz2qsaz8"
+    },
+    {
+      "context": "Hermes Full Course: Build Your 24/7 AI Chief of Staff in 45 Minutes\n47 mil\nhá 3 meses",
+      "label": "Hermes Full Course: Build Your 24/7 AI Chief of Staff in 45 Minutes 44 minutos",
+      "title": "Hermes Full Course: Build Your 24/7 AI Chief of Staff in 45 Minutes",
+      "url": "https://www.youtube.com/watch?v=2ZacwCbiLjg"
+    },
+    {
+      "context": "Full Tutorial: Make Professional Launch Videos for Free with Hyperframes | Bin Liu & Jake Moran\n34 mil\nhá 3 meses",
+      "label": "Full Tutorial: Make Professional Launch Videos for Free with Hyperframes | Bin Liu & Jake Moran 36 minutos",
+      "title": "Full Tutorial: Make Professional Launch Videos for Free with Hyperframes | Bin Liu & Jake Moran",
+      "url": "https://www.youtube.com/watch?v=iqb5Rd6KKr8"
+    }
+  ]
+}

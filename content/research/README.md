@@ -1,3 +1,7 @@
+# Estado vigente: aquisição e estudo integral
+
+Ver `TRANSCRIPT_BATCH-2026-09-28.md`, `TRANSCRIPTION_PLAN.md`, `STUDY_PROTOCOL.md` e `video-inventory/coverage.json`. Inventário, arquivos exportados, leitura integral e revisão audiovisual são estados distintos. O ciclo inicial abaixo não certifica estudo integral das fontes.
+
 # Pesquisa da Ganesha — primeiro lote
 
 Responsável: Devorador. Escopo exclusivo: `content/research/`. Referência temporal: 28/09/2026. Este material é interno e em pt-BR; não é conteúdo pronto para o site nem tradução concluída nos 11 idiomas.

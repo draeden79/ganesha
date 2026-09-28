@@ -1,0 +1,7 @@
+{"video_id": "ntDIxaeo3Wg", "method": "browser_native_export", "result": "exported_track", "detail": "Opened description and Mostrar transcrição before native export."}
+{"video_id": "bdMHQLvtVaQ", "method": "browser_native_export", "result": "exported_track", "detail": "Opened description and Mostrar transcrição before native export."}
+{"video_id": "saggDHHnmtQ", "method": "browser_native_export", "result": "exported_track", "detail": "Opened description and Mostrar transcrição before native export."}
+{"video_id": "ntDIxaeo3Wg", "method": "browser_native_export_before_opening_panel", "result": "failed_recovered", "detail": "No transcript is available; export succeeded after opening transcript panel."}
+{"video_id": "ntDIxaeo3Wg", "method": "yt-dlp_json3", "result": "exported", "languages": ["en", "en-CA"]}
+{"video_id": "bdMHQLvtVaQ", "method": "yt-dlp_json3", "result": "rate_limited", "http_status": 429, "next_action": "Cooldown; use existing native TXT; retry timing download in later batch without proxy/cookie/identity workarounds."}
+{"video_id": "saggDHHnmtQ", "method": "yt-dlp_json3", "result": "exported", "languages": ["en"]}

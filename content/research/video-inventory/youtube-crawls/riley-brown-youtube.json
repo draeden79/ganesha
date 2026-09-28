@@ -1,0 +1,4065 @@
+{
+  "source_id": "riley-brown-youtube",
+  "url": "https://www.youtube.com/@rileybrownai",
+  "started_at": "2026-09-28T19:13:20.387781+00:00",
+  "tool": "yt-dlp",
+  "tool_version": "2026.08.19",
+  "authentication": "anonymous; no cookies",
+  "status": "public_uploads_traversed",
+  "pagination_exhausted": true,
+  "source_inventory_complete": false,
+  "surfaces": [
+    {
+      "url": "https://www.youtube.com/@rileybrownai/videos",
+      "title": "Riley Brown - Videos",
+      "reported_count": 187,
+      "returned_count": 187,
+      "pagination_exhausted": true,
+      "items": [
+        {
+          "id": "959RFRspIIc",
+          "title": "Opus 5.5 Is JUST the Beginning. Everything Is About to Change.",
+          "url": "https://www.youtube.com/watch?v=959RFRspIIc",
+          "duration": 1348,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "_NRuT_d1PZE",
+          "title": "Claude Opus 5.5 Is Insane… But Muse is EVEN Bigger",
+          "url": "https://www.youtube.com/watch?v=_NRuT_d1PZE",
+          "duration": 1521,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "NDTbUObZTlM",
+          "title": "NEW Claude Projects Changes Everything (with Opus 5.5)",
+          "url": "https://www.youtube.com/watch?v=NDTbUObZTlM",
+          "duration": 1447,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "o1CogAtWdBk",
+          "title": "JEV: How It Works and What You Can Build",
+          "url": "https://www.youtube.com/watch?v=o1CogAtWdBk",
+          "duration": 1218,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "O8pzzIP1RyM",
+          "title": "Astra Built Me an Entire Product Launch (UGC, Ads, and Website)",
+          "url": "https://www.youtube.com/watch?v=O8pzzIP1RyM",
+          "duration": 784,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ifz8NGHuHtY",
+          "title": "28 Insane Things Astra Can Do (2 Hour Course)",
+          "url": "https://www.youtube.com/watch?v=ifz8NGHuHtY",
+          "duration": 6887,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "3cYTWLdHgAE",
+          "title": "Build Anything With Claude (That’s Actually Good)",
+          "url": "https://www.youtube.com/watch?v=3cYTWLdHgAE",
+          "duration": 1503,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Ju41cQSe7hY",
+          "title": "I Spent 100 Hours Using GPT-6 Astra (This Feels Like AGI)",
+          "url": "https://www.youtube.com/watch?v=Ju41cQSe7hY",
+          "duration": 1440,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ubzhh4kMCLo",
+          "title": "8 ChatGPT Agents That Do My Work for Me (Steal These)",
+          "url": "https://www.youtube.com/watch?v=ubzhh4kMCLo",
+          "duration": 1207,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "9lsnEn0tih4",
+          "title": "I Gave GrokBot Its Own Email and Credit Card (It Actually Worked)",
+          "url": "https://www.youtube.com/watch?v=9lsnEn0tih4",
+          "duration": 1128,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "XgkW4A6lrDY",
+          "title": "11 Insane Things NEW Grok Bot Can Do (Steal These)",
+          "url": "https://www.youtube.com/watch?v=XgkW4A6lrDY",
+          "duration": 2244,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "mHqSBCHEZOY",
+          "title": "How to Use ChatGPT Sites to Build Anything (Insane)",
+          "url": "https://www.youtube.com/watch?v=mHqSBCHEZOY",
+          "duration": 786,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ETa6ZYqoIXo",
+          "title": "Codex vs Claude vs Grokbot: What's The Best Super App?",
+          "url": "https://www.youtube.com/watch?v=ETa6ZYqoIXo",
+          "duration": 1369,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "NR_GMq2lDCE",
+          "title": "Bilawal Sidhu on Building God's Eye View",
+          "url": "https://www.youtube.com/watch?v=NR_GMq2lDCE",
+          "duration": 3828,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "VWDnptnvFrA",
+          "title": "Grok 4.6 is Actually Good… And Claude Keeps Getting Better",
+          "url": "https://www.youtube.com/watch?v=VWDnptnvFrA",
+          "duration": 1522,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "8Yf9IoXkROM",
+          "title": "Cursor Just Unleashed GrokBot (Everything You NEED to Know)",
+          "url": "https://www.youtube.com/watch?v=8Yf9IoXkROM",
+          "duration": 1203,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "piOSL8Ms9mY",
+          "title": "Codex Is Winning… So Why Am I Still Paying for Claude?",
+          "url": "https://www.youtube.com/watch?v=piOSL8Ms9mY",
+          "duration": 1491,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "zWL6XGP3Em8",
+          "title": "14 Insane Things NEW ChatGPT Work Can Do (Automate Anything)",
+          "url": "https://www.youtube.com/watch?v=zWL6XGP3Em8",
+          "duration": 3662,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "HQXi4snP36I",
+          "title": "The AI Agent Every Company is About to Build | Vercel CEO Guillermo Rauch",
+          "url": "https://www.youtube.com/watch?v=HQXi4snP36I",
+          "duration": 3263,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "5DnOOa-5dTU",
+          "title": "Cursor 3.0 Ultimate Guide: Beginner to Pro in 60 min",
+          "url": "https://www.youtube.com/watch?v=5DnOOa-5dTU",
+          "duration": 3857,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "P1KpxzLVg7c",
+          "title": "Claude Code + Codex Can FINALLY Work Together (Buzz AI)",
+          "url": "https://www.youtube.com/watch?v=P1KpxzLVg7c",
+          "duration": 3316,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "fZ1Kmuafzzk",
+          "title": "Master Claude for Excel in 20 Minutes (Full Guide)",
+          "url": "https://www.youtube.com/watch?v=fZ1Kmuafzzk",
+          "duration": 1263,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Hv8YGUXZY1g",
+          "title": "Opus 5 Is Here… But NEW Claude Voice Is Even Bigger",
+          "url": "https://www.youtube.com/watch?v=Hv8YGUXZY1g",
+          "duration": 1584,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "hLFs9JtMaRg",
+          "title": "OpenAI just released Codex Voice (It's basically Jarvis)",
+          "url": "https://www.youtube.com/watch?v=hLFs9JtMaRg",
+          "duration": 988,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "gOx37on-iA8",
+          "title": "Codex Basically Runs My Company Now. Here’s How.",
+          "url": "https://www.youtube.com/watch?v=gOx37on-iA8",
+          "duration": 2205,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Vyyrvna-hUY",
+          "title": "Devin AI: The Full Beginner’s Guide (Better Than Claude Code?)",
+          "url": "https://www.youtube.com/watch?v=Vyyrvna-hUY",
+          "duration": 1487,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "juPDqb89dew",
+          "title": "Codex New Browser: The Secret Weapon Everyone Should be Using",
+          "url": "https://www.youtube.com/watch?v=juPDqb89dew",
+          "duration": 1390,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Fv0XfyLT3xU",
+          "title": "OpenAI Just Merged ChatGPT and Codex. This Changes Everything. ",
+          "url": "https://www.youtube.com/watch?v=Fv0XfyLT3xU",
+          "duration": 2871,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "dLaIl6LehsU",
+          "title": "Grok 4.5 + Cursor: Full Guide",
+          "url": "https://www.youtube.com/watch?v=dLaIl6LehsU",
+          "duration": 925,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "COh_cjrDOzc",
+          "title": "Build Amazing Websites with Claude (Full Guide)",
+          "url": "https://www.youtube.com/watch?v=COh_cjrDOzc",
+          "duration": 1439,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "4WBOmhI11rQ",
+          "title": "How to Create Your Own AI Assistant (It's So Easy)",
+          "url": "https://www.youtube.com/watch?v=4WBOmhI11rQ",
+          "duration": 1269,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Nbynj-mKcNI",
+          "title": "AI Agents Just Changed Forever: GLM 5.2, Codex Skills, Claude & Cursor",
+          "url": "https://www.youtube.com/watch?v=Nbynj-mKcNI",
+          "duration": 1339,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "vhyna9ur6Gc",
+          "title": "9 AI Agent Skills To Get Ahead of 99% of People",
+          "url": "https://www.youtube.com/watch?v=vhyna9ur6Gc",
+          "duration": 2019,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "LSpEP9N_7iY",
+          "title": "SpaceX Just Bought Cursor for $60B. It’s About to Take OVER.",
+          "url": "https://www.youtube.com/watch?v=LSpEP9N_7iY",
+          "duration": 1238,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "zeVuhlKWRfI",
+          "title": "Why the Government Just Killed Claude Fable 5",
+          "url": "https://www.youtube.com/watch?v=zeVuhlKWRfI",
+          "duration": 658,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "cv0Pspf6xno",
+          "title": "This is Why They Banned Claude Fable 5",
+          "url": "https://www.youtube.com/watch?v=cv0Pspf6xno",
+          "duration": 1345,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "DbeFq_uoaRs",
+          "title": "Hermes Agent NEW Super-App and DeepSeek v4 Catches Up To Opus 4.8?",
+          "url": "https://www.youtube.com/watch?v=DbeFq_uoaRs",
+          "duration": 1474,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "j--dqLJxrtE",
+          "title": "ChatGPT And Codex Are Merging (This Changes Everything)",
+          "url": "https://www.youtube.com/watch?v=j--dqLJxrtE",
+          "duration": 1578,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "YGWcFMR8gk8",
+          "title": "Build The Ultimate AI Second Brain With Notion + Codex",
+          "url": "https://www.youtube.com/watch?v=YGWcFMR8gk8",
+          "duration": 1550,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "84NkgiTcOdo",
+          "title": "Claude Opus: Everything You Need to Know",
+          "url": "https://www.youtube.com/watch?v=84NkgiTcOdo",
+          "duration": 1618,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "dSndHNRzFCg",
+          "title": "Browsers Are Dead. Claude Just Replaced Them.",
+          "url": "https://www.youtube.com/watch?v=dSndHNRzFCg",
+          "duration": 975,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "52ltebR4Jnw",
+          "title": "Every NEW Claude Feature Explained",
+          "url": "https://www.youtube.com/watch?v=52ltebR4Jnw",
+          "duration": 1605,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "sL_KBnYB17I",
+          "title": "Codex: Build Your Full AI Marketing Team (Agents + Skills)",
+          "url": "https://www.youtube.com/watch?v=sL_KBnYB17I",
+          "duration": 2974,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "4OiLljSo-hw",
+          "title": "Codex Mobile App Released (Complete Setup Guide)",
+          "url": "https://www.youtube.com/watch?v=4OiLljSo-hw",
+          "duration": 862,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "BpOsHF5Oj_I",
+          "title": "Vibe Coding for Beginners (Full Course 2026)",
+          "url": "https://www.youtube.com/watch?v=BpOsHF5Oj_I",
+          "duration": 3325,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "FU2iB-UfPPA",
+          "title": "Codex is The NEW Best AI Coding Tool (Here's Why)",
+          "url": "https://www.youtube.com/watch?v=FU2iB-UfPPA",
+          "duration": 4982,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "SNAlFLV9MBE",
+          "title": "7 Tools That Make Codex 10x MORE Powerful",
+          "url": "https://www.youtube.com/watch?v=SNAlFLV9MBE",
+          "duration": 1475,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "474wZZHoWN4",
+          "title": "Learn 95% of Codex in 30 minutes",
+          "url": "https://www.youtube.com/watch?v=474wZZHoWN4",
+          "duration": 1730,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Xdy1vkhSz-M",
+          "title": "Codex Just Replaced 1,000 Hours of Video Editing Tutorials",
+          "url": "https://www.youtube.com/watch?v=Xdy1vkhSz-M",
+          "duration": 1676,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "5XZxmkjsNos",
+          "title": "GPT 5.5 + Codex Just Became the Best Model Ever",
+          "url": "https://www.youtube.com/watch?v=5XZxmkjsNos",
+          "duration": 1392,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "NrKABtmG4zs",
+          "title": "ChatGPT Just Became the Best AI Image Model in the World",
+          "url": "https://www.youtube.com/watch?v=NrKABtmG4zs",
+          "duration": 1347,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "KXIdYEdOPys",
+          "title": "Codex Full Course 2026: The NEW Best AI Coding Tool",
+          "url": "https://www.youtube.com/watch?v=KXIdYEdOPys",
+          "duration": 6194,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "xDARu4U8_X0",
+          "title": "How I’m Coding in 2026 (The Super-App Strategy)",
+          "url": "https://www.youtube.com/watch?v=xDARu4U8_X0",
+          "duration": 1869,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "67Cbb3DyIxA",
+          "title": "I Downloaded Claude Code’s Leak (The Results are INSANE)",
+          "url": "https://www.youtube.com/watch?v=67Cbb3DyIxA",
+          "duration": 1045,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "_5xDx_lL9fQ",
+          "title": "Claude is Taking Over: Every New Feature Explained (Full Guide)",
+          "url": "https://www.youtube.com/watch?v=_5xDx_lL9fQ",
+          "duration": 2236,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "eoEsVQJruow",
+          "title": "Build a FULL Mobile App with Codex (Full Guide)",
+          "url": "https://www.youtube.com/watch?v=eoEsVQJruow",
+          "duration": 1649,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "KAX0cWk1fJE",
+          "title": "How to Design With Claude Code (It's OVER for Figma)",
+          "url": "https://www.youtube.com/watch?v=KAX0cWk1fJE",
+          "duration": 898,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ISb0nrlNoKQ",
+          "title": "Why Specialized Agents are Superior (How I Built an OpenClaw Superteam)",
+          "url": "https://www.youtube.com/watch?v=ISb0nrlNoKQ",
+          "duration": 1096,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Yt6imPC1FhA",
+          "title": "OpenClaw Just Replaced 1,000 Hours of Video Editing Tutorials",
+          "url": "https://www.youtube.com/watch?v=Yt6imPC1FhA",
+          "duration": 726,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "dxlyCPGCvy8",
+          "title": "I Gave OpenClaw Blender Skills (The Results are INSANE)",
+          "url": "https://www.youtube.com/watch?v=dxlyCPGCvy8",
+          "duration": 631,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ryhzpLe9O_U",
+          "title": "7 OpenClaw Skills To 10x Your Output",
+          "url": "https://www.youtube.com/watch?v=ryhzpLe9O_U",
+          "duration": 2532,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Ke4iqmdD5iI",
+          "title": "Build a Synced Web + Mobile App in 16 Mins (Zero Code)",
+          "url": "https://www.youtube.com/watch?v=Ke4iqmdD5iI",
+          "duration": 1000,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Px_yUq5Nos0",
+          "title": "The 35 Fundamentals You Need to Vibecode Your First App (Full Tutorial)",
+          "url": "https://www.youtube.com/watch?v=Px_yUq5Nos0",
+          "duration": 2621,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "vfc0UfOnBWY",
+          "title": "Build Your Own AI Business System (Never Pay for SaaS Again)",
+          "url": "https://www.youtube.com/watch?v=vfc0UfOnBWY",
+          "duration": 1139,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "hLsP4gULKWs",
+          "title": "I Cloned a $1.275 Billion App In 30 Minutes",
+          "url": "https://www.youtube.com/watch?v=hLsP4gULKWs",
+          "duration": 1534,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "YKqU394Ye9Y",
+          "title": "I Made a $1 Billion App in 34 Minutes (How You Can Too)",
+          "url": "https://www.youtube.com/watch?v=YKqU394Ye9Y",
+          "duration": 2006,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "E3IL7N0E5-k",
+          "title": "Convert Your Web App to a Mobile App in MINUTES with AI (2026)",
+          "url": "https://www.youtube.com/watch?v=E3IL7N0E5-k",
+          "duration": 1075,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "D5nTL66HVUU",
+          "title": "Claude’s New Chrome Extension: The Secret Weapon Everyone Should be Using",
+          "url": "https://www.youtube.com/watch?v=D5nTL66HVUU",
+          "duration": 1290,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "OdtGN27LchE",
+          "title": "Claude Code Skills just Built me an AI Agent Team (2026 Guide)",
+          "url": "https://www.youtube.com/watch?v=OdtGN27LchE",
+          "duration": 1641,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "RHeFGH6K4mc",
+          "title": "I Tested GPT 5.2... Here's the Truth.",
+          "url": "https://www.youtube.com/watch?v=RHeFGH6K4mc",
+          "duration": 1222,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "MnCwXJnMgdk",
+          "title": "50 Amazing AI Uses for Everything (Full Course)",
+          "url": "https://www.youtube.com/watch?v=MnCwXJnMgdk",
+          "duration": 3716,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "J4yASL-0erU",
+          "title": "I Built an AI Employee That ACTUALLY Works (Claude Opus Guide)",
+          "url": "https://www.youtube.com/watch?v=J4yASL-0erU",
+          "duration": 1446,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "KBEpfigHyds",
+          "title": "We Vibe Coded a $4.8m App in 32 Minutes (iOS Payments Guide)",
+          "url": "https://www.youtube.com/watch?v=KBEpfigHyds",
+          "duration": 1959,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "hl9oRrKhvzs",
+          "title": "I Built & Published an iOS App in 493 Seconds (with backend)",
+          "url": "https://www.youtube.com/watch?v=hl9oRrKhvzs",
+          "duration": 497,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "dzFUOQUSiEI",
+          "title": "Gemini 3 Gives You Superpowers: Here’s How to Unlock Them",
+          "url": "https://www.youtube.com/watch?v=dzFUOQUSiEI",
+          "duration": 1515,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "KOLcaJ0Hpmw",
+          "title": "You’re Not Behind (Yet): Learn AI Before the 2026 Shift",
+          "url": "https://www.youtube.com/watch?v=KOLcaJ0Hpmw",
+          "duration": 1515,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "D77Vmfcq08k",
+          "title": "Genius Coder vs Vibe Coder: Who Can Build Better?",
+          "url": "https://www.youtube.com/watch?v=D77Vmfcq08k",
+          "duration": 3200,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Pq_gP9GEDeo",
+          "title": "How I Created & Shipped a Full iOS App With AI (With VibeCode App)",
+          "url": "https://www.youtube.com/watch?v=Pq_gP9GEDeo",
+          "duration": 1342,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "mCTMP1XgE5c",
+          "title": "Build Entire Apps with AI: The Full 2026 Masterclass",
+          "url": "https://www.youtube.com/watch?v=mCTMP1XgE5c",
+          "duration": 5139,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "2aldTxnbNt0",
+          "title": "Cursor 2.0 Tutorial for Beginners (Full Course)",
+          "url": "https://www.youtube.com/watch?v=2aldTxnbNt0",
+          "duration": 9254,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "SD5E3xdEXuQ",
+          "title": "How to Build Your 1st Mobile App with AI (VibeCode App)",
+          "url": "https://www.youtube.com/watch?v=SD5E3xdEXuQ",
+          "duration": 2186,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "0iWAugxM2ok",
+          "title": "Go from a Cursor, Replit, or Bolt Site to the App Store (in One Prompt)",
+          "url": "https://www.youtube.com/watch?v=0iWAugxM2ok",
+          "duration": 761,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "JaUv32REOr8",
+          "title": "How to Design Apps That Look As Good as Apple (With No Code)",
+          "url": "https://www.youtube.com/watch?v=JaUv32REOr8",
+          "duration": 1057,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "P5hJnYfA_EE",
+          "title": "The Easiest Way to Build Mobile Apps Ever (Vibecode App Tutorial)",
+          "url": "https://www.youtube.com/watch?v=P5hJnYfA_EE",
+          "duration": 2012,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "RLBIYzeb-zo",
+          "title": "Vibe Coder vs Pro Developer | Who Can Build a $300M App Better?",
+          "url": "https://www.youtube.com/watch?v=RLBIYzeb-zo",
+          "duration": 3942,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "g328fQNFQYA",
+          "title": "Can I Rebuild a $6M App Better Than a Pro Developer? (With No Code)",
+          "url": "https://www.youtube.com/watch?v=g328fQNFQYA",
+          "duration": 2059,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "cLhjaHR2YRc",
+          "title": "The 5 Levels of AI App Building",
+          "url": "https://www.youtube.com/watch?v=cLhjaHR2YRc",
+          "duration": 2452,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "6VDpkO9RWqs",
+          "title": "How to Build Fully Polished Apps with AI (Vibecode App Full Guide)",
+          "url": "https://www.youtube.com/watch?v=6VDpkO9RWqs",
+          "duration": 2019,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Ccf5yhlT2UU",
+          "title": "Claude Sonnet 4.5: I Built a Full App in 18 Minutes (With No Code)",
+          "url": "https://www.youtube.com/watch?v=Ccf5yhlT2UU",
+          "duration": 854,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "SK2AcXTyEMs",
+          "title": "OpenAI's Sora 2 is Insane… (should we be worried?)",
+          "url": "https://www.youtube.com/watch?v=SK2AcXTyEMs",
+          "duration": 3105,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "LFVIcpck8KI",
+          "title": "Claude Code 2.0: Coding Has NEVER Been This Easy",
+          "url": "https://www.youtube.com/watch?v=LFVIcpck8KI",
+          "duration": 1679,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Vy4pVvgJxIE",
+          "title": "I Built a $7.8M/Year App in 15 Minutes with Warp (NO CODE)",
+          "url": "https://www.youtube.com/watch?v=Vy4pVvgJxIE",
+          "duration": 905,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "aEdRB2yVK-I",
+          "title": "We Built 2 FULL Video Games In 7 Prompts (Claude Code vs GPT-5 Codex)",
+          "url": "https://www.youtube.com/watch?v=aEdRB2yVK-I",
+          "duration": 3959,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Mkkq9Ays4lo",
+          "title": "We Built a Nano Banana App *Live* (No Code)",
+          "url": "https://www.youtube.com/watch?v=Mkkq9Ays4lo",
+          "duration": 1924,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "2FJlhoDYNPE",
+          "title": "AI Coding Masterclass: From Beginner to Expert in 90 Minutes",
+          "url": "https://www.youtube.com/watch?v=2FJlhoDYNPE",
+          "duration": 5762,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "SjDvHYZGFaQ",
+          "title": "Claude Code: The NEW Way to Code (Here’s How)",
+          "url": "https://www.youtube.com/watch?v=SjDvHYZGFaQ",
+          "duration": 2298,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "3V6fppDLVXs",
+          "title": "Codex GPT-5 vs Claude Code… The Winner Was Obvious",
+          "url": "https://www.youtube.com/watch?v=3V6fppDLVXs",
+          "duration": 1179,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "522lUI2GVJA",
+          "title": "Can I Vibe Code a $50M App Better Than a Pro Developer? (With No Code)",
+          "url": "https://www.youtube.com/watch?v=522lUI2GVJA",
+          "duration": 2695,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "NnYLzGMk8Tg",
+          "title": "Can I Vibecode a $250M App Better Than a Pro Developer? (With No Code)",
+          "url": "https://www.youtube.com/watch?v=NnYLzGMk8Tg",
+          "duration": 3347,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "s50dOsodoVQ",
+          "title": "We Built an Entire App in Only 27 Minutes (With No Code)",
+          "url": "https://www.youtube.com/watch?v=s50dOsodoVQ",
+          "duration": 1617,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "SKBDC3QugZw",
+          "title": "I Built an Entire Website with Claude Code… Here’s How",
+          "url": "https://www.youtube.com/watch?v=SKBDC3QugZw",
+          "duration": 2212,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "9i3ic1sVhlI",
+          "title": "Build an AI Army With Claude Code’s New Sub-Agents",
+          "url": "https://www.youtube.com/watch?v=9i3ic1sVhlI",
+          "duration": 2037,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "enKJWk3MTnM",
+          "title": "AI Built This App in 26 Minutes (and published it)",
+          "url": "https://www.youtube.com/watch?v=enKJWk3MTnM",
+          "duration": 1578,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "dk97zcYaq_o",
+          "title": "The Complete Claude Code Workflow (to Build Anything)",
+          "url": "https://www.youtube.com/watch?v=dk97zcYaq_o",
+          "duration": 2688,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "DBchIUAAcNM",
+          "title": "How I Built My Dream Studio in San Francisco",
+          "url": "https://www.youtube.com/watch?v=DBchIUAAcNM",
+          "duration": 1204,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "0k4Eq2VMNFM",
+          "title": "The Quiet Browser War to Build the AI Chrome (Explained)",
+          "url": "https://www.youtube.com/watch?v=0k4Eq2VMNFM",
+          "duration": 1788,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "p-KM4P-6Hmg",
+          "title": "We Built an $80M App in 47 Minutes (Full Guide)",
+          "url": "https://www.youtube.com/watch?v=p-KM4P-6Hmg",
+          "duration": 2829,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Mpe-uZxPuu8",
+          "title": "Dia Browser: The Most Powerful Browser You’ll Ever Use (And It’s Free)",
+          "url": "https://www.youtube.com/watch?v=Mpe-uZxPuu8",
+          "duration": 1466,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "_GMtx9EsIKU",
+          "title": "We Made Claude Code Build Lovable in 75 Minutes (With No Code)",
+          "url": "https://www.youtube.com/watch?v=_GMtx9EsIKU",
+          "duration": 4980,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "NAhKdzo99NI",
+          "title": "N8n Complete Guide: Building AI Agents That Make REAL $$ Money",
+          "url": "https://www.youtube.com/watch?v=NAhKdzo99NI",
+          "duration": 4274,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "iLtU0wQvCBU",
+          "title": "I Built an Entire Marketing Team With One AI Agent (no code with n8n)",
+          "url": "https://www.youtube.com/watch?v=iLtU0wQvCBU",
+          "duration": 1857,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "SBbAcXlmfe0",
+          "title": "How to build a mobile app with Cursor in 53 minutes (No Coding)",
+          "url": "https://www.youtube.com/watch?v=SBbAcXlmfe0",
+          "duration": 3165,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "NMSo2fkjauw",
+          "title": "Replicate Ai: How Beginners Are Making $ Millions Building Ai Tools",
+          "url": "https://www.youtube.com/watch?v=NMSo2fkjauw",
+          "duration": 1915,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "0iGEpx8IeM0",
+          "title": "Claude Code Replaced Cursor for Me… Here’s Why",
+          "url": "https://www.youtube.com/watch?v=0iGEpx8IeM0",
+          "duration": 2228,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "uAI5NLoojso",
+          "title": "I Built a SUPER App to Control All My AI Agents (No Code)",
+          "url": "https://www.youtube.com/watch?v=uAI5NLoojso",
+          "duration": 816,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "LikLn_1Ekc4",
+          "title": "Google Veo Just Killed the Camera - Full AI Films Are Coming!",
+          "url": "https://www.youtube.com/watch?v=LikLn_1Ekc4",
+          "duration": 2649,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "7l6XfYtX2Vs",
+          "title": "The Secret to Making Claude 10x Better than ChatGPT (MCP Tutorial)",
+          "url": "https://www.youtube.com/watch?v=7l6XfYtX2Vs",
+          "duration": 1254,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "-Cx66fGexN0",
+          "title": "I Built a YouTube Studio That Edits My Videos Automatically",
+          "url": "https://www.youtube.com/watch?v=-Cx66fGexN0",
+          "duration": 609,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ql7stLKXzds",
+          "title": "How to Grow an Audience if You Have 0 Followers",
+          "url": "https://www.youtube.com/watch?v=ql7stLKXzds",
+          "duration": 1620,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Da4LsWrrKD0",
+          "title": "I Replaced My Marketing Team with AI Agents (n8n no code)",
+          "url": "https://www.youtube.com/watch?v=Da4LsWrrKD0",
+          "duration": 1967,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "e_M_Wavx-EQ",
+          "title": "How I'm making money with AI Workflows and Agents (Full Tutorial)",
+          "url": "https://www.youtube.com/watch?v=e_M_Wavx-EQ",
+          "duration": 2501,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "TPBd8If-ryQ",
+          "title": "How I Created a Professional Landing Page with AI (Custom Style in 10 Minutes)",
+          "url": "https://www.youtube.com/watch?v=TPBd8If-ryQ",
+          "duration": 421,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "lHhhze3_i00",
+          "title": "Build a iPhone mobile app with AI (No Coding Required)",
+          "url": "https://www.youtube.com/watch?v=lHhhze3_i00",
+          "duration": 466,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "2itM7IdThvA",
+          "title": "The 6 Steps to Master AI",
+          "url": "https://www.youtube.com/watch?v=2itM7IdThvA",
+          "duration": 6652,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "XDYrf2bbMxg",
+          "title": "I Let AI Design and Build My App and It Actually Worked",
+          "url": "https://www.youtube.com/watch?v=XDYrf2bbMxg",
+          "duration": 864,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "wV51WWaQQYo",
+          "title": "The Best New app for VibeCoders",
+          "url": "https://www.youtube.com/watch?v=wV51WWaQQYo",
+          "duration": 810,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "kN08-CXWOJs",
+          "title": "GPT-4 Vision Designed My Entire AI Chat App (No Design Skills Needed)",
+          "url": "https://www.youtube.com/watch?v=kN08-CXWOJs",
+          "duration": 1081,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "EHfDs6cmpkc",
+          "title": "Exploring Eight HUGE AI Trends That Are Changing Everything",
+          "url": "https://www.youtube.com/watch?v=EHfDs6cmpkc",
+          "duration": 2596,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "qHncKi2BEFI",
+          "title": "Most Important AI Innovations Are Changing EVERYTHING",
+          "url": "https://www.youtube.com/watch?v=qHncKi2BEFI",
+          "duration": 2217,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "HSnJrXWETfM",
+          "title": "Cursor vs. Windsurf vs. Lovable vs. v0 vs. Bolt vs. Replit",
+          "url": "https://www.youtube.com/watch?v=HSnJrXWETfM",
+          "duration": 1070,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "V0TGQRAt4wg",
+          "title": "Vibe Coding Is Revolutionizing App Development With Natural Language",
+          "url": "https://www.youtube.com/watch?v=V0TGQRAt4wg",
+          "duration": 1201,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "-FRBotBLc1o",
+          "title": "Building an App with ZERO Coding Knowledge is NOW Possible (Claude 3.7 in Cursor)",
+          "url": "https://www.youtube.com/watch?v=-FRBotBLc1o",
+          "duration": 1221,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "xSbb3LZ9D_c",
+          "title": "I Used Cursor to Vibe Code a New Front End to Cursor",
+          "url": "https://www.youtube.com/watch?v=xSbb3LZ9D_c",
+          "duration": 1309,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "faezjTHA5SU",
+          "title": "Complete Guide to Cursor For Non-Coders (Vibe Coding 101)",
+          "url": "https://www.youtube.com/watch?v=faezjTHA5SU",
+          "duration": 8897,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "dan3QfN3CDU",
+          "title": "Karpathy Vibe Coding Full Tutorial with Cursor (Zero Coding)",
+          "url": "https://www.youtube.com/watch?v=dan3QfN3CDU",
+          "duration": 2028,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "BuZjz69pBd8",
+          "title": "o3 vs. DeepSeek - The Reasoning Era has begun",
+          "url": "https://www.youtube.com/watch?v=BuZjz69pBd8",
+          "duration": 2057,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "nxqA3VHKE-s",
+          "title": "How to use AI to Build an App (No Coding)",
+          "url": "https://www.youtube.com/watch?v=nxqA3VHKE-s",
+          "duration": 2103,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "WsQ_W0VHW2I",
+          "title": "Build a DeepSeek Wrapper iOS App in 1 Hour Without ANY Coding!",
+          "url": "https://www.youtube.com/watch?v=WsQ_W0VHW2I",
+          "duration": 1735,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "tR2azlV7RlQ",
+          "title": "Deepseek Explained",
+          "url": "https://www.youtube.com/watch?v=tR2azlV7RlQ",
+          "duration": 591,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "TxD7wLq12Eg",
+          "title": "I Built a DeepSeek Search Engine Without Writing a Single Line of Code",
+          "url": "https://www.youtube.com/watch?v=TxD7wLq12Eg",
+          "duration": 1270,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "jQm42x6VpN4",
+          "title": "Cursor Landing Page Full Tutorial (No Coding just AI Prompts)",
+          "url": "https://www.youtube.com/watch?v=jQm42x6VpN4",
+          "duration": 573,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "TmLkFnduWWo",
+          "title": "Beginners Guide to AI-Powered Coding With Cursor (No Coding Experience)",
+          "url": "https://www.youtube.com/watch?v=TmLkFnduWWo",
+          "duration": 1583,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "YPXPuK58o38",
+          "title": "I Built an AI Thumbnail Generator with Cursor Without Coding!",
+          "url": "https://www.youtube.com/watch?v=YPXPuK58o38",
+          "duration": 2199,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "i-5bFCDvk-Q",
+          "title": "I Built an AI Powered Writing App With Zero Coding",
+          "url": "https://www.youtube.com/watch?v=i-5bFCDvk-Q",
+          "duration": 2447,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "_JNCqY8ltSg",
+          "title": "The New Cursor Agent is Insane (Full Tutorial)",
+          "url": "https://www.youtube.com/watch?v=_JNCqY8ltSg",
+          "duration": 3376,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "CPXWBnjLKJE",
+          "title": "You don’t need a degree, you need these 6 AI Learning Tools",
+          "url": "https://www.youtube.com/watch?v=CPXWBnjLKJE",
+          "duration": 2343,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "CtjuzlIuoO0",
+          "title": "Build an AI App Without Coding (Zero to App)",
+          "url": "https://www.youtube.com/watch?v=CtjuzlIuoO0",
+          "duration": 1368,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "VLtQqvrOtCo",
+          "title": "5 AI Apps Making Millions (With Zero Code)",
+          "url": "https://www.youtube.com/watch?v=VLtQqvrOtCo",
+          "duration": 1385,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ltdl4yqwBUI",
+          "title": "I used Cursor to turn a Hormozi Video into an APP: FULL TUTORIAL",
+          "url": "https://www.youtube.com/watch?v=ltdl4yqwBUI",
+          "duration": 2455,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ue3DYCOe-xw",
+          "title": "The Rise of AI in Coding (Software Composer Podcast 0)",
+          "url": "https://www.youtube.com/watch?v=ue3DYCOe-xw",
+          "duration": 1193,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "QWOqtxBrSUY",
+          "title": "ChatGPT Real Time Voice will replace Tutorial Creators",
+          "url": "https://www.youtube.com/watch?v=QWOqtxBrSUY",
+          "duration": 167,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "vQDAxWS9OXc",
+          "title": "Build an App, Buy a Domain, and Deploy it with Cursor in 18 minutes",
+          "url": "https://www.youtube.com/watch?v=vQDAxWS9OXc",
+          "duration": 1107,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "jVJrAIpZB6g",
+          "title": "I'm Back... And I Built an App With Cursor",
+          "url": "https://www.youtube.com/watch?v=jVJrAIpZB6g",
+          "duration": 331,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "MGd4AJc-aQk",
+          "title": "From Screenshot to Landing Page in 18 minutes using AI",
+          "url": "https://www.youtube.com/watch?v=MGd4AJc-aQk",
+          "duration": 1125,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "yuRIKKh3bE4",
+          "title": "You need to sell your software somehow...",
+          "url": "https://www.youtube.com/watch?v=yuRIKKh3bE4",
+          "duration": 1452,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "QCv8iBEBEIw",
+          "title": "This type of person will make millions over the next decade",
+          "url": "https://www.youtube.com/watch?v=QCv8iBEBEIw",
+          "duration": 552,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "jGq2aNQwokY",
+          "title": "OMG! I'm using AI to create a the app I always wanted :)",
+          "url": "https://www.youtube.com/watch?v=jGq2aNQwokY",
+          "duration": 3255,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "FFBq40r7poU",
+          "title": "What is Chat-GPT \"o1\" and what is it better at?",
+          "url": "https://www.youtube.com/watch?v=FFBq40r7poU",
+          "duration": 1508,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "-yfBjB1uzns",
+          "title": "8 minute IPhone App Created with AI (Cursor)",
+          "url": "https://www.youtube.com/watch?v=-yfBjB1uzns",
+          "duration": 499,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "UaQXi8WpFhQ",
+          "title": "Using AI to Build Apps Day 60 (VLOG)",
+          "url": "https://www.youtube.com/watch?v=UaQXi8WpFhQ",
+          "duration": 515,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Jy1eEMm0rjA",
+          "title": "This New Cursor + Replit Template SLAPS!",
+          "url": "https://www.youtube.com/watch?v=Jy1eEMm0rjA",
+          "duration": 1449,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "tmWdk_5JMSg",
+          "title": "Build an AI Powered Voice App with Cursor AI (Full Guide and Template)",
+          "url": "https://www.youtube.com/watch?v=tmWdk_5JMSg",
+          "duration": 2094,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "08TcHAeTJeU",
+          "title": "Speech to App with Cursor... EVERYONE CAN CODE",
+          "url": "https://www.youtube.com/watch?v=08TcHAeTJeU",
+          "duration": 588,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "SYoYo-FZyno",
+          "title": "Coding 100% With AI | The Easiest Way to Use Cursor",
+          "url": "https://www.youtube.com/watch?v=SYoYo-FZyno",
+          "duration": 1640,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "z-zOs02NH44",
+          "title": "How to Use AI to Build a Web App in 10 minutes (Template + Full Guide)",
+          "url": "https://www.youtube.com/watch?v=z-zOs02NH44",
+          "duration": 2193,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "tED-TlB76lY",
+          "title": "I Used ONLY AI to build a Feature-Rich Note-Taking App Using (part 2)",
+          "url": "https://www.youtube.com/watch?v=tED-TlB76lY",
+          "duration": 2578,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "c5sLyqaMikE",
+          "title": "What App Can I Build in 15 Claude Prompts?",
+          "url": "https://www.youtube.com/watch?v=c5sLyqaMikE",
+          "duration": 1386,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "wGxD2taQr5g",
+          "title": "Build a Web App Music Player with AI and 2 SCREENSHOTS.",
+          "url": "https://www.youtube.com/watch?v=wGxD2taQr5g",
+          "duration": 1545,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "MvvrxdePk5Y",
+          "title": "Building a Full-Stack Website with AI - No Coding Experience",
+          "url": "https://www.youtube.com/watch?v=MvvrxdePk5Y",
+          "duration": 4044,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "luMxg_Dt5Mk",
+          "title": "From GPT to Website in 15 minutes (No Coding Experience)",
+          "url": "https://www.youtube.com/watch?v=luMxg_Dt5Mk",
+          "duration": 1179,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "kXnW4Hy4Z7o",
+          "title": "Build a FULL Web App With Claude With 2 SCREENSHOTS!",
+          "url": "https://www.youtube.com/watch?v=kXnW4Hy4Z7o",
+          "duration": 1056,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "gil8d0CzKWs",
+          "title": "The complete content system that got me to 1M on Insta + TikTok",
+          "url": "https://www.youtube.com/watch?v=gil8d0CzKWs",
+          "duration": 1758,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "EZ-Q30WL5L4",
+          "title": "Use Claude to Create a fully deployed web app in less than 5 minutes",
+          "url": "https://www.youtube.com/watch?v=EZ-Q30WL5L4",
+          "duration": 311,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "yNYVDWoTIkw",
+          "title": "This NEW app Transcribes & Summarizes Every YouTube video I watch",
+          "url": "https://www.youtube.com/watch?v=yNYVDWoTIkw",
+          "duration": 978,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "LlUQkVZdHnM",
+          "title": "Use AI to swap characters in any video (Viggle Full Editing Guide)",
+          "url": "https://www.youtube.com/watch?v=LlUQkVZdHnM",
+          "duration": 866,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "1CwzAKjo3RM",
+          "title": "Using 3 AI Tools to Create a Music Video (in under 1 hour)",
+          "url": "https://www.youtube.com/watch?v=1CwzAKjo3RM",
+          "duration": 1035,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "vTOEsBgS8vc",
+          "title": "Descript Full Guide: The Ultimate AI Video Editor",
+          "url": "https://www.youtube.com/watch?v=vTOEsBgS8vc",
+          "duration": 1643,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "whxbRkeJQKA",
+          "title": "AI Music: The End of Music as We Know It (In-Depth)",
+          "url": "https://www.youtube.com/watch?v=whxbRkeJQKA",
+          "duration": 3213,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Eh-vKLtYZHA",
+          "title": "The Best AI Music Generator Ever (Full Guide)",
+          "url": "https://www.youtube.com/watch?v=Eh-vKLtYZHA",
+          "duration": 905,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "xPQhZWE20vI",
+          "title": "Gemini 1.5 is Way More Powerful Than You Think",
+          "url": "https://www.youtube.com/watch?v=xPQhZWE20vI",
+          "duration": 1250,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "pp_qaR6pcRY",
+          "title": "OpenAI's Revolutionary AI Video: A New Era Is Here",
+          "url": "https://www.youtube.com/watch?v=pp_qaR6pcRY",
+          "duration": 557,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "LeU_h8iUqkw",
+          "title": "How to Turn ChatGPT into an Unstoppable Virtual Employee Army",
+          "url": "https://www.youtube.com/watch?v=LeU_h8iUqkw",
+          "duration": 1611,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "9H1nGZph5PA",
+          "title": "How to use Midjourney's new Website | Every Feature",
+          "url": "https://www.youtube.com/watch?v=9H1nGZph5PA",
+          "duration": 1004,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Hxv3MmXLaW0",
+          "title": "The Risks and Rewards of AGI: A Conversation with David Shapiro",
+          "url": "https://www.youtube.com/watch?v=Hxv3MmXLaW0",
+          "duration": 5032,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "CANYXHtCWKI",
+          "title": "Kaiber AI Video Guide and Examples",
+          "url": "https://www.youtube.com/watch?v=CANYXHtCWKI",
+          "duration": 574,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "F2CGHQYp0Lg",
+          "title": "KAIBER AI: Making AI advertisements and Graphics",
+          "url": "https://www.youtube.com/watch?v=F2CGHQYp0Lg",
+          "duration": 72,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "xrmNhW5ABg4",
+          "title": "Create a speaking animated character | Midjourney + other AI Tools",
+          "url": "https://www.youtube.com/watch?v=xrmNhW5ABg4",
+          "duration": 111,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@rileybrownai/streams",
+      "title": "Riley Brown - Live",
+      "reported_count": 1,
+      "returned_count": 1,
+      "pagination_exhausted": true,
+      "items": [
+        {
+          "id": "hka6a1Pemgk",
+          "title": "Top 15 AI Tools Livestream",
+          "url": "https://www.youtube.com/watch?v=hka6a1Pemgk",
+          "duration": 10335,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": "was_live",
+          "date_status": "pending_watch_page"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@rileybrownai/shorts",
+      "title": "Riley Brown - Shorts",
+      "reported_count": 42,
+      "returned_count": 42,
+      "pagination_exhausted": true,
+      "items": [
+        {
+          "id": "PoP1L296Du8",
+          "title": "We have a vibe coding problem",
+          "url": "https://www.youtube.com/shorts/PoP1L296Du8",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "yqMBDSZbmOg",
+          "title": "ChatGPT was a chatbot.  Now it has its own computer.",
+          "url": "https://www.youtube.com/shorts/yqMBDSZbmOg",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "6Zwns0Pppv8",
+          "title": "Genspark SecondBrain Note",
+          "url": "https://www.youtube.com/shorts/6Zwns0Pppv8",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "0v9MGS_GMWI",
+          "title": "Director by OpenArt",
+          "url": "https://www.youtube.com/shorts/0v9MGS_GMWI",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "C64tVVgquhc",
+          "title": "Poweful Agents inside Slack",
+          "url": "https://www.youtube.com/shorts/C64tVVgquhc",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "cHdaCCpJ1CY",
+          "title": "How to build high quality internal tools with Retool",
+          "url": "https://www.youtube.com/shorts/cHdaCCpJ1CY",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "3mm-hxVtjkM",
+          "title": "OpenAI just released Codex Mobile",
+          "url": "https://www.youtube.com/shorts/3mm-hxVtjkM",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "pDsd2FiMUt8",
+          "title": "With Codex and GPT 5.5 you can just do things.",
+          "url": "https://www.youtube.com/shorts/pDsd2FiMUt8",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "y0c1W01YbP4",
+          "title": "ChatGPTs new image model is SO GOOD, that it generates images of books with barcodes.... that SCAN",
+          "url": "https://www.youtube.com/shorts/y0c1W01YbP4",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "uhVEIJXXvU4",
+          "title": "Openclaw Blender part 2",
+          "url": "https://www.youtube.com/shorts/uhVEIJXXvU4",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "uScSzTBTh2s",
+          "title": "Claude Opus 4.6 just built Tinder for Short People(under 4 ft 10) In 3 prompts",
+          "url": "https://www.youtube.com/shorts/uScSzTBTh2s",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "bumx7WKGLxg",
+          "title": "Clawdbots now have their own social media platform, now want privacy from humans.",
+          "url": "https://www.youtube.com/shorts/bumx7WKGLxg",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "NKWQEJ8MGuA",
+          "title": "Runway Gen 4.5 is out, and it's insane",
+          "url": "https://www.youtube.com/shorts/NKWQEJ8MGuA",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "h7Ub1EJuKFM",
+          "title": "Claude Code Builds Tinder for Movies in 2 prompts...",
+          "url": "https://www.youtube.com/shorts/h7Ub1EJuKFM",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "9FEeBbq9t1A",
+          "title": "Claude Code in the web can build anything (Vibecode.dev)",
+          "url": "https://www.youtube.com/shorts/9FEeBbq9t1A",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "xQuD4coLtFE",
+          "title": "Vibecoding 15 million dollar app in 10 min (Vibecode.dev Builds Cluely)",
+          "url": "https://www.youtube.com/shorts/xQuD4coLtFE",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "NB_1PDZxpQ8",
+          "title": "Senior Full Stack Vibe Coder Goes Ham From the Couch",
+          "url": "https://www.youtube.com/shorts/NB_1PDZxpQ8",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "NTtZBanY53c",
+          "title": "vibecode.dev is insane",
+          "url": "https://www.youtube.com/shorts/NTtZBanY53c",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "mKNGlDbl0-c",
+          "title": "Add payments in 3 clicks in any iOS app (No Coding)",
+          "url": "https://www.youtube.com/shorts/mKNGlDbl0-c",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "GVANWCbU6fk",
+          "title": "The new Gemini 3 Pro Model is pretty wild.",
+          "url": "https://www.youtube.com/shorts/GVANWCbU6fk",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "j6R1xayPK0g",
+          "title": "Vibe coding an iOS app for my dogs with vibecode.dev",
+          "url": "https://www.youtube.com/shorts/j6R1xayPK0g",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "yjAsdXmLz3o",
+          "title": "Building app with Vibecode App from the couch",
+          "url": "https://www.youtube.com/shorts/yjAsdXmLz3o",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "1t5lR-xwYMU",
+          "title": "I built a Mac App called Riley's World using Warp and Claude 4.5 Sonnet!",
+          "url": "https://www.youtube.com/shorts/1t5lR-xwYMU",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "hX7D1pMOEzw",
+          "title": "Vibecoding the \"Swifties\" App with Backend From my Phone",
+          "url": "https://www.youtube.com/shorts/hX7D1pMOEzw",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "LUcAPIVEnGc",
+          "title": "Building a Mobile App with Frontend and Backend with AI",
+          "url": "https://www.youtube.com/shorts/LUcAPIVEnGc",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "wrLSsAjR19Q",
+          "title": "vibecode app is insane",
+          "url": "https://www.youtube.com/shorts/wrLSsAjR19Q",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "4TIDhNLwPAY",
+          "title": "Vibe Coding an iOS app Part 2",
+          "url": "https://www.youtube.com/shorts/4TIDhNLwPAY",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "VvcRzvZ809w",
+          "title": "Vibe coding an iPhone App and iPad App #1",
+          "url": "https://www.youtube.com/shorts/VvcRzvZ809w",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Zdq5nrWB4uc",
+          "title": "Claude Code on the phone, and it builds mobile apps",
+          "url": "https://www.youtube.com/shorts/Zdq5nrWB4uc",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "3M_ydA_cuMQ",
+          "title": "OpenAI’s New Agent Builder Is Here!",
+          "url": "https://www.youtube.com/shorts/3M_ydA_cuMQ",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "9GWxBG9f564",
+          "title": "Claude 4.5 Sonnet Builds a Mobile App",
+          "url": "https://www.youtube.com/shorts/9GWxBG9f564",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "3m6psFQyH30",
+          "title": "Vibecode a Manifestation App",
+          "url": "https://www.youtube.com/shorts/3m6psFQyH30",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Mq1rijmpzX8",
+          "title": "Claude Opus Created a Mobile app in one prompt",
+          "url": "https://www.youtube.com/shorts/Mq1rijmpzX8",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "odPQbMHoP0o",
+          "title": "Vibe Coders Flood the App Store (The CapCut for Software is here)",
+          "url": "https://www.youtube.com/shorts/odPQbMHoP0o",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "aS07urR_MmY",
+          "title": "This AI Tool is Like the Cursor for Music",
+          "url": "https://www.youtube.com/shorts/aS07urR_MmY",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "GZxjs8FD3Ck",
+          "title": "Claude is so much better when you use MCP #claude #mcp #automation #aivideo",
+          "url": "https://www.youtube.com/shorts/GZxjs8FD3Ck",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "If7HjdrBuJc",
+          "title": "All the AI companies want this one thing!",
+          "url": "https://www.youtube.com/shorts/If7HjdrBuJc",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "r09B6gPHvzY",
+          "title": "AI Landing Page",
+          "url": "https://www.youtube.com/shorts/r09B6gPHvzY",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "cvaw3jMuV10",
+          "title": "Code Rabbit",
+          "url": "https://www.youtube.com/shorts/cvaw3jMuV10",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "L7tfLxVGk2w",
+          "title": "The future of AI Generated Video with LTX",
+          "url": "https://www.youtube.com/shorts/L7tfLxVGk2w",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "tN42JpEwAro",
+          "title": "Review Code with Code Rabbit Pro",
+          "url": "https://www.youtube.com/shorts/tN42JpEwAro",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "XkqnkAtEDfU",
+          "title": "New ChatGPT Agent is CRAZY!",
+          "url": "https://www.youtube.com/shorts/XkqnkAtEDfU",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        }
+      ]
+    }
+  ],
+  "log": [
+    {
+      "level": "debug",
+      "message": "[youtube:tab] Extracting URL: https://www.youtube.com/@rileybrownai"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] @rileybrownai: Downloading webpage"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] Downloading all uploads of the channel. To download only the videos in a specific tab, pass the tab's URL"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] @rileybrownai/streams: Downloading webpage"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] @rileybrownai/shorts: Downloading webpage"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] Downloading as multiple playlists, separated by tabs. To download as a single playlist instead, pass https://www.youtube.com/playlist?list=UUMcoud_ZW7cfxeIugBflSBw"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading playlist: Riley Brown"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] Playlist Riley Brown: Downloading 3 items of 3"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 1 of 3"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading playlist: Riley Brown - Videos"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] UCMcoud_ZW7cfxeIugBflSBw page 1: Downloading API JSON"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] UCMcoud_ZW7cfxeIugBflSBw page 2: Downloading API JSON"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] UCMcoud_ZW7cfxeIugBflSBw page 3: Downloading API JSON"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] UCMcoud_ZW7cfxeIugBflSBw page 4: Downloading API JSON"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] UCMcoud_ZW7cfxeIugBflSBw page 5: Downloading API JSON"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] UCMcoud_ZW7cfxeIugBflSBw page 6: Downloading API JSON"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] Playlist Riley Brown - Videos: Downloading 187 items of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 1 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 2 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 3 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 4 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 5 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 6 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 7 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 8 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 9 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 10 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 11 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 12 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 13 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 14 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 15 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 16 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 17 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 18 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 19 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 20 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 21 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 22 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 23 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 24 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 25 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 26 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 27 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 28 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 29 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 30 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 31 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 32 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 33 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 34 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 35 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 36 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 37 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 38 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 39 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 40 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 41 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 42 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 43 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 44 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 45 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 46 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 47 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 48 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 49 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 50 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 51 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 52 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 53 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 54 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 55 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 56 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 57 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 58 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 59 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 60 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 61 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 62 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 63 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 64 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 65 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 66 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 67 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 68 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 69 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 70 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 71 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 72 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 73 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 74 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 75 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 76 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 77 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 78 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 79 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 80 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 81 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 82 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 83 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 84 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 85 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 86 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 87 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 88 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 89 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 90 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 91 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 92 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 93 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 94 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 95 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 96 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 97 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 98 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 99 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 100 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 101 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 102 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 103 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 104 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 105 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 106 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 107 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 108 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 109 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 110 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 111 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 112 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 113 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 114 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 115 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 116 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 117 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 118 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 119 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 120 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 121 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 122 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 123 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 124 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 125 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 126 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 127 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 128 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 129 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 130 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 131 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 132 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 133 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 134 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 135 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 136 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 137 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 138 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 139 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 140 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 141 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 142 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 143 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 144 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 145 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 146 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 147 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 148 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 149 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 150 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 151 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 152 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 153 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 154 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 155 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 156 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 157 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 158 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 159 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 160 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 161 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 162 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 163 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 164 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 165 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 166 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 167 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 168 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 169 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 170 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 171 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 172 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 173 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 174 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 175 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 176 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 177 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 178 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 179 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 180 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 181 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 182 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 183 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 184 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 185 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 186 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 187 of 187"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Finished downloading playlist: Riley Brown - Videos"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 2 of 3"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading playlist: Riley Brown - Live"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] Playlist Riley Brown - Live: Downloading 1 items of 1"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 1 of 1"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Finished downloading playlist: Riley Brown - Live"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 3 of 3"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading playlist: Riley Brown - Shorts"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] Playlist Riley Brown - Shorts: Downloading 42 items of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 1 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 2 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 3 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 4 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 5 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 6 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 7 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 8 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 9 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 10 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 11 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 12 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 13 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 14 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 15 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 16 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 17 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 18 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 19 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 20 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 21 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 22 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 23 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 24 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 25 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 26 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 27 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 28 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 29 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 30 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 31 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 32 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 33 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 34 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 35 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 36 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 37 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 38 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 39 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 40 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 41 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 42 of 42"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Finished downloading playlist: Riley Brown - Shorts"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Finished downloading playlist: Riley Brown"
+    }
+  ],
+  "channel_id": "UCMcoud_ZW7cfxeIugBflSBw",
+  "channel_title": "Riley Brown",
+  "unique_videos": 230,
+  "remaining_scope": "Reconcile playlists/podcasts, embedded and unlisted links; exact dates and transcripts per video.",
+  "finished_at": "2026-09-28T19:13:23.026063+00:00"
+}

@@ -27,14 +27,19 @@
       "type": "video_channel",
       "approved_by_user": true,
       "checked_at": "2026-09-28",
-      "access_status": "metadata_only",
-      "coverage": "Canal retorna só navegação. Vídeo bdMHQLvtVaQ localizado via newsletter oficial; transcrição não acessível.",
+      "access_status": "accessible",
+      "coverage": "Paginação anônima das abas públicas concluída: 301 IDs. Playlists/podcasts e incorporações ainda exigem reconciliação; transcrições em video-inventory/coverage.json.",
       "last_publication_seen": "2026-08-23",
       "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
       "history_complete": false,
       "discovered_urls": [
         "https://www.youtube.com/watch?v=bdMHQLvtVaQ"
-      ]
+      ],
+      "priority_source": true,
+      "public_upload_count": 301,
+      "public_upload_pagination_exhausted": true,
+      "coverage_report": "video-inventory/coverage.json",
+      "inventory_status": "public_uploads_traversed"
     },
     {
       "id": "peter-yang-newsletter",
@@ -50,7 +55,8 @@
       "history_complete": false,
       "discovered_urls": [
         "https://creatoreconomy.so/archive"
-      ]
+      ],
+      "priority_source": true
     },
     {
       "id": "riley-brown-youtube",
@@ -59,12 +65,17 @@
       "type": "video_channel",
       "approved_by_user": true,
       "checked_at": "2026-09-28",
-      "access_status": "index_unavailable",
-      "coverage": "Canal retorna só navegação; buscas trouxeram fontes secundárias, não aceitas como evidência de conteúdo.",
+      "access_status": "accessible",
+      "coverage": "Paginação anônima das abas públicas concluída: 230 IDs. Playlists/podcasts e incorporações ainda exigem reconciliação; transcrições em video-inventory/coverage.json.",
       "last_publication_seen": null,
       "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
       "history_complete": false,
-      "discovered_urls": []
+      "discovered_urls": [],
+      "priority_source": true,
+      "public_upload_count": 230,
+      "public_upload_pagination_exhausted": true,
+      "coverage_report": "video-inventory/coverage.json",
+      "inventory_status": "public_uploads_traversed"
     },
     {
       "id": "tech-with-tim-youtube",
@@ -73,14 +84,19 @@
       "type": "video_channel",
       "approved_by_user": true,
       "checked_at": "2026-09-28",
-      "access_status": "metadata_only",
-      "coverage": "Título, data, descrição e capítulos obtidos no índice YouTube; página direta não expõe transcrição.",
+      "access_status": "accessible",
+      "coverage": "Paginação anônima das abas públicas concluída: 2191 IDs. Playlists/podcasts e incorporações ainda exigem reconciliação; transcrições em video-inventory/coverage.json.",
       "last_publication_seen": "2026-02-27",
       "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
       "history_complete": false,
       "discovered_urls": [
         "https://www.youtube.com/watch?v=ntDIxaeo3Wg"
-      ]
+      ],
+      "priority_source": true,
+      "public_upload_count": 2191,
+      "public_upload_pagination_exhausted": true,
+      "coverage_report": "video-inventory/coverage.json",
+      "inventory_status": "public_uploads_traversed"
     },
     {
       "id": "designcourse-youtube",
@@ -89,12 +105,17 @@
       "type": "video_channel",
       "approved_by_user": true,
       "checked_at": "2026-09-28",
-      "access_status": "index_unavailable",
-      "coverage": "Canal retorna só navegação. Curso no site do autor e resumos de terceiros localizados, fora da ingestão inicial do canal.",
+      "access_status": "accessible",
+      "coverage": "Paginação anônima das abas públicas concluída: 1496 IDs. Playlists/podcasts e incorporações ainda exigem reconciliação; transcrições em video-inventory/coverage.json.",
       "last_publication_seen": null,
       "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
       "history_complete": false,
-      "discovered_urls": []
+      "discovered_urls": [],
+      "priority_source": true,
+      "public_upload_count": 1496,
+      "public_upload_pagination_exhausted": true,
+      "coverage_report": "video-inventory/coverage.json",
+      "inventory_status": "public_uploads_traversed"
     },
     {
       "id": "builder-blog",
@@ -111,7 +132,8 @@
       "discovered_urls": [
         "https://www.builder.io/blog/stop-watching-your-agent-work",
         "https://www.builder.io/blog/de-slop-ai-generated-codebase"
-      ]
+      ],
+      "priority_source": true
     },
     {
       "id": "nate-herk-youtube",
@@ -120,15 +142,20 @@
       "type": "video_channel",
       "approved_by_user": true,
       "checked_at": "2026-09-28",
-      "access_status": "metadata_only",
-      "coverage": "Canal retorna navegação. Um vídeo com título confirmado; outro candidato retorna cache miss. Não há transcrição primária obtida.",
+      "access_status": "accessible",
+      "coverage": "Paginação anônima das abas públicas concluída: 525 IDs. Playlists/podcasts e incorporações ainda exigem reconciliação; transcrições em video-inventory/coverage.json.",
       "last_publication_seen": null,
       "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
       "history_complete": false,
       "discovered_urls": [
         "https://www.youtube.com/watch?v=saggDHHnmtQ",
         "https://www.youtube.com/watch?v=LVAHYV4Xrto"
-      ]
+      ],
+      "priority_source": true,
+      "public_upload_count": 525,
+      "public_upload_pagination_exhausted": true,
+      "coverage_report": "video-inventory/coverage.json",
+      "inventory_status": "public_uploads_traversed"
     },
     {
       "id": "claude-academy",
@@ -138,11 +165,12 @@
       "approved_by_user": true,
       "checked_at": "2026-09-28",
       "access_status": "accessible",
-      "coverage": "Catálogo, dois programas e três resumos de aulas lidos. Vídeos e quizzes não realizados. Docs oficiais vinculados verificam Desktop e automações.",
+      "coverage": "Coleção renderizada lista 10 cursos. Inventário de aulas/players em andamento; texto de aula não é transcrição.",
       "last_publication_seen": null,
       "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
       "history_complete": false,
-      "discovered_urls": []
+      "discovered_urls": [],
+      "priority_source": true
     },
     {
       "id": "openai-learn-codex",
@@ -152,11 +180,13 @@
       "approved_by_user": true,
       "checked_at": "2026-09-28",
       "access_status": "accessible",
-      "coverage": "Hub lido; docs oficiais complementares lidos por seções. Links antigos do app redirecionam para learn.chatgpt.com.",
+      "coverage": "Página renderizada consultada: 11 links YouTube encontrados. Transcrições pendentes; vídeos de outras páginas vinculadas ainda não reconciliados.",
       "last_publication_seen": null,
       "last_publication_note": "É o item mais recente observado nesta amostra, não garantia de cobertura completa.",
       "history_complete": false,
-      "discovered_urls": []
+      "discovered_urls": [],
+      "priority_source": true
     }
-  ]
+  ],
+  "source_policy": "Priority sources, not exclusive. Complementary internet sources authorized; retain provenance and prefer primary verification."
 }

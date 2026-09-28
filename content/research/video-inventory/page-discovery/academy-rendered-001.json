@@ -1,0 +1,125 @@
+{
+  "source_id": "claude-academy",
+  "url": "https://academy.claude.com/courses/claude-code-101/what-is-claude-code",
+  "observed_at": "2026-09-28T19:23:37.221Z",
+  "links": [
+    {
+      "title": "Claude Code 101",
+      "url": "https://academy.claude.com/courses/claude-code-101"
+    },
+    {
+      "title": "Claude Code 101",
+      "url": "https://academy.claude.com/courses/claude-code-101"
+    },
+    {
+      "title": "Watch on YouTube\n",
+      "url": "https://www.youtube.com/watch?v=fl1DSmwQKKY"
+    },
+    {
+      "title": "",
+      "url": "https://academy.claude.com/courses/claude-code-101/what-is-claude-code#what-separates-claude-code-from-claude"
+    },
+    {
+      "title": "",
+      "url": "https://academy.claude.com/courses/claude-code-101/what-is-claude-code#what-is-an-agent"
+    },
+    {
+      "title": "",
+      "url": "https://academy.claude.com/courses/claude-code-101/what-is-claude-code#what-can-claude-code-actually-do"
+    },
+    {
+      "title": "",
+      "url": "https://academy.claude.com/courses/claude-code-101/what-is-claude-code#using-claude-code-effectively"
+    },
+    {
+      "title": "",
+      "url": "https://academy.claude.com/courses/claude-code-101/what-is-claude-code#recap"
+    },
+    {
+      "title": "\nNext lesson\nHow Claude Code works",
+      "url": "https://academy.claude.com/courses/claude-code-101/how-claude-code-works"
+    },
+    {
+      "title": "What is Claude Code?",
+      "url": "https://academy.claude.com/courses/claude-code-101/what-is-claude-code"
+    },
+    {
+      "title": "How Claude Code works",
+      "url": "https://academy.claude.com/courses/claude-code-101/how-claude-code-works"
+    },
+    {
+      "title": "Installing Claude Code",
+      "url": "https://academy.claude.com/courses/claude-code-101/installing-claude-code"
+    },
+    {
+      "title": "Your first prompt",
+      "url": "https://academy.claude.com/courses/claude-code-101/your-first-prompt"
+    },
+    {
+      "title": "The explore → plan → code → commit workflow",
+      "url": "https://academy.claude.com/courses/claude-code-101/the-explore-plan-code-commit-workflow"
+    },
+    {
+      "title": "Context management",
+      "url": "https://academy.claude.com/courses/claude-code-101/context-management"
+    },
+    {
+      "title": "Code review",
+      "url": "https://academy.claude.com/courses/claude-code-101/code-review"
+    },
+    {
+      "title": "The CLAUDE.md file",
+      "url": "https://academy.claude.com/courses/claude-code-101/the-claude-md-file"
+    },
+    {
+      "title": "Subagents",
+      "url": "https://academy.claude.com/courses/claude-code-101/subagents"
+    },
+    {
+      "title": "Skills",
+      "url": "https://academy.claude.com/courses/claude-code-101/skills"
+    },
+    {
+      "title": "MCP",
+      "url": "https://academy.claude.com/courses/claude-code-101/mcp"
+    },
+    {
+      "title": "Hooks",
+      "url": "https://academy.claude.com/courses/claude-code-101/hooks"
+    },
+    {
+      "title": "Course quiz\n\nQuiz",
+      "url": "https://academy.claude.com/courses/claude-code-101/course-quiz"
+    },
+    {
+      "title": "Completion badge",
+      "url": "https://academy.claude.com/courses/claude-code-101/badge"
+    },
+    {
+      "title": "What Separates Claude Code from Claude?",
+      "url": "https://academy.claude.com/courses/claude-code-101/what-is-claude-code#what-separates-claude-code-from-claude"
+    },
+    {
+      "title": "What is an Agent?",
+      "url": "https://academy.claude.com/courses/claude-code-101/what-is-claude-code#what-is-an-agent"
+    },
+    {
+      "title": "What Can Claude Code Actually Do?",
+      "url": "https://academy.claude.com/courses/claude-code-101/what-is-claude-code#what-can-claude-code-actually-do"
+    },
+    {
+      "title": "Using Claude Code Effectively",
+      "url": "https://academy.claude.com/courses/claude-code-101/what-is-claude-code#using-claude-code-effectively"
+    },
+    {
+      "title": "Recap",
+      "url": "https://academy.claude.com/courses/claude-code-101/what-is-claude-code#recap"
+    }
+  ],
+  "media": [
+    {
+      "src": "https://www.youtube-nocookie.com/embed/fl1DSmwQKKY?enablejsapi=1&origin=https%3A%2F%2Facademy.claude.com&rel=0",
+      "title": "What is Claude Code?"
+    }
+  ]
+}

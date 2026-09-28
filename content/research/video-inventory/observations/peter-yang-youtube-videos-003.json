@@ -1,0 +1,193 @@
+{
+  "source_id": "peter-yang-youtube",
+  "surface": "videos",
+  "url": "https://www.youtube.com/@PeterYangYT/videos",
+  "observed_at": "2026-09-28T19:08:13.034Z",
+  "round": 3,
+  "dom_count": 60,
+  "unique_seen": 60,
+  "first": "https://www.youtube.com/watch?v=MLnsMIbibZY",
+  "last": "https://www.youtube.com/watch?v=j7CaMx2c56M",
+  "items": [
+    {
+      "context": "How I Turned Codex Into My AI Life Coach in 13 Minutes (5-Step Tutorial)\n9,6 mil\nhá 3 meses",
+      "label": "How I Turned Codex Into My AI Life Coach in 13 Minutes (5-Step Tutorial) 13 minutos e 23 segundos",
+      "title": "How I Turned Codex Into My AI Life Coach in 13 Minutes (5-Step Tutorial)",
+      "url": "https://www.youtube.com/watch?v=H29laIK8q7M"
+    },
+    {
+      "context": "How This Non-Technical Founder Mastered Agentic Engineering in 50 Minutes | Matt Van Horn\n67 mil\nhá 3 meses",
+      "label": "How This Non-Technical Founder Mastered Agentic Engineering in 50 Minutes | Matt Van Horn 47 minutos",
+      "title": "How This Non-Technical Founder Mastered Agentic Engineering in 50 Minutes | Matt Van Horn",
+      "url": "https://www.youtube.com/watch?v=BxEf3RqIHkw"
+    },
+    {
+      "context": "I Quit My High Paying Product Job to Bet on Myself\n16 mil\nhá 3 meses",
+      "label": "I Quit My High Paying Product Job to Bet on Myself 15 minutos",
+      "title": "I Quit My High Paying Product Job to Bet on Myself",
+      "url": "https://www.youtube.com/watch?v=T4pvKvAE_SA"
+    },
+    {
+      "context": "How This Ex-Meta L8 Engineer Ships 40 PRs a Day with AI Agents | Kun Chen\n78 mil\nhá 3 meses",
+      "label": "How This Ex-Meta L8 Engineer Ships 40 PRs a Day with AI Agents | Kun Chen 56 minutos",
+      "title": "How This Ex-Meta L8 Engineer Ships 40 PRs a Day with AI Agents | Kun Chen",
+      "url": "https://www.youtube.com/watch?v=88B6DimMD2g"
+    },
+    {
+      "context": "The Only Claude Skills Tutorial You Need (Add Evals and Memory)\n13 mil\nhá 3 meses",
+      "label": "The Only Claude Skills Tutorial You Need (Add Evals and Memory) 19 minutos",
+      "title": "The Only Claude Skills Tutorial You Need (Add Evals and Memory)",
+      "url": "https://www.youtube.com/watch?v=uT3EQPVIEb0"
+    },
+    {
+      "context": "The Exact AI Skills This Solo Founder Uses to Build 5 Apps at Once | Josh Pigford\n11 mil\nhá 3 meses",
+      "label": "The Exact AI Skills This Solo Founder Uses to Build 5 Apps at Once | Josh Pigford 31 minutos",
+      "title": "The Exact AI Skills This Solo Founder Uses to Build 5 Apps at Once | Josh Pigford",
+      "url": "https://www.youtube.com/watch?v=GdxLaeyu33c"
+    },
+    {
+      "context": "I Stopped Using PowerPoint After Building This Claude Code Skill (Full Tutorial + 3 Templates)\n26 mil\nhá 4 meses",
+      "label": "I Stopped Using PowerPoint After Building This Claude Code Skill (Full Tutorial + 3 Templates) 12 minutos e 19 segundos",
+      "title": "I Stopped Using PowerPoint After Building This Claude Code Skill (Full Tutorial + 3 Templates)",
+      "url": "https://www.youtube.com/watch?v=vbChRIIlSPE"
+    },
+    {
+      "context": "How This 5x Founder Runs His Startup Solo With AI Agents (OpenClaw, Codex, Devin) | Ryan Carson\n10 mil\nhá 4 meses",
+      "label": "How This 5x Founder Runs His Startup Solo With AI Agents (OpenClaw, Codex, Devin) | Ryan Carson 39 minutos",
+      "title": "How This 5x Founder Runs His Startup Solo With AI Agents (OpenClaw, Codex, Devin) | Ryan Carson",
+      "url": "https://www.youtube.com/watch?v=IDqdVZwAwjw"
+    },
+    {
+      "context": "My Honest Review of Google's AI Strategy After I/O\n1,9 mil\nhá 4 meses",
+      "label": "My Honest Review of Google's AI Strategy After I/O 15 minutos",
+      "title": "My Honest Review of Google's AI Strategy After I/O",
+      "url": "https://www.youtube.com/watch?v=zvMfA1VtUi0"
+    },
+    {
+      "context": "Inside How Anthropic Is Building the Next Claude | Alex Albert\n10 mil\nhá 4 meses",
+      "label": "Inside How Anthropic Is Building the Next Claude | Alex Albert 35 minutos",
+      "title": "Inside How Anthropic Is Building the Next Claude | Alex Albert",
+      "url": "https://www.youtube.com/watch?v=T4ieZPIEmd8"
+    },
+    {
+      "context": "Automate Your Life with Claude Code in 40 Minutes | Moritz Kremb\n19 mil\nhá 4 meses",
+      "label": "Automate Your Life with Claude Code in 40 Minutes | Moritz Kremb 42 minutos",
+      "title": "Automate Your Life with Claude Code in 40 Minutes | Moritz Kremb",
+      "url": "https://www.youtube.com/watch?v=ACRd0Ikg_KI"
+    },
+    {
+      "context": "Everything You Need to Know About Context Engineering in 40 Minutes | Ravi Mehta\n8,5 mil\nhá 4 meses",
+      "label": "Everything You Need to Know About Context Engineering in 40 Minutes | Ravi Mehta 38 minutos",
+      "title": "Everything You Need to Know About Context Engineering in 40 Minutes | Ravi Mehta",
+      "url": "https://www.youtube.com/watch?v=wUWljYoQN8g"
+    },
+    {
+      "context": "5 Underrated Google AI Tools You Need to Try in 16 Minutes (Pomelli, Stitch, Genie, Flow, and More)\n2,8 mil\nhá 4 meses",
+      "label": "5 Underrated Google AI Tools You Need to Try in 16 Minutes (Pomelli, Stitch, Genie, Flow, and More) 16 minutos",
+      "title": "5 Underrated Google AI Tools You Need to Try in 16 Minutes (Pomelli, Stitch, Genie, Flow, and More)",
+      "url": "https://www.youtube.com/watch?v=BQ_mgojj0Mo"
+    },
+    {
+      "context": "How This Solo AI Founder Bootstrapped 5 Products to 1M+ / Month | Tibo Louis-Lucas\n15 mil\nhá 5 meses",
+      "label": "How This Solo AI Founder Bootstrapped 5 Products to 1M+ / Month | Tibo Louis-Lucas 43 minutos",
+      "title": "How This Solo AI Founder Bootstrapped 5 Products to 1M+ / Month | Tibo Louis-Lucas",
+      "url": "https://www.youtube.com/watch?v=0UnZnonMN9o"
+    },
+    {
+      "context": "GPT 5.5 and ChatGPT Images 2: Everything You Need to Know in 15 Minutes (4 Real Use Cases)\n9,1 mil\nhá 5 meses",
+      "label": "GPT 5.5 and ChatGPT Images 2: Everything You Need to Know in 15 Minutes (4 Real Use Cases) 14 minutos e 35 segundos",
+      "title": "GPT 5.5 and ChatGPT Images 2: Everything You Need to Know in 15 Minutes (4 Real Use Cases)",
+      "url": "https://www.youtube.com/watch?v=Op1TsX3eCtI"
+    },
+    {
+      "context": "How to Build for AI Agents and a Claude Code Second Brain in 25 Min | Ryan Wiggins\n13 mil\nhá 5 meses",
+      "label": "How to Build for AI Agents and a Claude Code Second Brain in 25 Min | Ryan Wiggins 26 minutos",
+      "title": "How to Build for AI Agents and a Claude Code Second Brain in 25 Min | Ryan Wiggins",
+      "url": "https://www.youtube.com/watch?v=KzqpK1uCczw&pp=0gcJCS8MAYcqIYzv"
+    },
+    {
+      "context": "Claude Design: Everything You Can Build in 16 Minutes (5 Real Use Cases)\n396 mil\nhá 5 meses",
+      "label": "Claude Design: Everything You Can Build in 16 Minutes (5 Real Use Cases) 16 minutos",
+      "title": "Claude Design: Everything You Can Build in 16 Minutes (5 Real Use Cases)",
+      "url": "https://www.youtube.com/watch?v=WMnk1LFBMqA"
+    },
+    {
+      "context": "Figma CEO on How to Get Good at Design in the AI Era | Dylan Field\n9,3 mil\nhá 5 meses",
+      "label": "Figma CEO on How to Get Good at Design in the AI Era | Dylan Field 40 minutos",
+      "title": "Figma CEO on How to Get Good at Design in the AI Era | Dylan Field",
+      "url": "https://www.youtube.com/watch?v=eqPljh_9C9Y"
+    },
+    {
+      "context": "How OpenAI's Codex Team Builds with Codex (43 Min) | Alex & Romain\n21 mil\nhá 5 meses",
+      "label": "How OpenAI's Codex Team Builds with Codex (43 Min) | Alex & Romain 43 minutos",
+      "title": "How OpenAI's Codex Team Builds with Codex (43 Min) | Alex & Romain",
+      "url": "https://www.youtube.com/watch?v=9qXc-THAvc0"
+    },
+    {
+      "context": "Full Tutorial: Build a Beautiful Mobile App with Claude Code in 16 Minutes\n17 mil\nhá 5 meses",
+      "label": "Full Tutorial: Build a Beautiful Mobile App with Claude Code in 16 Minutes 16 minutos",
+      "title": "Full Tutorial: Build a Beautiful Mobile App with Claude Code in 16 Minutes",
+      "url": "https://www.youtube.com/watch?v=oS53by4Hwvo"
+    },
+    {
+      "context": "Claude Cowork Tutorial from Cowork's Design Lead (40 Min) | Jenny Wen\n69 mil\nhá 5 meses",
+      "label": "Claude Cowork Tutorial from Cowork's Design Lead (40 Min) | Jenny Wen 40 minutos",
+      "title": "Claude Cowork Tutorial from Cowork's Design Lead (40 Min) | Jenny Wen",
+      "url": "https://www.youtube.com/watch?v=rlIy7b-3DC8"
+    },
+    {
+      "context": "How to Design and Code with Claude Code and Figma MCP in 50 Min | Felix Lee\n52 mil\nhá 6 meses",
+      "label": "How to Design and Code with Claude Code and Figma MCP in 50 Min | Felix Lee 50 minutos",
+      "title": "How to Design and Code with Claude Code and Figma MCP in 50 Min | Felix Lee",
+      "url": "https://www.youtube.com/watch?v=ydiMKfljb-I"
+    },
+    {
+      "context": "Master Gemini in Google Docs, Sheets & Slides in 18 Min (5 Real Use Cases)\n8,1 mil\nhá 6 meses",
+      "label": "Master Gemini in Google Docs, Sheets & Slides in 18 Min (5 Real Use Cases) 18 minutos",
+      "title": "Master Gemini in Google Docs, Sheets & Slides in 18 Min (5 Real Use Cases)",
+      "url": "https://www.youtube.com/watch?v=DIrg_kHMhbw"
+    },
+    {
+      "context": "Inside Ramp, the $32B Company Where AI Agents Run Everything | Geoff Charles\n50 mil\nhá 6 meses",
+      "label": "Inside Ramp, the $32B Company Where AI Agents Run Everything | Geoff Charles 44 minutos",
+      "title": "Inside Ramp, the $32B Company Where AI Agents Run Everything | Geoff Charles",
+      "url": "https://www.youtube.com/watch?v=RBqT2PHWdBg"
+    },
+    {
+      "context": "Replit Agent 4 Is Here: Everything You Need to Know\n7,9 mil\nhá 6 meses",
+      "label": "Replit Agent 4 Is Here: Everything You Need to Know 10 minutos e 47 segundos",
+      "title": "Replit Agent 4 Is Here: Everything You Need to Know",
+      "url": "https://www.youtube.com/watch?v=wpKQJnvy8tQ"
+    },
+    {
+      "context": "I Watched 6 AI Agents Design an App Together And It Blew My Mind | Tom Krcha\n66 mil\nhá 6 meses",
+      "label": "I Watched 6 AI Agents Design an App Together And It Blew My Mind | Tom Krcha 32 minutos",
+      "title": "I Watched 6 AI Agents Design an App Together And It Blew My Mind | Tom Krcha",
+      "url": "https://www.youtube.com/watch?v=w4RY7PnfRU8"
+    },
+    {
+      "context": "Full Tutorial: Connect Claude Code to Google, Slack, and Reddit in 40 Min (Skills + MCPs)\n23 mil\nhá 6 meses",
+      "label": "Full Tutorial: Connect Claude Code to Google, Slack, and Reddit in 40 Min (Skills + MCPs) 42 minutos",
+      "title": "Full Tutorial: Connect Claude Code to Google, Slack, and Reddit in 40 Min (Skills + MCPs)",
+      "url": "https://www.youtube.com/watch?v=1B3Ffo8snfY"
+    },
+    {
+      "context": "Full Tutorial: Use OpenClaw to Build a Business That Runs Itself in 35 Min | Nat Eliason\n275 mil\nhá 7 meses",
+      "label": "Full Tutorial: Use OpenClaw to Build a Business That Runs Itself in 35 Min | Nat Eliason 35 minutos",
+      "title": "Full Tutorial: Use OpenClaw to Build a Business That Runs Itself in 35 Min | Nat Eliason",
+      "url": "https://www.youtube.com/watch?v=nSBKCZQkmYw"
+    },
+    {
+      "context": "Gemini 3.1 + New AI Studio Is Here: Full Prototyping Tutorial in 18 Minutes\n23 mil\nhá 7 meses",
+      "label": "Gemini 3.1 + New AI Studio Is Here: Full Prototyping Tutorial in 18 Minutes 18 minutos",
+      "title": "Gemini 3.1 + New AI Studio Is Here: Full Prototyping Tutorial in 18 Minutes",
+      "url": "https://www.youtube.com/watch?v=2sLO9NYr8Rc"
+    },
+    {
+      "context": "Full Tutorial: The Most Underrated AI Agent for Coding and Product Work | Eno Reyes (Factory)\n17 mil\nhá 7 meses",
+      "label": "Full Tutorial: The Most Underrated AI Agent for Coding and Product Work | Eno Reyes (Factory) 35 minutos",
+      "title": "Full Tutorial: The Most Underrated AI Agent for Coding and Product Work | Eno Reyes (Factory)",
+      "url": "https://www.youtube.com/watch?v=j7CaMx2c56M"
+    }
+  ]
+}

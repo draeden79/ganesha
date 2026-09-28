@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "studies": [
+    {
+      "video_id": "ntDIxaeo3Wg",
+      "resource_id": "res-tim-claude-beginner-video",
+      "source_id": "tech-with-tim-youtube",
+      "status": "transcript_analyzed_visual_pending",
+      "studied_at": "2026-09-28T19:26:46.561805+00:00",
+      "artifact_path": "transcripts/local/ntDIxaeo3Wg.en-CA.txt",
+      "artifact_sha256": "3f852a6f777ad4c0397c8b9036d3c1e18019f024f37c2a3d06d1761d7b63dffb",
+      "read_lines": [
+        [
+          1,
+          360
+        ],
+        [
+          361,
+          711
+        ]
+      ],
+      "cue_count": 706,
+      "all_exported_text_read": true,
+      "full_speech_coverage_verified": false,
+      "full_source_analyzed": false,
+      "visual_review_complete": false,
+      "study_path": "studies/ntDIxaeo3Wg.md",
+      "basis": "All exported caption entries read in sequence; original analysis records prerequisites, full progression, examples, errors, boundaries and curriculum implications."
+    }
+  ]
+}

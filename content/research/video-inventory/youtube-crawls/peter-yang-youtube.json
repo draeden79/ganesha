@@ -1,0 +1,5247 @@
+{
+  "source_id": "peter-yang-youtube",
+  "url": "https://www.youtube.com/@PeterYangYT",
+  "started_at": "2026-09-28T19:13:17.418113+00:00",
+  "tool": "yt-dlp",
+  "tool_version": "2026.08.19",
+  "authentication": "anonymous; no cookies",
+  "status": "public_uploads_traversed",
+  "pagination_exhausted": true,
+  "source_inventory_complete": false,
+  "surfaces": [
+    {
+      "url": "https://www.youtube.com/@PeterYangYT/videos",
+      "title": "Peter Yang - Videos",
+      "reported_count": 174,
+      "returned_count": 174,
+      "pagination_exhausted": true,
+      "items": [
+        {
+          "id": "MLnsMIbibZY",
+          "title": "Sonnet 5.5 is Here! It's Insane at Making Videos (7 Incredible Examples)",
+          "url": "https://www.youtube.com/watch?v=MLnsMIbibZY",
+          "duration": 1355,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "xZ5TEaleUdg",
+          "title": "We Built Grok Bot. Here Are Our 14 Best Bots | Peng Zheng & Lauren Tan",
+          "url": "https://www.youtube.com/watch?v=xZ5TEaleUdg",
+          "duration": 2704,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "UhBqorWNwlU",
+          "title": "Claude Opus 5.5 is Here! Is Claude Finally Back? (5 Use Cases Tested)",
+          "url": "https://www.youtube.com/watch?v=UhBqorWNwlU",
+          "duration": 984,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "fbzlqxkJrCU",
+          "title": "How to Save Money Now with ChatGPT Finances (6 Real Use Cases) | Ethan Bloch",
+          "url": "https://www.youtube.com/watch?v=fbzlqxkJrCU",
+          "duration": 2711,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "eU1ICyI9bCs",
+          "title": "Meta’s Muse AI Agent Saved Me $800+ a Year on My Bills (10 Real Use Cases)",
+          "url": "https://www.youtube.com/watch?v=eU1ICyI9bCs",
+          "duration": 1036,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "PZHBW6yld5U",
+          "title": "My 3-Step System to Automate Content (ChatGPT + Riverside)",
+          "url": "https://www.youtube.com/watch?v=PZHBW6yld5U",
+          "duration": 1176,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "l6cr7gy5l9E",
+          "title": "11 Grok Bots I Use Every Day (After 100+ Hours)",
+          "url": "https://www.youtube.com/watch?v=l6cr7gy5l9E",
+          "duration": 1252,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "LE0LNULrsEM",
+          "title": "Stop Building AI Agents. Build AI Employees Instead (Live Demo) | Pedro Franceschi",
+          "url": "https://www.youtube.com/watch?v=LE0LNULrsEM",
+          "duration": 2859,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "NsVayi42I0I",
+          "title": "AI Makes Cheating Easy. Here’s How It Can Make Kids Smarter Instead | Sue Khim",
+          "url": "https://www.youtube.com/watch?v=NsVayi42I0I",
+          "duration": 2738,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "iDrEXFOvFUc",
+          "title": "GPT 6 Astra is the Best Model for Building Games (4 Real Examples)",
+          "url": "https://www.youtube.com/watch?v=iDrEXFOvFUc",
+          "duration": 1429,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "6Yeo6M8-W_8",
+          "title": "Instinct vs Grok Bot vs ChatGPT vs Hermes: Which AI Agent Can You Trust?",
+          "url": "https://www.youtube.com/watch?v=6Yeo6M8-W_8",
+          "duration": 1462,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "JAh8Wv1lQrw",
+          "title": "How Non-Coders Are Vibe Coding $100K+ Businesses with AI | Amol Jain",
+          "url": "https://www.youtube.com/watch?v=JAh8Wv1lQrw",
+          "duration": 2167,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "nAhQs8Fd_9g",
+          "title": "ChatGPT vs Claude vs Grok vs Gemini: The Best AI for 10 Use Cases (August 2026)",
+          "url": "https://www.youtube.com/watch?v=nAhQs8Fd_9g",
+          "duration": 1607,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "bdMHQLvtVaQ",
+          "title": "How to Build Better AI Evals with Claude Code in 5 Steps | Shreya & Hamel",
+          "url": "https://www.youtube.com/watch?v=bdMHQLvtVaQ",
+          "duration": 3233,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "MkVcHbviYOw",
+          "title": "Grok Bot: 5 Must-Try Use Cases for Work and Life (Full Tutorial)",
+          "url": "https://www.youtube.com/watch?v=MkVcHbviYOw",
+          "duration": 1374,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "N34zz1-RSGw",
+          "title": "How I Run My 1.5M+ Follower Content Business With Codex | Riley Brown",
+          "url": "https://www.youtube.com/watch?v=N34zz1-RSGw",
+          "duration": 2508,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "4mKtJzfGj0U",
+          "title": "5 Rules for Building AI Agents That Work in Production | Nan Yu & Jacob Shumway",
+          "url": "https://www.youtube.com/watch?v=4mKtJzfGj0U",
+          "duration": 2307,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "UWjh5Z4s8jY",
+          "title": "Hermes Co-Founder on Building an AI Agent That Improves Itself | Karan Malhotra",
+          "url": "https://www.youtube.com/watch?v=UWjh5Z4s8jY",
+          "duration": 2805,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "G9o8eoHzpxc",
+          "title": "Full Tutorial: From Idea to App with Claude Design and Claude Code in 25 Minutes",
+          "url": "https://www.youtube.com/watch?v=G9o8eoHzpxc",
+          "duration": 1527,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ydTeb_I0b94",
+          "title": "ChatGPT Work + Codex Tutorial: My Complete System at OpenAI | Jason Liu",
+          "url": "https://www.youtube.com/watch?v=ydTeb_I0b94",
+          "duration": 2073,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "aVO6E181cNU",
+          "title": "How I Plan, Build, and Run Loops with Claude Code in 40 Minutes | Thariq Shihipar",
+          "url": "https://www.youtube.com/watch?v=aVO6E181cNU",
+          "duration": 2478,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "WLg9qWOf6zw",
+          "title": "How I Use ChatGPT Work and GPT-5.6 to Do Everything (Beginner Tutorial)",
+          "url": "https://www.youtube.com/watch?v=WLg9qWOf6zw",
+          "duration": 1732,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "0YeeJHYy-Vc",
+          "title": "How to Build AI Agents That Check Their Own Work | Jared Zoneraich",
+          "url": "https://www.youtube.com/watch?v=0YeeJHYy-Vc",
+          "duration": 2833,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "8mY9wx_iMSU",
+          "title": "GPT-5.6 vs Claude Fable 5: I Tested 6 Real Use Cases (Here’s the Winner)",
+          "url": "https://www.youtube.com/watch?v=8mY9wx_iMSU",
+          "duration": 1710,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "fAdFE7y6K2o",
+          "title": "Inside How OpenAI Uses Codex to Do Product Work | Rohan Varma",
+          "url": "https://www.youtube.com/watch?v=fAdFE7y6K2o",
+          "duration": 2362,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "NDTWK6vIgmM",
+          "title": "I Tested Gemini Spark: What Google’s AI Agent Can Actually Do in 21 Minutes",
+          "url": "https://www.youtube.com/watch?v=NDTWK6vIgmM",
+          "duration": 1270,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "5CBnWGP5vIs",
+          "title": "Claude Fable 5 Is Finally Back: 5 Must-Try Use Cases Before July 12",
+          "url": "https://www.youtube.com/watch?v=5CBnWGP5vIs",
+          "duration": 1277,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Xu5gz2qsaz8",
+          "title": "Inside Anthropic’s Bet on Claude Agents that Work While You Sleep | Jess Yan",
+          "url": "https://www.youtube.com/watch?v=Xu5gz2qsaz8",
+          "duration": 2416,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "2ZacwCbiLjg",
+          "title": "Hermes Full Course: Build Your 24/7 AI Chief of Staff in 45 Minutes",
+          "url": "https://www.youtube.com/watch?v=2ZacwCbiLjg",
+          "duration": 2679,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "iqb5Rd6KKr8",
+          "title": "Full Tutorial: Make Professional Launch Videos for Free with Hyperframes | Bin Liu & Jake Moran",
+          "url": "https://www.youtube.com/watch?v=iqb5Rd6KKr8",
+          "duration": 2167,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "H29laIK8q7M",
+          "title": "How I Turned Codex Into My AI Life Coach in 13 Minutes (5-Step Tutorial)",
+          "url": "https://www.youtube.com/watch?v=H29laIK8q7M",
+          "duration": 803,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "BxEf3RqIHkw",
+          "title": "How This Non-Technical Founder Mastered Agentic Engineering in 50 Minutes | Matt Van Horn",
+          "url": "https://www.youtube.com/watch?v=BxEf3RqIHkw",
+          "duration": 2866,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "T4pvKvAE_SA",
+          "title": "I Quit My High Paying Product Job to Bet on Myself",
+          "url": "https://www.youtube.com/watch?v=T4pvKvAE_SA",
+          "duration": 919,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "88B6DimMD2g",
+          "title": "How This Ex-Meta L8 Engineer Ships 40 PRs a Day with AI Agents | Kun Chen",
+          "url": "https://www.youtube.com/watch?v=88B6DimMD2g",
+          "duration": 3379,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "uT3EQPVIEb0",
+          "title": "The Only Claude Skills Tutorial You Need (Add Evals and Memory)",
+          "url": "https://www.youtube.com/watch?v=uT3EQPVIEb0",
+          "duration": 1159,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "GdxLaeyu33c",
+          "title": "The Exact AI Skills This Solo Founder Uses to Build 5 Apps at Once | Josh Pigford",
+          "url": "https://www.youtube.com/watch?v=GdxLaeyu33c",
+          "duration": 1893,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "vbChRIIlSPE",
+          "title": "I Stopped Using PowerPoint After Building This Claude Code Skill (Full Tutorial + 3 Templates)",
+          "url": "https://www.youtube.com/watch?v=vbChRIIlSPE",
+          "duration": 739,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "IDqdVZwAwjw",
+          "title": "How This 5x Founder Runs His Startup Solo With AI Agents (OpenClaw, Codex, Devin) | Ryan Carson",
+          "url": "https://www.youtube.com/watch?v=IDqdVZwAwjw",
+          "duration": 2367,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "zvMfA1VtUi0",
+          "title": "My Honest Review of Google's AI Strategy After I/O",
+          "url": "https://www.youtube.com/watch?v=zvMfA1VtUi0",
+          "duration": 901,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "T4ieZPIEmd8",
+          "title": "Inside How Anthropic Is Building the Next Claude | Alex Albert",
+          "url": "https://www.youtube.com/watch?v=T4ieZPIEmd8",
+          "duration": 2104,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ACRd0Ikg_KI",
+          "title": "Automate Your Life with Claude Code in 40 Minutes | Moritz Kremb",
+          "url": "https://www.youtube.com/watch?v=ACRd0Ikg_KI",
+          "duration": 2555,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "wUWljYoQN8g",
+          "title": "Everything You Need to Know About Context Engineering in 40 Minutes | Ravi Mehta",
+          "url": "https://www.youtube.com/watch?v=wUWljYoQN8g",
+          "duration": 2330,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "BQ_mgojj0Mo",
+          "title": "5 Underrated Google AI Tools You Need to Try in 16 Minutes (Pomelli, Stitch, Genie, Flow, and More)",
+          "url": "https://www.youtube.com/watch?v=BQ_mgojj0Mo",
+          "duration": 969,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "0UnZnonMN9o",
+          "title": "How This Solo AI Founder Bootstrapped 5 Products to 1M+ / Month | Tibo Louis-Lucas",
+          "url": "https://www.youtube.com/watch?v=0UnZnonMN9o",
+          "duration": 2624,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Op1TsX3eCtI",
+          "title": "GPT 5.5 and ChatGPT Images 2: Everything You Need to Know in 15 Minutes (4 Real Use Cases)",
+          "url": "https://www.youtube.com/watch?v=Op1TsX3eCtI",
+          "duration": 875,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "KzqpK1uCczw",
+          "title": "How to Build for AI Agents and a Claude Code Second Brain in 25 Min | Ryan Wiggins",
+          "url": "https://www.youtube.com/watch?v=KzqpK1uCczw",
+          "duration": 1573,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "WMnk1LFBMqA",
+          "title": "Claude Design: Everything You Can Build in 16 Minutes (5 Real Use Cases)",
+          "url": "https://www.youtube.com/watch?v=WMnk1LFBMqA",
+          "duration": 1008,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "eqPljh_9C9Y",
+          "title": "Figma CEO on How to Get Good at Design in the AI Era | Dylan Field",
+          "url": "https://www.youtube.com/watch?v=eqPljh_9C9Y",
+          "duration": 2458,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "9qXc-THAvc0",
+          "title": "How OpenAI's Codex Team Builds with Codex (43 Min) | Alex & Romain",
+          "url": "https://www.youtube.com/watch?v=9qXc-THAvc0",
+          "duration": 2597,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "oS53by4Hwvo",
+          "title": "Full Tutorial: Build a Beautiful Mobile App with Claude Code in 16 Minutes",
+          "url": "https://www.youtube.com/watch?v=oS53by4Hwvo",
+          "duration": 1017,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "rlIy7b-3DC8",
+          "title": "Claude Cowork Tutorial from Cowork's Design Lead (40 Min) | Jenny Wen",
+          "url": "https://www.youtube.com/watch?v=rlIy7b-3DC8",
+          "duration": 2430,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ydiMKfljb-I",
+          "title": "How to Design and Code with Claude Code and Figma MCP in 50 Min | Felix Lee",
+          "url": "https://www.youtube.com/watch?v=ydiMKfljb-I",
+          "duration": 3016,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "DIrg_kHMhbw",
+          "title": "Master Gemini in Google Docs, Sheets & Slides in 18 Min (5 Real Use Cases)",
+          "url": "https://www.youtube.com/watch?v=DIrg_kHMhbw",
+          "duration": 1117,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "RBqT2PHWdBg",
+          "title": "Inside Ramp, the $32B Company Where AI Agents Run Everything | Geoff Charles",
+          "url": "https://www.youtube.com/watch?v=RBqT2PHWdBg",
+          "duration": 2643,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "wpKQJnvy8tQ",
+          "title": "Replit Agent 4 Is Here: Everything You Need to Know",
+          "url": "https://www.youtube.com/watch?v=wpKQJnvy8tQ",
+          "duration": 647,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "w4RY7PnfRU8",
+          "title": "I Watched 6 AI Agents Design an App Together And It Blew My Mind | Tom Krcha",
+          "url": "https://www.youtube.com/watch?v=w4RY7PnfRU8",
+          "duration": 1963,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "1B3Ffo8snfY",
+          "title": "Full Tutorial: Connect Claude Code to Google, Slack, and Reddit in 40 Min (Skills + MCPs)",
+          "url": "https://www.youtube.com/watch?v=1B3Ffo8snfY",
+          "duration": 2559,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "nSBKCZQkmYw",
+          "title": "Full Tutorial: Use OpenClaw to Build a Business That Runs Itself in 35 Min | Nat Eliason",
+          "url": "https://www.youtube.com/watch?v=nSBKCZQkmYw",
+          "duration": 2127,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "2sLO9NYr8Rc",
+          "title": "Gemini 3.1 + New AI Studio Is Here: Full Prototyping Tutorial in 18 Minutes",
+          "url": "https://www.youtube.com/watch?v=2sLO9NYr8Rc",
+          "duration": 1092,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "j7CaMx2c56M",
+          "title": "Full Tutorial: The Most Underrated AI Agent for Coding and Product Work | Eno Reyes (Factory)",
+          "url": "https://www.youtube.com/watch?v=j7CaMx2c56M",
+          "duration": 2132,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "vCwTc39Otm8",
+          "title": "Give Me 20 Minutes, I'll Make You AI Native",
+          "url": "https://www.youtube.com/watch?v=vCwTc39Otm8",
+          "duration": 1327,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "g6z_4TMDiaE",
+          "title": "How to Make Claude Code Better Every Time You Use It (50 Min Tutorial) | Kieran Klaassen",
+          "url": "https://www.youtube.com/watch?v=g6z_4TMDiaE",
+          "duration": 3232,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "5z4StBj9qck",
+          "title": "Claude Opus 4.6 Is Here: Everything You Need to Know",
+          "url": "https://www.youtube.com/watch?v=5z4StBj9qck",
+          "duration": 779,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ji_Sd4si7jo",
+          "title": "Master OpenClaw in 30 Minutes (5 Real Use Cases + Setup + Memory)",
+          "url": "https://www.youtube.com/watch?v=ji_Sd4si7jo",
+          "duration": 1732,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "AcwK1Uuwc0U",
+          "title": "How OpenClaw's Creator Uses AI to Run His Life in 40 Minutes | Peter Steinberger",
+          "url": "https://www.youtube.com/watch?v=AcwK1Uuwc0U",
+          "duration": 2264,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "4zXQyswXj7U",
+          "title": "Full Tutorial: Set Up Your 24/7 AI Employee in 20 Minutes (OpenClaw)",
+          "url": "https://www.youtube.com/watch?v=4zXQyswXj7U",
+          "duration": 1189,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "lbESr58-7DQ",
+          "title": "Master Google AI Studio in 40 Minutes | Logan Kilpatrick",
+          "url": "https://www.youtube.com/watch?v=lbESr58-7DQ",
+          "duration": 2358,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "247Z3jdw_hs",
+          "title": "Full Tutorial: Zero to Shipped Game with Claude Code in 20 Minutes",
+          "url": "https://www.youtube.com/watch?v=247Z3jdw_hs",
+          "duration": 1214,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "L3vmxY7mkNQ",
+          "title": "Build an AI Analyst with Claude Code in 50 Min | Sumeet Marwaha",
+          "url": "https://www.youtube.com/watch?v=L3vmxY7mkNQ",
+          "duration": 3107,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "loz60mALXxA",
+          "title": "Claude Skills, Clearly Explained in 15 Minutes",
+          "url": "https://www.youtube.com/watch?v=loz60mALXxA",
+          "duration": 889,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "VXdrfvqiH-0",
+          "title": "Full Course: The AI Stack We Actually Use for Prototyping, Strategy, and Personal OS (2026)",
+          "url": "https://www.youtube.com/watch?v=VXdrfvqiH-0",
+          "duration": 3093,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "D4wrREvxdBU",
+          "title": "25 Things I Believe In To Build Great Products in 12 Minutes",
+          "url": "https://www.youtube.com/watch?v=D4wrREvxdBU",
+          "duration": 722,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "uBJdwRPO1QE",
+          "title": "Full Tutorial: Build Your Personal OS with Claude Code in 50 Min | Teresa Torres",
+          "url": "https://www.youtube.com/watch?v=uBJdwRPO1QE",
+          "duration": 2977,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "yGJORJdej_s",
+          "title": "A Founder's Playbook for Shipping 10x Faster with AI | Yana Welinder",
+          "url": "https://www.youtube.com/watch?v=yGJORJdej_s",
+          "duration": 2514,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "hbfrZriq0f8",
+          "title": "Full Tutorial: Create Beautiful Infographics that Match Your Brand in 15 Min (Nano Banana)",
+          "url": "https://www.youtube.com/watch?v=hbfrZriq0f8",
+          "duration": 944,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "QgvQbcPmioE",
+          "title": "The CORRECT Way to Prototype Apps with AI in 38 Min | Xinran Ma",
+          "url": "https://www.youtube.com/watch?v=QgvQbcPmioE",
+          "duration": 2295,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "47SlwClRJYE",
+          "title": "Full Tutorial: Build 10 Beautiful Websites in 12 Minutes with Replit and Gemini 3",
+          "url": "https://www.youtube.com/watch?v=47SlwClRJYE",
+          "duration": 743,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Bg0rdpFKCQI",
+          "title": "How to Get Started with Wispr Flow to Save 10 Hours a Week | Tanay Kothari",
+          "url": "https://www.youtube.com/watch?v=Bg0rdpFKCQI",
+          "duration": 2324,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "bdh8k6DyKxE",
+          "title": "Full Tutorial: Design to Code in 45 Min with Cursor's Head of Design | Ryo Lu",
+          "url": "https://www.youtube.com/watch?v=bdh8k6DyKxE",
+          "duration": 2748,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "jAjqj5iiyfw",
+          "title": "I Tested Every AI Browser Across 6 Tasks: Here's What Actually Works (Nov 2025)",
+          "url": "https://www.youtube.com/watch?v=jAjqj5iiyfw",
+          "duration": 1138,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Vp2BsJNVFqQ",
+          "title": "7 Counterintuitive Product Lessons from Anthropic's Head of Product | Ami Vora",
+          "url": "https://www.youtube.com/watch?v=Vp2BsJNVFqQ",
+          "duration": 2953,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "UKf6D42ME7Q",
+          "title": "I Tried Every AI Productivity and Coding Tool, These 7 Will Save You the Most Time (Nov 2025)",
+          "url": "https://www.youtube.com/watch?v=UKf6D42ME7Q",
+          "duration": 1641,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Llhno97FUmo",
+          "title": "Full Tutorial: Vibe Code a Real SaaS App in 40 Minutes | Colin Matthews",
+          "url": "https://www.youtube.com/watch?v=Llhno97FUmo",
+          "duration": 2357,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "vfBMNaE5kRo",
+          "title": "Full Tutorial: GPT-5 vs Claude 4.5 vs Gemini 2.5 for 10 Tasks (Oct 2025)",
+          "url": "https://www.youtube.com/watch?v=vfBMNaE5kRo",
+          "duration": 1390,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "1MHv4M163Vo",
+          "title": "AI Agents, Clearly Explained in 40 Minutes | Wade Foster (Zapier)",
+          "url": "https://www.youtube.com/watch?v=1MHv4M163Vo",
+          "duration": 2222,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "sG5TF1iLNF8",
+          "title": "What Is Enterprise Vibe Coding? (And How It's Different) | Dan Fernandez (Salesforce)",
+          "url": "https://www.youtube.com/watch?v=sG5TF1iLNF8",
+          "duration": 1086,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "yflqBe9Bj4E",
+          "title": "How Notion Built the Best AI Agents For Work (Full Tutorial) | Akshay & Ryan",
+          "url": "https://www.youtube.com/watch?v=yflqBe9Bj4E",
+          "duration": 3212,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "r-xjo7MYc18",
+          "title": "Inside Gemini and NotebookLM: How Google is Shipping Non-Stop | Josh Woodward",
+          "url": "https://www.youtube.com/watch?v=r-xjo7MYc18",
+          "duration": 2638,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "C5USs51zYu8",
+          "title": "Full Tutorial: A Proven 3-File System to Vibe Code Production Apps | Ryan Carson",
+          "url": "https://www.youtube.com/watch?v=C5USs51zYu8",
+          "duration": 3114,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "-SenpOqT6Nk",
+          "title": "Full Tutorial: Build an AI Headshot App in 15 Minutes (Google Nano Banana)",
+          "url": "https://www.youtube.com/watch?v=-SenpOqT6Nk",
+          "duration": 946,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "uiza7wp1KrE",
+          "title": "AI Evaluations Clearly Explained in 50 Minutes (Real Example) | Hamel Husain",
+          "url": "https://www.youtube.com/watch?v=uiza7wp1KrE",
+          "duration": 3150,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "jWlAvdR8HG0",
+          "title": "Full Tutorial: 20 Tips to Master Claude Code in 35 Minutes (Build a Real App)",
+          "url": "https://www.youtube.com/watch?v=jWlAvdR8HG0",
+          "duration": 2104,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "1-x-QzNjFHQ",
+          "title": "Full Tutorial: From Design to Code with Claude Code in 40 Minutes | Meaghan Choi",
+          "url": "https://www.youtube.com/watch?v=1-x-QzNjFHQ",
+          "duration": 2370,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "jmHBMtpR36M",
+          "title": "Inside How the Claude Code Team Ships at Lightning Speed | Cat Wu",
+          "url": "https://www.youtube.com/watch?v=jmHBMtpR36M",
+          "duration": 2437,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "iW0lMW-Ff5I",
+          "title": "Claude Code Tutorial: Build a YouTube Research Agent in 15 Minutes",
+          "url": "https://www.youtube.com/watch?v=iW0lMW-Ff5I",
+          "duration": 911,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "D0nDWQdN3F4",
+          "title": "Full Tutorial: Build an AI Life Co-Pilot with Claude Code in 25 Minutes | Alex Finn",
+          "url": "https://www.youtube.com/watch?v=D0nDWQdN3F4",
+          "duration": 1550,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "GepHGs_CZdk",
+          "title": "Claude Code Beginner's Tutorial: Build a Movie App in 15 Minutes (2025)",
+          "url": "https://www.youtube.com/watch?v=GepHGs_CZdk",
+          "duration": 1003,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Dc2lefSwds4",
+          "title": "Ranking 15 PM Skills: What Survives vs. Gets Disrupted by AI | Nan Yu (Linear)",
+          "url": "https://www.youtube.com/watch?v=Dc2lefSwds4",
+          "duration": 3524,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "TL527yTpxlk",
+          "title": "Complete Beginner's Course on AI Evaluations in 50 Minutes (2025) | Aman Khan",
+          "url": "https://www.youtube.com/watch?v=TL527yTpxlk",
+          "duration": 3108,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "mm8cn53_pdU",
+          "title": "Master Cursor in 50 Minutes with Cursor's Head of AI Education (2025) | Lee Robinson",
+          "url": "https://www.youtube.com/watch?v=mm8cn53_pdU",
+          "duration": 3022,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "SVZ5-i3TEs8",
+          "title": "Full Tutorial: Build an AI Co-Pilot in 30 Minutes to Ace Your Interviews | Ben Erez (ex-Meta)",
+          "url": "https://www.youtube.com/watch?v=SVZ5-i3TEs8",
+          "duration": 2204,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "vdjaA08iVDM",
+          "title": "Why Prototypes Beat PRDs: How to Ship 10x Faster with AI | Jeremy Epling (CPO Vanta)",
+          "url": "https://www.youtube.com/watch?v=vdjaA08iVDM",
+          "duration": 2592,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "NhHfI47WQDM",
+          "title": "Full Tutorial: Create Beautiful Designs with AI in 40 Minutes (Not Generic Slop) | Meng To",
+          "url": "https://www.youtube.com/watch?v=NhHfI47WQDM",
+          "duration": 2778,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Z_iWe6dyGzs",
+          "title": "Full Tutorial: Build with Multiple AI Agents using Claude Code in 40 Minutes | Kieran Klaassen",
+          "url": "https://www.youtube.com/watch?v=Z_iWe6dyGzs",
+          "duration": 3735,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "XrbORtL7c94",
+          "title": "Best AI Workflows to Take Back Time at Work from Dropbox VP | Morgan Brown",
+          "url": "https://www.youtube.com/watch?v=XrbORtL7c94",
+          "duration": 2488,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "hptrOTQZ56A",
+          "title": "AI Agents vs Data Analysts: The Truth from Amplitude PM (41 Min Deep Dive) | James Evans",
+          "url": "https://www.youtube.com/watch?v=hptrOTQZ56A",
+          "duration": 2518,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "V1XfK04vejM",
+          "title": "AI Product Masterclass in 45 Minutes from Canva's Co-Founder | Cameron Adams",
+          "url": "https://www.youtube.com/watch?v=V1XfK04vejM",
+          "duration": 2881,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "nwSxlrSbVqg",
+          "title": "How OpenAI's Head of Business Products Uses ChatGPT to Save Time at Work | Nate Gonzalez",
+          "url": "https://www.youtube.com/watch?v=nwSxlrSbVqg",
+          "duration": 2756,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "2HK9Th7GDiU",
+          "title": "Complete Vibe Coding Tutorial: Build a Full Stack App in 30 Min with AI | Matt Palmer (Replit)",
+          "url": "https://www.youtube.com/watch?v=2HK9Th7GDiU",
+          "duration": 3115,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "YgvL0dA_2Pg",
+          "title": "ChatGPT vs Claude vs Gemini: The Best AI for Each Use Case in 2025",
+          "url": "https://www.youtube.com/watch?v=YgvL0dA_2Pg",
+          "duration": 1278,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "l6r_0wgr0YM",
+          "title": "Complete AI Course (2025): Master Prompting, Evals, RAG & Fine-Tuning in 46 Minutes | Adam (Meta)",
+          "url": "https://www.youtube.com/watch?v=l6r_0wgr0YM",
+          "duration": 2782,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "KvayXoxzVQw",
+          "title": "How to Advance Your Career Without Managing People | Sam Gregg-Wallace",
+          "url": "https://www.youtube.com/watch?v=KvayXoxzVQw",
+          "duration": 2435,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ikyxK6i0AL0",
+          "title": "From Idea to Product in 30 Min Using AI Agents (Full Tutorial) | Claire Vo",
+          "url": "https://www.youtube.com/watch?v=ikyxK6i0AL0",
+          "duration": 3118,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "aK4H7kIvyxw",
+          "title": "Figma's AI Prototyping Tool is Here and...It's a MUST TRY | David Kossnick",
+          "url": "https://www.youtube.com/watch?v=aK4H7kIvyxw",
+          "duration": 2588,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ZTSrz2z2jNg",
+          "title": "The Best AI Coding Tools to Use in 2025 | Colin Matthews",
+          "url": "https://www.youtube.com/watch?v=ZTSrz2z2jNg",
+          "duration": 2626,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "O_o2mTQ2OiU",
+          "title": "5 Harsh Truths About Wealth You Don't Want to Realize Too Late | Sahil Bloom",
+          "url": "https://www.youtube.com/watch?v=O_o2mTQ2OiU",
+          "duration": 2702,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "dyOQVykHe8k",
+          "title": "Feeling Stuck? Stop Asking For Permission to Do Great Work",
+          "url": "https://www.youtube.com/watch?v=dyOQVykHe8k",
+          "duration": 310,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "buAgdvTcXzg",
+          "title": "He Built Uber Eats to $25B, Now He's Pushing AI Beyond Chat | Stephen Chau",
+          "url": "https://www.youtube.com/watch?v=buAgdvTcXzg",
+          "duration": 3426,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "nZDpoICcxLM",
+          "title": "ChatGPT's New Image Model Changes Everything: 5 Incredible Use Cases",
+          "url": "https://www.youtube.com/watch?v=nZDpoICcxLM",
+          "duration": 264,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "QnABGJ8cy_U",
+          "title": "Cursor AI Tutorial: Build a Full Stack App with AI in 30 Minutes | Nat Eliason",
+          "url": "https://www.youtube.com/watch?v=QnABGJ8cy_U",
+          "duration": 2824,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "YKhuv8bUQCA",
+          "title": "I Built a $100M Company in 3 Years by Betting on AI Agents | Arvind Jain (Glean)",
+          "url": "https://www.youtube.com/watch?v=YKhuv8bUQCA",
+          "duration": 2264,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ynWgKSF0TZY",
+          "title": "Exclusive: Inside the Best AI Model for Coding and Writing | Scott White (Anthropic)",
+          "url": "https://www.youtube.com/watch?v=ynWgKSF0TZY",
+          "duration": 2887,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "cfZNDBrxZ00",
+          "title": "AI Does 90% of My Work Now as a Product Leader | Yana Welinder (Kraftful)",
+          "url": "https://www.youtube.com/watch?v=cfZNDBrxZ00",
+          "duration": 2217,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "moaX7CsqZjc",
+          "title": "We Were Going to Shut Down Our Company…Now We’re Worth $700M | Eric Simons (Bolt)",
+          "url": "https://www.youtube.com/watch?v=moaX7CsqZjc",
+          "duration": 2903,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ID41Cble8qk",
+          "title": "This Vision Playbook Will Change YouTube and Your Life | Ebi Atawodi",
+          "url": "https://www.youtube.com/watch?v=ID41Cble8qk",
+          "duration": 2983,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "xoca0PSA8rA",
+          "title": "This AI Tool Lets You Build Apps Faster Than Googling | Amjad Masad (Replit)",
+          "url": "https://www.youtube.com/watch?v=xoca0PSA8rA",
+          "duration": 2368,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "lkkuern1heI",
+          "title": "The #1 Hack to Build Apps With AI Without Getting Stuck | Colin Matthews",
+          "url": "https://www.youtube.com/watch?v=lkkuern1heI",
+          "duration": 2452,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ay9002j_VSI",
+          "title": "Inside Suno, the AI Music App You Won't Be Able to Stop Listening To | Mikey Shulman (Suno)",
+          "url": "https://www.youtube.com/watch?v=ay9002j_VSI",
+          "duration": 2131,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "qq3x23MfxkI",
+          "title": "The 5 Hidden Rules Behind Successful AI Products | Chris Pedregal (Granola)",
+          "url": "https://www.youtube.com/watch?v=qq3x23MfxkI",
+          "duration": 2290,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "u8lEDw7pOkE",
+          "title": "The AI Skill That Will Define Your PM Career in 2025 | Aman Khan (Arize)",
+          "url": "https://www.youtube.com/watch?v=u8lEDw7pOkE",
+          "duration": 2787,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "2-qNKMSTAdw",
+          "title": "This is What Top 1% PMs Do Differently | Amit Fulay (VP Microsoft)",
+          "url": "https://www.youtube.com/watch?v=2-qNKMSTAdw",
+          "duration": 2359,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "kVUfgnNXFIk",
+          "title": "Make 2025 Your Best Year Yet With This Ritual | Katia Verresen",
+          "url": "https://www.youtube.com/watch?v=kVUfgnNXFIk",
+          "duration": 2895,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "s5ws67GpATY",
+          "title": "This Will Make You Rethink Your Product and Career in 2025 | Sachin Rekhi",
+          "url": "https://www.youtube.com/watch?v=s5ws67GpATY",
+          "duration": 2871,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "BsjMTi510ms",
+          "title": "How to Survive and Thrive as a Busy Working Parent | Deb Liu (CEO Ancestry)",
+          "url": "https://www.youtube.com/watch?v=BsjMTi510ms",
+          "duration": 2356,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "xUN6udKi50E",
+          "title": "5 AI Prompts that I Use to Create Content for 100K+ Readers",
+          "url": "https://www.youtube.com/watch?v=xUN6udKi50E",
+          "duration": 523,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "dYSia4zl8DM",
+          "title": "Zapier Co-Founder on AI Agents and the Path to AGI | Mike Knoop (Zapier)",
+          "url": "https://www.youtube.com/watch?v=dYSia4zl8DM",
+          "duration": 2722,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "eCBubJftdtU",
+          "title": "How the Product Manager Role is Changing in 2025 | Jiaona Zhang (CPO Linktree)",
+          "url": "https://www.youtube.com/watch?v=eCBubJftdtU",
+          "duration": 2976,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "jUv86rOgNOc",
+          "title": "Why K-12 Education Is Broken for High Achieving Kids | Niels Hoven (Mentava)",
+          "url": "https://www.youtube.com/watch?v=jUv86rOgNOc",
+          "duration": 2285,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "X1oxHy03ZF0",
+          "title": "Inside How Perplexity is Disrupting Online Search | Aravind Srinivas",
+          "url": "https://www.youtube.com/watch?v=X1oxHy03ZF0",
+          "duration": 2308,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "MLB9q2a1OZc",
+          "title": "Inside Duolingo Unhinged Growth to a $500M Business | Cem Kansu (Duolingo)",
+          "url": "https://www.youtube.com/watch?v=MLB9q2a1OZc",
+          "duration": 2502,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "zA80aoDUk08",
+          "title": "How to Crack the PM Interview in 2024 | Satish Mummareddy (Meta)",
+          "url": "https://www.youtube.com/watch?v=zA80aoDUk08",
+          "duration": 2800,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "scQfwEyOd9I",
+          "title": "LinkedIn’s Chief Product Officer on Growing to 1B Users with AI  | Tomer Cohen",
+          "url": "https://www.youtube.com/watch?v=scQfwEyOd9I",
+          "duration": 2177,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ljhRtCR4sq0",
+          "title": "Founder Mode Lessons from Instagram, Airbnb, and Coinbase | Sanchan Saxena",
+          "url": "https://www.youtube.com/watch?v=ljhRtCR4sq0",
+          "duration": 2687,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "9v5_Go3nUWg",
+          "title": "How I Built a 7-Figure Business in Less than A Year with AI | Ben Tossell",
+          "url": "https://www.youtube.com/watch?v=9v5_Go3nUWg",
+          "duration": 2603,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "-q1hgiAzgoU",
+          "title": "How to Break into AI PM from Google AI Product Leader | Marily Nika (Google)",
+          "url": "https://www.youtube.com/watch?v=-q1hgiAzgoU",
+          "duration": 2228,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ZkwYxYfkfYU",
+          "title": "How I Built an $8M Business with 0 Employees | Justin Welsh (Solopreneur)",
+          "url": "https://www.youtube.com/watch?v=ZkwYxYfkfYU",
+          "duration": 2605,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "wm4CJ9sl25c",
+          "title": "This Framework Will Change How You Think about Your Career | Shishir Mehrotra (CEO Coda)",
+          "url": "https://www.youtube.com/watch?v=wm4CJ9sl25c",
+          "duration": 2833,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "m54ulkBnaJU",
+          "title": "Ex-Meta VP Reveals His Top Lessons from 25 Years Leading Product Design | Jon Lax (Meta)",
+          "url": "https://www.youtube.com/watch?v=m54ulkBnaJU",
+          "duration": 2824,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "rDaRQa1NSGk",
+          "title": "Cancer Changed Everything: Finding Empathy, Balance, and Grace | Sharmeen Chapp (Stripe)",
+          "url": "https://www.youtube.com/watch?v=rDaRQa1NSGk",
+          "duration": 2656,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "dIgIS6OqlvA",
+          "title": "Building 0 to 1 Products and the Inside Story of Figma Slides | Mihika Kapoor (Figma)",
+          "url": "https://www.youtube.com/watch?v=dIgIS6OqlvA",
+          "duration": 3329,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "MWwH-12N5TA",
+          "title": "The Ultimate Guide to Developer Marketing | Lee Robinson (Vercel)",
+          "url": "https://www.youtube.com/watch?v=MWwH-12N5TA",
+          "duration": 2709,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "h0wJbvfnmlg",
+          "title": "Real Talk about Empowered vs. Feature Product Teams | Chris Jones (SVPG)",
+          "url": "https://www.youtube.com/watch?v=h0wJbvfnmlg",
+          "duration": 2603,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "7KNo63Il97A",
+          "title": "OpenAI and Ex-Shopify Product Lead Reveals How He Builds AI Products | Miqdad Jaffer",
+          "url": "https://www.youtube.com/watch?v=7KNo63Il97A",
+          "duration": 2032,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "HsG3So61va8",
+          "title": "How Top Experts Use AI to Write, Code, and Run Their Business | Dan Shipper (Every)",
+          "url": "https://www.youtube.com/watch?v=HsG3So61va8",
+          "duration": 2017,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "psDplRVd4z0",
+          "title": "AI Hacks from a 3x Founder to Scale Your Business and Life | Siqi Chen (Runway)",
+          "url": "https://www.youtube.com/watch?v=psDplRVd4z0",
+          "duration": 2437,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "KYAEc3J8tdo",
+          "title": "Why You Should Push Yourself to Do Hard Things | Nat Eliason (Author)",
+          "url": "https://www.youtube.com/watch?v=KYAEc3J8tdo",
+          "duration": 3014,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "rn99GyNqkzM",
+          "title": "Proven Rituals of Great Product Teams | Lane Shackleton (CPO Coda)",
+          "url": "https://www.youtube.com/watch?v=rn99GyNqkzM",
+          "duration": 1989,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "-3sGMMpkibg",
+          "title": "Unlock Your Storytelling Superpower | Robbie Crabtree (Coach)",
+          "url": "https://www.youtube.com/watch?v=-3sGMMpkibg",
+          "duration": 2192,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Aa6X0LRcnSw",
+          "title": "Inside the $550M AI Browser That's Taking on Google Chrome | Josh Miller (Browser Company)",
+          "url": "https://www.youtube.com/watch?v=Aa6X0LRcnSw",
+          "duration": 2628,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "JFPAoKv_7wo",
+          "title": "Proven Tactics to 10x Your Impact as a Leader | David Kline (ex-Bridgewater)",
+          "url": "https://www.youtube.com/watch?v=JFPAoKv_7wo",
+          "duration": 2522,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Oh45fsEOpv8",
+          "title": "Build Your Career by Collapsing the Talent Stack | Scott Belsky (CPO Adobe)",
+          "url": "https://www.youtube.com/watch?v=Oh45fsEOpv8",
+          "duration": 1708,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "NPfi_5eqGd4",
+          "title": "Get Unstuck in Your Career in 5 Steps | Ethan Evans (retired VP Amazon)",
+          "url": "https://www.youtube.com/watch?v=NPfi_5eqGd4",
+          "duration": 2935,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "QsCq0YeyUmw",
+          "title": "How to Become an AI-First PM and Designer | Paul Adams (CPO Intercom)",
+          "url": "https://www.youtube.com/watch?v=QsCq0YeyUmw",
+          "duration": 3056,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "srqxOSr382M",
+          "title": "The Best Product Designer I Ever Worked With | Alex Cornell (Meta AI)",
+          "url": "https://www.youtube.com/watch?v=srqxOSr382M",
+          "duration": 2887,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "z_PPC1PPb-M",
+          "title": "Inside How Figma Builds AI Products | Yuhki Yamashita (CPO Figma)",
+          "url": "https://www.youtube.com/watch?v=z_PPC1PPb-M",
+          "duration": 2156,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "2Nyvgr_oAyo",
+          "title": "Building the World’s Most Wearable AI | Dan Siroker (CEO Limitless)",
+          "url": "https://www.youtube.com/watch?v=2Nyvgr_oAyo",
+          "duration": 1365,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "1Tnsijy5km0",
+          "title": "Build Your Spiky Point of View to Stand Out | Wes Kao (Co-Founder, Maven)",
+          "url": "https://www.youtube.com/watch?v=1Tnsijy5km0",
+          "duration": 2327,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "KNLjQ1u1_VM",
+          "title": "Inside How the Best AI products Grow | Brian Balfour (CEO Reforge)",
+          "url": "https://www.youtube.com/watch?v=KNLjQ1u1_VM",
+          "duration": 2355,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "talNglLtszE",
+          "title": "How to Crack Your Product Strategy | Jackie Bavaro (best-selling PM author)",
+          "url": "https://www.youtube.com/watch?v=talNglLtszE",
+          "duration": 2138,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "wjm4KvDF2nQ",
+          "title": "How the PM Role is Changing in 2024 | PM Expert Panel",
+          "url": "https://www.youtube.com/watch?v=wjm4KvDF2nQ",
+          "duration": 3088,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "tCvcBOnm6q8",
+          "title": "The Journey from Senior VP to Solopreneur | Elena Verna (Dropbox)",
+          "url": "https://www.youtube.com/watch?v=tCvcBOnm6q8",
+          "duration": 2186,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "FO16_cJPNcA",
+          "title": "How Shopify Rages Against Meetings | Kaz Nejatian (COO Shopify)",
+          "url": "https://www.youtube.com/watch?v=FO16_cJPNcA",
+          "duration": 1459,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "eQBS7CmI9Ys",
+          "title": "Stop Doing Work That Doesn't Matter | Fareed Mosavat (Ex-Slack)",
+          "url": "https://www.youtube.com/watch?v=eQBS7CmI9Ys",
+          "duration": 2511,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "XkDEE28p4LM",
+          "title": "Elevate the Individual Contributor | Claire Vo (CPO LaunchDarkly)",
+          "url": "https://www.youtube.com/watch?v=XkDEE28p4LM",
+          "duration": 2137,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@PeterYangYT/shorts",
+      "title": "Peter Yang - Shorts",
+      "reported_count": 127,
+      "returned_count": 127,
+      "pagination_exhausted": true,
+      "items": [
+        {
+          "id": "CDKiCUwrVHg",
+          "title": "What Mario gets right that most schools don't",
+          "url": "https://www.youtube.com/shorts/CDKiCUwrVHg",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "SvemQ0VZRE8",
+          "title": "Why AI shouldn't do the thinking for your kid",
+          "url": "https://www.youtube.com/shorts/SvemQ0VZRE8",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "dWuS8OURo1g",
+          "title": "A $100K quote vs. a 3-day build",
+          "url": "https://www.youtube.com/shorts/dWuS8OURo1g",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "vXex3N8BdqY",
+          "title": "How to security-check a vibe-coded app",
+          "url": "https://www.youtube.com/shorts/vXex3N8BdqY",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ACEHVbR0b6c",
+          "title": "How a non-coder made $60K",
+          "url": "https://www.youtube.com/shorts/ACEHVbR0b6c",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "TNpEp-soPWM",
+          "title": "Turn voice notes into 80% of your diagrams",
+          "url": "https://www.youtube.com/shorts/TNpEp-soPWM",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "c78JezyOQNQ",
+          "title": "The right way to improve Codex skills",
+          "url": "https://www.youtube.com/shorts/c78JezyOQNQ",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "CfSJ93_1kcE",
+          "title": "Why you should give AI agents less instruction",
+          "url": "https://www.youtube.com/shorts/CfSJ93_1kcE",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "zXO8VdxE4f0",
+          "title": "How Linear runs evals on its AI agent",
+          "url": "https://www.youtube.com/shorts/zXO8VdxE4f0",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "FGnKVRMfOek",
+          "title": "How to make your AI agent report its own gaps",
+          "url": "https://www.youtube.com/shorts/FGnKVRMfOek",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "aPszaqE6oeg",
+          "title": "Be loyal to your AI and it improves",
+          "url": "https://www.youtube.com/shorts/aPszaqE6oeg",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "LGVZKldNCiA",
+          "title": "How to stop your AI agent's slop",
+          "url": "https://www.youtube.com/shorts/LGVZKldNCiA",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "jzGpwSh0d6g",
+          "title": "Why open source has to win in AI",
+          "url": "https://www.youtube.com/shorts/jzGpwSh0d6g",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "dirwLJRLaMM",
+          "title": "When to use Claude subagents",
+          "url": "https://www.youtube.com/shorts/dirwLJRLaMM",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "YxYY1Pkd4hw",
+          "title": "We cut Claude Code's system prompt by 80%",
+          "url": "https://www.youtube.com/shorts/YxYY1Pkd4hw",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "6bX_oTW975o",
+          "title": "Planning with Claude is about finding the unknowns",
+          "url": "https://www.youtube.com/shorts/6bX_oTW975o",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "b4idnfVqJJU",
+          "title": "The best way to control agents isn't your mouse and keyboard",
+          "url": "https://www.youtube.com/shorts/b4idnfVqJJU",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "7CCvnlRoWHM",
+          "title": "The biggest mistake people make building AI agents",
+          "url": "https://www.youtube.com/shorts/7CCvnlRoWHM",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ZkgZlvm9qQ4",
+          "title": "I got my AI agents to manage each other",
+          "url": "https://www.youtube.com/shorts/ZkgZlvm9qQ4",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "14IxR0R33Vg",
+          "title": "The best GPT-5.6 model and setting to use is...",
+          "url": "https://www.youtube.com/shorts/14IxR0R33Vg",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Byo9MEL0GHA",
+          "title": "Codex helps me manage my meetings",
+          "url": "https://www.youtube.com/shorts/Byo9MEL0GHA",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Ju5u23HaEs4",
+          "title": "Why you're not being ambitious enough with Codex",
+          "url": "https://www.youtube.com/shorts/Ju5u23HaEs4",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "I9QUP8PP6to",
+          "title": "I use Codex for everything at OpenAI",
+          "url": "https://www.youtube.com/shorts/I9QUP8PP6to",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "79DPXhipR8I",
+          "title": "Agents will use apps more than humans",
+          "url": "https://www.youtube.com/shorts/79DPXhipR8I",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "iCkXLU1RZks",
+          "title": "China's AI strategy is working",
+          "url": "https://www.youtube.com/shorts/iCkXLU1RZks",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "sHzkDArM5dk",
+          "title": "Every employee should be a one-person startup",
+          "url": "https://www.youtube.com/shorts/sHzkDArM5dk",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "mvFDvGEU6Sg",
+          "title": "How Anthropic PMs use agents internally",
+          "url": "https://www.youtube.com/shorts/mvFDvGEU6Sg",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "cfRHWmILNE4",
+          "title": "How anyone can now make professional launch videos",
+          "url": "https://www.youtube.com/shorts/cfRHWmILNE4",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "x3myFn_wOrw",
+          "title": "Why HTML to video actually works with AI",
+          "url": "https://www.youtube.com/shorts/x3myFn_wOrw",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "9C743xlIpoM",
+          "title": "The 3 AI apps I keep coming back to",
+          "url": "https://www.youtube.com/shorts/9C743xlIpoM",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "2TYBMvYxyVc",
+          "title": "Just launch, even if no ones cares",
+          "url": "https://www.youtube.com/shorts/2TYBMvYxyVc",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "1MLUD9iXp7Y",
+          "title": "Follow my AI builder journey",
+          "url": "https://www.youtube.com/shorts/1MLUD9iXp7Y",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "9SfEOmH7yjU",
+          "title": "Give yourself permission to build",
+          "url": "https://www.youtube.com/shorts/9SfEOmH7yjU",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "8AYFNXFnB1s",
+          "title": "Why engineering teams are about to break",
+          "url": "https://www.youtube.com/shorts/8AYFNXFnB1s",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "F_PP19EGhsM",
+          "title": "Why this ex-Meta L8 engineer stopped reviewing his own code",
+          "url": "https://www.youtube.com/shorts/F_PP19EGhsM",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "HMLlQKe6eCI",
+          "title": "Vibe coding as a slur is insane",
+          "url": "https://www.youtube.com/shorts/HMLlQKe6eCI",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Dcvl4mseZ6c",
+          "title": "Launches are still terrifying for me…what if zero people care?",
+          "url": "https://www.youtube.com/shorts/Dcvl4mseZ6c",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "OlPnb9HhQKc",
+          "title": "The skill that makes AI catch the bugs it missed",
+          "url": "https://www.youtube.com/shorts/OlPnb9HhQKc",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "m3HfR6E95F0",
+          "title": "Why founders need to over-invest in systems now",
+          "url": "https://www.youtube.com/shorts/m3HfR6E95F0",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "4E-tK7RvxTc",
+          "title": "Why this founder doesn't hire",
+          "url": "https://www.youtube.com/shorts/4E-tK7RvxTc",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "COo0HyubpD4",
+          "title": "Will Claude become conscious?",
+          "url": "https://www.youtube.com/shorts/COo0HyubpD4",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "0wvb4dWR-Ic",
+          "title": "How Anthropic actually builds Claude",
+          "url": "https://www.youtube.com/shorts/0wvb4dWR-Ic",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "8xHGSFOvi1g",
+          "title": "With context engineering, the data layer is key",
+          "url": "https://www.youtube.com/shorts/8xHGSFOvi1g",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "3OfYFtA-M60",
+          "title": "The 3 layers of context engineering most AI prototypes are missing",
+          "url": "https://www.youtube.com/shorts/3OfYFtA-M60",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "UoGRyi4oI04",
+          "title": "The #1 mistake that AI founders make",
+          "url": "https://www.youtube.com/shorts/UoGRyi4oI04",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "o1shOs4QUOQ",
+          "title": "9 AI products failed. The 10th made $600K / month.",
+          "url": "https://www.youtube.com/shorts/o1shOs4QUOQ",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "jEkmwgUN5bA",
+          "title": "Everyone needs to learn how to use AI",
+          "url": "https://www.youtube.com/shorts/jEkmwgUN5bA",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "-lFOAZK0_H4",
+          "title": "The future of retail is in the hands of creators",
+          "url": "https://www.youtube.com/shorts/-lFOAZK0_H4",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "OZMOKDfwd6c",
+          "title": "AI is squeezing middle managers",
+          "url": "https://www.youtube.com/shorts/OZMOKDfwd6c",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "AFFn4jRJF3g",
+          "title": "Enough with the 10 blue links",
+          "url": "https://www.youtube.com/shorts/AFFn4jRJF3g",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "dM_nP8FlY70",
+          "title": "Anything worth doing is going to be difficult",
+          "url": "https://www.youtube.com/shorts/dM_nP8FlY70",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "mMxdUQIe_BQ",
+          "title": "The pixels matter",
+          "url": "https://www.youtube.com/shorts/mMxdUQIe_BQ",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "TCVSg207PXE",
+          "title": "Is Duolingo doomed with AI translation",
+          "url": "https://www.youtube.com/shorts/TCVSg207PXE",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "xktc8-XcffQ",
+          "title": "3 drivers of Duolingo’s rapid growth",
+          "url": "https://www.youtube.com/shorts/xktc8-XcffQ",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Vb8XmvnGxrk",
+          "title": "How to not get down leveled on your job offer",
+          "url": "https://www.youtube.com/shorts/Vb8XmvnGxrk",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "G0EW5iujtME",
+          "title": "How to actually get mentorship",
+          "url": "https://www.youtube.com/shorts/G0EW5iujtME",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "wfAWE23NHUg",
+          "title": "LinkedIn CPO on how to land your dream job",
+          "url": "https://www.youtube.com/shorts/wfAWE23NHUg",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "DoEX5j9Y6Bc",
+          "title": "Think fast and slow to build a great AI product",
+          "url": "https://www.youtube.com/shorts/DoEX5j9Y6Bc",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "BKvso8zt9zc",
+          "title": "Stop trying to measure everything as a PM!",
+          "url": "https://www.youtube.com/shorts/BKvso8zt9zc",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "oxtRALsNN9U",
+          "title": "How to maximize your luck surface area",
+          "url": "https://www.youtube.com/shorts/oxtRALsNN9U",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "BS7B_-Iu-Zk",
+          "title": "Your business should serve your life, not vice versa",
+          "url": "https://www.youtube.com/shorts/BS7B_-Iu-Zk",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "tY5HnZUNRb0",
+          "title": "AI is not an agent it’s a co pilot",
+          "url": "https://www.youtube.com/shorts/tY5HnZUNRb0",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "UeYLOcjEVuA",
+          "title": "3 skills that the best AI PMs have in common",
+          "url": "https://www.youtube.com/shorts/UeYLOcjEVuA",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "FGiYoQW61tU",
+          "title": "I thought I was dying",
+          "url": "https://www.youtube.com/shorts/FGiYoQW61tU",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Ch3GqMugq-w",
+          "title": "Anyone can become an AI PM",
+          "url": "https://www.youtube.com/shorts/Ch3GqMugq-w",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "DzdCv4iyQko",
+          "title": "4 surefire ways to find your niche",
+          "url": "https://www.youtube.com/shorts/DzdCv4iyQko",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "S2WOWWNUkKk",
+          "title": "Why creating a movement and an enemy works for marketing",
+          "url": "https://www.youtube.com/shorts/S2WOWWNUkKk",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "-_q82ZA-qT0",
+          "title": "How Justin Welsh ($8M business) uses AI to analyze his content",
+          "url": "https://www.youtube.com/shorts/-_q82ZA-qT0",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "TQ70k0YMqF8",
+          "title": "How the best product leaders measure success",
+          "url": "https://www.youtube.com/shorts/TQ70k0YMqF8",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "l8fZJSKH5aE",
+          "title": "From notetaker to leader",
+          "url": "https://www.youtube.com/shorts/l8fZJSKH5aE",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Pu2WHxJ9zNE",
+          "title": "Why design North Stars aren't that useful",
+          "url": "https://www.youtube.com/shorts/Pu2WHxJ9zNE",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "TFcGRRDO43c",
+          "title": "Stop working on 3 miracle problems",
+          "url": "https://www.youtube.com/shorts/TFcGRRDO43c",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "Gl3RYVrAlVc",
+          "title": "Why I went public with my breast cancer journey",
+          "url": "https://www.youtube.com/shorts/Gl3RYVrAlVc",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "88_g3ByEhN0",
+          "title": "I don't write PRDs as a PM!",
+          "url": "https://www.youtube.com/shorts/88_g3ByEhN0",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "5exubJ9StuM",
+          "title": "How to recover from failing your developer community",
+          "url": "https://www.youtube.com/shorts/5exubJ9StuM",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "SO69bGQzups",
+          "title": "Here’s why companies stop being customer obsessed",
+          "url": "https://www.youtube.com/shorts/SO69bGQzups",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "rwwiGADrweE",
+          "title": "Why building AI products is different",
+          "url": "https://www.youtube.com/shorts/rwwiGADrweE",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "WtnKxBRXoDI",
+          "title": "We didn’t do any meetings for this project",
+          "url": "https://www.youtube.com/shorts/WtnKxBRXoDI",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "mimG7P6I8ho",
+          "title": "Why AI makes learning to code so much easier",
+          "url": "https://www.youtube.com/shorts/mimG7P6I8ho",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "hVuueXtPtV0",
+          "title": "The #1 trait for top creators who use AI well",
+          "url": "https://www.youtube.com/shorts/hVuueXtPtV0",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "-5n5n_U_8L4",
+          "title": "I write with AI by just taking a walk and saying what's on my mind",
+          "url": "https://www.youtube.com/shorts/-5n5n_U_8L4",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "5cQ0-Pvoz20",
+          "title": "I started 3 companies, here’s what I wish I knew the first time",
+          "url": "https://www.youtube.com/shorts/5cQ0-Pvoz20",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "WSrnGCaktDw",
+          "title": "We’ll never hire more than 100 people thanks to AI",
+          "url": "https://www.youtube.com/shorts/WSrnGCaktDw",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "_0IoCUDcrzY",
+          "title": "AI will make death optional",
+          "url": "https://www.youtube.com/shorts/_0IoCUDcrzY",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "WbDyS5kty4M",
+          "title": "How to teach yourself to do hard things",
+          "url": "https://www.youtube.com/shorts/WbDyS5kty4M",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "zN9-Atf4Og8",
+          "title": "I lost $35K in one night",
+          "url": "https://www.youtube.com/shorts/zN9-Atf4Og8",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "258l27fPmCI",
+          "title": "Why Google Docs sucks for collaboration",
+          "url": "https://www.youtube.com/shorts/258l27fPmCI",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "QMqWWy_B8Dk",
+          "title": "Pitfalls of product reviews",
+          "url": "https://www.youtube.com/shorts/QMqWWy_B8Dk",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "d0JxhY7ytrc",
+          "title": "Build cathedrals, not bricks",
+          "url": "https://www.youtube.com/shorts/d0JxhY7ytrc",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "i6TdxoZcpcc",
+          "title": "Two stories that every leader must master",
+          "url": "https://www.youtube.com/shorts/i6TdxoZcpcc",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "VFK57vfjgno",
+          "title": "Great stories sound like melody",
+          "url": "https://www.youtube.com/shorts/VFK57vfjgno",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "HZZWrxT4Lt0",
+          "title": "Get better at storytelling in a U-shape",
+          "url": "https://www.youtube.com/shorts/HZZWrxT4Lt0",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "H4m7Ivpj6lU",
+          "title": "How to get a job at a great startup (it's not about your experience!)",
+          "url": "https://www.youtube.com/shorts/H4m7Ivpj6lU",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "6-zPhTimo2w",
+          "title": "The ONE value that we look for in hiring",
+          "url": "https://www.youtube.com/shorts/6-zPhTimo2w",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "mBj3XEi1Jf4",
+          "title": "The #1 mistake most managers make",
+          "url": "https://www.youtube.com/shorts/mBj3XEi1Jf4",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "U5EhIBhtOjE",
+          "title": "HARSH feedback saved my career",
+          "url": "https://www.youtube.com/shorts/U5EhIBhtOjE",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "nrhzS-LY3CA",
+          "title": "How to ask your manager for feedback",
+          "url": "https://www.youtube.com/shorts/nrhzS-LY3CA",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "iYfLeC73f_4",
+          "title": "What's really happening to tech jobs",
+          "url": "https://www.youtube.com/shorts/iYfLeC73f_4",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "c-bHe5XPZhU",
+          "title": "Ideal PM design relationship is they're same person",
+          "url": "https://www.youtube.com/shorts/c-bHe5XPZhU",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "jFySg57UMwU",
+          "title": "The magic loop to grow your career",
+          "url": "https://www.youtube.com/shorts/jFySg57UMwU",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "tEcv-QUnIXw",
+          "title": "Recovering from a Jeff Bezos screwup",
+          "url": "https://www.youtube.com/shorts/tEcv-QUnIXw",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "inm0Zf7J4ys",
+          "title": "A proven way to build trust quickly",
+          "url": "https://www.youtube.com/shorts/inm0Zf7J4ys",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "vGSQAwIxXFk",
+          "title": "With AI products, start with the customer problem may not work",
+          "url": "https://www.youtube.com/shorts/vGSQAwIxXFk",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "snr8KzQah_M",
+          "title": "Will AI make PMs dumber and lazier?",
+          "url": "https://www.youtube.com/shorts/snr8KzQah_M",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "3lBL4oNlLno",
+          "title": "Think big, start small, ship to learn",
+          "url": "https://www.youtube.com/shorts/3lBL4oNlLno",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "4eJlGt1pA_0",
+          "title": "Barbell approach to north star and execution",
+          "url": "https://www.youtube.com/shorts/4eJlGt1pA_0",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "BVyzp6iCkaQ",
+          "title": "Resist being too clever with users",
+          "url": "https://www.youtube.com/shorts/BVyzp6iCkaQ",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "55OUhceJeQ4",
+          "title": "How to build good design taste",
+          "url": "https://www.youtube.com/shorts/55OUhceJeQ4",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "D7vwkgYJctg",
+          "title": "What matters when building AI products",
+          "url": "https://www.youtube.com/shorts/D7vwkgYJctg",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ZSnOxUaylek",
+          "title": "You have have this skill as a PM",
+          "url": "https://www.youtube.com/shorts/ZSnOxUaylek",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "b66srnSxm4w",
+          "title": "How PMs can be great partners for design",
+          "url": "https://www.youtube.com/shorts/b66srnSxm4w",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "rgJ7a74Rp4Q",
+          "title": "Give better presentations now",
+          "url": "https://www.youtube.com/shorts/rgJ7a74Rp4Q",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "VA9jYueAxLc",
+          "title": "Do this to find your niche",
+          "url": "https://www.youtube.com/shorts/VA9jYueAxLc",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "amDVx46-Vd0",
+          "title": "The #1 requirement for a great vision",
+          "url": "https://www.youtube.com/shorts/amDVx46-Vd0",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "QeOTEugmCsU",
+          "title": "AI's impact on growth",
+          "url": "https://www.youtube.com/shorts/QeOTEugmCsU",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "8VGK7Kl7zJo",
+          "title": "Your strategy should inform daily decisions",
+          "url": "https://www.youtube.com/shorts/8VGK7Kl7zJo",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "IG3jmijOBKo",
+          "title": "The career ladder is a myth",
+          "url": "https://www.youtube.com/shorts/IG3jmijOBKo",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "3vu-BpIzbyU",
+          "title": "Don't focus too much on peer feedback",
+          "url": "https://www.youtube.com/shorts/3vu-BpIzbyU",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "3ScXo0m8DKs",
+          "title": "Make imposter syndrome your superpower",
+          "url": "https://www.youtube.com/shorts/3ScXo0m8DKs",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "NokVSKi56YA",
+          "title": "Why Elena quit her senior VP job to work for herself",
+          "url": "https://www.youtube.com/shorts/NokVSKi56YA",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "voLsGvgkNt8",
+          "title": "We deleted 322,000 hours of meetings",
+          "url": "https://www.youtube.com/shorts/voLsGvgkNt8",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "q0e9J8REGNo",
+          "title": "Traditional career ladders are broken",
+          "url": "https://www.youtube.com/shorts/q0e9J8REGNo",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "n57M7qmjOEA",
+          "title": "Strategy doesn't lead to great products",
+          "url": "https://www.youtube.com/shorts/n57M7qmjOEA",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "_4sByW__5Bg",
+          "title": "Focus on the work that actually matters",
+          "url": "https://www.youtube.com/shorts/_4sByW__5Bg",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "nx98AN3nCxg",
+          "title": "What separates a junior PM from a senior PM",
+          "url": "https://www.youtube.com/shorts/nx98AN3nCxg",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "ejBjpo2YrxQ",
+          "title": "Fast beats right",
+          "url": "https://www.youtube.com/shorts/ejBjpo2YrxQ",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        },
+        {
+          "id": "rPhIt1hSQ-Y",
+          "title": "Enough with the PM frameworks",
+          "url": "https://www.youtube.com/shorts/rPhIt1hSQ-Y",
+          "duration": null,
+          "channel_id": null,
+          "channel": null,
+          "upload_date": null,
+          "release_timestamp": null,
+          "availability": null,
+          "live_status": null,
+          "date_status": "pending_watch_page"
+        }
+      ]
+    }
+  ],
+  "log": [
+    {
+      "level": "debug",
+      "message": "[youtube:tab] Extracting URL: https://www.youtube.com/@PeterYangYT"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] @PeterYangYT: Downloading webpage"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] Downloading all uploads of the channel. To download only the videos in a specific tab, pass the tab's URL"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] @PeterYangYT/shorts: Downloading webpage"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] Downloading as multiple playlists, separated by tabs. To download as a single playlist instead, pass https://www.youtube.com/playlist?list=UUnpBg7yqNauHtlNSpOl5-cg"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading playlist: Peter Yang"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] Playlist Peter Yang: Downloading 2 items of 2"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 1 of 2"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading playlist: Peter Yang - Videos"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] UCnpBg7yqNauHtlNSpOl5-cg page 1: Downloading API JSON"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] UCnpBg7yqNauHtlNSpOl5-cg page 2: Downloading API JSON"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] UCnpBg7yqNauHtlNSpOl5-cg page 3: Downloading API JSON"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] UCnpBg7yqNauHtlNSpOl5-cg page 4: Downloading API JSON"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] UCnpBg7yqNauHtlNSpOl5-cg page 5: Downloading API JSON"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] Playlist Peter Yang - Videos: Downloading 174 items of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 1 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 2 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 3 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 4 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 5 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 6 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 7 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 8 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 9 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 10 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 11 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 12 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 13 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 14 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 15 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 16 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 17 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 18 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 19 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 20 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 21 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 22 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 23 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 24 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 25 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 26 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 27 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 28 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 29 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 30 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 31 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 32 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 33 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 34 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 35 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 36 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 37 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 38 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 39 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 40 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 41 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 42 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 43 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 44 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 45 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 46 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 47 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 48 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 49 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 50 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 51 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 52 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 53 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 54 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 55 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 56 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 57 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 58 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 59 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 60 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 61 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 62 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 63 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 64 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 65 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 66 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 67 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 68 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 69 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 70 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 71 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 72 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 73 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 74 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 75 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 76 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 77 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 78 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 79 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 80 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 81 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 82 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 83 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 84 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 85 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 86 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 87 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 88 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 89 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 90 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 91 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 92 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 93 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 94 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 95 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 96 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 97 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 98 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 99 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 100 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 101 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 102 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 103 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 104 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 105 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 106 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 107 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 108 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 109 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 110 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 111 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 112 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 113 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 114 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 115 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 116 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 117 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 118 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 119 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 120 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 121 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 122 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 123 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 124 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 125 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 126 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 127 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 128 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 129 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 130 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 131 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 132 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 133 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 134 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 135 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 136 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 137 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 138 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 139 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 140 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 141 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 142 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 143 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 144 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 145 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 146 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 147 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 148 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 149 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 150 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 151 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 152 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 153 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 154 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 155 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 156 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 157 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 158 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 159 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 160 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 161 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 162 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 163 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 164 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 165 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 166 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 167 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 168 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 169 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 170 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 171 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 172 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 173 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 174 of 174"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Finished downloading playlist: Peter Yang - Videos"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 2 of 2"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading playlist: Peter Yang - Shorts"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] UCnpBg7yqNauHtlNSpOl5-cg page 1: Downloading API JSON"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] UCnpBg7yqNauHtlNSpOl5-cg page 2: Downloading API JSON"
+    },
+    {
+      "level": "debug",
+      "message": "[youtube:tab] Playlist Peter Yang - Shorts: Downloading 127 items of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 1 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 2 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 3 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 4 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 5 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 6 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 7 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 8 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 9 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 10 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 11 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 12 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 13 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 14 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 15 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 16 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 17 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 18 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 19 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 20 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 21 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 22 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 23 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 24 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 25 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 26 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 27 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 28 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 29 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 30 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 31 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 32 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 33 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 34 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 35 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 36 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 37 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 38 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 39 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 40 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 41 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 42 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 43 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 44 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 45 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 46 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 47 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 48 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 49 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 50 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 51 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 52 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 53 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 54 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 55 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 56 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 57 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 58 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 59 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 60 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 61 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 62 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 63 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 64 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 65 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 66 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 67 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 68 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 69 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 70 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 71 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 72 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 73 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 74 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 75 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 76 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 77 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 78 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 79 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 80 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 81 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 82 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 83 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 84 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 85 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 86 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 87 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 88 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 89 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 90 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 91 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 92 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 93 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 94 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 95 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 96 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 97 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 98 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 99 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 100 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 101 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 102 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 103 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 104 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 105 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 106 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 107 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 108 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 109 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 110 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 111 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 112 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 113 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 114 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 115 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 116 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 117 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 118 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 119 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 120 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 121 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 122 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 123 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 124 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 125 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 126 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Downloading item 127 of 127"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Finished downloading playlist: Peter Yang - Shorts"
+    },
+    {
+      "level": "debug",
+      "message": "[download] Finished downloading playlist: Peter Yang"
+    }
+  ],
+  "channel_id": "UCnpBg7yqNauHtlNSpOl5-cg",
+  "channel_title": "Peter Yang",
+  "unique_videos": 301,
+  "remaining_scope": "Reconcile playlists/podcasts, embedded and unlisted links; exact dates and transcripts per video.",
+  "finished_at": "2026-09-28T19:13:20.385630+00:00"
+}

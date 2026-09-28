@@ -1,0 +1,553 @@
+{
+  "source_id": "tech-with-tim-youtube",
+  "surface": "videos",
+  "url": "https://www.youtube.com/@TechWithTim/videos",
+  "observed_at": "2026-09-28T19:07:21.438Z",
+  "round": 8,
+  "dom_count": 90,
+  "unique_seen": 90,
+  "first": "https://www.youtube.com/watch?v=misjUj4Q_ho",
+  "last": "https://www.youtube.com/watch?v=fgr6Sm-dmmM",
+  "items": [
+    {
+      "context": "Building a Real App with Claude Code (Start to Finish)\n15 mil\nhá 6 h",
+      "label": "Building a Real App with Claude Code (Start to Finish) 22 minutos",
+      "title": "Building a Real App with Claude Code (Start to Finish)",
+      "url": "https://www.youtube.com/watch?v=misjUj4Q_ho"
+    },
+    {
+      "context": "5 Python Coding Skills That Get You Hired in 2026\n24 mil\nhá 1 dia",
+      "label": "5 Python Coding Skills That Get You Hired in 2026 12 minutos e 5 segundos",
+      "title": "5 Python Coding Skills That Get You Hired in 2026",
+      "url": "https://www.youtube.com/watch?v=FGBUPD-SHMw"
+    },
+    {
+      "context": "LM Studio Full Tutorial - The BEST Way to Run Local Models\n30 mil\nhá 2 dias",
+      "label": "LM Studio Full Tutorial - The BEST Way to Run Local Models 18 minutos",
+      "title": "LM Studio Full Tutorial - The BEST Way to Run Local Models",
+      "url": "https://www.youtube.com/watch?v=XpPtfB2pdio"
+    },
+    {
+      "context": "MCP Servers Finally Make Sense (Build Your Own)\n52 mil\nhá 4 dias",
+      "label": "MCP Servers Finally Make Sense (Build Your Own) 30 minutos",
+      "title": "MCP Servers Finally Make Sense (Build Your Own)",
+      "url": "https://www.youtube.com/watch?v=He8tUwLzLnU"
+    },
+    {
+      "context": "How to Build AI Agents in Python - 3 Ways\n42 mil\nhá 5 dias",
+      "label": "How to Build AI Agents in Python - 3 Ways 32 minutos",
+      "title": "How to Build AI Agents in Python - 3 Ways",
+      "url": "https://www.youtube.com/watch?v=-RTgK6qX6A8"
+    },
+    {
+      "context": "Understand Local AI in 15 Minutes\n49 mil\nhá 7 dias",
+      "label": "Understand Local AI in 15 Minutes 16 minutos",
+      "title": "Understand Local AI in 15 Minutes",
+      "url": "https://www.youtube.com/watch?v=oZ-w0kOpylw"
+    },
+    {
+      "context": "Is Software Engineering Dying in 2026? (What the Data Actually Says)\n168 mil\nhá 9 dias",
+      "label": "Is Software Engineering Dying in 2026? (What the Data Actually Says) 12 minutos e 18 segundos",
+      "title": "Is Software Engineering Dying in 2026? (What the Data Actually Says)",
+      "url": "https://www.youtube.com/watch?v=1PdgNyOy20w"
+    },
+    {
+      "context": "Top 7 AI Agent Tools That Actually Work\n54 mil\nhá 11 dias",
+      "label": "Top 7 AI Agent Tools That Actually Work 19 minutos",
+      "title": "Top 7 AI Agent Tools That Actually Work",
+      "url": "https://www.youtube.com/watch?v=84-sHkG4AQU"
+    },
+    {
+      "context": "Cursor Costs $20. This AI Agent Costs $1,000,000.\n174 mil\nhá 12 dias",
+      "label": "Cursor Costs $20. This AI Agent Costs $1,000,000. 16 minutos",
+      "title": "Cursor Costs $20. This AI Agent Costs $1,000,000.",
+      "url": "https://www.youtube.com/watch?v=8u3vB6kPdgY"
+    },
+    {
+      "context": "How to Build Your Own AI Agent Team From Scratch\n40 mil\nhá 2 sem.",
+      "label": "How to Build Your Own AI Agent Team From Scratch 15 minutos",
+      "title": "How to Build Your Own AI Agent Team From Scratch",
+      "url": "https://www.youtube.com/watch?v=0nU4lQnnSz0"
+    },
+    {
+      "context": "Build a Local AI Agent in 10 Minutes using Python\n132 mil\nhá 2 sem.",
+      "label": "Build a Local AI Agent in 10 Minutes using Python 8 minutos e 8 segundos",
+      "title": "Build a Local AI Agent in 10 Minutes using Python",
+      "url": "https://www.youtube.com/watch?v=ByWCsa8DbF8"
+    },
+    {
+      "context": "Lovable ADVANCED Tutorial - FULL Guide for Real Websites\n15 mil\nhá 2 sem.",
+      "label": "Lovable ADVANCED Tutorial - FULL Guide for Real Websites 36 minutos",
+      "title": "Lovable ADVANCED Tutorial - FULL Guide for Real Websites",
+      "url": "https://www.youtube.com/watch?v=qxygwvBoBTc"
+    },
+    {
+      "context": "Claude Code: The Advanced Guide (99% of Devs Skip These Features)\n97 mil\nhá 3 sem.",
+      "label": "Claude Code: The Advanced Guide (99% of Devs Skip These Features) 19 minutos",
+      "title": "Claude Code: The Advanced Guide (99% of Devs Skip These Features)",
+      "url": "https://www.youtube.com/watch?v=kt5a-TXmWew"
+    },
+    {
+      "context": "Everyone Needs an AI Brain (This Is the Easiest Way to Build One)\n23 mil\nhá 3 sem.",
+      "label": "Everyone Needs an AI Brain (This Is the Easiest Way to Build One) 11 minutos e 1 segundo",
+      "title": "Everyone Needs an AI Brain (This Is the Easiest Way to Build One)",
+      "url": "https://www.youtube.com/watch?v=8yFb8QfAxRg"
+    },
+    {
+      "context": "How AI Agents Actually Work (Every Piece Explained & Built)\n163 mil\nhá 3 sem.",
+      "label": "How AI Agents Actually Work (Every Piece Explained & Built) 19 minutos",
+      "title": "How AI Agents Actually Work (Every Piece Explained & Built)",
+      "url": "https://www.youtube.com/watch?v=HzGOWq5UyjY"
+    },
+    {
+      "context": "My Complete Local AI Setup - $7000+\n119 mil\nhá 3 sem.",
+      "label": "My Complete Local AI Setup - $7000+ 18 minutos",
+      "title": "My Complete Local AI Setup - $7000+",
+      "url": "https://www.youtube.com/watch?v=eaEtNXWMwLY"
+    },
+    {
+      "context": "Local AI Explained: How to Run AI Models on Your Computer\n502 mil\nhá 4 sem.",
+      "label": "Local AI Explained: How to Run AI Models on Your Computer 24 minutos",
+      "title": "Local AI Explained: How to Run AI Models on Your Computer",
+      "url": "https://www.youtube.com/watch?v=edIHPoWgIKU"
+    },
+    {
+      "context": "Building AI Agents in Pure Python - Beginner Course\n211 mil\nhá 4 sem.",
+      "label": "Building AI Agents in Pure Python - Beginner Course 37 minutos",
+      "title": "Building AI Agents in Pure Python - Beginner Course",
+      "url": "https://www.youtube.com/watch?v=c9AnqCeyxbI"
+    },
+    {
+      "context": "Vibe Coding Has A Security Problem (And How To Fix It)\n27 mil\nhá 4 sem.",
+      "label": "Vibe Coding Has A Security Problem (And How To Fix It) 18 minutos",
+      "title": "Vibe Coding Has A Security Problem (And How To Fix It)",
+      "url": "https://www.youtube.com/watch?v=NfctRQhMMdI"
+    },
+    {
+      "context": "What You Need to Know About Grok Bot... (it's not that good)\n55 mil\nhá 1 mês",
+      "label": "What You Need to Know About Grok Bot... (it's not that good) 12 minutos e 29 segundos",
+      "title": "What You Need to Know About Grok Bot... (it's not that good)",
+      "url": "https://www.youtube.com/watch?v=ezANo2RNryU"
+    },
+    {
+      "context": "Codex vs Claude - an Honest Comparison\n138 mil\nhá 1 mês",
+      "label": "Codex vs Claude - an Honest Comparison 22 minutos",
+      "title": "Codex vs Claude - an Honest Comparison",
+      "url": "https://www.youtube.com/watch?v=sbuwHi1Sz6k"
+    },
+    {
+      "context": "How I Set Up Python for Machine Learning With AI\n67 mil\nhá 1 mês",
+      "label": "How I Set Up Python for Machine Learning With AI 20 minutos",
+      "title": "How I Set Up Python for Machine Learning With AI",
+      "url": "https://www.youtube.com/watch?v=cAtKtvmds1o"
+    },
+    {
+      "context": "AI Can Finally Get Past Login Screens (Safely)\n1,2 mi\nhá 1 mês",
+      "label": "AI Can Finally Get Past Login Screens (Safely) 7 minutos e 46 segundos",
+      "title": "AI Can Finally Get Past Login Screens (Safely)",
+      "url": "https://www.youtube.com/watch?v=ibpSIF3aeGc"
+    },
+    {
+      "context": "How I Would Learn Python (Programming, Data and AI in One Place)\n55 mil\nhá 1 mês",
+      "label": "How I Would Learn Python (Programming, Data and AI in One Place) 13 minutos e 56 segundos",
+      "title": "How I Would Learn Python (Programming, Data and AI in One Place)",
+      "url": "https://www.youtube.com/watch?v=An_CJNU9nB0"
+    },
+    {
+      "context": "One AI agent built a REAL business in 24 hours…\n76 mil\nhá 1 mês",
+      "label": "One AI agent built a REAL business in 24 hours… 17 minutos",
+      "title": "One AI agent built a REAL business in 24 hours…",
+      "url": "https://www.youtube.com/watch?v=okjvO4BsW98"
+    },
+    {
+      "context": "Build Anything with Kimi K3 - The Next Frontier\n44 mil\nhá 1 mês",
+      "label": "Build Anything with Kimi K3 - The Next Frontier 14 minutos e 22 segundos",
+      "title": "Build Anything with Kimi K3 - The Next Frontier",
+      "url": "https://www.youtube.com/watch?v=mq-rVs7oUXw&pp=0gcJCS8MAYcqIYzv"
+    },
+    {
+      "context": "Buzz is the BEST AI Tool Of 2026\n31 mil\nhá 1 mês",
+      "label": "Buzz is the BEST AI Tool Of 2026 25 minutos",
+      "title": "Buzz is the BEST AI Tool Of 2026",
+      "url": "https://www.youtube.com/watch?v=cHlmP4LYdPg"
+    },
+    {
+      "context": "Top 6 AI Certifications That Can Make You Rich in 2026\n31 mil\nhá 1 mês",
+      "label": "Top 6 AI Certifications That Can Make You Rich in 2026 12 minutos e 34 segundos",
+      "title": "Top 6 AI Certifications That Can Make You Rich in 2026",
+      "url": "https://www.youtube.com/watch?v=hAckBGtCwxo"
+    },
+    {
+      "context": "How to Become a Forward Deployed Engineer in 2026\n54 mil\nhá 1 mês",
+      "label": "How to Become a Forward Deployed Engineer in 2026 11 minutos e 35 segundos",
+      "title": "How to Become a Forward Deployed Engineer in 2026",
+      "url": "https://www.youtube.com/watch?v=vLlIBT0HSSc"
+    },
+    {
+      "context": "This Database Handles 630 Billion Rows a Year\n44 mil\nhá 1 mês",
+      "label": "This Database Handles 630 Billion Rows a Year 16 minutos",
+      "title": "This Database Handles 630 Billion Rows a Year",
+      "url": "https://www.youtube.com/watch?v=3hgRw7E4vQA"
+    },
+    {
+      "context": "The Open Source Claude Cowork Alternative I've Been Waiting For\n25 mil\nhá 1 mês",
+      "label": "The Open Source Claude Cowork Alternative I've Been Waiting For 14 minutos e 34 segundos",
+      "title": "The Open Source Claude Cowork Alternative I've Been Waiting For",
+      "url": "https://www.youtube.com/watch?v=QID-QHVLYYc"
+    },
+    {
+      "context": "The Best AI Tools for Developers in 2026 (That I Actually Use)\n73 mil\nhá 1 mês",
+      "label": "The Best AI Tools for Developers in 2026 (That I Actually Use) 15 minutos",
+      "title": "The Best AI Tools for Developers in 2026 (That I Actually Use)",
+      "url": "https://www.youtube.com/watch?v=_C57BxSXRbU"
+    },
+    {
+      "context": "Build $10,000 Websites using Claude Code (Ultimate Guide)\n69 mil\nhá 1 mês",
+      "label": "Build $10,000 Websites using Claude Code (Ultimate Guide) 30 minutos",
+      "title": "Build $10,000 Websites using Claude Code (Ultimate Guide)",
+      "url": "https://www.youtube.com/watch?v=UQ9PbbPNvnc"
+    },
+    {
+      "context": "Python in 2026: Honest Truth About Learning It Now\n44 mil\nhá 1 mês",
+      "label": "Python in 2026: Honest Truth About Learning It Now 11 minutos e 16 segundos",
+      "title": "Python in 2026: Honest Truth About Learning It Now",
+      "url": "https://www.youtube.com/watch?v=Kuur0L7E9rQ"
+    },
+    {
+      "context": "Ultimate Vibe Coding Guide for Beginners\n59 mil\nhá 1 mês",
+      "label": "Ultimate Vibe Coding Guide for Beginners 23 minutos",
+      "title": "Ultimate Vibe Coding Guide for Beginners",
+      "url": "https://www.youtube.com/watch?v=SM17ps6-gAY"
+    },
+    {
+      "context": "How Does Claude Code Actually Work? Let's Make Our Own\n29 mil\nhá 1 mês",
+      "label": "How Does Claude Code Actually Work? Let's Make Our Own 31 minutos",
+      "title": "How Does Claude Code Actually Work? Let's Make Our Own",
+      "url": "https://www.youtube.com/watch?v=vp6Dlx5aHDU"
+    },
+    {
+      "context": "Cursor 3.0 - Full Course for Beginners\n131 mil\nhá 1 mês",
+      "label": "Cursor 3.0 - Full Course for Beginners 52 minutos",
+      "title": "Cursor 3.0 - Full Course for Beginners",
+      "url": "https://www.youtube.com/watch?v=Tv8mLrLtyxo&pp=0gcJCS8MAYcqIYzv"
+    },
+    {
+      "context": "How to Fine-Tune any AI Model Locally (FULL Tutorial)\n245 mil\nhá 2 meses",
+      "label": "How to Fine-Tune any AI Model Locally (FULL Tutorial) 41 minutos",
+      "title": "How to Fine-Tune any AI Model Locally (FULL Tutorial)",
+      "url": "https://www.youtube.com/watch?v=4JofSJIrjwU"
+    },
+    {
+      "context": "Python Tutorial for Beginners - Learn the basics in 20 Min\n51 mil\nhá 2 meses",
+      "label": "Python Tutorial for Beginners - Learn the basics in 20 Min 19 minutos",
+      "title": "Python Tutorial for Beginners - Learn the basics in 20 Min",
+      "url": "https://www.youtube.com/watch?v=Js05B8Z1ivE"
+    },
+    {
+      "context": "I Built a One-Person Company Using AI Agents\n39 mil\nhá 2 meses",
+      "label": "I Built a One-Person Company Using AI Agents 12 minutos e 34 segundos",
+      "title": "I Built a One-Person Company Using AI Agents",
+      "url": "https://www.youtube.com/watch?v=uCzXJKitKBs"
+    },
+    {
+      "context": "GLM 5.2 in Claude Code is Blowing My Mind\n14 mil\nhá 2 meses",
+      "label": "GLM 5.2 in Claude Code is Blowing My Mind 15 minutos",
+      "title": "GLM 5.2 in Claude Code is Blowing My Mind",
+      "url": "https://www.youtube.com/watch?v=yRtUkbq_hHo"
+    },
+    {
+      "context": "Your AI Agent Is Probably Hackable. Fix It in 30 Minutes\n30 mil\nhá 2 meses",
+      "label": "Your AI Agent Is Probably Hackable. Fix It in 30 Minutes 38 minutos",
+      "title": "Your AI Agent Is Probably Hackable. Fix It in 30 Minutes",
+      "url": "https://www.youtube.com/watch?v=MEfpHENH78c"
+    },
+    {
+      "context": "Lovable Full Course for Beginners: Build & Deploy a Real App\n46 mil\nhá 2 meses",
+      "label": "Lovable Full Course for Beginners: Build & Deploy a Real App 38 minutos",
+      "title": "Lovable Full Course for Beginners: Build & Deploy a Real App",
+      "url": "https://www.youtube.com/watch?v=pZpoACNOPAw"
+    },
+    {
+      "context": "How I Actually Use AI for Data Science in Python\nTech With Tim\ne PyCharm, a JetBrains IDE\n33 mil\nhá 2 meses",
+      "label": "How I Actually Use AI for Data Science in Python 18 minutos",
+      "title": "How I Actually Use AI for Data Science in Python",
+      "url": "https://www.youtube.com/watch?v=bFVa-lLlGYA"
+    },
+    {
+      "context": "Is Local AI Coding Actually Good?\n106 mil\nhá 2 meses",
+      "label": "Is Local AI Coding Actually Good? 21 minutos",
+      "title": "Is Local AI Coding Actually Good?",
+      "url": "https://www.youtube.com/watch?v=8JRJq4EEdik"
+    },
+    {
+      "context": "AI Agents Explained - What Is an AI Agent and how to build one? (Real Examples, Not Hype)\n349 mil\nhá 2 meses",
+      "label": "AI Agents Explained - What Is an AI Agent and how to build one? (Real Examples, Not Hype) 21 minutos",
+      "title": "AI Agents Explained - What Is an AI Agent and how to build one? (Real Examples, Not Hype)",
+      "url": "https://www.youtube.com/watch?v=ZvDkJsKE80k"
+    },
+    {
+      "context": "Codex - Full Course for Beginners\n111 mil\nhá 2 meses",
+      "label": "Codex - Full Course for Beginners 34 minutos",
+      "title": "Codex - Full Course for Beginners",
+      "url": "https://www.youtube.com/watch?v=ZXkeWiWB4xg"
+    },
+    {
+      "context": "Software Engineer to AI Engineer: Best Move 2026\n51 mil\nhá 2 meses",
+      "label": "Software Engineer to AI Engineer: Best Move 2026 14 minutos e 45 segundos",
+      "title": "Software Engineer to AI Engineer: Best Move 2026",
+      "url": "https://www.youtube.com/watch?v=NUWUwz7Jy4k"
+    },
+    {
+      "context": "I Built an AI App to Analyze My Own Business Data (No Code)\n18 mil\nhá 2 meses",
+      "label": "I Built an AI App to Analyze My Own Business Data (No Code) 46 minutos",
+      "title": "I Built an AI App to Analyze My Own Business Data (No Code)",
+      "url": "https://www.youtube.com/watch?v=jlZfuNoBBCY"
+    },
+    {
+      "context": "The Only Claude Code Plugins You Actually Need\n55 mil\nhá 2 meses",
+      "label": "The Only Claude Code Plugins You Actually Need 21 minutos",
+      "title": "The Only Claude Code Plugins You Actually Need",
+      "url": "https://www.youtube.com/watch?v=uuUo7gWuH9w"
+    },
+    {
+      "context": "Build 3 AI Automations From Scratch - Complete Beginner Guide\n24 mil\nhá 2 meses",
+      "label": "Build 3 AI Automations From Scratch - Complete Beginner Guide 24 minutos",
+      "title": "Build 3 AI Automations From Scratch - Complete Beginner Guide",
+      "url": "https://www.youtube.com/watch?v=gFSkmD8vbfg"
+    },
+    {
+      "context": "OpenClaw vs Hermes Agent: Which One Is Actually Better in 2026?\n46 mil\nhá 2 meses",
+      "label": "OpenClaw vs Hermes Agent: Which One Is Actually Better in 2026? 18 minutos",
+      "title": "OpenClaw vs Hermes Agent: Which One Is Actually Better in 2026?",
+      "url": "https://www.youtube.com/watch?v=86Dfgazdu-0"
+    },
+    {
+      "context": "How I Set Up Python for Professional AI Development\nTech With Tim\ne PyCharm, a JetBrains IDE\n26 mil\nhá 2 meses",
+      "label": "How I Set Up Python for Professional AI Development 35 minutos",
+      "title": "How I Set Up Python for Professional AI Development",
+      "url": "https://www.youtube.com/watch?v=PHICGGjN5Pc"
+    },
+    {
+      "context": "I Built The Same App with Every LLM\n26 mil\nhá 3 meses",
+      "label": "I Built The Same App with Every LLM 15 minutos",
+      "title": "I Built The Same App with Every LLM",
+      "url": "https://www.youtube.com/watch?v=Amd6DmoV4NY"
+    },
+    {
+      "context": "My Real AI Coding Workflow (build anything)\n59 mil\nhá 3 meses",
+      "label": "My Real AI Coding Workflow (build anything) 23 minutos",
+      "title": "My Real AI Coding Workflow (build anything)",
+      "url": "https://www.youtube.com/watch?v=gpOfsGW1xRk"
+    },
+    {
+      "context": "I Built the Same App With MiniMax M3 and Composer\n21 mil\nhá 3 meses",
+      "label": "I Built the Same App With MiniMax M3 and Composer 19 minutos",
+      "title": "I Built the Same App With MiniMax M3 and Composer",
+      "url": "https://www.youtube.com/watch?v=da5nLxqbTxE"
+    },
+    {
+      "context": "I Gave Codex a 24/7 Server. Now It Codes While I Sleep.\n25 mil\nhá 3 meses",
+      "label": "I Gave Codex a 24/7 Server. Now It Codes While I Sleep. 23 minutos",
+      "title": "I Gave Codex a 24/7 Server. Now It Codes While I Sleep.",
+      "url": "https://www.youtube.com/watch?v=vQebObsd_Cw"
+    },
+    {
+      "context": "AI Research Papers Are Here (And They're Scary Good)\n13 mil\nhá 3 meses",
+      "label": "AI Research Papers Are Here (And They're Scary Good) 12 minutos e 18 segundos",
+      "title": "AI Research Papers Are Here (And They're Scary Good)",
+      "url": "https://www.youtube.com/watch?v=zvSH4_cgQ6s&pp=0gcJCS8MAYcqIYzv"
+    },
+    {
+      "context": "Build 3 PRODUCTION AI Agents in Python - Full Course (Agentspan)\n35 mil\nhá 3 meses",
+      "label": "Build 3 PRODUCTION AI Agents in Python - Full Course (Agentspan) 1 hora e 20 minutos",
+      "title": "Build 3 PRODUCTION AI Agents in Python - Full Course (Agentspan)",
+      "url": "https://www.youtube.com/watch?v=zFw19qGAeGo"
+    },
+    {
+      "context": "Do THIS Instead of watching endless AI Engineer Roadmaps (DataCamp Review)\n23 mil\nhá 3 meses",
+      "label": "Do THIS Instead of watching endless AI Engineer Roadmaps (DataCamp Review) 15 minutos",
+      "title": "Do THIS Instead of watching endless AI Engineer Roadmaps (DataCamp Review)",
+      "url": "https://www.youtube.com/watch?v=ki0UR5ZP_QY"
+    },
+    {
+      "context": "They'll Fly You to Vegas if You Win This Coding Challenge\n23 mil\nhá 3 meses",
+      "label": "They'll Fly You to Vegas if You Win This Coding Challenge 11 minutos e 14 segundos",
+      "title": "They'll Fly You to Vegas if You Win This Coding Challenge",
+      "url": "https://www.youtube.com/watch?v=vVIvatIpzJ4"
+    },
+    {
+      "context": "The Best LOCAL Agentic Coding Workflow (Complete Guide)\n256 mil\nhá 3 meses",
+      "label": "The Best LOCAL Agentic Coding Workflow (Complete Guide) 33 minutos",
+      "title": "The Best LOCAL Agentic Coding Workflow (Complete Guide)",
+      "url": "https://www.youtube.com/watch?v=hfba9dAT6xE"
+    },
+    {
+      "context": "I Went to the Biggest AI Infrastructure Conference\n36 mil\nhá 3 meses",
+      "label": "I Went to the Biggest AI Infrastructure Conference 12 minutos e 43 segundos",
+      "title": "I Went to the Biggest AI Infrastructure Conference",
+      "url": "https://www.youtube.com/watch?v=nu5TH_lyjqg"
+    },
+    {
+      "context": "Hermes Agent - Full Course & Setup Guide - For COMPLETE Beginners\n160 mil\nhá 3 meses",
+      "label": "Hermes Agent - Full Course & Setup Guide - For COMPLETE Beginners 59 minutos",
+      "title": "Hermes Agent - Full Course & Setup Guide - For COMPLETE Beginners",
+      "url": "https://www.youtube.com/watch?v=mTYxpIRK7xA&pp=0gcJCS8MAYcqIYzv"
+    },
+    {
+      "context": "Cursor just crushed Claude Code\n43 mil\nhá 3 meses",
+      "label": "Cursor just crushed Claude Code 19 minutos",
+      "title": "Cursor just crushed Claude Code",
+      "url": "https://www.youtube.com/watch?v=XOCVdPIhAHg"
+    },
+    {
+      "context": "I Tried 100+ Claude Code Skills. These 6 Are The Best.\n49 mil\nhá 3 meses",
+      "label": "I Tried 100+ Claude Code Skills. These 6 Are The Best. 19 minutos",
+      "title": "I Tried 100+ Claude Code Skills. These 6 Are The Best.",
+      "url": "https://www.youtube.com/watch?v=ZSvcxjNZdxk"
+    },
+    {
+      "context": "STOP Building Apps With Supabase (Use THIS Instead)\n41 mil\nhá 4 meses",
+      "label": "STOP Building Apps With Supabase (Use THIS Instead) 31 minutos",
+      "title": "STOP Building Apps With Supabase (Use THIS Instead)",
+      "url": "https://www.youtube.com/watch?v=W7SCr_ltOE0"
+    },
+    {
+      "context": "AI engineer salary - What to expect: Junior to senior\n43 mil\nhá 4 meses",
+      "label": "AI engineer salary - What to expect: Junior to senior 13 minutos e 12 segundos",
+      "title": "AI engineer salary - What to expect: Junior to senior",
+      "url": "https://www.youtube.com/watch?v=eTBSF411yQ4"
+    },
+    {
+      "context": "How to learn Machine Learning like a GENIUS and not waste time\n197 mil\nhá 4 meses",
+      "label": "How to learn Machine Learning like a GENIUS and not waste time 15 minutos",
+      "title": "How to learn Machine Learning like a GENIUS and not waste time",
+      "url": "https://www.youtube.com/watch?v=_hdUddANh_o&pp=0gcJCS8MAYcqIYzv"
+    },
+    {
+      "context": "How I would learn Python programming FAST (If I could start over)\n73 mil\nhá 4 meses",
+      "label": "How I would learn Python programming FAST (If I could start over) 13 minutos e 37 segundos",
+      "title": "How I would learn Python programming FAST (If I could start over)",
+      "url": "https://www.youtube.com/watch?v=S5tOMUCvPFA&pp=0gcJCS8MAYcqIYzv"
+    },
+    {
+      "context": "I Built the Same App With Claude Code and Codex\n151 mil\nhá 4 meses",
+      "label": "I Built the Same App With Claude Code and Codex 27 minutos",
+      "title": "I Built the Same App With Claude Code and Codex",
+      "url": "https://www.youtube.com/watch?v=E2UgYp2vh5U"
+    },
+    {
+      "context": "The Complete Guide to AI Agents in 2026 (And How to Actually Use Them)\n31 mil\nhá 4 meses",
+      "label": "The Complete Guide to AI Agents in 2026 (And How to Actually Use Them) 20 minutos",
+      "title": "The Complete Guide to AI Agents in 2026 (And How to Actually Use Them)",
+      "url": "https://www.youtube.com/watch?v=LNkAW4SSgdY"
+    },
+    {
+      "context": "Devin AI Is the Future of Coding… Full Tutorial\n75 mil\nhá 4 meses",
+      "label": "Devin AI Is the Future of Coding… Full Tutorial 38 minutos",
+      "title": "Devin AI Is the Future of Coding… Full Tutorial",
+      "url": "https://www.youtube.com/watch?v=GFlFABWeqDc"
+    },
+    {
+      "context": "AI Web Scraping Is Insanely Good | Browserbase Full Tutorial\n27 mil\nhá 4 meses",
+      "label": "AI Web Scraping Is Insanely Good | Browserbase Full Tutorial 20 minutos",
+      "title": "AI Web Scraping Is Insanely Good | Browserbase Full Tutorial",
+      "url": "https://www.youtube.com/watch?v=XTQTJoSfeMg"
+    },
+    {
+      "context": "Claude Tutorial - How to Connect Claude to ANY Tool\n46 mil\nhá 4 meses",
+      "label": "Claude Tutorial - How to Connect Claude to ANY Tool 12 minutos e 47 segundos",
+      "title": "Claude Tutorial - How to Connect Claude to ANY Tool",
+      "url": "https://www.youtube.com/watch?v=bzV2EwDyxpk"
+    },
+    {
+      "context": "Claude Just Got a Superpower No One's Talking About\n53 mil\nhá 4 meses",
+      "label": "Claude Just Got a Superpower No One's Talking About 15 minutos",
+      "title": "Claude Just Got a Superpower No One's Talking About",
+      "url": "https://www.youtube.com/watch?v=rrylSizvnSg"
+    },
+    {
+      "context": "One AI Agent Isn't Enough Anymore\n15 mil\nhá 4 meses",
+      "label": "One AI Agent Isn't Enough Anymore 16 minutos",
+      "title": "One AI Agent Isn't Enough Anymore",
+      "url": "https://www.youtube.com/watch?v=SVz-y-pD6s4"
+    },
+    {
+      "context": "Codex is INSANE - Everything New in 10 Minutes\n71 mil\nhá 4 meses",
+      "label": "Codex is INSANE - Everything New in 10 Minutes 9 minutos e 16 segundos",
+      "title": "Codex is INSANE - Everything New in 10 Minutes",
+      "url": "https://www.youtube.com/watch?v=t2G0L0cqktw"
+    },
+    {
+      "context": "How to Build an App With Claude Code - Full Tutorial for Beginners\n180 mil\nhá 4 meses",
+      "label": "How to Build an App With Claude Code - Full Tutorial for Beginners 24 minutos",
+      "title": "How to Build an App With Claude Code - Full Tutorial for Beginners",
+      "url": "https://www.youtube.com/watch?v=GUgxx6fMiR8"
+    },
+    {
+      "context": "Claude Code + Nano Banana 2 = This Changes Everything\n48 mil\nhá 4 meses",
+      "label": "Claude Code + Nano Banana 2 = This Changes Everything 16 minutos",
+      "title": "Claude Code + Nano Banana 2 = This Changes Everything",
+      "url": "https://www.youtube.com/watch?v=seTDT8Rxryc"
+    },
+    {
+      "context": "I reviewed 20 AI engineering courses, here are my top 5\n66 mil\nhá 4 meses",
+      "label": "I reviewed 20 AI engineering courses, here are my top 5 13 minutos",
+      "title": "I reviewed 20 AI engineering courses, here are my top 5",
+      "url": "https://www.youtube.com/watch?v=HFmoNVx6vTA"
+    },
+    {
+      "context": "The State of Software Engineering in 2026\n93 mil\nhá 4 meses",
+      "label": "The State of Software Engineering in 2026 11 minutos e 10 segundos",
+      "title": "The State of Software Engineering in 2026",
+      "url": "https://www.youtube.com/watch?v=WOPIoZuD1og"
+    },
+    {
+      "context": "I gave Claude its own database, here's what happened\n25 mil\nhá 5 meses",
+      "label": "I gave Claude its own database, here's what happened 13 minutos e 33 segundos",
+      "title": "I gave Claude its own database, here's what happened",
+      "url": "https://www.youtube.com/watch?v=vJBAzdOACD8"
+    },
+    {
+      "context": "How to Make an App With AI - 9 Steps\n24 mil\nhá 5 meses",
+      "label": "How to Make an App With AI - 9 Steps 22 minutos",
+      "title": "How to Make an App With AI - 9 Steps",
+      "url": "https://www.youtube.com/watch?v=xEr0hRbK_Xo"
+    },
+    {
+      "context": "Do THIS instead of watching endless tutorials — how to learn Python for AI\n48 mil\nhá 5 meses",
+      "label": "Do THIS instead of watching endless tutorials — how to learn Python for AI 12 minutos e 37 segundos",
+      "title": "Do THIS instead of watching endless tutorials — how to learn Python for AI",
+      "url": "https://www.youtube.com/watch?v=DZIymFrEXik"
+    },
+    {
+      "context": "Local Models Got a HUGE Upgrade - Full Guide (Ollama/OpenClaw)\n71 mil\nhá 5 meses",
+      "label": "Local Models Got a HUGE Upgrade - Full Guide (Ollama/OpenClaw) 18 minutos",
+      "title": "Local Models Got a HUGE Upgrade - Full Guide (Ollama/OpenClaw)",
+      "url": "https://www.youtube.com/watch?v=73UEJxAWzb0"
+    },
+    {
+      "context": "Hermes Agent Full Tutorial for Beginners | Setup Guide\n102 mil\nhá 5 meses",
+      "label": "Hermes Agent Full Tutorial for Beginners | Setup Guide 28 minutos",
+      "title": "Hermes Agent Full Tutorial for Beginners | Setup Guide",
+      "url": "https://www.youtube.com/watch?v=1ve4Atbqmoo"
+    },
+    {
+      "context": "Build an AI Email Assistant with Code | Full AI Tutorial\n55 mil\nhá 5 meses",
+      "label": "Build an AI Email Assistant with Code | Full AI Tutorial 1 hora e 28 minutos",
+      "title": "Build an AI Email Assistant with Code | Full AI Tutorial",
+      "url": "https://www.youtube.com/watch?v=8FBGb0NS_zc"
+    },
+    {
+      "context": "I Built an AI Agent in 20 Minutes - Here's How\n69 mil\nhá 5 meses",
+      "label": "I Built an AI Agent in 20 Minutes - Here's How 19 minutos",
+      "title": "I Built an AI Agent in 20 Minutes - Here's How",
+      "url": "https://www.youtube.com/watch?v=Xx18YRrK-Uk"
+    },
+    {
+      "context": "I Replaced OpenClaw With Perplexity Computer…\n23 mil\nhá 5 meses",
+      "label": "I Replaced OpenClaw With Perplexity Computer… 17 minutos",
+      "title": "I Replaced OpenClaw With Perplexity Computer…",
+      "url": "https://www.youtube.com/watch?v=fgr6Sm-dmmM"
+    }
+  ]
+}

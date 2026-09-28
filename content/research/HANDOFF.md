@@ -1,3 +1,7 @@
+# Diretriz vigente
+
+O encerramento abaixo foi substituído pela orientação explícita de 2026-09-28: retomar a coleta de transcrições de todos os vídeos das fontes prioritárias. Fontes complementares estão autorizadas. Ver `TRANSCRIPTION_PLAN.md`, `video-inventory/coverage.json` e `TRANSCRIPT_BATCH-2026-09-28.md`.
+
 # Encerramento do ciclo inicial
 
 Em 28/09/2026, o Diretor confirmou a integração de `52262547c382358a8e155953649b8520420b9178` como `0da1615`, repetiu os nove testes e aceitou o lote com suas lacunas documentadas. O pacote contém 23 recursos e 16 evidências. O histórico completo segue pendente.

@@ -1,0 +1,491 @@
+{
+  "observed_at": "2026-09-28T19:15:02.758Z",
+  "openai": [
+    {
+      "title": "Codex for (almost) everything\n\nSee the latest Codex app updates for working across more of the software development lifecycle.\n\nVideo",
+      "url": "https://www.youtube.com/watch?v=Lm7-yFZ5fZQ"
+    },
+    {
+      "title": "Introducing the Codex app\n\nSee the Codex app in action and how it helps you build and ship faster.\n\nVideo",
+      "url": "https://www.youtube.com/watch?v=HFM3se4lNiw"
+    },
+    {
+      "title": "Codex in JetBrains IDEs\n\nHow to use Codex inside JetBrains IDEs like Rider, IntelliJ, PyCharm, and WebStorm.\n\nVideo",
+      "url": "https://www.youtube.com/watch?v=1XkVsE9-ZK4"
+    },
+    {
+      "title": "Codex code review\n\nWalkthrough of how Codex drives end-to-end pull request reviews with the new onboarding flow.\n\nVideo",
+      "url": "https://www.youtube.com/watch?v=HwbSWVg5Ln4"
+    },
+    {
+      "title": "Build beautiful frontends with OpenAI Codex\n\nLearn how OpenAI Codex's multimodal abilities accelerate frontend development.\n\nVideo",
+      "url": "https://www.youtube.com/watch?v=fK_bm84N7bs"
+    },
+    {
+      "title": "Context Engineering & Coding Agents with Cursor\n\nSession on structuring context for agent workflows inside the Cursor editor.\n\nVideo",
+      "url": "https://www.youtube.com/watch?v=3KAI__5dUn0"
+    },
+    {
+      "title": "OpenAI Codex in your code editor\n\nWalkthrough of the Codex IDE extension for VS Code, Cursor, and other forks.\n\nVideo",
+      "url": "https://www.youtube.com/watch?v=sd21Igx4HtA"
+    },
+    {
+      "title": "Shipping with Codex\n\nDevDay talk on building, testing, and delivering products with Codex.\n\nVideo",
+      "url": "https://www.youtube.com/watch?v=Gr41tYOzE20"
+    },
+    {
+      "title": "Sora, ImageGen, and Codex: The Next Wave of Creative Production\n\nPanel discussion on combining Sora, ImageGen, and Codex for media creation.\n\nVideo",
+      "url": "https://www.youtube.com/watch?v=70ush8Vknx8"
+    },
+    {
+      "title": "Using OpenAI Codex CLI with GPT-5-Codex\n\nOverview of running the Codex CLI locally with GPT-5-Codex.\n\nVideo",
+      "url": "https://www.youtube.com/watch?v=iqNzfK4_meQ"
+    },
+    {
+      "title": "Codex intro\n\nIntroductory video introducing Codex and its capabilities.\n\nVideo",
+      "url": "https://www.youtube.com/watch?v=hhdpnbfH6NU"
+    }
+  ],
+  "newsletter": [
+    {
+      "title": "Sponsors",
+      "url": "https://creatoreconomy.so/p/sponsorships"
+    },
+    {
+      "title": "We Built Grok Bot. Here Are Our 14 Best Bots | Peng Zheng & Lauren Tan",
+      "url": "https://creatoreconomy.so/p/grok-bot-team-14-best-bots-peng-zheng-lauren-tan"
+    },
+    {
+      "title": "The 14 bots Grok Bot’s design and engineering leads use for work and life, from Peng’s design bot to Lauren’s eng lead bot that manages a team of eng…",
+      "url": "https://creatoreconomy.so/p/grok-bot-team-14-best-bots-peng-zheng-lauren-tan"
+    },
+    {
+      "title": "My Personal AI Course Is Live! Copy My AI System to Take Work Off Your Plate",
+      "url": "https://creatoreconomy.so/p/my-personal-ai-course-is-live-now"
+    },
+    {
+      "title": "Copy my exact AI workflows to save time and automate busywork in 25+ bite-sized lessons. Plus get $600+ in free access to my favorite AI tools.",
+      "url": "https://creatoreconomy.so/p/my-personal-ai-course-is-live-now"
+    },
+    {
+      "title": "How to Save Money Now with ChatGPT Finances (6 Real Use Cases) | Ethan Bloch",
+      "url": "https://creatoreconomy.so/p/how-to-save-money-now-with-chatgpt-finances-ethan-boch"
+    },
+    {
+      "title": "6 prompts to help you use ChatGPT Finance to save money and time, plus 4 lessons from how Ethan’s team built the product",
+      "url": "https://creatoreconomy.so/p/how-to-save-money-now-with-chatgpt-finances-ethan-boch"
+    },
+    {
+      "title": "My 3-Step System to Automate 90% of My Content Workflow with AI",
+      "url": "https://creatoreconomy.so/p/my-3-step-system-to-automate-90-of"
+    },
+    {
+      "title": "How I turned 15 manual steps into 8 AI skills that save me 5+ hours a week, and how you can do the same for your own work",
+      "url": "https://creatoreconomy.so/p/my-3-step-system-to-automate-90-of"
+    },
+    {
+      "title": "Stop Building AI Agents. Start Building AI Employees (Live Demo) | Pedro Franceschi",
+      "url": "https://creatoreconomy.so/p/stop-building-ai-agents-build-ai-employees-instead-pedro-franceschi-brex"
+    },
+    {
+      "title": "How to think of building agents as onboarding AI employees with a specific job, skill set, manager, and budget. Plus how Brex’s CEO uses AI to run his…",
+      "url": "https://creatoreconomy.so/p/stop-building-ai-agents-build-ai-employees-instead-pedro-franceschi-brex"
+    },
+    {
+      "title": "GPT-6 Astra Is Both Incredible and Frustrating",
+      "url": "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and"
+    },
+    {
+      "title": "What OpenAI’s new model does well, where it falls short, and how I’m using it.",
+      "url": "https://creatoreconomy.so/p/gpt-6-astra-is-both-incredible-and"
+    },
+    {
+      "title": "How AI Can Help Kids Think for Themselves | Sue Khim",
+      "url": "https://creatoreconomy.so/p/how-ai-can-help-kids-think-for-themselves-sue-khim"
+    },
+    {
+      "title": "When AI should offer a hint, when it should step back, and how to tell if your child is learning",
+      "url": "https://creatoreconomy.so/p/how-ai-can-help-kids-think-for-themselves-sue-khim"
+    },
+    {
+      "title": "Which AI Personal Agents Can You Trust With Your Data?",
+      "url": "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust"
+    },
+    {
+      "title": "I compared Instinct, Grok Bot, ChatGPT, and Hermes to see what they can access and how they handle your data. Plus, how to use AI to secure your Google…",
+      "url": "https://creatoreconomy.so/p/instinct-vs-grok-bot-vs-chatgpt-vs-hermes-which-ai-agent-can-you-trust"
+    },
+    {
+      "title": "How Non-Coders Are Vibe Coding $100K+ Businesses With AI | Amol Jain",
+      "url": "https://creatoreconomy.so/p/how-non-coders-are-vibe-coding-100k-businesses-with-ai-amol-jain-replit"
+    },
+    {
+      "title": "3 examples of vibe-coded apps that reached six figures in revenue, plus 4 steps to turn your prototype into a real business, including publishing…",
+      "url": "https://creatoreconomy.so/p/how-non-coders-are-vibe-coding-100k-businesses-with-ai-amol-jain-replit"
+    },
+    {
+      "title": "ChatGPT vs. Claude vs. Grok vs. Gemini: The Best AI Across 10 Real Use Cases",
+      "url": "https://creatoreconomy.so/p/chatgpt-vs-claude-vs-grok-vs-gemini-best-ai-model-2026"
+    },
+    {
+      "title": "My picks for the best AI models and tools across 10 everyday tasks, plus a preview of my upcoming course for paid subscribers",
+      "url": "https://creatoreconomy.so/p/chatgpt-vs-claude-vs-grok-vs-gemini-best-ai-model-2026"
+    },
+    {
+      "title": "How to Build Better AI Evals with Claude Code in 5 Steps | Shreya & Hamel",
+      "url": "https://creatoreconomy.so/p/how-to-build-better-ai-evals-with-claude-code-shreya-hamel"
+    },
+    {
+      "title": "Watch my favorite eval experts do a live audit of the evals that I built for my skills and I promise you’ll learn something new. Plus, their new free…",
+      "url": "https://creatoreconomy.so/p/how-to-build-better-ai-evals-with-claude-code-shreya-hamel"
+    },
+    {
+      "title": "My Mom Survived Breast Cancer Three Times. Now We're Fighting It Again With AI's Help",
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three"
+    },
+    {
+      "title": "My mom’s story and how I’m using AI to navigate the healthcare system",
+      "url": "https://creatoreconomy.so/p/my-mom-survived-breast-cancer-three"
+    },
+    {
+      "title": "How I Run My 1.5M+ Follower Content Business With Codex | Riley Brown",
+      "url": "https://creatoreconomy.so/p/how-i-run-my-content-business-with-codex-riley-brown"
+    },
+    {
+      "title": "Riley revealed his full AI stack and showed how he uses Codex to research video topics, write compelling hooks, and create viral thumbnails.",
+      "url": "https://creatoreconomy.so/p/how-i-run-my-content-business-with-codex-riley-brown"
+    },
+    {
+      "title": "How We Use Computers Is About to Change Forever",
+      "url": "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai"
+    },
+    {
+      "title": "Why we’ll soon be orchestrating agents in the cloud with voice instead of manually using our keyboard, mouse, and laptop",
+      "url": "https://creatoreconomy.so/p/how-we-use-computers-is-about-to-change-forever-ai"
+    },
+    {
+      "title": "5 Rules for Building AI Agents That Work in Production | Nan Yu & Jacob Shumway",
+      "url": "https://creatoreconomy.so/p/5-rules-for-building-ai-agents-in-production-linear-nan-jacob"
+    },
+    {
+      "title": "A behind-the-scenes look at building a production AI agent end to end, including how to give agents tools to find the context they need and run evals to…",
+      "url": "https://creatoreconomy.so/p/5-rules-for-building-ai-agents-in-production-linear-nan-jacob"
+    },
+    {
+      "title": "Use My /Human-Review Skill to Edit HTML and Markdown Files Visually",
+      "url": "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually"
+    },
+    {
+      "title": "Tired of giving AI feedback in chat? My new skill lets you edit files, leave comments, and send feedback directly to your agent using a beautiful visual…",
+      "url": "https://creatoreconomy.so/p/use-my-human-review-skill-to-edit-html-markdown-visually"
+    },
+    {
+      "title": "Hermes Co-Founder on Building an AI Agent That Improves Itself | Karan Malhotra",
+      "url": "https://creatoreconomy.so/p/hermes-co-founder-on-building-an-ai-agent-that-improves-itself-karan-malhotra"
+    },
+    {
+      "title": "How Hermes keeps your context portable across models, builds and cleans up its own skills, and helped Karan modify his childhood Sonic game",
+      "url": "https://creatoreconomy.so/p/hermes-co-founder-on-building-an-ai-agent-that-improves-itself-karan-malhotra"
+    },
+    {
+      "title": "How to Build Production-Ready Apps with AI | Colin Matthews",
+      "url": "https://creatoreconomy.so/p/how-to-build-production-ready-apps-with-ai-colin-matthews"
+    },
+    {
+      "title": "Colin explains the architecture, deployment, security, and tool choices behind turning a Codex or Claude Code prototype into a production-ready app.",
+      "url": "https://creatoreconomy.so/p/how-to-build-production-ready-apps-with-ai-colin-matthews"
+    },
+    {
+      "title": "Full Tutorial: From Idea to App with Claude Design and Claude Code in 25 Minutes",
+      "url": "https://creatoreconomy.so/p/full-tutorial-from-idea-to-app-with"
+    },
+    {
+      "title": "My six-step process to define the problem, create a design.md, prototype in Claude Design, and turn an HTML spec into a working app.",
+      "url": "https://creatoreconomy.so/p/full-tutorial-from-idea-to-app-with"
+    },
+    {
+      "title": "How to Use Codex for Work: My Complete System at OpenAI | Jason Liu",
+      "url": "https://creatoreconomy.so/p/how-to-use-codex-for-work-my-complete-system-at-openai-jason-liu"
+    },
+    {
+      "title": "Real prompts to build a chief of staff for Slack and email, mine past sessions for new AI skills, and run long tasks with verifiable goals",
+      "url": "https://creatoreconomy.so/p/how-to-use-codex-for-work-my-complete-system-at-openai-jason-liu"
+    },
+    {
+      "title": "Use My /No-AI-Slop Skill to Remove 20+ Patterns of AI Slop From Your Writing",
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns"
+    },
+    {
+      "title": "Plus my honest reflections on how to use AI to edit without giving in to the dark side",
+      "url": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns"
+    },
+    {
+      "title": "AI Native Design with Cursor, Figma, and Code | Julie Xu",
+      "url": "https://creatoreconomy.so/p/ai-native-design-with-cursor-figma"
+    },
+    {
+      "title": "Julie walks through how she uses Figma, Cursor, and AI to move from design exploration to working product.",
+      "url": "https://creatoreconomy.so/p/ai-native-design-with-cursor-figma"
+    },
+    {
+      "title": "How I Plan, Build, and Run Loops with Claude Code in 40 Minutes | Thariq Shihipar",
+      "url": "https://creatoreconomy.so/p/how-i-plan-build-and-run-loops-with-claude-code-thariq-shihipar"
+    },
+    {
+      "title": "The exact goals, workflows, and planning techniques Thariq uses to get more ambitious work done with Claude Code.",
+      "url": "https://creatoreconomy.so/p/how-i-plan-build-and-run-loops-with-claude-code-thariq-shihipar"
+    },
+    {
+      "title": "How I Use ChatGPT Work and GPT-5.6 for (Almost) Everything",
+      "url": "https://creatoreconomy.so/p/how-i-use-chatgpt-work-and-gpt-5-6-for-everything-tutorial"
+    },
+    {
+      "title": "A 7-step beginner guide to choosing the right GPT-5.6 model, connecting your apps, managing your email and calendar, automating work, and building Sites",
+      "url": "https://creatoreconomy.so/p/how-i-use-chatgpt-work-and-gpt-5-6-for-everything-tutorial"
+    }
+  ],
+  "builder": [
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/stop-watching-your-agent-work"
+    },
+    {
+      "title": "Agent-Native",
+      "url": "https://www.builder.io/blog/topics/agent-native"
+    },
+    {
+      "title": "Stop watching your agent work",
+      "url": "https://www.builder.io/blog/stop-watching-your-agent-work"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/stop-watching-your-agent-work"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/the-internet-is-not-ready-for-the-agentic-wave"
+    },
+    {
+      "title": "AI Agents",
+      "url": "https://www.builder.io/blog/topics/ai-agents"
+    },
+    {
+      "title": "The Internet Is Not Ready for the Agentic Wave",
+      "url": "https://www.builder.io/blog/the-internet-is-not-ready-for-the-agentic-wave"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/what-is-jev"
+    },
+    {
+      "title": "AI Tools",
+      "url": "https://www.builder.io/blog/topics/ai-tools"
+    },
+    {
+      "title": "What is Jev and how to use it",
+      "url": "https://www.builder.io/blog/what-is-jev"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/the-real-reason-coding-agents-get-more-done"
+    },
+    {
+      "title": "Agent-Native",
+      "url": "https://www.builder.io/blog/topics/agent-native"
+    },
+    {
+      "title": "The Real Reason Coding Agents Get More Done",
+      "url": "https://www.builder.io/blog/the-real-reason-coding-agents-get-more-done"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/de-slop-ai-generated-codebase"
+    },
+    {
+      "title": "AI Tools",
+      "url": "https://www.builder.io/blog/topics/ai-tools"
+    },
+    {
+      "title": "How to De-Slop an AI-Generated Codebase",
+      "url": "https://www.builder.io/blog/de-slop-ai-generated-codebase"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/introducing-agent-native-analytics"
+    },
+    {
+      "title": "Agent-Native",
+      "url": "https://www.builder.io/blog/topics/agent-native"
+    },
+    {
+      "title": "Introducing Agent Native Analytics",
+      "url": "https://www.builder.io/blog/introducing-agent-native-analytics"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/builder-product-name-change"
+    },
+    {
+      "title": "Builder News",
+      "url": "https://www.builder.io/blog/topics/builder-news"
+    },
+    {
+      "title": "Builder Code and Builder Content: same products, same features, clearer names",
+      "url": "https://www.builder.io/blog/builder-product-name-change"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/agent-native-clips-captures-browser-errors"
+    },
+    {
+      "title": "Agent-Native",
+      "url": "https://www.builder.io/blog/topics/agent-native"
+    },
+    {
+      "title": "Setting Up Agent-Native Clips: The Free Loom Alternative That Captures Browser Errors",
+      "url": "https://www.builder.io/blog/agent-native-clips-captures-browser-errors"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/connecting-teams-agentic-apps"
+    },
+    {
+      "title": "Agent-Native",
+      "url": "https://www.builder.io/blog/topics/agent-native"
+    },
+    {
+      "title": "Connecting work across teams with agentic apps",
+      "url": "https://www.builder.io/blog/connecting-teams-agentic-apps"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/survive-ai-mandate"
+    },
+    {
+      "title": "Agent-Native",
+      "url": "https://www.builder.io/blog/topics/agent-native"
+    },
+    {
+      "title": "How to Survive an AI Mandate",
+      "url": "https://www.builder.io/blog/survive-ai-mandate"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/gmail-alternatives"
+    },
+    {
+      "title": "AI Tools",
+      "url": "https://www.builder.io/blog/topics/ai-tools"
+    },
+    {
+      "title": "The 9 best Gmail alternatives with useful AI in 2026",
+      "url": "https://www.builder.io/blog/gmail-alternatives"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/agent-native-design-figma-alternative"
+    },
+    {
+      "title": "Agent-Native",
+      "url": "https://www.builder.io/blog/topics/agent-native"
+    },
+    {
+      "title": "Introducing Agent-Native Design: An Open-Source Figma Alternative",
+      "url": "https://www.builder.io/blog/agent-native-design-figma-alternative"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/powerpoint-alternatives"
+    },
+    {
+      "title": "AI Tools",
+      "url": "https://www.builder.io/blog/topics/ai-tools"
+    },
+    {
+      "title": "The 12 Best PowerPoint Alternatives in 2026",
+      "url": "https://www.builder.io/blog/powerpoint-alternatives"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/best-google-analytics-alternatives"
+    },
+    {
+      "title": "AI Tools",
+      "url": "https://www.builder.io/blog/topics/ai-tools"
+    },
+    {
+      "title": "Best Google Analytics Alternatives for 2026",
+      "url": "https://www.builder.io/blog/best-google-analytics-alternatives"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/stop-rebuilding-the-same-internal-tools"
+    },
+    {
+      "title": "Agent-Native",
+      "url": "https://www.builder.io/blog/topics/agent-native"
+    },
+    {
+      "title": "Stop Rebuilding the Same Internal Tools",
+      "url": "https://www.builder.io/blog/stop-rebuilding-the-same-internal-tools"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/your-app-is-your-agent-building-agent-native-applications"
+    },
+    {
+      "title": "Agent-Native",
+      "url": "https://www.builder.io/blog/topics/agent-native"
+    },
+    {
+      "title": "Your App Is Your Agent: Building Agent-Native Applications",
+      "url": "https://www.builder.io/blog/your-app-is-your-agent-building-agent-native-applications"
+    },
+    {
+      "title": "",
+      "url": "https://www.builder.io/blog/page/2"
+    }
+  ],
+  "academy": [
+    {
+      "title": "Claude Code 101\n\nAn agentic coding tool that lives in your terminal. Learn what Claude Code is, how it works, and the core workflows for getting real work done with it.\n\nCourse\n·\n12 lessons · 1 quiz\n·\n1.5 hr",
+      "url": "https://academy.claude.com/courses/claude-code-101"
+    },
+    {
+      "title": "Claude Code in action\n\nRun long, hands-off Claude Code sessions you can trust: steer, configure, automate, and verify\n\nCourse\n·\n9 lessons · 1 quiz\n·\n1 hr",
+      "url": "https://academy.claude.com/courses/claude-code-in-action"
+    },
+    {
+      "title": "Claude Platform 101\n\nThis course teaches developers to build on the Claude Platform from the ground up, whether you've made a few API calls or have only used Claude through a chat window.\n\nCourse\n·\n13 lessons · 1 quiz\n·\n1.5 hr",
+      "url": "https://academy.claude.com/courses/claude-platform-101"
+    },
+    {
+      "title": "Introduction to agent skills\n\nBuild, configure, and share skills in Claude Code — reusable markdown instructions that Claude applies automatically to matching tasks. Covers creating your first skill through team distribution and troubleshooting.\n\nCourse\n·\n6 lessons\n·\n1 hr",
+      "url": "https://academy.claude.com/courses/introduction-to-agent-skills"
+    },
+    {
+      "title": "Introduction to subagents\n\nDecompose complex tasks across parallel Claude subagents and orchestrate them deterministically.\n\nCourse\n·\n4 lessons\n·\n45 min",
+      "url": "https://academy.claude.com/courses/introduction-to-subagents"
+    },
+    {
+      "title": "Building with the Claude API\n\nThe full spectrum of working with Anthropic models using the Claude API: prompting, tool use, RAG, agents, MCP, and production patterns.\n\nCourse\n·\n67 lessons · 8 quizzes\n·\n9 hr",
+      "url": "https://academy.claude.com/courses/building-with-the-claude-api"
+    },
+    {
+      "title": "Amazon Bedrock\n65 lessons · 8 quizzes",
+      "url": "https://academy.claude.com/courses/claude-with-amazon-bedrock"
+    },
+    {
+      "title": "Google Cloud\n66 lessons · 9 quizzes",
+      "url": "https://academy.claude.com/courses/claude-with-google-cloud-s-vertex-ai"
+    },
+    {
+      "title": "Introduction to Model Context Protocol\nCourse\n10 lessons · 1 quiz",
+      "url": "https://academy.claude.com/courses/introduction-to-model-context-protocol"
+    },
+    {
+      "title": "Model Context Protocol: Advanced topics\nCourse\n11 lessons · 1 quiz",
+      "url": "https://academy.claude.com/courses/model-context-protocol-advanced-topics"
+    }
+  ]
+}
