@@ -1,5 +1,8 @@
 import type { Locale } from "./course-schema";
 const keys = ["chooseLesson", "nextLesson", "betaReview", "allDone", "allDoneBody"] as const;
+const exampleFiles: Record<Locale, string> = {
+  "pt-BR": "Arquivos de exemplo", en: "Example files", es: "Archivos de ejemplo", fr: "Fichiers d’exemple", de: "Beispieldateien", ja: "サンプルファイル", hi: "उदाहरण फ़ाइलें", id: "Berkas contoh", ar: "ملفات الأمثلة", ko: "예제 파일", "zh-CN": "示例文件",
+};
 const rows: Record<Locale, string[]> = {
   "pt-BR": ["Selecionar aula", "Próxima aula", "Beta do hackathon · conteúdo em revisão", "Seu percurso está registrado.", "Você concluiu as verificações e registrou as práticas nesta ferramenta. As práticas externas são autodeclaradas. Revise as aulas ou experimente a outra ferramenta."],
   en: ["Choose lesson", "Next lesson", "Hackathon beta · content under review", "Your learning path is recorded.", "You completed the checks and recorded your practice with this tool. External practice is self-reported. Review the lessons or try the other tool."],
@@ -15,5 +18,5 @@ const rows: Record<Locale, string[]> = {
 };
 export const classroomUi = Object.fromEntries(Object.entries(rows).map(([locale, row]) => {
   if (row.length !== keys.length) throw new Error(`Missing classroom UI labels: ${locale}`);
-  return [locale, Object.fromEntries(keys.map((key, index) => [key, row[index]]))];
-})) as Record<Locale, Record<typeof keys[number], string>>;
+  return [locale, { ...Object.fromEntries(keys.map((key, index) => [key, row[index]])), exampleFiles: exampleFiles[locale as Locale] }];
+})) as Record<Locale, Record<typeof keys[number] | "exampleFiles", string>>;

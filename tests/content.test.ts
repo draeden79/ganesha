@@ -64,3 +64,21 @@ test("a listed draft is still excluded unless the explicit demo scope is used", 
   draft.lessons[0].status = "ready";
   assert.equal(adaptCourse(draft,catalog as LocaleCatalog).lessons.length,1);
 });
+
+test("adapter preserves content block order and avoids repeating identical feedback", () => {
+  const copy = structuredClone(source);
+  const step = copy.lessons[0].steps[0];
+  step.blocks = [
+    { id: "test.intro", kind: "paragraph", textKey: step.titleKey },
+    { id: "test.code", kind: "code", code: "item,value\na,1" },
+    { id: "test.notice", kind: "callout", textKey: step.objectiveKey },
+  ];
+  const checked = copy.lessons[0].steps.find(item => item.check?.kind === "single-choice")!;
+  if (!checked.check || checked.check.kind !== "single-choice") throw new Error("Expected single-choice fixture");
+  checked.check.successFeedbackKey = checked.check.options[0].feedbackKey;
+  checked.check.retryFeedbackKey = checked.check.options[0].feedbackKey;
+  checked.check.options.forEach(option => { option.feedbackKey = checked.check!.successFeedbackKey; });
+  const adapted = adaptCourse(copy, catalog, { previewLessonIds: demoConfig.lessonIds });
+  assert.deepEqual(adapted.lessons[0].steps[0].contentBlocks?.map(block => block.kind), ["paragraph", "code", "callout"]);
+  assert.equal(adapted.lessons[0].steps.find(item => item.id === checked.id)?.check?.choices[0].feedback, catalog.messages[checked.check.successFeedbackKey].value);
+});

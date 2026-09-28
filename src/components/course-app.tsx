@@ -241,7 +241,7 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
           </div>
           <section className={`stage-preview${stepPosition === 0 ? " merge-start" : ""}`} aria-labelledby="preview-heading">
             <div className="preview-main">
-              <div className="preview-copy"><h2 id="preview-heading">{step.title}</h2><p>{step.objective}</p><p className="preview-result">{step.expectedResult}</p></div>
+              <div className="preview-copy"><h2 id="preview-heading">{step.title}</h2><p>{step.objective}</p>{step.expectedResult !== step.objective && <p className="preview-result">{step.expectedResult}</p>}</div>
               <img className="preview-figure" src="/classroom/images/creative-workshop-transparent.png" alt="" width="300" height="300" />
             </div>
             <div className="preview-bottom"><button className="button primary" disabled={!ready} onClick={() => showStep(step.id)}>{state.complete ? t.review : n.startStep}<Arrow /></button></div>
@@ -282,6 +282,7 @@ export function CourseApp({ course, routeBase = "/course" }: { course: Course; r
               </details>
               <div className="inline-tool-select">{toolSelect}</div>
             </div>
+            {lesson.id === "lesson.automation" && step.practice && <p className="example-files"><span>{c.exampleFiles}: </span><a href="/classroom/exercises/vendas.csv" download>CSV</a><span> · </span><a href="/classroom/exercises/report.py" download>Python</a><span> · </span><a href="/classroom/exercises/csv-report.html" target="_blank" rel="noopener noreferrer">HTML · {localeNames["pt-BR"]}</a></p>}
             <section className="activity">
               {step.practice ? (
                 <form onSubmit={event => { event.preventDefault(); submitPractice(); }}>

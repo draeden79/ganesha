@@ -50,7 +50,7 @@ export function adaptCourse(source: CanonicalCourse, catalog: LocaleCatalog, opt
         if (step.check) {
           if (step.check.kind !== "single-choice" || step.check.correctOptionIds.length !== 1) throw new Error(`Unsupported check kind: ${step.id}`);
           const check = step.check;
-          mapped.check = { prompt: t(check.questionKey), correctChoiceId: check.correctOptionIds[0], choices: check.options.map(option => ({ id: option.id, text: t(option.labelKey), feedback: `${t(option.feedbackKey)} ${t(check.correctOptionIds.includes(option.id) ? check.successFeedbackKey : check.retryFeedbackKey)}` })) };
+          mapped.check = { prompt: t(check.questionKey), correctChoiceId: check.correctOptionIds[0], choices: check.options.map(option => ({ id: option.id, text: t(option.labelKey), feedback: [...new Set([t(option.feedbackKey), t(check.correctOptionIds.includes(option.id) ? check.successFeedbackKey : check.retryFeedbackKey)])].join(" ") })) };
         }
         return mapped;
       }),

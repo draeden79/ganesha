@@ -1,7 +1,7 @@
 node_modules/
 .pnpm-store/
 .next/
-.next-classroom/
+.next-classroom*/
 .env*
 !.env.example
 *.tsbuildinfo
