@@ -16,58 +16,140 @@
     "shortEvidenceRecords": 16,
     "acceptedFullStudyRecords": 0,
     "acceptedVisualDemonstrations": 0,
-    "commits": ["c531c9e", "5226254"],
+    "commits": [
+      "c531c9e",
+      "5226254"
+    ],
     "scope": "Base usada na elaboração original; não é contagem global atual de pesquisa."
   },
   "laterResearchObserved": {
     "source": "content/research/transcripts/manifest.json e mensagem do Devorador nesta rodada",
     "exportedVideos": 3,
-    "transcriptReadReported": ["ntDIxaeo3Wg"],
+    "transcriptReadReported": [
+      "ntDIxaeo3Wg"
+    ],
     "studyStatus": "transcript_analyzed_visual_pending",
     "fullSourceAnalyzed": false,
     "usedToRaiseLessonMaturity": false
   },
   "gates": [
-    {"id": "gate.full-source-study", "status": "not-met", "required": true, "evidenceIds": []},
-    {"id": "gate.educator-integral-review", "status": "not-met", "required": true, "evidenceIds": []},
-    {"id": "gate.visual-demonstration-review", "status": "not-met", "required": true, "evidenceIds": []},
-    {"id": "gate.complete-worked-sequence", "status": "not-met", "required": true, "evidenceIds": []},
-    {"id": "gate.prerequisites-errors-recovery", "status": "not-met", "required": true, "evidenceIds": []},
-    {"id": "gate.assessment-alignment-review", "status": "not-met", "required": true, "evidenceIds": []},
-    {"id": "gate.beginner-pilot", "status": "not-met", "required": false, "requiredForClaims": ["learning-efficacy", "validated-completion-time"], "evidenceIds": []},
-    {"id": "gate.director-pedagogical-acceptance", "status": "not-met", "required": true, "evidenceIds": []}
+    {
+      "id": "gate.full-source-study",
+      "status": "not-met",
+      "required": true,
+      "evidenceIds": []
+    },
+    {
+      "id": "gate.educator-integral-review",
+      "status": "not-met",
+      "required": true,
+      "evidenceIds": []
+    },
+    {
+      "id": "gate.visual-demonstration-review",
+      "status": "not-met",
+      "required": true,
+      "evidenceIds": []
+    },
+    {
+      "id": "gate.complete-worked-sequence",
+      "status": "not-met",
+      "required": true,
+      "evidenceIds": []
+    },
+    {
+      "id": "gate.prerequisites-errors-recovery",
+      "status": "not-met",
+      "required": true,
+      "evidenceIds": []
+    },
+    {
+      "id": "gate.assessment-alignment-review",
+      "status": "not-met",
+      "required": true,
+      "evidenceIds": []
+    },
+    {
+      "id": "gate.beginner-pilot",
+      "status": "not-met",
+      "required": false,
+      "requiredForClaims": [
+        "learning-efficacy",
+        "validated-completion-time"
+      ],
+      "evidenceIds": []
+    },
+    {
+      "id": "gate.director-pedagogical-acceptance",
+      "status": "not-met",
+      "required": true,
+      "evidenceIds": []
+    }
   ],
   "sourceRequests": [
     {
       "id": "L01-S01",
       "owner": "Devorador",
       "status": "requested-not-received",
-      "sourceIds": ["res-codex-prompting"],
-      "stepIds": ["step.first-request.scope", "step.first-request.brief", "step.first-request.request-check", "step.first-request.repair", "step.first-request.transfer"],
+      "sourceIds": [
+        "res-codex-prompting"
+      ],
+      "stepIds": [
+        "step.first-request.scope",
+        "step.first-request.brief",
+        "step.first-request.request-check",
+        "step.first-request.repair",
+        "step.first-request.transfer"
+      ],
       "requiredDeliverable": "Estudo integral da página substantiva com artefato/hash, raciocínio, exemplos, pressupostos, falhas, limites, iteração e trechos localizáveis."
     },
     {
       "id": "L01-S02",
       "owner": "Devorador",
       "status": "requested-not-received",
-      "sourceIds": ["res-claude-agent-basics", "res-claude-plan-build-review", "res-claude-verify-unattended"],
-      "stepIds": ["step.first-request.brief", "step.first-request.run", "step.first-request.request-check", "step.first-request.evidence-check"],
+      "sourceIds": [
+        "res-claude-agent-basics",
+        "res-claude-plan-build-review",
+        "res-claude-verify-unattended"
+      ],
+      "stepIds": [
+        "step.first-request.brief",
+        "step.first-request.run",
+        "step.first-request.request-check",
+        "step.first-request.evidence-check"
+      ],
       "requiredDeliverable": "Estudo integral de cada recurso, distinguindo texto auxiliar e vídeo; sequência, exemplos, critérios, pré-requisitos, falhas, limites CLI/Desktop e inspeção dos visuais necessários."
     },
     {
       "id": "L01-S03",
       "owner": "Devorador",
       "status": "requested-not-received",
-      "sourceIds": ["res-claude-desktop-start", "res-claude-desktop-reference", "res-codex-desktop-start"],
-      "stepIds": ["step.first-request.scope", "step.first-request.brief", "step.first-request.request-check", "step.first-request.run", "step.first-request.evidence-check", "step.first-request.repair", "step.first-request.transfer"],
+      "sourceIds": [
+        "res-claude-desktop-start",
+        "res-claude-desktop-reference",
+        "res-codex-desktop-start"
+      ],
+      "stepIds": [
+        "step.first-request.scope",
+        "step.first-request.brief",
+        "step.first-request.request-check",
+        "step.first-request.run",
+        "step.first-request.evidence-check",
+        "step.first-request.repair",
+        "step.first-request.transfer"
+      ],
       "requiredDeliverable": "Fluxo completo das duas superfícies com pré-requisitos, contexto, envio, revisão e recuperação; artefato/versão e inspeção visual dos passos demonstrados. Afeta variantes anexadas a todas as telas."
     },
     {
       "id": "L01-S04",
       "owner": "Devorador",
       "status": "requested-not-received",
-      "sourceIds": ["res-builder-behavior-tests"],
-      "stepIds": ["step.first-request.repair"],
+      "sourceIds": [
+        "res-builder-behavior-tests"
+      ],
+      "stepIds": [
+        "step.first-request.repair"
+      ],
       "requiredDeliverable": "Artigo integral e caso completo antes/depois/reteste, pressupostos, limitações, contraexemplos e evidências; separar relato do autor de fato de produto."
     }
   ],
@@ -79,5 +161,31 @@
     "educatorReviewRequired": true,
     "directorAcceptanceRequired": true,
     "publishedVersionsImmutable": true
-  }
+  },
+  "educatorTextReviews": [
+    {
+      "resourceId": "res-tim-claude-beginner-video",
+      "researchCommit": "f42b1b5",
+      "reviewPath": "content/curriculum/reviews/TIM_TRANSCRIPT_REVIEW.md",
+      "artifactPath": "content/research/transcripts/local/ntDIxaeo3Wg.en-CA.txt",
+      "artifactSha256": "3f852a6f777ad4c0397c8b9036d3c1e18019f024f37c2a3d06d1761d7b63dffb",
+      "readLines": [
+        [
+          1,
+          360
+        ],
+        [
+          361,
+          711
+        ]
+      ],
+      "cueCount": 706,
+      "fullExportedTextReadByEducator": true,
+      "fullSpeechCoverageVerifiedByEducator": false,
+      "visualReviewByEducator": false,
+      "fullAudiovisualStudyAccepted": false,
+      "decision": "limited-textual-input-only",
+      "raisesLessonMaturity": false
+    }
+  ]
 }
