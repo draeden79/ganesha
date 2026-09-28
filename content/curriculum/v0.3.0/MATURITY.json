@@ -196,5 +196,14 @@
     "End-to-end student workflows in both Desktop tools",
     "Unmapped source references linked to reviewed registry evidence where relevant"
   ],
-  "scope": "Editorial acceptance does not upgrade partial source study, simulated examples or self-reported practice to demonstrated execution."
+  "scope": "Editorial acceptance does not upgrade partial source study, simulated examples or self-reported practice to demonstrated execution.",
+  "visualFunctionalReview": {
+    "status": "accepted",
+    "completedAtUtc": "2026-09-28T22:01Z",
+    "reportedBy": "Artista",
+    "openP0": 0,
+    "openP1": 0,
+    "receipt": "QA_ACCEPTANCE.json",
+    "humanLanguageCertification": false
+  }
 }

@@ -1,0 +1,22 @@
+{
+  "version": "0.3.0",
+  "reviewerRole": "Artista",
+  "reportedByThread": "01a0e953-3680-72c0-ba23-20b892fc7a76",
+  "completedAtUtc": "2026-09-28T22:01Z",
+  "completedAtLocal": "2026-09-28 15:01 America/Los_Angeles",
+  "status": "visual-and-functional-qa-accepted",
+  "localePackageCount": 11,
+  "openP0": 0,
+  "openP1": 0,
+  "reportedChecks": [
+    "Arabic JSON, CSV and scheduling examples preserve literal data and display in the correct LTR order within RTL content.",
+    "The final runtime also isolates technical literals in the assessment question and feedback; both incorrect and correct answer paths were checked.",
+    "German, Korean and Chinese samples of CSV, app and scheduling content passed at390px width."
+  ],
+  "curriculumDeliveryCommit": "fc2efa3",
+  "arabicEditorialFormattingCommit": "9aae28f",
+  "curriculumHandoff": "The complete curriculum was delivered to Director and Artist before15:00; this visual QA acceptance was reported at15:01.",
+  "evidenceScope": "Receipt of the Artist report. The Educator did not independently repeat browser QA in this follow-up.",
+  "humanLanguageReview": "pending",
+  "publicationAuthority": "Director coordinates publication; this receipt does not assert that publication occurred."
+}
