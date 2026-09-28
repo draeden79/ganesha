@@ -50,3 +50,12 @@ test("a draft remains out of released content but is allowed by explicit demo sc
   draft.lessons[0].status = "planned";
   assert.equal(adaptCourse(draft,catalog as LocaleCatalog,{previewLessonIds:demoConfig.lessonIds}).lessons.length,0);
 });
+test("a listed draft is still excluded unless the explicit demo scope is used", () => {
+  const draft = structuredClone(source) as Course;
+  draft.lessons[0].status = "draft";
+  draft.releasedLessonIds = [draft.lessons[0].id];
+  assert.equal(adaptCourse(draft,catalog as LocaleCatalog).lessons.length,0);
+  assert.equal(adaptCourse(draft,catalog as LocaleCatalog,{previewLessonIds:demoConfig.lessonIds}).lessons.length,1);
+  draft.lessons[0].status = "ready";
+  assert.equal(adaptCourse(draft,catalog as LocaleCatalog).lessons.length,1);
+});

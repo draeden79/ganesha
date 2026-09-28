@@ -14,7 +14,10 @@ export function adaptCourse(source: CanonicalCourse, catalog: LocaleCatalog, opt
     translationStatus: messages.every(m => m.status === "reviewed") ? "complete" : "draft",
     translationCoverage: { total: messages.length, translated: messages.filter(m => ["translated", "reviewed"].includes(m.status)).length, reviewed: messages.filter(m => m.status === "reviewed").length },
     title: t(source.titleKey), description: t(source.summaryKey),
-    lessons: source.lessons.filter(l => (options.previewLessonIds ?? source.releasedLessonIds).includes(l.id) && l.status !== "planned").sort((a, b) => a.order - b.order).map(lesson => ({
+    lessons: source.lessons.filter(l => options.previewLessonIds
+      ? options.previewLessonIds.includes(l.id) && l.status !== "planned"
+      : source.releasedLessonIds.includes(l.id) && l.status === "ready"
+    ).sort((a, b) => a.order - b.order).map(lesson => ({
       id: lesson.id, title: t(lesson.titleKey), summary: t(lesson.summaryKey), durationMinutes: lesson.estimatedMinutes,
       steps: lesson.steps.map(step => {
         const mapped: Step = {

@@ -2,7 +2,7 @@
 
 ## Evidência automatizada
 
-- `node --import tsx --test tests/*.test.ts`: 15 testes passaram, incluindo a separação explícita entre prévia navegável e liberação pedagógica.
+- `node --import tsx --test tests/*.test.ts`: 16 testes passaram, incluindo a separação explícita entre prévia navegável e liberação pedagógica. O adaptador normal exige ID listado e status `ready`; um `draft` listado por inconsistência permanece excluído.
 - `tsc --noEmit`: passou.
 - `next build`: compilação, TypeScript e geração de rotas passaram.
 - `node --import tsx scripts/check-content.ts`: 11 idiomas com 112/112 mensagens pedagógicas, 45/45 chaves principais de UI e paridade de IDs de etapas, alternativas e rubricas. As 9 mensagens adicionais de objetivos/estados/recuperação são cobertas por teste. Revisadas por humano: 0/112 por idioma.
