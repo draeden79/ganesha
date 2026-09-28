@@ -1,0 +1,673 @@
+{
+  "lessons": [
+    {
+      "slug": "app-state",
+      "title": "Criar sua primeira lista interativa",
+      "summary": "Peça à IA uma lista e confira uma ação por vez.",
+      "outcome": "Um app local em que adicionar, concluir, reabrir e remover funcionam, com testes registrados.",
+      "prerequisites": [
+        "verification"
+      ],
+      "minutes": 30,
+      "sourceRefs": [
+        "https://developer.mozilla.org/en-US/docs/Glossary/DOM",
+        "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/set_up_a_local_testing_server",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "steps": [
+        {
+          "slug": "state-model",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "O que muda quando você age",
+          "body": "Um app é um programa que responde às suas ações. Aqui, será uma lista de tarefas. Estado é o que a lista mostra agora. Exemplo simulado: A está concluída e B ainda está pendente.",
+          "action": "Descreva a lista com A concluída e B pendente.",
+          "expected": "Duas tarefas: A concluída e B pendente; nenhuma tarefa removida.",
+          "hint": "Concluir marca uma tarefa como feita; remover apaga a tarefa da lista. Nesta primeira versão, recarregar a página pode apagar a lista. Ainda não vamos guardar tarefas para depois.",
+          "criteria": [
+            "Identifica as duas tarefas.",
+            "Distingue concluída de removida."
+          ],
+          "objective": "Reconhecer tarefas e conclusão como estado."
+        },
+        {
+          "slug": "request-state",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Pedir um app pequeno e verificável",
+          "body": "A IA pode criar os arquivos do app a partir de um pedido escrito. Você não precisa escrever código. Exemplo: peça uma lista com botão Adicionar. Primeiro, envie o pedido abaixo para receber um plano, antes de permitir mudanças.",
+          "action": "Envie o pedido abaixo para receber o plano.",
+          "expected": "Plano e index.html com campo rotulado, lista e ações previstas.",
+          "hint": "Uma pasta reúne arquivos no computador. Peça ajuda à IA para criar e selecionar tarefas-app dentro da pasta de prática. index.html será o arquivo do app. Leia o plano antes de autorizar a criação nessa pasta. Não é preciso conta de usuário, servidor de dados ou sincronização. Registre a resposta ou indique que ainda não executou.",
+          "criteria": [
+            "Pasta confirmada antes de criar.",
+            "Plano mantém o escopo local."
+          ],
+          "prompt": "Em tarefas-app, planeje e depois crie index.html independente, sem bibliotecas externas. Quero campo com rótulo, botão Adicionar, lista, concluir/desfazer conclusão e remover por tarefa. Use identificadores únicos, apresente texto como texto e rejeite vazio/espaços com mensagem clara, sem apagar a lista. Comece apenas em memória, sem login, rede ou persistência. Use controles operáveis por teclado. Explique arquivos alterados e como testar cada ação. Aguarde minha revisão do plano antes de editar.",
+          "objective": "Delimitar o app antes de autorizar a criação.",
+          "variants": {
+            "claude": "No Claude Desktop, abra Code e escolha Local e tarefas-app; para começar somente com o plano, escolha Plan antes de enviar. Revise o plano antes de permitir edições.",
+            "codex": "No Codex Desktop, escolha Codex e confira tarefas-app como pasta/projeto ativo. Diga explicitamente que quer revisar o plano antes de editar; não presuma os mesmos controles do Claude."
+          }
+        },
+        {
+          "slug": "serve-local",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Abrir por um endereço local",
+          "body": "O navegador é o programa que abre páginas. Um servidor local ajuda a abrir seu app nele, no seu computador. Exemplo: http://localhost:8000 pode mostrar sua lista. Peça à IA para preparar esse endereço; você não precisa instalar nada agora.",
+          "action": "Peça à IA o endereço para abrir seu app.",
+          "expected": "O navegador abre o app por HTTP e você sabe interromper o servidor.",
+          "hint": "Terminal é a área onde a IA executa comandos e mostra resultados. O pedido abaixo verifica a pasta tarefas-app e Python 3, um programa que pode iniciar o servidor. O comando mostrado é para a IA executar; no Windows, ela pode usar py -3 no lugar de python3. Depois, abra o endereço fornecido. Ctrl+C no terminal para o servidor. Se faltar Python ou a porta estiver ocupada, peça uma alternativa antes de instalar. Registre erros sem dizer que executou o que não executou.",
+          "criteria": [
+            "Endereço HTTP anotado.",
+            "Pasta servida corresponde ao app.",
+            "Pré-requisito ou erro registrado sem fingir execução."
+          ],
+          "prompt": "Confira se Python 3 está disponível e confirme que a pasta de trabalho é tarefas-app. Se estiver disponível, inicie o servidor local para esta pasta, informe a URL exata e como parar. Se não estiver, explique uma alternativa HTTP compatível com meu sistema antes de qualquer instalação. Não publique na internet.",
+          "code": "python3 -m http.server 8000",
+          "objective": "Abrir o app por HTTP e parar o servidor."
+        },
+        {
+          "slug": "check-empty",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Escolher uma regra de entrada",
+          "body": "Validar significa conferir se uma entrada pode ser aceita. Exemplo simulado: duas tarefas já estão na lista e alguém tenta adicionar somente espaços. A mensagem deve ajudar a corrigir essa entrada sem apagar as tarefas existentes.",
+          "action": "Escolha o que deve acontecer com a entrada vazia.",
+          "expected": "Uma regra que distingue entrada inválida de lista vazia.",
+          "hint": "Espaços não formam um nome de tarefa. Pense separadamente no novo texto e nas tarefas já existentes.",
+          "criteria": [
+            "Aplica validação sem perda de estado."
+          ],
+          "check": {
+            "question": "O que deve acontecer?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Criar uma tarefa sem título.",
+                "feedback": "Isso registra uma entrada sem conteúdo e dificulta reconhecer a tarefa."
+              },
+              {
+                "id": "b",
+                "text": "Mostrar orientação e manter as duas tarefas, sem adicionar outra.",
+                "feedback": "Isso permite corrigir a entrada e preserva os dados válidos."
+              },
+              {
+                "id": "c",
+                "text": "Apagar a lista para começar novamente.",
+                "feedback": "A entrada inválida não autoriza apagar tarefas existentes."
+              }
+            ],
+            "correct": "b",
+            "success": "Correto: a validação impede a nova entrada sem destruir a lista.",
+            "retry": "Reavalie separadamente a entrada nova e as tarefas existentes."
+          },
+          "objective": "Validar entrada sem destruir tarefas válidas."
+        },
+        {
+          "slug": "add-two",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Adicionar sem duplicar o clique",
+          "body": "Cada clique em Adicionar deve criar uma tarefa. Exemplo: depois de adicionar A uma vez, aparece uma linha chamada A. Contar as linhas permite conferir o resultado, mesmo que a IA diga que tudo funcionou.",
+          "action": "Adicione A uma vez e conte as linhas.",
+          "expected": "Uma linha após A; duas após B, ambas pendentes.",
+          "hint": "Comece com a lista vazia ou anote a quantidade inicial. Depois, repita o mesmo teste com B: devem existir duas linhas, ambas pendentes. Se um clique criar duas linhas, registre o que aconteceu.",
+          "criteria": [
+            "Cada envio cria exatamente uma tarefa.",
+            "Rótulos correspondem ao que foi digitado."
+          ],
+          "objective": "Confirmar uma tarefa por envio."
+        },
+        {
+          "slug": "toggle-one",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Concluir e desfazer uma só tarefa",
+          "body": "Concluir significa marcar uma tarefa como feita, sem apagá-la. Exemplo: ao concluir A, ela continua na lista com outra marca. B deve permanecer igual. O botão da própria tarefa indica qual linha será alterada.",
+          "action": "Marque somente A como concluída.",
+          "expected": "A alterna entre concluída e pendente; B e a quantidade permanecem iguais.",
+          "hint": "Depois, use o controle de desfazer a conclusão na linha A. A deve voltar a pendente, B não deve mudar e a quantidade deve continuar igual. Registre os dois resultados.",
+          "criteria": [
+            "Conclusão não remove a tarefa.",
+            "Desfazer restaura pendente.",
+            "B não é alterada."
+          ],
+          "objective": "Verificar conclusão e sua reversão."
+        },
+        {
+          "slug": "remove-target",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Remover a tarefa escolhida",
+          "body": "Remover significa tirar uma tarefa da lista. Exemplo: se A e B aparecem, remover B deve deixar somente A. Observar a tarefa que ficou ajuda a perceber se o botão apagou a linha errada.",
+          "action": "Remova B e observe qual tarefa ficou.",
+          "expected": "Apenas a tarefa escolhida é removida; a outra mantém seu estado.",
+          "hint": "Se houver erro, use o pedido abaixo e substitua [resultado real] pelo que viu. Após a correção, repita com A e B. A deve manter sua marca de conclusão. Se funcionar, registre o resultado sem inventar um defeito.",
+          "criteria": [
+            "Remove o alvo certo.",
+            "Reteste inclui outra tarefa para detectar efeitos colaterais."
+          ],
+          "prompt": "No app tarefas-app, havia A e B nessa ordem. Ao clicar em Remover na linha B, observei [resultado real]; esperava somente A, sem mudar sua conclusão. Corrija a seleção da tarefa, preserve adicionar/concluir e explique a mudança. Depois repetirei adicionar A/B, concluir A e remover B. Se não reproduzir, peça o dado que falta.",
+          "objective": "Remover somente a tarefa escolhida."
+        },
+        {
+          "slug": "input-keyboard",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Testar espaços e teclado",
+          "body": "Uma entrada vazia não deve virar tarefa. Exemplo: com A na lista, clicar em Adicionar sem digitar nada deve mostrar uma orientação e manter A. Esse teste verifica se o app ajuda a corrigir um engano.",
+          "action": "Clique em Adicionar com o campo vazio.",
+          "expected": "Entradas vazias são rejeitadas e os controles essenciais funcionam sem mouse.",
+          "hint": "Depois, repita com três espaços. Para conferir o teclado, use Tab para chegar ao campo e aos botões; a marca visível indica o foco, isto é, qual controle receberá a próxima ação. Use Enter ou Espaço conforme o controle. Registre o que não conseguiu testar.",
+          "criteria": [
+            "Vazio e espaços não geram tarefa.",
+            "Dados existentes permanecem.",
+            "Foco e ações por teclado verificados."
+          ],
+          "objective": "Verificar entradas vazias e operação por teclado."
+        },
+        {
+          "slug": "check-regression",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Avaliar uma correção incompleta",
+          "body": "Uma correção pode afetar outra função. Exemplo simulado: remover B agora funciona, mas concluir A apaga A. Mesmo que a IA diga que terminou, o resultado na tela mostra um problema que ainda precisa de correção.",
+          "action": "Escolha se o app já atende ao pedido.",
+          "expected": "Uma decisão que considera a função corrigida e o efeito colateral.",
+          "hint": "Compare remover e concluir. Uma função corrigida não compensa outra que deixou de funcionar; isso é chamado de regressão.",
+          "criteria": [
+            "Reconhece regressão em comportamento antes exigido."
+          ],
+          "check": {
+            "question": "O app atende ao pedido agora?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Sim, porque Remover B passou.",
+                "feedback": "Uma ação passou, mas concluir ainda viola o contrato."
+              },
+              {
+                "id": "b",
+                "text": "Sim, porque a IA declarou conclusão.",
+                "feedback": "A declaração não invalida o comportamento observado."
+              },
+              {
+                "id": "c",
+                "text": "Ainda não: registrar a falha ao concluir e repetir adicionar, concluir e remover após corrigir.",
+                "feedback": "Isso trata a regressão e verifica as funções relacionadas."
+              }
+            ],
+            "correct": "c",
+            "success": "Correto: corrigir inclui preservar e retestar comportamentos exigidos.",
+            "retry": "Considere o efeito sobre Concluir, além do resultado de Remover."
+          },
+          "objective": "Reconhecer efeitos colaterais de uma correção."
+        },
+        {
+          "slug": "state-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Registrar o que já funciona",
+          "body": "Um registro ajuda a lembrar o que você realmente viu. Exemplo: “Adicionar A funcionou; teclado ainda não testado”. Nesta aula, a lista funciona enquanto está aberta. Ainda não há garantia de guardar as tarefas depois de recarregar.",
+          "action": "Escreva um resultado que você observou.",
+          "expected": "Arquivo e evidências de interação separados das funcionalidades que ainda não foram construídas.",
+          "hint": "Complete o registro com passou, falhou ou não testado para adicionar, concluir, desfazer, remover, vazio/espaços e teclado. Guarde index.html e o endereço usado. A plataforma não verifica automaticamente o app externo; esses resultados são seus relatos.",
+          "criteria": [
+            "Distingue passou, falhou e não testado.",
+            "Não afirma persistência a partir de uma única sessão."
+          ],
+          "objective": "Registrar interação sem prometer persistência."
+        }
+      ]
+    },
+    {
+      "slug": "app-storage",
+      "title": "Guardar a lista para depois",
+      "summary": "Confira se suas tarefas voltam quando você abre a página novamente.",
+      "outcome": "Tarefas e conclusão restauradas na mesma origem, com erros visíveis e limites documentados.",
+      "prerequisites": [
+        "app-state"
+      ],
+      "minutes": 30,
+      "sourceRefs": [
+        "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "https://developer.mozilla.org/en-US/docs/Glossary/Origin",
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+      ],
+      "steps": [
+        {
+          "slug": "memory-storage",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Separar tela, memória e armazenamento",
+          "body": "Guardar significa manter os dados para abrir depois. localStorage é um espaço de armazenamento do próprio navegador. Exemplo simulado: A aparece, mas some ao recarregar. Ver A na tela não prova que ela foi guardada nesse espaço.",
+          "action": "Explique por que ver A não prova que A foi guardada.",
+          "expected": "Duas evidências separadas: interação atual e recuperação posterior.",
+          "hint": "A lista pode estar apenas na memória temporária da página. Para testar se foi guardada, recarregue no mesmo navegador e endereço. Guardar para depois também é chamado de persistência.",
+          "criteria": [
+            "Distingue memória de persistência.",
+            "Reconhece a necessidade de recarregar."
+          ],
+          "objective": "Distinguir estado visível de dados persistidos."
+        },
+        {
+          "slug": "request-storage",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Pedir salvamento sem perder funções",
+          "body": "JSON é uma forma de escrever dados em texto organizado. A IA pode usá-lo para guardar sua lista no navegador. Exemplo: ela guarda o nome A e sua marca de concluída juntos, para recuperar ambos depois.",
+          "action": "Envie o pedido para guardar a lista.",
+          "expected": "Plano inclui salvar, restaurar, validar e informar falhas sem apagar dados existentes.",
+          "hint": "Antes de permitir mudanças, peça uma cópia da versão atual. ganesha.tasks.v1 é o nome do espaço reservado para esta lista, chamado chave. O pedido exige tarefas completas, aviso em caso de erro e preservação de dados. “Booleano” significa um valor que só pode ser verdadeiro ou falso. Não autorize limpar todo o armazenamento do navegador.",
+          "criteria": [
+            "Cópia anterior preservada.",
+            "Chave própria e estado completo definidos.",
+            "Falhas de leitura e escrita consideradas."
+          ],
+          "prompt": "No tarefas-app, preserve adicionar/concluir/desfazer/remover e validação. Salve tarefas e conclusão em localStorage na chave ganesha.tasks.v1 usando JSON; restaure ao abrir. Valide lista, ids únicos, texto não vazio e conclusão booleana. Se leitura ou escrita falhar, mostre mensagem útil; não apague dados inválidos nem anuncie salvamento que falhou. Mantenha tarefas visíveis da sessão quando possível. Explique plano, formato e testes de recarga e erro antes de editar.",
+          "objective": "Especificar salvamento e recuperação completos."
+        },
+        {
+          "slug": "reload-state",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Recarregar conteúdo e conclusão",
+          "body": "Recarregar é abrir novamente o conteúdo da página pelo botão de atualizar do navegador. Exemplo: A está concluída e B está pendente. Se os dados foram guardados corretamente, os nomes e as marcas devem reaparecer iguais.",
+          "action": "Recarregue a lista com A concluída e B pendente.",
+          "expected": "Primeiro A concluída e B pendente; depois somente A concluída.",
+          "hint": "Use o mesmo navegador e endereço. Compare quantidade, nomes e marcas. Depois, remova B e repita o teste: somente A concluída deve voltar. Se algo faltar, registre o endereço e o erro antes de pedir correção.",
+          "criteria": [
+            "Textos e quantidade restaurados.",
+            "Conclusão restaurada.",
+            "Remoção permanece após recarga."
+          ],
+          "objective": "Comprovar recuperação de textos e conclusão."
+        },
+        {
+          "slug": "check-origin",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Interpretar uma troca de endereço",
+          "body": "O navegador separa dados conforme o endereço. Origem é essa combinação de protocolo, servidor e porta. Exemplo simulado: A foi guardada em http://localhost:8000, mas http://localhost:8001 mostra uma lista vazia. O número mudou; isso ainda não prova perda dos dados.",
+          "action": "Escolha onde procurar A primeiro.",
+          "expected": "Uma conclusão limitada ao endereço que foi realmente verificado.",
+          "hint": "Em http://localhost:8000, http é o protocolo, localhost identifica seu computador e 8000 é a porta. Trocar a porta pode usar outro espaço de armazenamento. Volte ao endereço anterior antes de concluir que A foi apagada.",
+          "criteria": [
+            "Reconhece que a porta participa da origem."
+          ],
+          "check": {
+            "question": "Qual é o próximo passo adequado?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Voltar à origem anterior e verificar; a porta mudou e pode haver outra área de armazenamento.",
+                "feedback": "Correto: ainda não há evidência de que os dados da origem anterior sumiram."
+              },
+              {
+                "id": "b",
+                "text": "Apagar todo o armazenamento do navegador.",
+                "feedback": "Isso pode destruir dados e não explica a mudança de porta."
+              },
+              {
+                "id": "c",
+                "text": "Afirmar que a função Adicionar deixou de funcionar.",
+                "feedback": "A tela vazia em outra origem não testa a adição da sessão anterior."
+              }
+            ],
+            "correct": "a",
+            "success": "Correto: compare a mesma origem antes de diagnosticar perda.",
+            "retry": "Observe a diferença concreta entre os dois endereços."
+          },
+          "objective": "Diagnosticar uma mudança de origem."
+        },
+        {
+          "slug": "reopen-limit",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Fechar e voltar com as mesmas condições",
+          "body": "Fechar a aba e voltar é outro teste de recuperação. Exemplo: A estava concluída antes de fechar; ao abrir o mesmo endereço no mesmo navegador, ela deve voltar igual. Use uma janela comum para este teste.",
+          "action": "Reabra o mesmo endereço depois de fechar a aba.",
+          "expected": "A tarefa retorna nas mesmas condições, ou a falha fica descrita de forma reproduzível.",
+          "hint": "Anote navegador e endereço. Evite a janela privada, que trata os dados de outra maneira. Se não conectar, peça à IA para reiniciar o servidor na mesma pasta e porta. Dados locais podem ser bloqueados ou apagados; não são cópia de segurança nem sincronização entre aparelhos.",
+          "criteria": [
+            "Mesmo navegador e origem usados.",
+            "Falha de conexão separada de falha de dados."
+          ],
+          "objective": "Reabrir o app nas mesmas condições."
+        },
+        {
+          "slug": "invalid-storage",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Ensaiar dados armazenados inválidos",
+          "body": "Um ensaio é um problema criado de propósito para testar a resposta. Exemplo: a IA prepara uma cópia do app com dados que não podem ser lidos. Essa cópia deve mostrar um aviso sem apagar sua lista principal.",
+          "action": "Peça a cópia de teste usando o texto abaixo.",
+          "expected": "Erro de leitura visível, app responsivo e dados principais preservados.",
+          "hint": "A IA deve usar somente ganesha.tasks.test, separado de ganesha.tasks.v1. Peça instruções para abrir a cópia e observar o aviso de JSON inválido. A tela deve continuar utilizável, sem apagar dados silenciosamente. Se não executar, marque não testado. Remova o ensaio antes da entrega.",
+          "criteria": [
+            "Ensaio isolado da chave principal.",
+            "Entrada inválida gera aviso.",
+            "Nenhuma limpeza silenciosa."
+          ],
+          "prompt": "Crie uma cópia de teste isolada do tarefas-app, usando somente ganesha.tasks.test. Adicione um ensaio explicitamente identificado que forneça JSON inválido à rotina de leitura, sem tocar ganesha.tasks.v1 nem limpar outras chaves. Quero observar aviso legível, interface utilizável e nenhum apagamento silencioso. Explique como iniciar e remover o ensaio; não inclua esse modo na entrega final.",
+          "objective": "Verificar tratamento de dados armazenados inválidos."
+        },
+        {
+          "slug": "failed-write",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Tornar uma falha de salvamento visível",
+          "body": "Gravar é salvar uma mudança no armazenamento. Exemplo de ensaio: C aparece na tela, mas a gravação falha de propósito. O app precisa avisar que C ainda não foi guardada. A lista visível pode durar somente enquanto a página está aberta.",
+          "action": "Observe o aviso de falha na cópia de teste.",
+          "expected": "O app diferencia dados visíveis de dados salvos e demonstra recuperação após o ensaio.",
+          "hint": "Use o pedido abaixo para a IA preparar o ensaio sem mudar configurações do navegador ou a chave principal. Depois de observar C, peça para desligar o ensaio e testar um salvamento normal com recarga. Identifique o erro como simulado, não como incidente real.",
+          "criteria": [
+            "Falha não é anunciada como sucesso.",
+            "Estado não salvo é identificado.",
+            "Gravação normal é retestada."
+          ],
+          "prompt": "Na cópia isolada de teste, permita simular falha de escrita sem mudar configurações do navegador. Ao tentar salvar, mostre que a alteração não foi persistida e mantenha a interface utilizável. Explique como desligar o ensaio. Depois verificarei uma gravação normal e a recarga. Não altere a chave principal nem leve o modo de teste à versão final.",
+          "objective": "Observar falha de escrita e recuperação."
+        },
+        {
+          "slug": "repair-persistence",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Corrigir e repetir a sequência inteira",
+          "body": "Um problema fica mais fácil de corrigir quando você descreve o que faltou. Exemplo simulado: A volta após recarregar, mas perde a marca de concluída. Informe essa diferença à IA; não diga apenas que o app está errado.",
+          "action": "Descreva uma diferença entre o esperado e o observado.",
+          "expected": "Adicionar, concluir, remover e validar continuam corretos, inclusive depois de recarregar.",
+          "hint": "Use o pedido abaixo somente com resultados reais. Se tudo funcionou, peça uma explicação em vez de inventar defeito. Após uma correção, confira novamente adicionar, concluir, remover, espaços e recarga, uma ação por vez.",
+          "criteria": [
+            "Reteste cobre o campo perdido.",
+            "Funções anteriores continuam verificadas."
+          ],
+          "prompt": "Em tarefas-app na mesma URL, observei [resultado real] depois de [passos]. Esperava que textos, ids e conclusão fossem preservados após recarregar. Examine salvar e restaurar; corrija somente o necessário sem perder adicionar/remover/validação. Explique quais dados serão gravados. Retestarei duas tarefas, uma conclusão, recarga, remoção e nova recarga. Se todos os critérios já passam, explique o mecanismo sem criar mudanças desnecessárias.",
+          "objective": "Retestar persistência junto das funções anteriores."
+        },
+        {
+          "slug": "check-save-claim",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Limitar a conclusão ao que foi observado",
+          "body": "Uma mensagem de erro também faz parte do resultado. Exemplo simulado: C aparece na lista e o app avisa que não conseguiu salvar. Você ainda não recarregou. Seu registro deve mencionar o aviso, sem prometer que C voltará depois.",
+          "action": "Escolha o registro que descreve o que foi observado.",
+          "expected": "Relato que não promete recuperação quando houve aviso de falha.",
+          "hint": "Ver na tela e guardar para depois são resultados diferentes. Não afirme recuperação ou sincronização sem ter verificado.",
+          "criteria": [
+            "Distingue visibilidade de persistência confirmada."
+          ],
+          "check": {
+            "question": "Qual registro é correto?",
+            "options": [
+              {
+                "id": "a",
+                "text": "C está salvo porque apareceu na tela.",
+                "feedback": "A tela mostra a sessão; o aviso contradiz a garantia de salvamento."
+              },
+              {
+                "id": "b",
+                "text": "C sincronizou com todos os dispositivos.",
+                "feedback": "Este app não implementa contas ou sincronização."
+              },
+              {
+                "id": "c",
+                "text": "C está visível nesta sessão, mas o salvamento falhou; recuperação ainda não foi confirmada.",
+                "feedback": "O registro separa o observado daquilo que falta verificar."
+              }
+            ],
+            "correct": "c",
+            "success": "Correto: preserve a distinção entre estado atual e dados salvos.",
+            "retry": "Use o aviso de falha como parte da evidência."
+          },
+          "objective": "Relatar corretamente um salvamento recusado."
+        },
+        {
+          "slug": "storage-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Documentar onde os dados ficam",
+          "body": "Uma nota simples explica onde sua lista fica guardada. Exemplo: “Usei este navegador e este endereço; A voltou após recarregar”. Esses dados ajudam outra pessoa a repetir seu teste sem confundir a lista com uma conta na internet.",
+          "action": "Anote o navegador e o endereço usados no teste.",
+          "expected": "Nota explica localização dos dados, limitações e resultados sem confundir ensaio com execução normal.",
+          "hint": "Acrescente a chave ganesha.tasks.v1 e os resultados, separando ensaios simulados de uso normal. Entregue sem modos de teste. Mudar protocolo, servidor, porta ou navegador pode mudar o espaço dos dados; limpar o navegador pode apagá-los. Não use dados importantes antes de testar a recuperação.",
+          "criteria": [
+            "Modos de teste ausentes da entrega.",
+            "Limites locais e origem registrados.",
+            "Resultados simulados identificados."
+          ],
+          "objective": "Documentar localização e limites dos dados."
+        }
+      ]
+    },
+    {
+      "slug": "app-delivery",
+      "title": "Criar uma cópia e compartilhar o app",
+      "summary": "Guarde uma cópia das tarefas e prepare instruções de uso.",
+      "outcome": "App e instruções entregues com cópia de dados recuperável e substituição controlada.",
+      "prerequisites": [
+        "app-storage"
+      ],
+      "minutes": 35,
+      "sourceRefs": [
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Blob/text",
+        "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "https://docs.netlify.com/start/quickstarts/netlify-drop-quickstart/",
+        "https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility/"
+      ],
+      "steps": [
+        {
+          "slug": "files-and-data",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Separar o programa da cópia de dados",
+          "body": "Exportar é criar um arquivo com uma cópia dos dados. Importar é ler essa cópia para recuperar a lista. Exemplo simulado: tarefas.json leva A e B para outra abertura do app. index.html continua sendo o programa, separado dos dados.",
+          "action": "Identifique qual arquivo contém a cópia das tarefas.",
+          "expected": "index.html para o app e tarefas.json para os dados exportados.",
+          "hint": "Enviar o programa não envia automaticamente sua lista. A transferência é manual: não há conta nem sincronização automática entre aparelhos. Confira uma cópia e teste sua recuperação antes de confiar nela.",
+          "criteria": [
+            "Distingue código de dados.",
+            "Não chama transferência manual de sincronização."
+          ],
+          "objective": "Distinguir arquivo do app e cópia de dados."
+        },
+        {
+          "slug": "request-portable",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Definir um formato verificável",
+          "body": "Antes de importar, o app precisa conferir a cópia e pedir sua confirmação. Exemplo: selecionar um arquivo com C mostra uma prévia, mas ainda não troca A e B. O pedido abaixo orienta a IA a criar esses cuidados.",
+          "action": "Envie o pedido de exportação e importação.",
+          "expected": "Plano separa leitura, validação, prévia, confirmação e gravação; erros preservam a lista.",
+          "hint": "Você não precisa escrever o JSON abaixo. Ele mostra a combinação esperada: version vale 1; tasks é a lista; id identifica cada tarefa; text é seu nome; done usa true para concluída e false para pendente. Booleano significa verdadeiro ou falso, sem aspas. Limites deste exercício: 100 tarefas, 120 caracteres por nome e 1 MB por arquivo. Antes de substituir, exporte a lista atual e confirme que a cópia foi guardada. Ler JSON válido não basta para aceitar os dados.",
+          "criteria": [
+            "Formato e limites explícitos.",
+            "Substituição requer confirmação.",
+            "Dados atuais preservados em erro."
+          ],
+          "prompt": "Acrescente exportação tarefas.json e importação ao app. Formato: version:1, tasks com id textual único, text de 1–120 caracteres após trim, done booleano; máximo 100 tarefas e 1 MB. Valide tudo antes de mudar dados. Mostre prévia e Cancelar/Confirmar. Exija exportar a lista atual e confirmar que a cópia foi guardada antes de substituir. Só atualize a lista após gravação bem-sucedida; erro preserva dados atuais. Exiba texto como texto. Sem rede. Explique o plano e testes.",
+          "code": "{\"version\":1,\"tasks\":[{\"id\":\"t1\",\"text\":\"A\",\"done\":true},{\"id\":\"t2\",\"text\":\"B\",\"done\":false}]}",
+          "objective": "Definir validação e substituição controlada."
+        },
+        {
+          "slug": "export-inspect",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Exportar e conferir a cópia",
+          "body": "Exportar inicia o download, ou seja, a criação de um arquivo no seu computador. Exemplo: com A concluída e B pendente, Exportar deve gerar tarefas.json. Encontrar esse arquivo é necessário para saber que você tem uma cópia.",
+          "action": "Clique em Exportar e encontre tarefas.json.",
+          "expected": "Arquivo legível com version 1, duas tarefas e conclusão correspondente à tela.",
+          "hint": "Procure na pasta de downloads ou no destino escolhido. Peça ajuda à IA para abrir como texto sem modificar. Confira duas tarefas: done deve ser true em A e false em B. Guarde uma cópia chamada antes-de-importar.json fora da pasta publicada, sem sobrescrever a anterior.",
+          "criteria": [
+            "Arquivo encontrado e aberto.",
+            "Dados correspondem ao estado observado.",
+            "Cópia anterior protegida de sobrescrita."
+          ],
+          "objective": "Conferir o conteúdo de uma exportação."
+        },
+        {
+          "slug": "check-contract",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Distinguir sintaxe e conteúdo",
+          "body": "O formato JSON distingue texto de valores verdadeiro ou falso. Exemplo simulado: done com \"false\" entre aspas é texto; done com false sem aspas indica pendente. O app precisa conferir essa diferença antes de substituir sua lista.",
+          "action": "Escolha se o arquivo com \"false\" deve ser aceito.",
+          "expected": "Decisão baseada no contrato de dados, não apenas na sintaxe aceita.",
+          "hint": "O arquivo do cenário contém {\"version\":1,\"tasks\":[{\"id\":\"t1\",\"text\":\"A\",\"done\":\"false\"}]}. Ele pode ser lido como JSON, mas não segue a regra de done. Essa regra é chamada contrato de dados; a escrita do arquivo é sua sintaxe.",
+          "criteria": [
+            "Valida o tipo de done antes de importar."
+          ],
+          "check": {
+            "question": "O que o importador deve fazer?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Aceitar porque a extensão é .json.",
+                "feedback": "A extensão não garante o formato nem os tipos necessários."
+              },
+              {
+                "id": "b",
+                "text": "Trocar a lista e decidir o estado depois.",
+                "feedback": "Isso muda dados antes de validar e pode perder o estado anterior."
+              },
+              {
+                "id": "c",
+                "text": "Rejeitar com explicação: done deve ser booleano, não texto; manter a lista atual.",
+                "feedback": "O contrato exige true/false sem aspas e preservação em caso de erro."
+              }
+            ],
+            "correct": "c",
+            "success": "Correto: JSON interpretável ainda pode violar o contrato do app.",
+            "retry": "Compare o tipo exigido com o valor entre aspas."
+          },
+          "objective": "Separar JSON interpretável de dados aceitos."
+        },
+        {
+          "slug": "preview-cancel-import",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Cancelar antes de substituir",
+          "body": "Cancelar permite desistir antes de trocar a lista. Exemplo: A e B estão no app, enquanto a prévia do arquivo mostra somente C. Ao cancelar, A e B devem continuar iguais. Só escolher o arquivo não autoriza a troca.",
+          "action": "Clique em Cancelar na prévia que mostra C.",
+          "expected": "Cancelar preserva A/B; confirmar a cópia válida deixa somente C pendente após recarga.",
+          "hint": "Peça à IA para criar o arquivo de teste usando o exemplo abaixo, sem mudar sua lista. Depois do cancelamento, repita a seleção; guarde a cópia atual antes de confirmar. Após confirmar e recarregar, deve restar apenas C pendente. Importar substitui, não soma nem sincroniza.",
+          "criteria": [
+            "Selecionar arquivo não altera a lista.",
+            "Cancelar preserva dados.",
+            "Confirmação válida persiste o estado importado."
+          ],
+          "code": "{\"version\":1,\"tasks\":[{\"id\":\"t3\",\"text\":\"C\",\"done\":false}]}",
+          "objective": "Comparar cancelamento e importação confirmada."
+        },
+        {
+          "slug": "reject-bad-import",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Rejeitar arquivos sem perder tarefas",
+          "body": "Um arquivo errado deve gerar um aviso, sem apagar sua lista. Exemplo de teste criado de propósito: uma cópia tem o mesmo identificador em duas tarefas. O app deve recusar a cópia e manter C pendente.",
+          "action": "Tente importar a cópia de teste com identificador repetido.",
+          "expected": "Cada arquivo falha de forma compreensível e C continua pendente, sem alterações.",
+          "hint": "Peça à IA três arquivos separados: um sem chave de fechamento do JSON, outro com done como texto e outro com id repetido. Não altere a única cópia boa. Teste um arquivo por vez e recarregue após cada tentativa. Todos devem ser recusados com motivo claro. Se a lista mudar, pare e peça correção.",
+          "criteria": [
+            "Sintaxe inválida rejeitada.",
+            "Tipo e id duplicado rejeitados.",
+            "Estado atual permanece após recarga."
+          ],
+          "objective": "Rejeitar entradas inválidas sem perder dados."
+        },
+        {
+          "slug": "restore-backup",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Recuperar e testar uma gravação recusada",
+          "body": "Uma cópia de segurança permite voltar a dados anteriores. Exemplo: antes-de-importar.json contém A concluída e B pendente. Recuperar essa cópia deve trazer as duas de volta. Guarde primeiro a lista atual para poder voltar a ela também.",
+          "action": "Importe antes-de-importar.json pelo fluxo de confirmação.",
+          "expected": "Cópia recuperada corretamente; importação recusada preserva os dados anteriores.",
+          "hint": "Confira A e B após recarregar. Para o ensaio de erro, use o pedido abaixo: somente a cópia isolada, atualizada com o importador atual e chave ganesha.tasks.test. Se a gravação falhar, a lista anterior deve ficar intacta. Desligue o ensaio e repita um import válido. Não apague uma cópia que falhar; registre o erro.",
+          "criteria": [
+            "Recuperação inclui textos e conclusão.",
+            "Falha de gravação não troca a lista.",
+            "Ensaio removido da entrega."
+          ],
+          "prompt": "Atualize somente a cópia isolada de teste com a versão atual do app, incluindo exportar/importar. Nela, use exclusivamente ganesha.tasks.test; não leia, grave ou apague ganesha.tasks.v1. Depois simule falha de gravação ao confirmar uma importação válida. Preserve lista e dados anteriores, mostre erro e não anuncie substituição concluída. Explique como remover o ensaio. Testarei importar a cópia de segurança, recarregar e comparar tarefas e conclusão.",
+          "objective": "Demonstrar recuperação e preservação em erro."
+        },
+        {
+          "slug": "package-handoff",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Preparar uma entrega reproduzível",
+          "body": "Uma instrução de uso ajuda outra pessoa a abrir o app. README.md é um arquivo de texto para essas instruções. Exemplo: ele explica onde abrir a lista e como guardar uma cópia. A IA pode escrever esse arquivo para você.",
+          "action": "Peça à IA o arquivo de instruções usando o texto abaixo.",
+          "expected": "Pacote e instruções permitem abrir o app e recuperar uma cópia de dados fictícios.",
+          "hint": "Depois, siga as instruções desde o começo e anote obstáculos. Separe exportações pessoais dos arquivos públicos. Publicar na internet é opcional: confira conta e custos do Netlify antes de enviar a pasta com index.html em https://app.netlify.com/drop. Para acesso público, confira permissões e Make public; teste como visitante. Na nova URL, repita recarga e importação porque os dados locais não migram sozinhos.",
+          "criteria": [
+            "Instruções reproduzidas e obstáculos anotados.",
+            "Exportações pessoais fora do pacote público.",
+            "Se publicado, acesso e comportamento testados na URL final."
+          ],
+          "prompt": "Crie README.md para o tarefas-app final, sem modos de teste. Explique abrir a pasta, conferir Python 3 ou prévia HTTP alternativa, executar servidor, abrir URL e parar. Descreva adicionar/concluir/remover, salvamento local, exportar, conferir cópia, importar, cancelar e recuperar. Inclua testes com A/B, limites sem conta/sincronização e falhas conhecidas. Liste somente arquivos públicos necessários; não inclua minhas exportações. Não publique automaticamente.",
+          "objective": "Preparar instruções e pacote reproduzíveis."
+        },
+        {
+          "slug": "check-delivery",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Avaliar o que compartilhar realmente faz",
+          "body": "Compartilhar o endereço dá acesso ao programa, mas não envia sua lista pessoal. Exemplo simulado: uma colega abre o app e vê uma lista vazia. Para receber suas tarefas fictícias, ela precisa da cópia exportada e de uma importação confirmada.",
+          "action": "Escolha como enviar a cópia das tarefas à colega.",
+          "expected": "Plano de transferência manual com validação e preservação do estado de quem recebe.",
+          "hint": "O app não tem conta nem servidor de dados. Sincronizar seria manter listas de aparelhos diferentes atualizadas automaticamente; este app faz somente transferência manual. A colega deve guardar a própria lista antes de substituí-la.",
+          "criteria": [
+            "Respeita limites sem conta/sincronização.",
+            "Usa importação validada com cópia anterior."
+          ],
+          "check": {
+            "question": "Qual orientação está correta?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Enviar a cópia exportada; ela guarda seus dados atuais, valida e confirma a importação, sabendo que não haverá sincronização.",
+                "feedback": "Isso usa o fluxo construído e explicita a substituição manual."
+              },
+              {
+                "id": "b",
+                "text": "Pedir que atualize a página até a lista do autor aparecer.",
+                "feedback": "Atualizar outra origem ou navegador não cria sincronização."
+              },
+              {
+                "id": "c",
+                "text": "Prometer que publicar o HTML inclui todos os dados locais do autor.",
+                "feedback": "O armazenamento local não é automaticamente incorporado ao arquivo HTML."
+              }
+            ],
+            "correct": "a",
+            "success": "Correto: a transferência é explícita, validada e manual.",
+            "retry": "Separe acesso ao app de acesso aos dados de outro navegador."
+          },
+          "objective": "Escolher transferência manual sem prometer sincronização."
+        },
+        {
+          "slug": "maintain-version",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Manter uma versão que você consegue recuperar",
+          "body": "Uma versão é uma cópia do app em determinado momento. Exemplo: guardar a versão que passou nos testes permite voltar a ela se uma mudança der errado. Seu registro também deve indicar o que ainda não foi testado.",
+          "action": "Anote qual versão você consegue recuperar.",
+          "expected": "Entrega distingue recursos comprovados, limites, cópia recuperável e próximos cuidados.",
+          "hint": "Guarde index.html, README.md, resultados e uma exportação antes de novas mudanças. Repita interação, recarga, cancelamento e importação inválida depois de alterar. Compartilhe dados somente se desejar. Se usar Netlify, teste localmente antes de atualizar o mesmo projeto em Production deploys; isso altera a versão pública. Confira a URL final. Não sobrescreva a única cópia ao mudar o formato dos dados.",
+          "criteria": [
+            "Evidências externas identificadas como relato do aluno.",
+            "Versão anterior e cópia recuperável preservadas.",
+            "Limites e falhas não ocultados."
+          ],
+          "objective": "Preservar versões e repetir testes após mudanças."
+        }
+      ]
+    }
+  ]
+}

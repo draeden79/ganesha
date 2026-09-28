@@ -1,0 +1,1047 @@
+{
+  "scope": "Only lesson.workspace plus four shared introductory messages. Other eleven lessons retain baseline authoring.",
+  "baseVersion": "0.3.0",
+  "candidateId": "beginner-first-lesson-2026-09-28",
+  "addedKeys": [
+    "app-storage.check-origin.check.question",
+    "requests.scope-check.action",
+    "requests.scope-check.expected",
+    "requests.scope-check.hint",
+    "workspace.access-evidence.expected",
+    "workspace.access-evidence.hint",
+    "workspace.read-only-request.example"
+  ],
+  "changedKeys": [
+    "course.summary",
+    "criterion.compare-record",
+    "criterion.execution-record",
+    "notice.external-record",
+    "workspace.access-evidence.body",
+    "workspace.access-evidence.check.question",
+    "workspace.access-evidence.check.retry",
+    "workspace.access-evidence.check.success",
+    "workspace.access-evidence.feedback.a",
+    "workspace.access-evidence.feedback.b",
+    "workspace.access-evidence.feedback.c",
+    "workspace.access-evidence.objective",
+    "workspace.access-evidence.option.a",
+    "workspace.access-evidence.option.b",
+    "workspace.access-evidence.option.c",
+    "workspace.access-evidence.title",
+    "workspace.access-recovery.body",
+    "workspace.access-recovery.expected",
+    "workspace.access-recovery.hint",
+    "workspace.access-recovery.objective",
+    "workspace.access-recovery.title",
+    "workspace.access.body",
+    "workspace.access.expected",
+    "workspace.access.hint",
+    "workspace.access.objective",
+    "workspace.access.title",
+    "workspace.compare-context.body",
+    "workspace.compare-context.expected",
+    "workspace.compare-context.hint",
+    "workspace.compare-context.objective",
+    "workspace.compare-context.title",
+    "workspace.context-check.body",
+    "workspace.context-check.check.question",
+    "workspace.context-check.check.retry",
+    "workspace.context-check.check.success",
+    "workspace.context-check.expected",
+    "workspace.context-check.feedback.a",
+    "workspace.context-check.feedback.b",
+    "workspace.context-check.feedback.c",
+    "workspace.context-check.hint",
+    "workspace.context-check.objective",
+    "workspace.context-check.option.a",
+    "workspace.context-check.option.b",
+    "workspace.context-check.option.c",
+    "workspace.context-check.title",
+    "workspace.fictional-brief.body",
+    "workspace.fictional-brief.expected",
+    "workspace.fictional-brief.hint",
+    "workspace.fictional-brief.objective",
+    "workspace.fictional-brief.title",
+    "workspace.folder.body",
+    "workspace.folder.expected",
+    "workspace.folder.hint",
+    "workspace.folder.objective",
+    "workspace.folder.title",
+    "workspace.outcome",
+    "workspace.read-only-request.body",
+    "workspace.read-only-request.expected",
+    "workspace.read-only-request.hint",
+    "workspace.read-only-request.objective",
+    "workspace.read-only-request.prompt",
+    "workspace.read-only-request.title",
+    "workspace.select-context.body",
+    "workspace.select-context.expected",
+    "workspace.select-context.hint",
+    "workspace.select-context.objective",
+    "workspace.select-context.title",
+    "workspace.summary",
+    "workspace.title",
+    "workspace.workspace-record.body",
+    "workspace.workspace-record.expected",
+    "workspace.workspace-record.hint",
+    "workspace.workspace-record.objective",
+    "workspace.workspace-record.title"
+  ],
+  "removedKeys": [
+    "workspace.access-recovery.action",
+    "workspace.access.action",
+    "workspace.compare-context.action",
+    "workspace.context-check.action",
+    "workspace.fictional-brief.action",
+    "workspace.folder.action",
+    "workspace.read-only-request.action",
+    "workspace.read-only-request.tool.claude",
+    "workspace.read-only-request.tool.codex",
+    "workspace.select-context.action",
+    "workspace.select-context.tool.claude",
+    "workspace.select-context.tool.codex",
+    "workspace.workspace-record.action"
+  ],
+  "entries": {
+    "app-storage.check-origin.check.question": {
+      "pt-BR": {
+        "before": null,
+        "after": "Qual é o próximo passo adequado?"
+      },
+      "en": {
+        "before": null,
+        "after": "What is the appropriate next step?"
+      }
+    },
+    "course.summary": {
+      "pt-BR": {
+        "before": "12 aulas práticas: prepare seu contexto, construa e teste projetos, entregue resultados e controle uma automação. Exemplos originais e práticas simuladas estão identificados. Execução externa é autodeclarada; tradução por IA com revisão humana pendente. Tempos são estimativas de planejamento.",
+        "after": "Aprenda a conversar com IA e a criar projetos, um passo de cada vez. Esta prévia testa a nova primeira aula; as outras 11 aulas mantêm o conteúdo anterior."
+      },
+      "en": {
+        "before": "12 practical lessons: prepare context, build and test projects, deliver results and control an automation. Original examples and simulated practices are labeled. External execution is self-reported; AI translation awaits human review. Durations are planning estimates.",
+        "after": "Learn to talk to AI and create projects, one step at a time. This preview tests the new first lesson; the other 11 lessons keep their previous content."
+      }
+    },
+    "criterion.compare-record": {
+      "pt-BR": {
+        "before": "Comparei com os critérios da etapa e indiquei o que está conferido ou pendente.",
+        "after": "Conferi o resultado indicado nesta etapa."
+      },
+      "en": {
+        "before": "I compared against this step’s criteria and identified what is checked or still pending.",
+        "after": "I checked the result described in this step."
+      }
+    },
+    "criterion.execution-record": {
+      "pt-BR": {
+        "before": "O registro distingue observação real, análise simulada e pendências.",
+        "after": "Contei o que consegui fazer ou onde parei."
+      },
+      "en": {
+        "before": "The record distinguishes actual observation, simulated analysis and remaining work.",
+        "after": "I described what I managed to do or where I stopped."
+      }
+    },
+    "notice.external-record": {
+      "pt-BR": {
+        "before": "Registre o que realmente executou ou o impedimento encontrado. Se analisar um exemplo simulado, identifique esse modo; ele não comprova execução externa.",
+        "after": "Conte o que aconteceu. Se usou o exemplo, diga isso."
+      },
+      "en": {
+        "before": "Record what you actually ran or the obstacle encountered. If you analyze a simulated example, identify that mode; it does not establish external execution.",
+        "after": "Tell us what happened. If you used the example, say so."
+      }
+    },
+    "requests.scope-check.action": {
+      "pt-BR": {
+        "before": null,
+        "after": "Escolha uma alternativa e leia o feedback."
+      },
+      "en": {
+        "before": null,
+        "after": "Choose an answer and read its feedback."
+      }
+    },
+    "requests.scope-check.expected": {
+      "pt-BR": {
+        "before": null,
+        "after": "Escolha justificada pelo critério da situação."
+      },
+      "en": {
+        "before": null,
+        "after": "Choice justified by the situation’s criterion."
+      }
+    },
+    "requests.scope-check.hint": {
+      "pt-BR": {
+        "before": null,
+        "after": "Use as informações do caso, sem inventar observações."
+      },
+      "en": {
+        "before": null,
+        "after": "Use the case information without inventing observations."
+      }
+    },
+    "workspace.access-evidence.body": {
+      "pt-BR": {
+        "before": "Caso simulado: você escreveu o pedido, mas o aplicativo exibiu uma tela de login e nenhuma resposta foi recebida.",
+        "after": "Uma pessoa acompanhou todos os exemplos desta aula, mas não abriu Claude ou Codex. Ela aprendeu a reconhecer pedidos, respostas e uma correção. Isso é um resultado válido. Vamos escolher uma frase que descreva o que ela fez."
+      },
+      "en": {
+        "before": "Simulated case: you wrote the request, but the app displayed a login screen and no response arrived.",
+        "after": "A person followed all the examples in this lesson but did not open Claude or Codex. They learned to recognize requests, replies and a correction. That is a valid result. Let us choose a sentence that describes what they did."
+      }
+    },
+    "workspace.access-evidence.check.question": {
+      "pt-BR": {
+        "before": "O que você pode registrar?",
+        "after": "Qual frase conta o que aconteceu?"
+      },
+      "en": {
+        "before": "What can you record?",
+        "after": "Which sentence describes what happened?"
+      }
+    },
+    "workspace.access-evidence.check.retry": {
+      "pt-BR": {
+        "before": "Não transforme uma tentativa ou simulação em execução externa.",
+        "after": "A pessoa acompanhou o exemplo, sem abrir uma ferramenta."
+      },
+      "en": {
+        "before": "Do not turn an attempt or simulation into external execution.",
+        "after": "The person followed the example without opening a tool."
+      }
+    },
+    "workspace.access-evidence.check.success": {
+      "pt-BR": {
+        "before": "Seu registro mostra o progresso real e o impedimento.",
+        "after": "Isso: você pode aprender com o exemplo e registrar esse caminho."
+      },
+      "en": {
+        "before": "Your record shows real progress and the obstacle.",
+        "after": "Right: you can learn from an example and record that path."
+      }
+    },
+    "workspace.access-evidence.expected": {
+      "pt-BR": {
+        "before": null,
+        "after": "A frase reconhece o aprendizado com o exemplo."
+      },
+      "en": {
+        "before": null,
+        "after": "The sentence recognizes learning from the example."
+      }
+    },
+    "workspace.access-evidence.feedback.a": {
+      "pt-BR": {
+        "before": "Não houve resposta nem observação que confirme leitura.",
+        "after": "Ela não abriu a ferramenta."
+      },
+      "en": {
+        "before": "No response or observation confirmed reading.",
+        "after": "They did not open the tool."
+      }
+    },
+    "workspace.access-evidence.feedback.b": {
+      "pt-BR": {
+        "before": "A tentativa de acesso não testou os arquivos.",
+        "after": "A aula mostrou uma conversa; nenhum site foi criado."
+      },
+      "en": {
+        "before": "An access attempt did not test the files.",
+        "after": "The lesson showed a conversation; no website was created."
+      }
+    },
+    "workspace.access-evidence.feedback.c": {
+      "pt-BR": {
+        "before": "O registro separa o trabalho preparado do que não aconteceu.",
+        "after": "Isso descreve o aprendizado com o exemplo."
+      },
+      "en": {
+        "before": "This separates prepared work from what did not happen.",
+        "after": "That describes learning from the example."
+      }
+    },
+    "workspace.access-evidence.hint": {
+      "pt-BR": {
+        "before": null,
+        "after": "Ler um exemplo e receber uma resposta na ferramenta são experiências diferentes. Ambas podem ajudar a aprender; o registro deve dizer qual aconteceu."
+      },
+      "en": {
+        "before": null,
+        "after": "Reading an example and receiving a reply in the tool are different experiences. Both can help you learn; your record should say which happened."
+      }
+    },
+    "workspace.access-evidence.objective": {
+      "pt-BR": {
+        "before": "Relatar honestamente uma prática impedida.",
+        "after": "Selecione a frase que descreve essa pessoa."
+      },
+      "en": {
+        "before": "Report a blocked practice honestly.",
+        "after": "Select the sentence that describes this person."
+      }
+    },
+    "workspace.access-evidence.option.a": {
+      "pt-BR": {
+        "before": "A IA leu e validou brief.txt.",
+        "after": "“Recebi uma resposta na minha ferramenta.”"
+      },
+      "en": {
+        "before": "The AI read and validated brief.txt.",
+        "after": "“I received a reply in my tool.”"
+      }
+    },
+    "workspace.access-evidence.option.b": {
+      "pt-BR": {
+        "before": "Todos os arquivos estão corretos.",
+        "after": "“Criei e publiquei um site.”"
+      },
+      "en": {
+        "before": "All files are correct.",
+        "after": "“I created and published a website.”"
+      }
+    },
+    "workspace.access-evidence.option.c": {
+      "pt-BR": {
+        "before": "Pedido preparado; leitura não executada porque o acesso está pendente.",
+        "after": "“Acompanhei o exemplo e aprendi como pedir uma correção.”"
+      },
+      "en": {
+        "before": "Request prepared; reading not executed because access is pending.",
+        "after": "“I followed the example and learned how to request a correction.”"
+      }
+    },
+    "workspace.access-evidence.title": {
+      "pt-BR": {
+        "before": "Distinguir tentativa e execução",
+        "after": "O que você conseguiu fazer?"
+      },
+      "en": {
+        "before": "Distinguish an attempt from execution",
+        "after": "What did you manage to do?"
+      }
+    },
+    "workspace.access-recovery.action": {
+      "pt-BR": {
+        "before": "Classifique um impedimento real ou o caso simulado de canto.",
+        "after": null
+      },
+      "en": {
+        "before": "Classify a real obstacle or the simulated missing-singing case.",
+        "after": null
+      }
+    },
+    "workspace.access-recovery.body": {
+      "pt-BR": {
+        "before": "Login pendente, conta sem acesso e pasta indisponível são problemas de entrada. Um resumo que omite canto é um problema na resposta. No primeiro caso, anote a mensagem e resolva o acesso pela orientação oficial; no segundo, peça que a IA confira o dado específico no brief. Não repita o mesmo pedido esperando que ele corrija uma conta bloqueada.",
+        "after": "Você pode continuar a mesma conversa para pedir um ajuste. Exemplo de novo pedido: “Inclua também canto. Mantenha violão, piano e o nome Ponte Musical.” Resposta corrigida de exemplo: “A Ponte Musical oferece aulas de violão, piano e canto. As aulas são para iniciantes.” Agora canto aparece."
+      },
+      "en": {
+        "before": "Pending login, an account without access and an unavailable folder are entry problems. A summary missing singing is a response problem. For the former, record the message and resolve access through official guidance; for the latter, ask the AI to check the specific detail in the brief. Repeating the same request will not necessarily fix blocked account access.",
+        "after": "You can continue the same conversation to ask for an adjustment. Example new request: “Include singing too. Keep guitar, piano and the name Ponte Musical.” Example corrected reply: “Ponte Musical offers guitar, piano and singing lessons. The lessons are for beginners.” Singing now appears."
+      }
+    },
+    "workspace.access-recovery.expected": {
+      "pt-BR": {
+        "before": "Impedimento classificado e próximo passo coerente.",
+        "after": "Sua anotação diz o que acrescentar e o que manter."
+      },
+      "en": {
+        "before": "Obstacle classified with a suitable next step.",
+        "after": "Your note says what to add and what to keep."
+      }
+    },
+    "workspace.access-recovery.hint": {
+      "pt-BR": {
+        "before": "Você pode usar o caso simulado se não encontrou erro real.",
+        "after": "Na ferramenta, um pedido de correção é escrito na mesma caixa de mensagem e enviado como o primeiro. Só é necessário enviá-lo se a resposta tiver esse problema."
+      },
+      "en": {
+        "before": "Use the simulated case if you encountered no real error.",
+        "after": "In the tool, write a correction in the same message box and send it like the first request. You only need to send it if the reply has this problem."
+      }
+    },
+    "workspace.access-recovery.objective": {
+      "pt-BR": {
+        "before": "Escolher recuperação de acordo com o impedimento.",
+        "after": "Copie aqui o pedido de correção mostrado no exemplo."
+      },
+      "en": {
+        "before": "Choose recovery according to the obstacle.",
+        "after": "Copy the correction request shown in the example here."
+      }
+    },
+    "workspace.access-recovery.title": {
+      "pt-BR": {
+        "before": "Separar acesso e qualidade da resposta",
+        "after": "Como pedir uma correção"
+      },
+      "en": {
+        "before": "Separate access from response quality",
+        "after": "How to request a correction"
+      }
+    },
+    "workspace.access.action": {
+      "pt-BR": {
+        "before": "Anote a ferramenta escolhida e se conseguiu entrar.",
+        "after": null
+      },
+      "en": {
+        "before": "Record your chosen tool and whether you could sign in.",
+        "after": null
+      }
+    },
+    "workspace.access.body": {
+      "pt-BR": {
+        "before": "Você precisa de computador, navegador e acesso ao Claude Desktop/Code ou Codex Desktop. Abra a documentação oficial de início, baixe a versão compatível e entre na sua conta. Confira condições de uso e custos; o curso não promete acesso gratuito. Não é necessário assinar as duas ferramentas: você pratica em uma e compara as instruções da outra. Início oficial: Claude https://code.claude.com/docs/en/desktop-quickstart ; Codex https://learn.chatgpt.com/docs/quickstart .",
+        "after": "IA significa inteligência artificial. Nesta aula, é um programa que responde a mensagens escritas. Exemplo: uma pessoa escreve “Diga olá”; a IA responde “Olá!”. A resposta pode conter erros. Você pode fazer toda esta aula com os exemplos, sem instalar nada."
+      },
+      "en": {
+        "before": "You need a computer, browser and access to Claude Desktop/Code or Codex Desktop. Open the official getting-started documentation, download the compatible version and sign in. Check access conditions and costs; this course does not promise free use. You do not need both subscriptions: practice in one tool and compare the instructions for the other. Official quickstarts: Claude https://code.claude.com/docs/en/desktop-quickstart ; Codex https://learn.chatgpt.com/docs/quickstart .",
+        "after": "AI means artificial intelligence. In this lesson, it is a program that answers written messages. Example: a person writes “Say hello”; the AI replies “Hello!”. Its answer can contain mistakes. You can complete this entire lesson using the examples, without installing anything."
+      }
+    },
+    "workspace.access.expected": {
+      "pt-BR": {
+        "before": "Ferramenta e estado de acesso registrados.",
+        "after": "Você escreveu “Olá!”."
+      },
+      "en": {
+        "before": "Tool and access state recorded.",
+        "after": "You wrote “Hello!”."
+      }
+    },
+    "workspace.access.hint": {
+      "pt-BR": {
+        "before": "Se o acesso falhar, registre a mensagem; a simulação continua disponível.",
+        "after": "Claude e Codex são nomes de ferramentas que usam IA. Ganesha é o lugar onde você está estudando."
+      },
+      "en": {
+        "before": "If access fails, record the message; simulation remains available.",
+        "after": "Claude and Codex are names of tools that use AI. Ganesha is where you are learning."
+      }
+    },
+    "workspace.access.objective": {
+      "pt-BR": {
+        "before": "Reconhecer os pré-requisitos da prática Desktop.",
+        "after": "Escreva aqui a palavra que a IA respondeu no exemplo."
+      },
+      "en": {
+        "before": "Recognize the prerequisites for Desktop practice.",
+        "after": "Write the word the AI replied with in the example."
+      }
+    },
+    "workspace.access.title": {
+      "pt-BR": {
+        "before": "Escolher uma ferramenta e conferir o acesso",
+        "after": "O que é uma IA?"
+      },
+      "en": {
+        "before": "Choose a tool and check access",
+        "after": "What is AI?"
+      }
+    },
+    "workspace.compare-context.action": {
+      "pt-BR": {
+        "before": "Compare sua resposta com os quatro dados do brief.",
+        "after": null
+      },
+      "en": {
+        "before": "Compare your response with the four brief details.",
+        "after": null
+      }
+    },
+    "workspace.compare-context.body": {
+      "pt-BR": {
+        "before": "Exemplo simulado: a resposta diz “Ponte Musical oferece violão e piano”. Compare com brief.txt: o nome está certo, mas falta canto e não há confirmação do público ou contato. Sua resposta real pode estar completa; nesse caso, registre o que conferiu. Não invente uma falha para preencher o exercício. Se não puder executar, use o exemplo simulado e registre o impedimento; não declare execução.",
+        "after": "Vamos conferir este exemplo de resposta: “A Ponte Musical oferece aulas de violão e piano. As aulas são para iniciantes.” O pedido incluía violão, piano e canto. Compare a lista com a resposta: canto ficou de fora. Uma resposta de IA pode parecer boa e ainda esquecer uma informação."
+      },
+      "en": {
+        "before": "Simulated example: the response says “Ponte Musical offers guitar and piano.” Compare it with brief.txt: the name is correct, but singing is missing and audience/contact are not confirmed. Your real response might be complete; if so, record what you checked. Do not invent a failure to fill in the exercise. If you cannot execute, use the simulated example and record the obstacle; do not claim execution.",
+        "after": "Let us check this example reply: “Ponte Musical offers guitar and piano lessons. The lessons are for beginners.” The request included guitar, piano and singing. Compare the list with the reply: singing is missing. An AI reply can sound good and still forget some information."
+      }
+    },
+    "workspace.compare-context.expected": {
+      "pt-BR": {
+        "before": "Dados comparados na resposta real ou no exemplo, com modo identificado.",
+        "after": "Você identificou “canto”."
+      },
+      "en": {
+        "before": "Details compared in the real response or example, with the mode identified.",
+        "after": "You identified “singing”."
+      }
+    },
+    "workspace.compare-context.hint": {
+      "pt-BR": {
+        "before": "Use o arquivo como referência, não sua memória.",
+        "after": "Nesta etapa todos conferem o mesmo exemplo. Se sua ferramenta mencionou canto, ela acertou esse ponto; não é preciso inventar um erro."
+      },
+      "en": {
+        "before": "Use the file as the reference, not your memory.",
+        "after": "Everyone checks the same example in this step. If your tool mentioned singing, it got this detail right; you do not need to invent an error."
+      }
+    },
+    "workspace.compare-context.objective": {
+      "pt-BR": {
+        "before": "Detectar omissões usando uma referência acessível.",
+        "after": "Escreva o tipo de aula que faltou na resposta de exemplo."
+      },
+      "en": {
+        "before": "Detect omissions using an accessible reference.",
+        "after": "Write the type of lesson missing from the example reply."
+      }
+    },
+    "workspace.compare-context.title": {
+      "pt-BR": {
+        "before": "Comparar o resumo com o arquivo",
+        "after": "A resposta deixou algo de fora?"
+      },
+      "en": {
+        "before": "Compare the summary with the file",
+        "after": "Did the reply leave something out?"
+      }
+    },
+    "workspace.context-check.action": {
+      "pt-BR": {
+        "before": "Escolha uma alternativa e leia o feedback.",
+        "after": null
+      },
+      "en": {
+        "before": "Choose an answer and read its feedback.",
+        "after": null
+      }
+    },
+    "workspace.context-check.body": {
+      "pt-BR": {
+        "before": "Caso simulado: você criou ganesha-pratica, mas a ferramenta mostra outro projeto chamado loja-antiga. O arquivo brief.txt ainda não foi fornecido.",
+        "after": "Veja esta conversa de exemplo. Pessoa: “Diga olá”. IA: “Olá!”. O pedido é o texto que a pessoa envia. A resposta é o texto que a IA devolve."
+      },
+      "en": {
+        "before": "Simulated case: you created ganesha-pratica, but the tool displays another project named loja-antiga. The brief.txt file has not yet been provided.",
+        "after": "Look at this example conversation. Person: “Say hello”. AI: “Hello!”. The request is the text the person sends. The response is the text the AI sends back."
+      }
+    },
+    "workspace.context-check.check.question": {
+      "pt-BR": {
+        "before": "Qual é o próximo passo adequado?",
+        "after": "Qual mensagem é o pedido?"
+      },
+      "en": {
+        "before": "What is the appropriate next step?",
+        "after": "Which message is the request?"
+      }
+    },
+    "workspace.context-check.check.retry": {
+      "pt-BR": {
+        "before": "Procure a ação que corrige a pasta, sem inventar dados.",
+        "after": "Veja quem escreveu cada mensagem no exemplo."
+      },
+      "en": {
+        "before": "Find the action that fixes the folder without inventing data.",
+        "after": "Check who wrote each message in the example."
+      }
+    },
+    "workspace.context-check.check.success": {
+      "pt-BR": {
+        "before": "Você corrigiu a origem da informação antes de avaliar a resposta.",
+        "after": "Isso: o pedido vem da pessoa, e a resposta vem da IA."
+      },
+      "en": {
+        "before": "You corrected the information source before judging the response.",
+        "after": "Right: the request comes from the person and the response comes from the AI."
+      }
+    },
+    "workspace.context-check.expected": {
+      "pt-BR": {
+        "before": "Escolha justificada pelo critério da situação.",
+        "after": "Você distingue o pedido da resposta."
+      },
+      "en": {
+        "before": "Choice justified by the situation’s criterion.",
+        "after": "You can distinguish a request from a response."
+      }
+    },
+    "workspace.context-check.feedback.a": {
+      "pt-BR": {
+        "before": "O nome de um arquivo não entrega seu conteúdo nem corrige a pasta escolhida.",
+        "after": "Essa é a resposta da IA."
+      },
+      "en": {
+        "before": "A filename does not supply its contents or correct the selected folder.",
+        "after": "That is the AI response."
+      }
+    },
+    "workspace.context-check.feedback.b": {
+      "pt-BR": {
+        "before": "Isso alinha a pasta exibida ao arquivo que você preparou.",
+        "after": "Isso: a pessoa enviou esse pedido."
+      },
+      "en": {
+        "before": "This aligns the displayed folder with the file you prepared.",
+        "after": "Right: the person sent that request."
+      }
+    },
+    "workspace.context-check.feedback.c": {
+      "pt-BR": {
+        "before": "Isso mistura os projetos para acomodar o contexto errado; a prática exige selecionar e conferir a pasta correta.",
+        "after": "Esse campo registra a atividade; não é a mensagem da conversa."
+      },
+      "en": {
+        "before": "This mixes projects to accommodate the wrong context; the exercise requires selecting and checking the right folder.",
+        "after": "That field records the activity; it is not a conversation message."
+      }
+    },
+    "workspace.context-check.hint": {
+      "pt-BR": {
+        "before": "Use as informações do caso, sem inventar observações.",
+        "after": "Procure a mensagem escrita pela pessoa, antes da resposta da IA."
+      },
+      "en": {
+        "before": "Use the case information without inventing observations.",
+        "after": "Look for the message written by the person before the AI response."
+      }
+    },
+    "workspace.context-check.objective": {
+      "pt-BR": {
+        "before": "Escolher a correção adequada para um erro de contexto.",
+        "after": "Selecione a mensagem que é o pedido."
+      },
+      "en": {
+        "before": "Choose the right recovery for a context error.",
+        "after": "Select the message that is the request."
+      }
+    },
+    "workspace.context-check.option.a": {
+      "pt-BR": {
+        "before": "Pedir à IA que adivinhe o conteúdo de brief.txt.",
+        "after": "“Olá!”, escrito pela IA."
+      },
+      "en": {
+        "before": "Ask the AI to guess the contents of brief.txt.",
+        "after": "“Hello!”, written by the AI."
+      }
+    },
+    "workspace.context-check.option.b": {
+      "pt-BR": {
+        "before": "Selecionar ganesha-pratica e conferir o contexto antes de pedir a leitura.",
+        "after": "“Diga olá”, escrito pela pessoa."
+      },
+      "en": {
+        "before": "Select ganesha-pratica and check the context before requesting a read.",
+        "after": "“Say hello”, written by the person."
+      }
+    },
+    "workspace.context-check.option.c": {
+      "pt-BR": {
+        "before": "Copiar brief.txt para loja-antiga e continuar sem revisar o projeto escolhido.",
+        "after": "O campo de anotação da Ganesha."
+      },
+      "en": {
+        "before": "Copy brief.txt into loja-antiga and continue without reviewing the chosen project.",
+        "after": "The note field in Ganesha."
+      }
+    },
+    "workspace.context-check.title": {
+      "pt-BR": {
+        "before": "Identificar a pasta errada",
+        "after": "Quem escreveu cada mensagem?"
+      },
+      "en": {
+        "before": "Identify the wrong folder",
+        "after": "Who wrote each message?"
+      }
+    },
+    "workspace.fictional-brief.action": {
+      "pt-BR": {
+        "before": "Salve os quatro dados e releia o arquivo.",
+        "after": null
+      },
+      "en": {
+        "before": "Save the four details and reread the file.",
+        "after": null
+      }
+    },
+    "workspace.fictional-brief.body": {
+      "pt-BR": {
+        "before": "Abra brief.txt num editor de texto e escreva: Ponte Musical; público iniciante; serviços violão, piano e canto; contato aulas@example.com. Salve. Esses dados são fictícios e serão usados nas aulas de sites. A informação necessária deve estar legível e vinculada à pasta certa; uma conversa antiga sobre outro projeto pode induzir uma resposta inadequada. Se não puder executar, compare os quatro dados fictícios apresentados nesta etapa e registre o impedimento; não declare execução.",
+        "after": "Vamos usar uma escola inventada: Ponte Musical. Ela oferece aulas de violão, piano e canto para iniciantes. Essas são as informações que daremos à IA. Assim, você já sabe o que a resposta deve dizer."
+      },
+      "en": {
+        "before": "Open brief.txt in a text editor and write: Ponte Musical; beginner audience; guitar, piano and singing services; contact aulas@example.com. Save it. These fictional details will be used in the site lessons. Necessary information must be readable and linked to the right folder; an old conversation about another project can lead to an unsuitable response. If you cannot execute, compare the four fictional details presented in this step and record the obstacle; do not claim execution.",
+        "after": "We will use a fictional school: Ponte Musical. It offers guitar, piano and singing lessons for beginners. This is the information we will give the AI. That way, you already know what its answer should say."
+      }
+    },
+    "workspace.fictional-brief.expected": {
+      "pt-BR": {
+        "before": "Quatro dados salvos e conferidos, ou impedimento e comparação simulada registrados.",
+        "after": "Sua anotação contém violão, piano e canto."
+      },
+      "en": {
+        "before": "Four details saved and checked, or obstacle and simulated comparison recorded.",
+        "after": "Your note includes guitar, piano and singing."
+      }
+    },
+    "workspace.fictional-brief.hint": {
+      "pt-BR": {
+        "before": "Confira o arquivo salvo, não apenas uma janela com alterações pendentes.",
+        "after": "Não é preciso pesquisar nem criar arquivos. Todas as informações necessárias estão no texto acima."
+      },
+      "en": {
+        "before": "Check the saved file, not only a window with unsaved changes.",
+        "after": "You do not need to research anything or create files. All the information you need is in the text above."
+      }
+    },
+    "workspace.fictional-brief.objective": {
+      "pt-BR": {
+        "before": "Fornecer dados suficientes sem misturar projetos.",
+        "after": "Copie aqui os três tipos de aula da escola."
+      },
+      "en": {
+        "before": "Supply enough context without mixing projects.",
+        "after": "Copy the school’s three types of lessons here."
+      }
+    },
+    "workspace.fictional-brief.title": {
+      "pt-BR": {
+        "before": "Preparar contexto pequeno e fictício",
+        "after": "Um exemplo para acompanhar"
+      },
+      "en": {
+        "before": "Prepare a small fictional brief",
+        "after": "An example to follow"
+      }
+    },
+    "workspace.folder.action": {
+      "pt-BR": {
+        "before": "Crie a pasta e o arquivo; registre onde ficaram.",
+        "after": null
+      },
+      "en": {
+        "before": "Create the folder and file; record their location.",
+        "after": null
+      }
+    },
+    "workspace.folder.body": {
+      "pt-BR": {
+        "before": "Uma pasta reúne arquivos relacionados. No gerenciador de arquivos, crie ganesha-pratica num local que consiga reencontrar. Para criar brief.txt, abra um editor: no macOS, TextEdit em modo de texto simples; no Windows, Bloco de Notas. Use Salvar como, selecione ganesha-pratica e nomeie brief.txt. Confira o arquivo na pasta; ele deve ser texto simples, não RTF, atalho ou arquivo compactado. Se não puder executar, use o exemplo simulado e registre o impedimento; não declare execução.",
+        "after": "Numa conversa com IA, você escreve na caixa de mensagem e usa o botão de enviar. A resposta aparece na conversa. Exemplo: caixa → “Diga olá” → enviar → resposta “Olá!”. Aqui na Ganesha, o campo abaixo serve para anotar sua atividade; ele não envia pedidos à IA."
+      },
+      "en": {
+        "before": "A folder groups related files. In the file manager, create ganesha-pratica somewhere you can find again. To create brief.txt, open an editor: TextEdit in plain-text mode on macOS, or Notepad on Windows. Use Save As, select ganesha-pratica and name the file brief.txt. Check it in the folder; it should be plain text, not RTF, a shortcut or a compressed archive. If you cannot execute, use the simulated example and record the obstacle; do not claim execution.",
+        "after": "In an AI conversation, you write in the message box and use the send button. The reply appears in the conversation. Example: box → “Say hello” → send → reply “Hello!”. Here in Ganesha, the field below records your activity; it does not send requests to the AI."
+      }
+    },
+    "workspace.folder.expected": {
+      "pt-BR": {
+        "before": "Pasta contém brief.txt, ou impedimento e análise do exemplo registrados.",
+        "after": "Sua anotação identifica onde se escreve um pedido."
+      },
+      "en": {
+        "before": "Folder contains brief.txt, or obstacle and example analysis are recorded.",
+        "after": "Your note identifies where to write a request."
+      }
+    },
+    "workspace.folder.hint": {
+      "pt-BR": {
+        "before": "No macOS, escolha texto simples antes de salvar; no Windows, use Bloco de Notas.",
+        "after": "A aparência e o nome do botão variam entre ferramentas. O exemplo ensina a sequência, sem exigir que você abra uma ferramenta agora."
+      },
+      "en": {
+        "before": "On macOS, choose plain text before saving; on Windows, use Notepad.",
+        "after": "The appearance and button label vary between tools. The example teaches the sequence without requiring you to open a tool now."
+      }
+    },
+    "workspace.folder.objective": {
+      "pt-BR": {
+        "before": "Distinguir a pasta do exercício de outros arquivos.",
+        "after": "Escreva “na caixa de mensagem” para indicar onde começa o pedido."
+      },
+      "en": {
+        "before": "Distinguish the exercise folder from other files.",
+        "after": "Write “in the message box” to show where a request starts."
+      }
+    },
+    "workspace.folder.title": {
+      "pt-BR": {
+        "before": "Criar uma pasta só para o exercício",
+        "after": "Onde escrever e onde ler"
+      },
+      "en": {
+        "before": "Create a folder for the exercise",
+        "after": "Where to write and where to read"
+      }
+    },
+    "workspace.outcome": {
+      "pt-BR": {
+        "before": "Abrir o contexto correto e registrar o que a ferramenta consegue acessar.",
+        "after": "Reconhecer um pedido, uma resposta e uma correção simples."
+      },
+      "en": {
+        "before": "Open the correct context and record what the tool can access.",
+        "after": "Recognize a request, a reply and a simple correction."
+      }
+    },
+    "workspace.read-only-request.action": {
+      "pt-BR": {
+        "before": "Envie o pedido e registre o resumo recebido.",
+        "after": null
+      },
+      "en": {
+        "before": "Send the request and record the summary received.",
+        "after": null
+      }
+    },
+    "workspace.read-only-request.body": {
+      "pt-BR": {
+        "before": "Um pedido pode solicitar apenas leitura e explicação. Planejar descreve uma abordagem; executar pode mudar arquivos ou usar ferramentas. Para esta etapa, use o pedido abaixo e leia qualquer solicitação de permissão antes de continuar. Se a ferramenta propuser criação ou publicação, retome o limite: só conferir o brief. Se não puder executar, analise o pedido abaixo e indique que a leitura não ocorreu e registre o impedimento; não declare execução.",
+        "after": "Este é o pedido completo para a IA. Se abriu uma ferramenta, copie o pedido abaixo para a caixa de mensagem e envie. Se escolheu acompanhar o exemplo, leia o pedido e a resposta apresentada depois dele. Na Ganesha, conte qual caminho fez."
+      },
+      "en": {
+        "before": "A request can ask only for reading and explanation. Planning describes an approach; execution may change files or use tools. For this step, use the request below and read any permission request before continuing. If the tool proposes creation or publication, return to the boundary: only check the brief. If you cannot execute, analyze the request below and state that reading did not happen and record the obstacle; do not claim execution.",
+        "after": "This is the complete request for the AI. If you opened a tool, copy the request below into its message box and send it. If you chose the example, read the request and the example reply below it. In Ganesha, record which path you took."
+      }
+    },
+    "workspace.read-only-request.example": {
+      "pt-BR": {
+        "before": null,
+        "after": "RESPOSTA DE EXEMPLO (com uma informação faltando):\nA Ponte Musical oferece aulas de violão e piano. As aulas são para iniciantes."
+      },
+      "en": {
+        "before": null,
+        "after": "EXAMPLE REPLY (with one detail missing):\nPonte Musical offers guitar and piano lessons. The lessons are for beginners."
+      }
+    },
+    "workspace.read-only-request.expected": {
+      "pt-BR": {
+        "before": "Resumo comparado com o brief, ou leitura não executada explicitamente registrada.",
+        "after": "Você tem uma resposta para ler, identificada como exemplo ou como resposta da sua ferramenta."
+      },
+      "en": {
+        "before": "Summary compared with the brief, or reading explicitly recorded as not executed.",
+        "after": "You have a reply to read, identified as an example or as a reply from your tool."
+      }
+    },
+    "workspace.read-only-request.hint": {
+      "pt-BR": {
+        "before": "Uma frase da IA não comprova, por si, o estado dos arquivos.",
+        "after": "Se não aparecer resposta, escreva o que apareceu na tela. Não é preciso corrigir tudo agora. A etapa seguinte mostra uma resposta de exemplo para conferir juntos."
+      },
+      "en": {
+        "before": "An AI statement alone does not establish the state of the files.",
+        "after": "If no reply appears, write what appeared on the screen. You do not need to fix everything now. The next step shows an example reply for us to check together."
+      }
+    },
+    "workspace.read-only-request.objective": {
+      "pt-BR": {
+        "before": "Separar entendimento do contexto e edição de arquivos.",
+        "after": "Escreva “li o exemplo” ou copie a resposta que apareceu na sua ferramenta."
+      },
+      "en": {
+        "before": "Separate understanding the context from changing files.",
+        "after": "Write “I read the example” or copy the reply that appeared in your tool."
+      }
+    },
+    "workspace.read-only-request.prompt": {
+      "pt-BR": {
+        "before": "Leia brief.txt na pasta escolhida. Resuma o nome, o público, os três serviços e o contato. Diga se alguma informação não estiver disponível. Não edite arquivos nem publique.",
+        "after": "Escreva duas frases simples sobre a escola Ponte Musical. Ela oferece aulas de violão, piano e canto para iniciantes. Inclua os três tipos de aula. Não crie arquivos nem publique nada."
+      },
+      "en": {
+        "before": "Read brief.txt in the selected folder. Summarize the name, audience, three services and contact. Say if any information is unavailable. Do not edit files or publish.",
+        "after": "Write two simple sentences about the school Ponte Musical. It offers guitar, piano and singing lessons for beginners. Include all three types of lessons. Do not create files or publish anything."
+      }
+    },
+    "workspace.read-only-request.title": {
+      "pt-BR": {
+        "before": "Pedir leitura antes de alteração",
+        "after": "Seu primeiro pedido completo"
+      },
+      "en": {
+        "before": "Request reading before editing",
+        "after": "Your first complete request"
+      }
+    },
+    "workspace.read-only-request.tool.claude": {
+      "pt-BR": {
+        "before": "Para propor sem editar, use Plan conforme a documentação Desktop. Não aplique atalhos de terminal como se fossem controles Desktop.",
+        "after": null
+      },
+      "en": {
+        "before": "For proposing without editing, use Plan as described in Desktop documentation. Do not treat terminal shortcuts as Desktop controls.",
+        "after": null
+      }
+    },
+    "workspace.read-only-request.tool.codex": {
+      "pt-BR": {
+        "before": "Declare no pedido que quer leitura e planejamento. Não suponha que uma instrução textual seja uma garantia de ausência de ações; confira o que a ferramenta propõe e executa.",
+        "after": null
+      },
+      "en": {
+        "before": "State that you want reading and planning. Do not assume a text instruction guarantees no actions; inspect what the tool proposes and does.",
+        "after": null
+      }
+    },
+    "workspace.select-context.action": {
+      "pt-BR": {
+        "before": "Registre o nome da pasta exibida na ferramenta.",
+        "after": null
+      },
+      "en": {
+        "before": "Record the folder name displayed by the tool.",
+        "after": null
+      }
+    },
+    "workspace.select-context.body": {
+      "pt-BR": {
+        "before": "Abra a pasta do exercício na ferramenta escolhida e confira o nome exibido. O local selecionado define o contexto de arquivos do trabalho; acesso a uma pasta não significa que você pediu para alterar tudo nela. Antes de prosseguir, reconheça onde aparecem a conversa, a pasta e as propostas ou resultados de ações. Se não puder executar, analise o caso anterior: ganesha-pratica é o contexto esperado, loja-antiga é o incorreto e registre o impedimento; não declare execução.",
+        "after": "Você pode aprender lendo a conversa de exemplo nesta aula. Se já tem acesso ao Claude ou Codex, também pode abrir essa ferramenta e iniciar uma conversa. Não precisa criar pasta ou arquivo para este pedido de texto. Se aparecer uma exigência de acesso ou configuração, use o exemplo para continuar."
+      },
+      "en": {
+        "before": "Open the exercise folder in your chosen tool and check the displayed name. The selected location defines the file context; access to a folder does not mean you requested changes to everything in it. Before continuing, identify where the conversation, folder and proposed or completed actions appear. If you cannot execute, analyze the earlier case: ganesha-pratica is the expected context and loja-antiga is incorrect and record the obstacle; do not claim execution.",
+        "after": "You can learn by reading the example conversation in this lesson. If you already have access to Claude or Codex, you can also open that tool and start a conversation. You do not need a folder or file for this text request. If access or setup is required, continue with the example."
+      }
+    },
+    "workspace.select-context.expected": {
+      "pt-BR": {
+        "before": "Contexto ganesha-pratica conferido, ou impedimento e escolha simulada registrados.",
+        "after": "Sua anotação mostra qual caminho você escolheu."
+      },
+      "en": {
+        "before": "ganesha-pratica context checked, or obstacle and simulated choice recorded.",
+        "after": "Your note shows which path you chose."
+      }
+    },
+    "workspace.select-context.hint": {
+      "pt-BR": {
+        "before": "Se os controles diferirem, consulte o início oficial da sua ferramenta.",
+        "after": "Nenhuma instalação ou assinatura é necessária para acompanhar o exemplo. Se abrir a ferramenta, procure a caixa de mensagem descrita na etapa 2."
+      },
+      "en": {
+        "before": "If controls differ, consult your tool’s official quickstart.",
+        "after": "No installation or subscription is required to follow the example. If you open the tool, look for the message box described in step 2."
+      }
+    },
+    "workspace.select-context.objective": {
+      "pt-BR": {
+        "before": "Conferir a localização antes de enviar dados.",
+        "after": "Escreva “vou usar o exemplo” ou “abri uma conversa na ferramenta”."
+      },
+      "en": {
+        "before": "Check the location before sending data.",
+        "after": "Write “I will use the example” or “I opened a conversation in the tool”."
+      }
+    },
+    "workspace.select-context.title": {
+      "pt-BR": {
+        "before": "Abrir o projeto correto na ferramenta",
+        "after": "Escolha como acompanhar"
+      },
+      "en": {
+        "before": "Open the correct project in the tool",
+        "after": "Choose how to follow along"
+      }
+    },
+    "workspace.select-context.tool.claude": {
+      "pt-BR": {
+        "before": "No Claude Desktop, abra Code, escolha Local e selecione a pasta ganesha-pratica. Acesso a Code depende das condições da conta.",
+        "after": null
+      },
+      "en": {
+        "before": "In Claude Desktop, open Code, choose Local and select ganesha-pratica. Access to Code depends on account conditions.",
+        "after": null
+      }
+    },
+    "workspace.select-context.tool.codex": {
+      "pt-BR": {
+        "before": "No aplicativo Desktop, escolha Codex e abra a pasta ou projeto ganesha-pratica. Confira o contexto exibido antes de enviar o pedido.",
+        "after": null
+      },
+      "en": {
+        "before": "In the Desktop app, select Codex and open the ganesha-pratica folder or project. Check the displayed context before sending.",
+        "after": null
+      }
+    },
+    "workspace.summary": {
+      "pt-BR": {
+        "before": "Conta, pasta, arquivos e contexto antes do primeiro pedido.",
+        "after": "Veja uma conversa de exemplo e aprenda a pedir, ler e conferir uma resposta."
+      },
+      "en": {
+        "before": "Account, folder, files and context before your first request.",
+        "after": "Follow an example conversation and learn to ask, read and check a reply."
+      }
+    },
+    "workspace.title": {
+      "pt-BR": {
+        "before": "Preparar seu espaço de trabalho",
+        "after": "Seu primeiro contato com IA"
+      },
+      "en": {
+        "before": "Prepare your workspace",
+        "after": "Your first encounter with AI"
+      }
+    },
+    "workspace.workspace-record.action": {
+      "pt-BR": {
+        "before": "Escreva seu registro de contexto e próxima ação.",
+        "after": null
+      },
+      "en": {
+        "before": "Write your context record and next action.",
+        "after": null
+      }
+    },
+    "workspace.workspace-record.body": {
+      "pt-BR": {
+        "before": "Registre ferramenta, pasta, arquivo usado e um dado conferido na resposta. Se a leitura não ocorreu, escreva isso e o impedimento encontrado. Esse registro permite continuar a próxima aula sem recontar toda a conversa. A Ganesha não verifica automaticamente o seu computador; a conclusão desta prática é autodeclarada.",
+        "after": "Você viu um pedido, uma resposta e uma correção. A IA respondeu a mensagens escritas, e nós conferimos se canto estava na resposta. Exemplo de anotação final: “Aprendi que preciso conferir se a IA incluiu tudo que pedi.”"
+      },
+      "en": {
+        "before": "Record the tool, folder, file used and one detail checked in the response. If reading did not happen, say so and record the obstacle. This allows you to continue the next lesson without recounting the entire conversation. Ganesha does not automatically inspect your computer; completion of this practice is self-reported.",
+        "after": "You saw a request, a reply and a correction. The AI answered written messages, and we checked whether singing appeared in the reply. Example final note: “I learned that I need to check whether the AI included everything I asked for.”"
+      }
+    },
+    "workspace.workspace-record.expected": {
+      "pt-BR": {
+        "before": "Registro contém contexto, observação e pendência ou próximo passo.",
+        "after": "Você registrou uma ideia da aula com suas próprias palavras."
+      },
+      "en": {
+        "before": "The record contains context, observation and an obstacle or next step.",
+        "after": "You recorded one idea from the lesson in your own words."
+      }
+    },
+    "workspace.workspace-record.hint": {
+      "pt-BR": {
+        "before": "Não inclua senhas ou informações da sua conta.",
+        "after": "Pode ser uma frase curta, como “o pedido vai na caixa de mensagem”. Na próxima aula, vamos praticar como explicar melhor o que queremos."
+      },
+      "en": {
+        "before": "Do not include passwords or account information.",
+        "after": "A short sentence is enough, such as “the request goes in the message box”. In the next lesson, we will practise explaining what we want more clearly."
+      }
+    },
+    "workspace.workspace-record.objective": {
+      "pt-BR": {
+        "before": "Produzir um resumo do contexto e das pendências.",
+        "after": "Complete: “Nesta aula, aprendi que…”."
+      },
+      "en": {
+        "before": "Summarize the context and remaining work.",
+        "after": "Complete: “In this lesson, I learned that…”."
+      }
+    },
+    "workspace.workspace-record.title": {
+      "pt-BR": {
+        "before": "Guardar um registro útil para continuar",
+        "after": "Guarde uma ideia desta aula"
+      },
+      "en": {
+        "before": "Keep a useful continuation record",
+        "after": "Keep one idea from this lesson"
+      }
+    }
+  }
+}

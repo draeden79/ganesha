@@ -1,0 +1,653 @@
+{
+  "lessons": [
+    {
+      "slug": "site-build",
+      "title": "Construir a primeira página",
+      "summary": "Transforme um pedido em uma página local com conteúdo e contato verificáveis.",
+      "outcome": "Uma pasta ponte-site com index.html aberto no navegador e um registro dos primeiros testes.",
+      "prerequisites": [
+        "verification"
+      ],
+      "minutes": 35,
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "steps": [
+        {
+          "slug": "page-contract",
+          "kind": "explain",
+          "mode": "concept",
+          "title": "O que esta página precisa fazer",
+          "body": "Um site reúne páginas que você vê em um navegador, como Chrome ou Safari. Vamos criar uma página da escola fictícia Ponte Musical. Ela mostrará violão, piano, canto e um botão Contato.",
+          "action": "Identifique o que a página da escola vai mostrar.",
+          "expected": "Você distingue mostrar um endereço de enviar uma mensagem ou cadastrar alguém.",
+          "hint": "Contato mostrará aulas@example.com, sem enviar mensagem. Os exemplos desta aula são inventados pela Ganesha; ainda não demonstram uma página funcionando. Você fará suas próprias observações.",
+          "criteria": [
+            "Reconhece violão, piano e canto.",
+            "Define contato como exibição do endereço, sem envio."
+          ],
+          "objective": "Delimitar o conteúdo e a única interação desta primeira página."
+        },
+        {
+          "slug": "project-folder",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Separar a pasta do site",
+          "body": "Uma pasta guarda arquivos. Arquivo é um item salvo no computador, como uma foto ou um texto. Crie uma pasta chamada ponte-site para guardar somente os arquivos desta página.",
+          "action": "Crie a pasta ponte-site no seu computador.",
+          "expected": "A ferramenta aponta para a pasta destinada somente a esta página.",
+          "hint": "No Mac, use Finder; no Windows, Explorador de Arquivos. Escolha Nova pasta dentro da pasta de prática. Depois selecione ponte-site na ferramenta usando a orientação de Claude ou Codex. Se aparecer outra pasta, corrija antes de continuar.",
+          "criteria": [
+            "A pasta selecionada é ponte-site.",
+            "Os arquivos de outras atividades ficam fora do escopo."
+          ],
+          "objective": "Selecionar uma pasta exclusiva antes de permitir alterações.",
+          "variants": {
+            "claude": "Em Claude Desktop, abra Code, escolha Local e selecione ponte-site como pasta de trabalho. Confira o caminho antes de pedir alterações.",
+            "codex": "Em Codex Desktop, abra ponte-site como pasta/projeto e confira esse contexto antes de enviar o pedido."
+          }
+        },
+        {
+          "slug": "plan-page",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Revisar um plano pequeno",
+          "body": "Um plano é uma lista do que será feito. A IA é o assistente que recebe seu pedido e propõe essa lista. Peça primeiro um plano para Ponte Musical; por exemplo, título, três serviços e contato.",
+          "action": "Envie o pedido de planejamento abaixo.",
+          "expected": "Um plano contém os elementos pedidos e não inclui coleta de dados.",
+          "hint": "Leia a resposta antes de permitir criar arquivos. Confira violão, piano, canto e contato sem envio. Se faltar algo, peça apenas esse ajuste. Se já estiver correto, diga isso; não invente uma falha.",
+          "criteria": [
+            "O plano lista os três serviços e o contato.",
+            "A criação aguarda a revisão do plano."
+          ],
+          "prompt": "Planeje uma página Ponte Musical para iniciantes em um único index.html autossuficiente: título, violão, piano e canto, com uma frase clara por serviço. Um botão Contato deve revelar aulas@example.com, inicialmente oculto, sem enviar nada. Sem bibliotecas externas, formulários, login ou coleta. Preveja uso por teclado e tela estreita. Liste arquivos e testes. Ainda não edite nem publique.",
+          "objective": "Comparar o plano com os elementos e limites do pedido.",
+          "variants": {
+            "claude": "Selecione Plan para pedir o planejamento sem editar arquivos; depois de revisar, permita a implementação quando estiver pronto.",
+            "codex": "No pedido, diga explicitamente para planejar sem editar. Revise a resposta antes de solicitar a implementação."
+          }
+        },
+        {
+          "slug": "scope-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Escolher o plano adequado",
+          "body": "Exemplo simulado: a IA planejou os três serviços, mas colocou um formulário pedindo nome e telefone. O combinado era apenas mostrar o endereço de contato. Escolha como corrigir o plano.",
+          "action": "Escolha a correção que respeita o combinado.",
+          "expected": "Sua escolha mantém os serviços e respeita a ação prevista para o contato.",
+          "hint": "Um formulário tem campos para uma pessoa preencher. Aqui não precisamos recolher informações de visitantes.",
+          "criteria": [
+            "Distingue exibição de contato de coleta de dados."
+          ],
+          "check": {
+            "question": "Qual resposta mantém o escopo de Ponte Musical?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Manter os serviços e substituir o formulário pelo botão que revela aulas@example.com, sem envio.",
+                "feedback": "Isso mantém os três serviços e corrige a ação que ultrapassava o pedido."
+              },
+              {
+                "id": "b",
+                "text": "Manter o formulário e pedir apenas o telefone para simplificar.",
+                "feedback": "Mesmo com um único campo, o formulário ainda coleta um dado que não foi solicitado."
+              },
+              {
+                "id": "c",
+                "text": "Remover canto para abrir espaço para o formulário.",
+                "feedback": "Isso retira um serviço obrigatório e mantém a função não solicitada."
+              }
+            ],
+            "correct": "a",
+            "success": "O plano agora pode orientar a criação sem introduzir cadastro.",
+            "retry": "Volte ao resultado pedido: três serviços e endereço exibido, sem coleta."
+          },
+          "objective": "Reconhecer uma revisão de plano que preserva o escopo."
+        },
+        {
+          "slug": "create-html",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Autorizar a criação do arquivo",
+          "body": "index.html será o nome do arquivo que guarda nossa página. Depois de aprovar o plano, peça à IA para criá-lo. Ela escreverá as instruções da página; você não precisa digitá-las nem entendê-las agora.",
+          "action": "Peça à IA para criar index.html com o plano aprovado.",
+          "expected": "A pasta contém um index.html completo, sem exigir instalação de bibliotecas.",
+          "hint": "Leia qualquer pedido de permissão antes de aceitar mudanças em ponte-site. Se a IA mostrar apenas texto na conversa, peça: salve isso como index.html na pasta selecionada. Uma mensagem de conclusão ainda não comprova funcionamento.",
+          "criteria": [
+            "O resultado é um arquivo index.html na pasta correta.",
+            "O plano revisado continua sendo o escopo."
+          ],
+          "prompt": "Implemente o plano revisado em ponte-site/index.html, considerando que ponte-site já é a pasta selecionada: salve index.html diretamente nela, sem criar outra ponte-site dentro. Inclua estilo e interação no próprio arquivo. Preserve os três serviços e o contato sem envio. Use um botão nativo com foco visível. Diga quais arquivos alterou e como abrir a página. Não publique.",
+          "objective": "Transformar o plano revisado em um arquivo local identificável."
+        },
+        {
+          "slug": "open-local-page",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Abrir o arquivo no navegador",
+          "body": "Agora vamos ver a página. Encontre index.html dentro de ponte-site e abra no navegador, como Chrome. Você deve ver uma página com o título Ponte Musical, e não uma tela cheia de instruções.",
+          "action": "Abra index.html no navegador.",
+          "expected": "Você vê a página renderizada e reconhece o arquivo local que abriu.",
+          "hint": "Na pasta, use Abrir com e escolha o navegador. Se aparecer texto, confirme que não abriu num editor e que o nome não terminou em .txt. Se estiver vazio, informe isso à IA. A página ainda está só no seu computador.",
+          "criteria": [
+            "A página foi observada no navegador ou o impedimento foi registrado.",
+            "Não confunde arquivo local com URL pública."
+          ],
+          "objective": "Distinguir a página renderizada do arquivo e da publicação."
+        },
+        {
+          "slug": "verify-content",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Conferir o conteúdo que foi criado",
+          "body": "Leia o que apareceu na página. Compare com este modelo: título Ponte Musical e serviços de violão, piano e canto. Por exemplo, se aparecem apenas violão e piano, falta um serviço.",
+          "action": "Confira se os três serviços aparecem na página.",
+          "expected": "O conteúdo observado coincide com título, serviços e limites do pedido.",
+          "hint": "Confira também o título e as frases de cada serviço. Não aceite preços ou promessas inventadas. Para corrigir uma falta, peça: inclua canto sem remover os outros serviços nem mudar o contato.",
+          "criteria": [
+            "Título e três serviços estão presentes.",
+            "Nenhum cadastro, envio ou oferta comercial inventada foi acrescentado."
+          ],
+          "objective": "Conferir a correspondência entre conteúdo pedido e conteúdo visível."
+        },
+        {
+          "slug": "first-contact-test",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Testar o primeiro clique",
+          "body": "O botão Contato deve mostrar um endereço na própria página. Ao clicar, espere ver aulas@example.com. Ele não deve enviar mensagem. O que importa neste teste é o que você vê acontecer.",
+          "action": "Clique uma vez em Contato.",
+          "expected": "O clique revela o endereço na própria página, sem enviar mensagem.",
+          "hint": "Antes do teste, use o botão de recarregar do navegador: o endereço deve começar escondido. Se não aparecer após o clique, descreva isso à IA. Depois de corrigir, repita o mesmo teste. Registre não executado se não conseguiu fazê-lo.",
+          "criteria": [
+            "Compara antes e depois do clique.",
+            "Repete a mesma sequência depois de corrigir."
+          ],
+          "prompt": "Confira index.html: ao recarregar, o endereço deve estar oculto; ao clicar Contato, deve aparecer aulas@example.com na própria página, sem envio. Vou informar o que observei e se houve falha. Se houver diferença, corrija apenas o necessário, preserve os três serviços e explique como repetir esse teste.",
+          "objective": "Observar e repetir a ação principal da página."
+        },
+        {
+          "slug": "evidence-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Reconhecer o que foi comprovado",
+          "body": "Exemplo simulado: a IA diz que criou index.html. Você encontrou o arquivo, mas ainda não abriu a página. Ter encontrado o arquivo é uma observação; ver o botão funcionar seria outra.",
+          "action": "Escolha o que já pode ser afirmado.",
+          "expected": "Você limita sua conclusão ao que realmente foi observado, sem presumir funcionamento.",
+          "hint": "Não use a mensagem da IA como substituta de abrir a página e observar o resultado.",
+          "criteria": [
+            "Não transforma uma mensagem da IA em teste de comportamento."
+          ],
+          "check": {
+            "question": "O que pode ser registrado agora?",
+            "options": [
+              {
+                "id": "a",
+                "text": "O contato funciona, porque a ferramenta confirmou.",
+                "feedback": "A confirmação da ferramenta não mostra o comportamento no navegador."
+              },
+              {
+                "id": "b",
+                "text": "A página está pública, porque index.html existe.",
+                "feedback": "Um arquivo local não é uma publicação acessível a visitantes."
+              },
+              {
+                "id": "c",
+                "text": "O arquivo existe; abertura e clique continuam pendentes de teste.",
+                "feedback": "Isso registra o que foi observado e conserva as verificações ainda necessárias."
+              }
+            ],
+            "correct": "c",
+            "success": "Seu registro distingue arquivo criado de comportamento verificado.",
+            "retry": "Pergunte qual ação você realmente observou, sem usar a mensagem da IA como substituta."
+          },
+          "objective": "Limitar conclusões à evidência realmente disponível."
+        },
+        {
+          "slug": "local-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Guardar a versão local e suas pendências",
+          "body": "Guarde o que descobriu para continuar depois. Por exemplo: vi os três serviços; o contato mostrou o endereço; ainda não testei teclado. Escreva somente o que aconteceu, inclusive quando algo ficou impedido.",
+          "action": "Escreva um registro curto do que conseguiu verificar.",
+          "expected": "A pasta e o registro permitem continuar sem confundir pendência com teste aprovado.",
+          "hint": "Inclua onde está index.html, o resultado do clique e o que falta testar. Guarde uma cópia de ponte-site antes de novas mudanças. Não copie o exemplo como se fosse sua experiência.",
+          "criteria": [
+            "Guarda uma cópia identificável da pasta.",
+            "Distingue aprovado, falhou e não executado."
+          ],
+          "objective": "Preservar uma versão local com testes e pendências identificados."
+        }
+      ]
+    },
+    {
+      "slug": "site-quality",
+      "title": "Tornar a página utilizável",
+      "summary": "Teste conteúdo, contato, teclado e tela estreita; corrija e repita com critérios claros.",
+      "outcome": "Uma página local com resultados documentados dos testes essenciais e correções verificadas.",
+      "prerequisites": [
+        "site-build"
+      ],
+      "minutes": 40,
+      "sourceRefs": [
+        "res-codex-prompting"
+      ],
+      "steps": [
+        {
+          "slug": "quality-criteria",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Definir qualidade observável",
+          "body": "Testar é fazer uma ação e observar o resultado. Exemplo simulado: um botão bonito pode não responder ao clique. Vamos olhar quatro coisas separadamente: texto, contato, teclado e página em janela estreita.",
+          "action": "Prepare uma lista com os quatro testes.",
+          "expected": "Você tem critérios distintos e não declara aprovação antes de realizar cada teste.",
+          "hint": "Use uma linha para cada teste. Deixe os resultados em branco até observar. Depois marque passou, falhou ou não executado. Esta é uma revisão inicial; não garante que a página funciona para todos os aparelhos e pessoas.",
+          "criteria": [
+            "Os quatro aspectos têm espaço para observação.",
+            "Reconhece os limites desta revisão inicial."
+          ],
+          "objective": "Definir testes distintos para uma revisão inicial da página."
+        },
+        {
+          "slug": "read-as-visitor",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Ler como um novo visitante",
+          "body": "Leia a página como alguém que nunca ouviu falar da escola. Por exemplo: o texto de canto explica o serviço sem depender da conversa com a IA? Procure uma frase que você não entenderia.",
+          "action": "Leia a página inteira como um novo visitante.",
+          "expected": "O conteúdo apresenta a escola e os três serviços sem informações inventadas ou restos de instruções.",
+          "hint": "Confira também título e três serviços. Anote o trecho exato se encontrar texto confuso, promessa inventada ou instrução interna. Se estiver claro, registre um exemplo do que ajudou; não precisa inventar problema.",
+          "criteria": [
+            "Leu a página renderizada inteira.",
+            "Relaciona cada apontamento a um trecho visível."
+          ],
+          "objective": "Encontrar problemas de compreensão no texto publicado localmente."
+        },
+        {
+          "slug": "contact-behavior",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Observar a mudança do contato",
+          "body": "Um clique deve revelar aulas@example.com uma única vez. Se clicar outra vez, não devem surgir endereços repetidos. Compare o que realmente aparece com esse exemplo de resultado esperado.",
+          "action": "Confira se um segundo clique duplica o endereço.",
+          "expected": "O contato revela o endereço uma vez, sem envio, e funciona novamente após recarregar.",
+          "hint": "Comece recarregando a página e faça o primeiro clique. Depois faça o segundo. Não deve haver envio nem mudança para outra página. Ao terminar, recarregue e confira que o primeiro clique continua funcionando.",
+          "criteria": [
+            "O endereço mostrado é aulas@example.com.",
+            "O clique não envia dados nem duplica o endereço.",
+            "A sequência foi repetida após recarga."
+          ],
+          "objective": "Verificar contato em cliques repetidos e após recarga."
+        },
+        {
+          "slug": "behavior-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Escolher um teste de comportamento",
+          "body": "Exemplo simulado: o botão parece pronto numa imagem e a IA escreveu que terminou. A imagem não mostra o que acontece depois de clicar. Escolha uma observação que permita verificar a ação prometida.",
+          "action": "Escolha a prova mais útil sobre o contato.",
+          "expected": "Você escolhe uma interação observada com resultado comparável ao pedido.",
+          "hint": "Uma imagem da página antes do clique só mostra o estado anterior; não mostra o resultado da ação.",
+          "criteria": [
+            "Relaciona a ação do usuário ao resultado visível."
+          ],
+          "check": {
+            "question": "Qual verificação avalia se Contato cumpre sua função?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Conferir se a cor do botão combina com o título.",
+                "feedback": "Isso verifica aparência, mas não mostra se o endereço aparece."
+              },
+              {
+                "id": "b",
+                "text": "Clicar e observar se aulas@example.com aparece na página sem envio.",
+                "feedback": "Essa ação permite comparar o comportamento real com o resultado combinado."
+              },
+              {
+                "id": "c",
+                "text": "Pedir à IA que repita que o botão está pronto.",
+                "feedback": "Uma nova afirmação ainda não é observação do comportamento."
+              }
+            ],
+            "correct": "b",
+            "success": "A verificação produz evidência do resultado, além da presença do botão.",
+            "retry": "Procure a opção que combina ação do visitante e resultado observado."
+          },
+          "objective": "Escolher evidência que demonstra uma ação do visitante."
+        },
+        {
+          "slug": "keyboard-path",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Usar o contato sem mouse",
+          "body": "Você pode usar uma página sem mouse. A tecla Tab passa entre controles; um contorno mostra qual está selecionado. Chegando a Contato, pressione Enter. O endereço deve aparecer como no teste com mouse.",
+          "action": "Teste o botão Contato usando o teclado.",
+          "expected": "O botão pode ser localizado e acionado pelo teclado com resultado equivalente ao clique.",
+          "hint": "Recarregue, clique numa parte vazia e use Tab até Contato. O contorno é chamado foco. Teste Enter; depois recarregue e repita com Espaço. Se não conseguir alcançar ou ativar o botão, registre isso antes de pedir ajuda.",
+          "criteria": [
+            "O foco em Contato é visível.",
+            "Enter e Espaço revelam o endereço.",
+            "Nenhum mouse é necessário para ativar o botão."
+          ],
+          "objective": "Verificar foco e ativação do contato por teclado."
+        },
+        {
+          "slug": "narrow-layout",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Reduzir a largura sem perder conteúdo",
+          "body": "Uma janela estreita ajuda a perceber problemas parecidos com os de uma tela pequena. Por exemplo, um cartão pode cobrir outro. Diminua a largura da janela e veja se ainda consegue ler os três serviços.",
+          "action": "Observe os três serviços em uma janela estreita.",
+          "expected": "Conteúdo e botão permanecem legíveis e utilizáveis na largura efetivamente testada.",
+          "hint": "Arraste a lateral da janela para uma largura parecida com a de um telefone. Confira também se Contato continua visível e utilizável. Anote texto cortado ou sobreposição. Isso não significa que todos os celulares foram testados.",
+          "criteria": [
+            "Os três serviços continuam acessíveis.",
+            "O contato funciona na janela estreita.",
+            "O registro identifica a condição testada."
+          ],
+          "objective": "Avaliar legibilidade e interação na largura testada."
+        },
+        {
+          "slug": "targeted-repair",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Pedir uma mudança verificável",
+          "body": "Para pedir uma correção, descreva uma diferença concreta. Exemplo simulado: na janela estreita, Contato fica escondido; preciso conseguir vê-lo. Use um problema que você realmente observou, sem pedir para mudar tudo.",
+          "action": "Envie uma observação concreta à IA.",
+          "expected": "O pedido indica condição, comportamento esperado e o que precisa ser preservado.",
+          "hint": "Use o pedido abaixo com seu registro. Se não encontrou falha, peça apenas revisão dos resultados e dos testes pendentes. Não registre o exemplo simulado como um problema real. Preserve os três serviços e o contato sem envio.",
+          "criteria": [
+            "Usa uma observação real ou declara ausência de falha.",
+            "Preserva os requisitos já atendidos."
+          ],
+          "prompt": "Vou fornecer meu registro dos testes de conteúdo, clique, teclado e tela estreita de Ponte Musical. Para cada falha observada, explique a causa provável e faça a menor correção necessária em index.html. Preserve título, violão/piano/canto e contato que apenas revela aulas@example.com. Diga como repetir o teste. Se não houver falha registrada, apenas aponte pendências e não edite por iniciativa própria.",
+          "objective": "Solicitar uma alteração específica com limites e reteste."
+        },
+        {
+          "slug": "regression-pass",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Repetir o que mudou e o que já funcionava",
+          "body": "Depois de uma correção, repita o teste que falhou. Por exemplo, se o botão estava escondido, volte à mesma largura de janela. A frase corrigido na conversa não mostra se o problema desapareceu.",
+          "action": "Repita o teste que motivou a mudança.",
+          "expected": "Você sabe se a correção resolveu o problema e preservou as outras funções testadas.",
+          "hint": "Abra a cópia salva mais recente. Depois confira também texto, clique, teclado e largura, uma coisa de cada vez. Uma mudança pode quebrar algo que funcionava. Se nada foi alterado, complete apenas testes pendentes e registre isso.",
+          "criteria": [
+            "A falha corrigida foi retestada quando aplicável.",
+            "Os quatro aspectos têm um resultado ou pendência explícita."
+          ],
+          "objective": "Confirmar uma correção sem perder requisitos já atendidos."
+        },
+        {
+          "slug": "regression-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Avaliar uma correção incompleta",
+          "body": "Exemplo simulado: agora Contato cabe na janela estreita, mas o serviço de canto desapareceu. A mudança resolveu uma dificuldade e criou outra. Considere o resultado inteiro, incluindo o que deveria permanecer na página.",
+          "action": "Escolha como tratar essa correção incompleta.",
+          "expected": "Você identifica que uma melhoria isolada não aprova uma versão com requisito perdido.",
+          "hint": "Os três serviços ainda são obrigatórios. Mudar o critério para combinar com um erro não corrige a página.",
+          "criteria": [
+            "Reconhece a necessidade de retestar funções e conteúdo preservados."
+          ],
+          "check": {
+            "question": "O que fazer antes de considerar a versão pronta?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Aprovar, pois o botão agora cabe na janela.",
+                "feedback": "A correção resolveu um problema, mas removeu um serviço obrigatório."
+              },
+              {
+                "id": "b",
+                "text": "Retirar canto dos critérios para combinar com a página.",
+                "feedback": "Isso altera o objetivo para esconder uma regressão, em vez de corrigir a página."
+              },
+              {
+                "id": "c",
+                "text": "Pedir a restauração de canto preservando o ajuste de largura e repetir os testes.",
+                "feedback": "Isso trata a perda concreta e confere se as duas necessidades passam a ser atendidas."
+              }
+            ],
+            "correct": "c",
+            "success": "Sua revisão preserva o resultado completo, não apenas a mudança mais recente.",
+            "retry": "O título, os três serviços e o contato continuam fazendo parte do acordo."
+          },
+          "objective": "Identificar uma regressão e orientar sua correção."
+        },
+        {
+          "slug": "quality-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Decidir se a página pode ser publicada",
+          "body": "Olhe seu registro antes de continuar. Por exemplo: contato passou; teclado ainda não executado. Essa pendência precisa continuar visível. Só considere um teste aprovado quando você tiver observado o resultado esperado.",
+          "action": "Decida se ainda falta alguma correção ou teste.",
+          "expected": "A decisão de seguir ou corrigir depende de evidência local e deixa os limites explícitos.",
+          "hint": "Registre teste, condição, observado e situação. Se falta conteúdo ou Contato falha, corrija antes de publicar. Guarde uma cópia da versão que passou. Isso não é uma verificação completa de todos os usos possíveis.",
+          "criteria": [
+            "Cada aprovação corresponde a um teste observado.",
+            "Falhas e testes não executados permanecem visíveis."
+          ],
+          "objective": "Decidir o próximo passo com base nos resultados locais."
+        }
+      ]
+    },
+    {
+      "slug": "site-publish",
+      "title": "Publicar e atualizar a página",
+      "summary": "Envie uma versão testada, confira acesso sem sua sessão e publique uma alteração no mesmo projeto.",
+      "outcome": "Uma URL verificada como visitante ou um impedimento documentado, com pasta e instruções de entrega.",
+      "prerequisites": [
+        "site-quality"
+      ],
+      "minutes": 45,
+      "sourceRefs": [
+        "res-netlify-drop-static",
+        "res-netlify-project-visibility"
+      ],
+      "steps": [
+        {
+          "slug": "local-versus-hosted",
+          "kind": "explain",
+          "mode": "concept",
+          "title": "Distinguir arquivo, hospedagem e acesso",
+          "body": "Publicar é colocar a página num serviço para outras pessoas acessarem pela internet. URL é o endereço que elas abrem no navegador. Nesta aula usaremos Netlify; receber um endereço ainda não garante acesso público.",
+          "action": "Explique a diferença entre abrir no seu computador e publicar.",
+          "expected": "Você sabe que publicação e acesso público exigem verificações próprias após os testes locais.",
+          "hint": "Netlify é o serviço que guardará os arquivos. Confira condições, custos e permissões da sua conta; não há promessa de gratuidade. O endereço da tela de administração não substitui um teste da página como visitante.",
+          "criteria": [
+            "Distingue arquivo local, URL hospedada e acesso público.",
+            "Reconhece que condições da conta precisam ser verificadas."
+          ],
+          "objective": "Separar hospedagem de permissão de acesso público."
+        },
+        {
+          "slug": "publish-package",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Preparar uma pasta de entrega",
+          "body": "Prepare uma cópia da página que já foi testada. Chame a nova pasta ponte-site-publicar. Ela será o pacote enviado ao serviço; por exemplo, index.html deve ficar diretamente dentro dela, não dentro de outra pasta.",
+          "action": "Crie a cópia ponte-site-publicar.",
+          "expected": "A pasta contém a página correta e uma identificação visível da versão a enviar.",
+          "hint": "Preserve ponte-site original. Selecione a nova pasta na ferramenta e use o pedido abaixo para acrescentar Versão A no rodapé. Abra essa cópia e teste conteúdo e contato antes de enviar. Para este site, basta index.html; deixe dados pessoais e outros arquivos de fora.",
+          "criteria": [
+            "index.html fica diretamente na pasta de publicação.",
+            "Versão A e contato foram observados na cópia preparada."
+          ],
+          "prompt": "Com ponte-site-publicar selecionada como pasta do projeto, edite index.html diretamente nela; não crie outra subpasta. No arquivo, acrescente no rodapé o texto Versão A. Preserve título Ponte Musical, os três serviços e o botão que revela aulas@example.com sem envio. Não publique. Confirme o caminho alterado para que eu teste essa cópia localmente.",
+          "objective": "Preparar um pacote testado e reconhecer sua versão."
+        },
+        {
+          "slug": "hosting-account",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Conferir conta e equipe de destino",
+          "body": "Para guardar e atualizar seu site no Netlify, você precisa entrar numa conta. Acesse https://app.netlify.com/login. Antes de aceitar um plano, veja as condições e custos apresentados; este exercício não exige comprar uma assinatura.",
+          "action": "Verifique se consegue entrar na conta Netlify escolhida.",
+          "expected": "Você identifica onde o site será administrado e quais condições de acesso foram encontradas.",
+          "hint": "Se necessário, crie a conta que decidiu usar. Equipe é o espaço onde seus projetos ficam administrados; confirme a equipe escolhida. Se faltar acesso, registre o impedimento e mantenha a pasta local. Nunca escreva senha ou chave no registro da aula.",
+          "criteria": [
+            "O destino foi conferido antes do upload.",
+            "Um bloqueio de acesso é registrado como pendência, não como publicação concluída."
+          ],
+          "objective": "Identificar destino, condições de conta e eventuais bloqueios."
+        },
+        {
+          "slug": "package-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Escolher o pacote correto",
+          "body": "Exemplo simulado: há três pastas parecidas, mas só ponte-site-publicar contém a página testada com Versão A. O serviço receberá os arquivos que você escolher. Ele não procura automaticamente mudanças guardadas em outras pastas.",
+          "action": "Escolha a pasta que deve ser enviada.",
+          "expected": "Você seleciona os arquivos necessários da versão correta, com a página inicial no nível esperado.",
+          "hint": "Confira a presença de index.html diretamente na pasta e reconheça a versão que você testou.",
+          "criteria": [
+            "Relaciona pasta enviada e versão local testada."
+          ],
+          "check": {
+            "question": "Qual pasta deve ser enviada neste exercício?",
+            "options": [
+              {
+                "id": "a",
+                "text": "A pasta geral de estudos, para não faltar nenhum arquivo de outras atividades.",
+                "feedback": "Ela pode incluir material alheio ao site e deixar index.html dentro de subpastas."
+              },
+              {
+                "id": "b",
+                "text": "ponte-site-publicar, com index.html diretamente dentro e Versão A testada.",
+                "feedback": "Esse pacote corresponde à página preparada e evita misturar versões ou atividades."
+              },
+              {
+                "id": "c",
+                "text": "A cópia antiga, porque o serviço vai aplicar automaticamente as mudanças locais recentes.",
+                "feedback": "O upload envia os arquivos selecionados; não busca mudanças guardadas em outra pasta."
+              }
+            ],
+            "correct": "b",
+            "success": "O pacote corresponde à versão que você poderá reconhecer na URL.",
+            "retry": "Procure a pasta testada cuja página inicial está diretamente dentro dela."
+          },
+          "objective": "Selecionar a pasta correspondente à versão aprovada."
+        },
+        {
+          "slug": "first-upload",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Enviar a primeira versão",
+          "body": "Upload significa enviar arquivos do computador para um serviço. Abra https://app.netlify.com/drop e envie ponte-site-publicar. Depois de terminar, Netlify deve mostrar um endereço terminado em netlify.app. Esse será o endereço para testar.",
+          "action": "Envie ponte-site-publicar pela página Netlify Drop.",
+          "expected": "Há uma URL do projeto ou um impedimento documentado, sem presumir acesso público.",
+          "hint": "Arraste a pasta para a área indicada e aguarde terminar. Copie a URL recebida. Se travar, registre a mensagem e confira conexão e pasta. Se abrir uma página vazia, compare o index.html enviado com a cópia local; não substitua por um arquivo vazio.",
+          "criteria": [
+            "A pasta enviada corresponde à versão testada.",
+            "O resultado observado do upload foi registrado."
+          ],
+          "objective": "Relacionar upload, resultado observado e URL recebida."
+        },
+        {
+          "slug": "visitor-permission",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Ajustar a visibilidade pretendida",
+          "body": "Público significa que outras pessoas podem abrir o endereço. Privado pode exigir uma conta autorizada. No projeto Netlify, confira essa escolha. Use Make public somente se quiser acesso público e sua conta permitir.",
+          "action": "Confira se este projeto está público ou privado.",
+          "expected": "A configuração corresponde ao público pretendido ou a restrição de acesso está claramente registrada.",
+          "hint": "A documentação indica Project configuration > General > Visitor access > Project visibility. Produção é a versão publicada para visitantes; prévia é uma versão de teste, com controle separado. Make public exige envio de produção concluído. Se faltar permissão, registre o bloqueio; não mude a política de toda a equipe.",
+          "criteria": [
+            "A visibilidade examinada é a da produção desejada.",
+            "Permissões ausentes não são confundidas com falha dos arquivos."
+          ],
+          "objective": "Conferir a visibilidade de produção sem mudar outras políticas."
+        },
+        {
+          "slug": "visitor-test",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Testar como alguém sem sua sessão",
+          "body": "Você pode estar vendo a página porque sua conta tem acesso. Teste como outra pessoa: abra o endereço sem sua sessão Netlify. Por exemplo, use uma janela privada para ver se aparece a página ou um pedido de login.",
+          "action": "Abra a URL como visitante sem sua sessão de dono.",
+          "expected": "O visitante pretendido vê a versão correta e consegue usar o contato, ou há impedimentos documentados.",
+          "hint": "Janela privada é uma janela separada do navegador, como anônima no Chrome. Confirme que não está conectado como dono. Veja Versão A e teste os três serviços, contato, teclado e largura, um por vez. Login bloqueando indica investigar acesso; conteúdo faltando indica conferir a pasta enviada.",
+          "criteria": [
+            "Acesso foi testado sem a sessão do proprietário.",
+            "Conteúdo e contato foram conferidos na URL.",
+            "O registro distingue acesso negado de página com defeito."
+          ],
+          "objective": "Comprovar acesso e comportamento sem a sessão do dono."
+        },
+        {
+          "slug": "publish-update",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Atualizar sem criar outro projeto",
+          "body": "Atualizar é enviar uma nova versão ao mesmo projeto. Exemplo: troque o rodapé de Versão A para Versão B. Teste a cópia no computador antes de enviá-la; outras pessoas verão a mudança publicada.",
+          "action": "Atualize o mesmo projeto com a Versão B testada.",
+          "expected": "A mesma URL mostra Versão B e mantém os serviços e o contato funcionando.",
+          "hint": "Guarde uma cópia da Versão A. Use o pedido abaixo para preparar B e confira-a localmente. No mesmo projeto Netlify, envie a pasta em Production deploys: isso muda a versão publicada. Depois abra a mesma URL como visitante e confira B e Contato. Se falhar, teste a cópia anterior e envie-a ao mesmo projeto.",
+          "criteria": [
+            "A alteração foi testada antes de atingir a produção.",
+            "A URL mostra Versão B sem perder os serviços e o contato."
+          ],
+          "prompt": "Com ponte-site-publicar selecionada como pasta do projeto, edite index.html diretamente nela; não crie outra subpasta. No arquivo, altere somente o rodapé de Versão A para Versão B. Preserve todos os serviços e a interação de contato. Não publique automaticamente: vou testar a cópia e enviar a pasta ao mesmo projeto Netlify. Informe o arquivo alterado e qualquer diferença além do texto solicitado.",
+          "objective": "Atualizar o mesmo projeto e verificar a versão em produção."
+        },
+        {
+          "slug": "public-access-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Separar sucesso de upload e acesso público",
+          "body": "Exemplo simulado: você vê Versão B quando está conectado. Outra pessoa vê uma tela de acesso restrito. O envio terminou, mas isso ainda não demonstra que qualquer visitante consegue abrir a página.",
+          "action": "Escolha o próximo passo para investigar o acesso.",
+          "expected": "Você verifica acesso de visitante sem confundi-lo com upload concluído ou visualização autenticada.",
+          "hint": "Reenviar os mesmos arquivos não necessariamente altera quem pode ver o projeto. Primeiro compare as permissões de acesso.",
+          "criteria": [
+            "Identifica visibilidade e permissões como investigação pertinente ao acesso negado."
+          ],
+          "check": {
+            "question": "Qual é a próxima ação mais útil?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Conferir visibilidade da produção e permissões, ajustar se permitido e repetir sem a sessão do dono.",
+                "feedback": "Isso investiga a diferença de acesso e exige confirmar o resultado como visitante."
+              },
+              {
+                "id": "b",
+                "text": "Anunciar acesso público, pois o painel diz que o upload terminou.",
+                "feedback": "Conclusão do upload não demonstra que um visitante não autenticado tem acesso."
+              },
+              {
+                "id": "c",
+                "text": "Remover canto e reenviar a página para eliminar o bloqueio de login.",
+                "feedback": "Remover um serviço não trata a configuração de acesso e ainda viola o conteúdo combinado."
+              }
+            ],
+            "correct": "a",
+            "success": "Você mantém separados o envio de arquivos e a permissão para vê-los.",
+            "retry": "O sintoma depende da sessão do visitante; comece pela configuração de acesso."
+          },
+          "objective": "Investigar acesso negado sem confundi-lo com falha de conteúdo."
+        },
+        {
+          "slug": "delivery-record",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Entregar com versão, testes e recuperação",
+          "body": "Entregue uma instrução curta junto com o endereço. Exemplo: Versão B; contato testado; cópia anterior guardada nesta pasta. Se não conseguiu publicar, entregue a pasta e explique o impedimento, sem afirmar uma publicação que não ocorreu.",
+          "action": "Escreva a nota de entrega da sua página.",
+          "expected": "A entrega identifica versão, evidências observadas e um caminho concreto para atualizar ou recuperar.",
+          "hint": "Inclua URL, versão vista, pasta correspondente, testes realizados e pendências. Explique que atualizar exige usar o mesmo projeto e indique onde guardou a cópia anterior. A Ganesha não verifica automaticamente suas ações; registre somente o que observou.",
+          "criteria": [
+            "Entrega corresponde à versão efetivamente observada.",
+            "Inclui atualização no mesmo projeto e localização da cópia anterior.",
+            "Pendências não são apresentadas como etapas executadas."
+          ],
+          "objective": "Entregar versão e evidências com instruções de atualização e recuperação."
+        }
+      ]
+    }
+  ]
+}

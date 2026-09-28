@@ -1,0 +1,37 @@
+{
+  "lessonCount": 12,
+  "stepCount": 120,
+  "assessmentCount": 24,
+  "firstLessonSteps": 10,
+  "firstLessonAssessments": 2,
+  "lessonStepCheckIdsPreserved": true,
+  "correctOptionIdsPreserved": true,
+  "otherElevenLessonsAuthoringUnchanged": true,
+  "ptEnCoverageComplete": true,
+  "availableLocales": [
+    "pt-BR",
+    "en"
+  ],
+  "pendingLocales": [
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "hi",
+    "id",
+    "ar",
+    "ko",
+    "zh-CN"
+  ],
+  "messageCount": 1186,
+  "changedKeyCount": 74,
+  "addedKeyCount": 7,
+  "removedKeyCount": 13,
+  "visualReview": "pending Artista and app preview",
+  "learnerTest": "not performed",
+  "files": {
+    "bundle/content/curriculum/course.json": "06cca3c55848eee62eb5ee94f05de021e560bc5ae2bd60a69bc684afbeabe15f",
+    "bundle/content/locales/en.json": "63d4c664ff38bae5665362583ad40d113d3db7cc272627debaded59abc748993",
+    "bundle/content/locales/pt-BR.json": "2c164c579b3f3cb9fc89c911da825e7e53146ee14cdee631a393e152ffc4a428"
+  }
+}

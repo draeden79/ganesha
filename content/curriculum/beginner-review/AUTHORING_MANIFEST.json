@@ -1,0 +1,29 @@
+{
+  "version": "0.3.0",
+  "sourceFiles": {
+    "authoring/apps.en.json": "1bc8067f3a0f2a4159739854bc803d59c9d0685c77d48ca5746d7fbacbe6f86e",
+    "authoring/apps.pt-BR.json": "15866c2b727959e5158b154463ed57e00ffc14c0006d56be9b399535b44add77",
+    "authoring/automation.en.json": "83562e81a656670f1f29ea9829000ed726d27f71d6a759dde224569b176db6d8",
+    "authoring/automation.pt-BR.json": "290b6c57faf0bc9dbdd8c873b528901fc6451f0f5f34fb8335618634e5f07e8a",
+    "authoring/foundations.en.json": "273b607bfa0ae5aa17301598108fe9652f6db76cbcc9406f0baf44fb18efa884",
+    "authoring/foundations.pt-BR.json": "2783b8c52f6f678bb29e2f165bb4911e79b0d8996616103b55e3bca233be890e",
+    "authoring/sites.en.json": "4db11b5a3939bff82a3b77ae1030a1a477819d1d12c01c7acbaf3e513f3f6c55",
+    "authoring/sites.pt-BR.json": "c835ca04f05b03734725097420565e0b018fbd07206303be4cc630bc1c5d1d1c"
+  },
+  "messageCount": 1186,
+  "sourceEnglishSha256": "29b332f479ad53b2d682f334b51ec9f63c4151ed0f2b329a153d705cd5160b7f",
+  "lessons": [
+    "workspace",
+    "requests",
+    "verification",
+    "site-build",
+    "site-quality",
+    "site-publish",
+    "app-state",
+    "app-storage",
+    "app-delivery",
+    "automation-input",
+    "automation-report",
+    "automation-schedule"
+  ]
+}

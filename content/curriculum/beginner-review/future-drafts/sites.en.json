@@ -1,0 +1,653 @@
+{
+  "lessons": [
+    {
+      "slug": "site-build",
+      "title": "Build your first page",
+      "summary": "Turn a request into a local page with content and contact behavior you can verify.",
+      "outcome": "A ponte-site folder with index.html open in a browser and a record of the first tests.",
+      "prerequisites": [
+        "verification"
+      ],
+      "minutes": 35,
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "steps": [
+        {
+          "slug": "page-contract",
+          "kind": "explain",
+          "mode": "concept",
+          "title": "What this page needs to do",
+          "body": "A website contains pages you view in a browser, such as Chrome or Safari. We will create one page for the fictional Ponte Musical school. It will show guitar, piano, singing and a Contact button.",
+          "action": "Identify what the school page will show.",
+          "expected": "You distinguish showing an address from sending a message or registering someone.",
+          "hint": "Contact will show aulas@example.com without sending a message. These examples were invented by Ganesha; they do not demonstrate a working page yet. You will make your own observations.",
+          "criteria": [
+            "Recognizes guitar, piano and singing.",
+            "Defines contact as showing the address without sending."
+          ],
+          "objective": "Define the content and single interaction of this first page."
+        },
+        {
+          "slug": "project-folder",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Separate the site folder",
+          "body": "A folder holds files. A file is an item saved on your computer, such as a photo or text. Create a folder called ponte-site to hold only the files for this page.",
+          "action": "Create the ponte-site folder on your computer.",
+          "expected": "The tool points to the folder intended only for this page.",
+          "hint": "On Mac, use Finder; on Windows, File Explorer. Choose New folder inside your practice folder. Then select ponte-site in your tool using the Claude or Codex guidance. If another folder appears, correct it before continuing.",
+          "criteria": [
+            "The selected folder is ponte-site.",
+            "Files from other activities remain outside the scope."
+          ],
+          "objective": "Select an exclusive folder before allowing changes.",
+          "variants": {
+            "claude": "In Claude Desktop, open Code, choose Local and select ponte-site as the working folder. Check the path before requesting changes.",
+            "codex": "In Codex Desktop, open ponte-site as the folder/project and check this context before sending the request."
+          }
+        },
+        {
+          "slug": "plan-page",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Review a small plan",
+          "body": "A plan is a list of what will be done. The AI is the assistant that receives your request and proposes that list. First request a plan for Ponte Musical: for example, title, three services and contact.",
+          "action": "Send the planning request below.",
+          "expected": "A plan contains the requested elements and includes no data collection.",
+          "hint": "Read the response before allowing file creation. Check guitar, piano, singing and contact without sending. If something is missing, request only that adjustment. If it already fits, say so; do not invent a failure.",
+          "criteria": [
+            "The plan lists all three services and contact.",
+            "Creation waits for the plan review."
+          ],
+          "prompt": "Plan a Ponte Musical page for beginners in one self-contained index.html: title, guitar, piano and singing, with one clear sentence per service. A Contact button must reveal aulas@example.com, initially hidden, without sending anything. No external libraries, forms, login or collection. Plan for keyboard use and narrow screens. List files and tests. Do not edit or publish yet.",
+          "objective": "Compare the plan with requested elements and boundaries.",
+          "variants": {
+            "claude": "Select Plan to request planning without file edits; after reviewing, allow implementation when you are ready.",
+            "codex": "Explicitly ask for planning without editing. Review the response before requesting implementation."
+          }
+        },
+        {
+          "slug": "scope-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Choose the appropriate plan",
+          "body": "Simulated example: the AI planned all three services but added a form asking for a name and phone number. The agreement was only to show the contact address. Choose how to correct the plan.",
+          "action": "Choose the correction that respects the agreement.",
+          "expected": "Your choice preserves the services and respects the intended contact action.",
+          "hint": "A form has fields someone fills in. We do not need to collect visitor information here.",
+          "criteria": [
+            "Distinguishes showing contact details from collecting data."
+          ],
+          "check": {
+            "question": "Which response preserves the scope of Ponte Musical?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Keep the services and replace the form with the button revealing aulas@example.com without sending.",
+                "feedback": "This preserves the three services and corrects the action that exceeded the request."
+              },
+              {
+                "id": "b",
+                "text": "Keep the form and ask only for a phone number to simplify it.",
+                "feedback": "Even with one field, the form still collects information that was not requested."
+              },
+              {
+                "id": "c",
+                "text": "Remove singing to make space for the form.",
+                "feedback": "This removes a required service and keeps the unrequested feature."
+              }
+            ],
+            "correct": "a",
+            "success": "The plan can now guide creation without introducing registration.",
+            "retry": "Return to the requested result: three services and an address shown without collection."
+          },
+          "objective": "Recognize a plan revision that preserves scope."
+        },
+        {
+          "slug": "create-html",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Authorize file creation",
+          "body": "index.html will be the name of the file holding our page. After approving the plan, ask the AI to create it. It will write the page instructions; you do not need to type or understand them now.",
+          "action": "Ask the AI to create index.html from the approved plan.",
+          "expected": "The folder contains a complete index.html without requiring library installation.",
+          "hint": "Read any permission request before allowing changes in ponte-site. If the AI only shows text in the conversation, ask: save this as index.html in the selected folder. A completion message does not yet establish that it works.",
+          "criteria": [
+            "The result is an index.html file in the correct folder.",
+            "The reviewed plan remains the scope."
+          ],
+          "prompt": "Implement the revised plan in ponte-site/index.html. Since ponte-site is already the selected folder, save index.html directly there without nesting another ponte-site inside. Include styling and interaction in the file. Preserve all three services and contact without sending. Use a native button with visible focus. Tell me which files changed and how to open the page. Do not publish.",
+          "objective": "Turn the reviewed plan into an identifiable local file."
+        },
+        {
+          "slug": "open-local-page",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Open the file in a browser",
+          "body": "Now we will see the page. Find index.html inside ponte-site and open it in a browser such as Chrome. You should see a page titled Ponte Musical rather than a screen full of instructions.",
+          "action": "Open index.html in the browser.",
+          "expected": "You see the rendered page and recognize the local file you opened.",
+          "hint": "In the folder, use Open with and choose your browser. If text appears, check that you did not open an editor and that the filename does not end in .txt. Tell the AI if it is empty. The page is still only on your computer.",
+          "criteria": [
+            "The page was observed in the browser or the obstacle was recorded.",
+            "Does not confuse a local file with a public URL."
+          ],
+          "objective": "Distinguish the rendered page from its file and publication."
+        },
+        {
+          "slug": "verify-content",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Check the created content",
+          "body": "Read what appeared on the page. Compare it with this model: Ponte Musical title and guitar, piano and singing services. For example, if only guitar and piano appear, one service is missing.",
+          "action": "Check whether all three services appear on the page.",
+          "expected": "The observed content matches the requested title, services and boundaries.",
+          "hint": "Also check the title and each service description. Do not accept invented prices or promises. To correct an omission, ask: add singing without removing other services or changing contact.",
+          "criteria": [
+            "The title and all three services are present.",
+            "No registration, sending or invented commercial offer was added."
+          ],
+          "objective": "Check correspondence between requested and visible content."
+        },
+        {
+          "slug": "first-contact-test",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Test the first click",
+          "body": "The Contact button should show an address on the page itself. After clicking, expect aulas@example.com. It should not send a message. What matters in this test is what you see happen.",
+          "action": "Click Contact once.",
+          "expected": "The click reveals the address on the page without sending a message.",
+          "hint": "Before testing, use the browser reload button: the address should start hidden. If it does not appear after clicking, describe that to the AI. Repeat the same test after correction. Record not performed if you could not do it.",
+          "criteria": [
+            "Compares before and after the click.",
+            "Repeats the same sequence after a correction."
+          ],
+          "prompt": "Check index.html: after reloading, the address must be hidden; clicking Contact must show aulas@example.com on the page without sending. I will provide what I observed and whether it failed. If it differs, correct only what is necessary, preserve the three services and explain how to repeat this test.",
+          "objective": "Observe and repeat the page’s main action."
+        },
+        {
+          "slug": "evidence-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Recognize what was established",
+          "body": "Simulated example: the AI says it created index.html. You found the file but have not opened the page. Finding the file is one observation; seeing the button work would be another.",
+          "action": "Choose what can already be stated.",
+          "expected": "You limit your conclusion to actual observation without assuming that it works.",
+          "hint": "Do not use the AI message as a substitute for opening the page and observing the result.",
+          "criteria": [
+            "Does not turn an AI message into a behavior test."
+          ],
+          "check": {
+            "question": "What can be recorded now?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Contact works because the tool confirmed it.",
+                "feedback": "The tool’s confirmation does not show behavior in the browser."
+              },
+              {
+                "id": "b",
+                "text": "The page is public because index.html exists.",
+                "feedback": "A local file is not a publication visitors can access."
+              },
+              {
+                "id": "c",
+                "text": "The file exists; opening and clicking still need testing.",
+                "feedback": "This records the observation and preserves the checks still needed."
+              }
+            ],
+            "correct": "c",
+            "success": "Your record distinguishes file creation from verified behavior.",
+            "retry": "Ask what action you actually observed, without substituting the AI message."
+          },
+          "objective": "Limit conclusions to evidence actually available."
+        },
+        {
+          "slug": "local-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Keep the local version and its pending checks",
+          "body": "Keep what you learned so you can continue later. For example: I saw three services; contact showed the address; I have not tested the keyboard. Write only what happened, including anything that was blocked.",
+          "action": "Write a short record of what you could verify.",
+          "expected": "The folder and record let you continue without confusing a pending check with a pass.",
+          "hint": "Include where index.html is, the click result and remaining tests. Keep a copy of ponte-site before more changes. Do not copy the example as if it were your experience.",
+          "criteria": [
+            "Keeps an identifiable copy of the folder.",
+            "Distinguishes passed, failed and not performed."
+          ],
+          "objective": "Preserve a local version with identified tests and pending checks."
+        }
+      ]
+    },
+    {
+      "slug": "site-quality",
+      "title": "Make the page usable",
+      "summary": "Test content, contact, keyboard and narrow screens; correct and repeat against clear criteria.",
+      "outcome": "A local page with documented essential test results and verified corrections.",
+      "prerequisites": [
+        "site-build"
+      ],
+      "minutes": 40,
+      "sourceRefs": [
+        "res-codex-prompting"
+      ],
+      "steps": [
+        {
+          "slug": "quality-criteria",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Define observable quality",
+          "body": "Testing means taking an action and observing the result. Simulated example: a beautiful button may not respond to a click. We will check four things separately: text, contact, keyboard and the page in a narrow window.",
+          "action": "Prepare a list of the four tests.",
+          "expected": "You have distinct criteria and do not declare a pass before performing each test.",
+          "hint": "Use one row per test. Leave results blank until observed. Then mark passed, failed or not performed. This is an initial review; it does not guarantee the page works for every device and person.",
+          "criteria": [
+            "All four aspects have space for observations.",
+            "Recognizes the limits of this initial review."
+          ],
+          "objective": "Define distinct tests for an initial page review."
+        },
+        {
+          "slug": "read-as-visitor",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Read as a new visitor",
+          "body": "Read the page as someone who has never heard of the school. For example, does the singing description explain the service without the AI conversation? Look for a sentence you would not understand.",
+          "action": "Read the whole page as a new visitor.",
+          "expected": "Content introduces the school and three services without invented information or leftover instructions.",
+          "hint": "Also check the title and three services. Note the exact passage if you find confusing text, an invented promise or internal instructions. If it is clear, record one helpful example; you need not invent a problem.",
+          "criteria": [
+            "Read the complete rendered page.",
+            "Connects each comment to visible text."
+          ],
+          "objective": "Find comprehension problems in the locally rendered text."
+        },
+        {
+          "slug": "contact-behavior",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Observe the contact change",
+          "body": "One click should reveal aulas@example.com only once. Clicking again should not produce repeated addresses. Compare what actually appears with this example of the expected result.",
+          "action": "Check whether a second click duplicates the address.",
+          "expected": "Contact reveals the address once without sending and works again after reloading.",
+          "hint": "Start by reloading and clicking once. Then click again. There should be no sending or navigation to another page. Finally reload and check that the first click still works.",
+          "criteria": [
+            "The displayed address is aulas@example.com.",
+            "The click neither sends data nor duplicates the address.",
+            "The sequence was repeated after reloading."
+          ],
+          "objective": "Verify contact across repeated clicks and reloads."
+        },
+        {
+          "slug": "behavior-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Choose a behavior test",
+          "body": "Simulated example: the button looks ready in an image and the AI wrote that it finished. The image does not show what happens after clicking. Choose an observation that can verify the promised action.",
+          "action": "Choose the most useful evidence about contact.",
+          "expected": "You choose an observed interaction with a result comparable to the request.",
+          "hint": "An image taken before the click only shows the earlier state; it does not show the action’s result.",
+          "criteria": [
+            "Connects a user action to its visible result."
+          ],
+          "check": {
+            "question": "Which check evaluates whether Contact fulfills its function?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Check that the button color matches the title.",
+                "feedback": "This checks appearance but does not show whether the address appears."
+              },
+              {
+                "id": "b",
+                "text": "Click and observe whether aulas@example.com appears on the page without sending.",
+                "feedback": "This action allows comparison of actual behavior with the agreed result."
+              },
+              {
+                "id": "c",
+                "text": "Ask the AI to repeat that the button is ready.",
+                "feedback": "Another assertion is still not an observation of behavior."
+              }
+            ],
+            "correct": "b",
+            "success": "The check provides evidence of the result beyond the button’s presence.",
+            "retry": "Look for the option combining a visitor action and an observed result."
+          },
+          "objective": "Choose evidence demonstrating a visitor action."
+        },
+        {
+          "slug": "keyboard-path",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Use contact without a mouse",
+          "body": "You can use a page without a mouse. Tab moves between controls; an outline shows which is selected. When you reach Contact, press Enter. The address should appear as it did in the mouse test.",
+          "action": "Test the Contact button using the keyboard.",
+          "expected": "The button can be located and activated by keyboard with a result equivalent to clicking.",
+          "hint": "Reload, click an empty area and press Tab until Contact. The outline is called focus. Test Enter; then reload and repeat with Space. If you cannot reach or activate the button, record that before requesting help.",
+          "criteria": [
+            "Focus on Contact is visible.",
+            "Enter and Space reveal the address.",
+            "No mouse is required to activate the button."
+          ],
+          "objective": "Verify keyboard focus and activation of contact."
+        },
+        {
+          "slug": "narrow-layout",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Reduce width without losing content",
+          "body": "A narrow window helps reveal problems similar to those on a small screen. For example, one card might cover another. Reduce the window width and see whether you can still read all three services.",
+          "action": "Observe all three services in a narrow window.",
+          "expected": "Content and button remain readable and usable at the width actually tested.",
+          "hint": "Drag the window edge to roughly a phone’s width. Also check that Contact remains visible and usable. Note clipped text or overlap. This does not mean all phones have been tested.",
+          "criteria": [
+            "All three services remain accessible.",
+            "Contact works in the narrow window.",
+            "The record identifies the tested condition."
+          ],
+          "objective": "Evaluate readability and interaction at the tested width."
+        },
+        {
+          "slug": "targeted-repair",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Request a verifiable change",
+          "body": "To request a correction, describe a concrete difference. Simulated example: Contact is hidden in the narrow window; I need to see it. Use a problem you actually observed without requesting changes to everything.",
+          "action": "Send one concrete observation to the AI.",
+          "expected": "The request states the condition, expected behavior and what must be preserved.",
+          "hint": "Use the request below with your record. If you found no failure, ask only for review of results and pending tests. Do not record the simulated example as a real problem. Preserve all three services and contact without sending.",
+          "criteria": [
+            "Uses a real observation or states that no failure was found.",
+            "Preserves requirements already met."
+          ],
+          "prompt": "I will provide my content, click, keyboard and narrow-screen test record for Ponte Musical. For each observed failure, explain the likely cause and make the smallest necessary correction in index.html. Preserve title, guitar/piano/singing and contact that only reveals aulas@example.com. Explain how to repeat the test. If no failure is recorded, only identify pending checks and do not edit on your own initiative.",
+          "objective": "Request a specific change with boundaries and a repeat test."
+        },
+        {
+          "slug": "regression-pass",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Retest the change and existing behavior",
+          "body": "After a correction, repeat the failed test. For example, if the button was hidden, return to the same window width. The word fixed in the conversation does not show whether the problem disappeared.",
+          "action": "Repeat the test that prompted the change.",
+          "expected": "You know whether the correction solved the problem and preserved the other tested functions.",
+          "hint": "Open the latest saved copy. Then check text, clicking, keyboard and width, one at a time. A change can break something that worked. If nothing changed, complete only pending tests and record that.",
+          "criteria": [
+            "The corrected failure was retested when applicable.",
+            "All four aspects have an explicit result or pending status."
+          ],
+          "objective": "Confirm a correction without losing requirements already met."
+        },
+        {
+          "slug": "regression-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Evaluate an incomplete correction",
+          "body": "Simulated example: Contact now fits in the narrow window, but singing disappeared. The change solved one difficulty and created another. Consider the entire result, including what should have remained on the page.",
+          "action": "Choose how to handle this incomplete correction.",
+          "expected": "You identify that an isolated improvement does not approve a version with a missing requirement.",
+          "hint": "All three services are still required. Changing the criterion to match an error does not fix the page.",
+          "criteria": [
+            "Recognizes the need to retest preserved functions and content."
+          ],
+          "check": {
+            "question": "What should happen before considering the version ready?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Approve it because the button now fits in the window.",
+                "feedback": "The correction solved one issue but removed a required service."
+              },
+              {
+                "id": "b",
+                "text": "Remove singing from the criteria to match the page.",
+                "feedback": "This changes the goal to hide a regression instead of correcting the page."
+              },
+              {
+                "id": "c",
+                "text": "Ask to restore singing while preserving the width adjustment, then repeat the tests.",
+                "feedback": "This addresses the concrete loss and checks whether both needs are now met."
+              }
+            ],
+            "correct": "c",
+            "success": "Your review preserves the complete result, not only the latest change.",
+            "retry": "The title, all three services and contact remain part of the agreement."
+          },
+          "objective": "Identify a regression and guide its correction."
+        },
+        {
+          "slug": "quality-handoff",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Decide whether the page can be published",
+          "body": "Look at your record before continuing. For example: contact passed; keyboard not yet tested. That pending check must remain visible. Consider a test passed only when you have observed the expected result.",
+          "action": "Decide whether any correction or test remains.",
+          "expected": "The decision to proceed or correct depends on local evidence and leaves the limits explicit.",
+          "hint": "Record test, condition, observation and status. If content is missing or Contact fails, correct it before publishing. Keep a copy of the version that passed. This is not a complete check of every possible use.",
+          "criteria": [
+            "Each pass corresponds to an observed test.",
+            "Failures and unperformed tests remain visible."
+          ],
+          "objective": "Decide the next step using local results."
+        }
+      ]
+    },
+    {
+      "slug": "site-publish",
+      "title": "Publish and update the page",
+      "summary": "Upload a tested version, check access without your session and publish a change in the same project.",
+      "outcome": "A URL checked as a visitor or a documented obstacle, with the folder and delivery instructions.",
+      "prerequisites": [
+        "site-quality"
+      ],
+      "minutes": 45,
+      "sourceRefs": [
+        "res-netlify-drop-static",
+        "res-netlify-project-visibility"
+      ],
+      "steps": [
+        {
+          "slug": "local-versus-hosted",
+          "kind": "explain",
+          "mode": "concept",
+          "title": "Distinguish files, hosting and access",
+          "body": "Publishing means putting the page on a service so other people can access it online. A URL is the address they open in a browser. We will use Netlify; receiving an address does not yet guarantee public access.",
+          "action": "Explain opening on your computer versus publishing.",
+          "expected": "You know publication and public access need their own checks after local testing.",
+          "hint": "Netlify is the service that will store the files. Check your account’s conditions, costs and permissions; there is no promise of free use. The administration screen address does not replace testing the page as a visitor.",
+          "criteria": [
+            "Distinguishes a local file, hosted URL and public access.",
+            "Recognizes that account conditions must be checked."
+          ],
+          "objective": "Separate hosting from permission for public access."
+        },
+        {
+          "slug": "publish-package",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Prepare a delivery folder",
+          "body": "Prepare a copy of the page already tested. Name the new folder ponte-site-publicar. It will be the package uploaded to the service; for example, index.html must sit directly inside it, not inside another folder.",
+          "action": "Create the ponte-site-publicar copy.",
+          "expected": "The folder contains the correct page and a visible identifier for the version to upload.",
+          "hint": "Preserve the original ponte-site. Select the new folder in your tool and use the request below to add Version A in the footer. Open this copy and test content and contact before upload. This site needs only index.html; exclude personal data and other files.",
+          "criteria": [
+            "index.html sits directly in the publication folder.",
+            "Version A and contact were observed in the prepared copy."
+          ],
+          "prompt": "With ponte-site-publicar selected as the project folder, edit index.html directly inside it; do not create another nested folder. Add Version A in the footer. Preserve Ponte Musical, all three services and contact revealing aulas@example.com without sending. Do not publish. Confirm the edited path so I can test this copy locally.",
+          "objective": "Prepare a tested package and recognize its version."
+        },
+        {
+          "slug": "hosting-account",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Check the destination account and team",
+          "body": "To keep and update your site on Netlify, you need to sign in to an account. Visit https://app.netlify.com/login. Before accepting a plan, read its conditions and costs; this exercise does not require buying a subscription.",
+          "action": "Check whether you can sign in to your chosen Netlify account.",
+          "expected": "You identify where the site will be managed and the access conditions encountered.",
+          "hint": "Create the account you chose if needed. A team is the space where projects are managed; confirm the selected team. If access is unavailable, record the obstacle and keep the local folder. Never write a password or key in your lesson record.",
+          "criteria": [
+            "The destination was checked before upload.",
+            "An access block is recorded as pending, not completed publication."
+          ],
+          "objective": "Identify destination, account conditions and possible blocks."
+        },
+        {
+          "slug": "package-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Choose the correct package",
+          "body": "Simulated example: three folders look similar, but only ponte-site-publicar contains the tested Version A page. The service receives the files you choose. It does not automatically look for changes saved in other folders.",
+          "action": "Choose the folder that should be uploaded.",
+          "expected": "You select the necessary files from the correct version, with the initial page at the expected level.",
+          "hint": "Check that index.html sits directly in the folder and recognize the version you tested.",
+          "criteria": [
+            "Connects the uploaded folder with the tested local version."
+          ],
+          "check": {
+            "question": "Which folder should be uploaded in this exercise?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The general study folder, to include every file from other activities.",
+                "feedback": "It can include unrelated material and leave index.html inside subfolders."
+              },
+              {
+                "id": "b",
+                "text": "ponte-site-publicar, with index.html directly inside and Version A tested.",
+                "feedback": "This package matches the prepared page and avoids mixing versions or activities."
+              },
+              {
+                "id": "c",
+                "text": "The old copy, because the service will automatically apply recent local changes.",
+                "feedback": "Upload sends selected files; it does not find changes saved in another folder."
+              }
+            ],
+            "correct": "b",
+            "success": "The package matches the version you will recognize at the URL.",
+            "retry": "Look for the tested folder with the initial page directly inside."
+          },
+          "objective": "Select the folder matching the approved version."
+        },
+        {
+          "slug": "first-upload",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Upload the first version",
+          "body": "Upload means sending files from your computer to a service. Open https://app.netlify.com/drop and upload ponte-site-publicar. Once finished, Netlify should show an address ending in netlify.app. That will be the address to test.",
+          "action": "Upload ponte-site-publicar through Netlify Drop.",
+          "expected": "You have a project URL or a documented obstacle without presuming public access.",
+          "hint": "Drag the folder to the indicated area and wait for completion. Copy the received URL. If stuck, record the message and check connection and folder. If a blank page opens, compare the uploaded index.html with the local copy; do not replace it with an empty file.",
+          "criteria": [
+            "The uploaded folder matches the tested version.",
+            "The observed upload result was recorded."
+          ],
+          "objective": "Connect upload, observed result and received URL."
+        },
+        {
+          "slug": "visitor-permission",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Set the intended visibility",
+          "body": "Public means other people can open the address. Private may require an authorized account. Check this choice in the Netlify project. Use Make public only if you want public access and your account permits it.",
+          "action": "Check whether this project is public or private.",
+          "expected": "The configuration matches the intended audience or the access restriction is clearly recorded.",
+          "hint": "Documentation lists Project configuration > General > Visitor access > Project visibility. Production is the published visitor version; a preview is a test version with separate controls. Make public requires a completed production upload. Record missing permissions; do not change the entire team’s policy.",
+          "criteria": [
+            "The inspected visibility is for the intended production site.",
+            "Missing permissions are not confused with a file failure."
+          ],
+          "objective": "Check production visibility without changing other policies."
+        },
+        {
+          "slug": "visitor-test",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Test without your owner session",
+          "body": "You may see the page because your account has access. Test as another person: open the address without your Netlify session. For example, use a private window to see whether the page or a login request appears.",
+          "action": "Open the URL as a visitor without your owner session.",
+          "expected": "The intended visitor sees the correct version and can use contact, or obstacles are documented.",
+          "hint": "A private window is a separate browser window, such as Incognito in Chrome. Confirm you are not signed in as owner. Check Version A and test services, contact, keyboard and width one at a time. A blocking login suggests access checks; missing content suggests checking the uploaded folder.",
+          "criteria": [
+            "Access was tested without the owner session.",
+            "Content and contact were checked at the URL.",
+            "The record distinguishes denied access from a defective page."
+          ],
+          "objective": "Verify access and behavior without the owner session."
+        },
+        {
+          "slug": "publish-update",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Update without creating another project",
+          "body": "Updating means uploading a new version to the same project. For example, change the footer from Version A to Version B. Test the copy on your computer first; other people will see the published change.",
+          "action": "Update the same project with the tested Version B.",
+          "expected": "The same URL shows Version B and keeps the services and contact working.",
+          "hint": "Keep a copy of Version A. Use the request below to prepare B and check it locally. In the same Netlify project, upload the folder under Production deploys: this changes the published version. Then open the same URL as a visitor and check B and Contact. If it fails, test the earlier copy and upload it to that same project.",
+          "criteria": [
+            "The change was tested before reaching production.",
+            "The URL shows Version B without losing services or contact."
+          ],
+          "prompt": "With ponte-site-publicar selected as the project folder, edit index.html directly inside it; do not create another nested folder. Change only the footer from Version A to Version B. Preserve all services and contact interaction. Do not publish automatically: I will test and upload the folder to the same Netlify project. Report the changed file and any other difference.",
+          "objective": "Update the same project and verify the production version."
+        },
+        {
+          "slug": "public-access-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Separate upload success from public access",
+          "body": "Simulated example: you see Version B while signed in. Someone else sees an access restriction screen. Upload finished, but that does not yet demonstrate that any visitor can open the page.",
+          "action": "Choose the next step to investigate access.",
+          "expected": "You check visitor access without confusing it with completed upload or authenticated viewing.",
+          "hint": "Uploading the same files again does not necessarily change who can see the project. Compare access permissions first.",
+          "criteria": [
+            "Identifies visibility and permissions as relevant investigations for denied access."
+          ],
+          "check": {
+            "question": "What is the most useful next action?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Check production visibility and permissions, adjust if allowed and retest without the owner session.",
+                "feedback": "This investigates the access difference and requires confirming the outcome as a visitor."
+              },
+              {
+                "id": "b",
+                "text": "Announce public access because the dashboard says the upload finished.",
+                "feedback": "Upload completion does not show that an unauthenticated visitor has access."
+              },
+              {
+                "id": "c",
+                "text": "Remove singing and upload again to eliminate the login block.",
+                "feedback": "Removing a service does not address access configuration and violates the agreed content."
+              }
+            ],
+            "correct": "a",
+            "success": "You keep file transfer separate from permission to view the files.",
+            "retry": "The symptom depends on the visitor’s session; start with access configuration."
+          },
+          "objective": "Investigate denied access without confusing it with content failure."
+        },
+        {
+          "slug": "delivery-record",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Deliver version, tests and recovery instructions",
+          "body": "Deliver a short instruction with the address. For example: Version B; contact tested; previous copy kept in this folder. If you could not publish, deliver the folder and explain the obstacle without claiming a publication that never happened.",
+          "action": "Write the delivery note for your page.",
+          "expected": "The delivery identifies the version, observed evidence and a concrete way to update or recover.",
+          "hint": "Include URL, observed version, matching folder, performed tests and pending work. Explain updating through the same project and identify the earlier copy’s location. Ganesha does not automatically verify your actions; record only what you observed.",
+          "criteria": [
+            "Delivery matches the version actually observed.",
+            "Includes updating the same project and locating the previous copy.",
+            "Pending tasks are not presented as performed steps."
+          ],
+          "objective": "Deliver version and evidence with update and recovery instructions."
+        }
+      ]
+    }
+  ]
+}

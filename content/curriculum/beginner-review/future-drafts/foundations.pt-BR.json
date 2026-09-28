@@ -1,0 +1,625 @@
+{
+  "lessons": [
+    {
+      "slug": "workspace",
+      "title": "Seu primeiro contato com IA",
+      "summary": "Conheça a ferramenta, envie uma mensagem e confira uma informação.",
+      "outcome": "Entender onde escrever um pedido e onde ler a resposta.",
+      "prerequisites": [],
+      "minutes": 30,
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "steps": [
+        {
+          "slug": "access",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Conhecer sua ajudante de IA",
+          "objective": "Abra o aplicativo Claude ou Codex que você escolheu.",
+          "body": "IA significa inteligência artificial. Aqui, ela é um programa que recebe pedidos escritos e prepara respostas. Claude e Codex são nomes de aplicativos que usam IA. Você escreve o que quer; a resposta aparece na conversa. Ela pode errar, por isso vamos conferir juntos.",
+          "action": "Abra o aplicativo Claude ou Codex que você escolheu.",
+          "expected": "Uma janela do aplicativo, ou uma mensagem explicando por que não abriu.",
+          "hint": "Procure o nome na lista de aplicativos do computador. Se ainda não tiver acesso, acompanhe os exemplos desta aula; a ajuda reúne os links oficiais.",
+          "criteria": [
+            "Uma janela do aplicativo, ou uma mensagem explicando por que não abriu."
+          ]
+        },
+        {
+          "slug": "folder",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Criar um lugar para guardar o trabalho",
+          "objective": "Crie uma pasta chamada ganesha-pratica.",
+          "body": "Uma pasta é um lugar no computador onde você guarda arquivos, como uma gaveta. Vamos criar uma só para este curso. O nome será ganesha-pratica, sem acento. Por enquanto, ela pode ficar vazia.",
+          "action": "Crie uma pasta chamada ganesha-pratica.",
+          "expected": "Uma pasta com esse nome aparece no computador.",
+          "hint": "No Windows, abra Documentos no Explorador de Arquivos e escolha Novo → Pasta. No Mac, abra Documentos no Finder e use Arquivo → Nova Pasta.",
+          "criteria": [
+            "Uma pasta com esse nome aparece no computador."
+          ]
+        },
+        {
+          "slug": "fictional-brief",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Conhecer nosso exemplo",
+          "objective": "Copie o nome e as três aulas no espaço de resposta da Ganesha.",
+          "body": "Vamos ajudar uma escola imaginária chamada Ponte Musical. Ela dá aulas para iniciantes: violão, piano e canto. O contato de exemplo é aulas@example.com. Esses são os dados que vamos entregar à IA. Não precisa inventar uma escola sua para começar.",
+          "action": "Copie o nome e as três aulas no espaço de resposta da Ganesha.",
+          "expected": "Ponte Musical — violão, piano e canto.",
+          "hint": "Esse espaço serve para sua anotação. Ele não envia uma mensagem ao Claude ou ao Codex.",
+          "criteria": [
+            "Ponte Musical — violão, piano e canto."
+          ]
+        },
+        {
+          "slug": "context-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Escolher a pasta certa",
+          "objective": "Escolha a resposta que usa a pasta desta aula.",
+          "body": "Exemplo: você criou ganesha-pratica, mas o aplicativo mostra outra pasta, loja-antiga. A pasta mostrada indica onde o aplicativo trabalhará. Antes de pedir qualquer mudança, escolha o lugar preparado para esta aula.",
+          "action": "Escolha a resposta que usa a pasta desta aula.",
+          "expected": "Você reconhece qual pasta deve estar aberta.",
+          "hint": "ganesha-pratica é a pasta desta aula; loja-antiga pertence a outro trabalho.",
+          "criteria": [
+            "Você reconhece qual pasta deve estar aberta."
+          ],
+          "check": {
+            "question": "Qual é o próximo passo adequado?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Adivinhar o que tem na outra pasta.",
+                "feedback": "A IA precisa receber a informação certa."
+              },
+              {
+                "id": "b",
+                "text": "Selecionar ganesha-pratica.",
+                "feedback": "Essa é a pasta que você preparou para a aula."
+              },
+              {
+                "id": "c",
+                "text": "Trabalhar na loja-antiga mesmo assim.",
+                "feedback": "Essa pasta pertence a outro trabalho."
+              }
+            ],
+            "correct": "b",
+            "success": "Você corrigiu a origem da informação antes de avaliar a resposta.",
+            "retry": "Procure a ação que corrige a pasta, sem inventar dados."
+          }
+        },
+        {
+          "slug": "select-context",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Abrir sua pasta no aplicativo",
+          "objective": "Selecione ganesha-pratica no aplicativo escolhido.",
+          "body": "Volte ao Claude ou ao Codex. Escolha a pasta ganesha-pratica. O aplicativo pode chamar essa pasta de projeto: é o conjunto de arquivos de um trabalho. Depois, procure a caixa de mensagem, onde você escreverá seus pedidos.",
+          "action": "Selecione ganesha-pratica no aplicativo escolhido.",
+          "expected": "O nome ganesha-pratica aparece como pasta ou projeto aberto.",
+          "hint": "No Claude Desktop: Code → Local → escolher pasta. No Codex: abra a pasta como projeto. Se não encontrar o controle, anote o que aparece; você pode seguir pelo exemplo.",
+          "criteria": [
+            "O nome ganesha-pratica aparece como pasta ou projeto aberto."
+          ],
+          "variants": {
+            "claude": "No Claude Desktop, abra Code, escolha Local e selecione a pasta ganesha-pratica. Acesso a Code depende das condições da conta.",
+            "codex": "No aplicativo Desktop, escolha Codex e abra a pasta ou projeto ganesha-pratica. Confira o contexto exibido antes de enviar o pedido."
+          }
+        },
+        {
+          "slug": "read-only-request",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Enviar uma primeira mensagem",
+          "objective": "Envie o pedido abaixo no Claude ou no Codex.",
+          "body": "Na caixa de mensagem do aplicativo, cole o pedido abaixo. Use o botão de enviar ao lado da caixa. Um pedido é simplesmente o que você quer que a IA faça. Neste primeiro contato, ela só vai responder com texto.",
+          "action": "Envie o pedido abaixo no Claude ou no Codex.",
+          "expected": "Uma resposta aparece na conversa falando da Ponte Musical.",
+          "hint": "A resposta não aparece no campo de anotações da Ganesha. Se o aplicativo pedir entrada na conta, registre que ainda não conseguiu enviar.",
+          "criteria": [
+            "Uma resposta aparece na conversa falando da Ponte Musical."
+          ],
+          "prompt": "Minha escola imaginária se chama Ponte Musical. Ela oferece violão, piano e canto para iniciantes. O contato é aulas@example.com. Resuma isso em duas frases simples. Não crie arquivos nem publique nada."
+        },
+        {
+          "slug": "compare-context",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Olhar uma coisa na resposta",
+          "objective": "Procure canto na resposta e escreva se encontrou.",
+          "body": "Vamos conferir uma coisa de cada vez. Procure a palavra canto na resposta que recebeu. Exemplo de resposta incompleta: “Ponte Musical ensina violão e piano.” Nesse exemplo, faltou canto. Se a sua resposta já tem canto, ela passou nesta conferência.",
+          "action": "Procure canto na resposta e escreva se encontrou.",
+          "expected": "Uma anotação curta: encontrei canto, faltou canto ou ainda não recebi resposta.",
+          "hint": "Você também pode analisar o exemplo desta tela. Nesse caso, escreva “no exemplo”, para não parecer que enviou uma mensagem.",
+          "criteria": [
+            "Uma anotação curta: encontrei canto, faltou canto ou ainda não recebi resposta."
+          ]
+        },
+        {
+          "slug": "access-recovery",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Saber qual ajuda pedir",
+          "objective": "Para o exemplo em que faltou canto, escreva uma frase pedindo essa inclusão.",
+          "body": "São duas situações diferentes. Se aparece uma tela pedindo entrada na conta, falta entrar no aplicativo. Se já apareceu uma resposta, mas faltou canto, você pode pedir uma correção. Repetir a pergunta não resolve uma tela de entrada.",
+          "action": "Para o exemplo em que faltou canto, escreva uma frase pedindo essa inclusão.",
+          "expected": "Por exemplo: “Inclua também as aulas de canto.”",
+          "hint": "Se seu problema for entrar na conta, use a ajuda do aplicativo. Não coloque senha na resposta do curso.",
+          "criteria": [
+            "Por exemplo: “Inclua também as aulas de canto.”"
+          ]
+        },
+        {
+          "slug": "access-evidence",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Dizer o que aconteceu",
+          "objective": "Escolha a frase que descreve o exemplo.",
+          "body": "Exemplo: você preparou a mensagem, mas o aplicativo pediu para entrar na conta. Nenhuma resposta apareceu. Vamos escolher uma frase que conte exatamente isso.",
+          "action": "Escolha a frase que descreve o exemplo.",
+          "expected": "Uma resposta que separa preparar a mensagem de receber a resposta.",
+          "hint": "Preparar o texto já é um passo. Você pode continuar aprendendo mesmo quando precisa resolver o acesso.",
+          "criteria": [
+            "Uma resposta que separa preparar a mensagem de receber a resposta."
+          ],
+          "check": {
+            "question": "O que você pode registrar?",
+            "options": [
+              {
+                "id": "a",
+                "text": "A IA já respondeu.",
+                "feedback": "Nenhuma resposta apareceu."
+              },
+              {
+                "id": "b",
+                "text": "O trabalho ficou pronto.",
+                "feedback": "O exemplo só mostra uma mensagem preparada."
+              },
+              {
+                "id": "c",
+                "text": "Preparei a mensagem, mas ainda preciso entrar na conta.",
+                "feedback": "Isso conta exatamente o que aconteceu."
+              }
+            ],
+            "correct": "c",
+            "success": "Seu registro mostra o progresso real e o impedimento.",
+            "retry": "Não transforme uma tentativa ou simulação em execução externa."
+          }
+        },
+        {
+          "slug": "workspace-record",
+          "kind": "reflect",
+          "mode": "external-real-task",
+          "title": "Guardar seu próximo passo",
+          "objective": "Complete: “Hoje eu consegui ____. Meu próximo passo é ____.”",
+          "body": "Uma anotação curta ajuda a continuar depois. Exemplo: “Usei Claude. Recebi a resposta. Falta incluir canto.” Se não conseguiu abrir o aplicativo, pode escrever isso. Não precisa preencher um relatório técnico.",
+          "action": "Complete: “Hoje eu consegui ____. Meu próximo passo é ____.”",
+          "expected": "Duas frases curtas que ajudam você a retomar.",
+          "hint": "Conte o que realmente aconteceu. Não precisa inventar um erro nem um resultado.",
+          "criteria": [
+            "Duas frases curtas que ajudam você a retomar."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "requests",
+      "title": "Escrever pedidos que orientam o trabalho",
+      "summary": "Resultado, dados, limites, critérios e esclarecimentos.",
+      "outcome": "Produzir um pedido delimitado e revisar um plano antes da execução.",
+      "prerequisites": [
+        "workspace"
+      ],
+      "minutes": 30,
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "steps": [
+        {
+          "slug": "desired-result",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Trocar uma ideia vaga por uma entrega",
+          "objective": "Definir o que deve existir ao terminar a tarefa.",
+          "body": "“Faça algo bonito” não define uma entrega verificável. Para Ponte Musical, o primeiro resultado será um plano em lista para uma página de apresentação, não a página construída. Escolher uma entrega pequena permite comparar a resposta sem entender código. A estrutura usada aqui é um apoio ao exercício, não uma fórmula universal de pedido.",
+          "action": "Escreva em uma frase a entrega que deseja receber.",
+          "expected": "Frase identifica um plano e a finalidade da página.",
+          "hint": "Diga o que receberá, não só como quer se sentir.",
+          "criteria": [
+            "Frase identifica um plano e a finalidade da página."
+          ]
+        },
+        {
+          "slug": "relevant-context",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Selecionar os dados que mudam a resposta",
+          "objective": "Incluir contexto necessário e evitar informação irrelevante.",
+          "body": "Use os dados do brief: nome da escola fictícia, público iniciante, violão/piano/canto e contato. O horário de outra empresa ou uma conversa antiga não ajuda este objetivo. Se um dado importante estiver faltando, deixe a ausência explícita. Pedir que a IA invente a localização da escola produziria uma afirmação sem base.",
+          "action": "Selecione os dados necessários ao plano.",
+          "expected": "Lista contém somente informações pertinentes e lacunas declaradas.",
+          "hint": "Um dado ausente pode virar pergunta, não uma invenção.",
+          "criteria": [
+            "Lista contém somente informações pertinentes e lacunas declaradas."
+          ]
+        },
+        {
+          "slug": "complete-request",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Escrever um pedido copiável e limitado",
+          "objective": "Combinar entrega, contexto, limites e critério de conferência.",
+          "body": "Agora junte as decisões. O contato deverá apenas mostrar um endereço fictício; não coletará dados nem enviará mensagens. Essa escolha evita que um plano simples vire outro sistema. Os testes citados são futuros: ainda não existe página para clicar. Leia o pedido completo antes de enviá-lo e adapte somente dados que continuará conseguindo conferir.",
+          "action": "Adapte o pedido e destaque seu limite principal.",
+          "expected": "Pedido inclui entrega, dados, limite e conferência futura.",
+          "hint": "Mantenha o limite de planejamento nesta aula.",
+          "criteria": [
+            "Entrega e dados necessários estão explícitos.",
+            "Limite exclui edição, coleta e envio.",
+            "Conferência futura corresponde aos itens pedidos."
+          ],
+          "prompt": "Planeje uma página Ponte Musical para iniciantes, com título, serviços violão/piano/canto e botão Contato que mostre aulas@example.com sem coletar dados ou enviar mensagem. Entregue apenas um plano em lista e diga como testar esses itens quando a página existir. Não edite arquivos nem publique."
+        },
+        {
+          "slug": "scope-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Escolher uma decisão de escopo",
+          "objective": "Aplicar o limite do pedido a uma sugestão da IA.",
+          "body": "Caso simulado: antes de planejar, a IA sugere incluir login e cobrança de mensalidade. O objetivo continua sendo uma página de apresentação com contato sem envio.",
+          "action": "Escolha uma alternativa e leia o feedback.",
+          "expected": "Escolha justificada pelo critério da situação.",
+          "hint": "Use as informações do caso, sem inventar observações.",
+          "criteria": [
+            "Escolha justificada pelo critério da situação."
+          ],
+          "check": {
+            "question": "Qual resposta mantém o escopo?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Dispense login e cobrança; planeje somente os itens solicitados.",
+                "feedback": "Essa resposta conserva a entrega simples e os limites definidos."
+              },
+              {
+                "id": "b",
+                "text": "Inclua todos os recursos para o site parecer completo.",
+                "feedback": "Mais recursos mudam o objetivo e introduzem pré-requisitos não escolhidos."
+              },
+              {
+                "id": "c",
+                "text": "Publique imediatamente para decidir depois.",
+                "feedback": "Publicar não foi autorizado no pedido e não resolve a decisão do plano."
+              }
+            ],
+            "correct": "a",
+            "success": "Você resolveu a decisão antes de aumentar o trabalho.",
+            "retry": "Compare a sugestão com a entrega e os limites originais."
+          }
+        },
+        {
+          "slug": "worked-plan",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Ler uma resposta inteira de exemplo",
+          "objective": "Comparar um plano com todos os critérios do pedido.",
+          "body": "Plano simulado: 1) título “Ponte Musical — música para iniciantes”; 2) serviços violão e piano; 3) formulário de nome/e-mail com envio; 4) verificar título e envio após construir. O título atende; canto está ausente; formulário e envio contrariam o limite; as verificações precisam mudar. Essa análise é sobre texto, não sobre arquivos que teriam sido criados.",
+          "action": "Marque o que atende, o que falta e o que extrapola.",
+          "expected": "Comparação separa acerto, omissão e mudança de escopo.",
+          "hint": "Confira cada item do pedido, inclusive o teste futuro.",
+          "criteria": [
+            "Comparação separa acerto, omissão e mudança de escopo."
+          ]
+        },
+        {
+          "slug": "clarification",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Responder a uma pergunta relevante",
+          "objective": "Resolver uma ambiguidade sem ampliar o projeto.",
+          "body": "Pergunta simulada da IA: “Contato deve abrir e-mail ou mostrar o endereço na página?” Neste caso, responda que deve mostrar o endereço sem envio. Uma pergunta relevante esclarece comportamento ou dados necessários; não é sinal automático de falha. Se você ainda não souber a resposta, escolha um recorte menor em vez de aceitar qualquer suposição.",
+          "action": "Responda à pergunta e explique o comportamento escolhido.",
+          "expected": "Resposta define exibição do endereço, sem envio.",
+          "hint": "Escolha uma ação que possa ser observada depois.",
+          "criteria": [
+            "Resposta define exibição do endereço, sem envio."
+          ]
+        },
+        {
+          "slug": "targeted-revision",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Pedir uma revisão que preserve os acertos",
+          "objective": "Corrigir pontos determinados sem reiniciar todo o trabalho.",
+          "body": "Não é necessário abandonar o plano para corrigir duas falhas. Nomeie a omissão e o comportamento indevido; preserve o título correto. Exemplo de revisão simulado: o plano passa a listar os três serviços e contato que revela o endereço; os testes futuros contam serviços e verificam o clique. Releia a revisão: um pedido claro ainda pode produzir uma resposta incompleta.",
+          "action": "Escreva uma correção e compare o plano revisado de exemplo.",
+          "expected": "Correção preserva título e resolve omissão e envio.",
+          "hint": "Peça mudança específica e uma nova conferência.",
+          "criteria": [
+            "Correção preserva título e resolve omissão e envio."
+          ],
+          "prompt": "Mantenha o título. Inclua canto junto de violão e piano. Substitua o formulário por contato que apenas revela aulas@example.com. Continue só planejando e atualize os testes para os três serviços e esse comportamento."
+        },
+        {
+          "slug": "send-and-review",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Experimentar o pedido na sua ferramenta",
+          "objective": "Comparar uma resposta real sem confundi-la com o exemplo.",
+          "body": "Na ferramenta e pasta já preparadas, envie seu pedido de planejamento. Responda às perguntas pertinentes e compare o plano com seus critérios. Se houver desvio, peça revisão; se o plano já atender, registre isso. A resposta não precisa ter as mesmas palavras do exemplo. Registre o resultado real ou o impedimento; uma simulação não conta como envio externo.",
+          "action": "Envie, compare e registre um critério conferido.",
+          "expected": "Plano recebido e comparação, ou impedimento explicitado.",
+          "hint": "Não pressione a ferramenta a inventar dados ausentes.",
+          "criteria": [
+            "Plano recebido e comparação, ou impedimento explicitado."
+          ]
+        },
+        {
+          "slug": "plan-evidence",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Decidir o que o plano prova",
+          "objective": "Distinguir adequação textual e comportamento implementado.",
+          "body": "Você recebeu uma lista que contém os três serviços e descreve um botão que revela o endereço. Nenhuma página foi construída ou aberta nesta aula.",
+          "action": "Escolha uma alternativa e leia o feedback.",
+          "expected": "Escolha justificada pelo critério da situação.",
+          "hint": "Use as informações do caso, sem inventar observações.",
+          "criteria": [
+            "Escolha justificada pelo critério da situação."
+          ],
+          "check": {
+            "question": "Qual conclusão é sustentada?",
+            "options": [
+              {
+                "id": "a",
+                "text": "O botão funciona com mouse e teclado.",
+                "feedback": "A lista descreve o comportamento, mas não o executa."
+              },
+              {
+                "id": "b",
+                "text": "O plano contempla os itens; o botão ainda precisa ser implementado e testado.",
+                "feedback": "A conclusão corresponde à evidência textual disponível."
+              },
+              {
+                "id": "c",
+                "text": "O site já está disponível a qualquer visitante.",
+                "feedback": "Não foi apresentada publicação nem teste de acesso público."
+              }
+            ],
+            "correct": "b",
+            "success": "Você reconhece o valor do plano sem atribuir a ele um teste inexistente.",
+            "retry": "Separe “descreve” de “foi observado funcionando”."
+          }
+        },
+        {
+          "slug": "portable-request",
+          "kind": "reflect",
+          "mode": "guided-simulation",
+          "title": "Entregar um pedido que outra ferramenta entenda",
+          "objective": "Preservar intenção e critérios ao mudar de contexto.",
+          "body": "Guarde o pedido, o plano revisado e a lista de critérios. Para usar outra ferramenta, mantenha essas informações e confira a nova pasta/contexto; nomes de controles podem mudar. Não é preciso abrir uma segunda conta para este exercício: você pode escrever o que preservaria e o que precisaria conferir. A próxima aula aprofunda como registrar testes e correções.",
+          "action": "Registre o pedido final e o que conferir ao transferi-lo.",
+          "expected": "Pedido reutilizável com critérios e contexto de transferência.",
+          "hint": "O método transfere; controles de interface não são necessariamente iguais.",
+          "criteria": [
+            "Pedido reutilizável com critérios e contexto de transferência."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "verification",
+      "title": "Verificar, corrigir e repetir",
+      "summary": "Critérios observáveis, relato de falha e reteste.",
+      "outcome": "Conduzir uma comparação e registrar uma correção com evidência.",
+      "prerequisites": [
+        "requests"
+      ],
+      "minutes": 30,
+      "sourceRefs": [
+        "res-codex-prompting",
+        "res-claude-desktop-start",
+        "res-codex-desktop-quickstart"
+      ],
+      "steps": [
+        {
+          "slug": "evidence-types",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Distinguir afirmação, arquivo e comportamento",
+          "objective": "Reconhecer diferentes forças de evidência.",
+          "body": "Uma mensagem “pronto” é uma afirmação. Um arquivo aberto mostra conteúdo. Uma interação observada mostra comportamento naquele teste. Nenhum desses fatos garante todos os outros. Nesta aula usaremos uma agenda fictícia em texto: oficina começa às 16:00 e dura 45 minutos. A resposta simulada termina às 17:45. Podemos conferir a conta sem construir um aplicativo.",
+          "action": "Classifique a evidência disponível no exemplo.",
+          "expected": "Registro identifica resposta textual e erro verificável de horário.",
+          "hint": "16:00 mais 45 minutos não exige confiar na mesma IA.",
+          "criteria": [
+            "Registro identifica resposta textual e erro verificável de horário."
+          ]
+        },
+        {
+          "slug": "success-criteria",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Definir critérios antes de pedir a correção",
+          "objective": "Descrever sucesso de forma observável.",
+          "body": "Para a agenda, fixe quatro critérios: nome “Oficina de música”, início 16:00, duração 45 minutos e término 16:45. O nome e início precisam ser preservados durante a correção. Critérios curtos permitem distinguir corrigir o erro de alterar o combinado. Em um site, o critério pode ser o endereço aparecer ao clicar; no relatório, pode ser o total calculado.",
+          "action": "Escreva os quatro critérios da agenda.",
+          "expected": "Critérios incluem resultado correto e elementos que devem permanecer.",
+          "hint": "Evite critérios vagos como “ficou bom”.",
+          "criteria": [
+            "Critérios incluem resultado correto e elementos que devem permanecer."
+          ]
+        },
+        {
+          "slug": "baseline",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Registrar antes de alterar",
+          "objective": "Capturar o observado e calcular o esperado.",
+          "body": "Exemplo simulado antes da correção: “Oficina de música,16:00–17:45,45 minutos”. Compare início+tamanho do intervalo:16:00+45 minutos=16:45. Registre a frase recebida e a conta que sustenta o esperado. Guardar a referência evita depender da memória e permite conferir se a revisão corrigiu o horário sem mudar o nome.",
+          "action": "Registre observado, esperado e fundamento da diferença.",
+          "expected": "Registro mostra 17:45 observado,16:45 esperado e a conta.",
+          "hint": "Não escreva que executou um programa: o exemplo é textual.",
+          "criteria": [
+            "Registro mostra 17:45 observado,16:45 esperado e a conta."
+          ]
+        },
+        {
+          "slug": "diagnosis-check",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Escolher um relato que ajuda a corrigir",
+          "objective": "Dar informação suficiente para localizar o problema.",
+          "body": "A IA precisa corrigir o horário da agenda fictícia mantendo o restante. Qual relato é mais útil?",
+          "action": "Escolha uma alternativa e leia o feedback.",
+          "expected": "Escolha justificada pelo critério da situação.",
+          "hint": "Use as informações do caso, sem inventar observações.",
+          "criteria": [
+            "Escolha justificada pelo critério da situação."
+          ],
+          "check": {
+            "question": "Escolha o relato que identifica o erro e o limite.",
+            "options": [
+              {
+                "id": "a",
+                "text": "A oficina termina 17:45. Mude o início para 17:00 e mantenha 45 minutos para os horários baterem.",
+                "feedback": "A conta passaria a bater, mas você alteraria o início que deveria ser preservado."
+              },
+              {
+                "id": "b",
+                "text": "Mantenha 16:00–17:45 e mude a duração para 105 minutos; assim a conta confere sem alterar o intervalo.",
+                "feedback": "Isso muda a duração acordada para acomodar o erro, em vez de corrigir o término."
+              },
+              {
+                "id": "c",
+                "text": "“A oficina começa 16:00 e dura 45 min, mas termina 17:45 no texto. Corrija para 16:45 e preserve nome e início.”",
+                "feedback": "O relato traz observado, esperado, motivo e limite."
+              }
+            ],
+            "correct": "c",
+            "success": "Você forneceu dados que permitem uma mudança delimitada.",
+            "retry": "Procure observado, esperado e o que não deve mudar."
+          }
+        },
+        {
+          "slug": "reproduction",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Descrever como encontrou a diferença",
+          "objective": "Relacionar entrada, resposta e conferência.",
+          "body": "Reproduzir não significa prometer que uma IA sempre responderá igual. Para um texto, registre o pedido, os dados e a frase problemática. Para uma página, registre arquivo/endereço e sequência de cliques. Aqui, a sequência é ler início/duração, calcular término e comparar com a frase. Outra pessoa consegue seguir esses passos sem adivinhar seu raciocínio.",
+          "action": "Escreva três passos para refazer a conferência.",
+          "expected": "Passos ligam os dados de entrada à diferença observada.",
+          "hint": "Inclua a versão ou trecho que você realmente comparou.",
+          "criteria": [
+            "Passos ligam os dados de entrada à diferença observada."
+          ]
+        },
+        {
+          "slug": "repair-request",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Solicitar uma correção pequena",
+          "objective": "Pedir mudança e preservar critérios válidos.",
+          "body": "Use a referência registrada para pedir uma mudança precisa. Resposta revisada simulada: “Oficina de música,16:00–16:45,45 minutos”. A correção parece certa, mas ainda deve ser comparada. A mesma técnica se aplica a um botão que não reage ou a um relatório que duplica linhas: especificar diferença, limite e teste a repetir.",
+          "action": "Escreva a correção e leia a resposta revisada simulada.",
+          "expected": "Pedido define horário correto e preservação do restante.",
+          "hint": "Evite acrescentar novos recursos durante um reparo pequeno.",
+          "criteria": [
+            "Pedido define horário correto e preservação do restante."
+          ],
+          "prompt": "Corrija apenas o término da Oficina de música: início 16:00 e duração 45 minutos exigem término 16:45. Preserve o nome, o início e a duração. Mostre a frase revisada e a conta usada."
+        },
+        {
+          "slug": "retest",
+          "kind": "practice",
+          "mode": "guided-simulation",
+          "title": "Repetir o teste do erro e os critérios preservados",
+          "objective": "Verificar correção e efeitos sobre o restante.",
+          "body": "Compare a nova frase simulada com os quatro critérios: término 16:45, início 16:00, duração 45 minutos e nome intacto. Repetir apenas “está corrigido?” dá pouca evidência. Recalcule e leia. Em uma prática real, use a resposta ou artefato que você recebeu; não marque sucesso se a nova versão não estiver disponível.",
+          "action": "Registre o resultado dos quatro critérios após a revisão.",
+          "expected": "Todos os critérios têm resultado conferido ou pendente.",
+          "hint": "O teste do erro e a conferência do que foi preservado são complementares.",
+          "criteria": [
+            "Término revisado confere com a conta.",
+            "Nome, início e duração foram preservados.",
+            "Resultados pendentes não foram marcados como observados."
+          ]
+        },
+        {
+          "slug": "real-small-change",
+          "kind": "practice",
+          "mode": "external-real-task",
+          "title": "Praticar sem inventar uma falha",
+          "objective": "Aplicar o ciclo a uma mudança real de texto.",
+          "body": "Na sua ferramenta, peça a mesma agenda fictícia e confira. Se aparecer erro, use o ciclo de correção. Se estiver correta, faça uma mudança deliberada: duração passa a 30 minutos, então término deve ser 16:30. Identifique isso como nova solicitação, não como falha anterior. Compare horário e nome depois. Registre o que realmente aconteceu.",
+          "action": "Execute a pequena mudança e registre antes/depois.",
+          "expected": "Registro distingue correção de erro e mudança solicitada.",
+          "hint": "Se não puder executar, complete apenas a análise simulada e declare isso.",
+          "criteria": [
+            "Registro distingue correção de erro e mudança solicitada."
+          ]
+        },
+        {
+          "slug": "verification-limit",
+          "kind": "check",
+          "mode": "guided-simulation",
+          "title": "Evitar uma conclusão maior que o teste",
+          "objective": "Relatar resultado e limite com precisão.",
+          "body": "A IA respondeu “todos os testes passaram”, mas você só comparou a frase da agenda e seu cálculo.",
+          "action": "Escolha uma alternativa e leia o feedback.",
+          "expected": "Escolha justificada pelo critério da situação.",
+          "hint": "Use as informações do caso, sem inventar observações.",
+          "criteria": [
+            "Escolha justificada pelo critério da situação."
+          ],
+          "check": {
+            "question": "Qual é o registro adequado?",
+            "options": [
+              {
+                "id": "a",
+                "text": "A frase e a conta conferidas estão corretas; não observei testes de programa ou publicação.",
+                "feedback": "O registro limita a conclusão ao que foi realmente verificado."
+              },
+              {
+                "id": "b",
+                "text": "Qualquer aplicativo gerado por essa IA está validado.",
+                "feedback": "Um teste textual não demonstra outros programas nem situações."
+              },
+              {
+                "id": "c",
+                "text": "Nenhuma comparação é válida sem acesso ao código.",
+                "feedback": "Você pode conferir um texto e uma conta sem código; a evidência é útil dentro desse limite."
+              }
+            ],
+            "correct": "a",
+            "success": "Sua conclusão é útil porque informa também o alcance do teste.",
+            "retry": "Descreva a evidência observada e o que continua fora dela."
+          }
+        },
+        {
+          "slug": "verification-record",
+          "kind": "reflect",
+          "mode": "guided-simulation",
+          "title": "Levar um roteiro de testes para sua próxima rota",
+          "objective": "Organizar entrada, critério, resultado e próximo passo.",
+          "body": "Entregue um pequeno registro: entrada usada, critério, observado, pedido de ajuste quando houve, resultado do reteste e pendências. Nas próximas rotas, você usará esse formato com página, app ou CSV. Escolha a rota que atende ao seu objetivo; automação não exige fazer primeiro as aulas de site. O registro é seu instrumento de comparação, não uma certificação automática.",
+          "action": "Complete o registro e escolha site, app ou automação.",
+          "expected": "Registro possui evidência e próximo passo para a rota escolhida.",
+          "hint": "Um impedimento declarado é mais útil que uma execução inventada.",
+          "criteria": [
+            "Entrada e critério estão registrados.",
+            "Observado e reteste estão separados.",
+            "Pendências e próxima rota estão indicadas."
+          ]
+        }
+      ]
+    }
+  ]
+}
