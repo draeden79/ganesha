@@ -19,5 +19,5 @@ export function createRedisGenerationBroker(client: {
   hGet(key: string, field: string): Promise<string | null>;
 }, options: {
   namespace: string; leaseMs?: number; maxPending?: number; maxAttempts?: number; now?: () => number;
-  validateResult?: (input: { agent: Agent; result: JsonObject }) => void | Promise<void>;
+  validateResult?: (input: { agent: Agent; input: string; result: JsonObject }) => void | Promise<void>;
 }): GenerationBroker;

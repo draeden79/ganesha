@@ -1,6 +1,6 @@
 # Ganesha agent behavior and communication guide
 
-Version 1.3 — 2026-09-28
+Version 1.4 — 2026-09-28
 
 ## Where to request work
 
@@ -40,7 +40,9 @@ No operation purchases resources, upgrades plans, changes credentials, merges a 
 
 ## Glandingpage
 
-Provide course subject/title, audience, learning outcome and actual curriculum. Glandingpage asks up to three clarifying questions, then publishes validated English copy in the approved Ganesha template and returns the public URL in the original thread. A same-thread revision preserves its URL; failed generation preserves the previous page. Facts such as prices, dates, instructors, credentials and testimonials must come from the brief.
+Provide course subject/title, audience, learning outcome and actual curriculum. Glandingpage asks up to three clarifying questions, then generates English copy and automatically translates the complete landing page into Brazilian Portuguese, Spanish, French, German, Japanese, Hindi, Indonesian, Arabic, Korean and Simplified Chinese. English is the default; the language selector exposes all eleven versions, with right-to-left Arabic. No translation request or language list is needed in the brief.
+
+The complete set publishes together in the approved Ganesha template, then the agent returns its public URL in the original thread. A same-thread revision preserves its URL; a failed or incomplete translation preserves the previous complete publication. Existing English-only pages are upgraded on their next revision. The URL format is `/courses/<slug>/?lang=pt-BR` (English omits `lang`); supported codes are `en`, `pt-BR`, `es`, `fr`, `de`, `ja`, `hi`, `id`, `ar`, `ko`, `zh-CN`. Facts such as prices, dates, instructors, credentials and testimonials must come from the brief and remain consistent across languages. Translations are AI-generated and still benefit from native-speaker review before commercial use.
 
 The brand uses Figtree, soft white/cream/lavender, purple #6C3BEE, dark text, whitespace, subtle borders and approved illustration. It publishes demonstration pages, not application code, payments, enrollment or infrastructure. It cannot deploy the classroom application.
 
@@ -48,7 +50,7 @@ The brand uses Figtree, soft white/cream/lavender, purple #6C3BEE, dark text, wh
 
 English is the default. Generation uses local Codex with ChatGPT authentication, GPT-6 Astra and extra-high reasoning. Both local workers require this Windows PC to remain awake and authenticated; startup is currently manual. Accepted work persists offline; there is no automatic paid API fallback. Public pages remain on Vercel while workers are offline.
 
-Keep requests concise and never paste secrets. The model quota is 40 requests per UTC day shared by both agents. The ten-second cooldown was removed because it discarded legitimate requests across threads. Deterministic operations, DNS diagnostics and help/status/stop do not consume model quota. Slack retries of one message are deduplicated. A new message is a new request even if it repeats a textual request_id.
+Keep requests concise and never paste secrets. The model quota is 40 requests per UTC day shared by both agents. One landing-page brief counts as one workspace request, while its English copy and ten translations use eleven separate model jobs and the account's model allowance. Translation jobs are durable and resume after worker outages; generating the complete set takes longer than an English-only page. The ten-second cooldown was removed because it discarded legitimate requests across threads. Deterministic operations, DNS diagnostics and help/status/stop do not consume model quota. Slack retries of one message are deduplicated. A new message is a new request even if it repeats a textual request_id.
 
 Bot/API callers must observe the original thread for questions, acceptance and final results. An incoming webhook that can only post needs its coordinator to read the thread through an authorized Slack interface. Do not infer that the requesting bot received a reply merely because Gdevops posted one.
 

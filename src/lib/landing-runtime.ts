@@ -2,7 +2,7 @@
 import { createClient } from 'redis';
 import { generateText, Output, jsonSchema } from 'ai';
 import { getToken } from '@vercel/connect';
-import { createRedisLandingStore, generationSchema, instructions, GenerationPendingError, type Generation, type Course } from '@ganesha/landing-pages';
+import { createRedisLandingStore, generationSchema, instructions, GenerationPendingError, localizeGeneration, translationInstructions, type Generation, type Course } from '@ganesha/landing-pages';
 import { generationBackend, localGeneration, generationId } from './generation-runtime';
 import { dedicatedIdentities, slackIdentity, type SlackAgent } from '@/lib/slack-identity';
 import { safeReply } from '@/lib/policy';
@@ -35,17 +35,32 @@ export async function generateLandingCopy(input: { requestKey: string; brief: st
     const result = await localGeneration({ jobId: generationId('landing-pages', input.requestKey), agent: 'landing-pages',
       system: instructions, input: JSON.stringify({ brief: input.brief, previousCourse: input.previousCourse }), outputSchema: generationSchema });
     if (!result) throw new GenerationPendingError();
-    return result as Generation;
+    return localizeGeneration(result, async ({ locale, course }) => {
+      const translated = await localGeneration({
+        jobId: generationId('landing-pages', `${input.requestKey}:translation-v1:${locale}`), agent: 'landing-pages',
+        system: translationInstructions(locale), input: JSON.stringify({ kind: 'course-translation-v1', locale, course }),
+        outputSchema: generationSchema,
+      });
+      return translated;
+    });
   }
   try {
-  const result = await generateText({
+  // One shared deadline keeps English + parallel translations inside the 180s domain lease.
+  // This backend is an explicit operator choice; local mode never falls back to it.
+  const abortSignal = AbortSignal.timeout(150000);
+  const generate = async (system: string, prompt: string) => {
+    const result = await generateText({
     model: process.env.LANDING_AI_MODEL || process.env.AI_MODEL || 'openai/gpt-5-nano',
-    system: instructions, prompt: JSON.stringify(input),
+    system, prompt,
     output: Output.object({ schema: jsonSchema<Generation>(generationSchema as Parameters<typeof jsonSchema>[0]) }),
-    maxOutputTokens: 7000, maxRetries: 0, abortSignal: AbortSignal.timeout(120000),
+    maxOutputTokens: 7000, maxRetries: 0, abortSignal,
     providerOptions: { openai: { store: false, reasoningEffort: 'low' } },
-  });
-  return result.output;
+    });
+    return result.output;
+  };
+  const result = await generate(instructions, JSON.stringify(input));
+  return await localizeGeneration(result, ({ locale, course }) =>
+    generate(translationInstructions(locale), JSON.stringify({ kind: 'course-translation-v1', locale, course })));
   } catch (error) {
     const e = error as { name?: string; statusCode?: number; cause?: { name?: string; statusCode?: number } };
     const safeName = (name?: string) => name && /^[A-Za-z_][A-Za-z0-9_]{0,80}$/.test(name) ? name : 'UnknownError';

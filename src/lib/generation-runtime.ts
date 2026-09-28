@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import { createClient } from 'redis';
 import { createRedisGenerationBroker, type GenerationInput } from '@ganesha/local-generation-broker';
-import { validateGeneration } from '@ganesha/landing-pages';
+import { validateLandingGenerationResult } from '@ganesha/landing-pages';
 
 export function generationBackend() {
   const backend = process.env.GENERATION_BACKEND || 'gateway';
@@ -29,8 +29,8 @@ export async function generationStorage() {
 export async function generationBroker() {
   return createRedisGenerationBroker(await generationStorage(), {
     namespace: `ganesha:generation:${process.env.VERCEL_ENV || 'development'}`,
-    validateResult: ({ agent, result }) => {
-      if (agent === 'landing-pages') validateGeneration(result);
+    validateResult: ({ agent, input, result }) => {
+      if (agent === 'landing-pages') validateLandingGenerationResult(input, result);
       else if (typeof result.text !== 'string' || !result.text.trim() || result.text.length > 12000 || /[\u0000-\u0008]/u.test(result.text)) {
         throw new Error('Invalid DevOps result');
       }

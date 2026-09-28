@@ -7,6 +7,22 @@ export type Course = {
 };
 export type Generation = { status: 'ready'; questions: []; course: Course } |
   { status: 'needs_information'; questions: string[]; course: null };
+export type Locale = 'en' | 'pt-BR' | 'es' | 'fr' | 'de' | 'ja' | 'hi' | 'id' | 'ar' | 'ko' | 'zh-CN';
+export type TranslationLocale = Exclude<Locale, 'en'>;
+export type Translations = Record<TranslationLocale, Course>;
+export type LocalizedGeneration = Generation | { status: 'ready'; questions: []; course: Course; translations: Translations };
+export type PublishedCoursePage = { html: string; revision: string; localizedHtml?: Partial<Record<Locale, string>> };
+export const locales: readonly { code: Locale; name: string; language: string; dir?: string }[];
+export const translationLocales: readonly { code: TranslationLocale; name: string; language: string; dir?: string }[];
+export const ui: Record<Locale, Record<string, string>>;
+export function isLocale(code: unknown): code is Locale;
+export function localeUrl(url: string, locale: Locale): string;
+export function translationInstructions(locale: TranslationLocale): string;
+export function validateTranslation(course: unknown, source: Course, locale: TranslationLocale): Course;
+export function validateTranslations(value: unknown, source: Course): Translations;
+export function validateLandingGenerationResult(input: string, result: unknown): Generation;
+export function localizeGeneration(result: unknown, translate: (input: { locale: TranslationLocale; course: Course }) => Promise<unknown | null>): Promise<LocalizedGeneration>;
+export function selectPageLocale(page: { html: string; localizedHtml?: Partial<Record<Locale, string>> }, locale?: string): string | null;
 export type Agent = 'devops' | 'landing-pages';
 export class GenerationPendingError extends Error { readonly code: 'generation_pending'; readonly retryAfterMs: number; constructor(retryAfterMs?: number); }
 export type Route = { status: 'ignored' } | { status: 'choose' | 'conflict'; message: string } |
@@ -17,13 +33,13 @@ export const courseSchema: Record<string, unknown>;
 export const pageHeaders: Record<string, string>;
 export function validateGeneration(result: unknown): Generation;
 export function validateCourse(course: unknown): Course;
-export function renderCourse(course: Course): string;
+export function renderCourse(course: Course, options?: { locale?: Locale; url?: string | null; availableLocales?: Locale[] }): string;
 export function routeAgent(input: { channelId: string; isDM: boolean; text: string; assignedAgent?: Agent;
   mentioned?: boolean; author: { userId: string; isBot: boolean | 'unknown'; isMe: boolean } },
   config: { landingPagesChannelId: string; devopsChannelId: string; allowedAgentUserIds?: string[];
     agent?: Agent; allowWorkspaceBots?: boolean }): Route;
 export type PreparedPage = { status: 'needs_information'; requestKey: string; questions: string[]; reply: string } |
-  { status: 'ready'; requestKey: string; slug: string; url: string; course: Course; html: string };
+  { status: 'ready'; requestKey: string; slug: string; url: string; course: Course; html: string; localizedHtml?: Partial<Record<Locale, string>> };
 export function prepareLandingPage(input: { threadKey: string; requestKey: string; brief: string;
   previousCourse?: Course | null; publicOrigin: string },
   deps: { generate: (input: { requestKey: string; brief: string; previousCourse: Course | null }) => Promise<unknown> }): Promise<PreparedPage>;
@@ -45,7 +61,7 @@ export interface LandingStore {
   /** Include queued/due-retry/expired-lease jobs so the scheduler can recover after a crash. */
   pendingJobs(options: { now: number; limit: number }): Promise<string[]>;
   /** Public data only: committed HTML, never raw brief, actor, threadKey or credentials. */
-  readPage(slug: string): Promise<{ html: string; revision: string } | null>;
+  readPage(slug: string): Promise<PublishedCoursePage | null>;
   claimNotification(options: { now: number; leaseMs: number; requestKey?: string }): Promise<NotificationClaim | null>;
   ackNotification(claim: NotificationClaim, options: { now: number }): Promise<void>;
   retryNotification(claim: NotificationClaim, options: { now: number; retryAt: number | null }): Promise<void>;

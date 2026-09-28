@@ -44,6 +44,23 @@ test('Wrong or expired lease authority is rejected before validation or commit; 
   await assert.rejects(broken.enqueue(input), error => error.message === 'unavailable' && !error.cause);
 });
 
+test('Domain validation receives the retained source before completion, not worker-supplied source', async () => {
+  const source = JSON.stringify({ locale: 'ar', course: { title: 'Original' } });
+  let writes = 0;
+  const record = { ...owner, status: 'leased', agent: 'landing-pages', input: source, leaseExpiresAt: 2000, outputSchemaJson: JSON.stringify(schema) };
+  const broker = createRedisGenerationBroker({ hGet: async () => JSON.stringify(record), eval: async () => { writes++; return 1; } }, {
+    namespace: 'source-validation', now: () => 1000,
+    validateResult: ({ agent, input, result }) => {
+      assert.equal(agent, 'landing-pages'); assert.equal(input, source);
+      if (result.text !== 'Valid translation') throw new Error('Invalid translation');
+    },
+  });
+  await assert.rejects(broker.complete({ ...result, input: 'untrusted substitute' }), fails('invalid_result'));
+  assert.equal(writes, 0);
+  await broker.complete({ ...result, result: { text: 'Valid translation' } });
+  assert.equal(writes, 1);
+});
+
 test('Enqueue fingerprints are stable across object key order; collisions and full queues are explicit', async () => {
   const fingerprints = [];
   const client = { eval: async (_script, { arguments: args }) => { fingerprints.push(args[1]); return args[2]; } };

@@ -1,6 +1,8 @@
 import { createHash } from 'node:crypto';
 import { validateGeneration } from './course.mjs';
 import { renderCourse } from './render.mjs';
+import { validateTranslations } from './localization.mjs';
+import { locales } from './locales.mjs';
 export { generationSchema, courseSchema, validateGeneration, validateCourse } from './course.mjs';
 export { renderCourse } from './render.mjs';
 export { instructions } from './instructions.mjs';
@@ -10,6 +12,8 @@ export { createRedisLandingStore } from './redis-store.mjs';
 export { createSharedIngress } from './ingress.mjs';
 export { createRedisGatewayStore } from './gateway-store.mjs';
 export { GenerationPendingError } from './generation.mjs';
+export { locales, translationLocales, isLocale, localeUrl, ui } from './locales.mjs';
+export { translationInstructions, validateTranslation, validateTranslations, validateLandingGenerationResult, localizeGeneration, selectPageLocale } from './localization.mjs';
 
 export const pageHeaders = {
   'Content-Type': 'text/html; charset=utf-8',
@@ -31,11 +35,19 @@ export async function prepareLandingPage(input, deps) {
   }
   // Keep the URL stable across revisions, without exposing Slack IDs in public URLs.
   const slug = `course-${createHash('sha256').update(threadKey).digest('hex').slice(0, 24)}`;
-  const result = validateGeneration(await deps.generate({ requestKey, brief, previousCourse }));
+  const generated = await deps.generate({ requestKey, brief, previousCourse });
+  if (!generated || typeof generated !== 'object') throw new Error('Invalid generation');
+  const { translations, ...base } = generated;
+  const result = validateGeneration(base);
   if (result.status === 'needs_information') {
+    if (translations !== undefined) throw new Error('Clarification cannot contain translations');
     return { status: 'needs_information', requestKey, questions: result.questions,
       reply: 'Landing Pages · I need a little more detail before publishing:\n' + result.questions.map(q => `• ${q}`).join('\n') };
   }
-  return { status: 'ready', requestKey, slug, url: `${origin.origin}/courses/${slug}/`,
-    course: result.course, html: renderCourse(result.course).replace('<body>', '<body><aside class="prototype-notice">Ganesha prototype · Demonstration course page for workflow testing.</aside>') };
+  const url = `${origin.origin}/courses/${slug}/`;
+  const availableLocales = translations === undefined ? ['en'] : locales.map(item => item.code);
+  if (translations !== undefined) validateTranslations(translations, result.course);
+  const localizedHtml = Object.fromEntries(availableLocales.map(locale => [locale,
+    renderCourse(locale === 'en' ? result.course : translations[locale], { locale, url, availableLocales })]));
+  return { status: 'ready', requestKey, slug, url, course: result.course, html: localizedHtml.en, localizedHtml };
 }

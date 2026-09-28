@@ -10,7 +10,7 @@ export async function runLandingJob(requestKey, deps) {
     if (claim.attempt > 3) throw new Error('Attempt limit reached after lease recovery');
     const prepared = await prepareLandingPage({ ...claim, publicOrigin: deps.publicOrigin }, { generate: deps.generate });
     const body = prepared.status === 'ready'
-      ? `Landing Pages · Your course page is published: ${prepared.url}` : prepared.reply;
+      ? `Landing Pages · Your course page is published: ${prepared.url}${Object.keys(prepared.localizedHtml || {}).length === 11 ? '\nAll 11 language versions are available from the language selector.' : ''}` : prepared.reply;
     // The store must fence stale claims and atomically persist result + notification.
     const committed = await deps.store.completeJob(claim, { prepared, notification: { threadKey: claim.threadKey, body }, now: now() });
     return { status: committed ? prepared.status : 'superseded' };
