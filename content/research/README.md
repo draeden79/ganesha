@@ -7,6 +7,7 @@ Responsável: Devorador. Escopo exclusivo: `content/research/`. Referência temp
 - `EARLY_BATCH.md`: entrega curta para orientar o Educador agora.
 - `registry.json`: ResearchRegistry 1.0.0 canônico para o currículo.
 - `REPORT-2026-09-28.md`: fechamento da ingestão inicial e cobertura atual.
+- `HANDOFF.md`: aceite do Diretor e prioridades do próximo ciclo.
 - `SCHEMA.md` e `WEEKLY_RUNBOOK.md`: campos, integração e procedimento repetível.
 - `queue.json`, `conflicts.json` e `update-proposals.json`: pendências e propostas sem alterar aulas.
 - `ingestion-log.jsonl`: histórico de lotes e observações de acesso.
