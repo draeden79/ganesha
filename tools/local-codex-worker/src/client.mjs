@@ -48,4 +48,3 @@ export function createClient({ origin, token, fetchImpl = fetch, timeoutMs = 200
     },
   };
 }
-

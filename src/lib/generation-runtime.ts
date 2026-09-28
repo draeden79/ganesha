@@ -40,7 +40,14 @@ export async function generationBroker() {
 export async function localGeneration(input: GenerationInput) {
   const broker = await generationBroker();
   // Observe a retained snapshot first: deployment prompt changes never replace a pending job.
-  const status = await broker.status(input.jobId) ?? await broker.enqueue(input);
+  let status = await broker.status(input.jobId);
+  if (!status) {
+    try { status = await broker.enqueue(input); }
+    catch (error) {
+      if ((error as { code?: string }).code === 'queue_full') return null;
+      throw error;
+    }
+  }
   if (status.status === 'completed') return status.result!;
   if (status.status === 'failed') throw new Error('Local generation failed');
   return null;

@@ -5,5 +5,5 @@ export const maxDuration = 30;
 export async function POST(request: Request, context: { params: Promise<{ action: string }> }) {
   const { action } = await context.params;
   return workerRequest(request, action, { token: process.env.LOCAL_WORKER_TOKEN,
-    enabled: generationBackend() === 'local-codex', broker: generationBroker });
+    enabled: process.env.LOCAL_WORKER_ENABLED === 'true' || generationBackend() === 'local-codex', broker: generationBroker });
 }

@@ -20,4 +20,3 @@ try {
   console.log(JSON.stringify({ event: 'smoke_failed', code: error instanceof WorkerError ? error.code : 'unknown_error' }));
   process.exitCode = 1;
 }
-

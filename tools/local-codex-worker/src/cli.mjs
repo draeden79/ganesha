@@ -47,4 +47,3 @@ try {
 } finally {
   if (lock) { await lock.close(); await unlink(lockPath).catch(() => {}); }
 }
-
