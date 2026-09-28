@@ -26,6 +26,7 @@ Atualizado em 2026-09-28. Estado: aplicativo, pesquisa, design e primeira aula n
 - D010: por orientação explícita do usuário, obter transcrições de todos os vídeos das fontes prioritárias, com inventário completo e cobertura por item; fontes adicionais na internet estão autorizadas. Ver `RESEARCH_DIRECTIVE.md`. Devorador recebeu a instrução de retomar a prioridade de transcrições; instrução persistida na automação semanal existente.
 
 - D011: Ganesha Desktop aberto no Mac é a nova referência visual principal, por pedido explícito do usuário. Artista inspeciona e especifica; Construtor implementa depois.
+- D012: aquisição não equivale a estudo. Auditoria confirmada pelo Devorador: três faixas exportadas, nenhuma transcrição integralmente estudada, nenhum vídeo com demonstração visual revisada e nenhum artigo certificado por ficha integral. Educador deve auditar a sustentação das etapas e manter a maturidade pedagógica de L01 como provisória. Ver `RESEARCH_DIRECTIVE.md`; o preview visual continua em paralelo.
 
 ## Dependências externas
 
@@ -37,7 +38,7 @@ Atualizado em 2026-09-28. Estado: aplicativo, pesquisa, design e primeira aula n
 
 ## Cobertura de idiomas
 
-L01 integrada e auditada nos 11 locales: 112/112 chaves presentes em cada um, sem mensagens pendentes/ausentes ou revisão de origem desatualizada. Revisão linguística humana: pendente em todos os idiomas; traduções produzidas por IA. Aula ready, curso preview 0.1.0. Catálogos da UI também passaram na auditoria do app; renderização será reavaliada após o novo design. Evidência: `CONTENT_AUDIT.json`.
+L01 integrada e auditada estruturalmente nos 11 locales: 112/112 chaves presentes em cada um, sem mensagens pendentes/ausentes ou revisão de origem desatualizada. Revisão linguística humana: pendente em todos os idiomas; traduções produzidas por IA. Campo técnico da aula `ready`, curso `preview` 0.1.0; isso não certifica maturidade pedagógica, que permanece provisória até a auditoria D012. Catálogos da UI também passaram na auditoria do app; renderização será reavaliada após o novo design. Evidência: `CONTENT_AUDIT.json`.
 
 ## Evidências de validação
 
@@ -56,7 +57,7 @@ L01 integrada e auditada nos 11 locales: 112/112 chaves presentes em cada um, se
 ## Encaminhamento do próximo ciclo
 
 - Construtor aguarda entrega do Artista baseada no Ganesha Desktop; depois refaz a interface e envia commit/preview/testes ao Diretor.
-- Educador fecha documentação do mapa e justificativas; seus 11 catálogos já foram integrados e auditados pelo Diretor.
+- Educador audita a sustentação de cada etapa e solicita ao Devorador estudo integral das fontes relevantes; seus 11 catálogos já foram integrados e auditados estruturalmente pelo Diretor.
 - Artista inspeciona a janela real do Ganesha Desktop, registra referências e entrega especificação/protótipo web mais clean antes da implementação. Ver `DESKTOP_DESIGN_DIRECTIVE.md`.
 - Devorador concluiu o lote inicial; o usuário agora priorizou transcrições de todos os vídeos das fontes indicadas, com pesquisa complementar autorizada. Foi instruído a retomar imediatamente e reordenar sua fila; a automação existente foi atualizada e continua na sexta-feira.
 - Nenhuma implantação pública ou integração de autenticação/pagamento foi declarada concluída.
