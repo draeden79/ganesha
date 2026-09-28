@@ -6,16 +6,12 @@ export function routeAgent(input, config) {
   if (config.agent !== undefined && !agents.has(config.agent)) throw new Error('Invalid dedicated agent');
   const landing = channelId(config.landingPagesChannelId);
   const devops = channelId(config.devopsChannelId);
-  if (!/^[CG][A-Z0-9]+$/.test(landing) || !/^[CG][A-Z0-9]+$/.test(devops) || landing === devops) {
-    throw new Error('Two distinct Slack channel IDs are required');
-  }
   if (input.author.isMe) return { status: 'ignored' };
   if (input.author.isBot !== false && !(input.author.isBot === true && input.mentioned === true &&
     (config.allowWorkspaceBots === true || (config.allowedAgentUserIds ?? []).includes(input.author.userId)))) return { status: 'ignored' };
   const currentChannel = channelId(input.channelId);
-  const channelAgent = currentChannel === landing ? 'landing-pages' : currentChannel === devops ? 'devops' : undefined;
-  if (!input.isDM && !channelAgent) return { status: 'ignored' };
-  if (config.agent && !input.isDM && channelAgent !== config.agent) return { status: 'ignored' };
+  // Channel IDs are legacy defaults, never an access allowlist. Dedicated identity wins.
+  const channelAgent = config.agent ? undefined : currentChannel === landing ? 'landing-pages' : currentChannel === devops ? 'devops' : undefined;
   const cleaned = String(input.text ?? '').replace(/<@[A-Z0-9]+>/g, '').trim();
   const selector = /^(devops|landing-pages)\s*:\s*/i.exec(cleaned);
   const selected = selector?.[1].toLowerCase();
@@ -25,8 +21,8 @@ export function routeAgent(input, config) {
     (pinned && channelAgent && pinned !== channelAgent) ||
     (config.agent && ((pinned && pinned !== config.agent) || (selected && selected !== config.agent)))) {
     return { status: 'conflict', message: config.agent
-      ? 'This thread belongs to another Ganesha agent. Start a new thread in the appropriate channel, or open a DM with Gdevops for infrastructure or Glandingpage for course pages. Existing thread history stays with its original agent.'
-      : 'This thread belongs to another Ganesha agent. Start a new thread in the appropriate channel, or a new DM thread with devops: or landing-pages:.' };
+      ? 'This thread belongs to another Ganesha agent. Mention the requested agent in a new thread in any workspace channel, or open its DM. Existing thread history stays with its original agent.'
+      : 'This thread belongs to another Ganesha agent. Start a new thread with devops: or landing-pages:.' };
   }
   const agent = config.agent ?? pinned ?? channelAgent ?? selected;
   if (!agent) return { status: 'choose', message: 'Which Ganesha agent do you need? Start your request with devops: or landing-pages:.' };

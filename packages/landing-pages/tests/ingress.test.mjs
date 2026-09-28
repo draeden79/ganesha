@@ -18,15 +18,15 @@ function fixture(overrides = {}, configuration = {}) {
   return { handle: createSharedIngress({ ...config, ...configuration }, deps), starts, replies, dispatched, bindings, store };
 }
 
-test('Dedicated identities require the matching app, default DMs to their own role, and ignore the other channel', async () => {
+test('Dedicated identities require matching app and work in every workspace channel', async () => {
   const f = fixture({}, { agent: 'devops' });
   await f.handle(request(event()));
-  assert.equal(f.starts.length, 0); assert.equal(f.bindings.size, 0);
+  assert.equal(f.starts.length, 0); assert.equal(f.dispatched.length, 1);
   assert.equal((await f.handle(request({ ...event({ channel: 'CDEVOPS' }), api_app_id: 'AOTHER' }))).status, 403);
   assert.equal((await f.handle(request({ ...event({ channel: 'CDEVOPS' }), api_app_id: undefined }))).status, 403);
-  assert.equal(f.bindings.size, 0);
+  assert.equal(f.bindings.size, 1);
   await f.handle(request(event({ channel: 'DDIRECT', text: 'Plan staging' })));
-  assert.equal(f.dispatched.length, 1); assert.equal(f.replies.length, 0);
+  assert.equal(f.dispatched.length, 2); assert.equal(f.replies.length, 0);
   await f.handle(request(event({ channel: 'DDIRECT', text: 'landing-pages: publish this', thread_ts: '1700000000.000001', ts: '1700000001.000001' })));
   assert.equal(f.starts.length, 0); assert.match(f.replies[0].body, /another Ganesha agent/);
   const landing = fixture({}, { agent: 'landing-pages' });
@@ -85,13 +85,45 @@ test('No ACK until durable start resolves; failed starts remain retryable', asyn
   release(); assert.equal((await pending).status, 200); assert.equal(calls, 2);
 });
 
-test('Ordinary channels and self messages are ignored, and approved bot briefs cannot reach DevOps', async () => {
+test('Ordinary messages and self messages are ignored, and legacy approved bots cannot reach DevOps', async () => {
   const f = fixture();
-  for (const changes of [{ text: 'General conversation', type: 'message' }, { user: 'UBOT' }, { channel: 'CGENERAL' },
+  for (const changes of [{ text: 'General conversation', type: 'message' }, { user: 'UBOT' },
     { user: 'UWRITER', channel: 'CDEVOPS' }, { user: 'UWRITER', text: 'Unmentioned bot reply' }]) await f.handle(request(event(changes)));
   assert.equal(f.starts.length, 0); assert.equal(f.dispatched.length, 0);
   await f.handle(request(event({ user: 'UWRITER' })));
   assert.equal(f.starts.length, 1);
+});
+
+test('Both dedicated agents route mentions in management and private channels without channel configuration', async () => {
+  for (const agent of ['devops', 'landing-pages']) {
+    const f = fixture({}, { agent, landingPagesChannelId: '', devopsChannelId: '' });
+    for (const channel of ['CMANAGEMENT','GPRIVATE','CGENERAL']) await f.handle(request(event({channel})));
+    assert.equal(agent === 'devops' ? f.dispatched.length : f.starts.length, 3);
+    await f.handle(request(event({channel:'CGENERAL',text:'ordinary conversation',ts:'1700000002.000001'})));
+    assert.equal(agent === 'devops' ? f.dispatched.length : f.starts.length, 3);
+  }
+});
+
+test('Webhook-only bots are verified by bot ID and must mention the target on every request', async () => {
+  const f = fixture({ lookupBot: async (id, appId) => id === 'BPRODUCT' && (!appId || appId === 'APRODUCT')
+    ? {isBot:true,deleted:false,appId:'APRODUCT'} : null }, { agent:'devops', allowWorkspaceBots:true });
+  const webhook = {user:undefined,bot_id:'BPRODUCT',app_id:'APRODUCT',subtype:'bot_message',type:'message',channel:'CMANAGEMENT'};
+  await f.handle(request(event(webhook)));
+  assert.equal(f.dispatched.length,1);
+  for (const change of [{text:'passive response'},{bot_id:'BUNKNOWN'},{app_id:'ASPOOF'},{is_ext_shared_channel:true}]) {
+    await f.handle(request(event({...webhook,thread_ts:'1700000000.000001',ts:'1700000001.000001',...change})));
+  }
+  assert.equal(f.dispatched.length,1);
+  const self = fixture({lookupBot:async()=>({isBot:true,deleted:false,appId:'AAPP'})},{agent:'devops',allowWorkspaceBots:true});
+  await self.handle(request(event(webhook)));
+  assert.equal(self.dispatched.length,0);
+});
+
+test('Co-located apps do not consume passive replies belonging to the other agent', async () => {
+  const f=fixture({}, {agent:'devops'});
+  f.bindings.set('TGANESHA:CMANAGEMENT:1700000000.000001','landing-pages');
+  await f.handle(request(event({channel:'CMANAGEMENT',thread_ts:'1700000000.000001',text:'More information',ts:'1700000001.000001'})));
+  assert.equal(f.dispatched.length,0); assert.equal(f.replies.length,0);
 });
 
 test('New DM requires selection, thread cannot switch agents, and stopped DevOps followups stay silent', async () => {

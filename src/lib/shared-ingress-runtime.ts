@@ -31,6 +31,17 @@ export async function sharedIngress(deps: { dispatchDevOps: (request: Request) =
     landingPagesChannelId: process.env.SLACK_LANDING_PAGES_CHANNEL_ID || '', devopsChannelId: process.env.SLACK_DEVOPS_CHANNEL_ID || '',
     allowedAgentUserIds: (process.env.SLACK_ALLOWED_AGENT_USER_IDS || '').split(',').map(id => id.trim()).filter(Boolean) }, {
     store, verify: async (request, body) => (await managed.webhookVerifier(request, body)) === true, ...deps,
+    lookupBot: async (botId, appId) => {
+      const token = await getToken(connector, { subject: { type: 'app' }, scopes: slackScopes });
+      const url = new URL('https://slack.com/api/bots.info'); url.searchParams.set('bot', botId);
+      const response = await fetch(url, { headers: { Authorization: `Bearer ${token}` }, signal: AbortSignal.timeout(15000) });
+      if (!response.ok) throw new Error('Slack bot lookup unavailable');
+      const data = await response.json() as { ok?: boolean; error?: string; bot?: { id?: string; app_id?: string; user_id?: string; deleted?: boolean } };
+      if (!data.ok && data.error !== 'bot_not_found') throw new Error('Slack bot lookup unavailable');
+      if (!data.ok || data.bot?.id !== botId || !data.bot.app_id || (appId && appId !== data.bot.app_id)) return null;
+      // bots.info is scoped by this workspace's token; incoming-webhook bots need not have a user_id.
+      return { isBot: true, deleted: data.bot.deleted === true, appId: data.bot.app_id, userId: data.bot.user_id };
+    },
     lookupUser: async (userId) => {
       const cached = await store.getUser(userId); if (cached) return cached;
       const token = await getToken(connector, { subject: { type: 'app' }, scopes: slackScopes });

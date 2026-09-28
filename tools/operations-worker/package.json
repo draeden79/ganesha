@@ -1,0 +1,10 @@
+{
+  "name": "@ganesha/operations-worker",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "start": "node --env-file=../../.env.production.local --env-file=.env.local src/cli.mjs"
+  }
+}

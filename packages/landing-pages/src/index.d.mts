@@ -80,6 +80,7 @@ export function createSharedIngress(config: { teamId: string; appId?: string; bo
   agent?: Agent; allowWorkspaceBots?: boolean }, deps: {
   store: GatewayStore; verify: (request: Request, body: string) => Promise<boolean>;
   lookupUser: (userId: string) => Promise<SlackUser | null>;
+    lookupBot?: (botId: string, appId?: string) => Promise<(SlackUser & { appId?: string; userId?: string }) | null>;
   isDevOpsSubscribed: (threadKey: string) => Promise<boolean>;
   send: (message: Notification) => Promise<unknown>;
   startLanding: (input: LandingInput) => Promise<unknown>;

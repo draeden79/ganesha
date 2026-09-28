@@ -3,7 +3,7 @@ import { createRedisState } from "@chat-adapter/state-redis";
 import { connectSlackAdapter } from "@vercel/connect/chat";
 import { Chat, type Message, type MessageContext, type Thread } from "chat";
 import { generateText } from "ai";
-import { acceptEnvelope, isAllowedChannel, SYSTEM } from "./policy";
+import { acceptEnvelope, SYSTEM } from "./policy";
 import { respond, type Session } from "./respond";
 import { slackScopes } from './landing-runtime';
 import { dedicatedIdentities, slackIdentity } from './slack-identity';
@@ -39,7 +39,6 @@ function createBot() {
     concurrency: { strategy: 'queue', maxQueueSize: 5, queueEntryTtlMs: 90000, maxLockLifetimeMs: 250000 },
   });
   const handle = async (thread: Thread<Session>, message: Message, context?: MessageContext) => {
-    if (!isAllowedChannel(thread.channelId, thread.isDM, process.env.SLACK_DEVOPS_CHANNEL_ID)) return;
     await respond(thread, message, context?.skipped || [], {
       // The verified shared ingress applies the workspace quota once per message.
       quota: async () => 'ok',
